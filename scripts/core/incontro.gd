@@ -857,3 +857,164 @@ func evitabile() -> bool:
 ## Guardiano non sconfitto: resta sulla mappa nel Luogo.
 func guardiano_resta() -> bool:
 	return (carta.get("guardiano", false) or ha_tratto("Guardian")) and concluso in ["fuga", "morte"]
+
+## --- Anteprima (per l'interfaccia): cosa succede giocando una carta, senza modificare nulla ---------
+
+const NOMI_BONUS := {"cube": "segnalino", "draw": "pesca carta", "extra": "carta aggiuntiva", "discard": "scarta l'ultima carta",
+	"arrowup": "Affinità ↑", "arrowdown": "Affinità ↓", "special": "bonus speciale"}
+
+## Spiegazione dei tratti dei nemici.
+const TRATTI := {
+	"imbosc": "Imboscata: il primo personaggio che si attiva scarta fino ad avere 1 carta in mano.",
+	"improvv": "Improvviso: il primo personaggio che si attiva subisce 2 Ferite inevitabili.",
+	"difens": "Difensivo: se la prima carta dell'attivazione dà segnalini, se ne aggiunge uno in meno.",
+	"rapid": "Rapido: al massimo 2 carte per attivazione.",
+	"finta": "Finta: le Ferite dell'attacco non si possono prevenire.",
+	"orda": "Orda: dopo ogni attacco scarti le 2 carte in cima al mazzo.",
+	"opportun": "Opportunista: l'attacco di opportunità scatta se giochi meno di 2 carte.",
+	"furia": "Furia: il nemico attacca due volte.",
+	"lento": "Lento: mano iniziale +1 carta e a fine turno si pescano 2 carte.",
+	"guardian": "Guardiano: se non lo sconfiggi resta sulla mappa nel Luogo.",
+}
+
+func spiega_tratto(t: String) -> String:
+	var l := t.to_lower()
+	for k in TRATTI:
+		if l.begins_with(k):
+			return TRATTI[k]
+	return t
+
+## Effetto della carta se giocata ora: {giocabile, motivo, righe:[testo], cubi, pesca, extra, affinita,
+## magia, riserva_dopo, affinita_dopo, vittoria, fase_vinta, attacco (testo della riga prevista), ferite}
+func anteprima(c: String) -> Dictionary:
+	var out := {"giocabile": giocabile(c), "righe": [], "cubi": 0, "pesca": 0, "extra": 0, "affinita": 0, "magia": 0,
+		"scarta": 0, "speciali": []}
+	if not out["giocabile"]:
+		if attivo_id == "":
+			out["motivo"] = "Prima scegli chi si attiva."
+		elif carte_attivazione > 0 and ha_tratto("Rapid") and carte_attivazione >= 2:
+			out["motivo"] = "Rapido: non puoi giocare più di 2 carte."
+		elif carte_attivazione > 0:
+			out["motivo"] = "Per giocare un'altra carta deve collegare una Chiave dorata (carta aggiuntiva) all'ultima della Sequenza."
+		else:
+			out["motivo"] = "Non giocabile ora."
+	var prima := carte_attivazione == 0
+	var magia_disp := _magia_disponibile()
+	for k in collegamenti(c):
+		var nome_chiave := ""
+		match k["tipo"]:
+			"fondo":
+				nome_chiave = "Chiave in fondo (×%d)" % int(k.get("molt", 1))
+			"magia":
+				nome_chiave = "riga %d · Chiave Magica" % int(k["riga"])
+			_:
+				nome_chiave = "riga %d · %s%s" % [int(k["riga"]), Partita.NOMI_ATTRIBUTI.get(k["attr"], k["attr"]), (" %d" % int(k.get("liv", 1))) if int(k.get("liv", 1)) > 1 else ""]
+		var ok: bool = k["ok"]
+		var nota_ok := ""
+		if k["tipo"] == "magia":
+			if not paga_magia:
+				ok = false
+				nota_ok = "pagamento della Magia disattivato"
+			elif magia_disp - int(out["magia"]) <= 0:
+				ok = false
+				nota_ok = "serve 1 Magia"
+			else:
+				out["magia"] += 1
+				nota_ok = "costa 1 Magia"
+		elif k["tipo"] == "attributo" and not ok:
+			nota_ok = "serve %s %d (hai %d)" % [Partita.NOMI_ATTRIBUTI.get(k["attr"], k["attr"]), int(k.get("liv", 1)), partita.attributo(attivo(), str(k["attr"]))]
+		var molt := int(k.get("molt", 1)) if k["tipo"] == "fondo" else 1
+		if k["tipo"] == "fondo" and molt == 0:
+			ok = false
+			nota_ok = "la carta precedente annulla la Chiave in fondo (×0)"
+		var effetti := []
+		for b in k["bonus"]:
+			var m := RegEx.create_from_string("^([a-z]+?)(\\d*)$").search(str(b))
+			var nome := m.get_string(1) if m else str(b)
+			var n := (int(m.get_string(2)) if m and m.get_string(2) != "" else 1) * molt
+			match nome:
+				"cube":
+					if not diplomazia:
+						effetti.append("+%d segnalin%s" % [n, "o" if n == 1 else "i"])
+						if ok:
+							out["cubi"] += n
+				"draw":
+					effetti.append("pesca %d" % n)
+					if ok:
+						out["pesca"] += n
+				"extra":
+					effetti.append("carta aggiuntiva")
+					if ok and not prima:
+						out["extra"] += 1
+				"discard":
+					effetti.append("scarta l'ultima carta della Sequenza")
+					if ok:
+						out["scarta"] += 1
+				"arrowup":
+					effetti.append("Affinità +%d" % n)
+					if ok and diplomazia:
+						out["affinita"] += n
+				"arrowdown":
+					effetti.append("Affinità −%d" % n)
+					if ok and diplomazia:
+						out["affinita"] -= n
+				"special":
+					var sp := _testo_speciale(str(k.get("attr", "")))
+					effetti.append("bonus speciale" + ((": " + sp) if sp != "" else ""))
+					if ok:
+						out["speciali"].append(sp)
+				_:
+					effetti.append(str(b))
+		out["righe"].append({"chiave": nome_chiave, "ok": ok, "effetti": ", ".join(effetti), "nota": nota_ok})
+	var cubi_eff: int = out["cubi"]
+	if prima and ha_tratto("Difens") and cubi_eff > 0 and not diplomazia:
+		cubi_eff -= 1
+		out["righe"].append({"chiave": "Difensivo", "ok": true, "effetti": "−1 segnalino", "nota": ""})
+	out["riserva_dopo"] = riserva + cubi_eff
+	out["affinita_dopo"] = affinita + int(out["affinita"])
+	out["vittoria"] = not diplomazia and int(out["riserva_dopo"]) >= int(carta.get("valore", 99))
+	var a: Dictionary = carta.get("affinita", {})
+	out["fase_vinta"] = diplomazia and int(out["affinita_dopo"]) >= int(a.get("verdi", 3))
+	out["fallita"] = diplomazia and int(out["affinita_dopo"]) <= -int(a.get("rossi", 3))
+	var cap := []
+	for x in _capacita(c):
+		var tipo: String = {"piazza": "subito", "ritardata": "ritardata (%d turni)" % int(x.get("tempo", 1)), "attacco": "durante l'attacco nemico", "passiva": "sempre"}.get(str(x.get("innesco", "")), "")
+		cap.append("%s: %s" % [tipo, str(x.get("it", ""))])
+	out["capacita"] = cap
+	# Chiavi che la carta lascia aperte per la carta successiva
+	var aperte := []
+	for k in Carte.dati(c).get("chiavi", []):
+		if k.get("apre") != null:
+			var liv := int(k.get("liv", k.get("livello", 1)))
+			aperte.append("riga %d %s%s" % [int(k.get("riga", 0)), "Magia" if str(k["apre"]) == "magic" else Partita.NOMI_ATTRIBUTI.get(str(k["apre"]), str(k["apre"])), (" %d" % liv) if liv > 1 else ""])
+	out["aperte"] = aperte
+	out["attacco"] = attacco_previsto(int(out["riserva_dopo"]))
+	return out
+
+func _testo_speciale(attr: String) -> String:
+	var fs: Array = carta.get("fasi", [])
+	if fs.is_empty() or attr == "":
+		return ""
+	var sp = fs[clampi(fase, 0, fs.size() - 1)].get("speciale", {}).get(attr)
+	if sp == null:
+		return "nessun effetto per questo attributo"
+	return str(sp.get("it", sp)) if sp is Dictionary else str(sp)
+
+## Riga della tabella d'attacco per una certa Riserva: {testo, ferite, da, a}.
+func attacco_previsto(ris: int) -> Dictionary:
+	if diplomazia:
+		var fs: Array = carta.get("fasi", [])
+		if fs.is_empty():
+			return {}
+		var r = fs[clampi(fase, 0, fs.size() - 1)].get("risposta", {})
+		return {"testo": str(r.get("it", "")) if r is Dictionary else str(r), "ferite": 0}
+	for r in carta.get("tabella", []):
+		if ris >= int(r.get("da", 0)) and ris <= int(r.get("a", 99)):
+			var fer := 0
+			for x in auto.get("tabella", []) if auto.get("tabella") is Array else []:
+				if x is Dictionary and int(x.get("da", -1)) == int(r.get("da", -2)):
+					for s in x.get("effetti", []):
+						if s is Dictionary and str(s.get("tipo", "")) == "ferite":
+							fer += int(s.get("n", 0))
+			return {"testo": str(r.get("it", "")), "ferite": fer, "da": int(r.get("da", 0)), "a": int(r.get("a", 99))}
+	return {}

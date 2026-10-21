@@ -56,9 +56,43 @@ func _run() -> void:
 	var fi = g._ui.get_child(g._ui.get_child_count() - 1)
 	fi._fase = "scegli"
 	fi._aggiorna()
-	fi.inc.attiva("arev")
+	await fi.inc.attiva("arev")
 	fi._fase = "gioca"
 	fi._aggiorna()
 	await aspetta(2.0)
+	var mano: Array = fi.inc.mani["arev"]
+	if not mano.is_empty():
+		fi._anteprima.text = fi._descrivi_anteprima(mano[0])
+	await aspetta(1.0)
 	await foto("incontro_gioca")
+	if not mano.is_empty():
+		await fi._gioca(mano[0])
+		await aspetta(1.0)
+		var m2: Array = fi.inc.mani["arev"]
+		if not m2.is_empty():
+			fi._anteprima.text = fi._descrivi_anteprima(m2[0])
+		await aspetta(1.5)
+		await foto("incontro_seconda")
+	fi.queue_free()
+	await aspetta(0.5)
+	# Diplomazia: prima carta blu non speciale
+	var mb: Array = g.partita.d["mazzi"]["incontri_blu"]
+	for i in mb.size():
+		if root.get_node("Dati").carte["carte"].get(mb[0], {}).get("fasi") is Array:
+			break
+		mb.push_back(mb.pop_front())
+	g._avvia_incontro("blu")
+	await aspetta(2.0)
+	var fd = g._ui.get_child(g._ui.get_child_count() - 1)
+	fd._fase = "scegli"
+	fd._aggiorna()
+	await fd.inc.attiva("arev")
+	fd._fase = "gioca"
+	fd._aggiorna()
+	await aspetta(1.5)
+	var md: Array = fd.inc.mani["arev"]
+	if not md.is_empty():
+		fd._anteprima.text = fd._descrivi_anteprima(md[0])
+	await aspetta(1.0)
+	await foto("diplomazia")
 	quit()

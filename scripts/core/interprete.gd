@@ -221,7 +221,7 @@ func _passo(s: Dictionary) -> void:
 			var opz: Array = s.get("opzioni", [])
 			if opz.is_empty():
 				return
-			var nomi := opz.map(func(o): return Dati.testo_piano(str(o.get("testo", "?"))))
+			var nomi := opz.map(func(o): return Dati.testo_leggibile(str(o.get("testo", "?"))))
 			var i := await _scegli("Scegli", nomi)
 			_r("Scelta: " + str(nomi[i]))
 			var salva := interrotto
@@ -258,9 +258,9 @@ func _passo(s: Dictionary) -> void:
 				await esegui(s.get("effetti", []))
 		"nota":
 			p.d.get_or_add("note", []).append(str(s.get("testo", "")))
-			_r("Nota: " + Dati.testo_piano(str(s.get("testo", ""))))
+			_r("Nota: " + Dati.testo_leggibile(str(s.get("testo", ""))))
 		"manuale":
-			_r(Dati.testo_piano(str(s.get("testo", ""))), false)
+			_r(Dati.testo_leggibile(str(s.get("testo", ""))), false)
 		"modificatore":
 			pass
 		_:
@@ -511,7 +511,7 @@ func scegli_abilita(x: Dictionary, a: String) -> void:
 		for i in fa.size():
 			if str(fa[i].get("attributo", "")) == a:
 				var nome := str(fa[i].get("nome", {}).get("it", ""))
-				opz.append({"img": img, "faccia": i, "nome": nome, "testo": "%s (%d): %s" % [nome, int(fa[i].get("numero", 0)), Dati.testo_piano(str(fa[i].get("effetto", {}).get("it", "")))]})
+				opz.append({"img": img, "faccia": i, "nome": nome, "testo": "%s (%d): %s" % [nome, int(fa[i].get("numero", 0)), Dati.testo_leggibile(str(fa[i].get("effetto", {}).get("it", "")))]})
 	if opz.is_empty():
 		_r("Nessuna carta Abilità di %s disponibile" % Partita.NOMI_ATTRIBUTI.get(a, a), false)
 		return

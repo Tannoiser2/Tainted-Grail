@@ -174,10 +174,10 @@ func _aggiorna_azioni() -> void:
 	if not az.is_empty():
 		var nome := str(az.get("nome", {}).get("it", "Azione del Luogo"))
 		_azione(nome.to_upper(), _azione_luogo, puo and not giornata.azione_luogo_usata(n) and int(x["energia"]) >= int(az.get("costo", 0)),
-			Dati.testo_piano("%d Energia: %s" % [int(az.get("costo", 0)), str(az.get("it", ""))]))
+			Dati.testo_leggibile("%d Energia: %s" % [int(az.get("costo", 0)), str(az.get("it", ""))]))
 	var dd := Personaggi.dati(str(x["id"]))
 	_azione(str(dd["azione"]["nome"]).to_upper(), _azione_personaggio, puo and int(x["energia"]) >= int(dd["azione"]["costo"]),
-		Dati.testo_piano("%d Energia: %s" % [int(dd["azione"]["costo"]), dd["azione"]["testo"]]))
+		Dati.testo_leggibile("%d Energia: %s" % [int(dd["azione"]["costo"]), dd["azione"]["testo"]]))
 	if _ha_menhir(n):
 		_azione("MENHIR", _menhir, true, "Ispeziona il Menhir del Luogo e attivalo")
 	var usabili := partita.inneschi("azione", x) + partita.inneschi("in_qualsiasi_momento", x)
@@ -577,7 +577,7 @@ func _descrivi_innesco(u: Dictionary) -> String:
 		for f in c.get("facce", []):
 			if str(f.get("nome", {}).get("it", "")) != "":
 				e = f.get("effetto", e)
-	return Dati.testo_piano(str(e.get("it", ""))) if e is Dictionary else ""
+	return Dati.testo_leggibile(str(e.get("it", ""))) if e is Dictionary else ""
 
 ## Azioni codificate di una carta Luogo (lista).
 func _azioni_luogo_auto(n: int) -> Array:
@@ -697,7 +697,7 @@ func _mostra_cerche() -> void:
 	var cerche: Array = partita.d.get("cerche", [])
 	var nomi := []
 	for img in cerche:
-		nomi.append(Carte.nome(str(img)) + " — " + Dati.testo_piano(str(Carte.dati(str(img)).get("cerca", {}).get("it", ""))))
+		nomi.append(Carte.nome(str(img)) + " — " + Dati.testo_leggibile(str(Carte.dati(str(img)).get("cerca", {}).get("it", ""))))
 	nomi.append("Chiudi")
 	var k := await domande.scegli("Cerche attive (scegline una per segnarla come completata se il gioco non può verificarla da solo)", nomi)
 	if k >= cerche.size():

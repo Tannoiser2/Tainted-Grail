@@ -39,10 +39,10 @@ func scegli(titolo: String, opzioni: Array) -> int:
 	v.add_child(_testo("[b]" + Dati.testo_bb(titolo, 22) + "[/b]", 21, 600))
 	v.add_child(Tema.fregio(400))
 	for i in opzioni.size():
-		var b := Tema.pulsante(Dati.testo_piano(str(opzioni[i])), func(): _risposta.emit(i), 17)
+		var b := Tema.pulsante(Dati.testo_leggibile(str(opzioni[i])), func(): _risposta.emit(i), 17)
 		b.custom_minimum_size = Vector2(600, 44)
 		b.text_overrun_behavior = TextServer.OVERRUN_TRIM_ELLIPSIS
-		b.tooltip_text = Dati.testo_piano(str(opzioni[i]))
+		b.tooltip_text = Dati.testo_leggibile(str(opzioni[i]))
 		v.add_child(b)
 	var centra := func():
 		p.reset_size()

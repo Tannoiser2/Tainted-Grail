@@ -124,3 +124,22 @@ func _indicizza_guid(o: Dictionary) -> void:
 	for k in ["contenuto", "stati"]:
 		for x in o.get(k, []):
 			_indicizza_guid(x)
+
+const PAROLE_ICONE := {"energy": "Energia", "health": "Salute", "terror": "Terrore", "wound": "Ferita", "woundregular": "Ferita",
+	"cube": "segnalino", "cube2": "2 segnalini", "cube3": "3 segnalini", "discard": "scarta 1 carta", "arrowup": "↑", "arrowdown": "↓",
+	"aggression": "Aggressività", "courage": "Coraggio", "practicality": "Praticità", "spirituality": "Spiritualità",
+	"caution": "Cautela", "empathy": "Empatia", "action": "Azione:", "bullet": "•", "special": "bonus speciale", "magic": "Magia",
+	"extra": "carta aggiuntiva", "draw": "pesca 1 carta", "thunder": "⚡", "delay": "ritardata", "x": "×0", "skull": "☠"}
+
+## Testo senza markup per tooltip e pulsanti: icone sostituite da parole ("1 {i:terror}" → "1 Terrore").
+func testo_leggibile(t: String) -> String:
+	var rx := RegEx.create_from_string("\\{([ir]):([^}]*)\\}")
+	var out := ""
+	var k := 0
+	for m in rx.search_all(t):
+		out += t.substr(k, m.get_start() - k)
+		var v := m.get_string(2)
+		out += str(PAROLE_ICONE.get(v.to_lower(), v)) if m.get_string(1) == "i" else v
+		k = m.get_end()
+	out += t.substr(k)
+	return RegEx.create_from_string("\\[/?[a-z]+[^\\]]*\\]").sub(out, "", true)

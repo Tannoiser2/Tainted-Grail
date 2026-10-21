@@ -71,6 +71,8 @@ func _fine(nome: String, dati: PackedByteArray) -> void:
 		var err := doc.append_from_buffer(dati, "", st)
 		if err == OK:
 			ps = doc.generate_scene(st) as Node3D
+			if ps:
+				_semplifica(ps)
 		else:
 			push_warning("Miniatura %s: glTF non leggibile (errore %d, %d byte)" % [nome, err, dati.size()])
 	if ps == null:
@@ -85,3 +87,22 @@ func _fine(nome: String, dati: PackedByteArray) -> void:
 func _crea(nome: String) -> Node3D:
 	var ps: Node3D = _scene.get(nome)
 	return ps.duplicate() as Node3D if ps else null
+
+## Rende la miniatura il più compatibile possibile con WebGL (Safari): mesh ricostruite senza
+## compressione dei vertici e materiali opachi (niente fusione alfa).
+func _semplifica(n: Node) -> void:
+	if n is MeshInstance3D and (n as MeshInstance3D).mesh is ArrayMesh:
+		var mi := n as MeshInstance3D
+		var m: ArrayMesh = mi.mesh
+		var nuova := ArrayMesh.new()
+		for i in m.get_surface_count():
+			nuova.add_surface_from_arrays(m.surface_get_primitive_type(i), m.surface_get_arrays(i))
+			var mat := m.surface_get_material(i)
+			if mat is BaseMaterial3D:
+				mat = mat.duplicate()
+				mat.transparency = BaseMaterial3D.TRANSPARENCY_DISABLED
+				mat.cull_mode = BaseMaterial3D.CULL_DISABLED
+			nuova.surface_set_material(i, mat)
+		mi.mesh = nuova
+	for c in n.get_children():
+		_semplifica(c)

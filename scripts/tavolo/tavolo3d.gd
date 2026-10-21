@@ -296,6 +296,7 @@ func _etichetta_quadrante(mini: Node3D, valore: int) -> void:
 		l.outline_modulate = Color(0, 0, 0, 0.9)
 		l.position = Vector3(0, 1.75, 0)
 		l.no_depth_test = true
+		l.alpha_cut = Label3D.ALPHA_CUT_DISCARD  # niente fusione alfa: più compatibile con Safari
 		mini.add_child(l)
 	l.text = str(valore) if valore > 0 else "spento"
 	l.modulate = Tema.ORO if valore > 2 else Tema.ROSSO
