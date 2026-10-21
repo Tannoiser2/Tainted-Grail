@@ -1,0 +1,1175 @@
+{
+ "carte": {
+  "carte/mazzo/34912.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34913.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": 1,
+       "primo": false
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34914.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": 1,
+       "primo": false
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34915.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34916.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34917.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34918.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34919.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34920.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34921.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35000.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 13
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "speciale",
+       "lettera": "B"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ottieni 1 parte (la successiva non ancora ottenuta) dello status «Qualcuno Sta Osservando»."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "status",
+        "nome": "Qualcuno Sta Osservando",
+        "parti": [
+         1,
+         2,
+         3,
+         4
+        ]
+       },
+       "allora": [
+        {
+         "tipo": "evento",
+         "azione": "speciale",
+         "lettera": "C"
+        }
+       ]
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Rimetti questa carta in cima al mazzo Eventi."
+      },
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 7,
+       "meno_per_giocatore": true
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35001.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35002.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Colloca una miniatura del Predecessore nel Luogo con il maggior numero di personaggi; se tale Luogo non esiste, nel Luogo del personaggio con il numero di personaggio più alto."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale B in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 13
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35003.webp": {
+   "rivelato": [
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35004.webp": {
+   "rivelato": [
+    {
+     "tipo": "quadrante_lancio",
+     "graal": [
+      {
+       "tipo": "manuale",
+       "testo": "Guardiano: metti l'Incontro verde «Serpe del Sottobosco» nel Luogo rivelato con il numero più basso. Se ci sono personaggi lì, inizia immediatamente l'Incontro."
+      }
+     ],
+     "teschio": [
+      {
+       "tipo": "manuale",
+       "testo": "Guardiano: metti l'Incontro viola «Rivendicatore» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro."
+      }
+     ]
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35005.webp": {
+   "rivelato": [
+    {
+     "tipo": "quadrante_lancio",
+     "graal": [
+      {
+       "tipo": "manuale",
+       "testo": "Guardiano: metti l'Incontro grigio «Folla Inferocita» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro."
+      }
+     ],
+     "teschio": [
+      {
+       "tipo": "manuale",
+       "testo": "Guardiano: metti l'Incontro grigio «Cavaliere Errante» nel Luogo del personaggio con il numero di personaggio più alto."
+      }
+     ]
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35006.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Tira un dado per ogni Menhir attivo: con 5 o 6 riduci di 1 il Quadrante di quel Menhir."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/35007.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Preparazione aggiuntiva: metti un Incontro verde «Orso Anomalo» nel Luogo rivelato con il numero più basso adiacente a un personaggio, con 1 Gettone Tempo. L'Orso resta lì fino al prossimo Inizio della Giornata."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Sconfiggi l'«Orso Anomalo» segnato con un Gettone Tempo."
+    },
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 999,
+      "verso": 550
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/35008.webp": {
+   "rivelato": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 560
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/37000.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale B in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Il mercato di Farshire è famoso per la sua grande scelta di anticaglie e curiosità antiche."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "segreto",
+     "n": 58
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 10,
+      "parte": 2
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36834.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Rivendicazione",
+      "parti": []
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti la carta Capitolo 10: Parte 3 in cima al mazzo Eventi."
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Puoi ottenere questo Segreto cercando nelle miniere sotto la Devastazione (139)."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tutte": [
+      {
+       "tipo": "segreto",
+       "n": 14
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Hai portato la Pietra Anomala Pura (Segreto 14) a Orrin."
+      }
+     ]
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36835.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Incontro viola «Rivendicatore» nel Luogo del personaggio con il numero di personaggio più alto."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Questo nemico potrebbe essere troppo forte per te, almeno per ora. Ricorda che puoi sempre Scappare!"
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36912.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 11,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 11,
+     "lettera": null,
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Uomo di Muschio",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36836.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale G in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 66
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "risolvi_parte",
+       "capitolo": 11,
+       "parte": 2
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: aiuta Cuanacht Distrutta (121), aiuta Camelot Assediata (195) o aiuta il tuo alleato (Farshire, Timberwall o Crow's Nest)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36837.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Chiedi consiglio alla Dama Pallida (se è viva) o trova nella Casa di Ricovero sull'Isola (109) informazioni su come curarti."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Trova un modo per liberarti del Marchio Rosso prima che il tuo viaggio giunga alla fine."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36913.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 12,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 12,
+     "lettera": null,
+     "parti_dal_fondo": [
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Selkie",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     },
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "grigio",
+      "nome": "Folla Inferocita",
+      "luogo": "rivelato_numero_piu_alto",
+      "condizione": null
+     }
+    ],
+    "segreti": [
+     {
+      "n": 4,
+      "condizione": {
+       "una": [
+        {
+         "tipo": "giocatori",
+         "da": 2,
+         "a": 2
+        },
+        {
+         "tipo": "giocatori",
+         "da": 4,
+         "a": 4
+        }
+       ]
+      }
+     },
+     {
+      "n": 42,
+      "condizione": {
+       "una": [
+        {
+         "tipo": "giocatori",
+         "da": 2,
+         "a": 2
+        },
+        {
+         "tipo": "giocatori",
+         "da": 4,
+         "a": 4
+        }
+       ]
+      }
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "una": [
+        {
+         "tipo": "giocatori",
+         "da": 2,
+         "a": 2
+        },
+        {
+         "tipo": "giocatori",
+         "da": 4,
+         "a": 4
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "nota",
+        "testo": "L'isola entra nella sua ultima fase di agitazione!"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "carte/mazzo/36838.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale G in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: torna a Cuanacht Distrutta (121), a Camelot Assediata (195) o dal tuo alleato (Farshire 116, Timberwall 131 o Crow's Nest 160)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36914.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 13,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 13,
+     "lettera": null,
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Massacro",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     },
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "grigio",
+      "nome": "Folla Inferocita",
+      "luogo": "rivelato_numero_piu_alto",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36839.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale F in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 78
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "risolvi_parte",
+       "capitolo": 13,
+       "parte": 2
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [],
+     "almeno": 2
+    },
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Termina il Capitolo ora (verso 611 del Libro dei Segreti)",
+        "effetti": [
+         {
+          "tipo": "diario",
+          "luogo": 999,
+          "verso": 611
+         }
+        ]
+       },
+       {
+        "testo": "Più tardi (puoi farlo in qualsiasi momento)",
+        "effetti": []
+       }
+      ]
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36840.webp": {
+   "rivelato": [
+    {
+     "tipo": "nota",
+     "testo": "Nuova missione: scopri il destino finale di Re Artù. Questo segreto non è necessario per completare la Campagna!"
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36915.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 14,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 14,
+     "lettera": null,
+     "parti_dal_fondo": [
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 3,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Predecessore",
+      "luogo": "rivelato_numero_piu_alto",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Rivendicazione",
+       "parti": []
+      }
+     },
+     {
+      "giocatori": {
+       "da": 3,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Uomo di Muschio",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Rivendicazione",
+        "parti": []
+       }
+      }
+     }
+    ],
+    "segreti": [
+     {
+      "n": 4,
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 1,
+       "a": 1
+      }
+     },
+     {
+      "n": 42,
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 1,
+       "a": 1
+      }
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 1,
+       "a": 1
+      },
+      "allora": [
+       {
+        "tipo": "nota",
+        "testo": "L'isola entra nella sua ultima fase di agitazione!"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "carte/mazzo/36841.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale E in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Potresti trovare gruppi disposti a seguirti negli insediamenti rimasti, anche se forse prima dovrai guadagnarti la loro fiducia. Non potrai guidare due gruppi contemporaneamente!"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [],
+     "almeno": 1
+    },
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Termina il Capitolo ora (verso 622 del Libro dei Segreti)",
+        "effetti": [
+         {
+          "tipo": "diario",
+          "luogo": 999,
+          "verso": 622
+         }
+        ]
+       },
+       {
+        "testo": "Più tardi (puoi farlo in qualsiasi momento)",
+        "effetti": []
+       }
+      ]
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36916.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 15,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 15,
+     "lettera": null,
+     "parti_dal_fondo": [
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Rivendicatore",
+      "luogo": "rivelato_numero_piu_alto",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Rivendicazione",
+       "parti": []
+      }
+     },
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Predecessore",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Rivendicazione",
+        "parti": []
+       }
+      }
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36842.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale E in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Puoi restare in una qualsiasi comunità che hai aiutato a costruire, oppure intraprendere una missione impossibile, come tornare a Tuathan per sconfiggere i Predecessori o dirigerti verso le Terre Natie."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Scrivi il tuo epilogo: trova un finale adatto al tuo personaggio."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/34900.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Tutti i giocatori i cui Personaggi sono fuori dagli Insediamenti tirano un dado. Chi ottiene il risultato più basso (parità: numero di personaggio più alto) pesca immediatamente un Incontro verde; vi partecipano tutti i personaggi nello stesso Luogo."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  }
+ }
+}

@@ -1,0 +1,2172 @@
+{
+ "voci": {
+  "r:70257b360cdf": {
+   "effetti": []
+  },
+  "c:874eba9e6cb0": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 99
+   }
+  },
+  "r:b15d73365102": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:d3e42f3e7511": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "v:843": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:befb63bf3a9f": {
+   "effetti": []
+  },
+  "r:1c865665f462": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:74bdd9a0e89f": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "r:5d740dbdc9f4": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Non applicate la Ricompensa indicata sulla carta Incontro (sostituita da quanto segue)."
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:6c4ab7680303": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Non applicate la parte Fallimento della carta Incontro (sostituita da quanto segue)."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:7ab214e2c8cb": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Un qualsiasi membro della Compagnia ha 0 Aggressività"
+   }
+  },
+  "r:4a92c8b4f967": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:ff8372345909": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:2d36058b118f": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "v:850": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:a03263e145c3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:bfc7cba8c21d": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Esplorare Tuathan",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "q:e0eb52d26e72": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "spirituality",
+    "min": 3
+   }
+  },
+  "r:ae55d7a50bbf": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "r:243b69f8769b": {
+   "effetti": [
+    {
+     "tipo": "imposta",
+     "ris": "energia",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:b0ca65ef9d33": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Becco a Martello",
+     "livello": 3
+    }
+   ]
+  },
+  "r:90edb3662203": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "In questo Incontro non potete Fuggire e non ricevete alcuna Ricompensa o Bottino riportati sulla carta."
+    },
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Sosia",
+     "livello": 3
+    }
+   ]
+  },
+  "r:b590c1521e39": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:834cb874e5b7": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:59155cde7ecb": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:936aae6d724c": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Se siete in una Compagnia, scegliete un membro della Compagnia che risolverà il prossimo Verso."
+    }
+   ]
+  },
+  "r:7e30be2fb119": {
+   "effetti": []
+  },
+  "r:e439987cdf1f": {
+   "effetti": []
+  },
+  "r:17c2618cb61d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:068b3b82343c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:59c8b6380b78": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Esplorare Tuathan",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:e4492015d389": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:05d4d4b4d641": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "v:863": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:a53f06ce95f5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:a0e05955ecd8": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "c:7d6a48c2e525": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "c:64ea8ac98b32": {
+   "condizione": {
+    "tipo": "altrimenti"
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:cfad01c28161": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 3
+   }
+  },
+  "r:11b06f6728c1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:a41d9ddfa6bd": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 6
+   }
+  },
+  "r:393273b1aed8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:d2ab81df9b9c": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "r:ea736b0b82d1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:c04fb04f0b1c": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete deciso di Fuggire dall'Incontro"
+     }
+    ]
+   }
+  },
+  "r:0e06889ce4f3": {
+   "effetti": []
+  },
+  "r:3c6d75ce81ac": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:9c673a77d894": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Pagate il quantitativo di Salute che desiderate (annotatelo)."
+    }
+   ]
+  },
+  "r:892f501c17c1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:f8a0313920da": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:12c01481a04c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:1fcfe93e338c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Becco a Martello",
+     "livello": 3
+    }
+   ]
+  },
+  "r:781aa1887105": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:f05e234c2cab": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:29e2951d4b60": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "v:1135": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questi tiri non possono essere modificati in alcun modo."
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1136": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "q:e8b7b3ea5f53": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tiro",
+      "da": 5,
+      "a": 6
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete riottenuto questo risultato dopo aver già risolto un Incontro viola"
+     }
+    ]
+   }
+  },
+  "r:531762a1e7f8": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:32c7bd38844e": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ]
+  },
+  "v:1137": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1138": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1139": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1140": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1141": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1142": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questi tiri non possono essere modificati in alcun modo."
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1143": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "r:a90df884c121": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "pesca": 2
+    }
+   ]
+  },
+  "v:1144": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1145": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1146": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1147": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "v:1148": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "c:15f7ab2f1f4d": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "v:1150": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Entrando a Tuathan: mescolate le cinque carte Tuathan (199) in una pila col lato mappa a faccia in su; aggiungete la prima al Luogo da cui siete entrati (Riverfall o Timberwall), giratela, piazzatevi tutti i Personaggi, poi scartate tutte le altre carte Luogo, compresi i Menhir attivi."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Non potete lasciare Tuathan a meno che il Diario vi dica di farlo: nessun altro metodo di Viaggio o Movimento (compresi Oggetti come la Pergamena Intrisa d’Ombra) può portarvi via da Tuathan."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Le carte Luogo di Tuathan non sono collegate tra loro: per avanzare usate la seconda azione sul retro della carta Tuathan, che richiede Gettoni Cerca (ottenibili con la prima azione)."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Ogni carta Luogo di Tuathan modifica una regola base del gioco, da quando la girate sul lato regole fino a quando il vostro Personaggio la lascia."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Non ci sono Menhir a Tuathan; tutte le carte Luogo restano sul tavolo a meno che non vi venga chiesto di rimuoverle."
+    },
+    {
+     "tipo": "nota",
+     "testo": "A Tuathan gli Eventi Casuali pescati si scartano a faccia in giù senza risolverli (contano solo i giorni); gli Eventi della Storia numerati e gli Eventi speciali si risolvono normalmente."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Riposare a Tuathan (2-4 giocatori): mangiate 1 Cibo; se non potete o non volete, portate l’Energia a 0 (se è già 0, perdete 1 Salute). Poi tirate un dado (non modificabile) per la Salute e uno per il Terrore e applicate i risultati della tabella."
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "c:b8a264529805": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 2
+   }
+  },
+  "r:56c75ce00d5a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ottenete 1 punto della traccia per cui avete tirato (Salute o Terrore)."
+    }
+   ]
+  },
+  "r:bbea473fc0f4": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ottenete 2 punti della traccia per cui avete tirato (Salute o Terrore)."
+    }
+   ]
+  },
+  "c:20d6fad35533": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 5
+   }
+  },
+  "r:3747177254cc": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Perdete 1 punto della traccia per cui avete tirato (Salute o Terrore)."
+    }
+   ]
+  },
+  "r:48c2f2f3119a": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "1 Cibo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ]
+      },
+      {
+       "testo": "1 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ]
+      },
+      {
+       "testo": "1 Magia",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:fb0caef3dfbe": {
+   "effetti": []
+  },
+  "r:d2c411d93d26": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      2,
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:79079a915fb1": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 10
+    }
+   ]
+  },
+  "r:09e33bbb4ea8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:1e467f52e12f": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": []
+    }
+   }
+  },
+  "r:ff5b26ac3249": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "rimuovi": false,
+     "n": 13,
+     "nome": "Preda"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "segreto:13",
+     "valore": 1,
+     "gettone": "cerca"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Da questo momento siete seguiti da uno spietato cacciatore: vedi le regole della Preda (Luogo 301)."
+    }
+   ]
+  },
+  "r:65b856de7a0f": {
+   "effetti": []
+  },
+  "r:e1055bb842fd": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Il Personaggio marchiato dal Gettone Cerca perde 2 Salute e riceve la carta Segreto 78; poi scartate quel Gettone Cerca."
+    },
+    {
+     "tipo": "segreto",
+     "rimuovi": false,
+     "n": 78,
+     "nome": "Excalibur"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 5,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:e8be92f69e79": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: visitare Cuanacht Distrutta (121) e decidere se volete mantenere la promessa fatta al vostro alleato."
+    }
+   ]
+  },
+  "q:4bb42fe725d9": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Riparo in Mezzo alla Tempesta",
+    "parti": []
+   }
+  },
+  "r:239d251a9647": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 180
+    },
+    {
+     "tipo": "muovi",
+     "dove": 180,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "r:4e8d86f0b4cc": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scartate le risorse consumate."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "oggetto",
+      "nome": "Gatto Selvatico"
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "cibo",
+       "n": 2,
+       "chi": "diviso"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "oggetto",
+       "modo": "nome",
+       "n": 1,
+       "nome": "Gatto Selvatico"
+      }
+     ]
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:f0f7d8eb971a": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 3
+   }
+  },
+  "r:7fff1feabb6d": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete una nuova carta Luogo Tuathan casuale (dalla pila di Tuathan) alla vostra attuale carta Tuathan e spostatevi lì tutti i Personaggi."
+    }
+   ]
+  },
+  "r:472a09a6c0f7": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scartate le risorse consumate."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:b8f2349d9c66": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 180
+    },
+    {
+     "tipo": "muovi",
+     "dove": 180,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "r:7e77a99348ed": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 185
+    },
+    {
+     "tipo": "muovi",
+     "dove": 185,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:3efbecb4ab79": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scartate le risorse consumate."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "oggetto",
+      "nome": "Spada Runica"
+     },
+     "allora": [
+      {
+       "tipo": "oggetto",
+       "modo": "casuale",
+       "n": 1,
+       "parola": "Arma"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "oggetto",
+       "modo": "nome",
+       "n": 1,
+       "nome": "Spada Runica"
+      }
+     ]
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:e55cf32372d9": {
+   "effetti": []
+  },
+  "r:99995f4b60b5": {
+   "effetti": [
+    {
+     "tipo": "imposta",
+     "ris": "terrore",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:c7064ebee91c": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scartate le risorse consumate."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:b8542eaf5450": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Menhir Errante",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:baf6f4323240": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:b09f34c0d4c7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:76b92b934010": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Praticità + Empatia di Verme (+1 ogni 5 Rep di Verme) = 0-1"
+   }
+  },
+  "r:94e471177d61": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Folla Inferocita",
+     "livello": 4
+    }
+   ]
+  },
+  "r:eb1d24385ba4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "muovi",
+     "dove": "collegato_a:133",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:9932cd58677c": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Praticità + Empatia di Verme (+1 ogni 5 Rep di Verme) = 4+"
+   }
+  },
+  "r:6bafc514c4d9": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "status",
+       "nome": "Redenzione di Verme",
+       "parti": []
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 2,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Redenzione di Verme",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:ca353ef68513": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Nemico è Fuggito"
+     }
+    ]
+   }
+  },
+  "r:026f2a215615": {
+   "effetti": []
+  },
+  "r:21fc99685995": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "segreto",
+       "n": 11
+      }
+     },
+     "allora": [
+      {
+       "tipo": "segreto",
+       "rimuovi": false,
+       "n": 11
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Sapere Bruciato",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:8e23d72711a4": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 3,
+    "lettera": "B"
+   }
+  },
+  "r:cab8845baaf9": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Guerra di Avalon",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:bbfff2381301": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Guerra di Avalon",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 3,
+     "lettera": "B"
+    }
+   ]
+  },
+  "r:825087d30694": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Inaffidabile",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:2af58797eb8c": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "segreto",
+      "n": 11
+     }
+    ]
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso",
+     "per": {
+      "giocatori": true
+     }
+    },
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso",
+     "per": {
+      "giocatori": true
+     }
+    }
+   ]
+  },
+  "r:a9093c1a9fb6": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "menhir",
+       "luogo": "qui",
+       "quadrante": 6,
+       "meno_per_giocatore": false
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "giocatori",
+        "da": 3,
+        "a": 3
+       },
+       "allora": [
+        {
+         "tipo": "menhir",
+         "luogo": "qui",
+         "quadrante": 5,
+         "meno_per_giocatore": false
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "menhir",
+         "luogo": "qui",
+         "quadrante": 4,
+         "meno_per_giocatore": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+    }
+   ]
+  },
+  "r:5b17fbd5d284": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Scartate tutte le carte dalla pila della Cerca."
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "parte": 5
+    },
+    {
+     "tipo": "nota",
+     "testo": "Non cambiate la struttura del resto del mazzo Eventi."
+    }
+   ]
+  },
+  "c:eb33242eec2d": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:b9b5c1fbff8e": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Pira Fredda",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:f39d056122b0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    }
+   ]
+  },
+  "q:51ec0111f104": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Compito della Dama",
+      "parti": []
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ci sono meno di 3 Gettoni Tempo su questo Luogo"
+     }
+    ]
+   }
+  },
+  "r:2349e3821a70": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "rimuovi": false,
+     "n": 3,
+     "nome": "Maschera Sepolcrale"
+    }
+   ]
+  },
+  "c:e6d58fc32497": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Informazioni Inquietanti",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:8bbbe331cae7": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Informazioni Inquietanti",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:5da261f3f910": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 2
+   }
+  },
+  "r:3f9ec87caf8d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 66
+    }
+   ]
+  },
+  "r:1350ac264ed2": {
+   "effetti": []
+  },
+  "r:be9ecbd5c3c3": {
+   "effetti": []
+  },
+  "r:c6a74609d14e": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 214
+    }
+   ]
+  },
+  "r:ffeed9d53a2b": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia perde 6 Salute, ridotte della sua Cautela; può pagare fino a 3 Energia per ridurre il danno di 1 per ogni punto speso."
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": -1
+    }
+   ]
+  },
+  "r:5d0d03e93c4c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "B"
+    }
+   ]
+  },
+  "c:78a7a87ab1de": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Mistero Risolto",
+    "parti": []
+   }
+  },
+  "r:6b652d433067": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      },
+      {
+       "attr": "spirituality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:0224bbe4ee1a": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Ci sono 4 Gettoni Tempo su questa carta Luogo"
+   }
+  },
+  "r:60b41db97d96": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Mistero Risolto",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": -99
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 114
+    }
+   ]
+  },
+  "r:08eaeeb2d926": {
+   "effetti": []
+  },
+  "r:20f7cdadfc39": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "rimuovi": false,
+     "n": 17,
+     "nome": "Amuleto di Padre Cervo"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Scartate il Quadrante che rappresenta la Vergine Arciera."
+    }
+   ]
+  },
+  "r:382360816423": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 12
+    }
+   ]
+  },
+  "r:db10b896821c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:522cd6431ca2": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C’è un Gettone Tempo su questo Luogo"
+   }
+  },
+  "r:695f2efb278c": {
+   "effetti": []
+  },
+  "c:1be98c21a960": {
+   "condizione": {
+    "non": {
+     "tipo": "manuale",
+     "testo": "C’è un Gettone Tempo su questo Luogo"
+    }
+   }
+  },
+  "r:2aeb34844525": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "q:2fff7b31ad60": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    },
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:e7fa450671d5": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    }
+   ]
+  },
+  "q:f156f8100d1f": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     1
+    ]
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:35b47b2bb142": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Spiritualità + Empatia = 0-3"
+   }
+  },
+  "r:39b3ffccc322": {
+   "effetti": []
+  },
+  "r:f122ba28bf7f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:344eef02be44": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "segreto",
+      "n": 11
+     }
+    ]
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso",
+     "per": {
+      "giocatori": true
+     }
+    }
+   ]
+  },
+  "r:7eea9329cb21": {
+   "effetti": [
+    {
+     "tipo": "menhir",
+     "luogo": "qui",
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    }
+   ]
+  },
+  "q:c54f7074fd3b": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 58
+     },
+     {
+      "tipo": "capitolo",
+      "da": 11,
+      "a": 11
+     }
+    ]
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:3c7d62e8d09c": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      5
+     ]
+    }
+   }
+  },
+  "r:0912c2691868": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      7
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  }
+ }
+}

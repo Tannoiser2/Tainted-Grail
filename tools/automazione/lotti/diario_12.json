@@ -1,0 +1,946 @@
+{
+ "voci": [
+  {
+   "chiave": "c:58bdf5e82790",
+   "ruolo": "condizione",
+   "testo": "0-2 {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]"
+  },
+  {
+   "chiave": "r:374e7c922da4",
+   "ruolo": "risultato",
+   "testo": "Avete provato a forgiare qualcosa, ma avete usato troppo\npoco sangue. \n\nOttenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 462, scelta: 0-2 {i:health}"
+  },
+  {
+   "chiave": "c:48ef7466f2b5",
+   "ruolo": "condizione",
+   "testo": "3-5 {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]"
+  },
+  {
+   "chiave": "r:c29e705ab645",
+   "ruolo": "risultato",
+   "testo": "Avete indotto il vostro sangue a prendere la forma di meravigliosi rubini. \n\nOgni membro della Compagnia ottiene 1 {i:terror}. Ottenete 6 {r:Ricchezza}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 462, scelta: 3-5 {i:health}"
+  },
+  {
+   "chiave": "c:16be2fb0de92",
+   "ruolo": "condizione",
+   "testo": "6+ {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]"
+  },
+  {
+   "chiave": "r:1fecaf9917ba",
+   "ruolo": "risultato",
+   "testo": "Siete riusciti a costruire qualcosa di speciale! \n\nOttenete uno dei seguenti, se disponibile: Anello Strisciante (carta Segreto [b]39[/b]), Ciondolo del Predecessore (carta Segreto [b]44[/b]), l’Oggetto Spada Runica, l’Oggetto Armatura Eccellente, o 8 {r:Ricchezza}. Poi, ogni membro della Compagnia ottiene 1 {r:Rep} e 1 {r:Esp}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 462, scelta: 6+ {i:health}"
+  },
+  {
+   "chiave": "q:46aab544f1d4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]non avete[/b] la carta Segreto [b]“Scoperta della Felce Rossa”[/b] (47)",
+   "contesto": "Luogo 999 verso 463, scelta: Continua."
+  },
+  {
+   "chiave": "r:8e64ce7d36f7",
+   "ruolo": "risultato",
+   "testo": "Ogni Personaggio ottiene 2 {r:Esp} e una carta Segreto [b]“Scoperta della Felce Rossa” (47)[/b]. \n\n[b]Ricorda: [/b] questo Segreto ha effetto su tutti i Personaggi!\n\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 463, scelta: Continua."
+  },
+  {
+   "chiave": "r:5674a175dc7d",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {i:terror}, perde 2 {i:energy} e perde 2 {i:health}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 466, scelta: Continua."
+  },
+  {
+   "chiave": "r:f6b3f6352c0d",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere l’Incontro blu [b]“Convincere Lancillotto”[/b] al Verso 507.[/i]",
+   "contesto": "Luogo 999 verso 468, scelta: Continua."
+  },
+  {
+   "chiave": "r:a5b03cf4e9ac",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Matricidio”[/b].[/i]",
+   "contesto": "Luogo 999 verso 470, scelta: Continua."
+  },
+  {
+   "chiave": "c:432eb58a82f0",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 5 dello status [b]“Cosuil”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 471: "
+  },
+  {
+   "chiave": "r:e1cb6236eaf1",
+   "ruolo": "risultato",
+   "testo": "Vedete solo un bambino che gioca in un bosco.",
+   "contesto": "Luogo 999 verso 471, scelta: Se [b]avete[/b] la parte 5 dello status [b]“Cosuil”[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "c:e059c9f94479",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 4 dello status [b]“Cosuil”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 471: "
+  },
+  {
+   "chiave": "c:42c557741aeb",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 2 dello status [b]“Cosuil”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 471: "
+  },
+  {
+   "chiave": "c:352ec01bec2e",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 1 dello status [b]“Cosuil”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 471: "
+  },
+  {
+   "chiave": "r:4d5cf75966b5",
+   "ruolo": "risultato",
+   "testo": "The place suddenly breaks down. The water globe falls. The buildings collapse. What’s worse, your old wounds reopen, exhaustion sinks in, and your food spoils. \nEach Party member loses 2 {i:health} and gains 2 {i:terror}. Lose 1 {r:Food}per Party member. Gain 1 Quest Token. Exploration ends.",
+   "contesto": "Luogo 999 verso 474, scelta: Lanciare un Quadrante (se [b]avete[/b] la carta Segreto [b]78[/b], risolvere invece l’effetto Teschio):"
+  },
+  {
+   "chiave": "c:c2a1f7cf5bb7",
+   "ruolo": "condizione",
+   "testo": "[b]Graal[/b]",
+   "contesto": "Luogo 999 verso 474: Lanciare un Quadrante (se [b]avete[/b] la carta Segreto [b]78[/b], risolvere invece l’effetto Teschio):"
+  },
+  {
+   "chiave": "r:1324b174b59d",
+   "ruolo": "risultato",
+   "testo": "Si tratta di un luogo incredibile. Giocherellate per un po’ con la sua stupefacente capacità di riparare e ripristinare le cose. \n\nOgni membro della Compagnia ottiene 1 {i:health}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 474, scelta: [b]Graal[/b]"
+  },
+  {
+   "chiave": "c:e8001399cf9c",
+   "ruolo": "condizione",
+   "testo": "[b]Teschio[/b]",
+   "contesto": "Luogo 999 verso 474: Lanciare un Quadrante (se [b]avete[/b] la carta Segreto [b]78[/b], risolvere invece l’effetto Teschio):"
+  },
+  {
+   "chiave": "r:787084e8e7b4",
+   "ruolo": "risultato",
+   "testo": "Il luogo collassa all’improvviso. La sfera d’acqua cade a terra. Gli edifici crollano. Ma ciò che è peggio, è che le vostre vecchie ferite si riaprono, vi sentite fiaccati e il vostro cibo va a male. \n\nOgni membro della Compagnia perde 2 {i:health} e ottiene 2 {i:terror}. Perdete 1 Cibo per membro della Compagnia. Ottenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 474, scelta: [b]Teschio[/b]"
+  },
+  {
+   "chiave": "q:9a9f8ad28557",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se state giocando il [b]Capitolo 3A[/b][/i]",
+   "contesto": "Luogo 999 verso 475, scelta: Continua."
+  },
+  {
+   "chiave": "r:9245ef4d13f8",
+   "ruolo": "risultato",
+   "testo": "[i]Ricreate il mazzo Eventi: scartare tutte le carte Evento, trovate tutte le Parti del [b]Capitolo 3A[/b] e impilarle dalla 5 (in fondo) alla 1 (in cima). Poi, scartare le carte dalla cima del mazzo Eventi finché non avete in cima il [b]Capitolo 3A: Parte 3[/b]. Pescare e risolvere la carta [b]Capitolo 3A: Parte 3[/b].[/i]",
+   "contesto": "Luogo 999 verso 475, scelta: Continua."
+  },
+  {
+   "chiave": "r:8dbed60de1b0",
+   "ruolo": "risultato",
+   "testo": "[b]CONGRATULAZIONI![/b] Avete completato il vostro attuale Capitolo! Ogni Personaggio ottiene 2 {r:Esp}.\n\nScartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 3A[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!",
+   "contesto": "Luogo 999 verso 475, scelta: Continua."
+  },
+  {
+   "chiave": "c:a31f416e02af",
+   "ruolo": "condizione",
+   "testo": "Se non avete lo status [b]“Profondo Segreto”[/b]",
+   "contesto": "Luogo 999 verso 481: “C’è un uomo di nome Orrin... il discendente di Merlino, che ha raggiunto la città. Trovate il suo crannog, oltre le pianure sacre, a sud del luogo che la vos"
+  },
+  {
+   "chiave": "q:65e8959da1ea",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] lo status [b]“Profondo Segreto”[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 482, scelta: Continua."
+  },
+  {
+   "chiave": "r:bbc33c96e6f5",
+   "ruolo": "risultato",
+   "testo": "Ottenete 2 {r:Magia}.\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 482, scelta: Continua."
+  },
+  {
+   "chiave": "r:1ae57650d060",
+   "ruolo": "risultato",
+   "testo": "Ottenete lo status [b]“Profondo Segreto”[/b]. \nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 482, scelta: Continua."
+  },
+  {
+   "chiave": "q:a9ad8bda6d0f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] almeno 5 {r:Rep}",
+   "contesto": "Luogo 999 verso 486, scelta: Continua."
+  },
+  {
+   "chiave": "r:cef083ad08db",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete la parte 9 dello status [b]“Abbandonati”[/b], qualora ancora non lo abbiate. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 487, scelta: Continua."
+  },
+  {
+   "chiave": "r:0e0ce21e7e87",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 4 dello status [b]“Ultimo Rifugio”[/b]. Ogni Personaggio ottiene 2 {r:Esp}. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 488, scelta: Continua."
+  },
+  {
+   "chiave": "r:33d4981df378",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Ripristinare l’Ordine”[/b]. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 489, scelta: [b]Convincere Agravain che ora deve tornare a casa[/b]"
+  },
+  {
+   "chiave": "r:6f5be09dc375",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Caduta della Cavalleria”[/b]. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 489, scelta: [b]Convincere Agravain che deve proseguire nella sua cerca[/b]"
+  },
+  {
+   "chiave": "r:4b26b7c9d87c",
+   "ruolo": "risultato",
+   "testo": "[b]Nuovo Compito: [/b] tornare da Orrin per scoprirne di più su Tuathan.\n\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 490, scelta: Continua."
+  },
+  {
+   "chiave": "c:2f8b3b6ce34f",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 1 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:13b5d6745aa2",
+   "ruolo": "risultato",
+   "testo": "Ricominciare la Campagna.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 1 [/b]"
+  },
+  {
+   "chiave": "c:3aea0165b8a4",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 2 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:faf5409e0d19",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]107[/b] o il Luogo [b]106[/b] (sceglierne solo uno), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sull’[b]8[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}, e perde tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 2 [/b]"
+  },
+  {
+   "chiave": "c:973757ecd973",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 3A [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:f5903ce619b0",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]115[/b] (o il Luogo[b] 125[/b], se il Luogo [b]115[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo} e {r:Magia} e a 1 la {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 3A [/b]"
+  },
+  {
+   "chiave": "c:4ea90db19f65",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 3B [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:bc6d9a4b2cc9",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]111[/b], piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 la propria {r:Magia} e {r:Ricchezza} e a 1 il {r:Cibo}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 3B [/b]"
+  },
+  {
+   "chiave": "c:70b58a036eb9",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 4A [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:7d1ff7832667",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]115[/b] (o il Luogo [b]125[/b], se il Luogo [b]115[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 4A [/b]"
+  },
+  {
+   "chiave": "c:3de84e8d0567",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 4B [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:664fb4350b14",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo[b] 111[/b], piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocato- re). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e{r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 4B [/b]"
+  },
+  {
+   "chiave": "c:c33a4476518b",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 5 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:6ba70a5ec30c",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]135[/b] (o il Luogo[b] 148[/b], se il Luogo[b] 135[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde tutti gli {r:Esp} e scarta tutti gli Oggetti tranne 1.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 5 [/b]"
+  },
+  {
+   "chiave": "c:0ac34260aab5",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 6 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:27cc76919584",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo[b] 132[/b] o [b]155 [/b] (sceglierne solo uno), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 1 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 6 [/b]"
+  },
+  {
+   "chiave": "c:7841c135d77b",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 7 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:681331f73667",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]118[/b], piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 7 [/b]"
+  },
+  {
+   "chiave": "c:e919641ff201",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 8 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:58edf2aefd74",
+   "ruolo": "risultato",
+   "testo": "Preparare lo spazio di gioco come descritto al Verso 605. Poi, ogni Personaggio riporta a 6 il proprio {r:Cibo} e {r:Magia} e a 2 la {r:Ricchezza}. Ogni Personaggio perde tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 8 [/b]"
+  },
+  {
+   "chiave": "c:63953a85d63b",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 9 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:2d0c4984c057",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo[b] 185[/b] e piazzarvi tutti i Personaggi. Poi, ogni Personaggio riporta a 10 il proprio{r:Cibo} e {r:Magia} e a 2 la {r:Ricchezza}. Ogni Personaggio perde tutti gli Esp. Ottenete l’Oggetto [b]“Bevanda Intorpidente”[/b] (solo 1, a prescindere dal nu- mero di giocatori).\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 9 [/b]"
+  },
+  {
+   "chiave": "c:f997863164ce",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 10 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:05c130f2987c",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]132,[/b] piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 3 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta e tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 10 [/b]"
+  },
+  {
+   "chiave": "c:c5eb5e2eb319",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 11 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:d1c22133ed07",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]111[/b], piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul[b] 7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 3 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta e tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 11 [/b]"
+  },
+  {
+   "chiave": "c:7f8bb2e8bd42",
+   "ruolo": "condizione",
+   "testo": "[b]Capitolo 12-15 [/b]",
+   "contesto": "Luogo 999 verso 500: Siete caduti vittima dei pericoli di Avalon e avete dovuto interrompere la vostra cerca. Tuttavia, questa non è la fine della vostra saga. La Madre di Tutto in"
+  },
+  {
+   "chiave": "r:3d0525c87f8b",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]121[/b] o [b]132[/b] o [b]140[/b] (sceglierne solo uno), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 3 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta e tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 12-15 [/b]"
+  },
+  {
+   "chiave": "r:349959f113a4",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 8 dello status [b]“Ripristinare l’Ordine”[/b]. \n\n[b]Nuovo Compito:[/b] ritornare a [b]Camelot (190)[/b] e partecipare all’incontro della Tavola Rotonda per concludere questa trama.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 512, scelta: Continua."
+  },
+  {
+   "chiave": "q:f4c39035c9c0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {r:Magia}[/i]",
+   "contesto": "Luogo 999 verso 515, scelta: [b]Infondere il vostro potere nel Menhir[/b]"
+  },
+  {
+   "chiave": "q:5532ea4a0eaf",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scegliere un Personaggio che cercherà di farlo e piazzare un Gettone Cerca sulla sua Plancia Personaggio a contrassegnare questa scelta.[/i]",
+   "contesto": "Luogo 999 verso 520, scelta: [b]Cambiare idea e tentare di estrarre la spada.[/b]"
+  },
+  {
+   "chiave": "r:cf85568cb837",
+   "ruolo": "risultato",
+   "testo": "Lasciate la stanza e poi la cittadella. Questa\nvicenda non vi riguarda.",
+   "contesto": "Luogo 999 verso 520, scelta: [b]Non fare nulla e andarsene[/b] (a questo modo si pone fine al Capitolo!)"
+  },
+  {
+   "chiave": "c:3a99f3ff824f",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 2 dello status [b]“Apripista”[/b] e [b]non avete[/b] la parte 2 dello status [b]“Confronti Finali”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 521: Raggiungete un’ala chiusa del castello e scoprite che ospita molte donne di ogni età. A tutte quante sono stati tinti i capelli di nero. Mentre entrate nel lor"
+  },
+  {
+   "chiave": "c:68cc31ade3fc",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 3 dello status [b]“Apripista”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 521: Raggiungete un’ala chiusa del castello e scoprite che ospita molte donne di ogni età. A tutte quante sono stati tinti i capelli di nero. Mentre entrate nel lor"
+  },
+  {
+   "chiave": "r:a69b1eaa7777",
+   "ruolo": "risultato",
+   "testo": "Vi ritirate dallo studio. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 521, scelta: Altrimenti, scegliere questa opzione."
+  },
+  {
+   "chiave": "r:c4f2f4e73512",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Esp} e 3 {r:Rep}. [/i]",
+   "contesto": "Luogo 999 verso 522, scelta: Continua."
+  },
+  {
+   "chiave": "r:132f4d20734c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Risolvere l’Incontro verde [b]“Vergine del Pantano”[/b] (Difficoltà 3).\n\nPoi, l’Esplorazione termina – anche altri corpi iniziano a rianimarsi, e sono troppo numerosi da affrontare. Dovete fare ritorno più tardi.[/i]",
+   "contesto": "Luogo 999 verso 524, scelta: Continua."
+  },
+  {
+   "chiave": "r:6691dc99174d",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 8 dello status [b]“Caduta della Cavalleria”[/b].\n\n[b]Nuovo Compito:[/b] ritornare al Borgo Infettato ([b]138[/b]) o al Borgo Tranquillo ([b]142[/b]) e partecipare al Consiglio dei Comuni per concludere questa trama.",
+   "contesto": "Luogo 999 verso 525, scelta: Continua."
+  },
+  {
+   "chiave": "r:7a75053f8969",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {i:health}  , perde 2 {i:energy} e ottiene 2 {r:Esp}. Poi, risolvere l’Incontro viola [b]“Slaugh”[/b] (Difficoltà 4). Iniziare il Combattimento con 4 segnalini nella Riserva di Combattimento. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 526, scelta: Continua."
+  },
+  {
+   "chiave": "c:33cad766c6df",
+   "ruolo": "condizione",
+   "testo": "Fatto",
+   "contesto": "Luogo 999 verso 530: Fate fatica a ricordare cosa sia accaduto in seguito. Il cielo blu del mondo degli umani era così vicino, ma la vostra forza è svanita più rapidamente. Alla "
+  },
+  {
+   "chiave": "r:04eb8182f982",
+   "ruolo": "risultato",
+   "testo": "Ogni giocatore scarta tutti gli Oggetti tranne 2 (non includete i Segreti tra questi Oggetti!). Ogni Personaggio ottiene 4 {i:health}, perde 4 {i:terror} e ripristina al massimo la propria {i:energy}. Ottenete lo status [b]“Venti dell’Anomalia”[/b]. Scartate la carta Segreto [b]“Riposo Disturbato” (67)[/b].",
+   "contesto": "Luogo 999 verso 530, scelta: Fatto"
+  },
+  {
+   "chiave": "r:521d5a7f9f08",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio con meno di 2 {i:courage} ottiene 1 {i:terror}.[/i]",
+   "contesto": "Luogo 999 verso 531, scelta: Continua."
+  },
+  {
+   "chiave": "r:9ac4362a059e",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio ottiene 1 {i:terror} e 2 {r:Esp}. Scartare la carta Segreto [b]14[/b]. Ottenete la carta Segreto [b]15[/b].[/i]",
+   "contesto": "Luogo 999 verso 533, scelta: Continua."
+  },
+  {
+   "chiave": "r:73e5d4cd067f",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere l’Incontro grigio speciale [b]“Re Artù”[/b] al Verso 609.[/i]",
+   "contesto": "Luogo 999 verso 541, scelta: Continua."
+  },
+  {
+   "chiave": "r:497bdda6c33f",
+   "ruolo": "risultato",
+   "testo": "Qui ci sono tanti beni incustoditi! \nOttenete 6 {r:Ricchezza}, 4 {r:Cibo}, e 2 Oggetti. Ogni membro della Compagnia ottiene 1 {i:terror}  per ogni punto di {i:empathy} che possiede. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 550, scelta: [b]Derubarla[/b]"
+  },
+  {
+   "chiave": "r:682054b6e40a",
+   "ruolo": "risultato",
+   "testo": "Uccidere un orso anomalo non è un’impresa da poco. Meritate una ricompensa. \nOttenete 3 {r:Ricchezza} e 1 Oggetto. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 550, scelta: [b]Richiedere una giusta ricompensa[/b]"
+  },
+  {
+   "chiave": "r:0b8920276bfb",
+   "ruolo": "risultato",
+   "testo": "La sua vita è già difficile così com’è. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 550, scelta: [b]Salutare e andarsene[/b]"
+  },
+  {
+   "chiave": "r:a37ed7ba3f26",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {i:energy}  e ottiene 1 {i:terror}. Ottenete la parte 5 dello status [b]“Caduta della Cavalleria”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 551, scelta: [b]Fuggire[/b] - Agravain si scaglia contro la vostra codardia e si getta da solo in combattimento."
+  },
+  {
+   "chiave": "r:8f32624eaf07",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Caduta della Cavalleria”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 551, scelta: [b]Combattere[/b] - [i]Pescare e risolvere l’Incontro viola [b]“Rivendicatore” [/b] (Difficoltà 4). Piazzare 6 segnalini nella Riserva di Combattimento all’ini"
+  },
+  {
+   "chiave": "r:bf0b59f1d7e4",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde tutta la {i:energy}. Ottenete la parte 5 dello status [b]“Confronti Finali”[/b]. [/i]",
+   "contesto": "Luogo 999 verso 553, scelta: Continua."
+  },
+  {
+   "chiave": "r:f78aee14cf9a",
+   "ruolo": "risultato",
+   "testo": "Scegliere un Personaggio che cercherà di farlo e piazzare un Gettone Cerca sulla sua Plancia Personaggio a contrassegnare questa scelta.",
+   "contesto": "Luogo 999 verso 555, scelta: [b]Recuperare Excalibur come richiesto da Artù[/b]"
+  },
+  {
+   "chiave": "c:19ba25819b53",
+   "ruolo": "condizione",
+   "testo": "[b]Salvarsi la vita[/b]",
+   "contesto": "Luogo 999 verso 560: Ogni Personaggio ottiene 2 {i:terror}, perde 1 Oggetto e 2 {r:Magia}. Poi, ogni membro della Compagnia deve scegliere una delle seguenti opzioni, in qualsiasi o"
+  },
+  {
+   "chiave": "r:9046f480ccaa",
+   "ruolo": "risultato",
+   "testo": "Tenere un ammontare totale di {r:Ricchezza} e {r:Cibo} pari alla somma dei suoi due Attributi più alti. Scartare il resto.",
+   "contesto": "Luogo 999 verso 560, scelta: [b]Salvarsi la vita[/b]"
+  },
+  {
+   "chiave": "c:e097844f01eb",
+   "ruolo": "condizione",
+   "testo": "[b]Salvare i propri beni[/b]",
+   "contesto": "Luogo 999 verso 560: Ogni Personaggio ottiene 2 {i:terror}, perde 1 Oggetto e 2 {r:Magia}. Poi, ogni membro della Compagnia deve scegliere una delle seguenti opzioni, in qualsiasi o"
+  },
+  {
+   "chiave": "r:445e699f98e9",
+   "ruolo": "risultato",
+   "testo": "Perdere 8 {i:health} meno il valore del suo Attributo più alto. Non può tenere più di 16 {r:Ricchezza} e {r:Cibo}, scartare il resto.",
+   "contesto": "Luogo 999 verso 560, scelta: [b]Salvare i propri beni[/b]"
+  },
+  {
+   "chiave": "c:c6ee2b0e1a0d",
+   "ruolo": "condizione",
+   "testo": "{r:Salvare i propri amici}",
+   "contesto": "Luogo 999 verso 560: Ogni Personaggio ottiene 2 {i:terror}, perde 1 Oggetto e 2 {r:Magia}. Poi, ogni membro della Compagnia deve scegliere una delle seguenti opzioni, in qualsiasi o"
+  },
+  {
+   "chiave": "r:394c3d8aab28",
+   "ruolo": "risultato",
+   "testo": "Perdere 2 {i:health}. Tenere un ammontare totale di {r:Ricchezza} e {r:Cibo} pari al suo Attributo più alto. Un Personaggio di vostra scelta non deve scegliere un’opzione da questa lista.",
+   "contesto": "Luogo 999 verso 560, scelta: {r:Salvare i propri amici}"
+  },
+  {
+   "chiave": "r:4e151c688b46",
+   "ruolo": "risultato",
+   "testo": "Piazzare l’Evento Speciale A in cima al mazzo Eventi. Poi, piazzare 7 (-1 per giocatore) Eventi Casuali in cima a esso.\n\nContinuare la partita.",
+   "contesto": "Luogo 999 verso 560, scelta: Tutti i giocatori hanno scelto"
+  },
+  {
+   "chiave": "r:37c2de3bf043",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror} e 1 {r:Esp}.[/i]",
+   "contesto": "Luogo 999 verso 571, scelta: Continua."
+  },
+  {
+   "chiave": "c:c30ad7f922d2",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]1-2[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango"
+  },
+  {
+   "chiave": "c:86d6e355c60a",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]3[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango"
+  },
+  {
+   "chiave": "r:d35ae01bd107",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Intensificazione”[/b].[/i].",
+   "contesto": "Luogo 999 verso 605, scelta: Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]3[/b], scegliere questa opzione"
+  },
+  {
+   "chiave": "c:653962b9f674",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]4[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango"
+  },
+  {
+   "chiave": "r:a924f0bedc67",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Intensificazione”[/b].[/i].",
+   "contesto": "Luogo 999 verso 605, scelta: Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]4[/b], scegliere questa opzione"
+  },
+  {
+   "chiave": "c:cc970a8682e4",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]5+[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango"
+  },
+  {
+   "chiave": "r:2fabdc6158ea",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status [b]“Intensificazione”[/b].[/i].",
+   "contesto": "Luogo 999 verso 605, scelta: Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]5+[/b], scegliere questa opzione"
+  },
+  {
+   "chiave": "r:8cf5eed5143b",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare la carta Segreto ([b]13[/b]) [b]“Preda”[/b][/i]\n Il vostro inseguitore non entrerà nella città.\n[i]Rimuovere la miniatura Predecessore dal gioco. Rimescolare la carta Predecessore nel mazzo Incontri viola..[/i]",
+   "contesto": "Luogo 999 verso 605, scelta: [b]Regole di Tuathan[/b]"
+  },
+  {
+   "chiave": "c:8713ba0a7294",
+   "ruolo": "condizione",
+   "testo": "Quando l'Incontro finisce, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 609: [i]Premi il tasto {i:encounter} in alto sullo schermo per visualizzare la Carta Incontro.\n\nNon potete Fuggire da questo Combattimento, neppure come risultato de"
+  },
+  {
+   "chiave": "r:a808f7b97c2d",
+   "ruolo": "risultato",
+   "testo": "Prima di lasciare il castello, deponete il Graal nell’incavo sopra il trono. \n\nScartare la carta Segreto [b]“Vero Graal” (7)[/b].",
+   "contesto": "Luogo 999 verso 610, scelta: [b]Abbandonare il Graal, come vi ha chiesto la Dama Pallida [/b]"
+  },
+  {
+   "chiave": "r:d4e3d1a8a313",
+   "ruolo": "risultato",
+   "testo": "[b]CONGRATULAZIONI![/b] Avete completato il vostro attuale Capitolo! Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 14[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!",
+   "contesto": "Luogo 999 verso 611, scelta: Continua."
+  },
+  {
+   "chiave": "q:aa5dc6130b6a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se avete la carta Segreto [b]“Vero Graal” (7) O [/b]se non avete la carta Segreto [b]“Excalibur” (78)[/b]",
+   "contesto": "Luogo 999 verso 612, scelta: Continua."
+  },
+  {
+   "chiave": "r:92cc47ea70c6",
+   "ruolo": "risultato",
+   "testo": "Avvertite qualcosa che ancora si agita attorno a voi a Tuathan – Ottenete lo status [b]“Rivendicazione”[/b] e la carta Segreto [b]4[/b].\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 612, scelta: Continua."
+  },
+  {
+   "chiave": "q:e5e483a1e59e",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Volete procedere al Capitolo finale di questa Campagna?",
+   "contesto": "Luogo 999 verso 622, scelta: Continua."
+  },
+  {
+   "chiave": "r:2bda0912c79c",
+   "ruolo": "risultato",
+   "testo": "Proseguire la partita.\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 622, scelta: Continua."
+  },
+  {
+   "chiave": "r:6d49a3492fd3",
+   "ruolo": "risultato",
+   "testo": "Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 15[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!",
+   "contesto": "Luogo 999 verso 623, scelta: Continua."
+  },
+  {
+   "chiave": "q:ffcd970fd859",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 10 {r:Ricchezza}e 1 {i:energy}[/i]",
+   "contesto": "Luogo 999 verso 630, scelta: [b]Fondere i vostri preziosi per riparare il recipiente[/b]"
+  },
+  {
+   "chiave": "r:c0a597ff326b",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status [b]“Calderone Nero”[/b], poi prendere un’altra scelta.[/i]",
+   "contesto": "Luogo 999 verso 630, scelta: [b]Fondere i vostri preziosi per riparare il recipiente[/b]"
+  },
+  {
+   "chiave": "q:ae3fc6e073a0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la parte 3 dello status [b]“Calderone Nero”[/b][/i]",
+   "contesto": "Luogo 999 verso 630, scelta: [b]Tentare di usare il calderone[/b]"
+  },
+  {
+   "chiave": "r:867c6fd46ec7",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado e sommare la vostra {i:aggression}: ottenete quel quantitativo di {r:Ricchezza}.[/i]",
+   "contesto": "Luogo 999 verso 643, scelta: [b]Darsi al saccheggio.[/b]"
+  },
+  {
+   "chiave": "r:7b9550297b86",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Rituale della Valle”[/b]. Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 651, scelta: Continua."
+  },
+  {
+   "chiave": "q:b5bdd94d9f06",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ogni membro della Compagnia paga 2 {i:energy}[/i]",
+   "contesto": "Luogo 999 verso 652, scelta: [b]Gettarsi nella galleria allagata[/b]"
+  },
+  {
+   "chiave": "r:6082ae35209a",
+   "ruolo": "risultato",
+   "testo": "Aggiungere la carta Tenacia di Orrin[b] (180)[/b] alla vostra attuale carta Tuathan e spostare lì tutti i Personaggi. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 665, scelta: Continua."
+  },
+  {
+   "chiave": "r:6ed7816fec3a",
+   "ruolo": "risultato",
+   "testo": "Vi sentite troppo deboli pe raffrontare questo terribile nemico. Disperati, decidete di sacrificare tutto ciò che avete a qualsiasi dio conosciate. L’anomalia si avvolge attorno ai vostri corpi. Vi sentite rinvigoriti. \n\nOgni Personaggio scarta tutte le sue risorse, ripristina tutta la {i:health}  e perde tutto il {i:terror}. Poi, prendere un’altra scelta.",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Preghiera disperata[/b]"
+  },
+  {
+   "chiave": "r:ff0f92afde13",
+   "ruolo": "risultato",
+   "testo": "Ottenete 10 {r:Magia}. Ogni membro della Compagnia ottiene 3 {i:health}. Poi, prendere un’altra scelta.",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Attingere magia dalla massa di anime raffinata[/b] (scartare la carta Segreto[b] 18[/b]) – Non ne avrete più bisogno dopo questo scontro."
+  },
+  {
+   "chiave": "r:504c9453317d",
+   "ruolo": "risultato",
+   "testo": "Risolvere l’Incontro viola [b]“Predecessore”[/b] (Difficoltà 4). Se avete qualsiasi parte dello status “[b]Intensificazione”[/b], l’Incontro che segue ottiene i seguenti Tratti:\n\n[b]parte 1 [/b]– Ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione.\n\n[b]parte 2[/b] – Ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione. Ogni Personaggio è preda del Panico per l’intero Incontro, a prescindere dal suo {i:terror}.\n\n[b]parte 3[/b] – Ogni Personaggio può giocare al massimo 2 carte durante la propria Attivazione. Ogni Personaggio è preda del Panico per l’intero Incontro, a prescindere dal suo {i:terror}.\n\n[b]Poi verificare il risultato![/b]",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Combattere[/b]"
+  },
+  {
+   "chiave": "r:3ab8786fef08",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia ottiene 2 {r:Esp}.",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Verificare il risultato (solo quando l'incontro è finito)[/b]"
+  },
+  {
+   "chiave": "r:7ec42b08e8dc",
+   "ruolo": "risultato",
+   "testo": "l’Esplorazione termina – I Personaggi restano sull’ultima carta Tuathan rivelata e do- vranno Esplorare di nuovo Tuathan fino a che non avranno ottenuto sufficienti Gettoni Cerca per tornare nella Valle e vincere lo scontro.",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Verificare il risultato (solo quando l'incontro è finito)[/b]"
+  },
+  {
+   "chiave": "c:6df4d1515688",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 3 dello status [b]“Calderone Nero”[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 692: Vi gettate nelle acque nere come la pece. La nuotata non è lunga, ma è un’esperienza estenuante – qualcosa di viscido scivola sulla vostra pelle, mentre l’acq"
+  },
+  {
+   "chiave": "c:676f029526a0",
+   "ruolo": "condizione",
+   "testo": "Se ne siete sprovvisti, ma [b]avete[/b] la parte 2 dello status [b]“Calderone Nero”[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 692: Vi gettate nelle acque nere come la pece. La nuotata non è lunga, ma è un’esperienza estenuante – qualcosa di viscido scivola sulla vostra pelle, mentre l’acq"
+  },
+  {
+   "chiave": "q:9ef5c4bfd20d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se perdete",
+   "contesto": "Luogo 999 verso 696, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "r:8a9c19305110",
+   "ruolo": "risultato",
+   "testo": "L’Esplorazione termina. I Personaggi restano sull’ultima carta Tuathan rivelata e dovranno Esplorare di nuovo Tuathan finché non avranno raccolto sufficienti Gettoni Cerca per tornare alla Valle e vincere.",
+   "contesto": "Luogo 999 verso 696, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "c:54b427b8ee92",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 7 dello status [b]“Confronti Finali”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 700: Così, termina la vostra storia. Dalla povertà della vostra tenuta rurale, avete attraversato foreste, colline, città e corti, percorrendo campi di battaglia "
+  },
+  {
+   "chiave": "c:a3f556a7201e",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 8 dello status [b]“Abbandonati”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 700: Così, termina la vostra storia. Dalla povertà della vostra tenuta rurale, avete attraversato foreste, colline, città e corti, percorrendo campi di battaglia "
+  },
+  {
+   "chiave": "r:8387e3e15bc3",
+   "ruolo": "risultato",
+   "testo": "[i][b]Suggerimento: [/b]distruggere o sbarrare la vostra Scheda Salvataggio. Solo le saghe completate senza alcun aiuto vanno portate nelle prossime campagne.[/i]",
+   "contesto": "Luogo 999 verso 701, scelta: Continua."
+  },
+  {
+   "chiave": "c:7c00cbf9fc63",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 8 dello status [b]“Ripristinare l’Ordine”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 710: La fiducia data dalla popolazione di Cuanacht ai loro campioni è stata infine ripagata. Senza il Menhir, la città era perduta, ma la sua popolazione e le sue "
+  },
+  {
+   "chiave": "c:dc4a881df446",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Campione del Popolo”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 710: La fiducia data dalla popolazione di Cuanacht ai loro campioni è stata infine ripagata. Senza il Menhir, la città era perduta, ma la sua popolazione e le sue "
+  },
+  {
+   "chiave": "q:845d3451affa",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "ciò pone fine alla Campagna!",
+   "contesto": "Luogo 999 verso 713, scelta: [b]Seguire i cavalieri [/b]"
+  },
+  {
+   "chiave": "q:59a1dd7ac951",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Are you sure? Settling in with your Crude Menhir in your allied city will finish this Campaign.",
+   "contesto": "Luogo 999 verso 715, scelta: [i]Ne siete sicuri? Stabilirvi con il vostro Rozzo Menhir nella vostra città alleata porrà fine alla Campagna[/i]"
+  },
+  {
+   "chiave": "r:7f0c5be07e1e",
+   "ruolo": "risultato",
+   "testo": "Gain the [b]“End of the road”[/b] status",
+   "contesto": "Luogo 999 verso 715, scelta: [i]Ne siete sicuri? Stabilirvi con il vostro Rozzo Menhir nella vostra città alleata porrà fine alla Campagna[/i]"
+  },
+  {
+   "chiave": "r:bb6080401b5f",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status[b] “Fine della Strada”[/b].[/i]",
+   "contesto": "Luogo 999 verso 715, scelta: [b]Sì [/b]"
+  },
+  {
+   "chiave": "r:297caae1db66",
+   "ruolo": "risultato",
+   "testo": "[i] Ogni membro della Compagnia ottiene 2 {i:health}  e perde 2 {i:terror}. Poi, l'Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 733, scelta: [b]Meditare dinnanzi al manufatto[/b]"
+  },
+  {
+   "chiave": "r:c10900091e7b",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere tutti i Gettoni Cerca da questo Luogo. Aggiungere il Luogo [b]155[/b] (Foresta dei Sussurri) al suo lato sinistro. Spostare lì tutti i Personaggi. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 734, scelta: Continua."
+  },
+  {
+   "chiave": "c:14d8f8a90f16",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Matricidio”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 745: "
+  },
+  {
+   "chiave": "c:73df61216682",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Rivendicazione”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 745: "
+  },
+  {
+   "chiave": "c:0598c21bfc89",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] meno di 2 parti dello status [b]“Resti”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 745: "
+  },
+  {
+   "chiave": "r:3a3cea5b662d",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Sconfitti e Caduti”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 748, scelta: Continua."
+  },
+  {
+   "chiave": "r:66e620040318",
+   "ruolo": "risultato",
+   "testo": "Ottenete la carta Segreto[b] 90[/b]. Piazzare 1 Gettone Cerca su questa carta Luogo.\n\n[b]Suggerimento: [/b] potete trovare altre due carte di cui avrete bisogno nelle altre due campagne: L’Ultimo Cavaliere e l’Età delle Leggende. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 756, scelta: Continua."
+  },
+  {
+   "chiave": "c:1bd117c08616",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] almeno 4 parti dello status [b]“Resti”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 760: "
+  },
+  {
+   "chiave": "c:935cd5b03e0c",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] lo status[b] “Fine della Strada”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 760: "
+  },
+  {
+   "chiave": "c:38250da56227",
+   "ruolo": "condizione",
+   "testo": "Altrimenti, , scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 760: "
+  },
+  {
+   "chiave": "r:0f960843298e",
+   "ruolo": "risultato",
+   "testo": "La vostra nuova dimora resiste all’anomalia, grazie anche alla forza dei suoi difensori temprati dalle battaglie e dalla saggia guida dei suoi capi. Venite celebrati fino alla vostra morte, mentre il vostro rozzo Menhir è orgogliosamente collocato al centro dell’insediamento – a dimostrazione che gli umani riusciranno sempre ad avere la meglio anche nelle situazioni più disperate. Una speranza per un futuro migliore",
+   "contesto": "Luogo 999 verso 760, scelta: Altrimenti, , scegliere questa opzione."
+  },
+  {
+   "chiave": "q:52fd1b19205c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se ci sono 2-4 giocatori[/i]",
+   "contesto": "Luogo 999 verso 777, scelta: Continua."
+  },
+  {
+   "chiave": "r:82c0b47f60ce",
+   "ruolo": "risultato",
+   "testo": "[i][b]CONGRATULAZIONI![/b] Avete completato il vostro attuale Capitolo! Ogni Personaggio ottiene 2{r:Esp}. Ottenete la carta Segreto [b]4[/b] e la carta Segreto [b]42[/b], qualora non le abbiate già. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 13[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 777, scelta: Continua."
+  },
+  {
+   "chiave": "r:a8e900892f87",
+   "ruolo": "risultato",
+   "testo": "[i][b]CONGRATULAZIONI! Avete completato il vostro attuale Capitolo! Ogni Personaggio ottiene 2 Esp. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 13[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!\nL’Esplorazione termina.[/i][/b]",
+   "contesto": "Luogo 999 verso 777, scelta: Continua."
+  },
+  {
+   "chiave": "c:429d2e930d12",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Salvati dalla Dea”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 780: "
+  },
+  {
+   "chiave": "c:6d2073254f42",
+   "ruolo": "condizione",
+   "testo": "La fine!",
+   "contesto": "Luogo 999 verso 801: Grazie per aver giocato!\n\n[b]Tainted Grail: Campagna La Caduta di Avalon[/b] \n[b]Scrittore principale: [/b]Krzysztof Piskorski\n[b]Scrittori aggiuntivi:[/b] Andr"
+  },
+  {
+   "chiave": "r:254fece98abf",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status[b] “Guerra di Avalon”[/b], se già [b]non lo avete[/b]. Ogni membro della Compagnia ottiene 1 {r:Esp}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 1117, scelta: Continua."
+  },
+  {
+   "chiave": "c:287452714596",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 1-3.",
+   "contesto": "Luogo 999 verso 1142: Verificate il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:fb6a9a3d019a",
+   "ruolo": "risultato",
+   "testo": "[i]Non accade nulla. Prendere un'altra scelta[/i]",
+   "contesto": "Luogo 999 verso 1142, scelta: Il vostro risultato è stato: 1-3."
+  },
+  {
+   "chiave": "c:42641642ac92",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 4-5.",
+   "contesto": "Luogo 999 verso 1142: Verificate il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:d8e00051def1",
+   "ruolo": "risultato",
+   "testo": "[i]Posizionare 1 Gettone Tempo su questa carta Locazione, prendere un'altra scelta.[/i]",
+   "contesto": "Luogo 999 verso 1142, scelta: Il vostro risultato è stato: 4-5."
+  },
+  {
+   "chiave": "c:4268cb01293e",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 6+.",
+   "contesto": "Luogo 999 verso 1142: Verificate il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:7f1e25372d05",
+   "ruolo": "risultato",
+   "testo": "[i]Posizionare 2 Gettoni Tempo su questa carta Locazione, prendere un'altra scelta.[/i]",
+   "contesto": "Luogo 999 verso 1142, scelta: Il vostro risultato è stato: 6+."
+  }
+ ]
+}

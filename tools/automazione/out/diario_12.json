@@ -1,0 +1,2887 @@
+{
+ "voci": {
+  "c:58bdf5e82790": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Avete sacrificato 0-2 Salute."
+   }
+  },
+  "r:374e7c922da4": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:48ef7466f2b5": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Avete sacrificato 3-5 Salute."
+   }
+  },
+  "r:c29e705ab645": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 6,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:16be2fb0de92": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Avete sacrificato 6 o più Salute."
+   }
+  },
+  "r:1fecaf9917ba": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Anello Strisciante (Segreto 39)",
+       "effetti": [
+        {
+         "tipo": "segreto",
+         "n": 39,
+         "rimuovi": false,
+         "nome": "Anello Strisciante"
+        }
+       ]
+      },
+      {
+       "testo": "Ciondolo del Predecessore (Segreto 44)",
+       "effetti": [
+        {
+         "tipo": "segreto",
+         "n": 44,
+         "rimuovi": false,
+         "nome": "Ciondolo del Predecessore"
+        }
+       ]
+      },
+      {
+       "testo": "Oggetto Spada Runica",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "nome",
+         "n": 1,
+         "nome": "Spada Runica"
+        }
+       ]
+      },
+      {
+       "testo": "Oggetto Armatura Eccellente",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "nome",
+         "n": 1,
+         "nome": "Armatura Eccellente"
+        }
+       ]
+      },
+      {
+       "testo": "8 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 8,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:46aab544f1d4": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 47
+    }
+   }
+  },
+  "r:8e64ce7d36f7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 47,
+     "rimuovi": false,
+     "nome": "Scoperta della Felce Rossa"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Ricorda: questo Segreto ha effetto su tutti i Personaggi!"
+    }
+   ]
+  },
+  "r:5674a175dc7d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:f6b3f6352c0d": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 507
+    }
+   ]
+  },
+  "r:a5b03cf4e9ac": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Matricidio",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:432eb58a82f0": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "r:e1cb6236eaf1": {
+   "effetti": []
+  },
+  "c:e059c9f94479": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     4
+    ]
+   }
+  },
+  "c:42c557741aeb": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "c:352ec01bec2e": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     1
+    ]
+   }
+  },
+  "r:4d5cf75966b5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": -1,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:c2a1f7cf5bb7": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "segreto",
+       "n": 78
+      }
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Quadrante lanciato mostra il Graal."
+     }
+    ]
+   }
+  },
+  "r:1324b174b59d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:e8001399cf9c": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "segreto",
+      "n": 78
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Quadrante lanciato mostra il Teschio."
+     }
+    ]
+   }
+  },
+  "r:787084e8e7b4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": -1,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:9a9f8ad28557": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 3,
+    "lettera": "A"
+   }
+  },
+  "r:9245ef4d13f8": {
+   "effetti": [
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Trovate tutte le Parti del Capitolo 3A e impilatele dalla 5 (in fondo) alla 1 (in cima); poi scartate carte dalla cima del mazzo Eventi finché in cima non c'è il Capitolo 3A: Parte 3."
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 3,
+     "parte": 3,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:8dbed60de1b0": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 3,
+     "lettera": "A"
+    }
+   ]
+  },
+  "c:a31f416e02af": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Profondo Segreto",
+     "parti": []
+    }
+   }
+  },
+  "q:65e8959da1ea": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Profondo Segreto",
+    "parti": []
+   }
+  },
+  "r:bbc33c96e6f5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:1ae57650d060": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Profondo Segreto",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:a9ad8bda6d0f": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 5,
+    "chi": "compagnia"
+   }
+  },
+  "r:cef083ad08db": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      9
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:0e0ce21e7e87": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:33d4981df378": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:6f5be09dc375": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:4b26b7c9d87c": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: tornare da Orrin per scoprirne di più su Tuathan."
+    }
+   ]
+  },
+  "c:2f8b3b6ce34f": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "r:13b5d6745aa2": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ricominciate la Campagna."
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:3aea0165b8a4": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 2,
+    "a": 2
+   }
+  },
+  "r:faf5409e0d19": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Luogo 107",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 107
+        },
+        {
+         "tipo": "muovi",
+         "dove": 107,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 107,
+         "quadrante": 8,
+         "meno_per_giocatore": true
+        }
+       ]
+      },
+      {
+       "testo": "Luogo 106",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 106
+        },
+        {
+         "tipo": "muovi",
+         "dove": 106,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 106,
+         "quadrante": 8,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:973757ecd973": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 3,
+    "lettera": "A"
+   }
+  },
+  "r:f5903ce619b0": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo 115 è stato rimosso dal gioco."
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 125
+      },
+      {
+       "tipo": "muovi",
+       "dove": 125,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 125,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 115
+      },
+      {
+       "tipo": "muovi",
+       "dove": 115,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 115,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:4ea90db19f65": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 3,
+    "lettera": "B"
+   }
+  },
+  "r:bc6d9a4b2cc9": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 111
+    },
+    {
+     "tipo": "muovi",
+     "dove": 111,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": 111,
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:70b58a036eb9": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 4,
+    "a": 4,
+    "lettera": "A"
+   }
+  },
+  "r:7d1ff7832667": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo 115 è stato rimosso dal gioco."
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 125
+      },
+      {
+       "tipo": "muovi",
+       "dove": 125,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 125,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 115
+      },
+      {
+       "tipo": "muovi",
+       "dove": 115,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 115,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:3de84e8d0567": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 4,
+    "a": 4,
+    "lettera": "B"
+   }
+  },
+  "r:664fb4350b14": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 111
+    },
+    {
+     "tipo": "muovi",
+     "dove": 111,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": 111,
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:c33a4476518b": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 5,
+    "a": 5
+   }
+  },
+  "r:6ba70a5ec30c": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo 135 è stato rimosso dal gioco."
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 148
+      },
+      {
+       "tipo": "muovi",
+       "dove": 148,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 148,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 135
+      },
+      {
+       "tipo": "muovi",
+       "dove": 135,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 135,
+       "quadrante": 7,
+       "meno_per_giocatore": true
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ogni Personaggio scarta tutti i suoi Oggetti tranne 1."
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:0ac34260aab5": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 6,
+    "a": 6
+   }
+  },
+  "r:27cc76919584": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Luogo 132",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 132
+        },
+        {
+         "tipo": "muovi",
+         "dove": 132,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 132,
+         "quadrante": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      },
+      {
+       "testo": "Luogo 155",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 155
+        },
+        {
+         "tipo": "muovi",
+         "dove": 155,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 155,
+         "quadrante": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:7841c135d77b": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 7,
+    "a": 7
+   }
+  },
+  "r:681331f73667": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 118
+    },
+    {
+     "tipo": "muovi",
+     "dove": 118,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": 118,
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:e919641ff201": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 8,
+    "a": 8
+   }
+  },
+  "r:58edf2aefd74": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Preparate lo spazio di gioco come descritto al Verso 605 del Libro dei Segreti."
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 6,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 6,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:63953a85d63b": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 9,
+    "a": 9
+   }
+  },
+  "r:2d0c4984c057": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 185
+    },
+    {
+     "tipo": "muovi",
+     "dove": 185,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 10,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 10,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Bevanda Intorpidente"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:f997863164ce": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 10,
+    "a": 10
+   }
+  },
+  "r:05c130f2987c": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 132
+    },
+    {
+     "tipo": "muovi",
+     "dove": 132,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": 132,
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:c5eb5e2eb319": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 11,
+    "a": 11
+   }
+  },
+  "r:d1c22133ed07": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 111
+    },
+    {
+     "tipo": "muovi",
+     "dove": 111,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": 111,
+     "quadrante": 7,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "c:7f8bb2e8bd42": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 12,
+    "a": 15
+   }
+  },
+  "r:3d0525c87f8b": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Luogo 121",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 121
+        },
+        {
+         "tipo": "muovi",
+         "dove": 121,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 121,
+         "quadrante": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      },
+      {
+       "testo": "Luogo 132",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 132
+        },
+        {
+         "tipo": "muovi",
+         "dove": 132,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 132,
+         "quadrante": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      },
+      {
+       "testo": "Luogo 140",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 140
+        },
+        {
+         "tipo": "muovi",
+         "dove": 140,
+         "chi": "tutti"
+        },
+        {
+         "tipo": "menhir",
+         "luogo": 140,
+         "quadrante": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": -1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "esp",
+     "n": 0,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "nuova_giornata"
+    }
+   ]
+  },
+  "r:349959f113a4": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: ritornare a Camelot (190) e partecipare all’incontro della Tavola Rotonda per concludere questa trama."
+    }
+   ]
+  },
+  "q:f4c39035c9c0": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:5532ea4a0eaf": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Scegliete un Personaggio che cercherà di farlo e piazzate un Gettone Cerca sulla sua Plancia Personaggio per contrassegnare la scelta."
+    }
+   ]
+  },
+  "r:cf85568cb837": {
+   "effetti": []
+  },
+  "c:3a99f3ff824f": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Apripista",
+      "parti": [
+       2
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Confronti Finali",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "c:68cc31ade3fc": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Apripista",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:a69b1eaa7777": {
+   "effetti": []
+  },
+  "r:c4f2f4e73512": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:132f4d20734c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "verde",
+     "nome": "Vergine del Pantano",
+     "livello": 3
+    }
+   ]
+  },
+  "r:6691dc99174d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: ritornare al Borgo Infettato (138) o al Borgo Tranquillo (142) e partecipare al Consiglio dei Comuni per concludere questa trama."
+    }
+   ]
+  },
+  "r:7a75053f8969": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Iniziate il Combattimento seguente con 4 segnalini nella Riserva di Combattimento."
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Slaugh",
+     "livello": 4
+    }
+   ]
+  },
+  "c:33cad766c6df": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:04eb8182f982": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni giocatore scarta tutti i suoi Oggetti tranne 2 (i Segreti non contano come Oggetti)."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Venti dell’Anomalia",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 67,
+     "rimuovi": true,
+     "nome": "Riposo Disturbato"
+    }
+   ]
+  },
+  "r:521d5a7f9f08": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "attributo",
+       "attr": "courage",
+       "min": 2
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "r:9ac4362a059e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 14,
+     "rimuovi": true
+    },
+    {
+     "tipo": "segreto",
+     "n": 15,
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:73e5d4cd067f": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 609
+    }
+   ]
+  },
+  "r:497bdda6c33f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 6,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    }
+   ]
+  },
+  "r:682054b6e40a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1
+    }
+   ]
+  },
+  "r:0b8920276bfb": {
+   "effetti": []
+  },
+  "r:a37ed7ba3f26": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:8f32624eaf07": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:bf0b59f1d7e4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Confronti Finali",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:f78aee14cf9a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scegliete un Personaggio che cercherà di farlo e piazzate un Gettone Cerca sulla sua Plancia Personaggio per contrassegnare la scelta."
+    }
+   ]
+  },
+  "c:19ba25819b53": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:9046f480ccaa": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Il Personaggio tiene un totale di Ricchezza e Cibo pari alla somma dei suoi due Attributi più alti e scarta il resto."
+    }
+   ]
+  },
+  "c:e097844f01eb": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:445e699f98e9": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Il Personaggio perde 8 Salute meno il valore del suo Attributo più alto; non può tenere più di 16 fra Ricchezza e Cibo, scarta il resto."
+    }
+   ]
+  },
+  "c:c6ee2b0e1a0d": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:394c3d8aab28": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "attivo"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Il Personaggio tiene un totale di Ricchezza e Cibo pari al suo Attributo più alto e scarta il resto. Un Personaggio a vostra scelta non deve scegliere un’opzione da questa lista."
+    }
+   ]
+  },
+  "r:4e151c688b46": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Piazzate l’Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ]
+  },
+  "r:37c2de3bf043": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:c30ad7f922d2": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 1-2."
+   }
+  },
+  "c:86d6e355c60a": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 3."
+   }
+  },
+  "r:d35ae01bd107": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intensificazione",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:653962b9f674": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 4."
+   }
+  },
+  "r:a924f0bedc67": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intensificazione",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:cc970a8682e4": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 5 o più."
+   }
+  },
+  "r:2fabdc6158ea": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intensificazione",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:8cf5eed5143b": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 13,
+     "rimuovi": true,
+     "nome": "Preda"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimuovete la miniatura Predecessore dal gioco e rimescolate la carta Predecessore nel mazzo Incontri viola."
+    }
+   ]
+  },
+  "c:8713ba0a7294": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:a808f7b97c2d": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 7,
+     "rimuovi": true,
+     "nome": "Vero Graal"
+    }
+   ]
+  },
+  "r:d4e3d1a8a313": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 14
+    }
+   ]
+  },
+  "q:aa5dc6130b6a": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "segreto",
+      "n": 7
+     },
+     {
+      "non": {
+       "tipo": "segreto",
+       "n": 78
+      }
+     }
+    ]
+   }
+  },
+  "r:92cc47ea70c6": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Rivendicazione",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 4,
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:e5e483a1e59e": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:2bda0912c79c": {
+   "effetti": []
+  },
+  "r:6d49a3492fd3": {
+   "effetti": [
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 15
+    }
+   ]
+  },
+  "q:ffcd970fd859": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 10,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "r:c0a597ff326b": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Calderone Nero",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:ae3fc6e073a0": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Calderone Nero",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:867c6fd46ec7": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "aggression",
+       "per": 1
+      }
+     ],
+     "risultati": [
+      {
+       "da": 1,
+       "a": 1,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 2,
+       "a": 2,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 3,
+       "a": 3,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 4,
+       "a": 4,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 4,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 5,
+       "a": 5,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 5,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 6,
+       "a": 6,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 6,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 7,
+       "a": 7,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 7,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 8,
+       "a": 8,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 8,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 9,
+       "a": 9,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 9,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 10,
+       "a": 10,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 10,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 11,
+       "a": 11,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 11,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 12,
+       "a": 12,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 12,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 13,
+       "a": 13,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 13,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 14,
+       "a": 14,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 14,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 15,
+       "a": 15,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 15,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 16,
+       "a": 16,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 16,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 17,
+       "a": 17,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 17,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 18,
+       "a": 18,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 18,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 19,
+       "a": 19,
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 19,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "da": 20,
+       "a": 99,
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Ottenete tanta Ricchezza quanto il risultato del dado (dado + Aggressività)."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:7b9550297b86": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Rituale della Valle",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:b5bdd94d9f06": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:6082ae35209a": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 180
+    },
+    {
+     "tipo": "muovi",
+     "dove": 180,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "r:6ed7816fec3a": {
+   "effetti": [
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "magia",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "terrore",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:ff0f92afde13": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 18,
+     "rimuovi": true
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 10,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:504c9453317d": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Intensificazione",
+      "parti": [
+       3
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 2 carte durante la propria Attivazione ed è preda del Panico per l’intero Incontro a prescindere dal suo Terrore."
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "status",
+        "nome": "Intensificazione",
+        "parti": [
+         2
+        ]
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione ed è preda del Panico per l’intero Incontro a prescindere dal suo Terrore."
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "status",
+          "nome": "Intensificazione",
+          "parti": [
+           1
+          ]
+         },
+         "allora": [
+          {
+           "tipo": "manuale",
+           "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Predecessore",
+     "livello": 4
+    }
+   ]
+  },
+  "r:3ab8786fef08": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:7ec42b08e8dc": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "I Personaggi restano sull’ultima carta Tuathan rivelata e dovranno Esplorare di nuovo Tuathan finché non avranno ottenuto sufficienti Gettoni Cerca per tornare nella Valle e vincere lo scontro."
+    }
+   ]
+  },
+  "c:6df4d1515688": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Calderone Nero",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "c:676f029526a0": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Calderone Nero",
+       "parti": [
+        3
+       ]
+      }
+     },
+     {
+      "tipo": "status",
+      "nome": "Calderone Nero",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "q:9ef5c4bfd20d": {
+   "condizione": {
+    "tipo": "incontro_perso"
+   }
+  },
+  "r:8a9c19305110": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "I Personaggi restano sull’ultima carta Tuathan rivelata e dovranno Esplorare di nuovo Tuathan finché non avranno ottenuto sufficienti Gettoni Cerca per tornare nella Valle e vincere lo scontro."
+    }
+   ]
+  },
+  "c:54b427b8ee92": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Confronti Finali",
+    "parti": [
+     7
+    ]
+   }
+  },
+  "c:a3f556a7201e": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Abbandonati",
+    "parti": [
+     8
+    ]
+   }
+  },
+  "r:8387e3e15bc3": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: distruggete o sbarrate la vostra Scheda Salvataggio. Solo le saghe completate senza alcun aiuto vanno portate nelle prossime campagne."
+    }
+   ]
+  },
+  "c:7c00cbf9fc63": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Ripristinare l’Ordine",
+    "parti": [
+     8
+    ]
+   }
+  },
+  "c:dc4a881df446": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Campione del Popolo",
+    "parti": []
+   }
+  },
+  "q:845d3451affa": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:59a1dd7ac951": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:7f0c5be07e1e": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fine della Strada",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:bb6080401b5f": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fine della Strada",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:297caae1db66": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:c10900091e7b": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": -99,
+     "luogo": "qui"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 155
+    },
+    {
+     "tipo": "muovi",
+     "dove": 155,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "c:14d8f8a90f16": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Matricidio",
+    "parti": []
+   }
+  },
+  "c:73df61216682": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Rivendicazione",
+    "parti": []
+   }
+  },
+  "c:0598c21bfc89": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [],
+     "almeno": 2
+    }
+   }
+  },
+  "r:3a3cea5b662d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:66e620040318": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 90,
+     "rimuovi": false
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1,
+     "luogo": "qui"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: potete trovare altre due carte di cui avrete bisogno nelle altre due campagne: L’Ultimo Cavaliere e l’Età delle Leggende."
+    }
+   ]
+  },
+  "c:1bd117c08616": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Resti",
+    "parti": [],
+    "almeno": 4
+   }
+  },
+  "c:935cd5b03e0c": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Fine della Strada",
+     "parti": []
+    }
+   }
+  },
+  "c:38250da56227": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "r:0f960843298e": {
+   "effetti": []
+  },
+  "q:52fd1b19205c": {
+   "condizione": {
+    "tipo": "giocatori",
+    "da": 2,
+    "a": 4
+   }
+  },
+  "r:82c0b47f60ce": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 4,
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 42,
+     "rimuovi": false
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 13
+    }
+   ]
+  },
+  "r:a8e900892f87": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 13
+    }
+   ]
+  },
+  "c:429d2e930d12": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Salvati dalla Dea",
+    "parti": []
+   }
+  },
+  "c:6d2073254f42": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:254fece98abf": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Guerra di Avalon",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:287452714596": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 3
+   }
+  },
+  "r:fb6a9a3d019a": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:42641642ac92": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 5
+   }
+  },
+  "r:d8e00051def1": {
+   "effetti": [
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:4268cb01293e": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 99
+   }
+  },
+  "r:7f1e25372d05": {
+   "effetti": [
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 2
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  }
+ }
+}

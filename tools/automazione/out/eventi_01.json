@@ -1,0 +1,942 @@
+{
+ "carte": {
+  "carte/mazzo/36818.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: La Foresta si trova al confine tra la realtà umana e qualcosa di molto più antico. Rivelerà i suoi segreti soltanto a dei veri campioni."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Rintraccia Neante nella Foresta dei Sussurri (155) e ottieni il Vero Graal."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36905.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 4,
+    "lettera": "B",
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1,
+       2,
+       3
+      ],
+      "2-4": [
+       2,
+       3
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 4,
+     "lettera": "B",
+     "parti_dal_fondo": [
+      4,
+      3,
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Becco a Martello",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36819.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Devi portare messaggi a Timberwall (131), Crow's Nest (160) o Farshire (116), a seconda di chi sia il tuo alleato e di ciò che è accaduto nel Capitolo precedente."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [],
+     "almeno": 3
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 4,
+      "parte": 2,
+      "lettera": "B"
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36820.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Preparazione aggiuntiva: metti su questa carta un Quadrante con un Gettone Cerca, impostato su 3; riducilo all'Inizio della Giornata. Quando arriva a 1, rimuovi dal gioco Halfway (152) e sostituiscilo con Raduno di Halfway (158); se il 152 aveva un Menhir attivo, trasferiscilo al 158."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti la carta Capitolo 4B: Parte 3 in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Un tradimento a sangue freddo potrebbe porre fine al conflitto più rapidamente, ma non sarà dimenticato facilmente..."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Vai al Raduno di Halfway (158) quando sarà disponibile e concludi le trattative a nome del tuo alleato, oppure cambia alleato."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36821.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Ricchezza + Cibo + Magia di tutti i personaggi < 5 × numero di giocatori"
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti l'Evento Speciale H in cima al mazzo Eventi."
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Ricchezza + Cibo + Magia di tutti i personaggi > 10 × numero di giocatori"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale I in cima al mazzo Eventi."
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36822.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Localizza il Graal sfruttando il potere profetico di Amergin, arcidruido di Moonring (133)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36906.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 5,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-3": [
+       2,
+       3
+      ],
+      "4": [
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 5,
+     "lettera": null,
+     "parti_dal_fondo": [
+      3,
+      2,
+      1
+     ],
+     "scarta_dalla_cima": [
+      {
+       "condizione": {
+        "tipo": "segreto",
+        "n": 13
+       },
+       "n": 1
+      }
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 3,
+       "a": 4
+      },
+      "colore": "grigio",
+      "nome": "Cavaliere Errante",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36823.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Qualcuno Sta Osservando",
+     "parti": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 13
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 5,
+     "parte": 2
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36824.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale B in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 8
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "risolvi_parte",
+       "capitolo": 5,
+       "parte": 3
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Recupera il Vero Graal da Fernsea (153)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36825.webp": {
+   "rivelato": [
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36907.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 6,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-2": [
+       2,
+       3
+      ],
+      "3-4": [
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 6,
+     "lettera": null,
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36826.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: chiedi a Orrin di guidarti a Tuathan (Punta Anomala, 141, a ovest di Stampede 118), oppure trova il modo di entrare a Tuathan da solo."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36827.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Se la miniatura del Predecessore è in un qualsiasi Luogo rivelato, mettila accanto all'area di gioco con un Quadrante Tempo impostato su 2. Quando si esaurisce, metti la miniatura nel Luogo rivelato con il numero più basso."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale B in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36908.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 7,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-2": [
+       2,
+       3
+      ],
+      "3": [
+       2,
+       3,
+       4
+      ],
+      "4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 7,
+     "lettera": null,
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Serpe del Sottobosco",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36828.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale B in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "una": [
+      {
+       "tipo": "status",
+       "nome": "Ripristinare l'Ordine",
+       "parti": [
+        8
+       ]
+      },
+      {
+       "tipo": "segreto",
+       "n": 19
+      }
+     ]
+    },
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 999,
+      "verso": 490
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36829.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Entra a Tuathan attraverso la Sala del Re a Timberwall (131) o da Riverfall (156)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36909.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 8,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 8,
+     "lettera": null,
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36830.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Raggiungi il Cuore di Tuathan (185) e scoprine il segreto."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36831.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale D in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 2,
+     "meno_per_giocatore": false
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36910.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 9,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 9,
+     "lettera": null,
+     "parti_dal_fondo": [
+      1
+     ],
+     "varianti": [
+      {
+       "condizione": {
+        "tipo": "segreto",
+        "n": 78
+       },
+       "parti_dal_fondo": [
+        2
+       ]
+      }
+     ]
+    },
+    "guardiani": [],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36832.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale D in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Esci da Tuathan!"
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36833.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale D in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Esci da Tuathan!"
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36911.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 10,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 10,
+     "lettera": null,
+     "parti_dal_fondo": [
+      3,
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Massacro",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/34908.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "attacco",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "grigio"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "verde"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "viola"
+       }
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1,
+       "inevitabile": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34909.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che devi pescare un Incontro viola a caso, pescane 2 e scegli quello di valore più alto."
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che devi pescare un Incontro verde o grigio a caso, pesca invece un Incontro viola."
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "niente_menhir_costo_magia",
+       "n": 1
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34910.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "viaggio",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34911.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "fine_giornata",
+     "condizione": {
+      "non": {
+       "una": [
+        {
+         "tipo": "insediamento",
+         "nemico": false
+        },
+        {
+         "tipo": "insediamento",
+         "nemico": true
+        }
+       ]
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  }
+ }
+}

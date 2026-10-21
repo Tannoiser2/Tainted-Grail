@@ -1,0 +1,946 @@
+{
+ "voci": [
+  {
+   "chiave": "s:e03c43ae7067",
+   "ruolo": "sogno",
+   "testo": "La vista dalla cima della torre è magnifica. Navi con le vele spiegate solcano l’oceano spazzato dal vento. Trasportano persone e merci da un lato all’altro dell’isola in soli due giorni. Il fuoco crepitante alle vostre spalle vi riscalda la schiena, rendendo il lavoro del custode meno solitario e quasi gradevole.\n\nOgni Personaggio che ha vissuto questo Sogno ottiene 1 {i:energy}.",
+   "contesto": "Luogo 120"
+  },
+  {
+   "chiave": "s:956348d8ae31",
+   "ruolo": "incubo",
+   "testo": "Trasalite all’incessante gocciolio d’acqua sulla vostra testa. La vostra pelle deperita lascia intravedere le costole e avete la schiena incurvata. Sono passati anni dall’ultima volta che vi siete alzati, da quando avete abbandonato la speranza di essere salvati. Le vostre giornate sono scandite solo dal passaggio del sole e della luna sopra la vostra finestra circolare, in alto, lontano da voi. I graffi sulle pareti circolari hanno perso significato da molto tempo, ma continuate a lasciarli ogni giorno che passa. Al risveglio, fremete per il dolore lancinante che avvertite al dito, dove l’unghia e la punta si sono orma consumate fino all’osso.\n\nOgni Personaggio che ha vissuto questo Incubo ottiene 1 {i:terror} e perde 1 {i:health}.",
+   "contesto": "Luogo 120"
+  },
+  {
+   "chiave": "q:6b1bccd3356b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il mare ribolle di furia, molto sotto il traballante ponte di corda.\n\n[i]solo se [b]non avete[/b] la parte 3 dello status [b]“Informazioni Inquietanti\"[/b][/i]",
+   "contesto": "Luogo 120 verso 0, scelta: [b]Visitare la torre spezzata[/b]"
+  },
+  {
+   "chiave": "q:9b82cd3f60dd",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Si dice che le grotte locali vengano sfruttate dai briganti per nascondere il loro bottino.",
+   "contesto": "Luogo 120 verso 0, scelta: [b]Perlustrare la costa[/b]"
+  },
+  {
+   "chiave": "r:162c33ce740b",
+   "ruolo": "risultato",
+   "testo": "“Ovviamente,avete ragione. Ci sono altri compiti che avrei potuto adempiere se non mi fossi fissato su questo obiettivo.” \n\n[i]Ottenete la parte 7 dello status [b]“Ripristinare l’Ordine”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 1, scelta: [b]Suggerirgli di tornare a Camelot[/b]"
+  },
+  {
+   "chiave": "r:d35ef414b3c3",
+   "ruolo": "risultato",
+   "testo": "“Sì, ha senso. Più diamo, maggiore sarà il nostro onore. E non esiste dono superiore della vita.” \n\n[i]Ottenete la parte 7 dello status[b] “Caduta della Cavalleria”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 1, scelta: [b]Suggerirgli di lanciarsi nell’anomalia per completare la sua cerca[/b]"
+  },
+  {
+   "chiave": "r:45de4839818f",
+   "ruolo": "risultato",
+   "testo": "I custodi non vi rivolgeranno la parola – L’Esplorazione termina.",
+   "contesto": "Luogo 120 verso 2, scelta: Se c’è un Gettone Tempo su questo Luogo, o se [b]avete[/b] la parte 6 dello status [b]“Dare una Mano”[/b]"
+  },
+  {
+   "chiave": "q:943dd665d213",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {i:energy} e 1 {i:health}[/i]",
+   "contesto": "Luogo 120 verso 3, scelta: [b]Portarla via[/b]"
+  },
+  {
+   "chiave": "v:271",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Mettete piede sul ponte che conduce alla torre spezzata. Il vento agita violentemente le corde ammuffite, mentre il ponte vibra e ondeggia pericolosamente, rendendo l’avanzata molto pericolosa...\n\n[i]Tirare un dado e sommare la vostra {i:caution} O {i:practicality}.[/i]",
+   "contesto": "Luogo 120 verso 4"
+  },
+  {
+   "chiave": "c:64c7394e6ac3",
+   "ruolo": "condizione",
+   "testo": "Verifica il risultato",
+   "contesto": "Luogo 120 verso 4: Mettete piede sul ponte che conduce alla torre spezzata. Il vento agita violentemente le corde ammuffite, mentre il ponte vibra e ondeggia pericolosamente, rend"
+  },
+  {
+   "chiave": "q:82ceb412ed85",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il tuo risultato è stato: 1-5",
+   "contesto": "Luogo 120 verso 4, scelta: Verifica il risultato"
+  },
+  {
+   "chiave": "r:e972507654b9",
+   "ruolo": "risultato",
+   "testo": "Cadete nel mare in tempesta, evitando fortunatamente gli scogli appuntiti.\n[i]Ciascun membro della Compagnia perde 4 {i:health} e 4 {i:energy}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 4, scelta: Verifica il risultato"
+  },
+  {
+   "chiave": "q:a093a84a962a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il tuo risultato è stato: 6+",
+   "contesto": "Luogo 120 verso 4, scelta: Verifica il risultato"
+  },
+  {
+   "chiave": "r:6fd0a03597d7",
+   "ruolo": "risultato",
+   "testo": "[i]Piazzare un Gettone Tempo su questo Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:160f2c020b7f",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status [b]“Informazioni Inquietanti”[/b].[/i]",
+   "contesto": "Luogo 120 verso 6, scelta: [b]Combattere![/b]"
+  },
+  {
+   "chiave": "q:f77a4be8d234",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 3 dello status [b]“Incontri Propizi”[/b][/i]",
+   "contesto": "Luogo 120 verso 7, scelta: Continua."
+  },
+  {
+   "chiave": "r:b27178a0c5ce",
+   "ruolo": "risultato",
+   "testo": "Il custode vi ricompensa offrendovi alcuni dei loro equipaggiamenti migliori.\n\n[i]Pescare cinque carte Oggetto non Compagno, sceglierne due, e poi ottenete la parte 3 dello status [b]“Incontri Propizi”[/b].[/i]",
+   "contesto": "Luogo 120 verso 7, scelta: Continua."
+  },
+  {
+   "chiave": "q:6c8b1ce55769",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 7 dello status [b]“Caduta della Cavalleria”[/b] o lo status [b]“Ripristinare l’Ordine[/b]”[/i]",
+   "contesto": "Luogo 120 verso 8, scelta: Continua."
+  },
+  {
+   "chiave": "v:276",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Finalmente! Vi gettate sull’immobile e stabile sporgenza di pietra, dove potete riprendere fiato e aspettare che lo stomaco si plachi.\n\n[i]Tirare un dado e sommare la vostra {i:caution}. Poi, verificare il risultato.[/i]",
+   "contesto": "Luogo 120 verso 9"
+  },
+  {
+   "chiave": "c:25e4627fc0ca",
+   "ruolo": "condizione",
+   "testo": "Verificare il risultato.",
+   "contesto": "Luogo 120 verso 9: Finalmente! Vi gettate sull’immobile e stabile sporgenza di pietra, dove potete riprendere fiato e aspettare che lo stomaco si plachi.\n\n[i]Tirare un dado e somm"
+  },
+  {
+   "chiave": "q:0d677930c415",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se il risultato è [b]7 o più[/b]",
+   "contesto": "Luogo 120 verso 9, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "r:23fd808a7f8a",
+   "ruolo": "risultato",
+   "testo": "Scegliere una azione tra:",
+   "contesto": "Luogo 120 verso 9, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "q:a70c4c390c06",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la parte 3 dello status [b]“Dare una Mano”[/b][/i]",
+   "contesto": "Luogo 120 verso 9, scelta: [b]Restare in ascolto[/b]"
+  },
+  {
+   "chiave": "q:9b29ddcab88b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede almeno 2 {i:empathy}, la carta Segreto [b]7[/b] o la carta Segreto [b]95[/b][/i]",
+   "contesto": "Luogo 120 verso 10, scelta: [b]Convincere Lamorak a riprendere il suo cammino[/b]"
+  },
+  {
+   "chiave": "r:61a2130bda58",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 {r:Ricchezza} e la parte 3 dello status [b]“Dare una Mano”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "c:74f8287a9fe7",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la parte 1 dello status[b] “Incontri Propizi”[/b]",
+   "contesto": "Luogo 120 verso 12: “Arev? Figlio di una vacca! Com’è possibile che sei ancora vivo?”\n\nIl custode di mezz’età è stato in passato compagno di squadra di Arev in una banda mercena"
+  },
+  {
+   "chiave": "r:4abd2486c16c",
+   "ruolo": "risultato",
+   "testo": "[i]Arev perde tutto il {i:terror} e ottiene 1 {r:Esp}; ottenete la parte 1 dello status [b]“Incontri Propizi”[/b].\nPoi, scegliere una tra:[/i]",
+   "contesto": "Luogo 120 verso 12, scelta: Se [b]non avete[/b] la parte 1 dello status[b] “Incontri Propizi”[/b]"
+  },
+  {
+   "chiave": "q:923d52b78482",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 2 dello status [b]“Incontri Propizi”[/b][/i]",
+   "contesto": "Luogo 120 verso 16, scelta: Continua."
+  },
+  {
+   "chiave": "r:c504ee527e60",
+   "ruolo": "risultato",
+   "testo": "I custodi vi ricompensano con parte delle loro provviste. \n\n[i]Ottenete 3 {r:Cibo} e 1 {r:Ricchezza}. Poi, ottenete la parte 2 dello status[b] “Incontri Propizi”[/b].[/i]",
+   "contesto": "Luogo 120 verso 16, scelta: Continua."
+  },
+  {
+   "chiave": "q:761b4f2143f5",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede almeno una parte dello status [b]“Mistero Scottante”[/b][/i]",
+   "contesto": "Luogo 120 verso 18, scelta: [b]Un racconto del mistero breve, ma appassionante[/b]"
+  },
+  {
+   "chiave": "q:8ba37cb2c49d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Perdere 1 {i:energy}, richiede almeno una parte dello status [b]“Sconfitti e Caduti”[/b][/i]",
+   "contesto": "Luogo 120 verso 18, scelta: [b]Un epico racconto di guerra e tradimento[/b]"
+  },
+  {
+   "chiave": "q:324da9c8b9e2",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Perdere 2 {i:energy}, richiede lo status [b]“Venti dell’Anomalia”[/b][/i]",
+   "contesto": "Luogo 120 verso 18, scelta: [b]Un lungo e dettagliato resoconto dei vostri viaggi[/b]"
+  },
+  {
+   "chiave": "r:f73c3b97060a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}.[/i]",
+   "contesto": "Luogo 120 verso 20, scelta: Continua."
+  },
+  {
+   "chiave": "r:9f82865b91cf",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 120 verso 21, scelta: Continua."
+  },
+  {
+   "chiave": "s:df4777ddc97a",
+   "ruolo": "sogno",
+   "testo": "Il cielo è limpido. La brezza estiva soffia tra i campi e tra le tende dell’esercito di Artù, radunato attorno a un nuovo Menhir. I soldati si preparano a marciare verso occidente, ma alcuni coloni decidono di stabilirsi qui. I campi aperti, i boschi vicini e i pascoli sereni – condizioni perfette per fondare una nuova tenuta rurale. La popolazione lavora con entusiasmo, avendo trovato una nuova dimora. Battezzano il posto in onore di un eroe quasi dimenticato delle loro terre al di là del grande mare. Pezzo dopo pezzo, Cuanacht sorge.\n\nOgni Personaggio che ha vissuto questo Sogno ottiene 1 {i:energy}.",
+   "contesto": "Luogo 121"
+  },
+  {
+   "chiave": "s:f6c550bff898",
+   "ruolo": "incubo",
+   "testo": "Un palo si spezza. Una corda si strappa. Con un violento boato, il Menhir di Cuanacht scivola nel baratro e sparisce nel ventre nero della terra. Una delle donne si avvicina lentamente al bordo, guarda di sotto, piange e si getta. Un anziano la segue. Poi, una famiglia di tre persone. Una a una, anziché restare bloccate da sole nell’anomalia, le ultime persone di Cuanacht scelgono la via più breve per farla finita.\n\nCercate di fermarle, ma vi manca la voce, e non riuscite più a muovere i piedi.\n\nOgni Personaggio che ha vissuto questo Incubo ottiene 2 {i:terror}.",
+   "contesto": "Luogo 121"
+  },
+  {
+   "chiave": "s:bbbeb2b96536",
+   "ruolo": "menhir",
+   "testo": "Il Menhir del posto si erge sull’orlo del baratro.\n\nRichiede [b]tutti i Personaggi[/b], la carta Segreto [b]Riti del Menhir[/b] e la carta Segreto [b]Attrezzi dello Scultore[/b].\nPagare 1 {i:energy}, 2 {i:health}, 1 {r:Ricchezza} e 2 {r:Magia} (per giocatore): piaz- zare una nuova miniatura Menhir in questo Luogo e posizio- nate il suo Quadrante su [b]8[/b] (-1 per giocatore).\n\nSe non bastano le miniature, prendetene una da un altro Luo- go a vostra scelta.",
+   "contesto": "Luogo 121"
+  },
+  {
+   "chiave": "q:49e06b10bfa9",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] la carta Segreto [b]33[/b], richiede [b]tutti i Personaggi[/b] e il [b]Capitolo 14[/b][/i]",
+   "contesto": "Luogo 121 verso 1, scelta: [b]Guidarli in un luogo più sicuro[/b]"
+  },
+  {
+   "chiave": "q:4f3c4f347fa4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]tutti i Personaggi[/b] e [b]Capitoli 10-12[/b]\n\n – In questo modo porterete a termine il Capitolo e abbandonerete tutte le altre missioni![/i]",
+   "contesto": "Luogo 121 verso 1, scelta: [b]Promettergli che partirete immediatamente alla ricerca di un posto sicuro dove condurli[/b]"
+  },
+  {
+   "chiave": "q:e1be7eed44bd",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Ci sono ancora persone che dovete incontrare e luoghi che dovete visitare. Forse potrete aiutarli più avanti?",
+   "contesto": "Luogo 121 verso 1, scelta: [b]Ditegli di aspettare[/b]"
+  },
+  {
+   "chiave": "q:c09898c4aa41",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 6 dello status [b]“Sconfitti e Caduti”[/b][/i]",
+   "contesto": "Luogo 121 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:b22f5bc776ef",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {i:terror} per ogni punto della sua {i:empathy}. Poi, ottenete la parte 6 dello status [b]“Sconfitti e Caduti”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:8c56d05673de",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 6 dello status [b]“Sconfitti e Caduti”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:33512506021a",
+   "ruolo": "risultato",
+   "testo": "[b]Nuovo Compito:[/b] cercare Siobhan a Camelot Assediata ([b]195[/b]). \n\n[i]L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "q:aa7d29bd3d6f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 4 {i:spirituality} o 4 {i:empathy}[/i]",
+   "contesto": "Luogo 121 verso 4, scelta: [b]Convincerli a confessare la verità[/b]"
+  },
+  {
+   "chiave": "q:e3554c6e90b2",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}[/i]",
+   "contesto": "Luogo 121 verso 4, scelta: [b]Torturarli finché non ammettono la verità[/b]"
+  },
+  {
+   "chiave": "r:5d946e09ec5a",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 8 e la parte 1 dello status [b]“Abbandonati”[/b]. Ottenete la parte 4 dello status [b]“Confronti Finali”[/b].\n\n[b]CONGRATULAZIONI![/b] Avete completato questo Capitolo! Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 12[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 121 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:a143f76a4aed",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Abbandonati”[/b]. Ottenete la parte 1 dello status [b]“Confronti Finali”[/b].\n\n[b]CONGRATULAZIONI![/b] Avete completato questo Capitolo! Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 12[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo! \n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 7, scelta: Continua."
+  },
+  {
+   "chiave": "q:2387b4da2a70",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 11[/b] e la parte 2 o 6 dello status [b]“Apripista”[/b][/i]",
+   "contesto": "Luogo 121 verso 10, scelta: [b]Indagare sul crimine che hanno commesso[/b]"
+  },
+  {
+   "chiave": "q:939e00ca057f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 11[/b] e la parte 4 dello status [b]“Apripista”[/b][/i]",
+   "contesto": "Luogo 121 verso 10, scelta: [b]Fare un segno agli uomini di Mordred[/b]"
+  },
+  {
+   "chiave": "q:4e53c9ea45e7",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 11[/b] e la parte 1 dello status [b]“Apripista”[/b][/i]",
+   "contesto": "Luogo 121 verso 10, scelta: [b]Fare un segno agli uomini di Morgana[/b]"
+  },
+  {
+   "chiave": "r:d43ea9711d6c",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Abbandonati”[/b]. Ottenete la parte 7 dello status [b]“Confronti Finali”[/b]. Ottenete la carta Segreto[b] “Coloni Speranzosi” (33)[/b], poi piazzare un Gettone Cerca su di essa.\n\n[b]Nuovo Compito:[/b] guidare gli abitanti di Cuanacht a un luogo sicuro in Avalon.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "r:d14ab4250a22",
+   "ruolo": "risultato",
+   "testo": "Each Character gains 1 {i:terror}. Gain part 1 of the [b]“Left Behind”[/b] status and part 6 of the [b]“Final Confrontations”[/b] status.\n\n[b]CONGRATULATIONS![/b] You’ve completed this Chapter! Discard all Event cards, including Active Quests. Then, either Save your game or draw a [b]Chapter 12[/b]  Setup card and follow its instructions to begin the next Chapter!",
+   "contesto": "Luogo 121 verso 12, scelta: [i]Ogni Personaggio ottiene 1 {i:terror}. Ottenete la parte 1 dello status [b]“Abbandonati”[/b] e la parte 6 dello status [b]“Confronti Finali”[/b].\n\n[b]CONGRAT"
+  },
+  {
+   "chiave": "q:09c6c10d5c5e",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] la parte 2 dello status [b]“Apripista”[/b][/i]",
+   "contesto": "Luogo 121 verso 13, scelta: Continua."
+  },
+  {
+   "chiave": "r:ba54648aa125",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio ottiene 1 {i:terror} per ogni punto della propria {i:empathy}. Ottenete la parte 1 e la parte 8 dello status [b]“Abbandonati”[/b]. Ottenete la parte 2 dello status [b]“Confronti Finali”[/b].\n\n[b]CONGRATULAZIONI![/b] Avete completato questo Capitolo! Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 12[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 121 verso 13, scelta: Continua."
+  },
+  {
+   "chiave": "r:1d12b5d1275c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio ottiene 1 {i:terror} per ogni punto della propria {i:empathy}. Ottenete la parte 1 e la parte 8 dello status [b]“Abbandonati”[/b]. L'Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 13, scelta: Continua."
+  },
+  {
+   "chiave": "s:af23f91902e2",
+   "ruolo": "sogno",
+   "testo": "Tutto si fa buio; l’unica luce proviene dall’alto, fioca e fredda. Nuotate all’interno della torre e vi aggirate per i suoi grandi corridoi, mangiando pesce crudo, aspettando che accada qualcosa. Che la vostra specie vinca la guerra contro gli umani e vi punisca. Che gli umani finalmente riescano a sterminare la vostra specie. Che vostro figlio, ucciso con l’inganno dai suoi nemici, intrappolato in un ciclo infinito di vita e di morte, si reincarni in una creatura inferiore. Passano i secoli, e siete ancora qui, nelle fredde e buie acque, sola, abbandonata, quasi dimenticata – ad attendere.\n\nOgni Personaggio che ha vissuto questo Sogno o Incubo ottiene 1 {i:terror}.",
+   "contesto": "Luogo 122"
+  },
+  {
+   "chiave": "r:0fdf71eb6c71",
+   "ruolo": "risultato",
+   "testo": "È scivoloso e pericoloso! \n\n[i] Tirare un dado e aggiungere la propria {i:caution}.[/i]",
+   "contesto": "Luogo 122 verso 0, scelta: [b]Calarsi nell’incavo del lago[/b]"
+  },
+  {
+   "chiave": "r:da5d6da20f30",
+   "ruolo": "risultato",
+   "testo": "Le acque sono scomparse, ma la selvaggina si reca ancora sulle sponde del lago. Potrebbe trattarsi di una buona occasione per fare provviste.\n\n[i]Tirare un dado e aggiungere la propria {i:practicality}.[/i]",
+   "contesto": "Luogo 122 verso 0, scelta: [b]Cacciare ai bordi del lago[/b]"
+  },
+  {
+   "chiave": "c:ed1d29914245",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 1-6",
+   "contesto": "Luogo 122 verso 1: "
+  },
+  {
+   "chiave": "r:dfe656f34f6d",
+   "ruolo": "risultato",
+   "testo": "Mettete il piede su di una pietra coperta di alghe, scivolando nelle profondità del bacino. Dopo mezzo minuto di puro terrore, finite sul fondo del lago, contusi e sfiniti.\n\n[i]Ogni membro della Compagnia perde 6 {i:health}. I Personaggi possono ridurre la perdita di 1 punto per ogni punto della loro {i:practicality}, e di ulteriori 2 punti se [b]hanno[/b] l’Oggetto [b]“Kit dell’Avventuriero”[/b].[/i]",
+   "contesto": "Luogo 122 verso 1, scelta: Il vostro risultato è stato: 1-6"
+  },
+  {
+   "chiave": "c:1c41eee43b7e",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 7+",
+   "contesto": "Luogo 122 verso 1: "
+  },
+  {
+   "chiave": "r:d878f86a00c7",
+   "ruolo": "risultato",
+   "testo": "I pendii sono coperti di fango e di alghe, ma il vostro occhio fino vi evita di scivolare.",
+   "contesto": "Luogo 122 verso 1, scelta: Il vostro risultato è stato: 7+"
+  },
+  {
+   "chiave": "c:1d8eb7b74db1",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 1-2",
+   "contesto": "Luogo 122 verso 2: "
+  },
+  {
+   "chiave": "r:321b9733290c",
+   "ruolo": "risultato",
+   "testo": "Cercate di localizzare alcune tracce o altri segni di attività animale, ma non ci riuscite. Avete solo sprecato tempo. \n\n[i]L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 2, scelta: Il vostro risultato è stato: 1-2"
+  },
+  {
+   "chiave": "c:a81ea1de6ca9",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 3-4",
+   "contesto": "Luogo 122 verso 2: "
+  },
+  {
+   "chiave": "r:d95e6804e1e5",
+   "ruolo": "risultato",
+   "testo": "Avvertite un rumore alle spalle. Non siete più sicuri se siete la preda o il cacciatore.\n\n[i]Risolvere un Incontro verde. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 2, scelta: Il vostro risultato è stato: 3-4"
+  },
+  {
+   "chiave": "c:b4574ca231ee",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato: 5-6",
+   "contesto": "Luogo 122 verso 2: "
+  },
+  {
+   "chiave": "r:9c03db6a54ac",
+   "ruolo": "risultato",
+   "testo": "Dei ciuffi di pelo marrone vi conducono a una piccola tana.\n\n[i]Risolvere l’Incontro verde[b] “Lepre della Radura”[/b] (Difficoltà 1). Poi, l’Esplorazione Termina.[/i]",
+   "contesto": "Luogo 122 verso 2, scelta: Il vostro risultato è stato: 5-6"
+  },
+  {
+   "chiave": "c:d1a0496cb7a0",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato è stato:: 7+",
+   "contesto": "Luogo 122 verso 2: "
+  },
+  {
+   "chiave": "r:f46696ae4a97",
+   "ruolo": "risultato",
+   "testo": "Uno degli alberi più piccoli ha la corteccia scorticata. C’è un cervo nelle vicinanze? \n\n[i]Risolvere l’Incontro verde [b]“Alce Reale” [/b] (Difficoltà 1). Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 2, scelta: Il vostro risultato è stato:: 7+"
+  },
+  {
+   "chiave": "r:fa91854bf8fa",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia con {i:spirituality} 1 o più ottiene 1{i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "r:807d86b5b543",
+   "ruolo": "risultato",
+   "testo": "La torre è vuota – [i]L’Esplorazione termina. [/i]",
+   "contesto": "Luogo 122 verso 4, scelta: Se state giocando i [b]Capitoli 5-7[/b]"
+  },
+  {
+   "chiave": "c:4fb2c7463121",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la carta Segreto [b]7[/b]",
+   "contesto": "Luogo 122 verso 4: L’ingresso a questa struttura non è mai stato pensato per essere utilizzato da terra. La sua stretta fenditura si erge a quindici metri dal fango essiccato sul"
+  },
+  {
+   "chiave": "q:f63120ccc829",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto [b]21[/b] e la carta Segreto [b]22[/b][/i]",
+   "contesto": "Luogo 122 verso 4, scelta: [b]Chiederle dei due talismani[/b]"
+  },
+  {
+   "chiave": "q:5adcd760e9d5",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 13[/b][/i]",
+   "contesto": "Luogo 122 verso 4, scelta: [b]Chiederle se esiste un posto al sicuro dall’anomalia[/b]"
+  },
+  {
+   "chiave": "q:e56f05c93f59",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede carta Segreto [b]“Segno Rosso” 66[/b][/i]",
+   "contesto": "Luogo 122 verso 4, scelta: [b]Chiederle di una cura per la Morte Rossa[/b]"
+  },
+  {
+   "chiave": "r:2889571a3b9b",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello stato [b]“Calderone Nero”[/b].[/i]",
+   "contesto": "Luogo 122 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:05f87576cb65",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 3 {i:health}.  L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 6, scelta: Continua."
+  },
+  {
+   "chiave": "r:47d3003e6733",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 6 dello status [b]“Sogni e Profezie”[/b].[/i]\n\n[b]Nuovo Compito:[/b] trasformare il Volto Sereno in un riparo per gli umani.",
+   "contesto": "Luogo 122 verso 8, scelta: Continua."
+  },
+  {
+   "chiave": "q:906989f1e5d3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] lo status [b]“Matricidio”[/b][/i]",
+   "contesto": "Luogo 122 verso 10, scelta: Continua."
+  },
+  {
+   "chiave": "q:c13956095a71",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 5 dello status [b]“Fato della Spedizione”[/b][/i]",
+   "contesto": "Luogo 122 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "r:e8bcba8f40fe",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete l’Oggetto [b]“Spada Runica”[/b] (se non è disponibile, ottenete invece 6 {r:Magia}).\n\nCiascun membro della Compagnia ottiene 2 {r:Esp}. Ottenete la parte 5 dello status [b]“Fato della Spedizione”[/b].[/i]",
+   "contesto": "Luogo 122 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "r:1d68b8178e6d",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete l’Oggetto [b]“Spada Runica”[/b] (se non è disponibile, ottenete invece 6 {r:Magia}). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "r:661327751283",
+   "ruolo": "risultato",
+   "testo": "[i]Quando si decide di Esplorare questo Luogo, ogni membro della Compagnia ottiene 1 {r:Magia} e perde 1 {i:health}. L’Esplorazione termina. [/i]",
+   "contesto": "Luogo 123 verso 0, scelta: Continua."
+  },
+  {
+   "chiave": "r:4d619c11b434",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare e risolvere un Incontro viola. L’Esplorazione termina[/i]",
+   "contesto": "Luogo 123 verso 1, scelta: Continua."
+  },
+  {
+   "chiave": "s:be24ae264240",
+   "ruolo": "menhir",
+   "testo": "Richiede [b]tutti i Personaggi[/b] e la carta Segreto [b]“Riti del Menhir”[/b].\n\nPagare 3 {i:energy} e 2 {r:Magia} (per giocatore): piazzare una nuova miniatura Menhir in questo Luogo e posizionate il suo Quadrante su [b]8[/b] (-1 per giocatore).\n\nSe non bastano le miniature, prendetene una da un altro Luogo a vostra scelta.",
+   "contesto": "Luogo 125"
+  },
+  {
+   "chiave": "r:91076685c8c7",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia ottiene 2 {i:terror} e la parte 4 dello status [b]“Caduta della Cavalleria”[/b] (se ancora [b]non lo avete[/b]).\nL’Esplorazione termina.",
+   "contesto": "Luogo 125 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:a829819ed33d",
+   "ruolo": "risultato",
+   "testo": "Ciascun membro della Compagnia ottiene 1 {i:terror}. L’Esplorazione termina.",
+   "contesto": "Luogo 125 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "q:83eebe531624",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {i:energy} per membro\ndella Compagnia[/i]",
+   "contesto": "Luogo 126 verso 0, scelta: [b]Frugare tra le macerie[/b]"
+  },
+  {
+   "chiave": "q:7b0d82d02ee4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede almeno una parte dello status [b]“Diplomatico”[/b][/i]",
+   "contesto": "Luogo 126 verso 0, scelta: [b]Consegnare un messaggio diplomatico[/b]"
+  },
+  {
+   "chiave": "q:b3389c91549b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] la parte 7 dello status [b]“Sconfitti e Caduti”[/b][/i]",
+   "contesto": "Luogo 126 verso 0, scelta: [b]Cercare di localizzare la Grande Sala di Kincaid[/b]"
+  },
+  {
+   "chiave": "r:8f2a4bcf7202",
+   "ruolo": "risultato",
+   "testo": "[i]Al momento non potete guidare altre persone – L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 2, scelta: Se [b]avete[/b] la carta Segreto [b]33[/b]"
+  },
+  {
+   "chiave": "r:38c99bb78f88",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Abbandonati”[/b]. Ottenete la carta Segreto [b]“Coloni Speranzosi” (33)[/b].\n\n[b]Nuovo Compito: [/b] guidare il popolo di Farshire in uno dei luoghi sicuri di Avalon.\n\n[b]Suggerimento: [/b]non metteteci troppo! La loro fiducia svanirà rapidamente.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "q:4d8356bf0a77",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {i:energy} e 3 {r:Rep}[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Chiedere agli abitanti del posto di aiutarvi a scavare in mezzo alle rovine[/b]"
+  },
+  {
+   "chiave": "r:7ef47cdc73b4",
+   "ruolo": "risultato",
+   "testo": "[i]Piazzare 1 Gettone Cerca su questo Luogo. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Chiedere agli abitanti del posto di aiutarvi a scavare in mezzo alle rovine[/b]"
+  },
+  {
+   "chiave": "q:7b95dcd04381",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 3 {i:energy}, ogni membro della Compagnia perde 2 {i:health}[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Scavare sotto il dolmen da soli[/b]"
+  },
+  {
+   "chiave": "r:dfcc1bcaf03d",
+   "ruolo": "risultato",
+   "testo": "[i]Piazzare 1 Gettone Cerca su questo Luogo. Poi, l’Esplorazione Termina.[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Scavare sotto il dolmen da soli[/b]"
+  },
+  {
+   "chiave": "q:041b2417887c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede almeno 3 Gettoni Cerca su questo Luogo[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Entrare nei resti della Grande Sala[/b] - [i]Richiede almeno 3 Gettoni Cerca su questo Luogo[/i]"
+  },
+  {
+   "chiave": "r:3a0933058054",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere tutti i Gettoni Cerca da questo Luogo.[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Entrare nei resti della Grande Sala[/b] - [i]Richiede almeno 3 Gettoni Cerca su questo Luogo[/i]"
+  },
+  {
+   "chiave": "q:cd21dc7836b0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se[b] non avete[/b] la parte 3 dello status [b]“Diplomatico”[/b][/i]",
+   "contesto": "Luogo 126 verso 4, scelta: Continua."
+  },
+  {
+   "chiave": "r:74dc84a31726",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}; poi, ottenete la parte 3 dello status [b]“Diplomatico”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 4, scelta: Continua."
+  },
+  {
+   "chiave": "q:16ad97ca4c46",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {r:Cibo} per pescare 1 Oggetto Artigianale.[/i]",
+   "contesto": "Luogo 126 verso 5, scelta: [b]Comprare qualcosa dai superstiti[/b]"
+  },
+  {
+   "chiave": "r:87a53780b27a",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare 1 Oggetto Artigianale. Poi, prendere un’altra opzione.[/i]",
+   "contesto": "Luogo 126 verso 5, scelta: [b]Comprare qualcosa dai superstiti[/b]"
+  },
+  {
+   "chiave": "q:f2a303b14b1d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]tutti i Personaggi[/b] e il [b]Capitolo 14[/b][/i]",
+   "contesto": "Luogo 126 verso 5, scelta: [b]Convincere la popolazione che la condurrete in un rifugio sicuro[/b]"
+  },
+  {
+   "chiave": "q:b3ab81e4add1",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la carta Segreto [b]“Attrezzi dello Scultore” (58)[/b][/i]",
+   "contesto": "Luogo 126 verso 6, scelta: Continua."
+  },
+  {
+   "chiave": "r:906c9d828450",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Attrezzi dello Scultore” (58) e 1 Oggetto casuale non Compagno. L’Esplorazione termina.[/i][/b]",
+   "contesto": "Luogo 126 verso 6, scelta: Continua."
+  },
+  {
+   "chiave": "r:7bcd9eff6829",
+   "ruolo": "risultato",
+   "testo": "[i] Ottenete 1 Oggetto casuale non Compagno. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 6, scelta: Continua."
+  },
+  {
+   "chiave": "r:c87016b41a09",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror} e 2 {r:Esp}. Ottenete 5 {r:Ricchezza}. Ottenete la parte 7 dello status [b]“Sconfitti e Caduti”[/b]. L’Esplorazione termina.[/i]\n\n[b]Suggerimento: [/b] molte decisioni che prenderete avranno eco nelle altre due campagne principali di Tainted Grail. Questa è una di esse.",
+   "contesto": "Luogo 126 verso 7, scelta: Continua."
+  },
+  {
+   "chiave": "v:328",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Tirare un dado e sommare la vostra {i:aggression} o {i:caution} (la più alta tra le due). Se il risultato è stato:[/i]",
+   "contesto": "Luogo 126 verso 8"
+  },
+  {
+   "chiave": "c:dd0d55062e1a",
+   "ruolo": "condizione",
+   "testo": "Il risultato è stato: 1-4",
+   "contesto": "Luogo 126 verso 8: [i]Tirare un dado e sommare la vostra {i:aggression} o {i:caution} (la più alta tra le due). Se il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:4577e53588da",
+   "ruolo": "risultato",
+   "testo": "Non fate altro che affaticarvi. \n\n[i]Ogni membro della Compagnia perde 1 {i:energy}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 8, scelta: Il risultato è stato: 1-4"
+  },
+  {
+   "chiave": "c:fede1fbaa1b1",
+   "ruolo": "condizione",
+   "testo": "Il risultato è stato:  5-7",
+   "contesto": "Luogo 126 verso 8: [i]Tirare un dado e sommare la vostra {i:aggression} o {i:caution} (la più alta tra le due). Se il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:b54aa469933b",
+   "ruolo": "risultato",
+   "testo": "Trovate degli oggetti di valore. \n\n[i]Ottenete 1 {r:Ricchezza} per membro della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 8, scelta: Il risultato è stato:  5-7"
+  },
+  {
+   "chiave": "c:90d23f452fed",
+   "ruolo": "condizione",
+   "testo": "Il risultato è stato:  8+",
+   "contesto": "Luogo 126 verso 8: [i]Tirare un dado e sommare la vostra {i:aggression} o {i:caution} (la più alta tra le due). Se il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:13d75fd330ae",
+   "ruolo": "risultato",
+   "testo": "Sotto le macerie rinvenite un negozio solo parzialmente distrutto. Al suo interno ci sono ancora degli antichi ninnoli.",
+   "contesto": "Luogo 126 verso 8, scelta: Il risultato è stato:  8+"
+  },
+  {
+   "chiave": "q:24cb2487ec06",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la parte 2 dello status [b]“Sconfitti e Caduti”[/b]",
+   "contesto": "Luogo 131 verso 0, scelta: Continua."
+  },
+  {
+   "chiave": "r:d83f6565fc30",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere questa carta Luogo dal gioco e rimpiazzarla con il Luogo [b]137[/b]. Poi, Esplorare questo nuovo Luogo.[/i]",
+   "contesto": "Luogo 131 verso 0, scelta: Continua."
+  },
+  {
+   "chiave": "q:daa13dcdbe38",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la parte 3 o 4 dello status [b]“Sconfitti e Caduti”[/b]",
+   "contesto": "Luogo 131 verso 0, scelta: Continua."
+  },
+  {
+   "chiave": "r:5bc2e9092488",
+   "ruolo": "risultato",
+   "testo": "[i]Muovere tutti i membri della Compagnia verso il Luogo dal numero più basso collegato a Timberwall. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 1, scelta: [b]Scappare[/b]"
+  },
+  {
+   "chiave": "q:242299d24019",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se la vostra {i:empathy} è 1 o superiore",
+   "contesto": "Luogo 131 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:ef8e32a7166c",
+   "ruolo": "risultato",
+   "testo": "Essendo degli stranieri, è difficile guadagnarsi la fiducia della gente e finite facilmente nei guai. \n\n[i]Pescare e risolvere un Incontro blu. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "q:7bd7eed0a66a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se vincete o riuscite a Evitare l’Incontro[/i]",
+   "contesto": "Luogo 131 verso 3, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "r:789ee12cdb06",
+   "ruolo": "risultato",
+   "testo": "[i]Invece di applicare il risultato Fallimento della carta, muovere tutti i membri della Compagnia verso il Luogo dal numero più basso collegato a Timberwall. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 3, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "q:6f0b83f8af03",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 5 {r:Ricchezza}[/i]",
+   "contesto": "Luogo 131 verso 4, scelta: [b]Perché gli pagherete il disturbo[/b]"
+  },
+  {
+   "chiave": "q:55624e3f9a7d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]Arev[/b][/i]",
+   "contesto": "Luogo 131 verso 4, scelta: [b]Perché gli parlate francamente, come tra veterani dell’esercito[/b]"
+  },
+  {
+   "chiave": "q:a5eef2df5852",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 6 {r:Rep}[/i]",
+   "contesto": "Luogo 131 verso 4, scelta: [b]Perché siete dei noti eroi che vogliono porre fine a questo conflitto[/b]"
+  },
+  {
+   "chiave": "q:0927781e0758",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la parte 3 dello status [b]“Guerra di Avalon”[/b][/i]",
+   "contesto": "Luogo 131 verso 4, scelta: [b]Perché siete in missione per conto di Sir Mordred[/b]"
+  },
+  {
+   "chiave": "q:bdc706cc51c9",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto [b]8 o 7[/b][/i]",
+   "contesto": "Luogo 131 verso 4, scelta: [b]Perché avete con voi una reliquia sacra[/b]"
+  },
+  {
+   "chiave": "q:7e3e7231fa17",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede di [b]non avere[/b] la parte 2 dello status [b]“Nemici di Avalon”[/b] e richiede i [b]Capitoli 2-3[/b][/i]",
+   "contesto": "Luogo 131 verso 7, scelta: [b]Far visita a Ultan, il condottiero di Timberwall[/b]"
+  },
+  {
+   "chiave": "q:c40dbed172e6",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede al meno una parte dello status “Diplomatico”[/i]",
+   "contesto": "Luogo 131 verso 7, scelta: [b]Consegnare un messaggio diplomatico[/b]"
+  },
+  {
+   "chiave": "r:a365228f7120",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {i:energy}. Ottenete la parte 1 e la parte 4 dello status[b] “Fato della Spedizione”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 8, scelta: Continua."
+  },
+  {
+   "chiave": "r:ca43e143d3cb",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {r:Rep} e 1 {i:health} per ogni punto di {i:aggression} posseduto. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 9, scelta: Continua."
+  },
+  {
+   "chiave": "c:805a4ceab224",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 1 dello status [b]“Cosuil”[/b] e[b] non avete[/b] la parte 2 di questo status",
+   "contesto": "Luogo 131 verso 10: In virtù dei recenti eventi, i prezzi sono diventati astronomici proprio come vi aspettavate."
+  },
+  {
+   "chiave": "q:5ca4193ee567",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 4 {r:Ricchezza} per ottenere 1\n{r:Cibo}[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Comprare{r:Cibo}[/b]"
+  },
+  {
+   "chiave": "r:d282725f82e3",
+   "ruolo": "risultato",
+   "testo": "Poi, prendere un’altra scelta.",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Comprare{r:Cibo}[/b]"
+  },
+  {
+   "chiave": "q:0691008bb6a4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {r:Cibo} per ottenere 1 {r:Ricchezza}[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Vendere {r:Cibo}[/b]"
+  },
+  {
+   "chiave": "q:b5587255fec3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ogni membro della Compagnia può pagare 3 {r:Ricchezza} e 1 {i:energy}  per ottenere 1 {i:health}  e perdere 1 {i:terror}. [/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Riposare in una taverna accogliente[/b]"
+  },
+  {
+   "chiave": "r:abbde98ecbce",
+   "ruolo": "risultato",
+   "testo": "[i]Mescolare quelle avanzate nel mazzo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Comprare equipaggiamento[/b]"
+  },
+  {
+   "chiave": "q:4b9fb29ad60f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scartare un qualsiasi quantitativo di carte Oggetto e ottenere 1 {r:Ricchezza} per ciascuna di esse.[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Vendere equipaggiamento[/b]"
+  },
+  {
+   "chiave": "q:63973e16117e",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Richiede la carta Segreto [b]9[/b]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Ricattare un commerciante[/b]"
+  },
+  {
+   "chiave": "q:8de1bdda4eab",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] le parti 3 o 4 dello status [b]“Sconfitti e Caduti”[/b][/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Lasciare il mercato[/b]"
+  },
+  {
+   "chiave": "r:2de4a69e526a",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]40[/b].[/i]",
+   "contesto": "Luogo 131 verso 11, scelta: Continua."
+  },
+  {
+   "chiave": "r:650ef41786f2",
+   "ruolo": "risultato",
+   "testo": "Non c’è nulla di nuovo da sapere – [i] l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 12, scelta: Se [b]avete[/b] la parte 4 dello status [b]“Guerra di Avalon”[/b]"
+  },
+  {
+   "chiave": "q:1b9e217f6338",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] la carta Segreto[b] 12[/b][/i]",
+   "contesto": "Luogo 131 verso 12, scelta: Continua."
+  },
+  {
+   "chiave": "r:233f8dbc7ce9",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 6 {r:Ricchezza}. Ottenete la parte 4 dello status [b]“Alleati di Avalon”[/b] e la parte 1 dello status [b]“Nemici di Avalon”[/b]. Rimuovete la carta Segreto[b] 12[/b] dal gioco.[/i]",
+   "contesto": "Luogo 131 verso 13, scelta: Continua."
+  },
+  {
+   "chiave": "q:2d09ded2534f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il consenso di tutti i giocatori; conclude il Capitolo in corso[/i]",
+   "contesto": "Luogo 131 verso 14, scelta: [b]Accettare[/b]"
+  },
+  {
+   "chiave": "c:9ef5c4bfd20d",
+   "ruolo": "condizione",
+   "testo": "Se perdete",
+   "contesto": "Luogo 131 verso 15: “Che peccato. Ora che conoscete i miei piani, capirete che non posso lasciarvi andare, vero? Guardie!”\n\nIl suo grido rimbomba sotto l’alto soffitto del palazzo,"
+  },
+  {
+   "chiave": "c:f9dc45603248",
+   "ruolo": "condizione",
+   "testo": "Se vincete",
+   "contesto": "Luogo 131 verso 15: “Che peccato. Ora che conoscete i miei piani, capirete che non posso lasciarvi andare, vero? Guardie!”\n\nIl suo grido rimbomba sotto l’alto soffitto del palazzo,"
+  },
+  {
+   "chiave": "r:4ec6777b507b",
+   "ruolo": "risultato",
+   "testo": "[i]Dovete uscire precipitosamente dalla città – L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 15, scelta: Se vincete"
+  },
+  {
+   "chiave": "r:8662412b7001",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 16, scelta: Continua."
+  },
+  {
+   "chiave": "q:5ec11287fb93",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 2 dello status [b]“Diplomatico”[/b][/i]",
+   "contesto": "Luogo 131 verso 17, scelta: Continua."
+  },
+  {
+   "chiave": "r:6757ab6a4d0a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}; ottenete la parte 2 dello status {r:“Diplomatico”}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 17, scelta: Continua."
+  },
+  {
+   "chiave": "q:7d039067414f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede[b] tutti i Personaggi[/b] e i [b]Capitoli 6-7[/b][/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Mettersi alla ricerca del passaggio segreto, traendo vantaggio dal caos in cui è immerso questo luogo[/b]"
+  },
+  {
+   "chiave": "r:ccc83b3b2f31",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado e sommare +1 per ogni punto della vostra {i:caution}.[/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Mettersi alla ricerca del passaggio segreto, traendo vantaggio dal caos in cui è immerso questo luogo[/b]"
+  },
+  {
+   "chiave": "q:1c4b6a6ad317",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]tutti i Personaggi[/b] e la carta Evento [b]Capitolo 7: parte 2[/b][/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Seguire le indicazioni di Orrin[/b]"
+  },
+  {
+   "chiave": "q:6031430bce5c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]solo se non c’è un Gettone Tempo su questo Luogo[/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Mangiare a sazietà e andarsene[/b]"
+  }
+ ]
+}

@@ -18,6 +18,8 @@ var _corpo: VBoxContainer
 var _scorri: ScrollContainer
 var _esito_box: VBoxContainer
 var _barra: HBoxContainer
+var domande: Domande          # scelte del giocatore durante gli effetti automatici
+var _occupato := false
 
 func _init(motore_: MotoreDiario, partita_ = null) -> void:
 	motore = motore_
@@ -140,7 +142,7 @@ func _riga_tiro(tiro: Dictionary) -> Control:
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 12)
 	var b := Tema.pulsante_primario("🎲 TIRA IL DADO", func():
-		var mod := Effetti.modificatore_tiro(motore, partita)
+		var mod := motore.modificatore_tiro()
 		var v := randi_range(1, 6)
 		motore.imposta_tiro(v + int(mod["valore"]))
 		var s := "Dado: %d" % v
@@ -157,7 +159,7 @@ func _riga_tiro(tiro: Dictionary) -> Control:
 		l.add_theme_font_override("font", Tema.titolo)
 		l.add_theme_color_override("font_color", Tema.ORO)
 	else:
-		var mod := Effetti.modificatore_tiro(motore, partita)
+		var mod := motore.modificatore_tiro()
 		l.text = ("Modificatore: %+d (%s)" % [int(mod["valore"]), mod["testo"]]) if int(mod["valore"]) != 0 else "Tira e confronta il risultato con le fasce."
 		l.add_theme_color_override("font_color", Tema.TESTO_2)
 	l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -222,16 +224,49 @@ func _voce(o: Dictionary, ok, condizione: bool) -> Control:
 	return v
 
 func _scegli(es: Dictionary) -> void:
+	if _occupato:
+		return
+	_occupato = true
 	var q := str(es.get("q", ""))
-	# costi da pagare ("Pagare 2 Ricchezza") prima di seguire la scelta
+	var applicati := []
+	var salto: Array = []
+	# requisiti e costi ("Pagare 2 Ricchezza") prima di seguire la scelta
 	if partita and q != "":
-		Effetti.paga_costo(q, partita)
+		var aq := Dati.auto_diario("q:", q)
+		if not aq.is_empty():
+			var itq := Interprete.new(partita, null, domande, motore.contesto())
+			if aq.get("costo") is Array and not aq["costo"].is_empty():
+				if not await itq.esegui(aq["costo"]):
+					_occupato = false
+					_mostra_risultato("[color=#e05a4a]Non potete pagare il costo di questa scelta.[/color]", itq.rapporto)
+					return
+			if aq.get("effetti") is Array:
+				await itq.esegui(aq["effetti"])
+			applicati.append_array(itq.rapporto)
+			if itq.ctx.has("salto_diario"):
+				salto = itq.ctx["salto_diario"]
+		else:
+			Effetti.paga_costo(q, partita)
 	var res := motore.segui(es)
 	var r := str(res["risultato"])
-	var applicati := []
 	if partita and r != "":
-		applicati = Effetti.applica(r, partita)
+		var ar := Dati.auto_diario("r:", r)
+		if ar.get("effetti") is Array:
+			var it := Interprete.new(partita, null, domande, motore.contesto())
+			await it.esegui(ar["effetti"])
+			applicati.append_array(it.rapporto)
+			if it.ctx.has("esito_incontro"):
+				motore.stato["esito_incontro"] = it.ctx["esito_incontro"]
+			if it.ctx.has("salto_diario"):
+				salto = it.ctx["salto_diario"]
+		else:
+			applicati.append_array(Effetti.applica(r, partita))
+	_occupato = false
 	avanzato.emit()
+	if not salto.is_empty() and motore.apri_numero(int(salto[0]), int(salto[1])):
+		aggiorna()
+		_mostra_risultato(r, applicati)
+		return
 	if res["fine"]:
 		_mostra_fine(r, applicati)
 	else:

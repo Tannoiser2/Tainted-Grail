@@ -1,0 +1,3039 @@
+{
+ "carte": [
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33406.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Eliges el ataque enemigo (excepto «Huir»); {i:discard} después del ataque.",
+    "it": "Scegli l'attacco nemico (tranne «Fuggire»); {i:discard} dopo l'attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33407.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presa",
+    "it": "Presa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}.",
+     "it": "Se subisci {i:wound}, {i:discard}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33408.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33409.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe final",
+    "it": "Colpo finale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube2}, +1 {i:wound}.",
+    "it": "Perdi {i:cube2}, +1 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33410.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33411.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe potente",
+    "it": "Colpo potente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube2}.",
+     "it": "Ottieni {i:cube2}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33412.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33413.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe paralizante",
+    "it": "Colpo paralizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Pierde {i:cube} menos, roba 1 carta.",
+     "it": "Paga 1 Carica: perdi {i:cube} in meno, pesca 1 carta."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33414.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33300.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe formidable",
+    "it": "Colpo formidabile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33301.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rabia implacable",
+    "it": "Rabbia implacabile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:aggression}.",
+    "it": "Ottieni {i:cube} per ogni {i:aggression}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33302.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Encontrar punto débil",
+    "it": "Trovare il punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33303.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Intimidación brutal",
+    "it": "Intimidazione brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro gris, obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+    "it": "Se stai combattendo contro un Incontro grigio, ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33304.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque brutal",
+    "it": "Attacco brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33305.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque brutal",
+    "it": "Attacco brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33306.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe asombroso",
+    "it": "Colpo strabiliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 2 {i:wound}.",
+    "it": "Previeni 2 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33307.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe asombroso",
+    "it": "Colpo strabiliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 2 {i:wound}.",
+    "it": "Previeni 2 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33308.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sangre negra",
+    "it": "Sangue nero"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:health}.",
+     "it": "Perdi 1 {i:health}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 de {r:Magia} o 1 de {i:health}: La siguiente carta no necesita conectar con {i:extra}.",
+     "it": "Paga 1 {r:Magia} o 1 {i:health}: la carta successiva non ha bisogno di collegarsi con {i:extra}."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33309.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Fuerza bruta",
+    "it": "Forza bruta"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}, obtén 2 Cargas.",
+     "it": "Perdi 1 {i:energy}, ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+     "it": "Paga 1 Carica: ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33310.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe de hombro",
+    "it": "Spallata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube} menos, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube} in meno, previeni 1 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Forcejeo",
+    "it": "Colluttazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "{i:discard} si recibes más de 1 {i:wound}.",
+     "it": "{i:discard} se subisci più di 1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33312.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33313.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33314.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Barrido de martillo",
+    "it": "Spazzata di martello"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Descarta 10 cartas de la parte superior de tu mazo de Combate.",
+     "it": "Scarta le prime 10 carte del tuo mazzo Combattimento."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube10}.",
+     "it": "Ottieni {i:cube10}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32901.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque cauteloso",
+    "it": "Attacco prudente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube} menos, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube} in meno, previeni 1 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32902.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe paralizante",
+    "it": "Colpo paralizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Pierde {i:cube} menos, roba 1 carta.",
+     "it": "Paga 1 Carica: perdi {i:cube} in meno, pesca 1 carta."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32903.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32904.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Distracción",
+    "it": "Distrazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Si el enemigo inflige {i:wound}, en vez de eso pierde esa cantidad de {i:cube}.",
+    "it": "Se il nemico infligge {i:wound}, invece perdi quella quantità di {i:cube}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32905.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "En vez del ataque enemigo, pierde {i:cube} y {i:discard}.",
+    "it": "Invece dell'attacco nemico, perdi {i:cube} e {i:discard}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32906.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Recapacitar",
+    "it": "Ripensarci"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Pierde {i:cube}, roba 2 cartas.",
+    "it": "Perdi {i:cube}, pesca 2 carte."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32907.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición",
+    "it": "Maledizione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro púrpura, obtén {i:cube} por cada {i:magic}.",
+    "it": "Se stai combattendo contro un Incontro viola, ottieni {i:cube} per ogni {i:magic}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32908.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Eliges el ataque enemigo (excepto «Huir»), {i:discard} después del ataque.",
+    "it": "Scegli l'attacco nemico (tranne «Fuggire»), {i:discard} dopo l'attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32909.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Falsa retirada",
+    "it": "Falsa ritirata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde {i:cube} y lanza un dial: Calavera: Resuelve un ataque de oportunidad. Grial: {i:skull} ignora el ataque enemigo, obtén {i:cube2}, {i:discard}.",
+    "it": "Perdi {i:cube} e lancia un Quadrante: Teschio: risolvi un attacco di opportunità. Graal: {i:skull} ignora l'attacco nemico, ottieni {i:cube2}, {i:discard}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32910.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Burlar",
+    "it": "Schernire"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro verde, obtén {i:cube} por cada punto de {i:practicality} que tengas.",
+    "it": "Se stai combattendo contro un Incontro verde, ottieni {i:cube} per ogni punto di {i:practicality} che possiedi."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32911.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32912.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32913.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Supporto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Añade 2 Cargas a cualquier carta de la Secuencia.",
+    "it": "Aggiungi 2 Cariche a una qualsiasi carta della Sequenza."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32914.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque sorpresa",
+    "it": "Attacco a sorpresa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32915.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32800.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Polvo cegador",
+    "it": "Polvere accecante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, {i:discard} después del ataque.",
+    "it": "Ignora l'attacco nemico, {i:discard} dopo l'attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32801.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Polvo cegador",
+    "it": "Polvere accecante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, {i:discard} después del ataque.",
+    "it": "Ignora l'attacco nemico, {i:discard} dopo l'attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32802.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa ágil",
+    "it": "Difesa agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32803.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa ágil",
+    "it": "Difesa agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32804.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra ágil",
+    "it": "Manovra agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+     "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32805.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra ágil",
+    "it": "Manovra agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+     "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32806.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Hierbas irritantes",
+    "it": "Erbe irritanti"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 1 {i:wound}, pierde {i:cube} menos.",
+    "it": "Previeni 1 {i:wound}, perdi {i:cube} in meno."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32807.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Atacar el punto débil",
+    "it": "Colpire il punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén {i:cube} por cada punto de {i:practicality} que tengas.",
+     "it": "Ottieni {i:cube} per ogni punto di {i:practicality} che possiedi."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Ignora todas las pérdidas de {i:cube}.",
+     "it": "Ignora tutte le perdite di {i:cube}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32808.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rodar y esquivar",
+    "it": "Rotolare e schivare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, pierde 1 de {i:energy}.",
+    "it": "Ignora l'attacco nemico, perdi 1 {i:energy}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32809.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar hoz",
+    "it": "Lanciare la falce"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube3",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": null,
+    "tempo": 0,
+    "es": "",
+    "it": ""
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32810.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Intocable",
+    "it": "Intoccabile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Prevén todas las {i:wound} de un ataque enemigo.",
+     "it": "Paga 1 Carica: previeni tutte le {i:wound} di un attacco nemico."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32811.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Brebaje de poder",
+    "it": "Pozione di potere"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas: Duplica todas las Claves (de Bonificación, Mágicas y sin coste) de una sola carta (usar solo al jugar dicha carta).",
+     "it": "Paga 2 Cariche: raddoppia tutte le Chiavi (di Bonus, Magiche e senza costo) di una sola carta (da usare solo quando giochi quella carta)."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32812.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ayuda de la naturaleza",
+    "it": "Aiuto della natura"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas: Ignora el ataque enemigo.",
+     "it": "Paga 2 Cariche: ignora l'attacco nemico."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 de {r:Magia}: Restaura 1 de {i:health} a cualquier miembro del equipo.",
+     "it": "Paga 2 {r:Magia}: ripristina 1 {i:health} a un qualsiasi membro della Compagnia."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32813.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo firme",
+    "it": "Supporto saldo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en cualquier carta de la Secuencia.",
+    "it": "Metti 3 Cariche su una qualsiasi carta della Sequenza."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32814.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo firme",
+    "it": "Supporto saldo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en cualquier carta de la Secuencia.",
+    "it": "Metti 3 Cariche su una qualsiasi carta della Sequenza."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32925.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque dirigido",
+    "it": "Attacco mirato"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Pierde {i:cube}.",
+     "it": "Perdi {i:cube}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32924.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Supporto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Añade 2 Cargas a cualquier carta de la Secuencia.",
+    "it": "Aggiungi 2 Cariche a una qualsiasi carta della Sequenza."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32923.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Arremetida",
+    "it": "Assalto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Retira {i:delay} de cualquier carta de la Secuencia.",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da una qualsiasi carta della Sequenza."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32922.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar.",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32921.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe crítico",
+    "it": "Colpo critico"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "El enemigo ataca usando el primer ataque de su Tabla de Combate.",
+    "it": "Il nemico attacca usando il primo attacco della sua Tabella di Combattimento."
+   },
+   "passiva": false
+  }
+ ]
+}

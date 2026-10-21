@@ -1,0 +1,890 @@
+{
+ "carte": [
+  {
+   "img": "carte/objetos/32563.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Pergamino de las sombras",
+    "it": "Pergamena Intrisa d’Ombra"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Mueve tu personaje a cualquier otra Localización revelada, obtén 2 de {i:terror} y descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: muovi il tuo Personaggio in qualsiasi altro Luogo rivelato, ottieni 2 {i:terror} e scarta questo Oggetto."
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32564.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Báculo arcano",
+    "it": "Bastone Arcano"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Obtén {i:cube} cada vez que conectes una Clave Mágica en Combate.",
+    "it": "Ottieni {i:cube} ogni volta che colleghi una Chiave Magica in Combattimento."
+   }
+  },
+  {
+   "img": "carte/secretos/32600.webp",
+   "tipo": "segreto",
+   "numero": 2,
+   "nome": {
+    "es": "Hallazgo inquietante",
+    "it": "Scoperta Inquietante"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 de {i:terror} al Comienzo del Día.\nPuedes descartar esta carta en cualquier momento.",
+    "it": "Ottieni 1 {i:terror} all'Inizio della Giornata.\nPuoi scartare questa carta in qualsiasi momento."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32601.webp",
+   "tipo": "segreto",
+   "numero": 3,
+   "nome": {
+    "es": "Máscara funeraria",
+    "it": "Maschera Sepolcrale"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada vez que debas robar un Encuentro púrpura aleatorio, roba 2 y elige 1. Pon el otro Encuentro debajo de su mazo.",
+    "it": "Ogni volta che devi pescare un Incontro viola casuale, pescane 2 e scegline 1. Metti l'altro Incontro in fondo al suo mazzo."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32602.webp",
+   "tipo": "segreto",
+   "numero": 4,
+   "nome": {
+    "es": "¡Furia!",
+    "it": "Furia!"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Mientras este Secreto esté en juego, todos los Encuentros de Combate obtienen el Rasgo de [i]Furia[/i].",
+    "it": "Finché questo Segreto è in gioco, tutti gli Incontri di Combattimento ottengono il Tratto [i]Furia[/i]."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32603.webp",
+   "tipo": "segreto",
+   "numero": 5,
+   "nome": {
+    "es": "Loriga",
+    "it": "Usbergo"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "effetto": {
+    "es": "{i:skull} Prevén 2 {i:wound}.\nPierde 1 de {i:energy} al comienzo de cada Encuentro de Combate.",
+    "it": "{i:skull} Previeni 2 {i:wound}.\nPerdi 1 {i:energy} all'inizio di ogni Incontro di Combattimento."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32604.webp",
+   "tipo": "segreto",
+   "numero": 7,
+   "nome": {
+    "es": "Grial verdadero",
+    "it": "Vero Graal"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Al Comienzo del Día, pierde 1 de {i:terror} y después obtén 1 de {i:energy} o 1 de {i:health} o 1 de {r:Magia}.",
+    "it": "All'Inizio della Giornata, perdi 1 {i:terror} e poi ottieni 1 {i:energy} o 1 {i:health} o 1 {r:Magia}."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32605.webp",
+   "tipo": "segreto",
+   "numero": 8,
+   "nome": {
+    "es": "Grial corrompido",
+    "it": "Graal Corrotto"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Obtén 1 de {r:Magia} al Comienzo del Día.",
+    "it": "Ottieni 1 {r:Magia} all'Inizio della Giornata."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32606.webp",
+   "tipo": "segreto",
+   "numero": 9,
+   "nome": {
+    "es": "Información delicada",
+    "it": "Informazione Delicata"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]Alguien pagará generosamente por esto.[/i]",
+    "it": "[i]Qualcuno pagherà profumatamente per questo.[/i]"
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32607.webp",
+   "tipo": "segreto",
+   "numero": 11,
+   "nome": {
+    "es": "Rituales de Menhir",
+    "it": "Riti del Menhir"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "¡Ahora puedes activar Menhires!\nLos costes de esta acción se pueden encontrar en la cara trasera de cada Localización, junto al icono del Menhir.",
+    "it": "Ora puoi attivare i Menhir!\nI costi di questa azione si trovano sul retro di ogni Luogo, accanto all'icona del Menhir."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32608.webp",
+   "tipo": "segreto",
+   "numero": 12,
+   "nome": {
+    "es": "Prisionero famélico",
+    "it": "Prigioniero Affamato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al Comienzo del Día, paga 1 de {r:Comida} o 1 de {r:Magia} o descarta esta carta.",
+    "it": "All'Inizio della Giornata, paga 1 {r:Cibo} o 1 {r:Magia} oppure scarta questa carta."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32609.webp",
+   "tipo": "segreto",
+   "numero": 13,
+   "nome": {
+    "es": "¡Perseguido!",
+    "it": "Preda"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al Comienzo del Día, mueve a tu perseguidor según las reglas del Versículo 13 del Libro de los Secretos.",
+    "it": "All'Inizio della Giornata, muovi il tuo inseguitore secondo le regole del verso 13 del Libro dei Segreti."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32610.webp",
+   "tipo": "segreto",
+   "numero": 14,
+   "nome": {
+    "es": "Rarapiedra prístina",
+    "it": "Pietra Anomala Pura"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} ? {i:energy}: Paga 2 de Energía (por cada jugador) para mover la Rarapiedra Prístina y a todos los miembros del equipo desde tu Localización actual a cualquier Localización conectada.",
+    "it": "{i:action} ? {i:energy}: paga 2 Energia (per ogni giocatore) per muovere la Pietra Anomala Pura e tutti i membri della Compagnia dal tuo Luogo attuale a qualsiasi Luogo collegato."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": "?",
+    "risorsa": "energy",
+    "costo_per_giocatore": 2
+   }
+  },
+  {
+   "img": "carte/secretos/32611.webp",
+   "tipo": "segreto",
+   "numero": 15,
+   "nome": {
+    "es": "Menhir tosco",
+    "it": "Menhir Grezzo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Siempre que Viajes, paga 1 de {i:energy} adicional.\n{i:action} 0 {i:energy}: Paga 1 de {r:Magia} (por cada jugador) para poner junto a tu carta de Localización una Localización que encaje.\n¡Esta carta no necesita estar dentro del radio de un Menhir activo!",
+    "it": "Ogni volta che Viaggi, paga 1 {i:energy} aggiuntiva.\n{i:action} 0 {i:energy}: paga 1 {r:Magia} (per ogni giocatore) per mettere accanto alla tua carta Luogo un Luogo che vi si colleghi.\nQuesta carta non ha bisogno di trovarsi nel raggio di un Menhir attivo!"
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/secretos/32612.webp",
+   "tipo": "segreto",
+   "numero": 16,
+   "nome": {
+    "es": "Cabeza de Morrigan",
+    "it": "Testa di Morrigan"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Escucha sus susurros: Obtén 1 de {r:Magia} y 1 de {i:terror}.",
+    "it": "{i:action} 1 {i:energy}: ascolta i suoi sussurri: ottieni 1 {r:Magia} e 1 {i:terror}."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/secretos/32613.webp",
+   "tipo": "segreto",
+   "numero": 17,
+   "nome": {
+    "es": "Amuleto del Ciervo Padre",
+    "it": "Amuleto di Padre Cervo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cuando robes el Encuentro «Acólita Arquera», ponlo otra vez debajo de su mazo, obtén 1 de {r:Comida} y sigue jugando.",
+    "it": "Quando peschi l'Incontro «Sagittario», rimettilo in fondo al suo mazzo, ottieni 1 {r:Cibo} e continua a giocare."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32614.webp",
+   "tipo": "segreto",
+   "numero": 18,
+   "nome": {
+    "es": "Almasa refinada",
+    "it": "Almasa Raffinata"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Coloca una ficha de Misión, que representa la Almasa, en tu Localización actual (una vez al Día).\nConsulta las reglas de la Almasa en el Versículo 455 del Libro de los Secretos.",
+    "it": "{i:action} 1 {i:energy}: piazza un Gettone Cerca, che rappresenta l'Almasa, nel tuo Luogo attuale (una volta al Giorno).\nConsulta le regole dell'Almasa nel verso 455 del Libro dei Segreti."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "una_volta_al_giorno": true
+  },
+  {
+   "img": "carte/secretos/32615.webp",
+   "tipo": "segreto",
+   "numero": 19,
+   "nome": {
+    "es": "Ayuda del pueblo",
+    "it": "Aiuto del Popolo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada personaje puede tener hasta 2 Compañeros activos al mismo tiempo.\nCada vez que un personaje robe un Encuentro «Turba Enfurecida», ponlo de nuevo debajo de su mazo.",
+    "it": "Ogni Personaggio può avere fino a 2 Compagni attivi contemporaneamente.\nOgni volta che un Personaggio pesca l'Incontro «Folla Inferocita», rimettilo in fondo al suo mazzo."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32616.webp",
+   "tipo": "segreto",
+   "numero": 21,
+   "nome": {
+    "es": "Talismán deslucido",
+    "it": "Talismano Opaco"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Cada vez que pierdas {i:terror}, pierdes 1 punto más.",
+    "it": "Ogni volta che perdi {i:terror}, ne perdi 1 punto in più."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32617.webp",
+   "tipo": "segreto",
+   "numero": 22,
+   "nome": {
+    "es": "Talismán brillante",
+    "it": "Talismano Splendente"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Cada vez que pierdas {i:terror}, pierdes 1 punto más.",
+    "it": "Ogni volta che perdi {i:terror}, ne perdi 1 punto in più."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32618.webp",
+   "tipo": "segreto",
+   "numero": 25,
+   "nome": {
+    "es": "Redención",
+    "it": "Redenzione"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 parte del Estado «Redención» cada vez que obtengas {r:Rep}.\nCuando tengas las 5 partes de este Estado, descarta esta carta y obtén 3 de {r:Exp}.",
+    "it": "Ottieni 1 parte dello status «Redenzione» ogni volta che ottieni {r:Rep}.\nQuando hai tutte e 5 le parti di questo status, scarta questa carta e ottieni 3 {r:Esp}."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32619.webp",
+   "tipo": "segreto",
+   "numero": 27,
+   "nome": {
+    "es": "Martillo de Viejoacero",
+    "it": "Martello di Antico Acciaio"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Obtén {i:cube} al comienzo de cada Encuentro púrpura.",
+    "it": "Ottieni {i:cube} all'inizio di ogni Incontro viola."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32620.webp",
+   "tipo": "segreto",
+   "numero": 31,
+   "nome": {
+    "es": "Descubrimiento de Sigilo Arcano",
+    "it": "Scoperta del Sigillo Arcano"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 de {r:Magia} si Descansas en una Localización con un Sigilo Arcano visible (ver ilustración).",
+    "it": "Ottieni 1 {r:Magia} se Riposi in un Luogo con un Sigillo Arcano visibile (vedi illustrazione)."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32621.webp",
+   "tipo": "segreto",
+   "numero": 32,
+   "nome": {
+    "es": "Cristales pálidos",
+    "it": "Cristalli Pallidi"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Reduce un dial de esta carta en 1 cada Comienzo del Día. Descarta este Secreto cuando el dial se agote.",
+    "it": "Riduci di 1 un Quadrante su questa carta a ogni Inizio della Giornata. Scarta questo Segreto quando il Quadrante si esaurisce."
+   },
+   "quadrante": true
+  },
+  {
+   "img": "carte/secretos/32622.webp",
+   "tipo": "segreto",
+   "numero": 33,
+   "nome": {
+    "es": "Colonos esperanzados",
+    "it": "Coloni Speranzosi"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "En el Fin del Día, si no hay fichas de Misión en esta carta, paga 1 de {r:Riqueza} o pierde 1 de {r:Rep}; o descarta esta carta.",
+    "it": "Alla Fine della Giornata, se non ci sono Gettoni Cerca su questa carta, paga 1 {r:Ricchezza} o perdi 1 {r:Rep}; oppure scarta questa carta."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32623.webp",
+   "tipo": "segreto",
+   "numero": 37,
+   "nome": {
+    "es": "Cosuil la Incansable",
+    "it": "Cosuil, l’Irrequieta"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "effetto": {
+    "es": "Reduce todos los costes de {i:energy} en 1 (hasta un mínimo de 1). Aumenta todas las ganancias de {r:Rep} en 1. Disminuye todas las ganancias de {r:Exp} en 1. Puedes descartar esta carta en cualquier momento.",
+    "it": "Riduci di 1 tutti i costi in {i:energy} (fino a un minimo di 1). Aumenta di 1 tutti i guadagni di {r:Rep}. Diminuisci di 1 tutti i guadagni di {r:Esp}. Puoi scartare questa carta in qualsiasi momento."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32624.webp",
+   "tipo": "segreto",
+   "numero": 39,
+   "nome": {
+    "es": "Anillo reptante",
+    "it": "Anello Strisciante"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Obtén 1 de {i:energy} al Comienzo del Día.",
+    "it": "Ottieni 1 {i:energy} all'Inizio della Giornata."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32625.webp",
+   "tipo": "segreto",
+   "numero": 40,
+   "nome": {
+    "es": "Bolsa de diamantes",
+    "it": "Sacchetto di Diamanti"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Véndelos (solo en Asentamientos): Obtén 10 de {r:Riqueza} y descarta esta carta.",
+    "it": "{i:action} 1 {i:energy}: vendili (solo negli Insediamenti): ottieni 10 {r:Ricchezza} e scarta questa carta."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/secretos/32626.webp",
+   "tipo": "segreto",
+   "numero": 42,
+   "nome": {
+    "es": "Desconfianza",
+    "it": "Sfiducia"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "La primera carta de Diplomacia jugada durante una activación de personaje da {i:arrowup} menos.",
+    "it": "La prima carta Diplomazia giocata durante l'Attivazione di un Personaggio dà {i:arrowup} in meno."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32627.webp",
+   "tipo": "segreto",
+   "numero": 44,
+   "nome": {
+    "es": "Artefacto de los Primeros Moradores",
+    "it": "Ciondolo del Predecessore"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:skull} Prevén 1 {i:wound} y 1 de {i:terror} (solo en Encuentros púrpura).",
+    "it": "{i:skull} Previeni 1 {i:wound} e 1 {i:terror} (solo negli Incontri viola)."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32628.webp",
+   "tipo": "segreto",
+   "numero": 47,
+   "nome": {
+    "es": "Descubrimiento de Rojohelecho",
+    "it": "Scoperta della Felce Rossa"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Restaura 1 de {i:health} adicional y pierde 1 de {i:terror} adicional si Descansas en una Localización con un macizo de Rojohelecho visible (ver ilustración).",
+    "it": "Recupera 1 {i:health} aggiuntiva e perdi 1 {i:terror} aggiuntivo se Riposi in un Luogo con un cespuglio di Felce Rossa visibile (vedi illustrazione)."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32629.webp",
+   "tipo": "segreto",
+   "numero": 50,
+   "nome": {
+    "es": "Sable de Naazer",
+    "it": "Sciabola di Naazer"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Si tu Secuencia termina con una Clave {i:practicality} o {i:practicality2} conectada, ignora el Rasgo de [i]Finta[/i].",
+    "it": "Se la tua Sequenza termina con una Chiave {i:practicality} o {i:practicality2} collegata, ignora il Tratto [i]Finta[/i]."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32630.webp",
+   "tipo": "segreto",
+   "numero": 51,
+   "nome": {
+    "es": "Blasón de la Orden",
+    "it": "Stemma dell’Ordine"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada personaje puede tener hasta 2 Compañeros activos al mismo tiempo.\nCada vez que un personaje robe un Encuentro de «Caballero Errante», ponlo de nuevo debajo de su mazo.",
+    "it": "Ogni Personaggio può avere fino a 2 Compagni attivi contemporaneamente.\nOgni volta che un Personaggio pesca l'Incontro «Cavaliere Errante», rimettilo in fondo al suo mazzo."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32631.webp",
+   "tipo": "segreto",
+   "numero": 58,
+   "nome": {
+    "es": "Herramientas del escultor",
+    "it": "Attrezzi dello Scultore"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]El arte de moldear la extraña piedra de la que están hechos los menhires prácticamente ha sido olvidado, pero todavía hay quienes lo recuerdan...[/i]",
+    "it": "[i]L'arte di plasmare la strana pietra di cui sono fatti i menhir è stata quasi dimenticata, ma c'è ancora chi la ricorda...[/i]"
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32632.webp",
+   "tipo": "segreto",
+   "numero": 65,
+   "nome": {
+    "es": "En busca de poder",
+    "it": "In Cerca di Antichi Poteri"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Pon un dial con una ficha de Misión en esta carta y ponlo en 1. Cada vez que derrotes un Encuentro púrpura, aumenta el dial en 1 (máximo 8).",
+    "it": "Metti su questa carta un Quadrante con un Gettone Cerca e impostalo su 1. Ogni volta che sconfiggi un Incontro viola, aumenta il Quadrante di 1 (massimo 8)."
+   },
+   "quadrante": true,
+   "quadrante_iniziale": 1,
+   "quadrante_max": 8
+  },
+  {
+   "img": "carte/secretos/32633.webp",
+   "tipo": "segreto",
+   "numero": 66,
+   "nome": {
+    "es": "Marca roja",
+    "it": "Marchio Rosso"
+   },
+   "parola": "Personale",
+   "parola_es": "Personal",
+   "effetto": {
+    "es": "No puedes darle esta carta a otro personaje.",
+    "it": "Non puoi dare questa carta a un altro Personaggio."
+   },
+   "quadrante": false,
+   "copie_img": [
+    "carte/secretos/32634.webp",
+    "carte/secretos/32635.webp",
+    "carte/secretos/32636.webp"
+   ]
+  },
+  {
+   "img": "carte/secretos/32637.webp",
+   "tipo": "segreto",
+   "numero": 67,
+   "nome": {
+    "es": "Descanso intranquilo",
+    "it": "Riposo Disturbato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Siempre que un personaje Descanse, usa las reglas modificadas de Descanso del Versículo 605 del Libro de los Secretos.",
+    "it": "Ogni volta che un Personaggio Riposa, usa le regole modificate di Riposo del verso 605 del Libro dei Segreti."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32638.webp",
+   "tipo": "segreto",
+   "numero": 73,
+   "nome": {
+    "es": "Séquito armado",
+    "it": "Seguito Armato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al comienzo del combate, obtén {i:cube2}. Descarta esta carta si Escapas o Fracasas en un Encuentro de Combate.",
+    "it": "All'inizio del Combattimento, ottieni {i:cube2}. Scarta questa carta se Scappi o Fallisci in un Incontro di Combattimento."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32639.webp",
+   "tipo": "segreto",
+   "numero": 78,
+   "nome": {
+    "es": "Excalibur",
+    "it": "Excalibur"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Ignora los Rasgos [i]Rápido[/i] y [i]Defensivo[/i].\nCada vez que juegues una carta en Combate, obtén {i:cube}.\nCada vez que comiences un Combate usando a Excalibur, pierde 2 de {i:health}.",
+    "it": "Ignora i Tratti [i]Rapido[/i] e [i]Difensivo[/i].\nOgni volta che giochi una carta in Combattimento, ottieni {i:cube}.\nOgni volta che inizi un Combattimento usando Excalibur, perdi 2 {i:health}."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32640.webp",
+   "tipo": "segreto",
+   "numero": 90,
+   "nome": {
+    "es": "La Caída de Ávalon",
+    "it": "La Caduta di Avalon"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]A través de....[/i]",
+    "it": "[i]Attraverso....[/i]"
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/secretos/32641.webp",
+   "tipo": "segreto",
+   "numero": 95,
+   "nome": {
+    "es": "Vaina de Excalibur",
+    "it": "Fodero di Excalibur"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Al final de tu Descanso, puedes obtener 1 de {i:terror} para restaurar 1 de {i:health} adicional.",
+    "it": "Alla fine del tuo Riposo, puoi ottenere 1 {i:terror} per recuperare 1 {i:health} aggiuntiva."
+   },
+   "quadrante": false
+  },
+  {
+   "img": "carte/mazzo/37200.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "retro": "carte/mazzo/retro_37200.webp"
+  },
+  {
+   "img": "carte/mazzo/37201.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "retro": "carte/mazzo/retro_37201.webp"
+  },
+  {
+   "img": "carte/mazzo/37202.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "retro": "carte/mazzo/retro_37202.webp"
+  },
+  {
+   "img": "carte/mazzo/37203.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "retro": "carte/mazzo/retro_37203.webp"
+  },
+  {
+   "img": "carte/mazzo/37300.webp",
+   "tipo": "speciale",
+   "modalita": "solitario",
+   "nome": {
+    "es": "Te estás muriendo",
+    "it": "Stai morendo"
+   },
+   "testo": {
+    "es": "[i]Sigues adelante por pura fuerza de voluntad... pero no esperes que esto dure mucho.[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 1 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Solo puedes llevar 3 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Cada vez que recibas más {i:wound}, lanza un dial. Si cae con la Calavera bocarriba, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Descarta esta carta cuando tu {i:health} esté por encima de 0.\n[b]Al Comienzo del Día:[/b]\nObtén 1 de {i:terror}.",
+    "it": "[i]Vai avanti per pura forza di volontà... ma non sperare che duri a lungo.[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 1 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Puoi portare solo 3 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Ogni volta che subisci altre {i:wound}, lancia un Quadrante. Se cade con il Teschio a faccia in su, muori (consulta la sezione Morte e follia del Regolamento).\n• Scarta questa carta quando la tua {i:health} è sopra 0.\n[b]All'Inizio della Giornata:[/b]\nOttieni 1 {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo",
+    "it": "Stai morendo"
+   },
+   "limite_oggetti": 3,
+   "retro": "carte/mazzo/retro_37300.webp"
+  },
+  {
+   "img": "carte/mazzo/37301.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "retro": "carte/mazzo/retro_37301.webp"
+  },
+  {
+   "img": "carte/mazzo/37302.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "retro": "carte/mazzo/retro_37302.webp"
+  },
+  {
+   "img": "carte/mazzo/37303.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "retro": "carte/mazzo/retro_37303.webp"
+  },
+  {
+   "img": "carte/mazzo/37304.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "retro": "carte/mazzo/retro_37304.webp"
+  }
+ ]
+}

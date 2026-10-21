@@ -1,0 +1,2347 @@
+{
+ "voci": {
+  "r:5113772ef38e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "c:103cae129a10": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 6
+   }
+  },
+  "r:6b83d4cc3fb1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:e836ea7d7e1b": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "r:410a6a212f84": {
+   "effetti": [
+    {
+     "tipo": "muovi",
+     "dove": "collegato_a:131",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:cfe0371163b5": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "c:22f54fa01153": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Confronti Finali",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "q:e4bc6124b0a0": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 11,
+    "a": 11
+   }
+  },
+  "r:39a278d50aaa": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: aiutare la compagnia di razziatori di Ultan a saccheggiare i magazzini di Camelot Assediata (195) O aiutare una delle altre potenze superstiti di Avalon."
+    }
+   ]
+  },
+  "q:139cd5736a4b": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:a9a7c0180aeb": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "r:f9ce801f0d99": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:0e1a99d714ff": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:32e167e059a2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:c384307e488a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:aa294ea34b91": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "status",
+       "nome": "Mistero Risolto",
+       "parti": []
+      }
+     ]
+    },
+    "costo": [],
+    "quadrante": null,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 132,
+      "verso": 12
+     }
+    ]
+   }
+  },
+  "r:6fba3b254a11": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: trovare il Menhir all'interno del Volto Sereno potrebbe risultare impossibile qualora siate arrivati troppo presto."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:67ed66617009": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:6d5fdcba689f": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 99
+   }
+  },
+  "q:f44837cf46f1": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 33
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       5
+      ]
+     }
+    ]
+   }
+  },
+  "v:361": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "ailei"
+     },
+     "allora": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "spirituality",
+         "per": 1
+        },
+        {
+         "n": 3
+        }
+       ],
+       "risultati": []
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "spirituality",
+         "per": 1
+        }
+       ],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "c:97d580ca6dbb": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 2
+   }
+  },
+  "r:32d89946849a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:6cfd5928e116": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:11f3be181623": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 6
+   }
+  },
+  "r:47eb93c5f6d0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:4c4b776c0e6f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "r:041f968001c5": {
+   "effetti": []
+  },
+  "q:97b9b31cddb5": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "personaggio",
+      "id": "ailei"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 3
+     }
+    ]
+   }
+  },
+  "q:e5f06e2aa956": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultimo Rifugio",
+       "parti": [
+        5
+       ]
+      }
+     },
+     {
+      "tipo": "status",
+      "nome": "Sogni e Profezie",
+      "parti": [
+       6
+      ]
+     }
+    ]
+   }
+  },
+  "r:08f6da0aaaea": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:17fb78841443": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: trovare un modo di attivare il Menhir in questo Luogo."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:a989930b8fbb": {
+   "effetti": []
+  },
+  "q:680fd2d2f470": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:0f91e352455c": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:38274d73546a": {
+   "costo": [
+    {
+     "tipo": "ripeti",
+     "per": {
+      "giocatori": true
+     },
+     "effetti": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 10,
+       "chi": "diviso"
+      }
+     ]
+    }
+   ],
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Enigma dell'Antico Acciaio",
+      "parti": []
+     },
+     {
+      "tipo": "segreto",
+      "n": 27
+     }
+    ]
+   }
+  },
+  "r:c32cdc3767b6": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:24f5f4205983": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Apripista",
+    "parti": [
+     7
+    ]
+   }
+  },
+  "c:eb0f15b8ebf6": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "maggot"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Redenzione di Verme",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "c:9ca286e972c4": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Ripristinare l'Ordine",
+      "parti": [
+       6
+      ]
+     },
+     {
+      "tipo": "status",
+      "nome": "Caduta della Cavalleria",
+      "parti": [
+       6
+      ]
+     }
+    ]
+   }
+  },
+  "r:e7e3678ff7ae": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 65,
+     "rimuovi": false,
+     "nome": "In Cerca di Antichi Poteri"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "segreto:65",
+     "valore": 1,
+     "gettone": "cerca"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Ogni volta che il proprietario della carta Segreto 65 vince un Incontro viola, aumentare di +1 il Quadrante della carta."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: tornare da Amergin quando il Quadrante Cerca è a 5 o più."
+    }
+   ]
+  },
+  "q:397d9e1532e0": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Successore di Geraint",
+    "parti": [],
+    "almeno": 3
+   }
+  },
+  "q:3ee8e8c34874": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 4,
+      "a": 4,
+      "lettera": "B"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "La Cerca attiva è il Capitolo 4B: parte 4"
+     }
+    ]
+   }
+  },
+  "q:18bc1eba1bff": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 8
+     },
+     {
+      "tipo": "status",
+      "nome": "Missione Moonring",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "q:de74d776b528": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 13
+   }
+  },
+  "q:40a217854a36": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 65
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Quadrante della carta Segreto 65 è sul 5"
+     }
+    ]
+   }
+  },
+  "q:21fe73a72581": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Rituale della Valle",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Rituale della Valle",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "r:30dade4a7d0f": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Successore di Geraint",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: scegliere uno dei candidati, o fare domande su di loro a Broch Cruach (136) e alla Sbiancata (107)."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: non vi affrettate – a volte è meglio aspettare che i vostri viaggi vi conducano al posto giusto, anziché dirigersi immediatamente lì."
+    }
+   ]
+  },
+  "r:39c4ff7050d7": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: scoprire se è ancora possibile raggiungere Orrin."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: alcuni Luoghi diventano disponibili solo a certi punti del gioco."
+    }
+   ]
+  },
+  "r:7e23bc2e437a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "tutti"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 5
+    }
+   ]
+  },
+  "r:ac5be1574bbb": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": true,
+     "nome": "Graal Corrotto"
+    }
+   ]
+  },
+  "r:dd2415cffc2f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:8bd028a46eff": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:5fbf7b6d06b7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l'Ordine",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:72e7168892aa": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Non cambiare Abilità",
+       "effetti": []
+      },
+      {
+       "testo": "2 Esp e 3 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "manuale",
+         "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+        }
+       ]
+      },
+      {
+       "testo": "2 Esp e 3 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "manuale",
+         "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+        }
+       ]
+      },
+      {
+       "testo": "2 Esp e 3 Magia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "manuale",
+         "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+        }
+       ]
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "q:a298af978d8b": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 3
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 6,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "s:b9136e8be248": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "manuale",
+       "testo": "C'è la miniatura Menhir su questo Luogo"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "ripeti",
+      "per": {
+       "giocatori": true
+      },
+      "effetti": [
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 1,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "ricchezza",
+        "n": 1,
+        "chi": "diviso"
+       }
+      ]
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   }
+  },
+  "c:bba4d45bbcba": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": []
+    }
+   }
+  },
+  "q:564b24be661d": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "condizione": {
+    "tipo": "status",
+    "nome": "Menhir Errante",
+    "parti": []
+   }
+  },
+  "q:747faa0ba10d": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è una miniatura Menhir su questa carta Luogo"
+   }
+  },
+  "q:df1380c090f5": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "manuale",
+      "testo": "C'è una miniatura Menhir nel Luogo 135, Bundorca"
+     }
+    ]
+   }
+  },
+  "v:389": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:5c035385b32b": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "esito": {
+      "vittoria": [
+       {
+        "tipo": "risorsa",
+        "ris": "rep",
+        "n": 1,
+        "chi": "compagnia"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "r:51e3f68f8fd3": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "1 Ricchezza per membro della Compagnia",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso",
+         "per": {
+          "membri": true
+         }
+        }
+       ]
+      },
+      {
+       "testo": "Ogni membro ottiene 1 Rep",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:ca5c76115936": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Due Oggetti non Compagno",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 2
+        },
+        {
+         "tipo": "manuale",
+         "testo": "Gli Oggetti devono essere non Compagno: rimettete i Compagni pescati e pescatene altri."
+        }
+       ]
+      },
+      {
+       "testo": "Ogni membro ottiene 1 Rep",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:07740f1d2e01": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:3b050c1ed4c5": {
+   "costo": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:4be076cd5edd": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:c5286e217bfe": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:9f763358618a": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: sedare il conflitto tra Falfuar e Bundorca."
+    }
+   ]
+  },
+  "q:6d3b6418ad1d": {
+   "condizione": {
+    "tipo": "luogo_rivelato",
+    "n": 114
+   }
+  },
+  "r:2c06b2180d76": {
+   "effetti": [
+    {
+     "tipo": "muovi",
+     "dove": 114,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:8233c5ddfb27": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo 114, aggiunto in fondo a questa carta, è a portata di un Menhir attivo"
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 114
+      },
+      {
+       "tipo": "muovi",
+       "dove": 114,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "r:664679af1ac6": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:bd4d97f933d1": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è la miniatura di un Menhir nel Luogo 135, Bundorca"
+   }
+  },
+  "r:872602140dc3": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      1,
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:e09ad79a07e4": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:cd13529a19c3": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "blu",
+     "nome": "Cavaliere Ubriaco",
+     "livello": 2
+    }
+   ]
+  },
+  "r:0b6bdc6f3a19": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Potete Attivare il Menhir di Bundorca (solo se non c'è la miniatura di un Menhir a Falfuar): in tal caso piazzate il Luogo 135 alla destra della carta Luogo Falfuar e piazzatevi sopra la miniatura Menhir."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Non muovete le miniature dei Personaggi: prima che questa Esplorazione termini tornerete a Falfuar."
+    },
+    {
+     "tipo": "diario",
+     "luogo": 135
+    }
+   ]
+  },
+  "q:082812625f8d": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:b6e61306f7b2": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Muovete la miniatura Menhir sulla carta Luogo 135, Bundorca."
+    },
+    {
+     "tipo": "muovi",
+     "dove": 135,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:8df72d7f621e": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Menhir Errante",
+        "parti": [
+         2
+        ]
+       }
+      },
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "ripeti",
+      "per": {
+       "giocatori": true
+      },
+      "effetti": [
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "ricchezza",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "diviso"
+       }
+      ]
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": [],
+    "alternativa": {
+     "condizione": {
+      "tipo": "status",
+      "nome": "Menhir Errante",
+      "parti": [
+       2
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 999,
+       "verso": 166
+      }
+     ]
+    }
+   }
+  },
+  "c:35de90cf0f8b": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": []
+    }
+   }
+  },
+  "q:d58a8472b7d3": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Menhir Errante",
+    "parti": []
+   }
+  },
+  "r:686d5a86ad3e": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Andate alla sezione Menhir di Bundorca (135) nel Diario di Esplorazione."
+    }
+   ]
+  },
+  "q:dfda69abead6": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "manuale",
+      "testo": "C'è una miniatura Menhir in questo Luogo"
+     }
+    ]
+   }
+  },
+  "r:6aa2476d3a6a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia che non ha alcuna Magia ottiene 1 Magia."
+    }
+   ]
+  },
+  "r:e7f10dc543fe": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:09bfb7e0257f": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      1,
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "arev"
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 1,
+       "chi": "scelto"
+      }
+     ]
+    }
+   ]
+  },
+  "r:3eef99d94b19": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:6aac31a65a56": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Missione Diplomatica",
+    "parti": []
+   }
+  },
+  "q:febf89d63e17": {
+   "costo": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Menhir Errante",
+      "parti": [
+       2
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 4,
+       "chi": "diviso"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 5,
+       "chi": "diviso"
+      },
+      {
+       "tipo": "paga",
+       "ris": "ricchezza",
+       "n": 1,
+       "chi": "diviso"
+      }
+     ]
+    }
+   ]
+  },
+  "r:85c859592b5f": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Muovete la miniatura Menhir al Luogo 134, Falfuar (o al 147, se il Luogo 134 è stato rimosso dal gioco)."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "luogo_rivelato",
+      "n": 134
+     },
+     "allora": [
+      {
+       "tipo": "muovi",
+       "dove": 134,
+       "chi": "compagnia"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "muovi",
+       "dove": 147,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "q:7190570e2685": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "niamh"
+   }
+  },
+  "r:7f642f2743d6": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:e8e22c0bc54b": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Diplomatica",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:3817b36fe36a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "blu",
+     "nome": "Tentazioni",
+     "livello": 1
+    }
+   ]
+  },
+  "s:7a94cb7b2773": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "c:55a8e5aeadab": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 2
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Richiamo dall'Aldilà",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "q:c135d35f23ec": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 40
+   }
+  },
+  "q:21b9e725a472": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      5
+     ]
+    }
+   }
+  },
+  "q:26a649813d17": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Richiamo dall'Aldilà",
+    "parti": []
+   }
+  },
+  "q:243ea073a16b": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:69f2bf15a3b8": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "parola": "Compagno"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Il Compagno deve essere non animale: pescate carte Oggetto finché non pescate un Compagno non animale, tenetelo e rimescolate le altre nel mazzo Oggetti."
+    }
+   ]
+  },
+  "r:347cf4c6cf7b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Richiamo dall'Aldilà",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:09e1b663f914": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: procurarsi il cristallo deformato dal tempo necessario per liberare l'entità che si trova da qualche parte ad Avalon."
+    }
+   ]
+  },
+  "r:56cc4e175ca7": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: tornare quando avete riportato la pace nel Borgo Infettato."
+    }
+   ]
+  },
+  "q:bb278d2fd818": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 32
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "min": 4,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "r:427610fbf222": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 40,
+     "rimuovi": true
+    },
+    {
+     "tipo": "segreto",
+     "n": 12,
+     "rimuovi": false,
+     "nome": "Prigioniero Affamato"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: consegnare il ragazzo a Ultan a Timberwall (131) O riportare il ragazzo da Dama Kincaid a Farshire (116)."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: se lasciate morire il prigioniero, o lo riconsegnate a sua madre, non potrete più allearvi con Timberwall!"
+    }
+   ]
+  },
+  "r:a903e0cfce27": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "attributo",
+     "attr": "scelta",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 149
+    },
+    {
+     "tipo": "diario",
+     "luogo": 149
+    }
+   ]
+  },
+  "r:b75e14a82067": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:460b5ad2b08c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Successore di Geraint",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:f5a89da38cb4": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Abbandonati",
+       "parti": [
+        3
+       ]
+      }
+     },
+     {
+      "tipo": "capitolo",
+      "da": 14,
+      "a": 14
+     }
+    ]
+   }
+  },
+  "q:5d1801bc7ed2": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:52d5e35ce79a": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:839b5d6e7299": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 7,
+      "a": 7
+     },
+     {
+      "tipo": "manuale",
+      "testo": "La vostra Cerca Attiva è il Capitolo 7: parte 2"
+     }
+    ]
+   }
+  },
+  "c:3ed645afa5d1": {
+   "condizione": {
+    "non": {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "min": 3,
+     "chi": "totale"
+    }
+   }
+  },
+  "r:480320e619b1": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "pesca": 3
+    }
+   ]
+  },
+  "c:71af3b9cdef8": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 3,
+    "chi": "totale"
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "rep",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:624bd68ec225": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:c4a3aba9eb8b": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:de0b83016d9f": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 6,
+      "a": 7
+     }
+    ]
+   }
+  },
+  "q:75e6476358d0": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 5,
+    "chi": "compagnia"
+   }
+  },
+  "q:78aa242b1778": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 8,
+    "chi": "compagnia"
+   }
+  },
+  "r:31688a42237e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:1bd50424305f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 5
+   }
+  },
+  "r:aa5975c964d8": {
+   "effetti": []
+  },
+  "c:db7ab2f89749": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 9
+   }
+  },
+  "q:306e2233500d": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      6
+     ]
+    }
+   }
+  },
+  "r:6afbc87e2cf9": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 6,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:752fdba29a6d": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 10,
+    "a": 99
+   }
+  },
+  "q:511d87eaace5": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 7
+   }
+  },
+  "r:e05d04e3425b": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 33,
+     "rimuovi": false,
+     "nome": "Coloni Speranzosi"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: guidare la popolazione di Timberwall in un luogo sicuro di Avalon."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: non metteteci troppo! La loro fiducia svanirà rapidamente."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: per far insediare il vostro gruppo, dovete scegliere l'opzione “Usare carta Segreto 33” in uno dei luoghi sicuri di Avalon."
+    }
+   ]
+  },
+  "c:44494022ac53": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 3
+   }
+  },
+  "r:0b50c5b43f09": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Folla Inferocita",
+     "livello": 4
+    }
+   ]
+  },
+  "c:8d6904c2014a": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 6
+   }
+  },
+  "r:0629f9fccb11": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "3 Cibo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "1 Oggetto",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 1
+        }
+       ]
+      },
+      {
+       "testo": "2 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "c:1933fbffffbf": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "r:d8ac684c7b35": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "4 Cibo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 4,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "1 Oggetto",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 1
+        }
+       ]
+      },
+      {
+       "testo": "3 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "2 Magia",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "q:6810bcc48990": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "personaggio",
+      "id": "ailei"
+     },
+     {
+      "tipo": "status",
+      "nome": "Fato della Spedizione",
+      "parti": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  "q:3817dbd8ac14": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete pescato l'Incontro “Calma Prima della Tempesta”"
+     }
+    ]
+   }
+  },
+  "q:78b2cae8f2cd": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Arma",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "n": 1,
+         "parola": "Arma"
+        }
+       ]
+      },
+      {
+       "testo": "Scudo",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "n": 1,
+         "parola": "Scudo"
+        }
+       ]
+      },
+      {
+       "testo": "Armatura",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "n": 1,
+         "parola": "Armatura"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "condizione": {
+    "una": [
+     {
+      "tipo": "oggetto",
+      "parola": "Arma"
+     },
+     {
+      "tipo": "oggetto",
+      "parola": "Scudo"
+     },
+     {
+      "tipo": "oggetto",
+      "parola": "Armatura"
+     }
+    ]
+   }
+  },
+  "q:7f85b9094f7a": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:eb82e8fd3e03": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "practicality",
+    "min": 2
+   }
+  },
+  "r:1dbd1dcd522a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Aiutare i Cavalieri”."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:b4ce15c3cb25": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Venti dell'Anomalia",
+    "parti": []
+   }
+  },
+  "r:883833da1d7b": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:889976304c1c": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Sostenere la Rivolta",
+      "parti": [
+       3
+      ]
+     },
+     {
+      "tipo": "status",
+      "nome": "Aiutare i Cavalieri",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  "q:acff670a48b7": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete pescato l'Incontro “Calma Prima della Tempesta”"
+     }
+    ]
+   }
+  },
+  "q:eee4216ba513": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:bd040d99a97b": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "aggression",
+    "min": 1
+   }
+  },
+  "r:b758485cfe6c": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Sostenere la Rivolta”."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:57df47534d69": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Sostenere la Rivolta” sulla Scheda Salvataggio."
+    }
+   ]
+  },
+  "r:6b5c3b8ab932": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Aiutare i Cavalieri” sulla Scheda Salvataggio."
+    }
+   ]
+  },
+  "q:6d9f3ee80efa": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Lascito di Fael",
+    "parti": []
+   }
+  },
+  "r:9582115f307b": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: perlustrare Tangleroot (114) per scoprire cosa sia accaduto alla prima spedizione."
+    }
+   ]
+  },
+  "r:9f48ca35e639": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Pace nel Borgo",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 138,
+     "nuovo": 142
+    }
+   ]
+  }
+ }
+}

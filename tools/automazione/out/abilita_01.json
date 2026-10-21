@@ -1,0 +1,2094 @@
+{
+ "carte": {
+  "carte/mazzo/32717.webp": {
+   "facce": [
+    {
+     "numero": 35,
+     "nome": "Maestria nella caccia",
+     "inneschi": [
+      {
+       "quando": "ottieni_risorsa",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null,
+       "ris": "cibo",
+       "colore": "verde"
+      }
+     ]
+    },
+    {
+     "numero": 36,
+     "nome": "Cannibalismo",
+     "inneschi": [
+      {
+       "quando": "vittoria",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 2
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -2
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento",
+          "colore": "grigio"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia",
+          "colore": "grigio"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32716.webp": {
+   "facce": [
+    {
+     "numero": 33,
+     "nome": "Ladruncolo",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": "giorno",
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 34,
+     "nome": "Scommettere",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "quadrante_lancio",
+         "graal": [
+          {
+           "tipo": "risorsa",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ],
+         "teschio": []
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "rep",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32715.webp": {
+   "facce": [
+    {
+     "numero": 31,
+     "nome": "Chiaroveggenza",
+     "inneschi": [
+      {
+       "quando": "pesca_incontro",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Pesca 2 Incontri blu e scegline 1; metti l'altro in fondo al suo mazzo."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null,
+       "colore": "blu"
+      }
+     ]
+    },
+    {
+     "numero": 32,
+     "nome": "Seguire le tracce",
+     "inneschi": [
+      {
+       "quando": "pesca_incontro",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Pesca 2 Incontri verdi e scegline 1; metti l'altro in fondo al suo mazzo."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null,
+       "colore": "verde"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32714.webp": {
+   "facce": [
+    {
+     "numero": 29,
+     "nome": "Cacciatore di taglie",
+     "inneschi": [
+      {
+       "quando": "vittoria",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "l'Incontro ha il Tratto Guardiano"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 30,
+     "nome": "Rituali del viaggiatore",
+     "inneschi": [
+      {
+       "quando": "inizio_giornata",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Scarta l'Evento Casuale pescato e pescane uno nuovo dal mazzo Eventi Casuali."
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "hai pescato un Evento Casuale"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32713.webp": {
+   "facce": [
+    {
+     "numero": 27,
+     "nome": "Collezionista",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "reliquie_attive",
+         "n": 2
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 28,
+     "nome": "Resistente alla fame",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "non hai mangiato in questo Riposo"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32712.webp": {
+   "facce": [
+    {
+     "numero": 25,
+     "nome": "Baratto",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Aggiungi 1 dei tuoi Oggetti al mazzo Oggetti e mescolalo."
+        },
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 26,
+     "nome": "Mercante abile",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 2
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32711.webp": {
+   "facce": [
+    {
+     "numero": 23,
+     "nome": "Dieta di sopravvivenza",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": "giorno",
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 24,
+     "nome": "La forza della paura",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Puoi ignorare gli effetti dei tuoi Incubi."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      },
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "hai avuto un Incubo"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32710.webp": {
+   "facce": [
+    {
+     "numero": 21,
+     "nome": "Esplorazione audace",
+     "inneschi": [
+      {
+       "quando": "esplorazione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Puoi aggiungere +1 al risultato di un tiro di dado (una volta per tiro)."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 22,
+     "nome": "Patto col diavolo",
+     "inneschi": [
+      {
+       "quando": "esplorazione",
+       "effetti": [
+        {
+         "tipo": "quadrante_lancio",
+         "graal": [
+          {
+           "tipo": "manuale",
+           "testo": "+2 al risultato del dado."
+          }
+         ],
+         "teschio": [
+          {
+           "tipo": "manuale",
+           "testo": "-2 al risultato del dado (minimo 1)."
+          }
+         ]
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "hai appena tirato un dado"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32709.webp": {
+   "facce": [
+    {
+     "numero": 19,
+     "nome": "Ispirazione",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "costo_energia",
+         "n": -1,
+         "min": 1,
+         "su": "azione_personaggio"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 20,
+     "nome": "Muoversi o morire",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Se sei Esausto, puoi spendere Salute invece di Energia."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32708.webp": {
+   "facce": [
+    {
+     "numero": 17,
+     "nome": "Sempre avanti",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "In Combattimento: ottieni 1 cubo per ogni carta che scarti durante la fase di Fine del turno."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 18,
+     "nome": "Farsi strada",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        },
+        {
+         "tipo": "scarta_carte",
+         "n": 1,
+         "da": "mano"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32707.webp": {
+   "facce": [
+    {
+     "numero": 15,
+     "nome": "Guardia del corpo",
+     "inneschi": [
+      {
+       "quando": "attacco",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Quando un altro membro della Compagnia subisce Ferite, puoi subirle tu al suo posto: diventano inevitabili."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 16,
+     "nome": "Leader carismatico",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "I tuoi Compagni non richiedono alcun pagamento."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32706.webp": {
+   "facce": [
+    {
+     "numero": 13,
+     "nome": "Vigore inesauribile",
+     "inneschi": [
+      {
+       "quando": "fine_giornata",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "non eri Esausto all'arrivo della Fine della Giornata (si applica dopo il recupero dell'Energia)"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 14,
+     "nome": "Instancabile",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Sei Esausto solo se la tua Energia è 0."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32705.webp": {
+   "facce": [
+    {
+     "numero": 11,
+     "nome": "Istinto di combattimento",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Durante un Incontro: aumenta di 1 il limite della tua mano.",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 12,
+     "nome": "Rapidità",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "ignora_tratto",
+         "tratto": "Imboscata"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Armatura"
+        }
+       }
+      },
+      {
+       "quando": "inizio_combattimento",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Armatura"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32704.webp": {
+   "facce": [
+    {
+     "numero": 9,
+     "nome": "Infondere odio",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Quando attivi un Menhir, puoi pagare con Magia invece che con Energia."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 10,
+     "nome": "Duro lavoro",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Quando paghi il costo per attivare un Menhir, puoi pagare con Energia invece che con Magia."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32703.webp": {
+   "facce": [
+    {
+     "numero": 7,
+     "nome": "Ultimo respiro",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Mescola la tua pila degli scarti e aggiungi le prime 5 carte al tuo mazzo."
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": false,
+       "condizione": {
+        "tutte": [
+         {
+          "una": [
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "combattimento"
+           },
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "diplomazia"
+           }
+          ]
+         },
+         {
+          "tipo": "manuale",
+          "testo": "il tuo mazzo Combattimento o Diplomazia è vuoto"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 8,
+     "nome": "Un passo avanti",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Durante un Incontro: gioca con la prima carta del tuo mazzo Combattimento o Diplomazia scoperta."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32702.webp": {
+   "facce": [
+    {
+     "numero": 5,
+     "nome": "Sforzo",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "gettone_tempo_carta",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 6,
+     "nome": "Banchetto degli eroi",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Consuma una qualsiasi quantità di Cibo aggiuntivo e ottieni la stessa quantità di Energia."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32701.webp": {
+   "facce": [
+    {
+     "numero": 3,
+     "nome": "Riflessi di combattimento",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 4,
+     "nome": "Ora o mai più",
+     "inneschi": [
+      {
+       "quando": "attivazione",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32700.webp": {
+   "facce": [
+    {
+     "numero": 1,
+     "nome": "Forza mostruosa",
+     "inneschi": [
+      {
+       "quando": "collega_chiave",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       "attr": "aggression2"
+      }
+     ]
+    },
+    {
+     "numero": 2,
+     "nome": "Doppia maestria",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Puoi usare 2 carte con la parola chiave Arma contemporaneamente.",
+         "parola": "Arma",
+         "n": 2
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Scudo"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32731.webp": {
+   "facce": [
+    {
+     "numero": 63,
+     "nome": "Potere delle ere",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Ogni volta che attivi un Menhir, imposta il suo Quadrante a 1 in più di quanto indicato (massimo 8).",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 64,
+     "nome": "Riattivatore",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "quadrante",
+         "dove": "menhir_qui",
+         "n": 1,
+         "max": 8
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32735.webp": {
+   "facce": [
+    {
+     "numero": 71,
+     "nome": "Concentrazione totale",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Durante un Incontro: puoi considerare ogni bonus collegato a una Chiave di Magia come {i:extra}."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 72,
+     "nome": "Magia letale",
+     "inneschi": [
+      {
+       "quando": "collega_chiave",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       "attr": "magia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32734.webp": {
+   "facce": [
+    {
+     "numero": 69,
+     "nome": "Comunione",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento",
+          "colore": "viola"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia",
+          "colore": "viola"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 70,
+     "nome": "Affronta le tue paure",
+     "inneschi": [
+      {
+       "quando": "vittoria",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento",
+          "colore": "viola"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia",
+          "colore": "viola"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32733.webp": {
+   "facce": [
+    {
+     "numero": 67,
+     "nome": "Elemosina",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 68,
+     "nome": "Ascetismo",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Alla Fine della Giornata puoi consumare Magia invece di Cibo."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32732.webp": {
+   "facce": [
+    {
+     "numero": 65,
+     "nome": "Viandante spirituale",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Sposta l'intera Compagnia in un altro Luogo con un Menhir attivo."
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1,
+         "chi": "diviso",
+         "per": {
+          "membri": true
+         }
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    },
+    {
+     "numero": 66,
+     "nome": "Affinità con i Menhir",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Quando attivi un Menhir già attivo, riduci il costo di attivazione di 1 Energia e di 1 di un'altra risorsa a scelta."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32730.webp": {
+   "facce": [
+    {
+     "numero": 61,
+     "nome": "Prosciugare magia",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "quadrante",
+         "dove": "menhir_qui",
+         "valore": 0
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 3
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    },
+    {
+     "numero": 62,
+     "nome": "Prosciugare salute",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "quadrante",
+         "dove": "menhir_qui",
+         "valore": 0
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 4
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32729.webp": {
+   "facce": [
+    {
+     "numero": 59,
+     "nome": "Chiedere aiuto",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Un Personaggio in un Luogo collegato può spostarsi nel tuo Luogo e unirsi alla tua Compagnia."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 60,
+     "nome": "Movimento cauto",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Questo spostamento non innesca l'Incontro con il Guardiano."
+        },
+        {
+         "tipo": "muovi",
+         "dove": "collegato_scelto",
+         "chi": "attivo"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Luogo collegato di destinazione ha un Guardiano"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32728.webp": {
+   "facce": [
+    {
+     "numero": 57,
+     "nome": "Tattiche clandestine",
+     "inneschi": [
+      {
+       "quando": "attacco",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 58,
+     "nome": "Abile",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "costo_energia",
+         "n": -1,
+         "min": 1,
+         "su": "azione_personaggio"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32727.webp": {
+   "facce": [
+    {
+     "numero": 55,
+     "nome": "Astuzia",
+     "inneschi": [
+      {
+       "quando": "attivazione",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1,
+         "chi": "compagnia",
+         "escludi_attivo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tutte": [
+         {
+          "una": [
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "combattimento"
+           },
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "diplomazia"
+           }
+          ]
+         },
+         {
+          "tipo": "carte_giocate",
+          "max": 0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 56,
+     "nome": "Ultima risorsa",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "All'inizio della verifica dell'Affinità puoi giocare una qualsiasi carta Diplomazia dalla tua mano."
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": {
+        "tutte": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         },
+         {
+          "tipo": "manuale",
+          "testo": "il segnalino è nella casella più bassa del misuratore di Affinità"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32726.webp": {
+   "facce": [
+    {
+     "numero": 53,
+     "nome": "Sensi acuti",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Ogni volta che lanci un Quadrante, puoi lanciarlo di nuovo; devi accettare il secondo risultato."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 54,
+     "nome": "Fortunato",
+     "inneschi": [
+      {
+       "quando": "esplorazione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Puoi ritirare un dado (1 volta per Esplorazione); devi accettare il secondo risultato."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32725.webp": {
+   "facce": [
+    {
+     "numero": 51,
+     "nome": "Resistenza",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Ogni volta che perdi 3 o più Salute, riduci questa perdita di 1.",
+         "ris": "salute",
+         "n": 1,
+         "soglia": 3
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 52,
+     "nome": "Presenza rassicurante",
+     "inneschi": [
+      {
+       "quando": "attacco",
+       "effetti": [
+        {
+         "tipo": "previeni",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tutte": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "manuale",
+          "testo": "l'ultima carta della Sequenza non ha Chiavi Aggressività"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32724.webp": {
+   "facce": [
+    {
+     "numero": 49,
+     "nome": "Esperto di arti marziali",
+     "inneschi": [
+      {
+       "quando": "attivazione",
+       "effetti": [
+        {
+         "tipo": "scarta_carte",
+         "n": 1,
+         "da": "mano"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 50,
+     "nome": "Attacco furtivo",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "In Combattimento: quando giochi la prima carta della Sequenza, raddoppia il numero totale di cubi che aggiunge alla Riserva."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32723.webp": {
+   "facce": [
+    {
+     "numero": 47,
+     "nome": "Perseveranza",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "riposo_salute",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 48,
+     "nome": "Mente lucida",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "riposo_terrore",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32722.webp": {
+   "facce": [
+    {
+     "numero": 45,
+     "nome": "Faro di speranza",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "affinita",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento",
+          "colore": "blu"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia",
+          "colore": "blu"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 46,
+     "nome": "Comprensione reciproca",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Durante la Diplomazia: quando giochi una carta, puoi considerare le caselle grigie e rosse del misuratore di Affinità come verdi."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32721.webp": {
+   "facce": [
+    {
+     "numero": 43,
+     "nome": "Perspicacia",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Scarta la tua mano, mescola il tuo mazzo Combattimento o Diplomazia e pesca lo stesso numero di carte scartate."
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 44,
+     "nome": "Apprendista rapido",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Ogni volta che migliori il tuo mazzo Combattimento o Diplomazia, pesca 4 carte invece di 3 e scegline 1.",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32720.webp": {
+   "facce": [
+    {
+     "numero": 41,
+     "nome": "Trasferimento di energia",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "manuale",
+         "testo": "Scambia i Quadranti di 2 Menhir attivi qualsiasi."
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "salute",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 42,
+     "nome": "Audacia",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "altro",
+         "testo": "Durante un Incontro: considera tutte le Chiavi senza costo {i:x} come 1x."
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32719.webp": {
+   "facce": [
+    {
+     "numero": 39,
+     "nome": "Coercizione",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "rep",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 40,
+     "nome": "Carità",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 2
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        },
+        {
+         "tipo": "scelta",
+         "opzioni": [
+          {
+           "testo": "Paga 2 Cibo",
+           "effetti": [
+            {
+             "tipo": "paga",
+             "ris": "cibo",
+             "n": 2
+            }
+           ]
+          },
+          {
+           "testo": "Paga 2 Ricchezza",
+           "effetti": [
+            {
+             "tipo": "paga",
+             "ris": "ricchezza",
+             "n": 2
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32718.webp": {
+   "facce": [
+    {
+     "numero": 37,
+     "nome": "Motivazione",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": -1,
+         "chi": "scelto"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 38,
+     "nome": "Rimedi poco convenzionali",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

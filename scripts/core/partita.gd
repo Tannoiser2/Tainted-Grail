@@ -350,28 +350,35 @@ func quadrante_iniziale(base := 8) -> int:
 
 ## --- Oggetti --------------------------------------------------------------------------
 
-func pesca_oggetto(fabbricabile := false) -> String:
+func pesca_oggetto(fabbricabile := false, x: Dictionary = {}, parola := "") -> String:
+	if x.is_empty():
+		x = attivo()
 	var m: Array = d["mazzi"].get_or_add("oggetti", [])
 	for i in m.size():
 		var img: String = m[i]
-		if fabbricabile and not Carte.dati(img).get("fabbricabile", false):
+		if fabbricabile and not (Carte.dati(img).get("fabbricabile", false) or Carte.auto(img).get("fabbricabile", false)):
+			continue
+		if parola != "" and str(Carte.auto(img).get("parola", Carte.dati(img).get("parola", ""))).to_lower() != parola.to_lower():
 			continue
 		m.remove_at(i)
-		attivo()["oggetti"].append(img)
-		if fabbricabile:
+		x["oggetti"].append(img)
+		if fabbricabile or parola != "":
 			m.shuffle()
-		racconta("%s ottiene l'Oggetto %s" % [attivo()["nome"], Carte.nome(img)])
+		racconta("%s ottiene l'Oggetto %s" % [x["nome"], Carte.nome(img)])
 		cambiato()
 		return img
 	return ""
 
-func prendi_oggetto_nome(nome: String) -> String:
+func prendi_oggetto_nome(nome: String, x: Dictionary = {}) -> String:
+	if x.is_empty():
+		x = attivo()
 	var m: Array = d["mazzi"].get_or_add("oggetti", [])
 	for i in m.size():
 		if Carte.nome(m[i]).to_lower() == nome.to_lower():
 			var img: String = m[i]
 			m.remove_at(i)
-			attivo()["oggetti"].append(img)
+			x["oggetti"].append(img)
+			racconta("%s ottiene l'Oggetto %s" % [x["nome"], Carte.nome(img)])
 			cambiato()
 			return img
 	return ""
@@ -380,3 +387,177 @@ func scarta_oggetto(p: Dictionary, img: String) -> void:
 	p["oggetti"].erase(img)
 	d["mazzi"].get_or_add("oggetti", []).append(img)  # in fondo al mazzo
 	cambiato()
+
+## --- Mappa: piazzamenti speciali ----------------------------------------------------
+
+## Piazza un Luogo nella prima cella libera accanto a un altro (preparazioni e movimenti del Diario).
+func piazza_vicino(n: int, base: int) -> void:
+	if d["mappa"].has(str(n)):
+		return
+	var c := cella(base)
+	if c.x > 9999:
+		c = Vector2i.ZERO
+	# se un Luogo collegato indica questo numero, si usa la sua Chiave di Direzione
+	for k in d["mappa"]:
+		var dirs := direzioni(int(k))
+		for dk in dirs:
+			if dirs[dk] != null and int(dirs[dk]) == n and DIREZIONI.has(dk):
+				var cc: Vector2i = cella(int(k)) + DIREZIONI[dk]
+				if luogo_in(cc) == 0:
+					piazza_luogo(n, cc)
+					return
+	for r in range(1, 6):
+		for dx in range(-r, r + 1):
+			for dy in range(-r, r + 1):
+				if absi(dx) + absi(dy) != r:
+					continue
+				var cc2 := c + Vector2i(dx, dy)
+				if luogo_in(cc2) == 0:
+					piazza_luogo(n, cc2)
+					return
+
+## --- Eventi -----------------------------------------------------------------------
+
+## Carta Evento di una Parte di un Capitolo (dal mazzo Eventi o dal gruppo); la toglie dal mazzo.
+func trova_evento(cap: int, parte: int, lettera := "") -> String:
+	var candidati := []
+	for img in Carte.gruppo("eventi_storia"):
+		var c := Carte.dati(img)
+		if c.get("capitolo") == null or c.get("parte") == null:
+			continue
+		if Carte.num(c, "capitolo") == cap and Carte.num(c, "parte") == parte and str(c.get("sottotipo", "")) == "storia":
+			if lettera == "" or Carte.txt(c, "lettera") == "" or Carte.txt(c, "lettera") == lettera:
+				candidati.append(img)
+	if candidati.is_empty():
+		return ""
+	var img2: String = candidati[0]
+	d["mazzi"].get_or_add("eventi", []).erase(img2)
+	return img2
+
+func trova_evento_speciale(lettera: String) -> String:
+	for img in Carte.gruppo("eventi_speciali"):
+		var c := Carte.dati(img)
+		if Carte.txt(c, "lettera").to_upper() == lettera.to_upper() or Carte.nome(img).to_upper().ends_with(" " + lettera.to_upper()):
+			return img
+	return ""
+
+## --- Inneschi delle carte (Oggetti, Segreti, Abilità, Eventi, Stai morendo/impazzendo) ---------
+
+## Fonti di effetti in gioco: [{img, inneschi, chi}] (chi = personaggio proprietario, {} = della Compagnia).
+func fonti_inneschi() -> Array:
+	var out := []
+	for x in personaggi():
+		for o in x.get("oggetti", []):
+			var a := Carte.auto(o)
+			if a.get("inneschi") is Array:
+				out.append({"img": o, "inneschi": a["inneschi"], "chi": x})
+		for ab in x.get("abilita", []):
+			if not (ab is Dictionary):
+				continue
+			var fa: Array = Carte.auto(str(ab.get("img", ""))).get("facce", [])
+			var i := int(ab.get("faccia", 0))
+			if i < fa.size() and fa[i] is Dictionary and fa[i].get("inneschi") is Array:
+				out.append({"img": str(ab["img"]), "inneschi": fa[i]["inneschi"], "chi": x, "faccia": i})
+		for g in ["morendo", "impazzendo"]:
+			if (g == "morendo" and Personaggi.morente(x)) or (g == "impazzendo" and Personaggi.in_follia(x)):
+				var scelta := carta_stato(g)
+				if scelta != "" and Carte.auto(scelta).get("inneschi") is Array:
+					out.append({"img": scelta, "inneschi": Carte.auto(scelta)["inneschi"], "chi": x})
+	for n in d.get("segreti", []):
+		var s := Carte.segreto(int(n))
+		if s != "" and Carte.auto(s).get("inneschi") is Array:
+			out.append({"img": s, "inneschi": Carte.auto(s)["inneschi"], "chi": {}})
+	var ev := str(d.get("evento", ""))
+	if ev != "" and Carte.auto(ev).get("giorno") is Array:
+		out.append({"img": ev, "inneschi": Carte.auto(ev)["giorno"], "chi": {}})
+	return out
+
+static func _quando_corrisponde(q, quando: String) -> bool:
+	if q is Array:
+		return q.has(quando)
+	return str(q) == quando
+
+## Inneschi attivi per un momento del gioco. x: limita alle carte di quel personaggio (e a quelle comuni).
+func inneschi(quando: String, x: Dictionary = {}) -> Array:
+	var out := []
+	for f in fonti_inneschi():
+		if not x.is_empty() and not f["chi"].is_empty() and f["chi"] != x:
+			continue
+		for inn in f["inneschi"]:
+			if inn is Dictionary and _quando_corrisponde(inn.get("quando"), quando):
+				out.append({"img": f["img"], "innesco": inn, "chi": f["chi"]})
+	return out
+
+## Passi "modificatore" attivi di un certo tipo (quando = "sempre").
+func modificatori(cosa: String, x: Dictionary = {}) -> Array:
+	var out := []
+	for i in inneschi("sempre", x):
+		var c = i["innesco"].get("condizione")
+		if c is Dictionary and not c.is_empty() and Interprete.new(self).valuta(c) == false:
+			continue
+		for s in i["innesco"].get("effetti", []):
+			if s is Dictionary and str(s.get("tipo", "")) == "modificatore" and str(s.get("cosa", "")) == cosa:
+				var m: Dictionary = s.duplicate()
+				m["img"] = i["img"]
+				out.append(m)
+	return out
+
+func somma_modificatori(cosa: String, x: Dictionary = {}, ris := "") -> int:
+	var t := 0
+	for m in modificatori(cosa, x):
+		if ris != "" and m.has("ris") and str(m["ris"]) != ris:
+			continue
+		t += int(m.get("n", 0))
+	return t
+
+## Guadagno di una risorsa modificato dalle carte ("ogni volta che ottieni Ricchezza, +1").
+func guadagno(x: Dictionary, ris: String, n: int, _colore := "") -> int:
+	if n <= 0:
+		return n
+	return maxi(0, n + somma_modificatori("guadagno", x, ris))
+
+## Costo in Energia modificato dalle carte (minimo 1 se indicato).
+func costo_modificato(ris: String, n: int) -> int:
+	if ris != "energia" or n <= 0:
+		return n
+	var mods := modificatori("costo_energia", attivo())
+	var c := n
+	var minimo := 0
+	for m in mods:
+		c += int(m.get("n", 0))
+		minimo = maxi(minimo, int(m.get("min", 0)))
+	return maxi(minimo, c)
+
+## Il tratto di un nemico è ignorato per effetto di una carta?
+func tratto_ignorato(t: String) -> bool:
+	for m in modificatori("ignora_tratto"):
+		if str(m.get("tratto", "")).to_lower().begins_with(t.to_lower().substr(0, 5)):
+			return true
+	return false
+
+## Guardiani sulla mappa: [{img, colore, luogo}] (converte i salvataggi vecchi).
+static func guardiani(partita) -> Array:
+	var gl = partita.d.get("guardiani", [])
+	if gl is Dictionary:
+		var nuova := []
+		for k in gl:
+			nuova.append({"img": gl[k], "colore": "", "luogo": int(k)})
+		gl = nuova
+	partita.d["guardiani"] = gl
+	return gl
+
+func guardiani_in(n: int) -> Array:
+	return Partita.guardiani(self).filter(func(g): return int(g.get("luogo", 0)) == n)
+
+## Carta "Stai morendo" / "Stai impazzendo" adatta al numero di giocatori (parola: "morendo"/"impazzendo").
+func carta_stato(parola: String) -> String:
+	var scelta := ""
+	for g in ["morente", "follia"]:
+		for img in Carte.gruppo(g):
+			if Carte.nome(img).to_lower().find(parola) < 0:
+				continue
+			var mod := str(Carte.dati(img).get("modalita", ""))
+			var solo := mod.begins_with("solit") or Carte.nome(img).to_lower().find("solitari") >= 0
+			if scelta == "" or (solo == (personaggi().size() == 1)):
+				scelta = img
+	return scelta

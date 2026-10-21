@@ -1,0 +1,1757 @@
+{
+ "carte": {
+  "carte/objetos/32500.webp": {
+   "inneschi": [
+    {
+     "quando": "attivazione",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": true
+  },
+  "carte/objetos/32501.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "I Personaggi nei Luoghi collegati possono spendere 1 Energia per muoversi nel tuo Luogo e unirsi a te nel Combattimento."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32502.webp": {
+   "inneschi": [
+    {
+     "quando": "perdi_salute",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "la perdita non è dovuta a un Attacco di opportunità"
+       }
+      ]
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "l'Incontro ha il Tratto Improvviso"
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32503.webp": {
+   "inneschi": [
+    {
+     "quando": "collega_chiave",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "attr": "courage"
+    },
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Rapido",
+       "chi": "attivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32504.webp": {
+   "inneschi": [
+    {
+     "quando": "collega_chiave",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "attr": "aggression"
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32505.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "la tua Sequenza termina con una Chiave Praticità collegata"
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Scudo",
+   "fabbricabile": true
+  },
+  "carte/objetos/32506.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Il nemico ottiene il Tratto Rapido (solo per te).",
+       "tratto": "Rapido",
+       "chi": "attivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "attivazione",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "scarta_carte",
+       "n": 2,
+       "da": "mazzo"
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "carte_giocate",
+        "min": 1,
+        "max": 1
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32507.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 3 gettoni Ritardo sulla carta dell'Incontro. Durante ogni passo delle Capacità ritardate rimuovi uno di questi gettoni e ottieni 1 cubo."
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "gira": true
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32509.webp": {
+   "inneschi": [
+    {
+     "quando": "attivazione",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ogni volta che una carta Combattimento ti dà 3 o più cubi, ottieni 1 cubo."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32510.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "l'Incontro ha il Tratto Lento"
+       },
+       "allora": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "manuale",
+       "testo": "l'Incontro ha il Tratto Imboscata"
+      }
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32511.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1,
+       "minimo": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": "Armatura",
+   "fabbricabile": true
+  },
+  "carte/objetos/32513.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "practicality",
+         "per": 1
+        }
+       ],
+       "risultati": []
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Somma al risultato il numero di cubi nella Riserva di Combattimento: se il totale è maggiore del Valore dell'Incontro, ignora il prossimo attacco nemico."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32514.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 3
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "gira": true
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": true
+  },
+  "carte/objetos/32515.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_diplomazia",
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Armatura",
+   "fabbricabile": false
+  },
+  "carte/objetos/32516.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true,
+       "primi": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32517.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32518.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "ricchezza",
+       "n": 1,
+       "per": {
+        "attributo": "practicality"
+       }
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "insediamento",
+        "nemico": false
+       },
+       {
+        "tipo": "insediamento",
+        "nemico": true
+       }
+      ]
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32520.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Pioggia Torrenziale"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Freddo Innaturale"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32524.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 2
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "risorsa",
+         "ris": "esp",
+         "n": 1
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "follia"
+      }
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32525.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1,
+       "minimo": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "inizio_diplomazia",
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Armatura",
+   "fabbricabile": false
+  },
+  "carte/objetos/32526.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Previeni 1 scarto di carta ({i:discard})."
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    },
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Previeni 1 Terrore."
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32527.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Rilancia un dado o ripeti un lancio di Quadrante. Devi accettare il secondo risultato."
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32528.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Riduci di 1 il limite della tua Mano.",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": "Armatura",
+   "fabbricabile": false
+  },
+  "carte/objetos/32529.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Scudo",
+   "fabbricabile": true
+  },
+  "carte/objetos/32530.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2,
+       "minimo": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "carte_giocate",
+        "max": 1
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Scudo",
+   "fabbricabile": false
+  },
+  "carte/objetos/32531.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "una": [
+        {
+         "tipo": "insediamento",
+         "nemico": false
+        },
+        {
+         "tipo": "insediamento",
+         "nemico": true
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32532.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Paga 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta_questo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32533.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "mano_iniziale",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Paga 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta_questo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32534.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Paga 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta_questo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32535.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true,
+       "chi": "compagnia"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Paga 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta_questo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32536.webp": {
+   "inneschi": [
+    {
+     "quando": "pesca_incontro",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti l'Incontro pescato in fondo al suo mazzo e pescane un altro."
+      }
+     ],
+     "costo": [],
+     "una_volta": "giorno",
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32537.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Guarda la prima carta del mazzo Eventi, purché sia un Evento Casuale. Puoi scartarla e metterne una nuova al suo posto."
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32538.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Freddo Innaturale",
+       "chi": "compagnia"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Bufera Ruggente",
+       "chi": "compagnia"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32539.webp": {
+   "inneschi": [
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "cibo",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "cibo",
+       "min": 1,
+       "chi": "attivo"
+      }
+     }
+    },
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Imboscata"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32540.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Quando attivi un Menhir: riduci il costo di attivazione di 1 Energia e di 1 di un'altra risorsa a scelta."
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32541.webp": {
+   "inneschi": [
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "In questo Riposo non recuperi Salute e non perdi Terrore."
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia",
+   "fabbricabile": false
+  },
+  "carte/objetos/32542.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "riposo_terrore",
+       "n": 1
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Non puoi dare questo Oggetto a un altro Personaggio."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32543.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Collega la Chiave Magica della carta Combattimento/Diplomazia che stai giocando senza spendere Magia."
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32544.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Assalto Notturno"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Bestia da Caccia"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32545.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "menhir_qui",
+       "n": 2
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "menhir_qui",
+      "attivo": true
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32546.webp": {
+   "inneschi": [
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -3,
+       "chi": "compagnia"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32548.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 0,
+       "chi": "attivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    },
+    {
+     "quando": "fine_incontro",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 4
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "hai girato questa carta in questo Incontro"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32550.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Durante questo Riposo ignora gli effetti dell'Esaurimento, dell'Incubo e dell'Evento Bufera Ruggente."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32552.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 3
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32554.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 3
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32555.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": 99
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32557.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Guarda la prima carta di ogni mazzo Incontro. Poi puoi mescolare uno qualsiasi di questi mazzi."
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32558.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "cubi",
+       "n": 3
+      },
+      {
+       "tipo": "ferite",
+       "n": 1,
+       "inevitabile": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32559.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Questa fuga non provoca un Attacco di opportunità."
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32561.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -1
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  }
+ }
+}

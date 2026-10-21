@@ -1,0 +1,2153 @@
+{
+ "carte": {
+  "carte/objetos/32563.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Muovi il tuo Personaggio in qualsiasi altro Luogo rivelato."
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32564.webp": {
+   "inneschi": [
+    {
+     "quando": "collega_chiave",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "attr": "magia"
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/secretos/32600.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 2,
+       "rimuovi": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32601.webp": {
+   "inneschi": [
+    {
+     "quando": "pesca_incontro",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Pesca 2 Incontri viola e scegline 1; metti l'altro in fondo al suo mazzo."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "colore": "viola"
+    }
+   ]
+  },
+  "carte/secretos/32602.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Tutti gli Incontri di Combattimento ottengono il Tratto Furia.",
+       "tratto": "Furia",
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32603.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Armatura"
+  },
+  "carte/secretos/32604.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -1
+      },
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "1 Energia",
+         "effetti": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "1 Salute",
+         "effetti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "1 Magia",
+         "effetti": [
+          {
+           "tipo": "risorsa",
+           "ris": "magia",
+           "n": 1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32605.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32606.webp": {
+   "inneschi": []
+  },
+  "carte/secretos/32607.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ora puoi attivare i Menhir (costi sul retro di ogni Luogo, accanto all'icona del Menhir)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32608.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Cibo",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "cibo",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Paga 1 Magia",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "magia",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "segreto",
+           "n": 12,
+           "rimuovi": true
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32609.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 999,
+       "verso": 13
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32610.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "muovi",
+       "dove": "collegato_scelto",
+       "chi": "compagnia"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Sposta anche la Pietra Anomala Pura nel nuovo Luogo."
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2,
+       "chi": "diviso",
+       "per": {
+        "giocatori": true
+       }
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32611.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti accanto alla tua carta Luogo un Luogo che vi si colleghi (questa carta non ha bisogno di trovarsi nel raggio di un Menhir attivo)."
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 1,
+       "chi": "diviso",
+       "per": {
+        "giocatori": true
+       }
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32612.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32613.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "incontro_in_fondo",
+       "nome": "Sagittario"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "pesca_incontro",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "cibo",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "nome": "Sagittario"
+    }
+   ]
+  },
+  "carte/secretos/32614.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "gettoni_cerca",
+       "n": 1,
+       "luogo": "qui"
+      },
+      {
+       "tipo": "nota",
+       "testo": "Il Gettone Cerca rappresenta l'Almasa: regole al verso 455 del Libro dei Segreti."
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": "giorno",
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32615.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "compagni_attivi",
+       "n": 2,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "incontro_in_fondo",
+       "nome": "Folla Inferocita",
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32616.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che perdi Terrore, ne perdi 1 punto in più.",
+       "ris": "terrore",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32617.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che perdi Terrore, ne perdi 1 punto in più.",
+       "ris": "terrore",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32618.webp": {
+   "inneschi": [
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "status",
+         "nome": "Redenzione",
+         "parti": [
+          1
+         ]
+        }
+       },
+       "allora": [
+        {
+         "tipo": "status",
+         "nome": "Redenzione",
+         "parti": [
+          1
+         ],
+         "rimuovi": false
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "non": {
+           "tipo": "status",
+           "nome": "Redenzione",
+           "parti": [
+            2
+           ]
+          }
+         },
+         "allora": [
+          {
+           "tipo": "status",
+           "nome": "Redenzione",
+           "parti": [
+            2
+           ],
+           "rimuovi": false
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "non": {
+             "tipo": "status",
+             "nome": "Redenzione",
+             "parti": [
+              3
+             ]
+            }
+           },
+           "allora": [
+            {
+             "tipo": "status",
+             "nome": "Redenzione",
+             "parti": [
+              3
+             ],
+             "rimuovi": false
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "non": {
+               "tipo": "status",
+               "nome": "Redenzione",
+               "parti": [
+                4
+               ]
+              }
+             },
+             "allora": [
+              {
+               "tipo": "status",
+               "nome": "Redenzione",
+               "parti": [
+                4
+               ],
+               "rimuovi": false
+              }
+             ],
+             "altrimenti": [
+              {
+               "tipo": "se",
+               "condizione": {
+                "non": {
+                 "tipo": "status",
+                 "nome": "Redenzione",
+                 "parti": [
+                  5
+                 ]
+                }
+               },
+               "allora": [
+                {
+                 "tipo": "status",
+                 "nome": "Redenzione",
+                 "parti": [
+                  5
+                 ],
+                 "rimuovi": false
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "status",
+        "nome": "Redenzione",
+        "parti": [
+         1,
+         2,
+         3,
+         4,
+         5
+        ]
+       },
+       "allora": [
+        {
+         "tipo": "segreto",
+         "n": 25,
+         "rimuovi": true
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "esp",
+         "n": 3
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "ris": "rep"
+    }
+   ]
+  },
+  "carte/secretos/32619.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_incontro",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento",
+      "colore": "viola"
+     }
+    }
+   ],
+   "parola": "Arma"
+  },
+  "carte/secretos/32620.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "il Luogo ha un Sigillo Arcano visibile nell'illustrazione"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32621.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "segreto:32",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Quadrante su questa carta è a 0"
+       },
+       "allora": [
+        {
+         "tipo": "segreto",
+         "n": 32,
+         "rimuovi": true
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32622.webp": {
+   "inneschi": [
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Perdi 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "segreto",
+           "n": 33,
+           "rimuovi": true
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "non ci sono Gettoni Cerca su questa carta"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32623.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_energia",
+       "n": -1,
+       "min": 1
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "guadagno",
+       "ris": "rep",
+       "n": 1
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "guadagno",
+       "ris": "esp",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 37,
+       "rimuovi": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno"
+  },
+  "carte/secretos/32624.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32625.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "ricchezza",
+       "n": 10
+      },
+      {
+       "tipo": "segreto",
+       "n": 40,
+       "rimuovi": true
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "insediamento",
+        "nemico": false
+       },
+       {
+        "tipo": "insediamento",
+        "nemico": true
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32626.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "La prima carta Diplomazia giocata durante l'Attivazione di un Personaggio dà 1 {i:arrowup} in meno.",
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32627.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Previeni 1 Terrore."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "viola"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia",
+        "colore": "viola"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32628.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "il Luogo ha un cespuglio di Felce Rossa visibile nell'illustrazione"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32629.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "ignora_tratto",
+       "tratto": "Finta"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "la tua Sequenza termina con una Chiave Praticità collegata"
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Arma"
+  },
+  "carte/secretos/32630.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "compagni_attivi",
+       "n": 2,
+       "chi": "tutti"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "incontro_in_fondo",
+       "nome": "Cavaliere Errante",
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32631.webp": {
+   "inneschi": []
+  },
+  "carte/secretos/32632.webp": {
+   "inneschi": [
+    {
+     "quando": "vittoria",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "segreto:65",
+       "n": 1,
+       "max": 8
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "viola"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia",
+        "colore": "viola"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32633.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Non puoi dare questa carta a un altro Personaggio."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Personale"
+  },
+  "carte/secretos/32637.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 999,
+       "verso": 605
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "carte/secretos/32638.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fallimento",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 73,
+       "rimuovi": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "fine_incontro",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 73,
+       "rimuovi": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "sei Scappato dall'Incontro"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32639.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Rapido"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "attivazione",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ottieni 1 cubo per ogni carta che giochi."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Arma"
+  },
+  "carte/secretos/32640.webp": {
+   "inneschi": []
+  },
+  "carte/secretos/32641.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/mazzo/37200.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "solo_incubi"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "viaggio",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "esplorazione",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/mazzo/37201.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "solo_incubi"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "viaggio",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "esplorazione",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/mazzo/37202.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "solo_incubi"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "viaggio",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "esplorazione",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/mazzo/37203.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "solo_incubi"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "viaggio",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "esplorazione",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "min": 1,
+          "chi": "attivo"
+         },
+         "allora": [
+          {
+           "tipo": "risorsa",
+           "ris": "energia",
+           "n": -1
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "risorsa",
+           "ris": "salute",
+           "n": -1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/mazzo/37300.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 3
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "manuale",
+         "testo": "Muori (vedi la sezione Morte e follia del Regolamento)."
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Fallisci o Scappa dal tuo Incontro attuale."
+    }
+   ]
+  },
+  "carte/mazzo/37301.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Riduci di 1 il Quadrante accanto alla tua miniatura."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Quadrante è arrivato a 0"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Muori (vedi la sezione Morte e follia del Regolamento)."
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Invece di subire le Ferite, riduci di 1 il Quadrante accanto alla tua miniatura (se arriva a 0, muori)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Fallisci o Scappa dal tuo Incontro attuale."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3."
+    }
+   ]
+  },
+  "carte/mazzo/37302.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Riduci di 1 il Quadrante accanto alla tua miniatura."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Quadrante è arrivato a 0"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Muori (vedi la sezione Morte e follia del Regolamento)."
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Invece di subire le Ferite, riduci di 1 il Quadrante accanto alla tua miniatura (se arriva a 0, muori)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Fallisci o Scappa dal tuo Incontro attuale."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3."
+    }
+   ]
+  },
+  "carte/mazzo/37303.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Riduci di 1 il Quadrante accanto alla tua miniatura."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Quadrante è arrivato a 0"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Muori (vedi la sezione Morte e follia del Regolamento)."
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Invece di subire le Ferite, riduci di 1 il Quadrante accanto alla tua miniatura (se arriva a 0, muori)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Fallisci o Scappa dal tuo Incontro attuale."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3."
+    }
+   ]
+  },
+  "carte/mazzo/37304.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Riduci di 1 il Quadrante accanto alla tua miniatura."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "il Quadrante è arrivato a 0"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Muori (vedi la sezione Morte e follia del Regolamento)."
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Invece di subire le Ferite, riduci di 1 il Quadrante accanto alla tua miniatura (se arriva a 0, muori)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Fallisci o Scappa dal tuo Incontro attuale."
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3."
+    }
+   ]
+  }
+ }
+}

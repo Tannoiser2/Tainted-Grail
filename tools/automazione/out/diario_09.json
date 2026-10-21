@@ -1,0 +1,1988 @@
+{
+ "voci": {
+  "c:5ff5105f48f7": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "s:c24abcd6ec46": {
+   "effetti": []
+  },
+  "s:a5b4cc22907c": {
+   "effetti": []
+  },
+  "q:1313ba12302d": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "r:67d6969e2136": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:d1ba04ead178": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "segreto",
+       "n": 33
+      }
+     },
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 14,
+      "a": 14
+     }
+    ]
+   }
+  },
+  "q:87c7fec90b20": {
+   "costo": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:a056ec437354": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete deciso di Fuggire dall'Incontro"
+     }
+    ]
+   }
+  },
+  "q:98faa2e455b3": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Nemico è Fuggito"
+     }
+    ]
+   }
+  },
+  "q:3967ddd73bca": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 4
+     },
+     {
+      "tipo": "attributo",
+      "attr": "practicality",
+      "min": 4
+     }
+    ]
+   }
+  },
+  "r:c5de631f1960": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "rimuovi": false,
+     "n": 33,
+     "nome": "Coloni Speranzosi"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: guidare la popolazione di Crow’s Nest in uno dei luoghi sicuri di Avalon."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: non metteteci troppo! La loro fiducia svanirà rapidamente."
+    }
+   ]
+  },
+  "s:bf6a35a2412b": {
+   "effetti": []
+  },
+  "s:0de4cbab60b8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:702b15467465": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:d197f6aafd8c": {
+   "costo": [
+    {
+     "tipo": "oggetto",
+     "modo": "scarta",
+     "n": 1
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:8ca89af16405": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:24b5c2b76056": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Pescate le prime 3 carte Oggetto: potete comprarne quante volete al prezzo di 3 Ricchezza ciascuna; rimescolate le altre nel mazzo."
+    }
+   ]
+  },
+  "q:44e7d00acafa": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questa scelta pone fine alla Campagna!"
+    }
+   ]
+  },
+  "r:98977e71b17b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "s:2d11be7af799": {
+   "effetti": []
+  },
+  "s:52d54744dd5e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:78bc61c4d6d0": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "c:80767b5e0db7": {
+   "condizione": {
+    "tipo": "oggetto",
+    "nome": "Kit dell’Avventuriero"
+   }
+  },
+  "c:aff105e5438a": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      },
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:29d0971380f2": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 0,
+    "a": 5
+   }
+  },
+  "r:a9763f530a23": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:deab44fab326": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 99
+   }
+  },
+  "r:ce45e26351aa": {
+   "effetti": []
+  },
+  "r:2d05651074fd": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:ed83d09e15ab": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:cfe36d2ab26a": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ottenete 2 Oggetti non Compagno (pescate dal mazzo Oggetti scartando i Compagni)."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:b7da809dc3fd": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Riparo in Mezzo alla Tempesta",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:7cd943d4cdf8": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:69cb400ddbdc": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 7
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Consenso di tutti i giocatori"
+     }
+    ]
+   }
+  },
+  "q:5868cda75dd8": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:cfb51df516c2": {
+   "effetti": []
+  },
+  "q:a1448076b0ab": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete deciso di Fuggire dall'Incontro"
+     }
+    ]
+   }
+  },
+  "r:b7425608e585": {
+   "effetti": [
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "q:e06d92cd0b9d": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 7
+   }
+  },
+  "q:48471e43f3cb": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questa scelta termina il Capitolo!"
+    }
+   ]
+  },
+  "r:e1d1e3a49a6e": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "rimuovi": true,
+     "n": 7,
+     "nome": "Vero Graal"
+    }
+   ]
+  },
+  "s:558b1a700cbb": {
+   "effetti": []
+  },
+  "s:d636fdcc2fa3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:7b96ad6a45bd": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 195
+    }
+   ]
+  },
+  "q:e99e849bda56": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Pace nel Borgo",
+    "parti": []
+   }
+  },
+  "q:019f8bf16624": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 6,
+    "chi": "compagnia"
+   }
+  },
+  "q:80b6785048b4": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "r:37a2a47d2fad": {
+   "effetti": []
+  },
+  "r:726aea8b7eab": {
+   "effetti": []
+  },
+  "q:8063e1a174d2": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Ripristinare l’Ordine",
+    "parti": [
+     8
+    ]
+   }
+  },
+  "r:0ba3a4ac970f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:1a3635d9fe6a": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: chiedere ad Amergin del rituale."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:5f6ad4861123": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3,
+      "lettera": "A"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Capitolo 3A: parte 5"
+     }
+    ]
+   }
+  },
+  "q:e0baed93e3f3": {
+   "condizione": {
+    "una": [
+     {
+      "tutte": [
+       {
+        "tipo": "status",
+        "nome": "Aiutare i Cavalieri",
+        "parti": [],
+        "almeno": 3
+       },
+       {
+        "non": {
+         "tipo": "status",
+         "nome": "Aiutare i Cavalieri",
+         "parti": [],
+         "almeno": 4
+        }
+       }
+      ]
+     },
+     {
+      "tutte": [
+       {
+        "tipo": "status",
+        "nome": "Sostenere la Rivolta",
+        "parti": [],
+        "almeno": 3
+       },
+       {
+        "non": {
+         "tipo": "status",
+         "nome": "Sostenere la Rivolta",
+         "parti": [],
+         "almeno": 4
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "q:dc6fb5fc922a": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Rituale della Valle",
+    "parti": [
+     1
+    ]
+   }
+  },
+  "q:6a7a52154673": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3
+     },
+     {
+      "tipo": "segreto",
+      "n": 8
+     }
+    ]
+   }
+  },
+  "q:c45548d7d714": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 2
+   }
+  },
+  "q:1da11a2cf889": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "aggression",
+    "min": 2
+   }
+  },
+  "r:8b8505bcd7d8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:8b9d549b03e0": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3
+     },
+     {
+      "tipo": "status",
+      "nome": "Amate Proprietà",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "q:a659c36bd61b": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Incarico di Morgana",
+      "parti": []
+     },
+     {
+      "tipo": "capitolo",
+      "da": 4,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "r:3bfdfd8cb5c9": {
+   "effetti": []
+  },
+  "q:31016092ee8a": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Ripristinare l’Ordine",
+      "parti": [],
+      "almeno": 5
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 5,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "r:bb49137adbc6": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: trovare un modo per servire la Dama del Lago o restare coinvolti nella Guerra di Avalon in una delle città principali dell’isola."
+    }
+   ]
+  },
+  "q:af7a96f39d3d": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 7,
+      "a": 7
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Capitolo 7: parte 1"
+     }
+    ]
+   }
+  },
+  "s:c5fb1a8016e0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:b798e596e97b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:2e28cab74c5a": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Ripristinare l’Ordine",
+    "parti": [
+     8
+    ]
+   }
+  },
+  "r:ea714313c17a": {
+   "effetti": []
+  },
+  "q:95df824c9d75": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "q:0aa4d87b1dd4": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Sconfitti e Caduti",
+       "parti": [
+        5
+       ]
+      }
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Confronti Finali",
+       "parti": [
+        5
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:5c2e32a6321c": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 11,
+      "a": 11
+     },
+     {
+      "tipo": "status",
+      "nome": "Apripista",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "q:109d57ccd9d4": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 11,
+      "a": 11
+     },
+     {
+      "tipo": "status",
+      "nome": "Apripista",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  "q:65fa6a4355c1": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 11,
+      "a": 11
+     },
+     {
+      "tipo": "status",
+      "nome": "Apripista",
+      "parti": [
+       5
+      ]
+     }
+    ]
+   }
+  },
+  "q:ae3956fa749c": {
+   "costo": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 51
+     },
+     "allora": [],
+     "altrimenti": [
+      {
+       "tipo": "paga",
+       "ris": "ricchezza",
+       "n": 2,
+       "chi": "diviso",
+       "per": {
+        "membri": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "r:823dd2dc7d8d": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Durante questo Riposo ogni membro della Compagnia ottiene 1 Salute in più e perde 1 Terrore in più."
+    }
+   ]
+  },
+  "q:c42c2f8cc0de": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 33
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       4
+      ]
+     }
+    ]
+   }
+  },
+  "q:0a14c729ec8d": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "status",
+      "nome": "Resti",
+      "parti": [
+       4
+      ]
+     }
+    ]
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questa scelta pone fine alla Campagna!"
+    }
+   ]
+  },
+  "c:2e48c5d37245": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Confronti Finali",
+    "parti": [
+     1
+    ]
+   }
+  },
+  "c:e9e7fbe00567": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 78
+   }
+  },
+  "c:77c8caf4659b": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "q:ee2492d52112": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 6,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    }
+   ]
+  },
+  "q:69916ef31faf": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    }
+   ]
+  },
+  "q:e2238190b04d": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "rep",
+     "n": 6,
+     "chi": "diviso",
+     "per": {
+      "membri": true
+     }
+    }
+   ]
+  },
+  "q:05ec7c392678": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Incarico di Morgana",
+      "parti": []
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 6,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "r:f00633ac18f1": {
+   "effetti": []
+  },
+  "r:a62669611d3c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "rimuovi": true,
+     "n": 33
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:6473dce8153d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "rimuovi": true,
+     "n": 33
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:e90c900697db": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Amate Proprietà",
+    "parti": []
+   }
+  },
+  "r:39dd56ad5ebb": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di Magia ed Energia. Dividete la somma totale spesa per il numero di Personaggi (arrotondando per difetto) e mettete da parte un equivalente numero di segnalini."
+    }
+   ]
+  },
+  "r:538f45dc6389": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: viaggiare verso Cuanacht e uccidere i responsabili delle razzie."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:39dd56ad5ebb": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di Magia ed Energia. Dividete la somma totale spesa per il numero di Personaggi (arrotondando per difetto) e mettete da parte un equivalente numero di segnalini."
+    }
+   ]
+  },
+  "r:62729d2b58c3": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Confronti Finali",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:ae4f6fb07d89": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "v:800": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Al tiro sommate anche il numero di segnalini messi da parte al Verso precedente."
+    },
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      },
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:5e1ef3a6bbb4": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 10
+   }
+  },
+  "r:4f3b4639d2fc": {
+   "effetti": [
+    {
+     "tipo": "imposta",
+     "ris": "salute",
+     "n": 0,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:f235fb4493ff": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 11,
+    "a": 99
+   }
+  },
+  "q:6ba2e3bf03d0": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Apripista",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "r:1d8a24faec1d": {
+   "effetti": []
+  },
+  "r:28013bb2745c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: visitare Cuanacht Distrutta (121) e decidere se volete mantenere la promessa fatta alla vostra alleata."
+    }
+   ]
+  },
+  "q:62d96b9d42b8": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Pagate un totale di 15 Ricchezza o Cibo (in qualsiasi combinazione) per giocatore."
+    }
+   ]
+  },
+  "q:01b53b08208a": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questa scelta pone fine alla Campagna!"
+    }
+   ]
+  },
+  "q:dc9af5cc318c": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 12,
+      "a": 12
+     }
+    ]
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Questa scelta pone fine a questo Capitolo."
+    }
+   ]
+  },
+  "r:8a7f912968bb": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: andare a trovare Lancillotto a Longbarrow (152) nel Capitolo 15."
+    }
+   ]
+  },
+  "q:417a76dfa20f": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 78
+   }
+  },
+  "c:ab82498691f3": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:b30b6f9480a3": {
+   "condizione": {
+    "tipo": "oggetto",
+    "nome": "Kit dell’Avventuriero"
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:a8f602cfd06f": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:707f5169abd3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "caution"
+     }
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:98808f189f00": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 44
+   }
+  },
+  "r:e5f5abf57006": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "c:1ca8c20288d3": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 39
+   }
+  },
+  "r:564906558239": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:2db59f52336a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Mettete 10 segnalini nella Riserva di Combattimento prima che il Combattimento inizi."
+    },
+    {
+     "tipo": "incontro",
+     "colore": "verde",
+     "nome": "Wyrm del Sole",
+     "livello": 4
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:2a2f4c5a6dd6": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "v:814": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:3df2e220620f": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia subisce 3 Ferite, ridotte della sua Cautela (perde 3 Salute meno la sua Cautela, minimo 0)."
+    },
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      },
+      {
+       "n": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:e7b6f88e2c47": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 7
+   }
+  },
+  "r:d36979bcd1bc": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:221d9e7e691f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:ac06daa6e859": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "q:1ff91a2e47cb": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 3
+   }
+  },
+  "r:e9e86186c09b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:c0823bf877e5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "r:4a550cad2f4c": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:95e3052bc713": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": -1
+    }
+   ]
+  },
+  "r:aba617630603": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:e80f713893d3": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 3
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:97190c2443a6": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Folla Inferocita",
+     "livello": 4
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:ce86f70d16d1": {
+   "effetti": [
+    {
+     "tipo": "imposta",
+     "ris": "energia",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:bb70b2b53df8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:f880e2d0b6f7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:2f99d3adeac9": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "min": 2,
+      "chi": "attivo"
+     },
+     "allora": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -4,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:304c6130cbde": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:4e52b55a041b": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 5
+   }
+  },
+  "r:7ff6a55d48d7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:d4198d52e4db": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:1e4c22aea237": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:669a8412c194": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "oggetto",
+       "nome": "Kit dell’Avventuriero"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -3,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:76b0a32b7f48": {
+   "effetti": [
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:5e0fc6d1b89f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "v:833": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "empathy",
+       "per": 1
+      },
+      {
+       "attr": "aggression",
+       "per": -1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:13f52b45d658": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": -99,
+    "a": 5
+   }
+  },
+  "r:2fb30e61baad": {
+   "effetti": []
+  },
+  "r:ddb8064cb941": {
+   "effetti": []
+  },
+  "q:da16f3900ba9": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:e5ba072e358f": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "verde",
+     "pesca": 3,
+     "esito": {
+      "vittoria": [
+       {
+        "tipo": "gettoni_cerca",
+        "n": 1
+       }
+      ],
+      "fallimento": [],
+      "fuga": []
+     }
+    }
+   ]
+  },
+  "q:fe9f26155d5f": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "spirituality",
+    "min": 3
+   }
+  },
+  "v:837": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "n": 1
+        }
+       ],
+       "risultati": []
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "dado",
+       "mod": [],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "r:038eaf88030c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:745c84ffa0f5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:3c9affc2eb9e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:aaed1fb525e5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:6e67394f0ec2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:90e9ca4632d1": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:9530dfa415ff": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 4
+   }
+  }
+ }
+}

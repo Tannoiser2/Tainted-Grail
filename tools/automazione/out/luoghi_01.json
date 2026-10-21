@@ -1,0 +1,2239 @@
+{
+ "carte": {
+  "carte/mazzo/tuathan_31308.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Sul tavolo ci sono 2 carte Luogo di Tuathan (199)"
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "manuale",
+          "testo": "Sul tavolo ci sono 5 carte Luogo di Tuathan (199)"
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "manuale",
+           "testo": "Ci sono 1, 3 o 4 carte di Tuathan: piazza a caso una nuova carta di Tuathan accanto a essa/e e sposta lì i Personaggi."
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tipo": "tutti_personaggi"
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Gira questa carta Luogo non appena entri (il retro resta scoperto)."
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Durante la Fine della Giornata devi nutrirti di Ricchezza invece che di Cibo."
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31307.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Sul tavolo ci sono 2 carte Luogo di Tuathan (199)"
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "manuale",
+          "testo": "Sul tavolo ci sono 5 carte Luogo di Tuathan (199)"
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "manuale",
+           "testo": "Ci sono 1, 3 o 4 carte di Tuathan: piazza a caso una nuova carta di Tuathan accanto a essa/e e sposta lì i Personaggi."
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tipo": "tutti_personaggi"
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Gira questa carta Luogo non appena entri (il retro resta scoperto)."
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "fine_giornata",
+      "condizione": {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "min": 1,
+       "chi": "attivo"
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": -4
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31306.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Sul tavolo ci sono 2 carte Luogo di Tuathan (199)"
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "manuale",
+          "testo": "Sul tavolo ci sono 5 carte Luogo di Tuathan (199)"
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "manuale",
+           "testo": "Ci sono 1, 3 o 4 carte di Tuathan: piazza a caso una nuova carta di Tuathan accanto a essa/e e sposta lì i Personaggi."
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tipo": "tutti_personaggi"
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Gira questa carta Luogo non appena entri (il retro resta scoperto)."
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se dovessi ottenere Terrore, perdi invece altrettanta Salute."
+       },
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se dovessi perdere Salute, ottieni invece altrettanto Terrore."
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31305.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Sul tavolo ci sono 2 carte Luogo di Tuathan (199)"
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "manuale",
+          "testo": "Sul tavolo ci sono 5 carte Luogo di Tuathan (199)"
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "manuale",
+           "testo": "Ci sono 1, 3 o 4 carte di Tuathan: piazza a caso una nuova carta di Tuathan accanto a essa/e e sposta lì i Personaggi."
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tipo": "tutti_personaggi"
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Gira questa carta Luogo non appena entri (il retro resta scoperto)."
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "condizione": {
+       "tipo": "follia"
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1
+       },
+       {
+        "tipo": "imposta",
+        "ris": "terrore",
+        "n": 0,
+        "chi": "attivo"
+       },
+       {
+        "tipo": "imposta",
+        "ris": "energia",
+        "n": 0,
+        "chi": "attivo"
+       }
+      ]
+     },
+     {
+      "quando": "sempre",
+      "condizione": {
+       "tipo": "morente"
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": 99
+       },
+       {
+        "tipo": "imposta",
+        "ris": "energia",
+        "n": 0,
+        "chi": "attivo"
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31304.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Sul tavolo ci sono 2 carte Luogo di Tuathan (199)"
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "manuale",
+          "testo": "Sul tavolo ci sono 5 carte Luogo di Tuathan (199)"
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "manuale",
+           "testo": "Ci sono 1, 3 o 4 carte di Tuathan: piazza a caso una nuova carta di Tuathan accanto a essa/e e sposta lì i Personaggi."
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tipo": "tutti_personaggi"
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Gira questa carta Luogo non appena entri (il retro resta scoperto)."
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "fine_giornata",
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "ailei"
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "quando": "sempre",
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "arev"
+      },
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Arev non può usare la sua azione del Personaggio."
+       }
+      ]
+     },
+     {
+      "quando": "sempre",
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "beor"
+      },
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Beor non può ripristinare Salute."
+       }
+      ]
+     },
+     {
+      "quando": "sempre",
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "maggot"
+      },
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Maggot non può pagare con Magia (ma può perdere Magia se gli viene indicato)."
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/nueva_camelot_asediada_31303.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Abbandonati",
+       "parti": [
+        7
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 195,
+        "verso": 10
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "status",
+         "nome": "Ripristinare l'Ordine",
+         "parti": [
+          8
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 195,
+          "verso": 6
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "diario",
+          "luogo": 195,
+          "verso": 4
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/nueva_camelot_31302.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Venti dell'Anomalia",
+       "parti": []
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 195
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "status",
+         "nome": "Pace nel Borgo",
+         "parti": []
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 190,
+          "verso": 2
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "diario",
+          "luogo": 190,
+          "verso": 1
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/corazon_de_tuathan_31301.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 185
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": true
+  },
+  "carte/mazzo/el_refugio_de_orrin_31300.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 180
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": true
+  },
+  "carte/mazzo/refugio_en_cabolejano_31208.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 2
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/nido_del_cuervo_arrasado_31207.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 165
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/corbenic_31206.webp": {
+   "azione": {
+    "costo": [],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "min": 1,
+     "chi": "attivo"
+    }
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/caboejano_31205.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/nido_del_cuervo_31204.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Sconfitti e Caduti",
+       "parti": [
+        4
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 160,
+        "verso": 18
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 160
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/encuentro_en_mediocamino_31203.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Venti dell'Anomalia",
+        "parti": []
+       }
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 5
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     }
+    ]
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "capitolo",
+       "da": 5,
+       "a": 15
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 152
+       },
+       {
+        "tipo": "diario",
+        "luogo": 152
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 158
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/costa_resplandeciente_31202.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/rios_altos_31201.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "viola"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/bosque_de_los_susurros_31200.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 2
+     },
+     {
+      "tipo": "incontro",
+      "colore": "verde"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/tumbas_de_la_orden_31108.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": -2
+     },
+     {
+      "tipo": "diario",
+      "luogo": 154,
+      "verso": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/mar_verde_31107.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "quadrante_lancio",
+      "graal": [],
+      "teschio": [
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": -1
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/mediocamino_31106.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Venti dell'Anomalia",
+        "parti": []
+       }
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 5
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     }
+    ]
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/cuanacht_quebrada_30902.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "segreto",
+       "n": 58
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Abbandonati",
+       "parti": [
+        1
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 121,
+        "verso": 9
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 121
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/cuernos_del_sur_30901.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/flota_abandonada_30900.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 4
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/estampida_30808.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "segreto",
+       "n": 7
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 5,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 3
+       }
+      ]
+     }
+    ]
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/primer_hogar_30807.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "viola"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Resti",
+       "parti": [
+        2
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 117,
+        "verso": 19
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 117
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/vallelejano_30806.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Sconfitti e Caduti",
+       "parti": [
+        3
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 116,
+        "verso": 13
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 116
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/escalinata_del_titan_30805.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 115
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tutte": [
+        {
+         "tipo": "manuale",
+         "testo": "Non c'è alcun Quadrante su questa carta Luogo"
+        },
+        {
+         "non": {
+          "tipo": "status",
+          "nome": "Santuario Sicuro",
+          "parti": []
+         }
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "luogo:115",
+        "valore": 3,
+        "gettone": "tempo"
+       },
+       {
+        "tipo": "nota",
+        "testo": "Diminuisci il Quadrante di questo Luogo all'Inizio di ogni Giornata."
+       }
+      ]
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Se il Quadrante di questo Luogo si esaurisce, o se il Luogo viene scartato, rimuovi questa carta Luogo e sostituiscila con il 125."
+     },
+     {
+      "tipo": "diario",
+      "luogo": 115
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/raizespesa_30804.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 2
+     },
+     {
+      "tipo": "incontro",
+      "colore": "verde"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/lago_del_espejo_30803.webp": {
+   "azione": {
+    "costo": [],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "una": [
+        {
+         "tipo": "status",
+         "nome": "Venti dell'Anomalia",
+         "parti": []
+        },
+        {
+         "tipo": "status",
+         "nome": "Matricidio",
+         "parti": []
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 122
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 113
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/valle_sangriento_30802.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Paga 1 Rep",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "rep",
+          "n": 1
+         }
+        ]
+       },
+       {
+        "testo": "Ottieni 1 Terrore",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "terrore",
+          "n": 1
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Venti dell'Anomalia",
+       "parti": []
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 112,
+        "verso": 4
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 112
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  }
+ }
+}

@@ -1,0 +1,2121 @@
+{
+ "carte": {
+  "carte/mazzo/pie_de_la_muralla_30801.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 2
+     },
+     {
+      "tipo": "incontro",
+      "colore": "verde"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/30800.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/asilo_de_la_isla_30708.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 3
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "segreto",
+       "n": 66
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 109,
+        "verso": 9
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tutte": [
+          {
+           "tipo": "status",
+           "nome": "Battitore di Piste",
+           "parti": []
+          },
+          {
+           "tipo": "manuale",
+           "testo": "Hai un Quadrante che rappresenta l'arciera"
+          }
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 109,
+          "verso": 11
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "diario",
+          "luogo": 109
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/bosque_de_los_gusanos_30707.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 108
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "sostituisci",
+      "vecchio": "questo",
+      "nuovo": 110
+     },
+     {
+      "tipo": "fine_esplorazione"
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/albura_30706.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 9,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tutte": [
+        {
+         "tipo": "status",
+         "nome": "Lascito di Fael",
+         "parti": []
+        },
+        {
+         "non": {
+          "tipo": "status",
+          "nome": "Tesori Nascosti",
+          "parti": [
+           2
+          ]
+         }
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 107,
+        "verso": 10
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tutte": [
+          {
+           "tipo": "status",
+           "nome": "Venti dell'Anomalia",
+           "parti": []
+          },
+          {
+           "non": {
+            "tipo": "status",
+            "nome": "Rimedio",
+            "parti": [
+             4
+            ]
+           }
+          }
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 107,
+          "verso": 14
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "se",
+          "condizione": {
+           "tipo": "personaggio",
+           "id": "ailei"
+          },
+          "allora": [
+           {
+            "tipo": "diario",
+            "luogo": 107,
+            "verso": 13
+           }
+          ],
+          "altrimenti": [
+           {
+            "tipo": "diario",
+            "luogo": 107,
+            "verso": 7
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/tumulos_de_los_primeros_moradores_30705.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     },
+     {
+      "tipo": "dado",
+      "mod": [],
+      "risultati": [
+       {
+        "da": 6,
+        "a": 99,
+        "effetti": [
+         {
+          "tipo": "diario",
+          "luogo": 106,
+          "verso": 4
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 9,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Venti dell'Anomalia",
+       "parti": []
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 123
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 106
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/espadas_olvidadas_30704.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "fabbricabile",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "C'è un Gettone Cerca su questo Luogo"
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 105,
+        "verso": 14
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 105
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/conclave_calcinado_30703.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "grigio"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "maggot"
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 104,
+        "verso": 10
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 104
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/feria_del_guerrero_30702.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 4
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/arboleda_del_cazador_30701.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 2
+     },
+     {
+      "tipo": "incontro",
+      "colore": "verde"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Battitore di Piste",
+        "parti": []
+       }
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 102,
+        "verso": 3
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 102
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/cuanacht_30700.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "segreto",
+       "n": 58
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Venti dell'Anomalia",
+       "parti": []
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 121
+       },
+       {
+        "tipo": "diario",
+        "luogo": 121
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "segreto",
+         "n": 66
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 101,
+          "verso": 4
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "se",
+          "condizione": {
+           "tipo": "status",
+           "nome": "Marchio del Cacciatore",
+           "parti": []
+          },
+          "allora": [
+           {
+            "tipo": "diario",
+            "luogo": 101,
+            "verso": 6
+           }
+          ],
+          "altrimenti": [
+           {
+            "tipo": "diario",
+            "luogo": 101
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/el_torreon_31105.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "scarta",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/valle_de_los_guardianes_31104.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 150
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/broch_destrozado_31103.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "rep",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/faldorca_31102.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 5
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Sposta la miniatura del Menhir da questo Luogo a Falfuar Abbandonata (147)."
+     },
+     {
+      "tipo": "muovi",
+      "dove": 147,
+      "chi": "compagnia"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/falfuar_abandonado_31101.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 5
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Sposta la miniatura del Menhir da questo Luogo al Luogo 135 (o al 148 se il 135 è stato rimosso dalla partita)."
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 135 è stato rimosso dalla partita"
+      },
+      "allora": [
+       {
+        "tipo": "muovi",
+        "dove": 148,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "muovi",
+        "dove": 135,
+        "chi": "compagnia"
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "diario",
+      "luogo": 147
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/distrito_en_calma_31100.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "quadrante_lancio",
+      "graal": [
+       {
+        "tipo": "incontro",
+        "colore": "blu"
+       }
+      ],
+      "teschio": [
+       {
+        "tipo": "incontro",
+        "colore": "grigio"
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/confin_de_la_rareza_31008.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     },
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Paga 2 Ricchezza",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "ricchezza",
+          "n": 2
+         }
+        ]
+       },
+       {
+        "testo": "Paga 2 Magia",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 2
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 3
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Venti dell'Anomalia",
+       "parti": []
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 141,
+        "verso": 3
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 141
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/pantano_oscuro_31007.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 5
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     }
+    ]
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Paga 1 Ricchezza",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "ricchezza",
+          "n": 1
+         }
+        ]
+       },
+       {
+        "testo": "Paga 1 Cibo",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "cibo",
+          "n": 1
+         }
+        ]
+       },
+       {
+        "testo": "Perdi 1 Salute",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "salute",
+          "n": -1
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "tipo": "diario",
+      "luogo": 140
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/devastacion_31006.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 3
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/distrito_infectado_31005.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/altomuro_conquistado_31004.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "grigio"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/broch_cruach_31003.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     },
+     {
+      "tipo": "incontro",
+      "colore": "viola"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tutte": [
+        {
+         "tipo": "attributo",
+         "attr": "spirituality",
+         "min": 2
+        },
+        {
+         "non": {
+          "tipo": "status",
+          "nome": "Richiamo dall'Aldilà",
+          "parti": []
+         }
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 136,
+        "verso": 2
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 136
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/bundorca_31002.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": [
+        2
+       ]
+      },
+      {
+       "tutte": [
+        {
+         "tipo": "tutti_personaggi"
+        },
+        {
+         "tipo": "segreto",
+         "n": 11
+        }
+       ]
+      }
+     ]
+    },
+    "costo": [],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": [
+        2
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 999,
+        "verso": 166
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 2,
+        "chi": "diviso",
+        "per": {
+         "giocatori": true
+        }
+       },
+       {
+        "tipo": "paga",
+        "ris": "ricchezza",
+        "n": 2,
+        "chi": "diviso",
+        "per": {
+         "giocatori": true
+        }
+       },
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "diviso",
+        "per": {
+         "giocatori": true
+        }
+       },
+       {
+        "tipo": "menhir",
+        "luogo": "qui",
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ]
+     }
+    ]
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Missione Diplomatica",
+        "parti": []
+       }
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 135,
+        "verso": 1
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 135
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/falfuar_31001.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "manuale",
+       "testo": "C'è una miniatura di Menhir in questo Luogo"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Missione Diplomatica",
+        "parti": []
+       }
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 134,
+        "verso": 1
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 134
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/anillo_de_luna_31000.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     },
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Paga 1 Ricchezza",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "ricchezza",
+          "n": 1
+         }
+        ]
+       },
+       {
+        "testo": "Paga 1 Cibo",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "cibo",
+          "n": 1
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/rostro_sereno_30908.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "status",
+       "nome": "Mistero Risolto",
+       "parti": []
+      }
+     ]
+    },
+    "costo": [],
+    "quadrante": null,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 999,
+      "verso": 142
+     }
+    ]
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/altomuro_30907.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Sconfitti e Caduti",
+       "parti": [
+        2
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 137
+       },
+       {
+        "tipo": "diario",
+        "luogo": 137
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "una": [
+          {
+           "tipo": "status",
+           "nome": "Sconfitti e Caduti",
+           "parti": [
+            3
+           ]
+          },
+          {
+           "tipo": "status",
+           "nome": "Sconfitti e Caduti",
+           "parti": [
+            4
+           ]
+          }
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 131,
+          "verso": 20
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "diario",
+          "luogo": 131,
+          "verso": 1
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/dolmen_derrumbado_30906.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 2
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/escalinata_del_titan_30905.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "grigio"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/tumulos_hundidos_30904.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 2
+     },
+     {
+      "tipo": "dado",
+      "mod": [],
+      "risultati": [
+       {
+        "da": 6,
+        "a": 99,
+        "effetti": [
+         {
+          "tipo": "diario",
+          "luogo": 123,
+          "verso": 1
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "diario",
+      "luogo": 123
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/lago_del_espejo_desecado_30903.webp": {
+   "azione": {
+    "costo": [],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": true,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": null,
+   "permanente": false
+  }
+ }
+}

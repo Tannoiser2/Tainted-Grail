@@ -49,7 +49,10 @@ func inizio() -> Dictionary:
 	for x in p.personaggi():
 		x["passato"] = false
 		x["usate"] = {}
-	# 5. Evento
+		x["viaggi_oggi"] = 0
+	# 5. Guardiani: dado Guardiano (direzione / fermo / scartato)
+	msg.append_array(muovi_guardiani())
+	# 6. Evento
 	var ev := pesca_evento()
 	if ev != "":
 		msg.append("Evento: " + Carte.nome(ev))
@@ -78,6 +81,18 @@ func pesca_evento() -> String:
 		return ""
 	var ev: String = m.pop_front()
 	var c := Carte.dati(ev)
+	for mod in p.modificatori("ignora_evento"):
+		if str(mod.get("nome", "")) == "" or Carte.nome(ev).to_lower() == str(mod.get("nome", "")).to_lower():
+			p.racconta("Evento %s ignorato (%s)" % [Carte.nome(ev), Carte.nome(str(mod.get("img", "")))])
+			p.d["mazzi"].get_or_add("eventi_scarti", []).append(ev)
+			p.d["evento"] = ""
+			return ""
+	if not Carte.auto(ev).is_empty():
+		# carta codificata: gli effetti alla rivelazione li esegue l'Interprete (Gioco)
+		if not (Carte.auto(ev).get("cerca") is Dictionary):
+			p.d["mazzi"].get_or_add("eventi_scarti", []).append(ev)
+		p.d["evento"] = ev
+		return ev
 	if c.get("missione", false) or c.get("cerca") is Dictionary:
 		# le Cerche restano attive finché la carta non dice di scartarle
 		var att: Array = p.d.get_or_add("cerche", [])
@@ -123,13 +138,23 @@ func prossimo() -> bool:
 			return true
 	return false
 
+## Costo in Energia del Viaggio per un personaggio (carte che lo riducono, es. il primo del giorno).
+func costo_viaggio(x: Dictionary) -> int:
+	var c := 1
+	for m in p.modificatori("costo_viaggio", x):
+		var primi := int(m.get("primi", 1 if m.get("primo", false) else 99))
+		if int(x.get("viaggi_oggi", 0)) < primi:
+			c += int(m.get("n", -1))
+	return maxi(0, c)
+
 func puo_viaggiare(x: Dictionary) -> Array:
 	return p.collegati(int(x["luogo"]))
 
 ## Viaggio di un personaggio (o della sua Compagnia) verso un Luogo collegato.
 func viaggia(gruppo: Array, dest: int) -> Array:
 	for x in gruppo:
-		p.modifica(x, "energia", -1)
+		p.modifica(x, "energia", -costo_viaggio(x))
+		x["viaggi_oggi"] = int(x.get("viaggi_oggi", 0)) + 1
 		x["luogo"] = dest
 	p.racconta("%s viaggia al Luogo %d" % [" e ".join(gruppo.map(func(x): return x["nome"])), dest])
 	var nuovi := p.rivela_attorno(dest)
@@ -186,13 +211,15 @@ func riposa(x: Dictionary, mangia: bool) -> String:
 	var t := ""
 	if mangia and int(x.get("cibo", 0)) > 0:
 		p.modifica(x, "cibo", -1)
-		p.modifica(x, "salute", 1)
+		var sal := 0 if not p.modificatori("no_riposo_salute", x).is_empty() else 1 + p.somma_modificatori("riposo_salute", x)
+		var ter := 0 if not p.modificatori("no_riposo_terrore", x).is_empty() else 1 + p.somma_modificatori("riposo_terrore", x)
+		p.modifica(x, "salute", sal)
 		var senza_menhir: bool = not p.d["menhir"].has(str(x["luogo"])) or int(p.d["menhir"][str(x["luogo"])].get("quadrante", 0)) <= 0
 		if str(x["id"]) == "ailei" and senza_menhir:
-			t = "%s mangia: +1 Salute (Traumatizzata: il Terrore non scende senza Menhir)." % x["nome"]
+			t = "%s mangia: %+d Salute (Traumatizzata: il Terrore non scende senza Menhir)." % [x["nome"], sal]
 		else:
-			p.modifica(x, "terrore", -1)
-			t = "%s mangia: +1 Salute, −1 Terrore." % x["nome"]
+			p.modifica(x, "terrore", -ter)
+			t = "%s mangia: %+d Salute, −%d Terrore." % [x["nome"], sal, ter]
 	else:
 		if int(x.get("energia", 0)) == 0:
 			p.modifica(x, "salute", -1)
@@ -242,12 +269,45 @@ func scegli_avanzata(x: Dictionary, tipo: String, img: String) -> void:
 func sogno(x: Dictionary) -> Dictionary:
 	var id := Dati.id_numero(p.camp, int(x["luogo"]))
 	var l := Dati.luogo(p.camp, id)
-	if Personaggi.in_follia(x) and l.has("incubo"):
+	if (Personaggi.in_follia(x) or not p.modificatori("solo_incubi", x).is_empty()) and l.has("incubo"):
 		return {"tipo": "Incubo", "testo": l["incubo"]}
 	var sigilli: Array = Carte.luogo(int(x["luogo"])).get("sigilli", [])
 	if (sigilli.has("dream") or sigilli.is_empty()) and l.has("sogno"):
 		return {"tipo": "Sogno", "testo": l["sogno"]}
 	return {}
+
+## Dado Guardiano per ogni Guardiano sulla mappa: 1-4 direzione (su, destra, giù, sinistra),
+## 5 resta fermo, 6 scartato (carta in fondo al suo mazzo).
+func muovi_guardiani() -> Array:
+	var msg := []
+	var gl := Partita.guardiani(p)
+	var dirs := ["su", "destra", "giu", "sinistra"]
+	for g in gl.duplicate():
+		var v := randi_range(1, 6)
+		var nome := Carte.nome(str(g.get("img", "")))
+		if v == 6:
+			gl.erase(g)
+			p.d["mazzi"].get_or_add("incontri_" + str(g.get("colore", "")), []).append(g["img"])
+			msg.append("Il Guardiano %s se ne va (dado Guardiano: scarto)." % nome)
+		elif v == 5:
+			msg.append("Il Guardiano %s resta al Luogo %d." % [nome, int(g["luogo"])])
+		else:
+			var dest := p.luogo_in(p.cella(int(g["luogo"])) + Partita.DIREZIONI[dirs[v - 1]])
+			if dest != 0:
+				g["luogo"] = dest
+				msg.append("Il Guardiano %s si sposta al Luogo %d." % [nome, dest])
+			else:
+				msg.append("Il Guardiano %s non può muoversi e resta al Luogo %d." % [nome, int(g["luogo"])])
+	return msg
+
+## Luoghi con un Guardiano dove si trova almeno un Personaggio (Incontro immediato).
+func guardiani_con_personaggi() -> Array:
+	var out := []
+	for g in Partita.guardiani(p):
+		for x in p.personaggi():
+			if int(x["luogo"]) == int(g["luogo"]) and not out.has(g):
+				out.append(g)
+	return out
 
 func nuova_giornata() -> void:
 	p.d["giorno"] = int(p.d.get("giorno", 1)) + 1

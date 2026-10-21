@@ -1,0 +1,1401 @@
+{
+ "carte": {
+  "carte/beor_mazo_basico_de_combate/33406.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scegli_attacco"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33407.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Hai subito Ferite in questo attacco"
+       },
+       "allora": [
+        {
+         "tipo": "scarta_ultima"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33408.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33409.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      },
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33410.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "manuale",
+         "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33411.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33412.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "manuale",
+         "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33413.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33414.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33300.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33301.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "chiavi": "aggression"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33302.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33303.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento",
+      "colore": "grigio"
+     },
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "attributo": "aggression"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33304.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33305.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33306.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33307.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33308.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "carta_aggiuntiva",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "1 Magia",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "magia",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        },
+        {
+         "testo": "1 Salute",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "salute",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33309.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "attributo": "aggression"
+       }
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33310.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 1
+      },
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33311.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Hai subito più di 1 Ferita in questo attacco"
+       },
+       "allora": [
+        {
+         "tipo": "scarta_ultima"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33312.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ottieni 1 segnalino per ogni punto di Salute che ti manca (Salute massima − Salute attuale)"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33313.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ottieni 1 segnalino per ogni punto di Salute che ti manca (Salute massima − Salute attuale)"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33314.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_carte",
+       "n": 10,
+       "da": "mazzo"
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 10
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32901.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 1
+      },
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32902.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32903.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32904.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Se il nemico infligge Ferite, invece perdi altrettanti segnalini (non subisci quelle Ferite)"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32905.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora l'attacco nemico (invece dell'attacco)"
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32906.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32907.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento",
+      "colore": "viola"
+     },
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "chiavi": "magic"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32908.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scegli_attacco"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32909.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "manuale",
+         "testo": "Durante l'attacco nemico di questa attivazione: ignora l'attacco nemico, ottieni 2 segnalini e scarta questa carta"
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "manuale",
+         "testo": "Risolvi un attacco di opportunità del nemico"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32910.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento",
+      "colore": "verde"
+     },
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "attributo": "practicality"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32911.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32912.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32913.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Aggiungi 2 Cariche su una qualsiasi carta della Sequenza"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32914.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32915.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "oggetto",
+        "parola": "Arma"
+       },
+       {
+        "tipo": "oggetto",
+        "parola": "Scudo"
+       }
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Gira 1 Arma o Scudo che stai usando: resta inattivo fino alla fine del Combattimento"
+      },
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32800.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora l'attacco nemico"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32801.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora l'attacco nemico"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32802.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32803.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32804.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32805.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32806.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      },
+      {
+       "tipo": "meno_cubi",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32807.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "attributo": "practicality"
+       }
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 99
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32808.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora l'attacco nemico"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32809.webp": {
+   "capacita": []
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32810.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32811.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Raddoppia tutte le Chiavi (di Bonus, Magiche e senza costo) di una sola carta, solo quando giochi quella carta"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32812.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora l'attacco nemico"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "facoltativo": true
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "scelto"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32813.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 3 Cariche su una qualsiasi carta della Sequenza"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32814.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 3 Cariche su una qualsiasi carta della Sequenza"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32925.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32924.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Aggiungi 2 Cariche su una qualsiasi carta della Sequenza"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32923.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32922.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca (Fine del turno)"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32921.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Il nemico attacca usando il primo attacco (prima fascia) della sua Tabella di Combattimento"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

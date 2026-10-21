@@ -37,11 +37,18 @@ var primo_attivato := true
 var concluso := ""
 var paga_magia := true
 var registro: Array = []
+var auto: Dictionary = {}         # effetti strutturati della carta Incontro (data/automazione.json)
+var ui = null                     # finestra per le scelte del giocatore (vedi Interprete)
+var tratti_ignorati: Array = []
+var scegli_attacco := false
+var ferite_subite := 0
+var usati_inneschi := {}          # inneschi "una volta per Incontro" già usati / carte girate
 
 func _init(partita_: Partita, img_: String, colore_: String) -> void:
 	partita = partita_
 	img = img_
 	carta = Carte.dati(img)
+	auto = Carte.auto(img)
 	colore = colore_
 	diplomazia = colore == "blu" or str(carta.get("sottotipo", "")) == "diplomazia"
 
@@ -54,6 +61,11 @@ func tratti() -> Array:
 	return carta.get("tratti", [])
 
 func ha_tratto(t: String) -> bool:
+	for ig in tratti_ignorati:
+		if t.to_lower().begins_with(str(ig).to_lower().substr(0, 5)) or str(ig).to_lower().begins_with(t.to_lower()):
+			return false
+	if partita.tratto_ignorato(t):
+		return false
 	for x in tratti():
 		if str(x).to_lower().begins_with(t.to_lower()):
 			return true
@@ -72,9 +84,26 @@ func inizia(compagnia: Array) -> void:
 		mazzi[id] = m
 		scarti[id] = []
 		mani[id] = []
-		for i in n_mano:
+		for i in n_mano + partita.somma_modificatori("mano_iniziale", p):
 			pesca(id)
 	nota("Inizia %s: %s (%s)" % ["la Diplomazia" if diplomazia else "il Combattimento", Carte.nome(img), ", ".join(tratti()) if not tratti().is_empty() else "nessun tratto"])
+	# regole speciali della carta, effetti iniziali, inneschi delle carte dei Personaggi
+	if auto.get("regola_speciale") is Array:
+		for inn in auto["regola_speciale"]:
+			if inn is Dictionary and str(inn.get("quando", "sempre")) in ["sempre", "inizio_incontro"]:
+				var it0 := Interprete.new(partita, self, ui, {"carta": img})
+				if inn.get("condizione") is Dictionary and not inn["condizione"].is_empty() and it0.valuta(inn["condizione"]) == false:
+					continue
+				await _esegui(inn.get("effetti", []), {"carta": img})
+	if auto.get("inizio") is Array and not auto["inizio"].is_empty():
+		await _esegui(auto["inizio"], {"carta": img})
+	await scatena("inizio_incontro")
+	await scatena("inizio_diplomazia" if diplomazia else "inizio_combattimento")
+	if speciale() and auto.get("effetto") is Array and not auto["effetto"].is_empty():
+		nota("Incontro speciale: " + Dati.testo_piano(str(carta.get("testo", {}).get("it", ""))))
+		await _esegui(auto["effetto"], {"carta": img})
+		if concluso == "":
+			concludi("vittoria")
 
 func nota(t: String) -> void:
 	registro.append(t)
@@ -136,10 +165,9 @@ func attiva(id: String) -> void:
 		if int(s.get("tempo", 0)) > 0:
 			s["tempo"] = int(s["tempo"]) - 1
 			if s["tempo"] == 0 and sequenza.back() == s:
-				for cap in _capacita(str(s["img"])):
-					if str(cap.get("innesco", "")) == "ritardata":
-						nota("Capacità ritardata di %s." % Carte.nome(str(s["img"])))
-						applica_testo(str(cap.get("it", "")))
+				nota("Capacità ritardata di %s." % Carte.nome(str(s["img"])))
+				await esegui_capacita(str(s["img"]), "ritardata")
+	await scatena("attivazione", attivo())
 	cambiato.emit()
 
 ## Il personaggio attivo è in Panico: la prima carta è quella in cima al mazzo.
@@ -248,9 +276,12 @@ func gioca(c: String) -> void:
 	carte_attivazione += 1
 	nota("%s gioca %s." % [attivo()["nome"], Carte.nome(c)])
 	var cubi := 0
+	var unite := []
 	for k in cols:
 		if not k["ok"]:
 			continue
+		if k["tipo"] != "fondo":
+			unite.append(str(k.get("attr", "")))
 		if k["tipo"] == "magia":
 			if not paga_magia:
 				continue
@@ -262,13 +293,15 @@ func gioca(c: String) -> void:
 	if prima and ha_tratto("Difens") and cubi > 0 and not diplomazia:
 		riserva = maxi(0, riserva - 1)
 		nota("Difensivo: un segnalino in meno.")
-	# Capacità "al piazzarla" (dopo i bonus delle Chiavi) o ritardata (gettone Tempo)
+	sequenza.back()["chiavi"] = unite
+	for a in unite:
+		await scatena("collega_chiave", attivo(), {"attr": a})
+	# Capacità "al piazzarla" (dopo i bonus delle Chiavi), passive, o ritardata (gettone Tempo)
 	for cap in _capacita(c):
-		match str(cap.get("innesco", "")):
-			"piazza":
-				applica_testo(str(cap.get("it", "")))
-			"ritardata":
-				sequenza.back()["tempo"] = maxi(1, int(cap.get("tempo", 1)))
+		if str(cap.get("innesco", "")) == "ritardata":
+			sequenza.back()["tempo"] = maxi(1, int(cap.get("tempo", 1)))
+	await esegui_capacita(c, "piazza", {"cubi_dati": cubi})
+	await esegui_capacita(c, "passiva", {"cubi_dati": cubi})
 	_controlla_fine_carte()
 	cambiato.emit()
 
@@ -331,6 +364,14 @@ func _speciale(attr: String) -> void:
 	if fs.is_empty() or attr == "":
 		return
 	var f: Dictionary = fs[clampi(fase, 0, fs.size() - 1)]
+	var af: Array = auto.get("fasi", []) if auto.get("fasi") is Array else []
+	if fase < af.size() and af[fase] is Dictionary and af[fase].get("speciale") is Dictionary:
+		var spa: Dictionary = af[fase]["speciale"]
+		var passi = spa.get(attr, spa.get("*"))
+		if passi is Array:
+			nota("Bonus speciale (%s)." % Partita.NOMI_ATTRIBUTI.get(attr, attr))
+			await _esegui(passi, {"carta": img})
+			return
 	var sp = f.get("speciale", {}).get(attr)
 	if sp == null:
 		nota("Bonus speciale: nessun effetto per %s in questa fase." % Partita.NOMI_ATTRIBUTI.get(attr, attr))
@@ -415,6 +456,8 @@ func applica_testo(t: String, attacco := false) -> Array:
 
 func _ferite(n: int, prevenibili := true) -> void:
 	var p := attivo()
+	if p.is_empty():
+		return
 	var nn := n
 	if prevenibili and prevenzione > 0:
 		var x := mini(prevenzione, nn)
@@ -425,6 +468,8 @@ func _ferite(n: int, prevenibili := true) -> void:
 	if nn > 0:
 		partita.modifica(p, "salute", -nn)
 		nota("%s subisce %d Ferite (Salute %d)." % [p["nome"], nn, int(p["salute"])])
+		ferite_subite += nn
+		scatena("ferite", p, {"ferite": nn})
 
 func _perdi_cubi(n: int) -> void:
 	var resto := n - riserva
@@ -435,6 +480,8 @@ func _perdi_cubi(n: int) -> void:
 
 func _scarta_mano(n: int) -> void:
 	var id := attivo_id
+	if attivo().is_empty() or not mani.has(id):
+		return
 	for i in n:
 		if not mani[id].is_empty():
 			scarti[id].append(mani[id].pop_back())
@@ -486,8 +533,7 @@ func termina_carte() -> void:
 	if not diplomazia:
 		var min_carte := 2 if ha_tratto("Opportun") else 1
 		if carte_attivazione < min_carte:
-			nota("Attacco di opportunità: " + Dati.testo_piano(str(carta.get("opportunita", {}).get("it", ""))))
-			applica_testo(str(carta.get("opportunita", {}).get("it", "")), true)
+			await opportunita()
 			if carte_attivazione == 0:
 				pesca(attivo_id)
 		if concluso == "" and riserva >= int(carta.get("valore", 99)):
@@ -496,7 +542,7 @@ func termina_carte() -> void:
 		if concluso == "":
 			var volte := 2 if ha_tratto("Furia") else 1
 			for i in volte:
-				_attacco()
+				await _attacco()
 				if concluso != "":
 					break
 			if ha_tratto("Orda") and concluso == "":
@@ -514,7 +560,13 @@ func termina_carte() -> void:
 				var r = fs[clampi(fase, 0, fs.size() - 1)].get("risposta", {})
 				var t := str(r.get("it", "")) if r is Dictionary else str(r)
 				nota("Risposta: " + Dati.testo_piano(t))
-				applica_testo(t, true)
+				var af: Array = auto.get("fasi", []) if auto.get("fasi") is Array else []
+				await scatena("attacco", attivo())
+				if fase < af.size() and af[fase] is Dictionary and af[fase].get("risposta") is Array:
+					await _esegui(af[fase]["risposta"], {"carta": img, "attacco": true, "finta": ha_tratto("Finta")})
+				else:
+					applica_testo(t, true)
+				scatena("dopo_attacco", attivo())
 				_controlla_affinita()
 	cambiato.emit()
 
@@ -527,15 +579,57 @@ func riga_tabella() -> Dictionary:
 
 func _attacco() -> void:
 	var r := riga_tabella()
-	if r.is_empty():
+	var ra := riga_tabella_auto()
+	if scegli_attacco and ui and ui.has_method("scegli"):
+		var righe: Array = carta.get("tabella", [])
+		var nomi := []
+		var indici := []
+		for i in righe.size():
+			var tx := Dati.testo_piano(str(righe[i].get("it", "")))
+			if tx.to_lower().begins_with("fugg"):
+				continue
+			nomi.append("%d-%d: %s" % [int(righe[i].get("da", 0)), int(righe[i].get("a", 0)), tx])
+			indici.append(i)
+		if not nomi.is_empty():
+			var k: int = indici[await ui.scegli("Scegli l'attacco nemico", nomi)]
+			r = righe[k]
+			ra = {}
+			var at: Array = auto.get("tabella", []) if auto.get("tabella") is Array else []
+			for x in at:
+				if x is Dictionary and int(x.get("da", -1)) == int(r.get("da", -2)):
+					ra = x
+	if r.is_empty() and ra.is_empty():
 		return
-	# Capacità visibile "durante l'attacco" (ultima carta della Sequenza)
+	# Capacità visibile "durante l'attacco" (ultima carta della Sequenza) e carte dei Personaggi
 	if not sequenza.is_empty():
-		for cap in _capacita(str(sequenza.back()["img"])):
-			if str(cap.get("innesco", "")) == "attacco":
-				applica_testo(str(cap.get("it", "")))
+		await esegui_capacita(str(sequenza.back()["img"]), "attacco")
+	await scatena("attacco", attivo())
+	if concluso != "":
+		return
 	nota("Attacco nemico (Riserva %d): %s" % [riserva, Dati.testo_piano(str(r.get("it", "")))])
-	applica_testo(str(r.get("it", "")), true)
+	ferite_subite = 0
+	if ra.get("effetti") is Array:
+		await _esegui(ra["effetti"], {"carta": img, "attacco": true, "finta": ha_tratto("Finta")})
+	else:
+		applica_testo(str(r.get("it", "")), true)
+	scatena("dopo_attacco", attivo())
+
+## Riga codificata della tabella d'attacco per la Riserva attuale.
+func riga_tabella_auto() -> Dictionary:
+	if not (auto.get("tabella") is Array):
+		return {}
+	for r in auto["tabella"]:
+		if r is Dictionary and riserva >= int(r.get("da", 0)) and riserva <= int(r.get("a", 99)):
+			return r
+	return {}
+
+## Attacco di opportunità (Combattimento).
+func opportunita() -> void:
+	nota("Attacco di opportunità: " + Dati.testo_piano(str(carta.get("opportunita", {}).get("it", ""))))
+	if auto.get("opportunita") is Array:
+		await _esegui(auto["opportunita"], {"carta": img, "attacco": true, "finta": ha_tratto("Finta")})
+	else:
+		applica_testo(str(carta.get("opportunita", {}).get("it", "")), true)
 
 ## Fine del turno: si scarta fino a 3, si pesca 1 (non in Panico; +1 se Lento), nuovo turno.
 func fine_turno() -> void:
@@ -566,7 +660,7 @@ func scappa() -> void:
 		concludi("fallimento")
 		return
 	partita.modifica(p, "energia", -1)
-	applica_testo(str(carta.get("opportunita", {}).get("it", "")), true)
+	await opportunita()
 	nota("%s Scappa." % p["nome"])
 	membri.erase(p)
 	if membri.is_empty() and concluso == "":
@@ -574,6 +668,17 @@ func scappa() -> void:
 
 ## Evitare (solo Diplomazia, prima di iniziare).
 func evita() -> void:
+	var ea = auto.get("evitare")
+	if ea is Dictionary:
+		var it := Interprete.new(partita, null, ui, {"carta": img})
+		if ea.get("condizione") is Dictionary and not ea["condizione"].is_empty() and it.valuta(ea["condizione"]) == false:
+			nota("Non potete Evitare questo Incontro.")
+			return
+		if not await it.esegui(ea.get("costo", [])):
+			nota("Non potete pagare il costo per Evitare.")
+			return
+		concludi("evitato")
+		return
 	var e = carta.get("evitare")
 	if e is Dictionary:
 		Effetti.paga_costo("Pagare " + Dati.testo_piano(str(e.get("it", ""))).to_lower().trim_prefix("pagare ").trim_prefix("paga "), partita)
@@ -588,24 +693,39 @@ func concludi(esito: String) -> void:
 		"vittoria":
 			nota("VITTORIA!")
 			var ric = carta.get("ricompensa")
-			if ric is Dictionary and str(ric.get("it", "")) != "":
+			var ric_t := str(ric.get("it", "")) if ric is Dictionary else ""
+			if auto.get("ricompensa") is Array and (not auto["ricompensa"].is_empty() or ric_t == ""):
+				if not auto["ricompensa"].is_empty():
+					nota("Ricompensa a ogni membro: " + Dati.testo_piano(ric_t))
+					await _esegui_fuori(auto["ricompensa"])
+			elif ric_t != "":
 				for p in tutti:
 					partita.d["attivo"] = partita.personaggi().find(p)
-					Effetti.applica(str(ric["it"]), partita)
-				nota("Ricompensa a ogni membro: " + Dati.testo_piano(str(ric["it"])))
+					Effetti.applica(ric_t, partita)
+				nota("Ricompensa a ogni membro: " + Dati.testo_piano(ric_t))
 			var bot = carta.get("bottino")
-			if bot is Dictionary and str(bot.get("it", "")) != "":
-				Effetti.applica(str(bot["it"]), partita)
-				nota("Bottino: " + Dati.testo_piano(str(bot["it"])))
+			var bot_t := str(bot.get("it", "")) if bot is Dictionary else ""
+			if auto.get("bottino") is Array and (not auto["bottino"].is_empty() or bot_t == ""):
+				if not auto["bottino"].is_empty():
+					nota("Bottino: " + Dati.testo_piano(bot_t))
+					await _esegui_fuori(auto["bottino"])
+			elif bot_t != "":
+				Effetti.applica(bot_t, partita)
+				nota("Bottino: " + Dati.testo_piano(bot_t))
 			partita.racconta("Incontro vinto: " + Carte.nome(img))
+			await scatena("vittoria")
+			await scatena("vittoria_diplomazia" if diplomazia else "vittoria_combattimento")
 		"fallimento":
 			nota("FALLIMENTO.")
 			var f = carta.get("fallimento")
-			if f is Dictionary and str(f.get("it", "")) != "":
+			if auto.get("fallimento") is Array and not auto["fallimento"].is_empty():
+				await _esegui_fuori(auto["fallimento"])
+			elif f is Dictionary and str(f.get("it", "")) != "":
 				for p in tutti:
 					partita.d["attivo"] = partita.personaggi().find(p)
 					Effetti.applica(str(f["it"]), partita)
 			partita.racconta("Incontro fallito: " + Carte.nome(img))
+			await scatena("fallimento")
 		"fuga_nemico":
 			nota("Il nemico fugge: nessun bottino.")
 			partita.racconta("Il nemico è fuggito: " + Carte.nome(img))
@@ -616,8 +736,123 @@ func concludi(esito: String) -> void:
 			partita.racconta("Incontro evitato: " + Carte.nome(img))
 		"morte":
 			partita.racconta("La Compagnia è caduta in " + Carte.nome(img))
+	await scatena("fine_incontro")
 	cambiato.emit()
 	finito.emit(esito)
+
+## --- Effetti strutturati (data/automazione.json) --------------------------------------
+
+## Esegue passi del linguaggio degli effetti dentro l'Incontro (Capacità, tabelle, Risposte).
+func _esegui(passi, contesto := {}) -> void:
+	if not (passi is Array) or passi.is_empty():
+		return
+	var it := Interprete.new(partita, self, ui, contesto)
+	await it.esegui(passi)
+	for r in it.rapporto:
+		if not r.get("fatto", true):
+			nota("Da applicare a mano: " + str(r["testo"]))
+	_controlla_vita()
+	cambiato.emit()
+
+## Esegue passi fuori dalla Sequenza (Ricompensa, Bottino, Fallimento): valgono per la Compagnia.
+func _esegui_fuori(passi) -> void:
+	var it := Interprete.new(partita, null, ui, {"carta": img})
+	await it.esegui(passi)
+	for r in it.rapporto:
+		nota(("✔ " if r.get("fatto", true) else "☐ ") + str(r["testo"]))
+
+## Capacità di una carta per un innesco ("piazza", "ritardata", "attacco", "passiva").
+func esegui_capacita(c: String, innesco: String, contesto := {}) -> void:
+	var testo := _capacita(c)
+	var ac: Array = Carte.auto(c).get("capacita", []) if Carte.auto(c).get("capacita") is Array else []
+	var usa_auto := not ac.is_empty() and ac.size() == testo.size()
+	var n := ac.size() if usa_auto else testo.size()
+	for i in n:
+		var cap: Dictionary = ac[i] if usa_auto else testo[i]
+		if str(cap.get("innesco", "")) != innesco:
+			continue
+		if not usa_auto:
+			if innesco != "passiva":
+				applica_testo(str(cap.get("it", "")))
+			continue
+		var ctx: Dictionary = contesto.duplicate()
+		ctx["carta"] = c
+		var it := Interprete.new(partita, self, ui, ctx)
+		if cap.get("condizione") is Dictionary and not cap["condizione"].is_empty():
+			var v = it.valuta(cap["condizione"])
+			if v == null and ui and ui.has_method("scegli"):
+				v = await ui.scegli("%s: %s?" % [Carte.nome(c), Interprete.descrivi(cap["condizione"])], ["Sì", "No"]) == 0
+			if v != true:
+				continue
+		if cap.get("facoltativo", false) and ui and ui.has_method("scegli"):
+			if await ui.scegli("Usare la Capacità di %s?" % Carte.nome(c), ["Sì", "No"]) != 0:
+				continue
+		if cap.get("costo") is Array and not cap["costo"].is_empty():
+			if not await it.esegui(cap["costo"]):
+				continue
+		await it.esegui(cap.get("effetti", []))
+		for r in it.rapporto:
+			if not r.get("fatto", true):
+				nota("Da applicare a mano: " + str(r["testo"]))
+	_controlla_vita()
+	cambiato.emit()
+
+## Inneschi delle carte dei Personaggi (Oggetti, Segreti, Abilità…) per un momento dell'Incontro.
+func scatena(quando: String, chi: Dictionary = {}, extra := {}) -> void:
+	for i in partita.inneschi(quando, chi):
+		var inn: Dictionary = i["innesco"]
+		if not i["chi"].is_empty() and not membri.has(i["chi"]):
+			continue
+		if quando == "collega_chiave" and inn.has("attr") and str(inn["attr"]).trim_suffix("2").replace("magia", "magic") != str(extra.get("attr", "")):
+			continue
+		if quando.begins_with("inizio_") and inn.get("condizione") is Dictionary and str(inn["condizione"].get("tipo", "")) == "incontro_tipo":
+			pass
+		var chiave := str(i["img"]) + ":" + str(inn.get("quando"))
+		if (inn.get("gira", false) or str(inn.get("una_volta", "")) == "incontro") and usati_inneschi.has(chiave):
+			continue
+		var ctx: Dictionary = extra.duplicate()
+		ctx["carta"] = i["img"]
+		ctx["proprietario"] = i["chi"]
+		var it := Interprete.new(partita, self, ui, ctx)
+		if inn.get("condizione") is Dictionary and not inn["condizione"].is_empty() and it.valuta(inn["condizione"]) != true:
+			continue
+		if inn.get("facoltativo", false) or (inn.get("costo") is Array and not inn["costo"].is_empty()):
+			if not (ui and ui.has_method("scegli")):
+				continue
+			if await ui.scegli("%s: usare \"%s\"?" % [str(i["chi"].get("nome", "Compagnia")), Carte.nome(i["img"])], ["Sì", "No"]) != 0:
+				continue
+		if inn.get("costo") is Array and not await it.esegui(inn["costo"]):
+			continue
+		usati_inneschi[chiave] = true
+		nota("%s (%s)." % [Carte.nome(i["img"]), quando.replace("_", " ")])
+		await it.esegui(inn.get("effetti", []))
+		for r in it.rapporto:
+			if not r.get("fatto", true):
+				nota("Da applicare a mano: " + str(r["testo"]))
+	_controlla_vita()
+
+## Chiavi di un attributo collegate dall'ultima carta della Sequenza.
+func chiavi_unite(attr: String) -> int:
+	if sequenza.is_empty():
+		return 0
+	var n := 0
+	for a in sequenza.back().get("chiavi", []):
+		if str(a) == attr:
+			n += 1
+	return n
+
+## Si può Evitare? (costo pagabile e condizione soddisfatta)
+func evitabile() -> bool:
+	var ea = auto.get("evitare")
+	if ea is Dictionary:
+		var it := Interprete.new(partita, null, null, {"carta": img})
+		if ea.get("condizione") is Dictionary and not ea["condizione"].is_empty() and it.valuta(ea["condizione"]) == false:
+			return false
+		for c in ea.get("costo", []):
+			if c is Dictionary and str(c.get("tipo", "")) == "paga" and not partita.puo_pagare(str(c.get("ris", "")), int(c.get("n", 0)), str(c.get("chi", "")) == "compagnia"):
+				return false
+		return true
+	return carta.get("evitare") is Dictionary
 
 ## Guardiano non sconfitto: resta sulla mappa nel Luogo.
 func guardiano_resta() -> bool:

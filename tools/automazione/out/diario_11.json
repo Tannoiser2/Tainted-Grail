@@ -1,0 +1,2616 @@
+{
+ "voci": {
+  "r:3bf4b9d334f7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:80572b986359": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+    },
+    {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:cf009794dfad": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 13
+   }
+  },
+  "c:54c77b3a5d39": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 13
+    }
+   }
+  },
+  "r:ca309dd0454b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:b04fa46a8f66": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Cosuil",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:08093b60c0de": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:94ae9deed332": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "c:bd13fc9aa49e": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      5
+     ]
+    }
+   }
+  },
+  "r:cde0ab4d24e5": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:3431d8535f90": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Calderone Nero",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "tipo": "segreto",
+      "n": 66
+     }
+    ]
+   }
+  },
+  "r:b940d1d4d133": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": -99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia scarta Oggetti finché non ne tiene al massimo 2."
+    }
+   ]
+  },
+  "v:927": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete al risultato il numero di parti acquisite dello status “Missione Diplomatica” e +1 se Beor fa parte della Compagnia. Potete ritirare il dado quante volte volete pagando 3 Rep per ogni ritiro."
+    },
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "empathy",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:34d0beff4b39": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 10
+   }
+  },
+  "c:d20b9e7225bb": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 11,
+    "a": 99
+   }
+  },
+  "r:0a54ce91fcd8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "verde",
+     "nome": "Druido Vendicativo",
+     "livello": 2
+    }
+   ]
+  },
+  "r:10366fa3403a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "muovi",
+     "dove": "collegato_a:133",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:7924524bfa24": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:20e827c7e02a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:e903b5eff1df": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Calderone Nero",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Indicazioni Generali",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:7a039dd768a0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Menhir Errante",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 134,
+     "nuovo": 147
+    },
+    {
+     "tipo": "muovi",
+     "dove": 135,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:c191c5684740": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Missione Diplomatica",
+    "parti": [
+     6
+    ]
+   }
+  },
+  "q:b0283b528882": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Piazzare un Gettone Cerca su Falfuar (134) e andare al Verso 390 del Libro dei Segreti",
+       "effetti": [
+        {
+         "tipo": "gettoni_cerca",
+         "n": 1,
+         "luogo": 134
+        },
+        {
+         "tipo": "diario",
+         "luogo": 999,
+         "verso": 390
+        }
+       ]
+      },
+      {
+       "testo": "Pagare 2 Rep per ignorare il trasferimento",
+       "effetti": []
+      }
+     ]
+    }
+   ]
+  },
+  "r:59ce24e428b5": {
+   "effetti": [
+    {
+     "tipo": "paga",
+     "ris": "rep",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:8ddf3ad3e5e4": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Sostenere Falfuar (134)",
+       "effetti": [
+        {
+         "tipo": "gettoni_cerca",
+         "n": 1,
+         "luogo": 134
+        }
+       ]
+      },
+      {
+       "testo": "Sostenere Bundorca (135)",
+       "effetti": [
+        {
+         "tipo": "gettoni_cerca",
+         "n": 1,
+         "luogo": 135
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "q:eb41cc02d434": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Missione Diplomatica",
+    "parti": [],
+    "almeno": 4
+   }
+  },
+  "q:81db8255b878": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 6,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "r:89d70f3efcf3": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:f8960ff34509": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "menhir_qui",
+      "attivo": true
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 4,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  "r:595473cee787": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Da ora in avanti l'Incontro Predecessore innescato dalla carta Segreto “Preda” (13) ha il Tratto: ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione."
+    }
+   ]
+  },
+  "r:c2448cb82b12": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Esplorare Tuathan",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -4,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 6,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 2
+    }
+   ]
+  },
+  "r:2856f2e6f1d8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:823c3b05d98b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -99,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:d9e84ee280c7": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:dec8575ceb9e": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:642010c2c5c6": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Da ora in avanti l'Incontro Predecessore innescato dalla carta Segreto “Preda” (13) ha il Tratto: ogni Personaggio va in Panico per l'intero Incontro a prescindere dal suo Terrore; ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione."
+    }
+   ]
+  },
+  "c:00030d86d3f5": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:23f33297a9d4": {
+   "effetti": []
+  },
+  "r:ccdb5626c8fe": {
+   "effetti": []
+  },
+  "q:0293925e1229": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 7,
+      "a": 7
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Siete alla Parte 1 del Capitolo 7."
+     }
+    ]
+   }
+  },
+  "r:bc6cf503b77a": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Campione del Popolo",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 19,
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 5,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:79cddd75c8c9": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Campione del Popolo",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 19,
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 5,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:e7a678d25c36": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 3,
+    "a": 3,
+    "lettera": "A"
+   }
+  },
+  "r:cadd5dc213bf": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": true,
+     "nome": "Graal Corrotto"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      7
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Compito della Dama",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 3,
+     "parte": 4,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:3e81f1f22911": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": true,
+     "nome": "Graal Corrotto"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      7
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Compito della Dama",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 3,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:9e2432d57e45": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:46aa5a6697cf": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:3b2fca944f20": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "segreto",
+     "n": 5,
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:bc216236da65": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 1
+   }
+  },
+  "r:f510781c31d7": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 22,
+     "rimuovi": false,
+     "nome": "Talismano Splendente"
+    }
+   ]
+  },
+  "r:aa949181d0cc": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 22,
+     "rimuovi": false,
+     "nome": "Talismano Splendente"
+    }
+   ]
+  },
+  "r:d4fa7b5886e6": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "status",
+     "nome": "Alleati di Avalon",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:125536a6d7a5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 9,
+     "rimuovi": true
+    }
+   ]
+  },
+  "r:788a405f2eca": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+    },
+    {
+     "tipo": "segreto",
+     "n": 9,
+     "rimuovi": true
+    }
+   ]
+  },
+  "r:56c89c50a16d": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Da ora in avanti l'Incontro Predecessore innescato dalla carta Segreto “Preda” (13) ha il Tratto: ogni Personaggio può giocare al massimo 2 carte durante la propria Attivazione; ogni Personaggio va in Panico per l'intero Incontro a prescindere dal suo Terrore."
+    }
+   ]
+  },
+  "q:f3a12767bde0": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 58
+    }
+   }
+  },
+  "r:11d8a7e59e37": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 58,
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:b900094c3451": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 50,
+     "rimuovi": false
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:f75980bc34cf": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 25,
+     "rimuovi": false,
+     "nome": "Redenzione"
+    }
+   ]
+  },
+  "r:ebccef22bdca": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Kit dell’Avventuriero"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      7
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 2,
+     "rimuovi": false,
+     "nome": "Scoperta Inquietante"
+    }
+   ]
+  },
+  "r:73d65a17dfa4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    },
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:5e09ae0f8848": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "c:679f7920362f": {
+   "condizione": {
+    "tipo": "incontro_perso"
+   }
+  },
+  "r:a2ef5b86f960": {
+   "effetti": []
+  },
+  "c:5023f28a5899": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "q:7a730e23bdb0": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 2
+     },
+     {
+      "tipo": "attributo",
+      "attr": "practicality",
+      "min": 1
+     }
+    ]
+   }
+  },
+  "r:1435ca876736": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:490102570e1b": {
+   "effetti": []
+  },
+  "r:4f49b66f2e98": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Menhir Errante",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 134,
+     "nuovo": 147
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 135,
+     "nuovo": 148
+    },
+    {
+     "tipo": "muovi",
+     "dove": 148,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:4f03d73ffbd3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:5ad03ce2e416": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:ce4ce1a5785b": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Siete riusciti a Fuggire da uno degli Incontri."
+     }
+    ]
+   }
+  },
+  "r:0ac8681063b4": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 66,
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:57e523a1c273": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Nemico è Scappato."
+     }
+    ]
+   }
+  },
+  "r:cb3a1e2662af": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 12
+    }
+   ]
+  },
+  "r:1262bf6d9963": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Conoscenza di Tangleroot",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:0f031eb070df": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "r:c9c46336b922": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 7,
+     "rimuovi": false,
+     "nome": "Vero Graal"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:663dee54129c": {
+   "condizione": {
+    "non": {
+     "tipo": "tutti_personaggi"
+    }
+   }
+  },
+  "r:4d49682e5824": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 343
+    }
+   ]
+  },
+  "r:56c63c1f6940": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "diario",
+     "luogo": 153,
+     "verso": 14
+    }
+   ]
+  },
+  "r:d35db98d3283": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Menhir Errante",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 134,
+     "nuovo": 147
+    },
+    {
+     "tipo": "muovi",
+     "dove": 135,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:8c6003d8d611": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:b6d36f119494": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 4,
+    "a": 4,
+    "lettera": "A"
+   }
+  },
+  "r:3134ae2744df": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 3,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:e314c6afbeab": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:1aae45771612": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 4,
+    "a": 4,
+    "lettera": "A"
+   }
+  },
+  "r:074ac2cc143e": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 3,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:77a51ecd737a": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l’Ordine",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:48fcfa8668a5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "segreto",
+     "n": 44,
+     "rimuovi": false,
+     "nome": "Ciondolo del Predecessore"
+    }
+   ]
+  },
+  "r:5c9a899e6aac": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Spirito del Predecessore",
+     "livello": 3,
+     "esito": {
+      "vittoria": [
+       {
+        "tipo": "segreto",
+        "n": 39,
+        "rimuovi": false,
+        "nome": "Anello Strisciante"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "r:421b6f15f093": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:714bb8aa9ca3": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:352c7dac961b": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:e41c1d47a173": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:d131c3c7e325": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:8020f5b72d38": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "caution"
+     }
+    }
+   ]
+  },
+  "r:9be776f4578c": {
+   "effetti": []
+  },
+  "q:931fd8888c29": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "r:728f9fb71e7f": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:84e8a6cb98f6": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:ce9d89e07c47": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:65f6d15c351d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:58811459cab4": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni Personaggio che non si trova nel Fernsea (153) perde 1 Energia."
+    },
+    {
+     "tipo": "muovi",
+     "dove": 153,
+     "chi": "tutti"
+    }
+   ]
+  },
+  "r:fdb95a2fbdb9": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:7e5d16405d63": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:0531132f6793": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:d23f4a46a4ae": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "menhir",
+     "luogo": "qui",
+     "quadrante": 5,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+    }
+   ]
+  },
+  "r:09c1455b08ab": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Profondo Segreto",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Spirito del Predecessore",
+     "livello": 3
+    }
+   ]
+  },
+  "q:3e35200b62ec": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 58
+    }
+   }
+  },
+  "r:ab5115a97030": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Pagare 2 Ricchezza per ottenere la carta Segreto “Attrezzi dello Scultore” (58)",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "segreto",
+         "n": 58,
+         "rimuovi": false,
+         "nome": "Attrezzi dello Scultore"
+        }
+       ]
+      },
+      {
+       "testo": "Non pagare",
+       "effetti": []
+      }
+     ]
+    }
+   ]
+  },
+  "v:1009": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete al risultato il numero di parti acquisite dello status “Missione Diplomatica” e +1 se Beor fa parte della Compagnia. Potete ritirare il dado quante volte volete pagando 2 Rep per ogni ritiro."
+    },
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "empathy",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:cf1e2814dc42": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 6
+   }
+  },
+  "c:2dd5d62630cb": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "q:28986d6063e4": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è un Gettone Cerca nel Luogo 135."
+   }
+  },
+  "q:cac98a70d6b8": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è un Gettone Cerca nel Luogo 134."
+   }
+  },
+  "c:82dd42a41ea5": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "c:3a42b73de61b": {
+   "condizione": {
+    "non": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "incontro_perso"
+      }
+     ]
+    }
+   }
+  },
+  "c:2ca715c3338f": {
+   "condizione": {
+    "tipo": "incontro_perso"
+   }
+  },
+  "r:217eaf41c229": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -99,
+     "chi": "attivo"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -99,
+     "chi": "attivo"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "scarta_tutti",
+     "n": 1
+    }
+   ]
+  },
+  "q:e5e711f7feef": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      9
+     ]
+    }
+   }
+  },
+  "r:9607d8b67cee": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      9
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:057e21d09337": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete scartato il Quadrante o avete deciso di Fuggire."
+     }
+    ]
+   }
+  },
+  "r:c0a4020b7b11": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:3d31912226eb": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "q:d2b280849b51": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 2
+   }
+  },
+  "q:34ee15fad5c4": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "empathy",
+    "min": 3
+   }
+  },
+  "q:76d7b6fc11b3": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:289be252478e": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:1c50a6923768": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:aa0e737b19e8": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": false,
+     "nome": "Graal Corrotto"
+    },
+    {
+     "tipo": "status",
+     "nome": "Missione Moonring",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:2a0af8e736fa": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Missione Moonring",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "A"
+    }
+   ]
+  },
+  "r:59fe770f9434": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 2,
+     "rimuovi": true,
+     "nome": "Scoperta Inquietante"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:6790b985e7ff": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1
+    }
+   ]
+  },
+  "r:4a649b5b5fd5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -99,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 51,
+     "rimuovi": true,
+     "nome": "Stemma dell’Ordine"
+    }
+   ]
+  },
+  "q:7e9d6131cb2b": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:51c1677f73fd": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:ba54ca7d5ec2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:f483f0e95e15": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:23b08346e728": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 5,
+    "chi": "compagnia"
+   }
+  },
+  "r:337b3d2e9d13": {
+   "effetti": []
+  },
+  "r:ec6b304a99d4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "2 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "2 Rep",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:e6ed8b30b400": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Cosuil",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:41baf29eb632": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Alleati di Avalon",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:91e5eb1146f5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:b0291b241e4a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:d274d492ce7a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Menhir Errante",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 134,
+     "nuovo": 147
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 135,
+     "nuovo": 148
+    },
+    {
+     "tipo": "muovi",
+     "dove": 148,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:2c2859c930bc": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:1a69c79aba51": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "arev"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultima Lezione",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "r:31eb77057b7d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Lascito di Fael",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Qualcuno sta Osservando”."
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 3,
+     "lettera": "A"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Iniziate il Capitolo 3 con la carta Preparazione Capitolo 3A anche se state già giocando il Capitolo 3A."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+    }
+   ]
+  },
+  "r:c249910ee0ae": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 8,
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Lascito di Fael",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungete 1 spunta allo status “Qualcuno sta Osservando”."
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 3,
+     "lettera": "A"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Iniziate il Capitolo 3 con la carta Preparazione Capitolo 3A anche se state già giocando il Capitolo 3A."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+    }
+   ]
+  },
+  "r:175fad893a93": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Lascito di Fael",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+    }
+   ]
+  },
+  "r:d2091b5f0431": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Lascito di Fael",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+    }
+   ]
+  },
+  "r:74b2fa6e37c5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:05130725ef0f": {
+   "effetti": []
+  },
+  "r:5a08b9ff1a77": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:499a659c5abf": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 37,
+     "rimuovi": false,
+     "nome": "Cosuil, l’Irrequieta"
+    }
+   ]
+  }
+ }
+}

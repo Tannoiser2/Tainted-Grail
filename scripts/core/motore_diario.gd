@@ -111,19 +111,54 @@ func opzioni() -> Array:
 			continue
 		var voce := {"tipo": t, "testo": str(e.get("x", "")), "esiti": [], "valida": null}
 		if t == 1:
-			voce["valida"] = Condizioni.valuta(str(e.get("x", "")), partita, tiro)
+			voce["valida"] = _valuta("c:", str(e.get("x", "")), tiro)
 		for c in e.get("c", []):
 			var es: Dictionary = c.duplicate()
-			es["valida"] = Condizioni.valuta(str(c.get("q", "")), partita, tiro) if str(c.get("q", "")) != "" else null
+			es["valida"] = _valuta("q:", str(c.get("q", "")), tiro) if str(c.get("q", "")) != "" else null
 			voce["esiti"].append(es)
 		out.append(voce)
 	return out
+
+## Contesto per l'interprete: tiro del verso ed esito dell'ultimo Incontro chiesto dal Diario.
+func contesto() -> Dictionary:
+	var ctx := {"in_diario": true, "luogo": int(luogo().get("n", 0))}
+	if stato.get("tiro_verso", 0) == id_verso() and stato.has("tiro"):
+		ctx["tiro"] = int(stato["tiro"])
+	if stato.has("esito_incontro"):
+		ctx["esito_incontro"] = str(stato["esito_incontro"])
+	return ctx
+
+## Condizione di un elemento: prima la versione codificata (data/automazione.json), poi la lettura
+## del testo con le regole di Condizioni. true/false oppure null (da giudicare al tavolo).
+func _valuta(prefisso: String, testo: String, tiro: Dictionary):
+	if partita != null:
+		var a := Dati.auto_diario(prefisso, testo)
+		if a.get("condizione") is Dictionary:
+			return Interprete.new(partita, null, null, contesto()).valuta(a["condizione"])
+		if not a.is_empty() and prefisso == "q:":
+			return null if not a.has("costo") else _pagabile(a["costo"])
+	return Condizioni.valuta(testo, partita, tiro)
+
+## Un costo codificato è pagabile? (solo i passi "paga" semplici; le scelte restano da decidere)
+func _pagabile(costo) -> Variant:
+	if not (costo is Array):
+		return null
+	for c in costo:
+		if c is Dictionary and str(c.get("tipo", "")) == "paga":
+			var n := int(c.get("n", 0))
+			if c.get("per") is Dictionary and c["per"].has("giocatori"):
+				n *= partita.personaggi().size()
+			if not partita.puo_pagare(str(c.get("ris", "")), n, str(c.get("chi", "")) == "compagnia"):
+				return false
+	return true
 
 ## Se il verso chiede di tirare un dado, restituisce {"mod": [...] descrizione dei modificatori};
 ## altrimenti {}.
 func tiro_richiesto() -> Dictionary:
 	if stato.get("tiro_verso", 0) == id_verso() and stato.has("tiro"):
 		return {"valore": int(stato["tiro"])}
+	if not dado_codificato().is_empty():
+		return {"da_tirare": true}
 	var tutto := " ".join(testi())
 	for e in verso().get("e", []):
 		tutto += " " + str(e.get("x", ""))
@@ -134,6 +169,8 @@ func tiro_richiesto() -> Dictionary:
 
 ## Fasce del risultato ("1-3", "4-5", "6+", "Il vostro risultato è stato: 2-4") presenti fra le opzioni.
 func ha_fasce() -> bool:
+	if not dado_codificato().is_empty():
+		return true
 	for o in opzioni():
 		if Condizioni.fascia(o["testo"]).size() > 0:
 			return true
@@ -141,6 +178,35 @@ func ha_fasce() -> bool:
 			if Condizioni.fascia(str(es.get("q", ""))).size() > 0:
 				return true
 	return false
+
+## Passo "dado" codificato per il verso (dal testo del verso o da una sua condizione), {} se assente.
+func dado_codificato() -> Dictionary:
+	var fonti := [Dati.auto_verso(id_verso())]
+	for e in verso().get("e", []):
+		if int(e.get("t", 0)) == 1:
+			fonti.append(Dati.auto_diario("c:", str(e.get("x", ""))))
+	for f in fonti:
+		for s in f.get("effetti", []):
+			if s is Dictionary and str(s.get("tipo", "")) == "dado":
+				return s
+	return {}
+
+## Modificatore del tiro: {"valore", "testo"} dalla codifica o dal testo del verso.
+func modificatore_tiro() -> Dictionary:
+	var d := dado_codificato()
+	if not d.is_empty() and partita != null:
+		var it := Interprete.new(partita, null, null, contesto())
+		var v := it.modificatore_dado(d.get("mod", []))
+		var parti := []
+		for m in d.get("mod", []):
+			if m is Dictionary and m.has("attr"):
+				parti.append(Partita.NOMI_ATTRIBUTI.get(str(m["attr"]), str(m["attr"])) + ((" ×%s" % str(m["per"])) if m.has("per") and float(m["per"]) != 1.0 else ""))
+			elif m is Dictionary and m.has("n"):
+				parti.append("%+d" % int(m["n"]))
+			elif m is Dictionary:
+				parti.append(str(m.get("ris", m.get("parti_status", ""))))
+		return {"valore": v, "testo": ", ".join(parti)}
+	return Effetti.modificatore_tiro(self, partita)
 
 ## Registra il risultato del tiro di dado per il verso corrente (le fasce si valutano da sole).
 func imposta_tiro(valore: int) -> void:

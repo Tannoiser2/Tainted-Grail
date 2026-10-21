@@ -1,0 +1,2137 @@
+{
+ "voci": {
+  "s:902fec33e28c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:64b04ce37f36": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "arev"
+     },
+     {
+      "tipo": "status",
+      "nome": "Lascito di Fael",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "c:b33a06119412": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Diario di Esplorazione vi ha indicato di tornare qui all'Inizio della Giornata"
+   }
+  },
+  "q:647210aa06b8": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Solo come conseguenza di un'Esplorazione precedente (rimando del Diario all'Inizio della Giornata)"
+   }
+  },
+  "r:2e662189218c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "cibo",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Conoscenza di Tangleroot",
+     "parti": [
+      1
+     ]
+    }
+   ]
+  },
+  "c:879e6a25cc5e": {
+   "condizione": {
+    "tutte": [
+     {
+      "una": [
+       {
+        "tipo": "status",
+        "nome": "Fato della Spedizione",
+        "parti": [
+         5
+        ]
+       },
+       {
+        "tipo": "status",
+        "nome": "Fato della Spedizione",
+        "parti": [
+         6
+        ]
+       },
+       {
+        "tipo": "status",
+        "nome": "Fato della Spedizione",
+        "parti": [
+         7
+        ]
+       }
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Lascito di Fael",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "c:4caddcda66ed": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Cosuil",
+       "parti": [
+        1
+       ]
+      }
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Cosuil",
+       "parti": [
+        5
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "v:189": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Conoscenza di Tangleroot",
+      "parti": [
+       2
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "caution",
+         "per": 1
+        },
+        {
+         "n": 2
+        }
+       ],
+       "risultati": []
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "caution",
+         "per": 1
+        }
+       ],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "r:a30558073e92": {
+   "effetti": []
+  },
+  "q:33df55bf0a4c": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tiro",
+      "da": 5,
+      "a": 99
+     },
+     {
+      "tipo": "status",
+      "nome": "Menhir Errante",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "r:ea4565e7cd12": {
+   "effetti": []
+  },
+  "r:bb2f1a112497": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Dopo l'Inizio della Giornata successiva, ritornare al Verso 2 di questo Luogo (114)."
+    }
+   ]
+  },
+  "c:097f8dc7b681": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è un Gettone Tempo su questo Luogo"
+   }
+  },
+  "r:4d78b1231246": {
+   "effetti": []
+  },
+  "c:d358a7886f62": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Conoscenza di Tangleroot",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "r:6771f409c35b": {
+   "effetti": []
+  },
+  "c:ac29185a631c": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "q:276273e1ed3e": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 1
+     },
+     {
+      "tipo": "status",
+      "nome": "Conoscenza di Tangleroot",
+      "parti": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  "c:10f1027146be": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:92d77486ce34": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante lanciato mostra il Teschio"
+   }
+  },
+  "r:1cf304de0a1e": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "blu"
+    }
+   ]
+  },
+  "q:6f413b34662a": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Il Quadrante lanciato mostra il Graal"
+   }
+  },
+  "r:03bdcc6bf841": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "verde"
+    }
+   ]
+  },
+  "r:ce0d70ffb899": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia pesca 2 carte extra nel primo turno del Combattimento seguente."
+    },
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Gruppo di Banditi",
+     "livello": 1
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "q:7317ce3628ad": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 2
+     }
+    ]
+   }
+  },
+  "q:d875a9bca8a2": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "capitolo",
+      "da": 2,
+      "a": 2
+     },
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3,
+      "lettera": "A"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3,
+      "lettera": "B"
+     }
+    ]
+   }
+  },
+  "r:663b177a1411": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      7
+     ]
+    }
+   ]
+  },
+  "q:106c0c7802b3": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:48859b73d2b8": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo 134 è ancora disponibile"
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 134
+      },
+      {
+       "tipo": "muovi",
+       "dove": 134,
+       "chi": "compagnia"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 147
+      },
+      {
+       "tipo": "muovi",
+       "dove": 147,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il nuovo Luogo va aggiunto sopra (a nord di) questa carta."
+    }
+   ]
+  },
+  "q:abaaf0c9e4a7": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:f1ce3b750ae0": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Arev ottiene 1 {i:caution} o 1 {i:empathy}."
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "q:2ab0ba533bc0": {
+   "condizione": {
+    "non": {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "min": 1,
+     "chi": "ognuno"
+    }
+   }
+  },
+  "s:15d08d77b1d8": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   }
+  },
+  "c:568596105c57": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "manuale",
+      "testo": "Non c'è un Quadrante su questa carta Luogo"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Santuario Sicuro",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "r:df98b2bf138b": {
+   "effetti": [
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:115",
+     "valore": 3,
+     "gettone": "tempo"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ridurre il Quadrante del Luogo 115 a ogni Inizio della Giornata; se si estingue, o se il Luogo viene scartato, rimuovere il Luogo 115 dal gioco e rimpiazzarlo con il Luogo 125."
+    }
+   ]
+  },
+  "q:5a2d9fc3949c": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "C'è un Quadrante su questo Luogo"
+   }
+  },
+  "r:a9e2414e26f7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimuovere il Quadrante e tutti i Gettoni Tempo da questa carta Luogo."
+    }
+   ]
+  },
+  "v:202": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "gettoni_cerca",
+      "min": 4,
+      "luogo": "qui"
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "sostituisci",
+       "vecchio": "questo",
+       "nuovo": 125
+      },
+      {
+       "tipo": "fine_esplorazione"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "manuale",
+       "testo": "Al tiro seguente sommare anche +1 per ogni punto di {r:Rep} (il valore più alto in Compagnia) e sottrarre 1 per ogni Gettone Cerca su questa carta Luogo."
+      },
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "empathy",
+         "per": 1
+        }
+       ],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "r:c7d6ae919799": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "blu",
+     "nome": "Falsa Accusa",
+     "livello": 3
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1,
+     "luogo": "qui"
+    }
+   ]
+  },
+  "c:a36686e02b4f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 7
+   }
+  },
+  "r:78f2240e5e27": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1,
+     "luogo": "qui"
+    }
+   ]
+  },
+  "r:8cf49d824dc9": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimuovere il Quadrante e tutti i Gettoni da questa carta Luogo."
+    }
+   ]
+  },
+  "r:110b3ffde9d8": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 125
+    }
+   ]
+  },
+  "r:0663a92d9d0c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Caduta della Cavalleria",
+     "parti": [
+      4
+     ]
+    }
+   ]
+  },
+  "r:2fcc59611553": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: raggiungere le Tombe dell'Ordine con il fodero di Excalibur."
+    },
+    {
+     "tipo": "status",
+     "nome": "Ripristinare l'Ordine",
+     "parti": [
+      4
+     ]
+    },
+    {
+     "tipo": "segreto",
+     "n": 95
+    }
+   ]
+  },
+  "r:b79c535159e8": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: scoprire dove siano finiti gli eremiti."
+    }
+   ]
+  },
+  "q:f9dc45603248": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "r:b770d207fb0a": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Rimuovere il Quadrante e tutti i Gettoni Cerca da questa carta Luogo."
+    }
+   ]
+  },
+  "q:5f843f9c45b0": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 8
+   }
+  },
+  "s:ce3d3f48cdf5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:8a9a646df2f1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:9d54977274ce": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 16
+     },
+     {
+      "tipo": "status",
+      "nome": "Guerra di Avalon",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  "q:1c4ed201ae58": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 4,
+      "a": 4,
+      "lettera": "B"
+     },
+     {
+      "tipo": "status",
+      "nome": "Diplomatico",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "c:fc9131015b28": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Nemici di Avalon",
+       "parti": [
+        1
+       ]
+      }
+     },
+     {
+      "tipo": "capitolo",
+      "da": 2,
+      "a": 3
+     }
+    ]
+   }
+  },
+  "c:7f7739eccd9f": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Alleati di Avalon",
+      "parti": [
+       3
+      ]
+     },
+     {
+      "tipo": "capitolo",
+      "da": 10,
+      "a": 11
+     }
+    ]
+   }
+  },
+  "c:c6c019920dc6": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Confronti Finali",
+      "parti": [
+       2
+      ]
+     },
+     {
+      "tipo": "capitolo",
+      "da": 12,
+      "a": 12
+     }
+    ]
+   }
+  },
+  "c:b6940618a50e": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Confronti Finali",
+      "parti": [
+       2
+      ]
+     },
+     {
+      "tipo": "capitolo",
+      "da": 13,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "r:666117f83e1e": {
+   "effetti": []
+  },
+  "q:5c0403dbb47c": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:5a9d3c509105": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:41df8d7c3b02": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:aaaeee05994f": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:577da0206ad2": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Pescare le 5 carte Oggetto in cima al mazzo: potete comprarne quante volete al costo di 3 {r:Ricchezza} ciascuna."
+    }
+   ]
+  },
+  "r:9a65d74618a7": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Rimescolare nel mazzo gli Oggetti pescati e non acquistati."
+    }
+   ]
+  },
+  "q:c91ace9ae6c4": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Scartare tutte le carte Oggetto che volete e ottenere 1 {r:Ricchezza} per ciascuna di esse."
+    }
+   ]
+  },
+  "q:8f0b795a55ed": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Enigma dell'Antico Acciaio",
+      "parti": []
+     },
+     {
+      "tipo": "capitolo",
+      "da": 10,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "r:a1d772bc6bd3": {
+   "effetti": []
+  },
+  "q:cfd2a0887cfd": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "r:908e9bc92468": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      4
+     ]
+    }
+   ]
+  },
+  "r:82efcdd8a134": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: cercare nelle sacre pianure a sud per indagare sugli avvistamenti."
+    }
+   ]
+  },
+  "q:06a0148f5abf": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:20611dc8b4a9": {
+   "effetti": []
+  },
+  "q:97f528212c8b": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Consenso di tutti i giocatori (potrebbe portare alla conclusione del Capitolo attuale)"
+   }
+  },
+  "r:e932b4557f20": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Alleati di Avalon",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Nemici di Avalon",
+     "parti": [
+      2
+     ]
+    },
+    {
+     "tipo": "segreto",
+     "n": 12,
+     "rimuovi": true,
+     "nome": "Prigioniero Affamato"
+    }
+   ]
+  },
+  "r:60b7bcbcfdef": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 4,
+     "lettera": "B"
+    }
+   ]
+  },
+  "r:024ddbd5d485": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 16,
+     "rimuovi": true,
+     "nome": "Testa di Morrigan"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 126
+    }
+   ]
+  },
+  "q:0f77ad214b5c": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:49d27c237687": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      3
+     ]
+    }
+   ]
+  },
+  "r:36599ba95c4c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Alleati di Avalon",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Nemici di Avalon",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "segreto",
+     "n": 16,
+     "rimuovi": true,
+     "nome": "Testa di Morrigan"
+    }
+   ]
+  },
+  "r:ee5c808c382d": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 126
+    },
+    {
+     "tipo": "diario",
+     "luogo": 126
+    }
+   ]
+  },
+  "r:51aca6720f59": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      2
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: indagare sull'attacco al vostro villaggio natale, Cuanacht (121), e decidere se volete aiutare la vostra alleata."
+    }
+   ]
+  },
+  "q:6807e58afdc9": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:4d3f929670ae": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Guerra di Avalon",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Guerra di Avalon",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:530c6beb5b18": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 12
+   }
+  },
+  "q:3da1bd1a0eef": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 16
+   }
+  },
+  "s:99e33cf7c18d": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: c'è sempre un modo per raccogliere risorse sufficienti per illuminare il Menhir successivo. Quando rimanete bloccati, esplorate!"
+    }
+   ]
+  },
+  "s:eb2583b85ab3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:941c4146aac1": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Resti",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "q:29a1ac8be9aa": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 33
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "v:227": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "oggetto",
+      "nome": "Kit dell'Avventuriero"
+     },
+     "allora": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "practicality",
+         "per": 1
+        },
+        {
+         "attr": "caution",
+         "per": 1
+        },
+        {
+         "n": 2
+        }
+       ],
+       "risultati": []
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "practicality",
+         "per": 1
+        },
+        {
+         "attr": "caution",
+         "per": 1
+        }
+       ],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "c:c2c1d5fc454f": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:17977650df58": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 4
+   }
+  },
+  "r:b4db7537116e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:e343d2e24ab7": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: trovare chi ha tentato di riparare questo Menhir."
+    }
+   ]
+  },
+  "r:16fe7c32209c": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Rimuovere tutti i Gettoni Tempo da questa carta Luogo."
+    }
+   ]
+  },
+  "q:807a58af8a0f": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Enigma dell'Antico Acciaio",
+      "parti": []
+     },
+     {
+      "tipo": "status",
+      "nome": "Segreto del Muratore",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "q:033117c31c52": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 3,
+    "chi": "compagnia"
+   }
+  },
+  "q:b540d820320a": {
+   "condizione": {
+    "non": {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "min": 3,
+     "chi": "compagnia"
+    }
+   }
+  },
+  "v:233": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Al tiro seguente sommare +2 per ogni Gettone Tempo su questo Luogo."
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "c:f299df04e2d1": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:6dcd4dfef3c4": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 5
+   }
+  },
+  "r:db30ae37bcab": {
+   "effetti": []
+  },
+  "q:f135c1d58dab": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 6
+   }
+  },
+  "r:ec0b8b3c8bcd": {
+   "effetti": []
+  },
+  "c:507e81bda754": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "beor"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultima Lezione",
+       "parti": [
+        3
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "c:edb8f5fd7d4c": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "La carta Cerca \"Compito della Dama\" (Capitolo 3A, Parte 4) è stata rivelata"
+   }
+  },
+  "q:30cf0f5283a7": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:bfae79a57d37": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      1
+     ]
+    }
+   ]
+  },
+  "q:c25badb582d8": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "ailei"
+   }
+  },
+  "r:e6ea4e531f43": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ciascun membro della Compagnia che abbia 1 o più {i:empathy} ottiene 1 {i:terror}."
+    }
+   ]
+  },
+  "q:bcfa6bf7e8c7": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Segreto del Muratore",
+     "parti": []
+    }
+   }
+  },
+  "r:b476856cf543": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Segreto del Muratore",
+     "parti": []
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      8
+     ]
+    }
+   ]
+  },
+  "r:e2b8151d706f": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ciascun membro della Compagnia che abbia più di 1 {i:empathy} perde 1 {i:terror}."
+    }
+   ]
+  },
+  "r:1c0df0310449": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Beor ottiene 1 {i:courage} o 1 {i:spirituality}."
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      3
+     ]
+    }
+   ]
+  },
+  "r:9ba77c1df89e": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:2b868aff19ef": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "c:c6124d37371a": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "manuale",
+      "testo": "Non c'è un Gettone Tempo su questo Luogo"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Avete meno di 3 {r:Cibo} per membro della Compagnia"
+     }
+    ]
+   }
+  },
+  "r:53c340052fa6": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:f4cd5f88c8c0": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 15,
+    "a": 15
+   }
+  },
+  "c:bc9ef3d0e1c5": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "s:72c5c0474f04": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:f5d673d39d21": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:17f48956b066": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "segreto",
+       "n": 7
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 5,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  "q:9dec93419755": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Caduta della Cavalleria",
+    "parti": []
+   }
+  },
+  "r:881edb69f1a6": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "r:5cb538ca4374": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "q:ab05847a4aa9": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Al momento a Cuanacht (Luogo 121) non c'è un Menhir attivo"
+   }
+  },
+  "r:b6179b6c50fe": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "q:6cf8d03724a7": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "q:c5c20e0c86ef": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Guerra di Avalon",
+    "parti": []
+   }
+  },
+  "r:2862b9015cfc": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:4f63a7c056fa": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Fato della Spedizione",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "tipo": "status",
+      "nome": "Sogni e Profezie",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "tipo": "personaggio",
+      "id": "beor"
+     }
+    ]
+   }
+  },
+  "r:0f165679e008": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}."
+    }
+   ]
+  },
+  "r:8441e2605b5b": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}."
+    }
+   ]
+  },
+  "q:ba4111787fec": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Guerra di Avalon",
+    "parti": []
+   }
+  },
+  "c:94ba7d4e9e79": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "maggot"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultima Lezione",
+       "parti": [
+        4
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:a6c06dacbf3b": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:ceacb1bf5232": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "r:e8f0c3ea6e07": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Verme ottiene 1 {i:empathy} o 1 {i:courage}."
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      4
+     ]
+    }
+   ]
+  },
+  "s:273eca489cb7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:52003c1256ff": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:a01362a3fa91": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Tesori Nascosti",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "q:9b8841ae5b7f": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 33
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  "q:45408ade6a60": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 15,
+      "a": 15
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  "c:e9c475406b55": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      5
+     ]
+    }
+   }
+  },
+  "r:8e9725b800b5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      5
+     ]
+    }
+   ]
+  },
+  "r:3ff8ce340313": {
+   "effetti": []
+  },
+  "q:1821b09713e6": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:e860a5b79ee0": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:1a99e799b2c8": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "r:7b821ea38efb": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Resti",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:2e74fcf77a14": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:f6784d5e5f6a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:1151c4a4da3e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      7
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: risolvere il mistero della flotta scomparsa."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: alcuni compiti possono essere completati solo dopo essere progrediti a sufficienza nella storia principale del gioco – questo è uno di questi compiti."
+    }
+   ]
+  },
+  "r:fa0dc8a7b105": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "verde",
+     "nome": "Selkie",
+     "livello": 3
+    }
+   ]
+  },
+  "r:5e22a0bd2f21": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      3
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:ab369b984de2": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  }
+ }
+}

@@ -13,11 +13,27 @@ const ICONE_ALIAS := {"woundregular": "wound", "lighttt": "lighttt", "darktt": "
 var _diario := {}         # id campagna -> dizionario della campagna
 var componenti := {}      # catalogo TTS
 var carte := {}           # carte trascritte: id -> voce (vedi tools/trascrizione)
+var automazione := {}     # effetti strutturati (tools/automazione/DSL.md): {diario, carte}
 
 func _ready() -> void:
 	componenti = _leggi("res://data/componenti.json")
 	var c = _leggi("res://data/carte.json")
 	carte = c if c is Dictionary else {}
+	var a = _leggi("res://data/automazione.json")
+	automazione = a if a is Dictionary else {}
+
+## Voce automatizzata del Diario per un testo: prefisso "r:" (risultato), "q:" (requisito o costo),
+## "c:" (condizione), "s:" (Sogno, Incubo, Menhir). {} se il testo non è stato codificato.
+func auto_diario(prefisso: String, testo: String) -> Dictionary:
+	if testo == "":
+		return {}
+	var v = automazione.get("diario", {}).get(prefisso + testo.sha1_text().substr(0, 12))
+	return v if v is Dictionary else {}
+
+## Voce automatizzata di un verso (dado da tirare): chiave "v:<id del verso>".
+func auto_verso(id_verso: int) -> Dictionary:
+	var v = automazione.get("diario", {}).get("v:%d" % id_verso)
+	return v if v is Dictionary else {}
 
 func _leggi(p: String):
 	if not FileAccess.file_exists(p):

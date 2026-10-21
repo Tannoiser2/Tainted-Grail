@@ -1,0 +1,3048 @@
+{
+ "carte": [
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33913.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33914.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica",
+    "it": "Retorica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34000.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Humor macabro",
+    "it": "Umorismo macabro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}; obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}; ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 1 Carica: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34001.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Humor macabro",
+    "it": "Umorismo macabro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}; obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}; ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 1 Carica: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34002.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica de aldeano",
+    "it": "Retorica da paesano"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34003.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Persistencia",
+    "it": "Perseveranza"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}; {i:arrowup} por cada punto de {i:practicality} que tengas",
+    "it": "Perdi 1 {i:energy}; {i:arrowup} per ogni punto di {i:practicality} che possiedi"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34004.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Percibir peligro",
+    "it": "Percepire il pericolo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "· Paga 1 Carga: Prevén {i:arrowdown}\n· Paga 2 Cargas y 2 de {i:energy}: Finaliza este Encuentro con la mitad de la Recompensa (redondeando hacia abajo)",
+     "it": "· Paga 1 Carica: previeni {i:arrowdown}\n· Paga 2 Cariche e 2 {i:energy}: termina questo Incontro con metà della Ricompensa (arrotondando per difetto)"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34005.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Historias de guerra",
+    "it": "Storie di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 3 {i:delay} en esta carta",
+     "it": "Metti 3 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 3,
+     "es": "Gana esta etapa",
+     "it": "Vinci questa fase"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34006.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Chismorreo de granjeros",
+    "it": "Pettegolezzi di contadini"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Paga 1 de {i:energy}; roba 3 cartas",
+    "it": "Paga 1 {i:energy}; pesca 3 carte"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34007.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sembrar la duda",
+    "it": "Seminare il dubbio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:arrowup}{i:arrowup}{i:arrowup}",
+    "it": "{i:arrowup}{i:arrowup}{i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34008.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sembrar la duda",
+    "it": "Seminare il dubbio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:arrowup}{i:arrowup}{i:arrowup}",
+    "it": "{i:arrowup}{i:arrowup}{i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34009.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sabiduría antigua",
+    "it": "Saggezza antica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada {i:key_practicality} y {i:arrowup} por cada {i:key_empathy}",
+    "it": "{i:arrowup} per ogni {i:key_practicality} e {i:arrowup} per ogni {i:key_empathy}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34505.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Aliviar dolor",
+    "it": "Alleviare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada punto de {i:empathy} que tengas",
+    "it": "{i:arrowup} per ogni punto di {i:empathy} che possiedi"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34506.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Inspirar miedo",
+    "it": "Incutere paura"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 de {i:terror}",
+     "it": "Ottieni 1 {i:terror}"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Ignora la Respuesta del enemigo; {i:discard} después de la Respuesta",
+     "it": "Ignora la Risposta del nemico; {i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34507.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mirada abrasadora",
+    "it": "Sguardo ardente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowdown}, y después {i:arrowup} por cada punto de {i:terror} que tengas\nO BIEN\nGanas la etapa si tienes la carta «Estás enloqueciendo»",
+    "it": "{i:arrowdown}, e poi {i:arrowup} per ogni punto di {i:terror} che possiedi\nOPPURE\nVinci la fase se hai la carta «Stai impazzendo»"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34508.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Visión verdadera",
+    "it": "Visione veritiera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": null,
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34509.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Visión verdadera",
+    "it": "Visione veritiera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": null,
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34510.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ceremonia de la vida",
+    "it": "Cerimonia della vita"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowdown} por cada punto de {i:terror}, y después {i:arrowup}{i:arrowup}{i:arrowup}{i:arrowup}",
+    "it": "{i:arrowdown} per ogni punto di {i:terror}, e poi {i:arrowup}{i:arrowup}{i:arrowup}{i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34511.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Paciencia del druida",
+    "it": "Pazienza del druida"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Pon 1 Carga en una carta a tu elección de la Secuencia",
+     "it": "Paga 1 Carica: metti 1 Carica su una carta a tua scelta della Sequenza"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34512.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Enseñanzas del druida",
+    "it": "Insegnamenti del druida"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada punto de {i:spirituality} que tengas",
+    "it": "{i:arrowup} per ogni punto di {i:spirituality} che possiedi"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34513.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Enseñanzas del druida",
+    "it": "Insegnamenti del druida"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada punto de {i:spirituality} que tengas",
+    "it": "{i:arrowup} per ogni punto di {i:spirituality} che possiedi"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_diplomacia/34514.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Danza ceremonial",
+    "it": "Danza cerimoniale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy} y obtén 1 Carga por cada punto de {i:spirituality} que tengas",
+     "it": "Perdi 1 {i:energy} e ottieni 1 Carica per ogni punto di {i:spirituality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 1 Carica: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34724.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Geis",
+    "it": "Geis"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén 2 de {i:terror}\n{i:arrowup} por cada {i:key_magic}",
+    "it": "Ottieni 2 {i:terror}\n{i:arrowup} per ogni {i:key_magic}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34723.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Argumento razonado",
+    "it": "Argomentazione ragionata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34722.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Negociaciones",
+    "it": "Negoziati"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34721.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Voz amenazadora",
+    "it": "Voce minacciosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; si tienes al menos 2 de {i:aggression}, {i:arrowup}",
+    "it": "Perdi 1 {r:Rep}; se hai almeno 2 {i:aggression}, {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34720.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apaciguar",
+    "it": "Placare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Si la Afinidad no es verde, {i:arrowup}",
+     "it": "Paga 1 Carica: se l'Affinità non è verde, {i:arrowup}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34719.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Verdad honesta",
+    "it": "Verità onesta"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34718.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Sermón incendiario",
+    "it": "Sermone incendiario"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Puedes pagar 2 de {i:energy} para {i:arrowup}",
+    "it": "Puoi pagare 2 {i:energy} per {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34717.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Escuchar en silencio",
+    "it": "Ascoltare in silenzio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}",
+     "it": "Se subisci {i:wound}, {i:discard}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34716.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Escuchar en silencio",
+    "it": "Ascoltare in silenzio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}",
+     "it": "Se subisci {i:wound}, {i:discard}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_diplomacia/34715.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Momento de claridad",
+    "it": "Momento di chiarezza"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y roba 1 carta",
+    "it": "Se {i:discard}, {i:arrowdown} e pesca 1 carta"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34200.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Súplica",
+    "it": "Supplica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "{i:arrowup} por cada {i:wound}",
+     "it": "{i:arrowup} per ogni {i:wound}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34201.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Seducción",
+    "it": "Seduzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": [
+      "arrowup",
+      "arrowup"
+     ],
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Lanza un dial:\nCalavera: Pierde 1 de {r:Rep}\nGrial: {i:arrowup}",
+     "it": "Lancia un Quadrante:\nTeschio: perdi 1 {r:Rep}\nGraal: {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {i:health}",
+     "it": "Se {i:discard}, perdi 1 {i:health}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34202.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Palabras astutas",
+    "it": "Parole astute"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34203.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Proposición indecente",
+    "it": "Proposta indecente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, lanza un dial:\nGrial: {i:arrowup}{i:arrowup}{i:arrowup}\nCalavera: Pierde 2 de {i:health}",
+    "it": "Perdi 1 {i:energy}, lancia un Quadrante:\nGraal: {i:arrowup}{i:arrowup}{i:arrowup}\nTeschio: perdi 2 {i:health}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34204.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Verborrea",
+    "it": "Verbosità"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, {i:arrowup}",
+    "it": "Perdi 1 {i:energy}, {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34205.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Engaño",
+    "it": "Inganno"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Paga 1 de {r:Magia}: {i:arrowup}{i:arrowup}",
+     "it": "Paga 1 {r:Magia}: {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34206.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Perjurio",
+    "it": "Spergiuro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34207.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Melodía olvidada",
+    "it": "Melodia dimenticata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si la Afinidad es verde, {i:arrowup}",
+    "it": "Se l'Affinità è verde, {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34208.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sonrisa inocente",
+    "it": "Sorriso innocente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad es verde, {i:arrowup}",
+     "it": "Se l'Affinità è verde, {i:arrowup}"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34209.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sonrisa inocente",
+    "it": "Sorriso innocente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad es verde, {i:arrowup}",
+     "it": "Se l'Affinità è verde, {i:arrowup}"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34210.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Manipulación",
+    "it": "Manipolazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34211.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Truco de manos",
+    "it": "Gioco di prestigio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Riqueza} o 1 de {r:Magia}",
+    "it": "Perdi 1 {r:Ricchezza} o 1 {r:Magia}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34212.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Estafa",
+    "it": "Truffa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": [
+      "arrowup",
+      "arrowup"
+     ],
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Riqueza} y 1 de {r:Rep}",
+    "it": "Perdi 1 {r:Ricchezza} e 1 {r:Rep}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34213.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Consejeros ocultos",
+    "it": "Consiglieri nascosti"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Ignora 1 {i:arrowdown}",
+     "it": "Paga 1 Carica: ignora 1 {i:arrowdown}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_diplomacia/34214.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sollozo lastimero",
+    "it": "Singhiozzo lamentoso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 Carga por cada punto de {i:empathy} que tengas",
+     "it": "Ottieni 1 Carica per ogni punto di {i:empathy} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga cuando juegues una carta: trata todos los {i:special} como {i:arrowup}",
+     "it": "Paga 1 Carica quando giochi una carta: considera tutti i {i:special} come {i:arrowup}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33218.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica",
+    "it": "Retorica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33217.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Verdad honesta",
+    "it": "Verità sincera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33216.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Escuchar en silencio",
+    "it": "Ascoltare in silenzio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}",
+     "it": "Se subisci {i:wound}, {i:discard}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33215.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Calma mística",
+    "it": "Calma mistica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Ignora 1 ganancia de {i:terror} o 1 pérdida de {i:energy}",
+     "it": "Paga 1 Carica: ignora 1 guadagno di {i:terror} o 1 perdita di {i:energy}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33224.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Argucia arriesgada",
+    "it": "Stratagemma rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33600.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ojo para el detalle",
+    "it": "Occhio per i dettagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33601.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retroceder",
+    "it": "Indietreggiare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si la Afinidad no es verde, {i:arrowup}",
+    "it": "Se l'Affinità non è verde, {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33602.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presumir",
+    "it": "Vantarsi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:health}",
+     "it": "Perdi 1 {i:health}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33603.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Malas indicaciones",
+    "it": "Indicazioni sbagliate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33604.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Voz amenazadora",
+    "it": "Voce minacciosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; si tienes al menos 2 de {i:aggression}, {i:arrowup}",
+    "it": "Perdi 1 {r:Rep}; se hai almeno 2 {i:aggression}, {i:arrowup}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33605.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "La ley del más fuerte",
+    "it": "La legge del più forte"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+     "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    }
+   ],
+   "passiva": false
+  }
+ ]
+}

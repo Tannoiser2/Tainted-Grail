@@ -34,7 +34,13 @@ func _run() -> void:
 	main.mostra_gioco()
 	await aspetta(4.0)
 	await foto("inizio_giornata")
+	main._attuale.domande._risposta.emit(0)
+	await aspetta(1.0)
+	await foto("evento")
 	var g = main._attuale
+	for i in 4:
+		g.domande._risposta.emit(0)  # chiude le finestre dell'Inizio della Giornata
+		await aspetta(0.5)
 	if is_instance_valid(g._modale):
 		g._modale.queue_free()
 	await aspetta(2.0)

@@ -17,9 +17,13 @@ var _log: RichTextLabel
 var _anteprima: Label
 var _fase := "inizio"   # inizio, scegli, gioca, fine
 
-func _init(partita_: Partita, img: String, colore: String) -> void:
+var domande: Domande
+
+func _init(partita_: Partita, img: String, colore: String, domande_: Domande = null) -> void:
 	partita = partita_
 	inc = Incontro.new(partita, img, colore)
+	domande = domande_
+	inc.ui = domande
 
 func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -124,8 +128,13 @@ func _aggiorna() -> void:
 			for p in inc.membri:
 				var id := str(p["id"])
 				_comandi.add_child(Tema.pulsante("RIMESCOLA (%s)" % p["nome"], func(): inc.rimescola_mano(id), 15))
-			if inc.diplomazia and inc.carta.get("evitare") is Dictionary:
-				_comandi.add_child(Tema.pulsante("EVITARE: " + Dati.testo_piano(str(inc.carta["evitare"].get("it", ""))), func(): inc.evita(), 15))
+			if inc.carta.get("evitare") is Dictionary or inc.auto.get("evitare") is Dictionary:
+				var testo_ev := Dati.testo_piano(str(inc.carta.get("evitare", {}).get("it", ""))) if inc.carta.get("evitare") is Dictionary else ""
+				var be := Tema.pulsante("EVITARE: " + testo_ev, func():
+					await inc.evita()
+					_aggiorna(), 15)
+				be.disabled = not inc.evitabile()
+				_comandi.add_child(be)
 			_comandi.add_child(Tema.pulsante_primario("INIZIA", func(): _fase = "scegli"; _aggiorna()))
 		"scegli":
 			var liberi := inc.da_attivare()
@@ -136,8 +145,8 @@ func _aggiorna() -> void:
 			for p in liberi:
 				var id := str(p["id"])
 				_comandi.add_child(Tema.pulsante_primario("ATTIVA %s" % str(p["nome"]).to_upper(), func():
-					inc.attiva(id)
 					_fase = "gioca"
+					await inc.attiva(id)
 					_aggiorna()))
 			if not liberi.is_empty():
 				_mostra_mano(liberi[0], false)
@@ -161,26 +170,56 @@ func _aggiorna() -> void:
 			pm.toggled.connect(func(v): inc.paga_magia = v; _aggiorna())
 			_comandi.add_child(pm)
 			_comandi.add_child(Tema.pulsante_primario("TERMINA L'ATTIVAZIONE", func():
-				inc.termina_carte()
+				await inc.termina_carte()
 				if inc.concluso == "":
 					_fase = "scegli"
 				_aggiorna(), 16))
 			_comandi.add_child(Tema.pulsante("SCAPPARE" if not inc.diplomazia else "RINUNCIARE", func():
-				inc.scappa()
+				await inc.scappa()
 				if inc.concluso == "":
 					_fase = "scegli"
 				_aggiorna(), 15))
+			# Oggetti, Segreti e Abilità usabili in qualsiasi momento
+			for u in partita.inneschi("in_qualsiasi_momento", a):
+				var uu: Dictionary = u
+				_comandi.add_child(Tema.pulsante("USA: " + Carte.nome(str(uu["img"])), func(): await _usa_carta(uu), 14))
 			_correzioni()
 		"fine":
 			_anteprima.text = {"vittoria": "Vittoria!", "fallimento": "Fallimento.", "fuga": "Siete scappati.", "fuga_nemico": "Il nemico è fuggito.", "evitato": "Incontro evitato.", "morte": "La Compagnia è caduta."}.get(inc.concluso, inc.concluso)
 			_comandi.add_child(Tema.pulsante_primario("TORNA ALLA MAPPA", _chiudi, 17))
 
 func _chiudi() -> void:
+	var gl := Partita.guardiani(partita)
+	var presente := -1
+	for i in gl.size():
+		if str(gl[i].get("img", "")) == inc.img:
+			presente = i
 	if inc.guardiano_resta():
-		partita.d.get_or_add("guardiani", {})[str(partita.luogo_attivo())] = inc.img
+		if presente < 0:
+			gl.append({"img": inc.img, "colore": inc.colore, "luogo": partita.luogo_attivo()})
 		partita.racconta("Il Guardiano %s resta al Luogo %d" % [Carte.nome(inc.img), partita.luogo_attivo()])
+	elif presente >= 0 and inc.concluso in ["vittoria", "fuga_nemico", "evitato"]:
+		gl.remove_at(presente)
+		partita.racconta("Il Guardiano %s è sconfitto" % Carte.nome(inc.img))
 	finito.emit(inc.concluso)
 	queue_free()
+
+## Usa una carta con innesco "in qualsiasi momento" durante l'Incontro.
+func _usa_carta(u: Dictionary) -> void:
+	var inn: Dictionary = u["innesco"]
+	var it := Interprete.new(partita, inc, domande, {"carta": u["img"], "proprietario": u["chi"]})
+	if inn.get("condizione") is Dictionary and not inn["condizione"].is_empty() and it.valuta(inn["condizione"]) == false:
+		inc.nota("%s: condizione non soddisfatta." % Carte.nome(str(u["img"])))
+		return
+	if inn.get("costo") is Array and not await it.esegui(inn["costo"]):
+		inc.nota("%s: costo non pagabile." % Carte.nome(str(u["img"])))
+		return
+	inc.nota("Usata: " + Carte.nome(str(u["img"])))
+	await it.esegui(inn.get("effetti", []))
+	for r in it.rapporto:
+		inc.nota(("✔ " if r.get("fatto", true) else "☐ ") + str(r["testo"]))
+	inc._controlla_fine_carte()
+	_aggiorna()
 
 ## Incontri speciali (senza Chiavi): si mostra il testo e si applica l'effetto.
 func _speciale() -> void:
@@ -188,10 +227,15 @@ func _speciale() -> void:
 	var t := str(e.get("it", "")) if e is Dictionary else ""
 	_anteprima.text = Dati.testo_piano(t)
 	_comandi.add_child(Tema.pulsante_primario("APPLICA L'EFFETTO", func():
-		var fatti := Effetti.applica(t, partita)
-		for f in fatti:
-			inc.nota(("✔ " if f.get("fatto", false) else "☐ da fare: ") + str(f["testo"]))
-		inc.concluso = "speciale"
+		if inc.auto.get("effetto") is Array and not inc.auto["effetto"].is_empty():
+			inc.membri = partita.compagnia().duplicate()
+			await inc._esegui_fuori(inc.auto["effetto"])
+		else:
+			var fatti := Effetti.applica(t, partita)
+			for f in fatti:
+				inc.nota(("✔ " if f.get("fatto", false) else "☐ da fare: ") + str(f["testo"]))
+		if inc.concluso == "":
+			inc.concluso = "speciale"
 		_fase = "fine"
 		_aggiorna()))
 	_comandi.add_child(Tema.pulsante("CHIUDI", func(): inc.concluso = "speciale"; _chiudi()))
@@ -233,7 +277,7 @@ func _mostra_mano(p: Dictionary, giocabile: bool) -> void:
 			if ok:
 				t.gui_input.connect(func(e):
 					if e is InputEventMouseButton and e.pressed and e.button_index == MOUSE_BUTTON_LEFT:
-						inc.gioca(c))
+						await inc.gioca(c))
 		_mano.add_child(t)
 
 func _descrivi_collegamenti(c: String) -> String:

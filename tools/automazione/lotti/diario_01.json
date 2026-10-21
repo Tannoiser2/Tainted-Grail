@@ -1,0 +1,940 @@
+{
+ "voci": [
+  {
+   "chiave": "s:d979a1803d24",
+   "ruolo": "sogno",
+   "testo": "Nei vostri sogni inquieti, una dama pallida sorge dall’acqua, gli occhi bianchi e la pelle rovinata dalla putrefazione. Vi sussurra qualcosa all’orecchio. Il suo respiro sa di sale marino, alghe e pesci marci. Faticate a ricordare le sue parole. Diceva qualcosa a proposito di tre enigmi, uno celato sotto l’isola dei morti, uno stretto nella presa di mani e braccia bruciate, e l’ultimo sepolto sotto un tumulo avvolto dalla foschia. Ma cosa voleva dire?\n\n[b]Suggerimento: [/b] il sogno fa riferimento a tre degli otto Luoghi che circondano Cuanacht. È possibile che alcuni di loro non siano stati ancora rivelati.",
+   "contesto": "Luogo 101"
+  },
+  {
+   "chiave": "s:7fba27e87e11",
+   "ruolo": "incubo",
+   "testo": "Nel vostro sogno, un Wyrd delle dimensioni di una montagna si leva da occidente – la sua pelle riflette tutti i colori dell’arcobaleno. Si avvicina, spalancando le fauci come se fosse pronto a inghiottire l’intera Cuanacht. Stranamente, la maggior parte delle persone che si aggirano per le strade di Cuanacht non stanno neppure osservando la creatura. Stanno guardando VOI, tristi e deluse.\n\n“Ci avevate detto che sarebbe andato tutto bene...” scoppia a piangere una bambina.\n\nVi svegliate e non riuscite più ad addormentarvi fino all’alba.\n\nOgni Personaggio che ha avuto questo Incubo ottiene 1 {i:terror}.",
+   "contesto": "Luogo 101"
+  },
+  {
+   "chiave": "s:e2094079027a",
+   "ruolo": "menhir",
+   "testo": "Il Menhir locale è consunto e rotto. Richiede particolari attenzioni.\n\nRichiede [b]tutti i Personaggi[/b], la carta Segreto [b]Riti del Menhir[/b] e la carta Segreto [b]Attrezzi dello Scultore[/b].\n\nPagare 2 {i:energy}, 2 {i:health}, 2 {r:Ricchezza} e 2 {r:Magia} (per giocatore): piazzare una nuova miniatura Menhir in questo Luogo e posizionate il suo Quadrante su [b]8[/b] (-1 per giocatore).\n\nSe non bastano le miniature, prendetene una da un altro Luogo a vostra scelta.\n\n[b]Suggerimento:[/b] il Menhir della vostra città natale non potrà essere aiutato per un po’ di tempo. Gli altri Menhir nelle vicinanze sono più facili da attivare.",
+   "contesto": "Luogo 101"
+  },
+  {
+   "chiave": "c:6f8d26f921eb",
+   "ruolo": "condizione",
+   "testo": "Se avete lo status [b]“Venti dell’Anomalia”[/b]",
+   "contesto": "Luogo 101 verso 0: Una profonda sensazione di sconfitta attanaglia tutta Cuanacht – dalle fattorie in rovina allo sguardo perso di chi ancora vive in città. Il Menhir del mercato"
+  },
+  {
+   "chiave": "r:84aff6d660c4",
+   "ruolo": "risultato",
+   "testo": "Rimuovere questa carta Luogo dal gioco e rimpiazzarla con il [b]Luogo 121[/b]. Potete quindi Esplorare questo nuovo Luogo gratuitamente.",
+   "contesto": "Luogo 101 verso 0, scelta: Se avete lo status [b]“Venti dell’Anomalia”[/b]"
+  },
+  {
+   "chiave": "c:276a7ee99494",
+   "ruolo": "condizione",
+   "testo": "Se avete la carta Segreto[b] 66[/b]",
+   "contesto": "Luogo 101 verso 0: Una profonda sensazione di sconfitta attanaglia tutta Cuanacht – dalle fattorie in rovina allo sguardo perso di chi ancora vive in città. Il Menhir del mercato"
+  },
+  {
+   "chiave": "c:54e34f94b2e7",
+   "ruolo": "condizione",
+   "testo": "Se avete lo status [b]“Marchio del Cacciatore”[/b]",
+   "contesto": "Luogo 101 verso 0: Una profonda sensazione di sconfitta attanaglia tutta Cuanacht – dalle fattorie in rovina allo sguardo perso di chi ancora vive in città. Il Menhir del mercato"
+  },
+  {
+   "chiave": "r:911f8de67421",
+   "ruolo": "risultato",
+   "testo": "[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 101 verso 0, scelta: [b]Andare via.[/b]- [i]L’Esplorazione termina.[/i]"
+  },
+  {
+   "chiave": "q:824d131e3305",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Pagare 1 {r:Ricchezza} o 1 {r:Cibo}[/i]",
+   "contesto": "Luogo 101 verso 1, scelta: [b]Sciogliere la loro lingua con il sidro[/b] – Una vecchia tradizione: una veglia notturna per coloro che si sono allontanati troppo da casa. Tenerla per tutti"
+  },
+  {
+   "chiave": "q:1647fc7803fb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 1 {i:empathy}[/i]",
+   "contesto": "Luogo 101 verso 1, scelta: [b]Chiedergli di condividere i loro affanni.[/b]"
+  },
+  {
+   "chiave": "r:da622f6ddc6d",
+   "ruolo": "risultato",
+   "testo": "Ritornare all’inizio di questo Luogo e prendere un’altra scelta.",
+   "contesto": "Luogo 101 verso 1, scelta: [b]Andare via.[/b]. Ritornare all’inizio di questo Luogo e prendere un’altra scelta."
+  },
+  {
+   "chiave": "c:a6e4c90dbb6c",
+   "ruolo": "condizione",
+   "testo": "Continua.",
+   "contesto": "Luogo 101 verso 2: Vi ci vuole un po’ per spezzare il silenzio delle persone addolorate, ma quando ci riuscite, venite travolti da un fiume in piena di racconti di separazioni e p"
+  },
+  {
+   "chiave": "r:238a4d250f95",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Fato della Spedizione”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "q:e578acb960b5",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] almeno 1 {r:Rep} e [b]non avete[/b] lo status [b]“Scroccone”[/b][/i]",
+   "contesto": "Luogo 101 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "r:8d013898aafa",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 2 {r:Cibo}; quindi, ottiene 1 Oggetto casuale e lo status [b]“Scroccone”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "v:22",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Alcuni abitanti di Cuanacht non la prendono bene.\n\n[i]Tirate un dado e sommate +2 per ogni punto della vostra {i:aggression}.[/i]",
+   "contesto": "Luogo 101 verso 4"
+  },
+  {
+   "chiave": "c:a7715a4a6370",
+   "ruolo": "condizione",
+   "testo": "Verificate il risultato totale.",
+   "contesto": "Luogo 101 verso 4: Alcuni abitanti di Cuanacht non la prendono bene.\n\n[i]Tirate un dado e sommate +2 per ogni punto della vostra {i:aggression}.[/i]"
+  },
+  {
+   "chiave": "q:ec968eb4a97b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]1-3[/b] - Pietre e bastoni fanno male, ma il fatto che i vostri fratelli si siano rivolati contro di voi duole ancora di più.",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "r:fe452f8286fd",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia perde 1 {i:health}, 1 {i:energy}, e 1 {r:Rep}. Ciascun membro della compagnia ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "q:62cbeeffb146",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]4-5[/b] - Riuscite a liberarvi e scappare.",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "r:df90e3eb759e",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia perde 1 {i:energy} e 1 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "q:2254ff19d469",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]6+[/b] - Gli date una bella lezione. Forse troppo vigorosa – non smettete di colpire fino a quando uno di loro finisce senza vita in una pozza di sangue.",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "r:6680fb239a34",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 2 {i:terror} e perde 2{r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 4, scelta: Verificate il risultato totale."
+  },
+  {
+   "chiave": "c:c86907f291f6",
+   "ruolo": "condizione",
+   "testo": "Se in questo Luogo [b]c’è[/b] un Menhir attivo, scegli questa opzione.",
+   "contesto": "Luogo 101 verso 5: Molti si rifiuterebbero di chiamare “casa” un posto del genere, ma l’ambiente familiare vi infonde la serenità di cui avete tanto bisogno. Mentre vi coricate a"
+  },
+  {
+   "chiave": "r:7ccccd780768",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 2 {i:health} e perde 2 {i:terror}. Dovete Passare il resto della giornata. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 5, scelta: Se in questo Luogo [b]c’è[/b] un Menhir attivo, scegli questa opzione."
+  },
+  {
+   "chiave": "c:a47134de4bb4",
+   "ruolo": "condizione",
+   "testo": "Se in questo Luogo [b]non c’è[/b] un Menhir, scegli questa opzione.",
+   "contesto": "Luogo 101 verso 5: Molti si rifiuterebbero di chiamare “casa” un posto del genere, ma l’ambiente familiare vi infonde la serenità di cui avete tanto bisogno. Mentre vi coricate a"
+  },
+  {
+   "chiave": "r:1befc3e6f296",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della compagnia ottiene 1 {i:health} e 1 {i:terror}. Dovete Passare il resto della giornata. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 101 verso 5, scelta: Se in questo Luogo [b]non c’è[/b] un Menhir, scegli questa opzione."
+  },
+  {
+   "chiave": "c:3314e09f1be7",
+   "ruolo": "condizione",
+   "testo": "Se[b] non avete[/b] la parte 1 dello status [b]“Canto Funebre”[/b], scegli questa opzione.",
+   "contesto": "Luogo 101 verso 6: Tre donne stanno piangendo dinanzi al grande edificio. Una di loro ha perso sua figlia, una bambina di otto anni massacrata di recente come un animale sulle col"
+  },
+  {
+   "chiave": "r:99c6dad2d665",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 2 {i:terror}. Poi, ottenete la parte 1 dello status [b]“Canto Funebre”[/b] e scegliete una tra le seguenti.[/i]",
+   "contesto": "Luogo 101 verso 6, scelta: Se[b] non avete[/b] la parte 1 dello status [b]“Canto Funebre”[/b], scegli questa opzione."
+  },
+  {
+   "chiave": "s:7aed125217b1",
+   "ruolo": "sogno",
+   "testo": "Se [b]avete[/b] la parte 2 dello status [b]“Canto Funebre”[/b], passate una notte senza sogni. Altrimenti, continuate a leggere:\n\n[i]Sprofondate, sotto questa costellazione color paglia, in un sonno irrequieto dove date la caccia a una giovane colomba per le colline all’esterno di Cuanacht.\n\nVi svegliate di prima mattina con un sudore freddo e numerosi tagli. Il sapore del sangue vi riempie la bocca. Accanto a voi, giacciono dei pezzi di carne avvolti accuratamente dentro delle foglie.[/i]\n\nSe [b]non avete[/b] lo status [b]“Marchio del Cacciatore”[/b], ciascun Personaggio in questo Luogo ottiene 2 {r:Cibo}. Poi, ottenete lo status [b]“Marchio del Cacciatore”[/b].",
+   "contesto": "Luogo 102"
+  },
+  {
+   "chiave": "c:5e84e7958ea6",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] lo status [b]“Battitore di Piste”[/b], scegli questa opzione.",
+   "contesto": "Luogo 102 verso 0: È ancora qui, come sempre. Enormi orbite vuote iniziano a osservarvi non appena scendete nel bacino ricoperto di muschio. Le corna, larghe quanto una nave, osp"
+  },
+  {
+   "chiave": "q:3db42a5e94d2",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la parte 1 ma [b]non avete[/b] la parte 2 dello status [b]“Canto Funebre”[/b]",
+   "contesto": "Luogo 102 verso 0, scelta: [b]Profanare il santuario e lasciare un messaggio agli altri cacciatori[/b]"
+  },
+  {
+   "chiave": "r:2a1cbd127b27",
+   "ruolo": "risultato",
+   "testo": "[i]Dovete Passare il resto della giornata. Leggere la sezione Sogno di questo Luogo. L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 102 verso 1, scelta: Continua."
+  },
+  {
+   "chiave": "r:6dfa582e0291",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 2 {r:Esp}. Ottenete la parte 2 dello status[b] “Canto Funebre”[/b]. L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 102 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:f592b33d3af5",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenere lo status[b] “Battitore di Piste”[/b].[/i]",
+   "contesto": "Luogo 102 verso 3, scelta: [b]Seguire la pista[/b]"
+  },
+  {
+   "chiave": "r:d849a914818f",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenere lo status [b]“Battitore di Piste”[/b].[/i]",
+   "contesto": "Luogo 102 verso 3, scelta: [b]Proseguire[/b] - [i]Andare all’inizio di questo Luogo e prendere un’altra scelta..[/i]"
+  },
+  {
+   "chiave": "c:0f99761f8b19",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la parte 5 dello status [b]“Saccheggiatore”[/b], scegli questa opzione.",
+   "contesto": "Luogo 102 verso 4: Chiaramente, se hanno lasciato qui i loro preziosi, non li volevano più, giusto?"
+  },
+  {
+   "chiave": "r:bf57749adedc",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 {r:Ricchezza}. Ottenete la parte 5 dello status [b]“Saccheggiatore”[/b]. Ciascun membro della Compagnia con 1 o più {i:spirituality} ottiene 1 {i:terror}. L’Esplorazione termina. [/i]",
+   "contesto": "Luogo 102 verso 4, scelta: Se [b]non avete[/b] la parte 5 dello status [b]“Saccheggiatore”[/b], scegli questa opzione."
+  },
+  {
+   "chiave": "c:53e8ee385e1c",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 5 dello status [b]“Saccheggiatore”[/b], scegli questa opzione.",
+   "contesto": "Luogo 102 verso 4: Chiaramente, se hanno lasciato qui i loro preziosi, non li volevano più, giusto?"
+  },
+  {
+   "chiave": "r:3adbe0778177",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia con 1 o più {i:spirituality} ottiene 1 {i:terror}. L’Esplorazione termina. [/i]",
+   "contesto": "Luogo 102 verso 4, scelta: Se [b]avete[/b] la parte 5 dello status [b]“Saccheggiatore”[/b], scegli questa opzione."
+  },
+  {
+   "chiave": "r:c28061bfbde1",
+   "ruolo": "risultato",
+   "testo": "[b]Nuovo Compito:[/b] portare la vergine arciera ferita alla Casa di Ricovero sull’Isola ed Esplorare la casa di ricovero per trovare il modo di aiutarla.\n\nL’Esplorazione termina.",
+   "contesto": "Luogo 102 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "c:4524ab19a3f3",
+   "ruolo": "condizione",
+   "testo": "[b]Se vincete[/b] (o il nemico usa Scappare), scegli questa opzione.",
+   "contesto": "Luogo 102 verso 6: Tornate al bosco e vi ritrovate di fronte all’antico Padre Cervo con la rabbia nel cuore e una torcia accesa in mano. All’ultimo istante, la vostra mente è att"
+  },
+  {
+   "chiave": "c:ea77b958e206",
+   "ruolo": "condizione",
+   "testo": "[b]Se perdete[/b], scegli questa opzione.",
+   "contesto": "Luogo 102 verso 6: Tornate al bosco e vi ritrovate di fronte all’antico Padre Cervo con la rabbia nel cuore e una torcia accesa in mano. All’ultimo istante, la vostra mente è att"
+  },
+  {
+   "chiave": "q:fc12a1f30619",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]non si deve avere lo status[b] “Inaffidabile”[/b][/i]",
+   "contesto": "Luogo 103 verso 0, scelta: [b]Prendere parte al grande torneo [/b] [i](solo un Personaggio[/i]"
+  },
+  {
+   "chiave": "q:becec2712a76",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] la parte 1 dello status [b]“Dare una Mano”[/b][/i]",
+   "contesto": "Luogo 103 verso 0, scelta: [b]Esplorare la tendopoli[/b]"
+  },
+  {
+   "chiave": "q:a62de0d2662c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {r:Ricchezza}[/i]",
+   "contesto": "Luogo 103 verso 0, scelta: [b]Comprare un contratto e tentare di venderlo per ottenere un profitto[/b]"
+  },
+  {
+   "chiave": "q:732c3d821980",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {i:energy} per membro della Compagnia[/i]",
+   "contesto": "Luogo 103 verso 1, scelta: [b]Mettersi alla ricerca di altri testimoni[/b]"
+  },
+  {
+   "chiave": "c:14043563f8e8",
+   "ruolo": "condizione",
+   "testo": "Se vincete (o se il nemico usa Scappare), scegli questa opzione.",
+   "contesto": "Luogo 103 verso 2: Entrate in un cerchio ricoperto di sabbia, circondato da una recinzione di legno, avidi scommettitori e interessati acquirenti di contratti. Salutate il vostro "
+  },
+  {
+   "chiave": "r:5cc0ac20684d",
+   "ruolo": "risultato",
+   "testo": "[i]Non ricevete alcun Bottino per aver vinto questo Incontro![/i]",
+   "contesto": "Luogo 103 verso 2, scelta: Se vincete (o se il nemico usa Scappare), scegli questa opzione."
+  },
+  {
+   "chiave": "c:a056ec437354",
+   "ruolo": "condizione",
+   "testo": "Se perdete o decidete di Fuggire",
+   "contesto": "Luogo 103 verso 2: Entrate in un cerchio ricoperto di sabbia, circondato da una recinzione di legno, avidi scommettitori e interessati acquirenti di contratti. Salutate il vostro "
+  },
+  {
+   "chiave": "c:5458feee535b",
+   "ruolo": "condizione",
+   "testo": "Se vincete, scegli questa opzione.",
+   "contesto": "Luogo 103 verso 3: Un cupo dottore esamina le vostre ferite e contusioni, applicandovi sopra degli unguenti che bruciano. Nel frattempo, notate un diverbio in corso tra gli scomme"
+  },
+  {
+   "chiave": "c:777b97a8601b",
+   "ruolo": "condizione",
+   "testo": "Se perdete o decidete di Fuggire, scegli questa opzione.",
+   "contesto": "Luogo 103 verso 3: Un cupo dottore esamina le vostre ferite e contusioni, applicandovi sopra degli unguenti che bruciano. Nel frattempo, notate un diverbio in corso tra gli scomme"
+  },
+  {
+   "chiave": "r:458fea14daba",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 {r:Esp} e la parte 1 dello status [b]“Dare una Mano”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 103 verso 4, scelta: [b]Pagarlo[/b]"
+  },
+  {
+   "chiave": "r:32ce78617769",
+   "ruolo": "risultato",
+   "testo": "[i]Si allontana, triste e derelitto.[/i] L’Esplorazione termina.",
+   "contesto": "Luogo 103 verso 4, scelta: [b]Ignorarlo[/b]"
+  },
+  {
+   "chiave": "r:fe75ff06aab8",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 6 dello status [b]“Fato della Spedizione”[/b].\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 103 verso 6, scelta: Continua."
+  },
+  {
+   "chiave": "q:1a652812e0dc",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 2 {i:empathy}[/i]",
+   "contesto": "Luogo 103 verso 7, scelta: [b]Convincerlo a parlare[/b]"
+  },
+  {
+   "chiave": "r:2a844e9e9cfa",
+   "ruolo": "risultato",
+   "testo": "[i]Exploration ends.[/i]",
+   "contesto": "Luogo 103 verso 7, scelta: [b]Lasciarlo stare[/b]"
+  },
+  {
+   "chiave": "r:8355158d40f5",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 {r:Ricchezza}, 1 {r:Esp} e 2 {r:Rep}. Dovete Passare per il resto della giornata.[/i]",
+   "contesto": "Luogo 103 verso 8, scelta: Continua."
+  },
+  {
+   "chiave": "c:344edddb4391",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Inaffidabile”[/b], o se c’è un Gettone Tempo su questo Luogo",
+   "contesto": "Luogo 103 verso 9: Dopo un po’, riuscite a procurarvi il contratto mercenario di un giovane guerriero. Privo di esperienza, ma pieno di potenziale – proprio come voi."
+  },
+  {
+   "chiave": "r:fbd0168d0808",
+   "ruolo": "risultato",
+   "testo": "Nessuno vorrà trattare con voi.\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 103 verso 9, scelta: Se [b]avete[/b] lo status [b]“Inaffidabile”[/b], o se c’è un Gettone Tempo su questo Luogo"
+  },
+  {
+   "chiave": "c:29f5862c5bd3",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicality}",
+   "contesto": "Luogo 103 verso 9: Dopo un po’, riuscite a procurarvi il contratto mercenario di un giovane guerriero. Privo di esperienza, ma pieno di potenziale – proprio come voi."
+  },
+  {
+   "chiave": "q:7e4b0713b655",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il tuo risultato: 1-4",
+   "contesto": "Luogo 103 verso 9, scelta: Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicali"
+  },
+  {
+   "chiave": "r:818e1b4b06bc",
+   "ruolo": "risultato",
+   "testo": "Ignorate la metà delle antiche regole e tradizioni che governano questa attività. Fate degli errori da novellini, e il vostro partner commerciale si sente imbrogliato. Dopo alcune discussioni, venite cacciati dalla fiera, con il vostro contratto confiscato per pagare una multa. \n\n[i]Dovete Passare il resto della giornata. Ottenete lo status [b]“Inaffidabile”.[/b] L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 103 verso 9, scelta: Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicali"
+  },
+  {
+   "chiave": "q:3035c4ad9858",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il tuo risultato:  5-6",
+   "contesto": "Luogo 103 verso 9, scelta: Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicali"
+  },
+  {
+   "chiave": "r:82764956b35f",
+   "ruolo": "risultato",
+   "testo": "Sembra più difficile di quanto apparisse. Dopo una lunga ed estenuante trattativa, riuscite faticosamente a chiudere in pareggio.\n\n[i]Ciascun membro della Compagnia ottiene 1{r:Esp} e perde 1 {i:energy}. Ottenete 1 {r:Ricchezza}. Piazzare un Gettone Tempo su questo Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 103 verso 9, scelta: Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicali"
+  },
+  {
+   "chiave": "r:3baeae75cad1",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 1 {r:Esp} e 1 {i:terror}. Ottenete 3 {r:Ricchezza}. Piazzare un Gettone Tempo su questo Luogo e poi l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 103 verso 10, scelta: [b]Portare comunque avanti la trattativa[/b]"
+  },
+  {
+   "chiave": "q:75a4bd20cafa",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Dopo questa mossa, nessuno vorrà più trattare con voi!",
+   "contesto": "Luogo 103 verso 10, scelta: [b]Ritirarvi dalla trattativa[/b]"
+  },
+  {
+   "chiave": "r:7f2d8a8864cc",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 {r:Esp}. Ottenete lo status [b]“Inaffidabile”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 103 verso 10, scelta: [b]Ritirarvi dalla trattativa[/b]"
+  },
+  {
+   "chiave": "s:a15a525c4481",
+   "ruolo": "sogno",
+   "testo": "Nel vostro sogno, fuggite da una nube tempestosa di tenebra che consuma lentamente il territorio attorno a voi. Cercate di scegliere accuratamente il vostro percorso, cercando di procurarvi molte provviste lungo la strada, e di riaccendere tutti i Menhir che incontrate. Dopo un po’, l’ondata vi raggiunge comunque e vi inghiotte.\n\nRitornate all’inizio del vostro sogno. Questa volta cercate di fuggire più in fretta di quanto ve lo permettano le vostre gambe – ma la fame, i vicoli ciechi e le bestie di questo territorio pongono rapidamente fine alla vostra esistenza.\n\n[b]Suggerimento:[/b] per sopravvivere, dovete muovervi rapidamente, ma senza trascurare le vostre Risorse o le tracce Sopravvivenza!",
+   "contesto": "Luogo 104"
+  },
+  {
+   "chiave": "s:bf19bb18a26e",
+   "ruolo": "incubo",
+   "testo": "Le vostre mani cercano disperatamente di tirare via le sbarre della gabbia, nel tentativo di scardinarle. Altre persone si agitano attorno a voi preda del terrore. I vostri polmoni e la vostra bocca iniziano a riempirsi di un fumo denso e appiccicoso, che sale dal basso. Le urla degli altri non hanno più nulla di umano.\n\nInfine, le fiamme avvolgono anche il vostro corpo, ustionano la vostra pelle, sciolgono la vostra carne. Un momento di agonia e di terrore. Poi, siete di nuovo dentro la gabbia, in un altro luogo, a rivivere ancora l’esecuzione. E ancora. E ancora. Da duecento prospettive diverse. Il sogno sembra non finire mai e vi lascia totalmente traumatizzati e sconvolti.\n\nOgni Personaggio che ha avuto questo Incubo perde 1 {i:health} e ottiene 1 {i:terror}.",
+   "contesto": "Luogo 104"
+  },
+  {
+   "chiave": "c:92b16f2ef096",
+   "ruolo": "condizione",
+   "testo": "Se state giocando[b] Verme[/b] (o se fa parte della vostra Compagnia), scegli questa opzione.",
+   "contesto": "Luogo 104 verso 0: Non ci mettete molto a trovarlo; dovete solo seguire il vostro naso. I resti di un enorme uomo di vimini giacciono sul fondo di una piccola vallata. Eravate qui"
+  },
+  {
+   "chiave": "q:3ae496e67c7f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {i:energy}  per membro della Compagnia[/i]",
+   "contesto": "Luogo 104 verso 1, scelta: [b]Apprendere dal Conclave[/b]"
+  },
+  {
+   "chiave": "q:b2b94c646c86",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 1 dello status [b]“Saccheggiatore”[/b][/i]",
+   "contesto": "Luogo 104 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:5af3782305a3",
+   "ruolo": "risultato",
+   "testo": "[i] Ottenete 1 Oggetto non Compagno e la parte 1 dello status [b]“Saccheggiatore”[/b]. Ciascun membro della Compagnia che abbia più di 1 {i:empathy} ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 104 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:ba6c379bf85f",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia che abbia più di 1 {i:empathy} ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 104 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "q:b18512ac0ee0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] lo status[b] “Sapere Bruciato”[/b][/i]",
+   "contesto": "Luogo 104 verso 4, scelta: [b]Restare fermi[/b]"
+  },
+  {
+   "chiave": "r:e12e33643204",
+   "ruolo": "risultato",
+   "testo": "[i] Ciascun membro della Compagnia perde 1 {i:health} e ottiene 1 {i:terror}[/i]",
+   "contesto": "Luogo 104 verso 4, scelta: [b]Restare fermi[/b]"
+  },
+  {
+   "chiave": "q:ddc4af63a29f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se avete almeno 3 {r:Magia}[/i]",
+   "contesto": "Luogo 104 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:ac57630909cc",
+   "ruolo": "risultato",
+   "testo": "Qui, non c’è più niente che possiate apprendere. [i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 104 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:70615412a9ed",
+   "ruolo": "risultato",
+   "testo": "Ciascun membro della Compagnia ottiene 1 {r:Magia}. Ciascun membro della Compagnia che ha almeno 1 {i:spirituality} ottiene 1{i:terror}. L’Esplorazione termina.",
+   "contesto": "Luogo 104 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "r:0e0b8230d5e7",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia perde 2 {i:health} e ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 104 verso 8, scelta: Continua."
+  },
+  {
+   "chiave": "q:ffee0bcd8cc1",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Richiede[b] Verme O[/b] almeno 1  {i:spirituality}",
+   "contesto": "Luogo 104 verso 10, scelta: [b]Entrare[/b]"
+  },
+  {
+   "chiave": "s:c1287c232bd5",
+   "ruolo": "sogno",
+   "testo": "L’esercito degli uomini formò una linea difensiva con le spalle al mare – un ultimo, disperato tentativo di resistenza. I Predecessori, tuttavia, non attaccarono. Mandarono invece i giganti a fare il lavoro sporco.\n\nQuando i titani iniziarono ad avanzare, gli uomini si nascosero dietro i loro scudi e i cavalli cedettero al panico. Solo Artù non indietreggiò. Sapeva che i giganti sarebbero giunti; ci contava. Da solo, avanzò per affrontarli, allargando le braccia.\n\nMezz’ora dopo, i giganti erano inginocchiati davanti al re degli umani e conficcarono le loro spade nella collina, giurando di non tornare mai più a brandirle contro gli umani.\n\nOgni Personaggio che ha vissuto questo sogno perde 1 {i:terror}.",
+   "contesto": "Luogo 105"
+  },
+  {
+   "chiave": "s:25a0ad2dbf0c",
+   "ruolo": "incubo",
+   "testo": "Sfiniti dalla dura scalata, la vostra scintillante ricompensa si trova appena fuori della vostra portata. Mentre afferrate la tacca successiva della spada, il metallo si arrugginisce e si sgretola tra le vostre mani. Cadete all’indietro, e il mondo vortica mentre precipitate a terra. Lo schianto vi fa svegliare di soprassalto.\n\nOgni Personaggio che ha vissuto questo Incubo ottiene 1 {i:terror}.",
+   "contesto": "Luogo 105"
+  },
+  {
+   "chiave": "c:3613a25f7072",
+   "ruolo": "condizione",
+   "testo": "Se in questo Luogo c’è un Gettone Cerca, scegli questa opzione.",
+   "contesto": "Luogo 105 verso 0: Sostate a riposare all’ombra di queste spade titaniche, il cui odore di ruggine tintilla il vostro olfatto. A un centinaio di metri di distanza, un anziano fabb"
+  },
+  {
+   "chiave": "q:f3e4da6ee5a3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede {i:courage} 1 o più[/i]",
+   "contesto": "Luogo 105 verso 1, scelta: [b]Tentare di arrampicarsi, affidandosi alla propria forza e agilità[/b]"
+  },
+  {
+   "chiave": "r:1fd19171ea53",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado, sommare +1 per ogni punto della vostra {i:health}[/i]",
+   "contesto": "Luogo 105 verso 1, scelta: [b]Tentare di arrampicarsi, affidandosi alla propria forza e agilità[/b]"
+  },
+  {
+   "chiave": "r:a7e092026f90",
+   "ruolo": "risultato",
+   "testo": "[i] Tirare un dado, sommare +2, poi sommare +1 per ogni punto della vostra {i:health}.[/i]",
+   "contesto": "Luogo 105 verso 1, scelta: [b]Studiare la superficie della spada, cercando l’approccio migliore e arrampicandosi lentamente[/b]"
+  },
+  {
+   "chiave": "q:ab5da689d17d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede {i:caution} 1 o più, pagare 2{i:energy}  per membro della Compagnia[/i]",
+   "contesto": "Luogo 105 verso 1, scelta: [b]Preparare corde e rampini, procedere con estrema cautela[/b]"
+  },
+  {
+   "chiave": "r:d254e0127abd",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado, sommare +5, poi sommare +1 per ogni punto della vostra {i:health}.[/i]",
+   "contesto": "Luogo 105 verso 1, scelta: [b]Preparare corde e rampini, procedere con estrema cautela[/b]"
+  },
+  {
+   "chiave": "r:52fef6971af4",
+   "ruolo": "risultato",
+   "testo": "Conoscete il fabbro. Era amico del vostro maestro scomparso.",
+   "contesto": "Luogo 105 verso 2, scelta: Se state giocando [b]Beor[/b] (o se fa parte della vostra Compagnia), scegli questa opzione."
+  },
+  {
+   "chiave": "c:66dd5205ebac",
+   "ruolo": "condizione",
+   "testo": "Tirare un dado e sommare la vostra {i:aggression}. Poi, verificare il risultato ottenuto.",
+   "contesto": "Luogo 105 verso 3: C’è una forte tensione. Sia voi che il fabbro avete un pessimo carattere e in breve, si scatena una rissa."
+  },
+  {
+   "chiave": "r:3220e486a79d",
+   "ruolo": "risultato",
+   "testo": "Vi ha messo k.o. e vi abbandona ai confini della regione.\n[i]Ciascun membro della Compagnia perde 1 {i:health} e 1 {i:energy}. Piazzare un Gettone Tempo sul Quadrante, porlo sul 3, e posizionarlo su questo Luogo. Quando il Quadrante scende a 0, scartarlo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 3, scelta: Tirare un dado e sommare la vostra {i:aggression}. Poi, verificare il risultato ottenuto."
+  },
+  {
+   "chiave": "q:1e62e0a2b843",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Il tuo risultato: 5+",
+   "contesto": "Luogo 105 verso 3, scelta: Tirare un dado e sommare la vostra {i:aggression}. Poi, verificare il risultato ottenuto."
+  },
+  {
+   "chiave": "r:0f16488d5e7c",
+   "ruolo": "risultato",
+   "testo": "Riuscite a tenerlo a bada e fargli saltare qualche dente.\n[i]Ciascun membro della Compagnia ottiene 1 {r:Exp} e 1 {i:terror}. Ottenete 1 {r:Ricchezza}. Piazzare un Gettone Tempo sul Quadrante, porlo sul 3, e posizionarlo su questo Luogo. Quando il Quadrante scende a 0, scartarlo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 3, scelta: Tirare un dado e sommare la vostra {i:aggression}. Poi, verificare il risultato ottenuto."
+  },
+  {
+   "chiave": "c:192f18db05c4",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] lo status[b] “Enigma dell’Antico Acciaio”[/b], scegli questa opzione.",
+   "contesto": "Luogo 105 verso 4: Vi scusate garbatamente con l’uomo e poi rimanete in disparte, a osservarlo. Ogni colpo del suo martello contro la superficie della spada produce un suono secco"
+  },
+  {
+   "chiave": "r:f32abb037bc4",
+   "ruolo": "risultato",
+   "testo": "Ciascun membro della Compagnia ottiene 1 {r:Esp}. Ottenete lo status [b]“Enigma dell’Antico Acciaio”[/b]. Poi, scegliere tra:",
+   "contesto": "Luogo 105 verso 4, scelta: Se [b]non avete[/b] lo status[b] “Enigma dell’Antico Acciaio”[/b], scegli questa opzione."
+  },
+  {
+   "chiave": "q:fedae4211509",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete [/b]la carta Segreto [b]27[/b] – Pagare da 1 a 5 {r:Ricchezza}.[/i]",
+   "contesto": "Luogo 105 verso 4, scelta: [b]Tentare di comprare il martello[/b]"
+  },
+  {
+   "chiave": "q:8c4bd26eccf4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]solo se [b]non avete [/b] la carta Segreto[b] 27[/b][/i]",
+   "contesto": "Luogo 105 verso 4, scelta: [b]Tentare di rubare il martello[/b]"
+  },
+  {
+   "chiave": "r:ee311865a671",
+   "ruolo": "risultato",
+   "testo": "[i] Tirare un dado, sommare +1 per ogni\npunto di {i:practicality}[/i]",
+   "contesto": "Luogo 105 verso 4, scelta: [b]Tentare di rubare il martello[/b]"
+  },
+  {
+   "chiave": "r:4db0969185c1",
+   "ruolo": "risultato",
+   "testo": "[i]Andare al Sogno. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "c:4c609c6a3beb",
+   "ruolo": "condizione",
+   "testo": "Verifica il segreto",
+   "contesto": "Luogo 105 verso 6: "
+  },
+  {
+   "chiave": "q:e47c855ff43e",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se il risultato è [b]almeno[/b] 5[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 1 {r:Ricchezza}: Che insulto!\n\n[i]Tirare un dado, sommare le vostre {i:aggression} e {i:courage}.[/i]"
+  },
+  {
+   "chiave": "q:28ad82396762",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se il risultato è [b]almeno[/b] 8[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 2 {r:Ricchezza}: TIl fabbro vi chiede di andarvene in malo modo.\n\n[i]Tirare un dado, sommare le vostre {i:aggression} e {i:courage}.[/i]"
+  },
+  {
+   "chiave": "r:dee052f61664",
+   "ruolo": "risultato",
+   "testo": "[i] Riprendetevi le vostre 2 {r:Ricchezza}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 2 {r:Ricchezza}: TIl fabbro vi chiede di andarvene in malo modo.\n\n[i]Tirare un dado, sommare le vostre {i:aggression} e {i:courage}.[/i]"
+  },
+  {
+   "chiave": "q:98fafe8e4338",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se il risultato è [b]almeno[/b] 4[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 3 {r:Ricchezza}: Il fabbro considera attentamente la vostra offerta.\n\n[i]Tirare un dado.[/i]"
+  },
+  {
+   "chiave": "r:a0311b920008",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]27[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 3 {r:Ricchezza}: Il fabbro considera attentamente la vostra offerta.\n\n[i]Tirare un dado.[/i]"
+  },
+  {
+   "chiave": "r:4f9a9dba1f82",
+   "ruolo": "risultato",
+   "testo": "[i]Riprendete le vostre 3 {r:Ricchezza}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 3 {r:Ricchezza}: Il fabbro considera attentamente la vostra offerta.\n\n[i]Tirare un dado.[/i]"
+  },
+  {
+   "chiave": "r:753cad8606de",
+   "ruolo": "risultato",
+   "testo": "È da tempo che pensava di ritirarsi. [i]Ottenete la carta Segreto 27. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 8, scelta: 4+ {r:Ricchezza}: Il fabbro sospira."
+  },
+  {
+   "chiave": "c:8deb2f8e7322",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato: 1-9",
+   "contesto": "Luogo 105 verso 10: Il vostro risultato è stato:"
+  },
+  {
+   "chiave": "r:faa8023a4a73",
+   "ruolo": "risultato",
+   "testo": "La superficie arrugginita vi si sbriciola in mano e precipitate verso terra.\n[i]Ciascun membro della Compagnia perde 4 {i:health} e ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 1-9"
+  },
+  {
+   "chiave": "c:f7c947ec6c2c",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato: 10-13",
+   "contesto": "Luogo 105 verso 10: Il vostro risultato è stato:"
+  },
+  {
+   "chiave": "q:bbb051af0751",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se su questa carta Luogo [b]non c’è[/b] un Gettone Cerca[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 10-13"
+  },
+  {
+   "chiave": "r:22efbc2a8128",
+   "ruolo": "risultato",
+   "testo": "Scivolate più volte, tagliandovi lungo la lama affilata prima di raggiungere la vetta.  [i]Ciascun membro della Compagnia perde 1 {i:health}.[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 10-13"
+  },
+  {
+   "chiave": "r:749812ebed78",
+   "ruolo": "risultato",
+   "testo": "Scivolate più volte, tagliandovi lungo la lama affilata prima di raggiungere la vetta. [i]Ciascun membro della Compagnia perde 1 {i:health}.  Se su questa carta Luogo c’è un Gettone Cerca, rimuoverlo[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 10-13"
+  },
+  {
+   "chiave": "c:db64113066d6",
+   "ruolo": "condizione",
+   "testo": "Il vostro risultato: 14+",
+   "contesto": "Luogo 105 verso 10: Il vostro risultato è stato:"
+  },
+  {
+   "chiave": "q:2b0d19caca29",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se su questa carta Luogo [b]non c’è[/b] un Gettone Cerca[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 14+"
+  },
+  {
+   "chiave": "r:7da9229a53f4",
+   "ruolo": "risultato",
+   "testo": "Scalata perfetta!",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 14+"
+  },
+  {
+   "chiave": "r:de44d60dbc2b",
+   "ruolo": "risultato",
+   "testo": "Scalata perfetta! [i]Se su questa carta Luogo [b]c’è[/b] un Gettone Cerca, rimuoverlo.[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 14+"
+  },
+  {
+   "chiave": "c:a2bea6ce2bda",
+   "ruolo": "condizione",
+   "testo": "Se non vi resta {i:energy}, scegli questa opzione.",
+   "contesto": "Luogo 105 verso 14: Sudati e stanchi, vi ritrovate in una stretta nicchia che un tempo doveva essere lo sguscio della spada. Lì, vi riposate un po’, deliziandovi gli occhi con la "
+  },
+  {
+   "chiave": "r:f1c4838becba",
+   "ruolo": "risultato",
+   "testo": "Siete troppo esausti per proseguire o scendere, e il sole sta già tramontando.",
+   "contesto": "Luogo 105 verso 14, scelta: Se non vi resta {i:energy}, scegli questa opzione."
+  },
+  {
+   "chiave": "r:f62dd0b6cb73",
+   "ruolo": "risultato",
+   "testo": "Alzate lo sguardo e notate la guardia della spada che splende sopra la vostra testa.",
+   "contesto": "Luogo 105 verso 14, scelta: [b]Proseguire la scalata[/b]"
+  },
+  {
+   "chiave": "r:6fd0fcc01e39",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia perde 1 {i:health}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 15, scelta: Continua."
+  },
+  {
+   "chiave": "r:a32e9f4b01bc",
+   "ruolo": "risultato",
+   "testo": "Il fabbro vi coglie in flagrante.",
+   "contesto": "Luogo 105 verso 16, scelta: [b]1-5[/b]"
+  },
+  {
+   "chiave": "r:1a1c9037314b",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenere la carta Segreto [b]27[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 16, scelta: [b]6+[/b]"
+  },
+  {
+   "chiave": "s:48b92ad37340",
+   "ruolo": "sogno",
+   "testo": "Niente sogni in questo luogo. Il vostro sonno è freddo e silenzioso come i tumuli.",
+   "contesto": "Luogo 106"
+  },
+  {
+   "chiave": "s:2797447d6e29",
+   "ruolo": "incubo",
+   "testo": "Vi svegliate da soli, in una densa foschia che sembra coprire il mondo intero. Il sole, la luna e le stelle sono sparite, lasciando solo un bianco nulla.\n\nTrascorrete ore a vagare alla cieca. Non è rimasto niente! Tutto il vostro mondo è diventato un vuoto. Vi svegliate con una fitta al cuore e la schiena sudata.\n\nOgni Personaggio che ha vissuto questo Incubo ottiene 1 {i:terror}.",
+   "contesto": "Luogo 106"
+  },
+  {
+   "chiave": "s:d8b105a7c1e1",
+   "ruolo": "menhir",
+   "testo": "Richiede [b]tutti i Personaggi[/b] e la carta Segreto [b]Riti del Menhir[/b].\n\nPagare 1 {i:energy}, 1 {i:health}, 2 {r:Ricchezza} e 1 {r:Cibo} (per giocatore): piazzare una nuova miniatura Menhir in questo Luogo e posizionate il suo Quadrante su [b]9[/b] (-1 per giocatore).\n\nSe non restano miniature sufficienti, prendetene una da un altro Luogo a vostra scelta.",
+   "contesto": "Luogo 106"
+  },
+  {
+   "chiave": "r:3407e0478e29",
+   "ruolo": "risultato",
+   "testo": "Rimuovete questa carta Luogo dal gioco e rimpiazzatela col[b] Luogo 123[/b].",
+   "contesto": "Luogo 106 verso 0, scelta: Se[b] avete[/b] lo status [b]“Venti dell’Anomalia”[/b], scegli questa opzione."
+  },
+  {
+   "chiave": "r:05a452a34d34",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado[/i]",
+   "contesto": "Luogo 106 verso 1, scelta: [b]Rimanere nei dintorni dei luoghi dove lavorano gli altri minatori[/b]"
+  },
+  {
+   "chiave": "r:ea83b22a6980",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado, sommare +1 per ogni punto del vostro  {i:courage}[/i]",
+   "contesto": "Luogo 106 verso 1, scelta: [b]Allontanarsi appena dalla zona attualmente esplorata[/b]"
+  },
+  {
+   "chiave": "q:190f6aa2dc99",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {i:energy} per membro della Compagnia[/i]",
+   "contesto": "Luogo 106 verso 1, scelta: [b]Camminare e non fermarsi finché non si trova qualcosa di interessante[/b]"
+  },
+  {
+   "chiave": "r:d51cd61c50ad",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado, sommare +2 per ogni\npunto del vostro {i:courage}[/i]",
+   "contesto": "Luogo 106 verso 1, scelta: [b]Camminare e non fermarsi finché non si trova qualcosa di interessante[/b]"
+  },
+  {
+   "chiave": "q:8dd405c55597",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 2 dello status [b]“Mistero Scottante”[/b][/i]",
+   "contesto": "Luogo 106 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:37ee0ee53103",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 1 {r:Esp}; poi, ottenete la parte 2 dello status[b] “Mistero Scottante”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 106 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "q:0d7deee92f62",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Richiede la carta Segreto [b]“Distruttore in Antico Acciaio”[/b] o 2 {i:aggression}",
+   "contesto": "Luogo 106 verso 3, scelta: [b]Tentare di sfondare il portone[/b]"
+  },
+  {
+   "chiave": "c:435aad490b94",
+   "ruolo": "condizione",
+   "testo": "Il risultato è stato",
+   "contesto": "Luogo 106 verso 4: "
+  },
+  {
+   "chiave": "r:4ccd7160d4b2",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare e risolvere un Incontro viola. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 106 verso 4, scelta: Il risultato è stato"
+  },
+  {
+   "chiave": "c:521ed6715b16",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 1",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:04ed76685d87",
+   "ruolo": "risultato",
+   "testo": "Vecchie ossa. Ceramiche rotte. Nulla di valore. [i]L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 1"
+  },
+  {
+   "chiave": "c:fe98d467b3ce",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 2",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:e0e3585de152",
+   "ruolo": "risultato",
+   "testo": "I minatori fuggono terrorizzati quando una bestia bizzarra fuoriesce dalla foschia. \n\nCiascun membro della Compagnia con 0 {i:aggression} perde 1 {i:health}.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 2"
+  },
+  {
+   "chiave": "c:ac13fd6e290c",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 3",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:9f17e629d105",
+   "ruolo": "risultato",
+   "testo": "Alcuni oggetti dei Predecessori che possono essere rivenduti. \n\nOttenete 1 {r:Ricchezza}.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 3"
+  },
+  {
+   "chiave": "c:92771fd62906",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 4",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:5f747ddacb36",
+   "ruolo": "risultato",
+   "testo": "Una fitta foschia vi circonda mentre un canto funebre in una lingua ignota vi penetra nella mente. \n\nCiascun membro della Compagnia ottiene 1 {i:terror}.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 4"
+  },
+  {
+   "chiave": "c:d7f6868f43cb",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 5",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:e941654c0d63",
+   "ruolo": "risultato",
+   "testo": "Vi ritrovate di fronte a una creatura da incubo, intenta a riposare in mezzo ai tumuli. \n\nPescare e risolvere un Incontro viola.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 5"
+  },
+  {
+   "chiave": "c:ca672893cc2f",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato 6+",
+   "contesto": "Luogo 106 verso 8: [i]Il risultato è stato:[/i]"
+  },
+  {
+   "chiave": "r:2e40942c9a48",
+   "ruolo": "risultato",
+   "testo": "Raggiungete il centro dei tumuli – e vi fermate, stupefatti.",
+   "contesto": "Luogo 106 verso 8, scelta: Il tuo risultato è stato 6+"
+  },
+  {
+   "chiave": "c:b92f50ebddf8",
+   "ruolo": "condizione",
+   "testo": "Verificare prima di ulteriore esplorazione",
+   "contesto": "Luogo 106 verso 9: Dopo un minuto di estenuante lavoro, avvertite un suono agghiacciante che si avvicina. Le vostre fatiche hanno attirato qualcosa che fareste meglio a evitare..."
+  },
+  {
+   "chiave": "r:5aa88fa74532",
+   "ruolo": "risultato",
+   "testo": "Ciascun membro della Compagnia ottiene 1 {r:Ricchezza}. Pescare due carte dal mazzo Incontri viola e risolvere quella dal valore più alto. Dopo, scegliere una tra:",
+   "contesto": "Luogo 106 verso 9, scelta: Verificare prima di ulteriore esplorazione"
+  },
+  {
+   "chiave": "q:7e534e6e9993",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto [b]“Distruttore in Antico Acciaio”[/b] o 2 {i:aggression}[/i]",
+   "contesto": "Luogo 106 verso 9, scelta: [b]Tentare di sfondare il portone[/b]"
+  },
+  {
+   "chiave": "c:383588833694",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la carta Segreto [b]11[/b]",
+   "contesto": "Luogo 106 verso 10: Quando colpite il portone, un acuto lamento vi lascia esterrefatti. Vi infilate dei pezzi di tessuto nelle orecchie e proseguite. Poco dopo, una crepa si forma "
+  },
+  {
+   "chiave": "r:191899ba751c",
+   "ruolo": "risultato",
+   "testo": "[i] Ciascun membro della Compagnia ottiene 1 {r:Magia} e la vostra Esplorazione termina.[/i]",
+   "contesto": "Luogo 106 verso 10, scelta: Se [b]avete[/b] la carta Segreto [b]11[/b]"
+  },
+  {
+   "chiave": "c:70604d9d4eed",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la carta Segreto [b]11[/b]",
+   "contesto": "Luogo 106 verso 10: Quando colpite il portone, un acuto lamento vi lascia esterrefatti. Vi infilate dei pezzi di tessuto nelle orecchie e proseguite. Poco dopo, una crepa si forma "
+  }
+ ]
+}

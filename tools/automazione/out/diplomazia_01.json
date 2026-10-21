@@ -1,0 +1,1612 @@
+{
+ "carte": {
+  "carte/verde_mazo_de_diplomacia_basico/33200.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33201.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33202.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora la Risposta dell'avversario"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33203.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33204.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33205.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33206.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33207.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33208.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33209.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": {
+      "tipo": "affinita",
+      "colore": "verde"
+     },
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33210.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33211.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33212.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33213.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 2 Cariche su una carta a scelta della Sequenza"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33214.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -3
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel passo di pesca di Fine del turno"
+      }
+     ],
+     "quando": "sempre"
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33100.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33101.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33102.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "affinita",
+      "colore": "verde"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33103.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "affinita",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "affinita",
+         "n": -1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33104.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_ultima"
+      }
+     ],
+     "quando": "dopo_attacco"
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33105.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33106.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Previeni 1 {i:discard}",
+         "effetti": [
+          {
+           "tipo": "manuale",
+           "testo": "Previeni 1 {i:discard}"
+          }
+         ]
+        },
+        {
+         "testo": "Previeni {i:arrowdown}",
+         "effetti": [
+          {
+           "tipo": "manuale",
+           "testo": "Previeni 1 {i:arrowdown}"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33107.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 2 Cariche su una carta a tua scelta della Sequenza"
+      }
+     ]
+    },
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33108.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ripeti",
+       "per": {
+        "chiavi": "empathy"
+       },
+       "effetti": [
+        {
+         "tipo": "affinita",
+         "n": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33109.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti 1 Carica su una carta a tua scelta della Sequenza"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33110.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33111.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Ogni volta che rimuovi {i:delay} da questa carta"
+     },
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1,
+       "chi": "scelto"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33112.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ogni effetto di {i:special} attivato da questa carta è raddoppiato"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33113.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "{i:arrowup} per ogni Chiave connessa di questa carta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33114.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Pesca 2 carte",
+         "effetti": [
+          {
+           "tipo": "pesca_carte",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "testo": "Passa subito a «Fine del turno»",
+         "effetti": [
+          {
+           "tipo": "manuale",
+           "testo": "Passa immediatamente alla fase di «Fine del turno»"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_diplomacia/33223.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "affinita",
+         "colore": "verde"
+        }
+       },
+       "allora": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_diplomacia/33222.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_diplomacia/33221.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_diplomacia/33220.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_diplomacia/33219.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33624.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33623.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33622.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33621.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33620.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Cibo: {i:arrowup}",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "cibo",
+           "n": 1,
+           "chi": "attivo"
+          },
+          {
+           "tipo": "affinita",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Non pagare",
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33619.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33618.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora tutte le {i:arrowdown} della Risposta"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_ultima"
+      }
+     ],
+     "quando": "dopo_attacco"
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33617.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33616.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_ultima"
+      }
+     ],
+     "quando": "ferite"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_diplomacia/33615.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 2
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33900.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "affinita",
+         "colore": "verde"
+        }
+       },
+       "allora": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ]
+      },
+      {
+       "tipo": "ripeti",
+       "per": {
+        "attributo": "practicality"
+       },
+       "effetti": [
+        {
+         "tipo": "cariche",
+         "n": 1
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "carta_aggiuntiva",
+       "n": 1
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33901.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza: {i:arrowup}{i:arrowup}",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1,
+           "chi": "attivo"
+          },
+          {
+           "tipo": "affinita",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "testo": "Scarta 1 Oggetto: {i:arrowup}{i:arrowup}",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta",
+           "n": 1
+          },
+          {
+           "tipo": "affinita",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "testo": "Non pagare",
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33902.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33903.webp": {
+   "capacita": [
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33904.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Previeni 1 {i:discard}"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33905.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      },
+      {
+       "tipo": "ripeti",
+       "per": {
+        "attributo": "practicality"
+       },
+       "effetti": [
+        {
+         "tipo": "affinita",
+         "n": 1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33906.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33907.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33908.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33909.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Questa carta viene scartata ({i:discard})"
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33910.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": -1
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33911.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora la Risposta dell'avversario"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_diplomacia/33912.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Carica: evita {i:arrowdown}",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": -1
+          },
+          {
+           "tipo": "manuale",
+           "testo": "Evita 1 {i:arrowdown}"
+          }
+         ]
+        },
+        {
+         "testo": "Paga 2 Cariche e 2 {i:energy}: termina l'Incontro senza Ricompensa né Fallimento",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": -2
+          },
+          {
+           "tipo": "paga",
+           "ris": "energia",
+           "n": 2,
+           "chi": "attivo"
+          },
+          {
+           "tipo": "fuga_nemico"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  }
+ }
+}

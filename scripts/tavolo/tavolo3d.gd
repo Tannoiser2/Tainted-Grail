@@ -20,6 +20,12 @@ var _pitch := deg_to_rad(58.0)
 var _dist := 13.0
 var _carte := {}          # numero -> MeshInstance3D
 var _mini := {}           # chiave -> Node3D (eroi, menhir, guardiani)
+
+## Miniature TTS dei Guardiani (nomi italiani delle carte -> nomi inglesi dei modelli).
+const MINI_GUARDIANI := {"Accolita Arciera": "Bowmaiden", "Beccomartello": "Hammerbeak", "Cavaliere Errante": "Knight Errant",
+	"Figlio del Wyrd": "Wyrdchild", "Folla Inferocita": "Angry Mob", "Orso Anomalo": "Wyrdbear", "Rivendicatore": "Reclaimer",
+	"Selkie": "Selkie", "Serpe del Sottobosco": "Underbrush Wyrm", "Uomo di Muschio": "Mulch Man", "Predecessore": "Fore-dweller",
+	"Massacro": "Unchained Warbeast"}
 var _evidenza := {}       # numero -> MeshInstance3D (cornice luminosa)
 var _trascina := false
 var _ruota := false
@@ -118,6 +124,20 @@ func aggiorna() -> void:
 		var pos := _centro_luogo(int(k)) + Vector3(-0.55, 0, -0.85)
 		_mini[chiave].position = pos
 		_etichetta_quadrante(_mini[chiave], int(menhir[k].get("quadrante", 0)))
+	# Guardiani
+	var gl := Partita.guardiani(partita)
+	var chiavi_g := []
+	for i in gl.size():
+		var g: Dictionary = gl[i]
+		var chiave_g := "guardiano:" + str(g["img"])
+		chiavi_g.append(chiave_g)
+		if not _mini.has(chiave_g):
+			_mini[chiave_g] = _crea_miniatura(MINI_GUARDIANI.get(Carte.nome(str(g["img"])), "Hooded Crow"), ALTEZZA_EROE * 1.25, Color("8a2be2") if str(g.get("colore", "")) == "viola" else (Color("4f8a3a") if str(g.get("colore", "")) == "verde" else Color("8c8c8c")))
+		_sposta(_mini[chiave_g], _centro_luogo(int(g["luogo"])) + Vector3(-0.5, 0, 0.45))
+	for k in _mini.keys():
+		if str(k).begins_with("guardiano:") and not chiavi_g.has(k):
+			_mini[k].queue_free()
+			_mini.erase(k)
 	# Personaggi: disposti in cerchio sul loro Luogo
 	var per_luogo := {}
 	for p in partita.personaggi():

@@ -1,0 +1,2047 @@
+{
+ "voci": {
+  "r:592d672a4f09": {
+   "effetti": []
+  },
+  "r:4caabaef9770": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:2e29da88ea54": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 99
+   }
+  },
+  "q:a85769031366": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Tesori Nascosti",
+    "parti": [
+     7
+    ]
+   }
+  },
+  "q:4e2e3bb938c1": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "attributo",
+      "attr": "courage",
+      "min": 1
+     },
+     {
+      "tipo": "oggetto",
+      "nome": "Kit dell’Avventuriero"
+     }
+    ]
+   }
+  },
+  "q:e4bb2332e11c": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia paga il quantitativo di Energia che desidera (annotare il totale speso dalla Compagnia)."
+    }
+   ]
+  },
+  "r:1be9c1829915": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Tirare un dado e aggiungere al risultato la somma di tutti i punti Energia spesi dalla Compagnia."
+    }
+   ]
+  },
+  "c:6084b37901be": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 7
+   }
+  },
+  "r:c546aac478bb": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "imposta",
+     "ris": "energia",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:9def22e5bd4c": {
+   "effetti": []
+  },
+  "q:66ec3250d3c2": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "3 Salute",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "salute",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "2 Salute e 1 Energia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "salute",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "1 Salute e 2 Energia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "salute",
+         "n": 1,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "3 Energia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "s:d39a94dd0b80": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: questo Luogo contiene un segreto che potrebbe essere difficile da trovare."
+    }
+   ]
+  },
+  "s:ad48918908e8": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 377
+    }
+   ]
+  },
+  "r:1553798194a9": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "spirituality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:d32083e3cf17": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Profondo Segreto",
+      "parti": []
+     },
+     {
+      "non": {
+       "tipo": "segreto",
+       "n": 3
+      }
+     }
+    ]
+   }
+  },
+  "r:6e224fc32311": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:7ab56bb0de8f": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia paga da 0 fino a 4 Energia (annotare quanto ha pagato ciascuno: le opzioni seguenti dipendono da questo)."
+    }
+   ]
+  },
+  "r:4015021adc3a": {
+   "effetti": []
+  },
+  "r:78c1c96b67d1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:58df45cc5a43": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:e4cfbc6e53a3": {
+   "effetti": []
+  },
+  "r:80c7ed25d351": {
+   "effetti": []
+  },
+  "q:1e4329201b77": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 2
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "min": 2,
+      "chi": "ognuno"
+     }
+    ]
+   },
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "attributo",
+       "attr": "caution",
+       "min": 2
+      }
+     },
+     "allora": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "c:43e77015daa8": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "q:d23b058ecc19": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 3
+   }
+  },
+  "r:501218dba775": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:489c9a4ba016": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 5
+   }
+  },
+  "r:8882751d12a0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:77b902bb44c9": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1
+    }
+   ]
+  },
+  "c:39406a12f241": {
+   "condizione": {
+    "non": {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "min": 1,
+     "chi": "compagnia"
+    }
+   }
+  },
+  "r:bed64f32dfa4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:7f1d7f9380aa": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "min": 1,
+      "chi": "compagnia"
+     },
+     {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "min": 1,
+       "chi": "ognuno"
+      }
+     }
+    ]
+   }
+  },
+  "r:4657c0d1f7de": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "L’Esplorazione termina per i membri con 0 Energia; ogni membro della Compagnia con più di 0 Energia può continuare."
+    }
+   ]
+  },
+  "c:434950f4e0fa": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "energia",
+    "min": 1,
+    "chi": "ognuno"
+   }
+  },
+  "r:aa8edb98777b": {
+   "effetti": []
+  },
+  "v:661": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "q:33c1842337ea": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "r:fe1afcd9cd6c": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ]
+  },
+  "q:d9b40abfdf4b": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 2,
+    "a": 3
+   }
+  },
+  "r:200dcb6ec202": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:95ca9bdf46fd": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 99
+   }
+  },
+  "r:d033e67b563d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:f6ce1d6c6db6": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Amate Proprietà",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Aggiungere 1 spunta allo status “Qualcuno Sta Osservando”."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: riportare a Morgana le sue proprietà per concludere il Capitolo."
+    }
+   ]
+  },
+  "q:655ce8f707fe": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Incarico di Morgana",
+      "parti": []
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Amate Proprietà",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "r:8df3aaa5258c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Profondo Segreto",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:1ca5b6af80a1": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Profondo Segreto",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:0b95cdbed8a2": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Venti dell’Anomalia",
+        "parti": []
+       }
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 5
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     },
+     {
+      "tipo": "nota",
+      "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+     }
+    ]
+   }
+  },
+  "r:548ddc6fa502": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    },
+    {
+     "tipo": "diario",
+     "luogo": 152
+    }
+   ]
+  },
+  "q:0b090579b988": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:af28a13beece": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Alleati di Avalon",
+      "parti": [
+       4
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Nemici di Avalon",
+       "parti": [
+        3
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:fbf894ccf284": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Alleati di Avalon",
+      "parti": [
+       5
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Nemici di Avalon",
+       "parti": [
+        1
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:22b7aabd6c80": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Alleati di Avalon",
+      "parti": [
+       3
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Nemici di Avalon",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:8fa80fb760d5": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:59af187186ff": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     4
+    ]
+   }
+  },
+  "q:36f43dcc7944": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "q:0b7f2ac8145e": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:30b908385283": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intrigo ad Halfway",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:5d0ac9f03521": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:4fcb09d06502": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ospite d’Onore",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:f0fd9f5fa93d": {
+   "costo": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:799bf985a027": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intrigo ad Halfway",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:07f80780e87e": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:6b3314185d72": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:33ae5de6b7d9": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     4
+    ]
+   }
+  },
+  "r:615d50f3a43d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      3,
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:cff9d97867e8": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "r:d5366b50e008": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      2,
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:0bd8a1ad1b30": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "r:4594ee3968ef": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      2,
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:f46dcead591d": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Intrigo ad Halfway",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:75b424f17a26": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:543bfb659ada": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Intrigo ad Halfway",
+    "parti": [
+     1
+    ]
+   }
+  },
+  "q:7f9f8e767cb4": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Intrigo ad Halfway",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "q:d1187eb5d610": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Alleati di Avalon",
+    "parti": [
+     3
+    ]
+   }
+  },
+  "q:23fc4f3cf387": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Intrigo ad Halfway",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "r:cac2cb6040bb": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nuova_giornata"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:aad32ca39d44": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nuova_giornata"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:d5607096d661": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Sconfitti e Caduti",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nuova_giornata"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:73b0a7e9b29f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "q:1a040a646977": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Intrigo ad Halfway",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "r:2e06c4e7626c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 73,
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:c074d4d6f38f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ospite d’Onore",
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:b0d3abb5993d": {
+   "effetti": [
+    {
+     "tipo": "evento",
+     "azione": "risolvi_parte",
+     "capitolo": 4,
+     "parte": 4,
+     "lettera": "B"
+    },
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 152
+    }
+   ]
+  },
+  "r:ac769426cbe4": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Banda Armata",
+     "livello": 4
+    }
+   ]
+  },
+  "v:681": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      },
+      {
+       "attr": "empathy",
+       "per": 1
+      },
+      {
+       "ris": "rep",
+       "per": 0.2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:0ab2654812c3": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 6
+   }
+  },
+  "r:82380377a6ef": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -8,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:56c0554331c2": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "s:a484584f3cb9": {
+   "effetti": []
+  },
+  "s:62a9159e5b2a": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "q:fb183948b8cd": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "arev"
+   }
+  },
+  "q:306a3c823c09": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 3,
+      "a": 3
+     },
+     {
+      "tipo": "status",
+      "nome": "Guerra di Avalon",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "q:a5561798c826": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Diplomatico",
+    "parti": [],
+    "almeno": 1
+   }
+  },
+  "q:8dbc15fcc871": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Se Cautela + Praticità (i valori più alti della Compagnia) danno 3 o meno"
+   }
+  },
+  "q:9932cd58677c": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Se Cautela + Praticità (i valori più alti della Compagnia) danno 4 o più"
+   }
+  },
+  "r:484d510be26c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:8cf643300c2a": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 16
+    }
+   }
+  },
+  "r:380fb236e882": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 16,
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Nemici di Avalon",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: consegnare la testa a Dama Kincaid a Farshire."
+    }
+   ]
+  },
+  "q:3e181f4af736": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:3e3ad164fed0": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "salute",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:5d47b2a7d852": {
+   "costo": [
+    {
+     "tipo": "oggetto",
+     "modo": "scarta",
+     "n": 1
+    },
+    {
+     "tipo": "paga",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "salute",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:b2b49fb95384": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Potete pagare 1 Ricchezza per ottenere 1 Cibo, tutte le volte che volete."
+    }
+   ]
+  },
+  "r:177d19beb38b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    }
+   ]
+  },
+  "q:63ebc4e35a58": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Guerra di Avalon",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "c:0c69102e0828": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:18d0a0c6a176": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Richiede il consenso di tutti i giocatori (potrebbe comportare la fine del Capitolo)"
+   }
+  },
+  "r:5fcea2fb57ad": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Apripista",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: entrare a Camelot Assediata (195) e recuperare i volumi O aiutare una delle altre potenze di Avalon."
+    }
+   ]
+  },
+  "r:1a1b39aa292f": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 165
+    },
+    {
+     "tipo": "diario",
+     "luogo": 165
+    }
+   ]
+  },
+  "c:b6fd76c6b05a": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:1b10a765a37b": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Se Aggressività + Empatia + Rep è 9 o superiore"
+   }
+  },
+  "r:1355ce54d6ae": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:ae52542fffc3": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:296b12193699": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:e86e27814ab2": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "q:c7c6ca8da591": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "r:28e1e3337964": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia perde 8 Salute, ridotti di 1 per ogni punto della sua Aggressività; ogni membro della Compagnia ottiene 6 Terrore, ridotti di 1 per ogni punto del suo Coraggio."
+    }
+   ]
+  },
+  "s:980869b1294b": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:b7590949e1c0": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "q:053b089da497": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 33
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultimo Rifugio",
+      "parti": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  "q:f4aba6971e70": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:8985ede9d6a0": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "spirituality",
+    "min": 3
+   }
+  },
+  "q:93580d9072c0": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:97c9285016e3": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:467a7d52d60c": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "r:ed7d0a5c9dc4": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "v:714": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "r:cd9c7cfb8eea": {
+   "effetti": []
+  },
+  "r:c98a916001f2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:c83169012a27": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:a49eed8d66f0": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 6
+   }
+  },
+  "r:68fdef4a1142": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1
+    },
+    {
+     "tipo": "manuale",
+     "testo": "L’Oggetto ottenuto non deve essere un Compagno (rimetti i Compagni e pesca ancora)."
+    }
+   ]
+  },
+  "v:715": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia tira un dado e somma la sua Cautela: ogni membro il cui risultato è inferiore a 5 perde 2 Salute."
+    }
+   ]
+  },
+  "q:f335db77912a": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Pagare 3 Energia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "Scartare l’Oggetto “Rete da Pesca”",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "nome": "Rete da Pesca"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:3a92563d5dfb": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:3b3b4f8c29c8": {
+   "costo": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia paga 4 Energia, ridotti di 1 per ogni punto della sua Aggressività."
+    }
+   ]
+  },
+  "q:8226214ad469": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:c4f4c4a3830e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:19775d89eb34": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:37037289ce33": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Ultimo Rifugio",
+    "parti": [
+     1
+    ]
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:5d6053297717": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Indizi di Farpoint",
+    "parti": [],
+    "almeno": 1
+   }
+  },
+  "r:22edb490cfa0": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Indizi di Farpoint",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:1b6bdbd227e8": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:b33c8a2bb881": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultimo Rifugio",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:cc5a1f5a8dc6": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "practicality",
+    "min": 3
+   }
+  },
+  "q:5f4c38552025": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:93fb8fdf4994": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "parti_status": "Indizi di Farpoint",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:24bcd9c6a17e": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 6
+   }
+  },
+  "r:738597b97258": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:d7e98510d0e0": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 7,
+    "a": 99
+   }
+  },
+  "r:c19cad667144": {
+   "effetti": []
+  },
+  "r:80f7901c9d2f": {
+   "effetti": []
+  },
+  "q:a91253ab786e": {
+   "condizione": {
+    "tipo": "tutti_personaggi"
+   }
+  },
+  "s:3eea4f501152": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "gettoni_cerca",
+      "min": 4,
+      "luogo": "qui"
+     },
+     "allora": [
+      {
+       "tipo": "diario",
+       "luogo": 999,
+       "verso": 734
+      }
+     ]
+    }
+   ]
+  },
+  "q:98e57935ad57": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 15,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "r:ee7d91311abe": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1,
+     "luogo": "qui"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: fare ritorno da Corbenic potrebbe essere ancora più difficile che trovarla!"
+    }
+   ]
+  },
+  "r:0e33a0635968": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": 1,
+     "luogo": "qui"
+    }
+   ]
+  },
+  "r:7839b3a2302b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia con meno di 5 Magia ottiene 1 Magia."
+    }
+   ]
+  }
+ }
+}

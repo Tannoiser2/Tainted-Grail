@@ -1,0 +1,1945 @@
+{
+ "voci": {
+  "r:ba015870a7be": {
+   "effetti": []
+  },
+  "r:9ca8b21eb590": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      9
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "segreto",
+     "n": 33,
+     "rimuovi": false,
+     "nome": "Coloni Speranzosi"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: guidare queste persone in uno dei luoghi sicuri di Avalon."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: non metteteci troppo! La loro fiducia svanirà rapidamente."
+    }
+   ]
+  },
+  "q:ac2fa48f2925": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "La carta Segreto 14 deve trovarsi su questo Luogo"
+   }
+  },
+  "q:62804eaa639c": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Sconfitti e Caduti",
+       "parti": [
+        1
+       ]
+      }
+     },
+     {
+      "tipo": "capitolo",
+      "da": 15,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "q:d296065066ff": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 2
+   }
+  },
+  "r:2b0150549d3e": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia con 0 Cautela ottiene 1 Terrore."
+    }
+   ]
+  },
+  "r:dc224176da1c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:18659d583c06": {
+   "effetti": []
+  },
+  "q:22ff429f87fa": {
+   "costo": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:7984f93faf13": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      8
+     ]
+    }
+   }
+  },
+  "r:1a55fe92757c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:7203656c45ee": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "s:f367a96a36e3": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Venti dell’Anomalia",
+        "parti": []
+       }
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 6,
+    "meno_per_giocatore": false,
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 3,
+       "a": 3
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 5
+       }
+      ]
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "giocatori",
+       "da": 4,
+       "a": 4
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "menhir_qui",
+        "valore": 4
+       }
+      ]
+     },
+     {
+      "tipo": "nota",
+      "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+     }
+    ]
+   }
+  },
+  "q:f0d602592b6a": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Guerra di Avalon",
+    "parti": []
+   }
+  },
+  "q:9193542ea45c": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:ef4b7d43e949": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "niamh"
+   }
+  },
+  "q:439f3e9c0b45": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 2
+   }
+  },
+  "v:543": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 0.5
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:1b1327c654bc": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "r:9e5bcbc5a4c6": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "blu"
+    }
+   ]
+  },
+  "c:4fe449eaad11": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 2,
+    "a": 3
+   }
+  },
+  "r:a547abbb0ec5": {
+   "effetti": []
+  },
+  "c:a42c37c2605f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 5
+   }
+  },
+  "r:d7913038d5f2": {
+   "effetti": []
+  },
+  "c:8f81b5dbbb7f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 99
+   }
+  },
+  "r:30a0d686b265": {
+   "effetti": []
+  },
+  "q:ea9bf44a6b45": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Strani Incontri",
+     "parti": [
+      8
+     ]
+    }
+   }
+  },
+  "q:2136121518a3": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:75bdd6dc3ce0": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 9,
+     "rimuovi": false,
+     "nome": "Informazione Delicata"
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:c3051f89c593": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 9,
+     "rimuovi": false,
+     "nome": "Informazione Delicata"
+    }
+   ]
+  },
+  "q:e207023fa8de": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 66
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 5,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:1cd7487fece8": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Vendete un qualsiasi numero di Cibo: ottenete 1 Ricchezza per ogni Cibo venduto."
+    }
+   ]
+  },
+  "q:f1b2b5969460": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:94dd30bf030a": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:08adfec8c7a4": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Vendete un qualsiasi numero di Oggetti (scartandoli): ottenete 1 Ricchezza per ognuno di essi."
+    }
+   ]
+  },
+  "r:8784fa8a8f2b": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:eecb4b2b0737": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:146792c1450e": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "v:548": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "empathy",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:1b38ce79b9d4": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 2
+   }
+  },
+  "r:6964b9021507": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Pagare 1 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "Ogni membro della Compagnia ottiene 1 Terrore",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": 1,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "c:e8a0d3f62311": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 3,
+    "a": 4
+   }
+  },
+  "r:eceb7ff15d0e": {
+   "effetti": []
+  },
+  "c:76339b5d5d06": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 99
+   }
+  },
+  "r:58d8d70d9900": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:409c3510aabe": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:c7070948fac6": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: il sottosuolo del Fernsea nasconde molti segreti. Forse questo sogno potrebbe guidarvi per la giusta via?"
+    }
+   ]
+  },
+  "q:bb86d944d5aa": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "courage",
+    "min": 1
+   }
+  },
+  "q:fb67367ae1a9": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Underfern",
+    "parti": [],
+    "almeno": 1
+   }
+  },
+  "q:ff9d99e59392": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "Se il Quadrante Aria arriva a 0"
+   }
+  },
+  "r:6bbbdc91ca79": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:4d981ce3d660": {
+   "effetti": []
+  },
+  "v:552": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:741c9c459cb8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:e31d1ff43010": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:35a7cd227f1f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 7
+   }
+  },
+  "r:65cf6d990216": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:ef612936b5a0": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 8,
+    "a": 99
+   }
+  },
+  "r:383b0bc03c80": {
+   "effetti": []
+  },
+  "r:d835db3d0c76": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:0013ec581723": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:98c7c04bc1ac": {
+   "effetti": []
+  },
+  "r:1eab47a0453b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:6c82c4b37bc5": {
+   "effetti": []
+  },
+  "q:68ff3d6885dd": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 22
+    }
+   }
+  },
+  "q:c8cf4e1cf870": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 22
+   }
+  },
+  "r:c331916e10e7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:fe11033136e9": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "ailei"
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:bbf87a51b066": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "nome": "Foglie del Viandante"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Se l’Oggetto “Foglie del Viandante” non è disponibile, ottenete invece 1 Cibo."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:2affa303b119": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:53b0d1d08d8b": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "maggot"
+   },
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:616fce4e2c70": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:ba80d955e626": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Abbassare il Quadrante Aria di 1 (solo se è a 2 o più)."
+    },
+    {
+     "tipo": "incontro",
+     "colore": "blu",
+     "nome": "Enigmista"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:9132b59b760b": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:ea821c47e560": {
+   "effetti": []
+  },
+  "r:35068001786f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:6a74a5284518": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 4
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:4509deee3429": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:abf5745e9d4b": {
+   "effetti": []
+  },
+  "r:2599391898c2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:1d44ee96ec08": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "q:88e0312f36fc": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   },
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ]
+  },
+  "r:9b71b511d747": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:70f20bad1c97": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:4b101395066d": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:75d151e1f879": {
+   "effetti": []
+  },
+  "q:048335e8645e": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "r:af928d0581e7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Underfern",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:b87a9edf5b0a": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 4
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:4c7fec1cab37": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:715ef7aede50": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:ccac88c9dec4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 5,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -3,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "s:8f6245e5f54b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:d5d7e2dec594": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "attivo"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "v:601": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "c:356a192b7913": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "r:6284930c5ed2": {
+   "effetti": []
+  },
+  "c:da4b9237bacc": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 2,
+    "a": 2
+   }
+  },
+  "r:9e357de88e11": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia perde 3 Salute, ridotti di 1 per ogni punto di Cautela che ha (minimo 0)."
+    }
+   ]
+  },
+  "c:77de68daecd8": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 3,
+    "a": 3
+   }
+  },
+  "r:c3bc62aa90c2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:1b6453892473": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 4
+   }
+  },
+  "r:9d96250e6f80": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:ac3478d69a3c": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 5
+   }
+  },
+  "r:5a57dbf0be4f": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Cavaliere Errante",
+     "livello": 3
+    }
+   ]
+  },
+  "c:c1dfd96eea8c": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 6
+   }
+  },
+  "q:50435504feac": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      3
+     ]
+    }
+   }
+  },
+  "r:df9743f04ef9": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Gli Oggetti pescati non devono essere Compagni (rimetti i Compagni e pesca ancora)."
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:c7a5a22acfe4": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: trovare un modo per convincere i due cavalieri a parlare."
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:19e582f7f11c": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "capitolo",
+      "da": 4,
+      "a": 4,
+      "lettera": "A"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 2
+     }
+    ]
+   }
+  },
+  "q:47f82be3b943": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 95
+   }
+  },
+  "q:2bc796383ae3": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Caduta della Cavalleria",
+       "parti": [
+        3
+       ]
+      }
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ripristinare l’Ordine",
+       "parti": [
+        3
+       ]
+      }
+     },
+     {
+      "tipo": "status",
+      "nome": "Informazioni Inquietanti",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  "q:2ceeaca1e902": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "paga",
+     "ris": "rep",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:4f19757144a2": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "rep",
+    "min": 8,
+    "chi": "compagnia"
+   }
+  },
+  "q:d11ccb98d3f4": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Ripristinare l’Ordine",
+    "parti": [],
+    "almeno": 3
+   }
+  },
+  "q:7a4416863247": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 2
+     }
+    ]
+   }
+  },
+  "r:439272d21f00": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:1cbbd535938b": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:38e4d8f54fb2": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "spirituality"
+     }
+    },
+    {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:b15eecab1bb6": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 95,
+     "rimuovi": true
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:1407a4b04195": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 78
+     },
+     {
+      "tipo": "capitolo",
+      "da": 14,
+      "a": 15
+     }
+    ]
+   }
+  },
+  "q:d4076fe18e35": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni membro della Compagnia con almeno 2 Spiritualità ottiene 1 Terrore."
+    }
+   ]
+  },
+  "r:5e104c735804": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "s:5db9851606d7": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 3,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   }
+  },
+  "c:e45cd4fae472": {
+   "condizione": {
+    "tipo": "giocatori",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "c:f7826690aabd": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "aggression",
+      "min": 3
+     },
+     {
+      "tipo": "attributo",
+      "attr": "practicality",
+      "min": 3
+     }
+    ]
+   }
+  },
+  "c:38b8beffd9f1": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "courage",
+      "min": 3
+     },
+     {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 3
+     }
+    ]
+   }
+  },
+  "c:7ff2555cf730": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 3
+     },
+     {
+      "tipo": "attributo",
+      "attr": "caution",
+      "min": 3
+     }
+    ]
+   }
+  },
+  "c:9baa799725d7": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Segreti della Foresta",
+    "parti": [],
+    "almeno": 2
+   }
+  },
+  "c:44b26ab8607d": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Segreti della Foresta",
+    "parti": [],
+    "almeno": 3
+   }
+  },
+  "c:3b7d53034747": {
+   "condizione": {
+    "tipo": "altrimenti"
+   }
+  },
+  "q:cbefd8d0f3dc": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Segreti della Foresta",
+     "parti": [
+      4
+     ]
+    }
+   }
+  },
+  "r:f3faf63c04ad": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Segreti della Foresta",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:a34f4bbe3dd8": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:15ebc5e31cde": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "ailei"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultima Lezione",
+       "parti": [
+        1
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "q:64ba20fabb98": {
+   "condizione": {
+    "tipo": "capitolo",
+    "da": 4,
+    "a": 4,
+    "lettera": "A"
+   }
+  },
+  "q:cb78a5138007": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Informazioni Inquietanti",
+    "parti": [
+     2
+    ]
+   }
+  },
+  "r:4ad27d5dd782": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Segreti della Foresta",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:09b1d4e3b8a3": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Pagare 1 Energia per ottenere l’Oggetto “Gesso Rituale” (se disponibile)",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "oggetto",
+         "modo": "nome",
+         "nome": "Gesso Rituale"
+        }
+       ]
+      },
+      {
+       "testo": "Non pagare",
+       "effetti": []
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Segreti della Foresta",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:18e3c94e0475": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:6b492273db7b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Segreti della Foresta",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:9a655da10990": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Ailei ottiene 1 Spiritualità",
+       "effetti": [
+        {
+         "tipo": "attributo",
+         "attr": "spirituality",
+         "n": 1,
+         "chi": "scelto"
+        }
+       ]
+      },
+      {
+       "testo": "Ailei ottiene 1 Coraggio",
+       "effetti": [
+        {
+         "tipo": "attributo",
+         "attr": "courage",
+         "n": 1,
+         "chi": "scelto"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:0cdefb5733b2": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "personaggio",
+      "id": "ailei"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Ultima Lezione",
+       "parti": [
+        1
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "r:1b456f6d7409": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      2,
+      3,
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:d19e3eb4d783": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      2,
+      3,
+      4
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:4a7e0c1bbb14": {
+   "effetti": [
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 5
+    }
+   ]
+  },
+  "r:0ade3580b550": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "prepara",
+     "n": 162,
+     "lato": "destro"
+    },
+    {
+     "tipo": "muovi",
+     "dove": 162,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: Corbenic non è collegata al resto di Avalon da alcun percorso fisico. È impossibile uscirne con una normale Azione Viaggiare!"
+    }
+   ]
+  },
+  "q:3afa1185c620": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Venti dell’Anomalia",
+      "parti": []
+     },
+     {
+      "tipo": "menhir_qui",
+      "attivo": true
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Quadrante del Menhir di questo Luogo è almeno su 2"
+     }
+    ]
+   }
+  },
+  "r:0cf8e15c3246": {
+   "effetti": []
+  },
+  "r:65db99348453": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: la Foresta dei Sussurri rivela i suoi segreti solo agli eroi leggendari – potreste dovervi far ritorno più avanti!"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "min": 3,
+       "chi": "totale"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1,
+       "chi": "diviso"
+      }
+     ]
+    }
+   ]
+  },
+  "q:99533d5b247e": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Venti dell’Anomalia",
+    "parti": []
+   }
+  },
+  "r:1d4bcede27b7": {
+   "effetti": []
+  },
+  "q:9d59c08878d8": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "capitolo",
+      "da": 6,
+      "a": 7
+     }
+    ]
+   }
+  },
+  "q:a1bafe730196": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "caution",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:1500874cfb3f": {
+   "condizione": {
+    "tipo": "oggetto",
+    "nome": "Kit dell’Avventuriero"
+   }
+  },
+  "r:ccd402975591": {
+   "effetti": []
+  }
+ }
+}

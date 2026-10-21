@@ -1,0 +1,1171 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/34912.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Ventisca rugiente",
+    "it": "Bufera ruggente"
+   },
+   "testo": {
+    "es": "Al Descansar, no restauras {i:health} ni pierdes {i:terror}.\n[i]Los infernales lamentos y gemidos no dejarán descansar a nadie esta noche.[/i]",
+    "it": "Quando Riposi, non recuperi {i:health} né perdi {i:terror}.\n[i]Gli infernali lamenti e gemiti non lasceranno riposare nessuno stanotte.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "riposo": "nessun recupero di Salute né perdita di Terrore"
+   }
+  },
+  {
+   "img": "carte/mazzo/34913.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Lluvia torrencial",
+    "it": "Pioggia torrenziale"
+   },
+   "testo": {
+    "es": "Cada Viaje cuesta 1 de {i:energy} adicional.\n[i]Cada riachuelo se convierte en un río caudaloso, cada colina en una cascada.[/i]",
+    "it": "Ogni Viaggio costa 1 {i:energy} aggiuntiva.\n[i]Ogni ruscello diventa un fiume in piena, ogni collina una cascata.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "viaggio_costo_extra": {
+     "energy": 1
+    }
+   },
+   "copie_img": [
+    "carte/mazzo/34914.webp"
+   ]
+  },
+  {
+   "img": "carte/mazzo/34915.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "copie_img": [
+    "carte/mazzo/34916.webp",
+    "carte/mazzo/34917.webp",
+    "carte/mazzo/34918.webp",
+    "carte/mazzo/34919.webp",
+    "carte/mazzo/34920.webp",
+    "carte/mazzo/34921.webp"
+   ]
+  },
+  {
+   "img": "carte/mazzo/35000.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "A",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[b]Si tienes la carta de Secreto 13, sustituye este Evento por el Evento especial B y resuélvelo de inmediato.[/b]\n[i]A medida que te enfrentas a los peligros de Ávalon y empiezas a influir en el devenir de la isla, tus acciones comienzan a llamar la atención de varias entidades poderosas. No todas son amistosas.[/i]\n[b]Obtén 1 parte del Estado «Algo te observa».[/b]\nSi tienes las 4 partes, busca y resuelve el Evento especial C de inmediato.\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\n[b]Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[b]Se hai la carta Segreto 13, sostituisci questo Evento con l'Evento Speciale B e risolvilo immediatamente.[/b]\n[i]Man mano che affronti i pericoli di Avalon e cominci a influire sul destino dell'isola, le tue azioni iniziano ad attirare l'attenzione di varie entità potenti. Non tutte sono amichevoli.[/i]\n[b]Ottieni 1 parte dello status «Qualcuno Sta Osservando».[/b]\nSe hai tutte e 4 le parti, cerca e risolvi immediatamente l'Evento Speciale C.\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\n[b]Poi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial A",
+     "it": "Evento — Speciale A"
+    },
+    "lettera": "A",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35001.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "B",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]El tiempo pasa mientras Ávalon se sumerge cada vez más profundamente en el caos.[/i]\n[b]Cada personaje obtiene 1 de {i:terror}.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\nDespués, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.",
+    "it": "[i]Il tempo passa mentre Avalon sprofonda sempre più nel caos.[/i]\n[b]Ogni personaggio ottiene 1 {i:terror}.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\nPoi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita)."
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial B",
+     "it": "Evento — Speciale B"
+    },
+    "lettera": "B",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35002.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "C",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Te despierta un frío repentino y una sensación de miedo indescriptible. Entonces, ves ESO. Una figura corpulenta se dirige hacia ti, con una velocidad inimaginable en algo de semejante tamaño. Al principio, lo confundes con un semigigante o un guerrero que haya crecido por métodos antinaturales. Entonces te fijas en el casco de tres ojos y los dos pares de brazos que blanden armas que nunca habías visto antes....[/i]\n[b]¡CORRE POR TU VIDA![/b]\nColoca una [b]miniatura de Primer Morador[/b] en la Localización con el mayor número de personajes. Si no existe tal Localización, colócala en la Localización del personaje con el número de personaje más alto.\n[b]Pon el Evento especial B encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]\nAhora, ve al Versículo 13 del Libro de los Secretos.",
+    "it": "[i]Ti sveglia un freddo improvviso e una sensazione di paura indescrivibile. Poi vedi QUELLO. Una figura massiccia si dirige verso di te, con una velocità inimmaginabile per qualcosa di tali dimensioni. All'inizio la scambi per un mezzo gigante o per un guerriero cresciuto con metodi innaturali. Poi noti l'elmo a tre occhi e le due paia di braccia che brandiscono armi mai viste prima...[/i]\n[b]CORRI PER LA TUA VITA![/b]\nColloca una [b]miniatura del Predecessore[/b] nel Luogo con il maggior numero di personaggi. Se tale Luogo non esiste, collocala nel Luogo del personaggio con il numero di personaggio più alto.\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Poi metti sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]\nOra vai al verso 13 del Libro dei Segreti."
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "versi": [
+    {
+     "libro": "segreti",
+     "verso": 13
+    }
+   ],
+   "miniatura": {
+    "es": "Primer Morador",
+    "it": "Predecessore",
+    "luogo": "Luogo con più personaggi; altrimenti Luogo del personaggio col numero più alto"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial C",
+     "it": "Evento — Speciale C"
+    },
+    "lettera": "C",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35003.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "D",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Comienzas a perder el control de tu cuerpo, deformado por el efecto corruptor de la Rareza.[/i]\n[b]Cada personaje pierde 1 punto en el Atributo que elija.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\nDespués, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.",
+    "it": "[i]Cominci a perdere il controllo del tuo corpo, deformato dall'effetto corruttore dell'Anomalia.[/i]\n[b]Ogni personaggio perde 1 punto nell'Attributo che preferisce.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\nPoi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita)."
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial D",
+     "it": "Evento — Speciale D"
+    },
+    "lettera": "D",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35004.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "E",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Un grupo tan grande como el tuyo atrae mucha atención no deseada...[/i]\n[b]Guardián:[/b] Lanza un dial.\n[b]Grial:[/b] Pon el Encuentro verde «Sierpe de la Maleza» en la Localización revelada con el número más bajo. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Calavera:[/b] Pon el Encuentro púrpura «Reconquistador» en la Localización revelada con el número más alto. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[i]Un gruppo grande come il tuo attira molta attenzione indesiderata...[/i]\n[b]Guardiano:[/b] Lancia un Quadrante.\n[b]Graal:[/b] Metti l'Incontro verde «Serpe del Sottobosco» nel Luogo rivelato con il numero più basso. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Teschio:[/b] Metti l'Incontro viola «Rivendicatore» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti 7 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "guardiano_quadrante": {
+    "grail": {
+     "incontro": {
+      "colore": "verde",
+      "es": "Sierpe de la Maleza",
+      "it": "Serpe del Sottobosco"
+     },
+     "luogo": "Luogo rivelato con il numero più basso",
+     "se_personaggi": "Incontro immediato"
+    },
+    "skull": {
+     "incontro": {
+      "colore": "viola",
+      "es": "Reconquistador",
+      "it": "Rivendicatore"
+     },
+     "luogo": "Luogo rivelato con il numero più alto",
+     "se_personaggi": "Incontro immediato"
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial E",
+     "it": "Evento — Speciale E"
+    },
+    "lettera": "E",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35005.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "F",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Un grupo tan grande como el tuyo atrae mucha atención no deseada...[/i]\n[b]Guardián:[/b] Lanza un dial.\n[b]Grial:[/b] Pon el Encuentro gris «Turba Enfurecida» en la Localización revelada con el número más alto. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Calavera:[/b] Pon el Encuentro gris «Caballero Errante» en la Localización del personaje con el número de personaje más alto.\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[i]Un gruppo grande come il tuo attira molta attenzione indesiderata...[/i]\n[b]Guardiano:[/b] Lancia un Quadrante.\n[b]Graal:[/b] Metti l'Incontro grigio «Folla Inferocita» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Teschio:[/b] Metti l'Incontro grigio «Cavaliere Errante» nel Luogo del personaggio con il numero di personaggio più alto.\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti 6 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   },
+   "guardiano_quadrante": {
+    "grail": {
+     "incontro": {
+      "colore": "grigio",
+      "es": "Turba Enfurecida",
+      "it": "Folla Inferocita"
+     },
+     "luogo": "Luogo rivelato con il numero più alto",
+     "se_personaggi": "Incontro immediato"
+    },
+    "skull": {
+     "incontro": {
+      "colore": "grigio",
+      "es": "Caballero Errante",
+      "it": "Cavaliere Errante"
+     },
+     "luogo": "Luogo del personaggio con il numero di personaggio più alto"
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial F",
+     "it": "Evento — Speciale F"
+    },
+    "lettera": "F",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35006.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "G",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]¡Ya no reconoces esta isla! Los viejos senderos han desaparecido. No se puede confiar en los mapas, ni tampoco en los recuerdos. La Rareza está por todas partes, y abrirte paso a través de su masa retorcida es casi tan agotador como lo fue tu viaje a Tuathán.[/i]\n[b]Cada personaje obtiene 2 de {i:terror} y pierde 1 de {i:health}.[/b]\n[b]Tira un dado por cada Menhir activo. Si el resultado es 5 o 6, reduce el dial de dicho Menhir en 1.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[i]Non riconosci più quest'isola! I vecchi sentieri sono scomparsi. Non ci si può fidare delle mappe, e nemmeno dei ricordi. L'Anomalia è ovunque, e aprirsi un varco nella sua massa contorta è stancante quasi quanto lo è stato il tuo viaggio a Tuathan.[/i]\n[b]Ogni personaggio ottiene 2 {i:terror} e perde 1 {i:health}.[/b]\n[b]Tira un dado per ogni Menhir attivo. Se il risultato è 5 o 6, riduci di 1 il Quadrante di quel Menhir.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti sopra di essa 6 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   },
+   "menhir": {
+    "per_ogni_menhir_attivo": "tira un dado; con 5-6 riduci il Quadrante di 1"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial G",
+     "it": "Evento — Speciale G"
+    },
+    "lettera": "G",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35007.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "H",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Una mañana te preparas para salir del campamento, cuando una mujer baja y corpulenta corre en tu busca. Jadeando, explica que su carromato fue atacado por una criatura de la Rareza, no muy lejos de aquí. Sus hijos están atrapados. Te ruega que la ayudes.[/i]\n[b]Preparación adicional:[/b] Pon un Encuentro verde «Oso de la Rareza» en la Localización revelada con el número más bajo que esté adyacente a un personaje, y pon allí 1 ficha de Tiempo. El Oso permanecerá allí hasta el próximo Comienzo del Día.\n[b]Pon el Evento especial A encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Una mattina, mentre ti prepari a lasciare l'accampamento, una donna bassa e robusta corre a cercarti. Ansimando, spiega che il suo carro è stato attaccato da una creatura dell'Anomalia, non lontano da qui. I suoi figli sono intrappolati. Ti supplica di aiutarla.[/i]\n[b]Preparazione aggiuntiva:[/b] Metti un Incontro verde «Orso Anomalo» nel Luogo rivelato con il numero più basso adiacente a un personaggio, e mettici 1 Gettone Tempo. L'Orso resterà lì fino al prossimo Inizio della Giornata.\n[b]Metti l'Evento Speciale A in cima al mazzo Eventi. Poi metti sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Derrota al «Oso de la Rareza» señalado con una ficha de Tiempo.\n[b]Éxito:[/b] Ve al Versículo 550 del Libro de los Secretos.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Sconfiggi l'«Orso Anomalo» segnato con un Gettone Tempo.\n[b]Successo:[/b] Vai al verso 550 del Libro dei Segreti."
+   },
+   "indizio": null,
+   "missione": true,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "incontro": {
+    "colore": "verde",
+    "es": "Oso de la Rareza",
+    "it": "Orso Anomalo",
+    "luogo": "Luogo rivelato con il numero più basso adiacente a un personaggio",
+    "gettone_tempo": 1,
+    "fino_a": "prossimo Inizio della Giornata"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial H",
+     "it": "Evento — Speciale H"
+    },
+    "lettera": "H",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/35008.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "I",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Encuentras un gran caserío rodeado por una empalizada cubierta de musgo en un valle al lado de tu camino. Parece cálido, acogedor. Decides hacer una parada. Los dueños son agradables, aunque un poco retraídos. Insisten en que te quedes a comer.\nAntes de aceptar, compruebas discretamente si hay armas ocultas, veneno o asaltantes al acecho. Todo parece en orden. Disfrutas de tu comida y sientes una agradable sensación de calor recorriéndote las tripas.\nTe despiertas momentos después incrustado en la madera del banco y con la pared rodeándote los hombros como una capa. Mientras dormitabas, el caserío te envolvió como una planta carnívora. La cara de uno de los dueños, que asoma ahora del techo deformado, se carcajea desquiciadamente...[/i]\nVe al Versículo 560 del Libro de los Secretos.",
+    "it": "[i]Trovi una grande fattoria circondata da una palizzata coperta di muschio, in una valle accanto alla tua strada. Sembra calda, accogliente. Decidi di fermarti. I padroni sono gentili, anche se un po' schivi. Insistono perché tu resti a mangiare.\nPrima di accettare, controlli discretamente che non ci siano armi nascoste, veleno o aggressori in agguato. Sembra tutto in ordine. Ti godi il pasto e senti un piacevole calore che ti scorre nelle viscere.\nTi svegli poco dopo incastrato nel legno della panca, con la parete che ti avvolge le spalle come un mantello. Mentre sonnecchiavi, la fattoria ti ha avvolto come una pianta carnivora. Il volto di uno dei padroni, che ora sporge dal soffitto deformato, ride in modo folle...[/i]\nVai al verso 560 del Libro dei Segreti."
+   },
+   "cerca": null,
+   "indizio": null,
+   "versi": [
+    {
+     "libro": "segreti",
+     "verso": 560
+    }
+   ],
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial I",
+     "it": "Evento — Speciale I"
+    },
+    "lettera": "I",
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/37000.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 10,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "Senderos rotos",
+    "it": "Sentieri spezzati"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Antaño, la idea de entrar en Tuathán parecía una tarea imposible. Esta nueva misión parece aún más inconcebible. Los últimos menhires se construyeron en la Era de las Leyendas. ¿Cómo puedes pensar siquiera en emular tal logro?\nPara tener la más mínima oportunidad, necesitarás las mismas herramientas que usaron los escultores de Arturo.[/i]\n[b]Pon el Evento especial B encima del mazo de Eventos. Pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Un tempo l'idea di entrare a Tuathan sembrava un'impresa impossibile. Questa nuova missione sembra ancora più inconcepibile. Gli ultimi menhir furono costruiti nell'Era delle Leggende. Come puoi anche solo pensare di emulare una simile impresa?\nPer avere la minima possibilità, ti serviranno gli stessi attrezzi che usarono gli scultori di Artù.[/i]\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Metti 6 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Obtén la carta de Secreto «Herramientas del Escultor» (58).\n[b]Éxito:[/b] Resuelve la carta del Capítulo 10: Parte 2 del mazo de Eventos.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Ottieni la carta Segreto «Attrezzi dello Scultore» (58).\n[b]Successo:[/b] Risolvi la carta Capitolo 10: Parte 2 dal mazzo Eventi."
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] El mercado de Vallelejano es famoso por su gran selección de antigüedades y curiosidades antiguas.",
+    "it": "[b]Indizio:[/b] Il mercato di Farshire è famoso per la sua grande scelta di anticaglie e curiosità antiche."
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   }
+  },
+  {
+   "img": "carte/mazzo/36834.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 10,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Fauces de la Tierra",
+    "it": "Fauci della Terra"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Tienes las herramientas y Orrin afirma disponer del conocimiento necesario. Sin embargo, aún necesitas un material adecuado con el que trabajar. Los druidas que cuidaban de los menhires usaban un tipo de rarapiedra de color gris claro extraída al este de Vallelejano.[/i]\nSi tienes el Estado «Reconquista», pon la carta del Capítulo 10: Parte 3 encima del mazo de Eventos.",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Hai gli attrezzi e Orrin afferma di possedere le conoscenze necessarie. Tuttavia, ti serve ancora un materiale adatto con cui lavorare. I druidi che si prendevano cura dei menhir usavano un tipo di pietra anomala grigio chiaro estratta a est di Farshire.[/i]\nSe hai lo status «Rivendicazione», metti la carta Capitolo 10: Parte 3 in cima al mazzo Eventi."
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Obtén la carta de Secreto «Rarapiedra Prístina» (14) y llévasela a Orrin.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Ottieni la carta Segreto «Pietra Anomala Pura» (14) e portala a Orrin."
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] Puedes obtener este Secreto buscando en las minas bajo la Devastación (139).",
+    "it": "[b]Indizio:[/b] Puoi ottenere questo Segreto cercando nelle miniere sotto la Devastazione (139)."
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 10, Parte 2",
+     "it": "Evento — Capitolo 10, Parte 2"
+    },
+    "capitolo": 10,
+    "parte": 2,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36835.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 10,
+   "parte": 3,
+   "lettera": null,
+   "titolo": {
+    "es": "Los nuevos amos",
+    "it": "I nuovi padroni"
+   },
+   "testo": {
+    "es": "[i]Por la mañana, te encuentras con una banda de viajeros que huyen hacia el este. Afirman que Tuathán ha empezado una nueva invasión de las tierras humanas, una reconquista que muchos temían secretamente desde hace décadas.\nLo dudas. No has visto ningún ejército en la retorcida desolación de la capital de los Primeros Moradores.\nApenas pasa una hora antes de que descubras lo mucho que te equivocas. Al salir del sendero, te encuentras con un poderoso guerrero de los Primeros Moradores, clavando su vara resonante en el suelo. Se vuelve hacia ti con una calma y una confianza más propias de un dueño de estas tierras que de un invasor.[/i]\nPon el Encuentro púrpura «Reconquistador» en la Localización del personaje con el número de personaje más alto.",
+    "it": "[i]Al mattino incontri una banda di viaggiatori in fuga verso est. Affermano che Tuathan ha cominciato una nuova invasione delle terre umane, una riconquista che molti temevano segretamente da decenni.\nNe dubiti. Non hai visto alcun esercito nella contorta desolazione della capitale dei Predecessori.\nPassa appena un'ora prima che tu scopra quanto ti sbagli. Uscendo dal sentiero, ti imbatti in un potente guerriero dei Predecessori che pianta nel terreno il suo bastone risonante. Si volta verso di te con una calma e una sicurezza più degne di un padrone di queste terre che di un invasore.[/i]\nMetti l'Incontro viola «Rivendicatore» nel Luogo del personaggio con il numero di personaggio più alto."
+   },
+   "cerca": null,
+   "indizio": {
+    "es": "[b]Pista:[/b] Este enemigo puede ser demasiado fuerte para ti, al menos por ahora. ¡Recuerda que siempre puedes Escapar!",
+    "it": "[b]Indizio:[/b] Questo nemico potrebbe essere troppo forte per te, almeno per ora. Ricorda che puoi sempre Scappare!"
+   },
+   "incontro": {
+    "colore": "viola",
+    "es": "Reconquistador",
+    "it": "Rivendicatore",
+    "luogo": "Luogo del personaggio con il numero di personaggio più alto"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 10, Parte 3",
+     "it": "Evento — Capitolo 10, Parte 3"
+    },
+    "capitolo": 10,
+    "parte": 3,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36912.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 11,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 11 (Reverso)",
+    "it": "Preparazione del Capitolo 11 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]2-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián:[/b] Pon el Encuentro verde de «Hombre de Musgo» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 11 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]2-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano:[/b] Metti l'Incontro verde «Uomo di Muschio» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 11 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "verde",
+       "es": "Hombre de Musgo",
+       "it": "Uomo di Muschio"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 11 (Anverso)",
+     "it": "Preparazione del Capitolo 11 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 11 y apílalas de la 2 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 11 e impilale dalla 2 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "11",
+      "parti_dal_fondo": [
+       2,
+       1
+      ]
+     }
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36836.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 11,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "El mundo quebrado",
+    "it": "Il mondo spezzato"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Una vez más, todos los caminos de un mundo roto se abren ante ti. La pregunta es: ¿a dónde quieres ir? Iniciaste tu viaje para ayudar a Cuanacht, pero ¿tu prioridad no debería ser el reino, o al menos tus fieles aliados? Con los vientos de la Rareza asolando la isla, te será imposible llegar a todas partes a tiempo...[/i]\n[b]Pon el Evento especial G encima del mazo de Eventos. Pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]\n[b]Si alguno de los personajes tiene la carta de Secreto 66, resuelve la carta del Capítulo 11: Parte 2 del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Ancora una volta, tutte le strade di un mondo in frantumi si aprono davanti a te. La domanda è: dove vuoi andare? Hai iniziato il tuo viaggio per aiutare Cuanacht, ma la tua priorità non dovrebbe essere il regno, o almeno i tuoi fedeli alleati? Con i venti dell'Anomalia che devastano l'isola, ti sarà impossibile arrivare dappertutto in tempo...[/i]\n[b]Metti l'Evento Speciale G in cima al mazzo Eventi. Metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]\n[b]Se uno qualsiasi dei personaggi ha la carta Segreto 66, risolvi la carta Capitolo 11: Parte 2 dal mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n[b]Cumple uno de estos objetivos:[/b]\n{i:bullet} Ayuda a Cuanacht Quebrada (121).\n{i:bullet} Ayuda a Nueva Camelot Asediada (195).\n{i:bullet} Ayuda a tu aliado (Vallelejano, Altomuro o Nido del Cuervo).",
+    "it": "[b]Cerca[/b]\n[b]Completa uno di questi obiettivi:[/b]\n{i:bullet} Aiuta Cuanacht Distrutta (121).\n{i:bullet} Aiuta Camelot Assediata (195).\n{i:bullet} Aiuta il tuo alleato (Farshire, Timberwall o Crow's Nest)."
+   },
+   "indizio": null,
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 11, Parte 1",
+     "it": "Evento — Capitolo 11, Parte 1"
+    },
+    "capitolo": 11,
+    "parte": 1,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36837.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 11,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "La Parca Roja",
+    "it": "La Mietitrice Rossa"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Con todas las distracciones recientes, no habías reparado en la marca en tu piel. ¿Quién se fija en algo tan insignificante mientras lucha por su propia vida cada día?\nAhora, la mancha se ha extendido. Tu piel comienza a descamarse y te rezuma sangre de las grietas. Ya es casi imposible ocultar tu enfermedad, y tienes la sensación de que tu historia no tendrá un final feliz, a menos que consigas librarte de tu aflicción.[/i]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Con tutte le distrazioni recenti, non avevi fatto caso al segno sulla tua pelle. Chi bada a una cosa così insignificante mentre lotta ogni giorno per la propria vita?\nOra la macchia si è estesa. La pelle comincia a squamarsi e dalle crepe ti trasuda sangue. Ormai è quasi impossibile nascondere la tua malattia, e hai la sensazione che la tua storia non avrà un lieto fine, a meno che tu non riesca a liberarti della tua afflizione.[/i]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} ¡Encuentra una manera de deshacerte de la Marca Roja antes de que tu viaje llegue a su fin!",
+    "it": "[b]Cerca[/b]\n{i:bullet} Trova un modo per liberarti del Marchio Rosso prima che il tuo viaggio giunga alla fine!"
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] Busca el consejo de la Dama Pálida (si está viva) o encuentra en el Asilo de la Isla (109) información sobre cómo curarte.",
+    "it": "[b]Indizio:[/b] Chiedi consiglio alla Dama Pallida (se è viva) o trova nella Casa di Ricovero sull'Isola (109) informazioni su come curarti."
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 11, Parte 2",
+     "it": "Evento — Capitolo 11, Parte 2"
+    },
+    "capitolo": 11,
+    "parte": 2,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36913.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 12,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 12 (Reverso)",
+    "it": "Preparazione del Capitolo 12 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]2-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardianes:[/b] Pon el Encuentro verde de «Selkie» en la Localización revelada con el número más bajo. Pon el Encuentro gris de «Turba Enfurecida» en la Localización revelada con el número más alto.\n\n[b]¡Ya puedes comenzar el Capítulo 12 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]2-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiani:[/b] Metti l'Incontro verde «Selkie» nel Luogo rivelato con il numero più basso. Metti l'Incontro grigio «Folla Inferocita» nel Luogo rivelato con il numero più alto.\n\n[b]Ora puoi iniziare il Capitolo 12 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "verde",
+       "es": "Selkie",
+       "it": "Selkie"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     },
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "grigio",
+       "es": "Turba Enfurecida",
+       "it": "Folla Inferocita"
+      },
+      "luogo": "Luogo rivelato con il numero più alto"
+     }
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 12 (Anverso)",
+     "it": "Preparazione del Capitolo 12 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Pon la carta del Capítulo 12: Parte 1 encima del mazo.\n[b]2 o 4 jugadores:[/b] Si no tienes la carta de Secreto 4 o la carta de Secreto 42, obtén estas cartas ahora. ¡La isla entra en su última fase de agitación!\n[b]Sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Metti la carta Capitolo 12: Parte 1 in cima al mazzo.\n[b]2 o 4 giocatori:[/b] Se non hai la carta Segreto 4 o la carta Segreto 42, ottieni ora queste carte. L'isola entra nella sua ultima fase di agitazione!\n[b]Segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "12",
+      "metti_in_cima": "Capitolo 12: Parte 1"
+     },
+     "condizioni": [
+      {
+       "giocatori": [
+        "2",
+        "4"
+       ],
+       "se": "non hai il Segreto 4 o il Segreto 42",
+       "ottieni_segreti": [
+        4,
+        42
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36838.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 12,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "El destino de los campeones",
+    "it": "Il destino dei campioni"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Tu misión ha concluido.... ¿o quizá no?[/i]\n[b]Pon el Evento especial G encima del mazo de Eventos. Después, pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]La tua missione è conclusa... o forse no?[/i]\n[b]Metti l'Evento Speciale G in cima al mazzo Eventi. Poi metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n[b]Cumple uno de estos objetivos:[/b]\n{i:bullet} Regresa a Cuanacht Quebrada (121).\n{i:bullet} Regresa a Nueva Camelot Asediada (195).\n{i:bullet} Vuelve con tu aliado (en Vallelejano (116), Altomuro (131) o Nido del Cuervo (160)).",
+    "it": "[b]Cerca[/b]\n[b]Completa uno di questi obiettivi:[/b]\n{i:bullet} Torna a Cuanacht Distrutta (121).\n{i:bullet} Torna a Camelot Assediata (195).\n{i:bullet} Torna dal tuo alleato (a Farshire (116), Timberwall (131) o Crow's Nest (160))."
+   },
+   "indizio": null,
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 12, Parte 1",
+     "it": "Evento — Capitolo 12, Parte 1"
+    },
+    "capitolo": 12,
+    "parte": 1,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36914.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 13,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 13 (Reverso)",
+    "it": "Preparazione del Capitolo 13 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]2-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián:[/b] Pon el Encuentro púrpura de «Masacre» en la Localización revelada con el número más bajo. Pon el Encuentro gris de «Turba Enfurecida» en la Localización revelada con el número más alto.\n\n[b]¡Ya puedes comenzar el Capítulo 13 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]2-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano:[/b] Metti l'Incontro viola «Massacro» nel Luogo rivelato con il numero più basso. Metti l'Incontro grigio «Folla Inferocita» nel Luogo rivelato con il numero più alto.\n\n[b]Ora puoi iniziare il Capitolo 13 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3,
+       4
+      ],
+      "2-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "viola",
+       "es": "Masacre",
+       "it": "Massacro"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     },
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "grigio",
+       "es": "Turba Enfurecida",
+       "it": "Folla Inferocita"
+      },
+      "luogo": "Luogo rivelato con il numero più alto"
+     }
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 13 (Anverso)",
+     "it": "Preparazione del Capitolo 13 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 13 y apílalas de la 2 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 13 e impilale dalla 2 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "13",
+      "parti_dal_fondo": [
+       2,
+       1
+      ]
+     }
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36839.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 13,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "Explorador",
+    "it": "Esploratore"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Aunque Ávalon está perdida, su gente no tiene por qué perecer con ella. Con tu menhir portátil, solo tú puedes encontrar lugares seguros donde puedan sobrevivir.[/i]\n[b]Pon el Evento especial F encima del mazo de Eventos. Pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]\n[b]Si tienes la carta de Secreto 78, resuelve la carta del Capítulo 13: Parte 2 del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Anche se Avalon è perduta, la sua gente non deve per forza perire con lei. Con il tuo menhir portatile, solo tu puoi trovare luoghi sicuri dove possano sopravvivere.[/i]\n[b]Metti l'Evento Speciale F in cima al mazzo Eventi. Metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]\n[b]Se hai la carta Segreto 78, risolvi la carta Capitolo 13: Parte 2 dal mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Encuentra (o ayuda a crear) por lo menos dos lugares a salvo de la Rareza: obtén al menos 2 partes del Estado «El último refugio».\n[b]Éxito:[/b] Una vez que tengas al menos 2 partes del Estado requerido, puedes terminar este Capítulo e ir al Versículo 611 del Libro de los Secretos en cualquier momento.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Trova (o aiuta a creare) almeno due luoghi al riparo dall'Anomalia: ottieni almeno 2 parti dello status «Ultimo Rifugio».\n[b]Successo:[/b] Una volta che avrai almeno 2 parti dello status richiesto, puoi terminare questo Capitolo e andare al verso 611 del Libro dei Segreti in qualsiasi momento."
+   },
+   "indizio": null,
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 13, Parte 1",
+     "it": "Evento — Capitolo 13, Parte 1"
+    },
+    "capitolo": 13,
+    "parte": 1,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36840.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 13,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Encuentro inesperado",
+    "it": "Incontro inaspettato"
+   },
+   "testo": {
+    "es": "[i]Poco después del amanecer, te fijas en una silueta gigante que se vislumbra en las nieblas matutinas. Confundiéndola con uno de los Reconquistadores, preparas tu arma. La figura se aproxima.\nDe repente, sientes como si tus rodillas cediesen. Es Arturo, El Único y Eterno Rey, con su armadura retorcida por la Rareza y el cuerpo cubierto de heridas. Lentamente, levanta la mano a modo de saludo.\nSin dudarlo un instante, te arrodillas y le presentas la empuñadura de su espada. Mira fijamente la legendaria arma y niega con la cabeza. Acto seguido, retoma su camino y desaparece en dirección al noreste. Tienes el presentimiento de que no va a necesitar su filo allí donde va.[/i]\n[b]Nueva misión:[/b] Descubre el destino final del Rey Arturo.\n¡Este secreto no es necesario para completar la Campaña!",
+    "it": "[i]Poco dopo l'alba, noti una sagoma gigantesca che si intravede nelle nebbie del mattino. Scambiandola per uno dei Rivendicatori, prepari l'arma. La figura si avvicina.\nAll'improvviso ti senti cedere le ginocchia. È Artù, l'Unico ed Eterno Re, con l'armatura contorta dall'Anomalia e il corpo coperto di ferite. Lentamente, alza la mano in segno di saluto.\nSenza esitare un istante, ti inginocchi e gli porgi l'elsa della sua spada. Fissa la leggendaria arma e scuote la testa. Subito dopo riprende il suo cammino e scompare in direzione nord-est. Hai il presentimento che là dove sta andando non avrà bisogno della sua lama.[/i]\n[b]Nuova missione:[/b] Scopri il destino finale di Re Artù.\nQuesto segreto non è necessario per completare la Campagna!"
+   },
+   "cerca": null,
+   "indizio": null,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 13, Parte 2",
+     "it": "Evento — Capitolo 13, Parte 2"
+    },
+    "capitolo": 13,
+    "parte": 2,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36915.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 14,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 14 (Reverso)",
+    "it": "Preparazione del Capitolo 14 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián, 3-4 jugadores:[/b] Si tienes el Estado «Reconquista», pon el Encuentro púrpura de «Primer Morador» en la Localización revelada con el número más alto.\nDe lo contrario, pon el Encuentro verde de «Hombre de Musgo» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 14 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano, 3-4 giocatori:[/b] Se hai lo status «Rivendicazione», metti l'Incontro viola «Predecessore» nel Luogo rivelato con il numero più alto.\nAltrimenti, metti l'Incontro verde «Uomo di Muschio» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 14 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "3-4",
+      "se": "hai lo status «Rivendicazione»",
+      "incontro": {
+       "colore": "viola",
+       "es": "Primer Morador",
+       "it": "Predecessore"
+      },
+      "luogo": "Luogo rivelato con il numero più alto"
+     },
+     {
+      "giocatori": "3-4",
+      "se": "altrimenti",
+      "incontro": {
+       "colore": "verde",
+       "es": "Hombre de Musgo",
+       "it": "Uomo di Muschio"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 14 (Anverso)",
+     "it": "Preparazione del Capitolo 14 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Pon la carta del Capítulo 14: Parte 1 encima del mazo.\n[b]1 jugador:[/b] Si no tienes la carta de Secreto 4 o la carta de Secreto 42, obtén estas cartas ahora. ¡La isla entra en su última fase de agitación!\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Metti la carta Capitolo 14: Parte 1 in cima al mazzo.\n[b]1 giocatore:[/b] Se non hai la carta Segreto 4 o la carta Segreto 42, ottieni ora queste carte. L'isola entra nella sua ultima fase di agitazione!\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "14",
+      "metti_in_cima": "Capitolo 14: Parte 1"
+     },
+     "condizioni": [
+      {
+       "giocatori": [
+        "1"
+       ],
+       "se": "non hai il Segreto 4 o il Segreto 42",
+       "ottieni_segreti": [
+        4,
+        42
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36841.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 14,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "Exploradores de Ávalon",
+    "it": "Esploratori di Avalon"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Sabes que hay lugares a salvo de la tormenta que se avecina. Sin embargo, no hay suficientes para refugiar a todos los supervivientes y te queda tan poco tiempo...[/i]\n[b]Pon el Evento especial E encima del mazo de Eventos. Pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Sai che esistono luoghi al riparo dalla tempesta in arrivo. Tuttavia, non sono abbastanza per accogliere tutti i sopravvissuti e ti resta così poco tempo...[/i]\n[b]Metti l'Evento Speciale E in cima al mazzo Eventi. Metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Lleva por lo menos a una de las comunidades de Ávalon a un refugio (obtén al menos 1 parte del Estado «Vestigios»).\n[b]Éxito:[/b] Cuando tengas al menos 1 parte del Estado requerido, puedes ir al Versículo 622 del Libro de los Secretos para terminar este Capítulo en cualquier momento.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Porta almeno una delle comunità di Avalon in un rifugio (ottieni almeno 1 parte dello status «Resti»).\n[b]Successo:[/b] Quando avrai almeno 1 parte dello status richiesto, puoi andare al verso 622 del Libro dei Segreti per terminare questo Capitolo in qualsiasi momento."
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] Puede que encuentres grupos dispuestos a seguirte en los asentamientos restantes, aunque quizá tendrás que ganarte su confianza antes. ¡No podrás guiar a dos grupos al mismo tiempo!",
+    "it": "[b]Indizio:[/b] Potresti trovare gruppi disposti a seguirti negli insediamenti rimasti, anche se forse prima dovrai guadagnarti la loro fiducia. Non potrai guidare due gruppi contemporaneamente!"
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 14, Parte 1",
+     "it": "Evento — Capitolo 14, Parte 1"
+    },
+    "capitolo": 14,
+    "parte": 1,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/36916.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 15,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 15 (Reverso)",
+    "it": "Preparazione del Capitolo 15 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián:[/b] Si tienes el Estado «Reconquista», pon el Encuentro púrpura de «Reconquistador» en la Localización revelada con el número más alto.\nDe lo contrario, pon el Encuentro púrpura de «Primer morador» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 15 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano:[/b] Se hai lo status «Rivendicazione», metti l'Incontro viola «Rivendicatore» nel Luogo rivelato con il numero più alto.\nAltrimenti, metti l'Incontro viola «Predecessore» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 15 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "se": "hai lo status «Rivendicazione»",
+      "incontro": {
+       "colore": "viola",
+       "es": "Reconquistador",
+       "it": "Rivendicatore"
+      },
+      "luogo": "Luogo rivelato con il numero più alto"
+     },
+     {
+      "giocatori": "1-4",
+      "se": "altrimenti",
+      "incontro": {
+       "colore": "viola",
+       "es": "Primer morador",
+       "it": "Predecessore"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 15 (Anverso)",
+     "it": "Preparazione del Capitolo 15 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Pon la carta del Capítulo 15: Parte 1 encima del mazo.\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Metti la carta Capitolo 15: Parte 1 in cima al mazzo.\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "15",
+      "metti_in_cima": "Capitolo 15: Parte 1"
+     }
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36842.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 15,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "Los últimos Versículos",
+    "it": "Gli ultimi versi"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Tu historia ha terminado, y tu nombre será recordado durante siglos por aquellos que has salvado. Sin embargo, tu vida continúa.[/i]\n[b]Pon el Evento especial E encima del mazo de Eventos. Después, pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]La tua storia è finita, e il tuo nome sarà ricordato per secoli da coloro che hai salvato. Tuttavia, la tua vita continua.[/i]\n[b]Metti l'Evento Speciale E in cima al mazzo Eventi. Poi metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Es hora de escribir tu epílogo. Encuentra un final adecuado para tu personaje.",
+    "it": "[b]Cerca[/b]\n{i:bullet} È ora di scrivere il tuo epilogo. Trova un finale adatto al tuo personaggio."
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] Puedes quedarte en cualquier comunidad que hayas ayudado a construir, o emprender una misión imposible, como regresar a Tuathán para derrotar a los Primeros Moradores o dirigirte a las Tierras Natales. También puedes intentar desvelar el misterio final... ¡aunque para ello tendrás que jugar las tres campañas principales de Tainted Grail!",
+    "it": "[b]Indizio:[/b] Puoi restare in una qualsiasi comunità che hai aiutato a costruire, oppure intraprendere una missione impossibile, come tornare a Tuathan per sconfiggere i Predecessori o dirigerti verso le Terre Natie. Puoi anche tentare di svelare il mistero finale... anche se per farlo dovrai giocare le tre campagne principali di Tainted Grail!"
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 15, Parte 1",
+     "it": "Evento — Capitolo 15, Parte 1"
+    },
+    "capitolo": 15,
+    "parte": 1,
+    "testo": null
+   }
+  },
+  {
+   "img": "carte/mazzo/34900.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Bestia de caza",
+    "it": "Bestia da caccia"
+   },
+   "testo": {
+    "es": "Todos los jugadores cuyos Personajes estén fuera de Asentamientos tiran un dado. El que saque la tirada más baja (o, en caso de empate, el que tenga el número de personaje más alto) roba de inmediato un Encuentro verde.\nTodos los personajes que estén en la misma Localización participan en este Encuentro.\n[i]El camino es ahora más peligroso que nunca.[/i]",
+    "it": "Tutti i giocatori i cui Personaggi si trovano fuori dagli Insediamenti tirano un dado. Chi ottiene il risultato più basso (o, in caso di parità, chi ha il numero di personaggio più alto) pesca immediatamente un Incontro verde.\nTutti i personaggi che si trovano nello stesso Luogo partecipano a questo Incontro.\n[i]La strada è ora più pericolosa che mai.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "tiro_dado": "giocatori con personaggi fuori dagli Insediamenti",
+    "perde": "risultato più basso (parità: numero personaggio più alto)",
+    "incontro": "verde",
+    "partecipano": "tutti i personaggi nello stesso Luogo"
+   }
+  }
+ ]
+}

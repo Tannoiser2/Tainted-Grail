@@ -1,0 +1,3542 @@
+{
+ "carte": {
+  "carte/3_encuentros_morado/36619.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36618.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_verdes/3_gigante_enclenque_36320.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 13,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 14,
+     "a": 17,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 3,
+     "inevitabile": true
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_verdes/3_pesadilla_ribere_a_36322.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_verdes/3_selkie_36323.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36324.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 12,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "cubi",
+     "n": -1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36325.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 12,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "cubi",
+     "n": -1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_verdes/4_hombre_de_musgo_36321.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -3
+      }
+     ]
+    },
+    {
+     "da": 15,
+     "a": 17,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36326.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 13,
+     "a": 16,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36327.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 13,
+     "a": 16,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_verdes/4_hada_36328.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 15,
+     "a": 19,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "attacco",
+     "facoltativo": true,
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "manuale",
+       "testo": "Ignora questo attacco della Fata (vale anche per l'attacco di opportunità)."
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_verdes/4_sierpe_solar_36329.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 13,
+     "a": 20,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 21,
+     "a": 25,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 26,
+     "a": 29,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 4
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 6,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36500.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36501.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36502.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1,
+     "inevitabile": true
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36503.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1,
+     "inevitabile": true
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36504.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "fuga_nemico"
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36505.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "fuga_nemico"
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36506.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "manuale",
+     "testo": "Pesca 3 Oggetti a caso. Puoi comprare qualsiasi Oggetto Fabbricabile di questa pila per 1 Ricchezza e qualsiasi altro Oggetto per 2 Ricchezza. Puoi vendere qualsiasi Oggetto per 1 Ricchezza."
+    }
+   ],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36507.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Paga 1 Ricchezza: ottieni 3 Salute",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 3
+        }
+       ]
+      },
+      {
+       "testo": "Paga 1 Cibo: ottieni 3 Salute",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 3
+        }
+       ]
+      },
+      {
+       "testo": "Non pagare",
+       "effetti": []
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36508.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "fuga_nemico"
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "oggetto",
+     "modo": "fabbricabile",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36509.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "fuga_nemico"
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "oggetto",
+     "modo": "fabbricabile",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36620.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "2 Ferite",
+         "effetti": [
+          {
+           "tipo": "ferite",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "testo": "Scarta 1 Oggetto",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Paga 1 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ]
+      },
+      {
+       "testo": "Scarta 2 carte",
+       "effetti": [
+        {
+         "tipo": "scarta_carte",
+         "n": 2,
+         "da": "mano"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36621.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "2 Ferite",
+         "effetti": [
+          {
+           "tipo": "ferite",
+           "n": 2
+          }
+         ]
+        },
+        {
+         "testo": "Scarta 1 Oggetto",
+         "effetti": [
+          {
+           "tipo": "oggetto",
+           "modo": "scarta"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Paga 1 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ]
+      },
+      {
+       "testo": "Scarta 2 carte",
+       "effetti": [
+        {
+         "tipo": "scarta_carte",
+         "n": 2,
+         "da": "mano"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36622.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "perdi_salute",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "min": 1,
+       "chi": "attivo"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ]
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "ris": "terrore",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Personaggio ha raggiunto il massimo di Terrore"
+     },
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36623.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "perdi_salute",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "min": 1,
+       "chi": "attivo"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ]
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "ris": "terrore",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Personaggio ha raggiunto il massimo di Terrore"
+     },
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36624.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 13,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 14,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    },
+    {
+     "da": 15,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 16,
+     "a": 16,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    },
+    {
+     "da": 17,
+     "a": 17,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 18,
+     "a": 18,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    },
+    {
+     "da": 19,
+     "a": 19,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 20,
+     "a": 20,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    },
+    {
+     "da": 21,
+     "a": 25,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 4,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "dopo_attacco",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 3
+     },
+     "effetti": [
+      {
+       "tipo": "fuga_nemico"
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36625.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 2,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 13,
+     "effetti": [
+      {
+       "tipo": "imposta",
+       "ris": "salute",
+       "n": 0
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36626.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 13,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -3
+      }
+     ]
+    },
+    {
+     "da": 16,
+     "a": 19,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "sempre",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36627.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 13,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -3
+      }
+     ]
+    },
+    {
+     "da": 16,
+     "a": 19,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "sempre",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36628.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Ottieni 2 Cibo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 2
+        }
+       ]
+      },
+      {
+       "testo": "Paga 4 Cibo: ripristina tutta la Salute",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 4,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 99
+        }
+       ]
+      },
+      {
+       "testo": "Niente",
+       "effetti": []
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ],
+   "inizio": []
+  },
+  "carte/4_encuentros_morado/36629.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 17,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 18,
+     "a": 21,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -4
+      }
+     ]
+    },
+    {
+     "da": 22,
+     "a": 24,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 2
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 5,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Solo le Abilità di Spiritualità sono attive."
+      }
+     ]
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36400.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36401.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36402.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36403.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36404.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia",
+     "per": {
+      "attributo": "empathy"
+     }
+    }
+   ],
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": "Unisciti alla folla",
+     "speciale": {
+      "empathy": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ],
+      "spirituality": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "nome": "Conforta la vedova",
+     "speciale": {
+      "empathy": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ],
+      "spirituality": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36405.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "segreto",
+     "n": 66,
+     "rimuovi": false
+    }
+   ],
+   "evitare": {
+    "condizione": {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "min": 4,
+     "chi": "compagnia"
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "compagnia"
+     }
+    ]
+   },
+   "fasi": [
+    {
+     "nome": "Evita gli infetti",
+     "speciale": {
+      "caution": [
+       {
+        "tipo": "affinita",
+        "n": 2
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    },
+    {
+     "nome": "Trova loro un rifugio",
+     "speciale": {
+      "empathy": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ],
+      "spirituality": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "affinita",
+       "n": -2
+      }
+     ],
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36406.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "muovi",
+     "dove": "collegato_scelto",
+     "chi": "compagnia"
+    }
+   ],
+   "evitare": {
+    "condizione": null,
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "muovi",
+      "dove": "collegato_scelto",
+      "chi": "compagnia"
+     }
+    ]
+   },
+   "fasi": [
+    {
+     "nome": "Appellati alla legge",
+     "speciale": {
+      "*": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36407.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ],
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": "Avanza attraverso l'anomalia",
+     "prova": {
+      "attributo": "spirituality",
+      "minimo": 4
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "spirituality",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 3,
+         "effetti": [
+          {
+           "tipo": "manuale",
+           "testo": "Fallisci l'Incontro."
+          }
+         ]
+        },
+        {
+         "da": 4,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Evita attenzioni inutili",
+     "prova": {
+      "attributo": "caution",
+      "minimo": 3
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "caution",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 2,
+         "effetti": [
+          {
+           "tipo": "manuale",
+           "testo": "Fallisci l'Incontro."
+          }
+         ]
+        },
+        {
+         "da": 3,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36408.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ],
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": "Resisti alla tentazione",
+     "speciale": {
+      "caution": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ],
+      "spirituality": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "ricchezza",
+       "n": -1
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36409.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Guerriero del Clan"
+    }
+   ],
+   "evitare": {
+    "condizione": null,
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "compagnia"
+     }
+    ]
+   },
+   "fasi": [
+    {
+     "nome": "Inganna le guardie",
+     "speciale": {
+      "caution": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ],
+      "empathy": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "affinita",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  }
+ }
+}

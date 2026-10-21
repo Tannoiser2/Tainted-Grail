@@ -1,0 +1,1983 @@
+{
+ "voci": {
+  "s:d979a1803d24": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: il sogno fa riferimento a tre degli otto Luoghi che circondano Cuanacht. È possibile che alcuni di loro non siano stati ancora rivelati."
+    }
+   ]
+  },
+  "s:7fba27e87e11": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:e2094079027a": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "nome": "Riti del Menhir"
+      },
+      {
+       "tipo": "segreto",
+       "nome": "Attrezzi dello Scultore"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": [
+     {
+      "tipo": "nota",
+      "testo": "Se non bastano le miniature Menhir, prendetene una da un altro Luogo a vostra scelta."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Suggerimento: il Menhir della vostra città natale non potrà essere aiutato per un po’ di tempo. Gli altri Menhir nelle vicinanze sono più facili da attivare."
+     }
+    ]
+   }
+  },
+  "c:6f8d26f921eb": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Venti dell’Anomalia",
+    "parti": []
+   }
+  },
+  "r:84aff6d660c4": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 121
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Potete quindi Esplorare il nuovo Luogo 121 gratuitamente (senza spendere l’azione)."
+    }
+   ]
+  },
+  "c:276a7ee99494": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 66
+   }
+  },
+  "c:54e34f94b2e7": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Marchio del Cacciatore",
+    "parti": []
+   }
+  },
+  "r:911f8de67421": {
+   "effetti": []
+  },
+  "q:824d131e3305": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "1 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "1 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "q:1647fc7803fb": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "empathy",
+    "min": 1
+   }
+  },
+  "r:da622f6ddc6d": {
+   "effetti": [
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "c:a6e4c90dbb6c": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:238a4d250f95": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:e578acb960b5": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "min": 1,
+      "chi": "compagnia"
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Scroccone",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "r:8d013898aafa": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "cibo",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "ripeti",
+     "per": {
+      "membri": true
+     },
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "casuale",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Scroccone",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "v:22": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "aggression",
+       "per": 2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:a7715a4a6370": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:ec968eb4a97b": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 3
+   }
+  },
+  "r:fe452f8286fd": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:62cbeeffb146": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 5
+   }
+  },
+  "r:df90e3eb759e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:2254ff19d469": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 99
+   }
+  },
+  "r:6680fb239a34": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": -2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:c86907f291f6": {
+   "condizione": {
+    "tipo": "menhir_qui",
+    "attivo": true
+   }
+  },
+  "r:7ccccd780768": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:a47134de4bb4": {
+   "condizione": {
+    "tipo": "menhir_qui",
+    "attivo": false
+   }
+  },
+  "r:1befc3e6f296": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:3314e09f1be7": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Canto Funebre",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:99c6dad2d665": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Canto Funebre",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:7aed125217b1": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Canto Funebre",
+      "parti": [
+       2
+      ]
+     },
+     "allora": [],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "status",
+         "nome": "Marchio del Cacciatore",
+         "parti": []
+        }
+       },
+       "allora": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 2,
+         "chi": "compagnia"
+        }
+       ]
+      },
+      {
+       "tipo": "status",
+       "nome": "Marchio del Cacciatore",
+       "parti": [],
+       "rimuovi": false
+      }
+     ]
+    }
+   ]
+  },
+  "c:5e84e7958ea6": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Battitore di Piste",
+     "parti": []
+    }
+   }
+  },
+  "q:3db42a5e94d2": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Canto Funebre",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Canto Funebre",
+       "parti": [
+        2
+       ]
+      }
+     }
+    ]
+   }
+  },
+  "r:2a1cbd127b27": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Leggete la sezione Sogno di questo Luogo (102)."
+    }
+   ]
+  },
+  "r:6dfa582e0291": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Canto Funebre",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:f592b33d3af5": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Battitore di Piste",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:d849a914818f": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Battitore di Piste",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:0f99761f8b19": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      5
+     ]
+    }
+   }
+  },
+  "r:bf57749adedc": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "c:53e8ee385e1c": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Saccheggiatore",
+    "parti": [
+     5
+    ]
+   }
+  },
+  "r:3adbe0778177": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:c28061bfbde1": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: portare la vergine arciera ferita alla Casa di Ricovero sull’Isola ed Esplorare la casa di ricovero per trovare il modo di aiutarla."
+    }
+   ]
+  },
+  "c:4524ab19a3f3": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "il nemico ha usato Scappare/Fuggire"
+     }
+    ]
+   }
+  },
+  "c:ea77b958e206": {
+   "condizione": {
+    "tipo": "incontro_perso"
+   }
+  },
+  "q:fc12a1f30619": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Inaffidabile",
+     "parti": []
+    }
+   }
+  },
+  "q:becec2712a76": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "q:a62de0d2662c": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:732c3d821980": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:14043563f8e8": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "il nemico ha usato Scappare/Fuggire"
+     }
+    ]
+   }
+  },
+  "r:5cc0ac20684d": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Non ricevete alcun Bottino per aver vinto questo Incontro."
+    }
+   ]
+  },
+  "c:a056ec437354": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "avete deciso di Fuggire dall'Incontro"
+     }
+    ]
+   }
+  },
+  "c:5458feee535b": {
+   "condizione": {
+    "tipo": "incontro_vinto"
+   }
+  },
+  "c:777b97a8601b": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "avete deciso di Fuggire dall'Incontro"
+     }
+    ]
+   }
+  },
+  "r:458fea14daba": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Dare una Mano",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:32ce78617769": {
+   "effetti": []
+  },
+  "r:fe75ff06aab8": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      6
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:1a652812e0dc": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "empathy",
+    "min": 2
+   }
+  },
+  "r:2a844e9e9cfa": {
+   "effetti": []
+  },
+  "r:8355158d40f5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:344edddb4391": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Inaffidabile",
+      "parti": []
+     },
+     {
+      "tipo": "manuale",
+      "testo": "c’è un Gettone Tempo su questo Luogo"
+     }
+    ]
+   }
+  },
+  "r:fbd0168d0808": {
+   "effetti": []
+  },
+  "c:29f5862c5bd3": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Inaffidabile",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "manuale",
+      "testo": "non c’è un Gettone Tempo su questo Luogo"
+     }
+    ]
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:7e4b0713b655": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 4
+   }
+  },
+  "r:818e1b4b06bc": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Inaffidabile",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:3035c4ad9858": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 6
+   }
+  },
+  "r:82764956b35f": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "r:3baeae75cad1": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "q:75a4bd20cafa": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:7f2d8a8864cc": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Inaffidabile",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:a15a525c4481": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Suggerimento: per sopravvivere, dovete muovervi rapidamente, ma senza trascurare le vostre Risorse o le tracce Sopravvivenza!"
+    }
+   ]
+  },
+  "s:bf19bb18a26e": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "attivo"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "c:92b16f2ef096": {
+   "condizione": {
+    "tipo": "personaggio",
+    "id": "maggot"
+   }
+  },
+  "q:3ae496e67c7f": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:b2b94c646c86": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      1
+     ]
+    }
+   }
+  },
+  "r:5af3782305a3": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Ottenete 1 Oggetto casuale non Compagno (scartate e ripescate i Compagni)."
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:ba6c379bf85f": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "q:b18512ac0ee0": {
+   "condizione": {
+    "tipo": "status",
+    "nome": "Sapere Bruciato",
+    "parti": []
+   }
+  },
+  "r:e12e33643204": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:ddc4af63a29f": {
+   "condizione": {
+    "tipo": "risorsa",
+    "ris": "magia",
+    "min": 3,
+    "chi": "compagnia"
+   }
+  },
+  "r:ac57630909cc": {
+   "effetti": []
+  },
+  "r:70615412a9ed": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:0e0b8230d5e7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "q:ffee0bcd8cc1": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "personaggio",
+      "id": "maggot"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     }
+    ]
+   }
+  },
+  "s:c1287c232bd5": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": -1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:25a0ad2dbf0c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "c:3613a25f7072": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "c’è un Gettone Cerca su questo Luogo"
+   }
+  },
+  "q:f3e4da6ee5a3": {
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "courage",
+    "min": 1
+   }
+  },
+  "r:1fd19171ea53": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "ris": "salute",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:a7e092026f90": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "n": 2
+      },
+      {
+       "ris": "salute",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:ab5da689d17d": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "condizione": {
+    "tipo": "attributo",
+    "attr": "caution",
+    "min": 1
+   }
+  },
+  "r:d254e0127abd": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "n": 5
+      },
+      {
+       "ris": "salute",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:52fef6971af4": {
+   "effetti": []
+  },
+  "c:66dd5205ebac": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "aggression",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:3220e486a79d": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:105",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "q:1e62e0a2b843": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 99
+   }
+  },
+  "r:0f16488d5e7c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:105",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "c:192f18db05c4": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Enigma dell’Antico Acciaio",
+     "parti": []
+    }
+   }
+  },
+  "r:f32abb037bc4": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Enigma dell’Antico Acciaio",
+     "parti": [],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:fedae4211509": {
+   "costo": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "1 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "2 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "3 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 3,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "4 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 4,
+         "chi": "diviso"
+        }
+       ]
+      },
+      {
+       "testo": "5 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 5,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 27
+    }
+   }
+  },
+  "q:8c4bd26eccf4": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 27
+    }
+   }
+  },
+  "r:ee311865a671": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:4db0969185c1": {
+   "effetti": [
+    {
+     "tipo": "manuale",
+     "testo": "Leggete la sezione Sogno di questo Luogo (105)."
+    }
+   ]
+  },
+  "c:4c609c6a3beb": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "q:e47c855ff43e": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 99
+   }
+  },
+  "q:28ad82396762": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 8,
+    "a": 99
+   }
+  },
+  "r:dee052f61664": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "q:98fafe8e4338": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 99
+   }
+  },
+  "r:a0311b920008": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 27,
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:4f9a9dba1f82": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 3,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "r:753cad8606de": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 27,
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:8deb2f8e7322": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 9
+   }
+  },
+  "r:faa8023a4a73": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -4,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:f7c947ec6c2c": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 10,
+    "a": 13
+   }
+  },
+  "q:bbb051af0751": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "su questa carta Luogo non c’è un Gettone Cerca"
+   }
+  },
+  "r:22efbc2a8128": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:749812ebed78": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "n": -1,
+     "luogo": "qui"
+    }
+   ]
+  },
+  "c:db64113066d6": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 14,
+    "a": 99
+   }
+  },
+  "q:2b0d19caca29": {
+   "condizione": {
+    "tipo": "manuale",
+    "testo": "su questa carta Luogo non c’è un Gettone Cerca"
+   }
+  },
+  "r:7da9229a53f4": {
+   "effetti": []
+  },
+  "r:de44d60dbc2b": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "n": -1,
+     "luogo": "qui"
+    }
+   ]
+  },
+  "c:a2bea6ce2bda": {
+   "condizione": {
+    "non": {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "min": 1,
+     "chi": "totale"
+    }
+   }
+  },
+  "r:f1c4838becba": {
+   "effetti": []
+  },
+  "r:f62dd0b6cb73": {
+   "effetti": []
+  },
+  "r:6fd0fcc01e39": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:a32e9f4b01bc": {
+   "effetti": []
+  },
+  "r:1a1c9037314b": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 27,
+     "rimuovi": false
+    }
+   ]
+  },
+  "s:48b92ad37340": {
+   "effetti": []
+  },
+  "s:2797447d6e29": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "attivo"
+    }
+   ]
+  },
+  "s:d8b105a7c1e1": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "nome": "Riti del Menhir"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "salute",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "cibo",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 9,
+    "meno_per_giocatore": true,
+    "effetti": [
+     {
+      "tipo": "nota",
+      "testo": "Se non bastano le miniature Menhir, prendetene una da un altro Luogo a vostra scelta."
+     }
+    ]
+   }
+  },
+  "r:3407e0478e29": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 123
+    }
+   ]
+  },
+  "r:05a452a34d34": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  },
+  "r:ea83b22a6980": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "courage",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:190f6aa2dc99": {
+   "costo": [
+    {
+     "tipo": "paga",
+     "ris": "energia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:d51cd61c50ad": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "courage",
+       "per": 2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "q:8dd405c55597": {
+   "condizione": {
+    "non": {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      2
+     ]
+    }
+   }
+  },
+  "r:37ee0ee53103": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      2
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "q:0d7deee92f62": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "segreto",
+      "nome": "Distruttore in Antico Acciaio"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "aggression",
+      "min": 2
+     }
+    ]
+   }
+  },
+  "c:435aad490b94": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:4ccd7160d4b2": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ]
+  },
+  "c:521ed6715b16": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 1,
+    "a": 1
+   }
+  },
+  "r:04ed76685d87": {
+   "effetti": []
+  },
+  "c:fe98d467b3ce": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 2,
+    "a": 2
+   }
+  },
+  "r:e0e3585de152": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "attributo",
+       "attr": "aggression",
+       "min": 1
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "c:ac13fd6e290c": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 3,
+    "a": 3
+   }
+  },
+  "r:9f17e629d105": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ]
+  },
+  "c:92771fd62906": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 4,
+    "a": 4
+   }
+  },
+  "r:5f747ddacb36": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:d7f6868f43cb": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 5,
+    "a": 5
+   }
+  },
+  "r:e941654c0d63": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ]
+  },
+  "c:ca672893cc2f": {
+   "condizione": {
+    "tipo": "tiro",
+    "da": 6,
+    "a": 99
+   }
+  },
+  "r:2e40942c9a48": {
+   "effetti": []
+  },
+  "c:b92f50ebddf8": {
+   "condizione": {
+    "tipo": "sempre"
+   }
+  },
+  "r:5aa88fa74532": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "pesca": 2
+    }
+   ]
+  },
+  "q:7e534e6e9993": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "segreto",
+      "nome": "Distruttore in Antico Acciaio"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "aggression",
+      "min": 2
+     }
+    ]
+   }
+  },
+  "c:383588833694": {
+   "condizione": {
+    "tipo": "segreto",
+    "n": 11
+   }
+  },
+  "r:191899ba751c": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:70604d9d4eed": {
+   "condizione": {
+    "non": {
+     "tipo": "segreto",
+     "n": 11
+    }
+   }
+  }
+ }
+}

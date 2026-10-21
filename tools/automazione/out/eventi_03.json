@@ -1,0 +1,1286 @@
+{
+ "carte": {
+  "carte/mazzo/34901.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni giocatore tira un dado. Chi ottiene il risultato più basso (parità: numero di personaggio più alto) pesca immediatamente un Incontro grigio; vi partecipano tutti i personaggi nello stesso Luogo."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34902.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Pesca carte dal mazzo Incontro verde finché non ne peschi una con la parola chiave Guardiano; mettila nel Luogo rivelato con il numero più basso, poi mescola il mazzo. Se nel mazzo verde non c'è alcun Guardiano, ignora questa carta."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34903.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Pesca carte dal mazzo Incontro grigio finché non ne peschi una con la parola chiave Guardiano; mettila nel Luogo rivelato con il numero più basso, poi mescola il mazzo. Se nel mazzo grigio non c'è alcun Guardiano, ignora questa carta."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34904.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "esplorazione",
+     "condizione": {
+      "non": {
+       "una": [
+        {
+         "tipo": "insediamento",
+         "nemico": false
+        },
+        {
+         "tipo": "insediamento",
+         "nemico": true
+        }
+       ]
+      }
+     },
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": []
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34905.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "esplorazione",
+     "condizione": {
+      "non": {
+       "una": [
+        {
+         "tipo": "insediamento",
+         "nemico": false
+        },
+        {
+         "tipo": "insediamento",
+         "nemico": true
+        }
+       ]
+      }
+     },
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": []
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34906.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che peschi un Incontro casuale verde, pescane 2 e scegli quello di valore minore."
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34907.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "altro",
+       "testo": "Ogni volta che peschi un Incontro casuale verde, pescane 2 e scegli quello di valore minore."
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36900.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 1,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1
+      ],
+      "2-4": [
+       1,
+       2
+      ]
+     },
+     "colori": [
+      "grigio",
+      "verde",
+      "viola",
+      "blu"
+     ],
+     "mescola": true,
+     "primo_incontro_se_prima_partita": true
+    },
+    "eventi": {
+     "capitolo": 1,
+     "lettera": null,
+     "parti_dal_fondo": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+     ]
+    },
+    "guardiani": [],
+    "segreti": [],
+    "effetti": [
+     {
+      "tipo": "nota",
+      "testo": "Come prima azione del gioco, prova a Esplorare il tuo Luogo iniziale. Leggi l'introduzione del Diario di Esplorazione prima di Esplorare per la prima volta."
+     }
+    ]
+   }
+  },
+  "carte/mazzo/36800.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Se è la tua prima partita, prova a tornare a Cuanacht prima che finisca il Giorno e passa la notte lì per leggere il Sogno, poiché i Sogni spesso contengono indizi."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "segreto",
+     "n": 11
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 1,
+      "parte": 5
+     },
+     {
+      "tipo": "evento",
+      "azione": "scarta_questo"
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36801.webp": {
+   "rivelato": [
+    {
+     "tipo": "scelta",
+     "chi": "ognuno",
+     "opzioni": [
+      {
+       "testo": "Spendi 1 Ricchezza: ottieni 1 Rep e 1 Esp",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "esp",
+         "n": 1
+        }
+       ]
+      },
+      {
+       "testo": "Spendi 1 Cibo: ottieni 1 Rep e 1 Esp",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "esp",
+         "n": 1
+        }
+       ]
+      },
+      {
+       "testo": "Non aiutare",
+       "effetti": []
+      }
+     ]
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 5,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Ci sono vari modi per trovare cibo o curarsi intorno al tuo Luogo iniziale. Tuttavia, potresti doverli trovare prima."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36802.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 1,
+     "meno_per_giocatore": false
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    }
+   ],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      }
+     ]
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36803.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "C'è un Menhir attivo nella Tenuta Rurale di Cuanacht (101)"
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Rimetti questa carta in cima al mazzo Eventi."
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "nota",
+       "testo": "L'Anomalia si avvicina! D'ora in poi si applica la regola «Menhir e Anomalia»: chi è fuori dal raggio di un Menhir attivo perde 2 Salute e ottiene 2 Terrore a ogni Inizio della Giornata."
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Applica subito (in questo Inizio della Giornata) la perdita di 2 Salute e il guadagno di 2 Terrore ai personaggi fuori dal raggio di un Menhir attivo."
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Rimetti questa carta in cima al mazzo Eventi."
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36804.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Hai attivato un Menhir nei Tumuli dei Predecessori (106) o a Sbiancata (107)."
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 1,
+      "parte": 6
+     },
+     {
+      "tipo": "evento",
+      "azione": "scarta_questo"
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36805.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ogni personaggio ottiene 1 miglioramento gratuito del proprio mazzo Combattimento."
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti le carte Evento Casuale scartate nel mazzo Eventi Casuali e mescolalo."
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 2
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36901.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 2,
+    "lettera": null,
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-2": [
+       1,
+       2
+      ],
+      "3-4": [
+       1,
+       2,
+       3
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 2,
+     "lettera": null,
+     "parti_dal_fondo": [
+      3,
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 2,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Orso Anomalo",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36806.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 1,
+     "meno_per_giocatore": false
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: indaga sul destino della prima spedizione (a ovest), raggiungi Camelot (190) e ottieni l'aiuto del suo sovrano, oppure trova un modo diverso per progredire nella storia."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36807.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Ogni personaggio ottiene 1 miglioramento gratuito nel proprio mazzo Diplomazia."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Non lasciare che l'Anomalia ti circondi! Controlla sempre per prima cosa i Menhir vicini e tieni pronto un piano per attivarli quando necessario."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36808.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Ottieni 1 parte (la successiva non ancora ottenuta) dello status «Qualcuno Sta Osservando»."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Qualcuno Sta Osservando",
+      "parti": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "speciale",
+       "lettera": "C"
+      }
+     ]
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36902.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 3,
+    "lettera": "A",
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       1,
+       2,
+       3
+      ],
+      "3-4": [
+       2,
+       3
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 3,
+     "lettera": "A",
+     "parti_dal_fondo": [
+      5,
+      4,
+      3,
+      2,
+      1
+     ],
+     "scarta_dalla_cima": [
+      {
+       "condizione": {
+        "tipo": "status",
+        "nome": "Compito della Dama",
+        "parti": []
+       },
+       "n": 3
+      },
+      {
+       "condizione": {
+        "non": {
+         "tipo": "segreto",
+         "n": 8
+        }
+       },
+       "n": 2
+      }
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 2,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Serpe del Sottobosco",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36809.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Mostra il Graal Corrotto a Morgana a Camelot (190) o alla Dama Pallida al Lago Speculare (113)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36810.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Ottieni 1 parte (la successiva non ancora ottenuta) dello status «Qualcuno Sta Osservando»."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Qualcuno Sta Osservando",
+      "parti": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "speciale",
+       "lettera": "C"
+      }
+     ]
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Rimetti questa carta in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36811.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: recupera gli effetti personali di Morgana nella torre crollata delle Piane Scintillanti (157), oppure trova un modo per cambiare schieramento."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36812.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: segui Erfyr fino alla Prima Tenuta Rurale (117) e verifica se ha il Vero Graal, oppure trova un modo per cambiare schieramento."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36813.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Completa uno di questi obiettivi: vai a Camelot (190) e parla con Lancillotto di Neante, oppure, mentre sei a Camelot (190), cambia schieramento."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36903.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 3,
+    "lettera": "B",
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1,
+       2
+      ],
+      "2": [
+       1,
+       2,
+       3
+      ],
+      "3-4": [
+       2,
+       3
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 3,
+     "lettera": "B",
+     "parti_dal_fondo": [
+      2,
+      1
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 2,
+       "a": 4
+      },
+      "colore": "verde",
+      "nome": "Serpe del Sottobosco",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36814.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 1,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Accettare un compito da uno degli alleati non significa che tu non possa lavorare anche per gli altri... almeno finché non fai qualcosa che provochi il loro odio."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Porta a termine il compito che ti ha affidato il tuo alleato (Lady Kincaid, Ultan o Sir Mordred)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36815.webp": {
+   "rivelato": [
+    {
+     "tipo": "manuale",
+     "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 305
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36904.webp": {
+   "rivelato": [],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": {
+    "capitolo": 4,
+    "lettera": "A",
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1,
+       2,
+       3
+      ],
+      "2-4": [
+       2,
+       3
+      ]
+     }
+    },
+    "eventi": {
+     "capitolo": 4,
+     "lettera": "A",
+     "parti_dal_fondo": [
+      3,
+      2,
+      1
+     ],
+     "scarta_dalla_cima": [
+      {
+       "condizione": {
+        "tipo": "status",
+        "nome": "Missione Moonring",
+        "parti": []
+       },
+       "n": 1
+      }
+     ]
+    },
+    "guardiani": [
+     {
+      "giocatori": {
+       "da": 1,
+       "a": 4
+      },
+      "colore": "viola",
+      "nome": "Becco a Martello",
+      "luogo": "rivelato_numero_piu_basso",
+      "condizione": null
+     }
+    ],
+    "segreti": [],
+    "effetti": []
+   }
+  },
+  "carte/mazzo/36816.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "manuale",
+     "testo": "Scarta la prima carta del mazzo Eventi."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Ricchezza + Cibo + Magia di tutti i personaggi < 5 × numero di giocatori"
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti l'Evento Speciale H in cima al mazzo Eventi."
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Ricchezza + Cibo + Magia di tutti i personaggi > 10 × numero di giocatori"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale I in cima al mazzo Eventi."
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Segui Neante fino alle Tombe dell'Ordine (154)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36817.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Ricchezza + Cibo + Magia di tutti i personaggi < 5 × numero di giocatori"
+     },
+     "allora": [
+      {
+       "tipo": "manuale",
+       "testo": "Metti l'Evento Speciale H in cima al mazzo Eventi."
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "manuale",
+        "testo": "Ricchezza + Cibo + Magia di tutti i personaggi > 10 × numero di giocatori"
+       },
+       "allora": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale I in cima al mazzo Eventi."
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "manuale",
+         "testo": "Metti l'Evento Speciale A in cima al mazzo Eventi."
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "manuale",
+     "testo": "Porta il Graal Corrotto ad Amergin a Moonring (133)."
+    },
+    "effetti": []
+   },
+   "preparazione": null
+  }
+ }
+}

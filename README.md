@@ -44,13 +44,44 @@ Tabletop Simulator (edizione spagnola, carte ritrascritte e ridisegnate in itali
   ha un **codice di 6 caratteri** (in alto): dal menu *Riprendi con un codice* la si riapre da qualunque dispositivo.
 - Ogni valore dei Personaggi si corregge a mano con un clic (sinistro +1, destro −1) sulla scheda.
 
+## Automazione
+Tutti i testi di regole del gioco sono codificati in un linguaggio di effetti strutturato
+(`tools/automazione/DSL.md`) e raccolti in `data/automazione.json` (`tools/unisci_automazione.py`):
+**1.882 voci del Diario** (risultati, requisiti e costi, condizioni, dadi, Sogni, Incubi, Menhir) e **777 carte**
+(Oggetti, Segreti, Abilità, Luoghi, Eventi, Incontri, carte Combattimento e Diplomazia, Stai morendo/impazzendo).
+L'interprete (`scripts/core/interprete.gd`) li esegue sullo stato della partita:
+- **Diario**: condizioni verificate, costi pagati (se non bastano le risorse la scelta non procede), risultati
+  applicati, dadi con i modificatori giusti, Incontri richiesti dal Diario con "se vincete / se perdete",
+  salti al Libro dei Segreti, scelte del giocatore ("1 Ricchezza o 1 Cibo") proposte con una finestra.
+- **Carte dei Personaggi**: Oggetti, Segreti e Abilità con il loro innesco (azione, in qualsiasi momento, inizio e
+  fine della giornata, riposo, viaggio, esplorazione, arrivo, inizio dell'Incontro, attivazione, attacco, ferite,
+  vittoria…) e i modificatori passivi (costo del Viaggio, Riposo, tratti ignorati, mano iniziale, guadagni…).
+- **Abilità**: dal 3° punto di un Attributo si sceglie la carta Abilità e la faccia; perdendo il punto si scarta.
+- **Incontri**: Capacità delle carte (al piazzamento, ritardate, durante l'attacco, passive, Cariche), tabelle
+  d'attacco, Opportunità, Risposte e bonus speciali della Diplomazia, Evitare, Ricompensa a ogni membro e Bottino
+  da dividere, Fallimento, Incontri speciali.
+- **Luoghi**: azioni del Luogo (costo, condizione, una volta al giorno), regole immediate (fulmine), Menhir con
+  condizione, costo e Quadrante.
+- **Eventi e capitoli**: effetti alla rivelazione, Eventi Casuali della giornata, **Cerche** che si completano da
+  sole quando la condizione di Successo è vera (o a mano dal pulsante CERCHE), **cambio di capitolo** con la carta
+  Preparazione (mazzi Incontro, Parti nel mazzo Eventi, Guardiani, Segreti).
+- **Guardiani**: piazzati dalla Preparazione, mossi ogni mattina col dado Guardiano (1-4 direzione, 5 fermo,
+  6 se ne va — distribuzione da verificare sul dado vero), Incontro immediato entrando nel loro Luogo.
+- **Stai morendo / Stai impazzendo**: effetti quando la carta entra in gioco, limite di Oggetti, Incubi al posto
+  dei Sogni, lanci di Quadrante a ogni Viaggio o Esplorazione.
+
+Restano da fare al tavolo (il gioco li mostra con ☐) circa il 10% dei passi (686 su 6.890, condizioni comprese, contando anche le copie delle carte) che il linguaggio non esprime
+(negozi di Oggetti, spunte sugli status, "Oggetto non Compagno", alcune regole che sostituiscono altre regole…).
+
 ## Firebase
 Stesso progetto degli altri giochi della ludoteca (`flammerouge-f8669`), radice `taintedgrail/campagne`.
 Le regole da aggiungere al Realtime Database sono in `firebase/regole_taintedgrail.json`.
 
 ## Struttura
 ```
-scripts/core/     Partita (stato), Giornata, MotoreDiario, Condizioni, Effetti, Incontro, Personaggi, Preparazione
+scripts/core/     Partita (stato), Giornata, MotoreDiario, Interprete (effetti codificati), Condizioni ed Effetti
+                  (lettura del testo, di riserva), Incontro, Personaggi, Preparazione
+data/automazione.json  effetti codificati (tools/automazione: DSL.md, lotti, out; tools/unisci_automazione.py)
 scripts/ui/       menu, gioco, pannello del Diario, schede dei Personaggi, finestra dell'Incontro, Diario libero
 scripts/tavolo/   tavolo 3D
 scripts/data/     Dati, Carte, Immagini (caricamento a richiesta da web/), Modelli (miniature .glb)
@@ -66,5 +97,6 @@ docs/REGOLE.md    riassunto tecnico delle regole
 ## Prove
 ```
 godot --headless --path . -s res://tests/compila.gd          # compila tutti gli script
+TG_DB_URL=off godot --headless --path . -s res://tests/prova_automazione.gd   # esegue tutte le voci codificate
 TG_PROVA=1 TG_DB_URL=off xvfb-run -s "-screen 0 1920x1080x24" godot --path . -s res://tests/foto.gd   # screenshot
 ```

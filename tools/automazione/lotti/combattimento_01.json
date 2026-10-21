@@ -1,0 +1,2938 @@
+{
+ "carte": [
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34405.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición perversa",
+    "it": "Maledizione perversa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_magic}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_magic}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34406.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición perversa",
+    "it": "Maledizione perversa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_magic}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_magic}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34407.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Bandada de cuervos",
+    "it": "Stormo di corvi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 1 {i:wound}",
+     "it": "{i:skull} Previeni 1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}, roba 1 carta",
+     "it": "{i:delay} Ottieni {i:cube2}, pesca 1 carta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34408.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe desde lo alto",
+    "it": "Colpo dall'alto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} +1 {i:wound}, pierde {i:cube} menos",
+    "it": "{i:skull} +1 {i:wound}, perdi {i:cube} in meno"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34409.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ritual de marchitamiento",
+    "it": "Rituale di avvizzimento"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pon 2 {i:delay} en esta carta; paga 2 de {r:Magia} y pierde 1 de {r:Rep} O BIEN {i:discard}",
+     "it": "{i:place} Metti 2 {i:delay} su questa carta; paga 2 {r:Magia} e perdi 1 {r:Rep} OPPURE {i:discard}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 2,
+     "es": "{i:delay} Obtén {i:cube6}",
+     "it": "{i:delay} Ottieni {i:cube6}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34410.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mordedura de serpiente",
+    "it": "Morso di serpente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": null,
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34411.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Estoicismo",
+    "it": "Stoicismo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 2 Cargas: Ignora el ataque enemigo",
+     "it": "Paga 2 Cariche: ignora l'attacco nemico"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34412.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Postura defensiva",
+    "it": "Postura difensiva"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 2 {i:wound}, pierde {i:cube} menos",
+     "it": "{i:skull} Previeni 2 {i:wound}, perdi {i:cube} in meno"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34413.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de sangre",
+    "it": "Magia di sangue"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:health}, obtén 3 Cargas",
+     "it": "{i:place} Perdi 1 {i:health}, ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Puedes usar estas Cargas como {r:Magia} durante este Encuentro",
+     "it": "Puoi usare queste Cariche come {r:Magia} durante questo Incontro"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34414.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Aura exaltada",
+    "it": "Aura esaltata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo pueden tratar {i:extra} como {i:draw} (y viceversa)",
+    "it": "Tutti i membri della Compagnia possono considerare {i:extra} come {i:draw} (e viceversa)"
+   },
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34824.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de guerra",
+    "it": "Magia di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 1 de {i:terror}",
+     "it": "{i:place} Ottieni 1 {i:terror}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34823.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Aura heroica",
+    "it": "Aura eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo ignoran los efectos del Pánico",
+    "it": "Tutti i membri della Compagnia ignorano gli effetti del Panico"
+   },
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34822.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Aura inspiradora",
+    "it": "Aura ispiratrice"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Roba 2 cartas",
+    "it": "{i:place} Pesca 2 carte"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34821.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Arremetida",
+    "it": "Assalto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 1 Carga: Retira {i:delay} de cualquier carta de la Secuencia",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da qualsiasi carta della Sequenza"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34820.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:energy}",
+     "it": "{i:place} Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34819.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound} recibida en este ataque",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound} subita in questo attacco"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34818.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Acopio de fuerzas",
+    "it": "Raccogliere le forze"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Pierde {i:cube}, roba 2 cartas",
+    "it": "{i:delay} Perdi {i:cube}, pesca 2 carte"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34817.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa ingeniosa",
+    "it": "Trappola ingegnosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_practicality}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_practicality}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34816.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:key_courage}",
+    "it": "{i:place} Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:key_courage}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34815.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe potente",
+    "it": "Colpo potente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:energy}",
+     "it": "{i:place} Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34300.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Seccionar tendón",
+    "it": "Recidere il tendine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 1 de {i:energy}",
+    "it": "{i:place} Perdi 1 {i:energy}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34301.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mordisco",
+    "it": "Morso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Lanza un dial: Calavera: Pierde 1 de {i:health}. Grial: Obtén {i:cube2}",
+    "it": "{i:place} Lancia un Quadrante: Teschio: perdi 1 {i:health}. Graal: ottieni {i:cube2}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34302.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cebo",
+    "it": "Esca"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Paga 1 de {r:Ricchezza} para obtener {i:cube}",
+    "it": "{i:place} Paga 1 {r:Ricchezza} per ottenere {i:cube}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34303.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Puñalada furiosa",
+    "it": "Pugnalata furiosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Obtén {i:cube2}",
+    "it": "{i:delay} Ottieni {i:cube2}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34304.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Escabullirse",
+    "it": "Sgattaiolare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Paga 2 de {i:energy} para ignorar el ataque enemigo",
+    "it": "{i:skull} Paga 2 {i:energy} per ignorare l'attacco nemico"
+   },
+   "passiva": true
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34305.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Puñalada por la espalda",
+    "it": "Pugnalata alle spalle"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada punto de {i:practicality} que tengas si esta es tu primera carta jugada durante tu activación",
+    "it": "{i:place} Ottieni {i:cube} per ogni punto di {i:practicality} che possiedi se questa è la prima carta che giochi durante la tua attivazione"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34306.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Despistar",
+    "it": "Depistare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora todas las pérdidas de {i:cube}",
+     "it": "{i:skull} Ignora tutte le perdite di {i:cube}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Si {i:discard}, pierde 2 de {i:energy}",
+     "it": "Se {i:discard}, perdi 2 {i:energy}"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34307.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "El legado de los siglos",
+    "it": "L'eredità dei secoli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Retira cualquier número de Cargas de cualquier carta de la Secuencia. Ignora una pérdida de {i:cube} o 1 {i:wound} por cada Carga retirada",
+    "it": "{i:skull} Rimuovi un numero qualsiasi di Cariche da qualsiasi carta della Sequenza. Ignora una perdita di {i:cube} o 1 {i:wound} per ogni Carica rimossa"
+   },
+   "passiva": true
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34308.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Enjambre sin fin",
+    "it": "Sciame senza fine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Cada miembro del equipo obtiene 1 de {i:terror}; pon 4 {i:delay} en esta carta",
+     "it": "{i:place} Ogni membro della Compagnia ottiene 1 {i:terror}; metti 4 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Siempre que retires {i:delay}, obtén {i:cube}",
+     "it": "Ogni volta che rimuovi {i:delay}, ottieni {i:cube}"
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34309.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "¡A por los ojos!",
+    "it": "Agli occhi!"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora el ataque enemigo",
+     "it": "{i:skull} Ignora l'attacco nemico"
+    },
+    {
+     "innesco": "attacco",
+     "es": "{i:discard} después del ataque",
+     "it": "{i:discard} dopo l'attacco"
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34310.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rata acorralada",
+    "it": "Ratto alle strette"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound}",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Roer",
+    "it": "Rosicchiare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén 2 de {i:terror}. Luego, obtén {i:cube} por cada 2 puntos de {i:aggression} y/o {i:practicality} que tengas",
+    "it": "{i:place} Ottieni 2 {i:terror}. Poi ottieni {i:cube} per ogni 2 punti di {i:aggression} e/o {i:practicality} che possiedi"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34312.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Amigos diminutos",
+    "it": "Piccoli amici"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada punto en tu {i:caution}; pierde 1 de {r:Cibo}",
+    "it": "{i:place} Ottieni {i:cube} per ogni punto della tua {i:caution}; perdi 1 {r:Cibo}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34313.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Juego sucio",
+    "it": "Gioco sporco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "4x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 2 de {r:Rep}",
+    "it": "{i:place} Perdi 2 {r:Rep}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34314.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mil cortes",
+    "it": "Mille tagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén 1 de {i:terror}",
+    "it": "{i:place} Ottieni 1 {i:terror}"
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33424.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33423.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33422.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Intimidar",
+    "it": "Intimidire"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro gris, obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+    "it": "Se stai combattendo contro un Incontro grigio, ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33421.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Arremetida",
+    "it": "Assalto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Retira {i:delay} de cualquier carta de la Secuencia.",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da una qualsiasi carta della Sequenza."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33420.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Acopio de fuerzas",
+    "it": "Raccogliere le forze"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Pierde {i:cube}, roba 2 cartas.",
+    "it": "Perdi {i:cube}, pesca 2 carte."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33419.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33418.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}.",
+    "it": "Per ogni {i:cube} che dovresti perdere, invece ottieni {i:cube}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33417.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:courage}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:courage}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33416.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:courage}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:courage}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33415.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Enfurecer",
+    "it": "Infuriare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:aggression}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:aggression}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33800.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33801.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque cauteloso",
+    "it": "Attacco prudente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube} menos, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube} in meno, previeni 1 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33802.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar.",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca."
+    }
+   ],
+   "passiva": true
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33803.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33804.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33805.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe final",
+    "it": "Colpo finale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube2}, +1 {i:wound}.",
+    "it": "Perdi {i:cube2}, +1 {i:wound}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33806.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33807.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Recapacitar",
+    "it": "Ripensarci"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Pierde {i:cube}, roba 2 cartas.",
+    "it": "Perdi {i:cube}, pesca 2 carte."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33808.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Eliges el ataque enemigo (excepto «Huir»), {i:discard} después del ataque.",
+    "it": "Scegli l'attacco nemico (tranne «Fuggire»), {i:discard} dopo l'attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33809.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:wound} recibida en este ataque.",
+    "it": "Ottieni {i:cube} per ogni {i:wound} subita in questo attacco."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33810.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33811.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33812.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque sorpresa",
+    "it": "Attacco a sorpresa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false
+  }
+ ]
+}

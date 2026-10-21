@@ -18,10 +18,21 @@ var _diario: PannelloDiario
 var _modale: Control
 var _viaggio := false
 var _evento_btn: Button
+var domande: Domande
+var _stati_noti := {}     # personaggio -> {"morendo": bool, "impazzendo": bool}
 
 func _ready() -> void:
 	partita = Campagna.partita
 	giornata = Giornata.new(partita)
+	domande = Domande.new()
+	add_child(domande)
+	domande.incontro = _incontro_richiesto
+	domande.diario = func(l, v):
+		if partita.diario.apri_numero(l, v):
+			_apri_diario()
+	domande.evento = func(img): _messaggio("Evento · " + Carte.nome(img), str(Carte.dati(img).get("testo", {}).get("it", "")), Callable(), {}, img)
+	for x in partita.personaggi():
+		_stati_noti[str(x["id"])] = {"morendo": Personaggi.morente(x), "impazzendo": Personaggi.in_follia(x)}
 	tavolo = Tavolo3D.new(partita)
 	add_child(tavolo)
 	tavolo.luogo_cliccato.connect(_luogo_cliccato)
@@ -148,7 +159,18 @@ func _aggiorna_azioni() -> void:
 	var puo: bool = not x.get("passato", false) and int(x["energia"]) > 0
 	_azione("VIAGGIARE", _inizia_viaggio, puo and not giornata.puo_viaggiare(x).is_empty(), "1 Energia: muovi in un Luogo collegato")
 	_azione("ESPLORARE", _esplora, puo, "1 Energia per membro: leggi il Diario di questo Luogo")
-	var az := giornata.azione_luogo(n)
+	var aza = _azioni_luogo_auto(n)
+	if not aza.is_empty():
+		for i in aza.size():
+			var a: Dictionary = aza[i]
+			var costo := _costo_energia(a.get("costo", []))
+			var usata: bool = a.get("una_volta_al_giorno", false) and partita.d["gettoni"]["tempo"].has(str(n) + ("" if i == 0 else ":%d" % i))
+			var nome_a := _nome_azione_luogo(n, i)
+			var ok_c: bool = not (a.get("condizione") is Dictionary) or a["condizione"].is_empty() or Interprete.new(partita).valuta(a["condizione"]) != false
+			var ii := i
+			_azione(nome_a.to_upper(), func(): _azione_luogo_auto(n, ii), puo and not usata and ok_c and int(x["energia"]) >= costo,
+				"%d Energia%s" % [costo, " · una volta al giorno" if a.get("una_volta_al_giorno", false) else ""])
+	var az := giornata.azione_luogo(n) if aza.is_empty() else {}
 	if not az.is_empty():
 		var nome := str(az.get("nome", {}).get("it", "Azione del Luogo"))
 		_azione(nome.to_upper(), _azione_luogo, puo and not giornata.azione_luogo_usata(n) and int(x["energia"]) >= int(az.get("costo", 0)),
@@ -158,6 +180,11 @@ func _aggiorna_azioni() -> void:
 		Dati.testo_piano("%d Energia: %s" % [int(dd["azione"]["costo"]), dd["azione"]["testo"]]))
 	if _ha_menhir(n):
 		_azione("MENHIR", _menhir, true, "Ispeziona il Menhir del Luogo e attivalo")
+	var usabili := partita.inneschi("azione", x) + partita.inneschi("in_qualsiasi_momento", x)
+	if not usabili.is_empty():
+		_azione("CARTE (%d)" % usabili.size(), _usa_carte, true, "Oggetti, Segreti e Abilità con un'azione o usabili in qualsiasi momento")
+	if not partita.d.get("cerche", []).is_empty():
+		_azione("CERCHE", _mostra_cerche, true, "Cerche attive e loro condizioni di successo")
 	_azione("INCONTRO", _incontro_manuale, true, "Pesca un Incontro di un colore (quando il Diario o una carta lo chiedono)")
 	var f := Control.new()
 	f.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -192,6 +219,13 @@ func _dopo_azione() -> void:
 	_viaggio = false
 	tavolo.evidenzia([])
 	_controlla_richieste()
+	await _controlla_stati()
+	await _controlla_cerche()
+	if partita.d.get("salta_fine_giornata", false):
+		partita.d.erase("salta_fine_giornata")
+		giornata.nuova_giornata()
+		_inizio_giornata()
+		return
 	var x := partita.attivo()
 	if x.get("passato", false) or int(x.get("energia", 0)) <= 0:
 		if not giornata.prossimo():
@@ -212,6 +246,8 @@ func _luogo_cliccato(n: int) -> void:
 		if giornata.puo_viaggiare(partita.attivo()).has(n):
 			var gruppo := _gruppo_azione()
 			var nuovi := giornata.viaggia(gruppo, n)
+			for y in gruppo:
+				await _scatena("viaggio", y)
 			_viaggio = false
 			tavolo.evidenzia([])
 			_aggiorna()
@@ -232,6 +268,26 @@ func _gruppo_azione() -> Array:
 
 ## Arrivo in un Luogo: regola immediata (fulmine) e Insediamento nemico.
 func _arrivo(n: int, _nuovi: Array) -> void:
+	# 1. Guardiani nel Luogo: Incontro immediato, prima delle regole col fulmine
+	for g in partita.guardiani_in(n):
+		await _domanda_avviso("Guardiano", "Nel Luogo %d c'è il Guardiano %s: Incontro immediato!" % [n, Carte.nome(str(g["img"]))])
+		await _incontro_carta(str(g["img"]), str(g.get("colore", "")))
+	# 2. regola immediata codificata
+	var ai = Carte.auto(Carte.img_luogo(n)).get("immediata")
+	if ai is Dictionary and ai.get("effetti") is Array and not ai["effetti"].is_empty():
+		var chiave := "imm:%d" % n
+		if not (ai.get("una_volta_al_giorno", false) and partita.d["gettoni"]["tempo"].has(chiave)):
+			if ai.get("una_volta_al_giorno", false):
+				partita.d["gettoni"]["tempo"][chiave] = 1
+			var testo_imm := str(Carte.luogo(n).get("immediata", {}).get("it", "")) if Carte.luogo(n).get("immediata") is Dictionary else ""
+			await _domanda_avviso("Regola immediata · Luogo %d" % n, testo_imm)
+			var it := Interprete.new(partita, null, domande, {"luogo": n, "carta": Carte.img_luogo(n)})
+			await it.esegui(ai["effetti"])
+			_riassunto(it.rapporto)
+		await _scatena("arrivo")
+		_dopo_azione()
+		return
+	await _scatena("arrivo")
 	var c := Carte.luogo(n)
 	var imm = c.get("immediata")
 	if imm is Dictionary and str(imm.get("it", "")) != "":
@@ -246,6 +302,8 @@ func _esplora() -> void:
 	var g := _gruppo_azione()
 	if not giornata.esplora(g):
 		return
+	for y in g:
+		await _scatena("esplorazione", y)
 	partita.diario.apri_numero(partita.luogo_attivo())
 	_apri_diario()
 	_aggiorna()
@@ -257,6 +315,7 @@ func _apri_diario(libero := false) -> void:
 		_scegli_numero_diario()
 		return
 	_diario = PannelloDiario.new(partita.diario, partita)
+	_diario.domande = domande
 	_diario.set_anchors_preset(Control.PRESET_RIGHT_WIDE)
 	_diario.offset_left = -820
 	_diario.offset_top = 66
@@ -353,6 +412,18 @@ func _menhir() -> void:
 	var n := partita.luogo_attivo()
 	var l := Dati.luogo(partita.camp, Dati.id_numero(partita.camp, n))
 	var t := str(l.get("menhir", "Il testo del Menhir di questo Luogo è sulla carta."))
+	var am = Dati.auto_diario("s:", str(l.get("menhir", ""))).get("menhir")
+	if not (am is Dictionary):
+		am = Carte.auto(Carte.img_luogo(n)).get("menhir")
+	if am is Dictionary:
+		var it0 := Interprete.new(partita, null, domande, {"luogo": n})
+		var q0 := int(am.get("quadrante", 8))
+		if am.get("meno_per_giocatore", false):
+			q0 -= partita.personaggi().size() - 1
+		var ok0: bool = not (am.get("condizione") is Dictionary) or am["condizione"].is_empty() or it0.valuta(am["condizione"]) != false
+		_messaggio("Menhir · Luogo %d" % n, t + ("\n\n[color=#d4ae63]Pagando i costi il Menhir si attiva con il Quadrante a %d.[/color]" % q0 if ok0 else "\n\n[color=#e05a4a]Non soddisfate la condizione per attivarlo.[/color]"), Callable(),
+			{"ATTIVA IL MENHIR": func(): _attiva_menhir_auto(n, am)} if ok0 else {})
+		return
 	var q := partita.quadrante_iniziale(8)
 	var mq := RegEx.create_from_string("[Qq]uadrante su (?:\\[b\\])?(\\d+)").search(t)
 	if mq:
@@ -385,6 +456,23 @@ func _paga_menhir(t: String) -> void:
 			partita.modifica(y, "magia", -1)
 			partita.racconta("Arev è Maledetto: −1 Magia per attivare il Menhir")
 
+func _attiva_menhir_auto(n: int, am: Dictionary) -> void:
+	var it := Interprete.new(partita, null, domande, {"luogo": n})
+	if am.get("costo") is Array and not await it.esegui(am["costo"]):
+		_riassunto(it.rapporto)
+		return
+	for y in partita.personaggi():
+		if str(y["id"]) == "arev" and partita.compagnia().has(y):
+			partita.modifica(y, "magia", -1)
+			partita.racconta("Arev è Maledetto: −1 Magia per attivare il Menhir")
+	var q := int(am.get("quadrante", 8))
+	if am.get("meno_per_giocatore", false):
+		q -= partita.personaggi().size() - 1
+	partita.attiva_menhir(n, maxi(1, q))
+	await it.esegui(am.get("effetti", []))
+	_riassunto(it.rapporto)
+	_dopo_azione()
+
 func _incontro_manuale() -> void:
 	_messaggio("Incontro", "Di che colore è l'Incontro da pescare?", Callable(), {
 		"VERDE": func(): _avvia_incontro("verde"),
@@ -404,11 +492,220 @@ func _avvia_incontro(colore: String, nome := "") -> void:
 				m.push_front(img)
 				img = m.pop_at(i + 1)
 				break
-	var fi := FinestraIncontro.new(partita, img, colore)
+	var fi := FinestraIncontro.new(partita, img, colore, domande)
 	fi.finito.connect(func(_esito):
-		m.append(img)  # in fondo al mazzo
+		if not Partita.guardiani(partita).any(func(g): return str(g["img"]) == img):
+			m.append(img)  # in fondo al mazzo
 		_dopo_azione())
 	_ui.add_child(fi)
+
+## Incontro chiesto da un effetto (Diario, Eventi, carte): restituisce l'esito.
+func _incontro_richiesto(colore: String, nome: String, _livello: int) -> String:
+	var m: Array = partita.d["mazzi"].get_or_add("incontri_" + colore, [])
+	var img := ""
+	if nome != "":
+		for x in m:
+			if Carte.nome(x).to_lower() == nome.to_lower():
+				img = x
+		if img == "":
+			# Incontro specifico non nel mazzo: si cerca fra tutte le carte di quel colore
+			var tutte: Dictionary = Dati.carte.get("gruppi", {}).get("incontri", {}).get(colore, {})
+			for liv in tutte:
+				for x in tutte[liv]:
+					if Carte.nome(x).to_lower() == nome.to_lower():
+						img = x
+	if img == "":
+		if m.is_empty():
+			await _domanda_avviso("Incontro", "Il mazzo Incontro %s è vuoto." % colore)
+			return "vittoria"
+		img = m[0]
+		for mod in partita.modificatori("incontro_in_fondo"):
+			if Carte.nome(img).to_lower() == str(mod.get("nome", "")).to_lower():
+				m.push_back(m.pop_front())
+				img = m[0]
+	m.erase(img)
+	var esito := await _incontro_carta(img, colore)
+	if not Partita.guardiani(partita).any(func(g): return str(g["img"]) == img):
+		m.append(img)
+	return esito
+
+## Apre la finestra dell'Incontro per una carta e attende l'esito.
+func _incontro_carta(img: String, colore: String) -> String:
+	if colore == "":
+		colore = str(Carte.dati(img).get("colore", "grigio"))
+	await _scatena("pesca_incontro")
+	var fi := FinestraIncontro.new(partita, img, colore, domande)
+	_ui.add_child(fi)
+	var esito: String = await fi.finito
+	_aggiorna()
+	return esito
+
+## Inneschi delle carte fuori dagli Incontri.
+func _scatena(quando: String, x: Dictionary = {}) -> void:
+	if partita.inneschi(quando, x).is_empty():
+		return
+	var it := Interprete.new(partita, null, domande, {})
+	await it.scatena(quando, x)
+	if not it.rapporto.is_empty():
+		_riassunto(it.rapporto)
+	_aggiorna()
+
+## Avviso che attende la chiusura.
+func _domanda_avviso(titolo: String, testo: String) -> void:
+	await domande.avvisa(titolo, testo)
+
+## Usa una carta (Oggetto, Segreto, Abilità) con un'azione o in qualsiasi momento.
+func _usa_carte() -> void:
+	var x := partita.attivo()
+	var usabili := partita.inneschi("azione", x) + partita.inneschi("in_qualsiasi_momento", x)
+	if usabili.is_empty():
+		return
+	var nomi := usabili.map(func(u): return "%s — %s" % [Carte.nome(str(u["img"])), _descrivi_innesco(u)])
+	nomi.append("Annulla")
+	var k := await domande.scegli("Quale carta usi?", nomi)
+	if k >= usabili.size():
+		return
+	var it := Interprete.new(partita, null, domande, {})
+	await it.usa(usabili[k])
+	_riassunto(it.rapporto)
+	_dopo_azione()
+
+func _descrivi_innesco(u: Dictionary) -> String:
+	var c := Carte.dati(str(u["img"]))
+	var e = c.get("effetto", c.get("testo", {}))
+	if u.has("faccia") or c.get("facce") is Array:
+		for f in c.get("facce", []):
+			if str(f.get("nome", {}).get("it", "")) != "":
+				e = f.get("effetto", e)
+	return Dati.testo_piano(str(e.get("it", ""))) if e is Dictionary else ""
+
+## Azioni codificate di una carta Luogo (lista).
+func _azioni_luogo_auto(n: int) -> Array:
+	var a = Carte.auto(Carte.img_luogo(n)).get("azione")
+	if a is Dictionary:
+		return [a]
+	if a is Array:
+		return a.filter(func(y): return y is Dictionary)
+	return []
+
+func _nome_azione_luogo(n: int, i: int) -> String:
+	var az = Carte.luogo(n).get("azione")
+	if az is Array and i < az.size():
+		az = az[i]
+	if az is Dictionary:
+		return str(az.get("nome", {}).get("it", "Azione del Luogo"))
+	return "Azione del Luogo"
+
+func _costo_energia(costo) -> int:
+	var t := 0
+	if costo is Array:
+		for c in costo:
+			if c is Dictionary and str(c.get("tipo", "")) == "paga" and str(c.get("ris", "")) == "energia":
+				t += int(c.get("n", 0))
+	elif costo is int or costo is float:
+		t = int(costo)
+	return t
+
+func _azione_luogo_auto(n: int, i: int) -> void:
+	var a: Dictionary = _azioni_luogo_auto(n)[i]
+	var it := Interprete.new(partita, null, domande, {"luogo": n, "carta": Carte.img_luogo(n)})
+	var costo = a.get("costo", [])
+	if costo is int or costo is float:
+		costo = [{"tipo": "paga", "ris": "energia", "n": int(costo), "chi": "diviso"}]
+	if costo is Array and not costo.is_empty() and not await it.esegui(costo):
+		_riassunto(it.rapporto)
+		return
+	if a.get("una_volta_al_giorno", false):
+		partita.d["gettoni"]["tempo"][str(n) + ("" if i == 0 else ":%d" % i)] = 1
+	partita.racconta("Azione del Luogo %d: %s" % [n, _nome_azione_luogo(n, i)])
+	await it.esegui(a.get("effetti", []))
+	_riassunto(it.rapporto)
+	_dopo_azione()
+
+## Carte "Stai morendo" / "Stai impazzendo": effetti quando si ottengono.
+func _controlla_stati() -> void:
+	for x in partita.personaggi():
+		var id := str(x["id"])
+		var prima: Dictionary = _stati_noti.get(id, {})
+		for k in ["morendo", "impazzendo"]:
+			var ora: bool = Personaggi.morente(x) if k == "morendo" else Personaggi.in_follia(x)
+			if ora and not prima.get(k, false):
+				var img := partita.carta_stato(k)
+				if img != "":
+					await _domanda_avviso("%s · %s" % [x["nome"], Carte.nome(img)], str(Carte.dati(img).get("testo", {}).get("it", "")))
+					var ot = Carte.auto(img).get("ottenuta")
+					if ot is Array and not ot.is_empty():
+						var it := Interprete.new(partita, null, domande, {"proprietario": x, "carta": img})
+						await it.esegui(ot)
+						_riassunto(it.rapporto)
+					# limite di Oggetti (Stai morendo: 3)
+					for m in partita.modificatori("limite_oggetti", x):
+						while x.get("oggetti", []).size() > int(m.get("n", 99)):
+							var og: Array = x["oggetti"]
+							var j := await domande.scegli("%s può tenere solo %d Oggetti: quale scarti?" % [x["nome"], int(m.get("n", 99))], og.map(func(o): return Carte.nome(o)))
+							partita.scarta_oggetto(x, og[j])
+			prima[k] = ora
+		_stati_noti[id] = prima
+
+## Cerche attive: se la condizione di Successo è soddisfatta se ne applicano gli effetti.
+func _controlla_cerche() -> void:
+	for img in partita.d.get("cerche", []).duplicate():
+		var c = Carte.auto(str(img)).get("cerca")
+		if not (c is Dictionary):
+			continue
+		var it := Interprete.new(partita, null, domande, {"carta": img})
+		var succ = c.get("successo")
+		if not (succ is Dictionary) or it.valuta(succ) != true:
+			continue
+		await _domanda_avviso("Cerca completata · " + Carte.nome(str(img)), str(Carte.dati(str(img)).get("cerca", {}).get("it", "")))
+		await _completa_cerca(str(img))
+	await _controlla_capitolo()
+
+func _completa_cerca(img: String) -> void:
+	var c: Dictionary = Carte.auto(img).get("cerca", {})
+	var it := Interprete.new(partita, null, domande, {"carta": img})
+	partita.racconta("Cerca completata: " + Carte.nome(img))
+	await it.esegui(c.get("effetti", []))
+	if partita.d.get("cerche", []).has(img) and c.get("effetti", []).is_empty():
+		partita.d["cerche"].erase(img)
+	_riassunto(it.rapporto)
+	_aggiorna()
+
+## Capitolo completato senza preparazione del successivo: si sceglie la carta Preparazione.
+func _controlla_capitolo() -> void:
+	if not partita.d.get("capitolo_completato", false):
+		return
+	var cap := partita.capitolo() + 1
+	var opz := []
+	for img in Carte.gruppo("eventi_storia"):
+		var c := Carte.dati(img)
+		if str(c.get("sottotipo", "")) == "preparazione" and int(c.get("capitolo", -1)) == cap:
+			opz.append(img)
+	partita.d["capitolo_completato"] = false
+	if opz.is_empty():
+		await _domanda_avviso("Capitolo completato", "Il Capitolo %d è completato. Non ci sono altre carte Preparazione: la storia è conclusa (o il prossimo capitolo non è ancora trascritto)." % (cap - 1))
+		return
+	var k := 0
+	if opz.size() > 1:
+		k = await domande.scegli("Capitolo %d completato. Quale Preparazione segue? (lo indica il Diario o la carta Evento)" % (cap - 1), opz.map(func(x): return Carte.nome(x) + " " + str(Carte.dati(x).get("lettera", "") if Carte.dati(x).get("lettera") != null else "")))
+	var l = Carte.dati(opz[k]).get("lettera")
+	Preparazione.capitolo(partita, cap, "" if l == null else str(l))
+	await _domanda_avviso("Capitolo %d%s" % [cap, "" if l == null else str(l)], "Nuovo Capitolo preparato: mazzi Incontro aggiornati, nuove Parti nel mazzo Eventi%s." % (", Guardiani sulla mappa" if not Partita.guardiani(partita).is_empty() else ""))
+	_aggiorna()
+
+func _mostra_cerche() -> void:
+	var cerche: Array = partita.d.get("cerche", [])
+	var nomi := []
+	for img in cerche:
+		nomi.append(Carte.nome(str(img)) + " — " + Dati.testo_piano(str(Carte.dati(str(img)).get("cerca", {}).get("it", ""))))
+	nomi.append("Chiudi")
+	var k := await domande.scegli("Cerche attive (scegline una per segnarla come completata se il gioco non può verificarla da solo)", nomi)
+	if k >= cerche.size():
+		return
+	if await domande.scegli("Segnare come completata \"%s\"?" % Carte.nome(str(cerche[k])), ["Sì, applica il Successo", "No"]) == 0:
+		await _completa_cerca(str(cerche[k]))
+		await _controlla_capitolo()
+		_aggiorna()
 
 ## Effetti in coda (Incontri chiesti dal Diario o dalle carte).
 func _controlla_richieste() -> void:
@@ -424,10 +721,26 @@ func _inizio_giornata() -> void:
 	var r := giornata.inizio()
 	_aggiorna()
 	var t := "\n".join(r["messaggi"])
-	if str(r["evento"]) != "":
+	var ev := str(r["evento"])
+	if ev != "" and not Carte.auto(ev).is_empty():
+		t = "\n".join(r["messaggi"].filter(func(m): return not str(m).begins_with("Evento:")))
+		await _domanda_avviso("Inizio della Giornata %d" % int(partita.d["giorno"]), (t + "\n\n" if t != "" else "") + "[b]Evento: " + Carte.nome(ev) + "[/b]\n" + str(Carte.dati(ev).get("testo", {}).get("it", "")))
+		var it := Interprete.new(partita, null, domande, {})
+		await it.risolvi_evento(ev)
+		if not it.rapporto.is_empty():
+			_riassunto(it.rapporto)
+	elif ev != "":
 		_mostra_evento(t)
 	elif t != "":
 		_messaggio("Inizio della Giornata %d" % int(partita.d["giorno"]), t)
+	await _scatena("inizio_giornata")
+	# Guardiani arrivati dove ci sono i Personaggi
+	for g in giornata.guardiani_con_personaggi():
+		await _domanda_avviso("Guardiano", "Il Guardiano %s raggiunge il Luogo %d: Incontro!" % [Carte.nome(str(g["img"])), int(g["luogo"])])
+		await _incontro_carta(str(g["img"]), str(g.get("colore", "")))
+	await _controlla_stati()
+	await _controlla_cerche()
+	_aggiorna()
 
 func _mostra_evento(prefisso := "") -> void:
 	var ev := str(partita.d.get("evento", ""))
@@ -441,6 +754,9 @@ func _mostra_evento(prefisso := "") -> void:
 func _fine_giornata() -> void:
 	partita.d["fase"] = "fine"
 	Campagna.modificata()
+	await _scatena("fine_giornata")
+	for x in partita.personaggi():
+		await _scatena("riposo", x)
 	var righe := []
 	var sogni := []
 	for x in partita.personaggi():
@@ -455,7 +771,14 @@ func _fine_giornata() -> void:
 	_messaggio("Fine della Giornata %d" % int(partita.d["giorno"]), t + "\n\n[color=#b9a98a]Puoi spendere Esp dalla scheda dei Personaggi (clic sul nome) prima di iniziare la nuova giornata.[/color]", Callable(), {
 		"NUOVA GIORNATA": func():
 			for s in sogni:
-				Effetti.applica(str(s["testo"]), partita)
+				var asg := Dati.auto_diario("s:", str(s["testo"]))
+				if asg.get("effetti") is Array:
+					var it := Interprete.new(partita, null, domande, {})
+					await it.esegui(asg["effetti"])
+					if not it.rapporto.is_empty():
+						await _domanda_avviso(str(s["tipo"]), "\n".join(it.rapporto.map(func(z): return ("✔ " if z.get("fatto", true) else "☐ ") + str(z["testo"]))))
+				else:
+					Effetti.applica(str(s["testo"]), partita)
 			giornata.nuova_giornata()
 			_inizio_giornata()})
 
@@ -598,13 +921,19 @@ func _scheda_personaggio(id: String) -> void:
 		t += "• %s %d → %d: %d Esp\n" % [Partita.NOMI_ATTRIBUTI[a], partita.attributo(x, a), partita.attributo(x, a) + 1, c]
 		if int(x.get("esp", 0)) >= c:
 			bot["+ " + Partita.NOMI_ATTRIBUTI[a].to_upper()] = func():
-				giornata.migliora_attributo(x, a)
+				if giornata.migliora_attributo(x, a) and partita.attributo(x, a) >= 3:
+					await Interprete.new(partita, null, domande, {}).scegli_abilita(x, a)
 				_aggiorna()
 				_scheda_personaggio(id)
 	if int(x.get("esp", 0)) >= 2:
 		bot["CARTA DI COMBATTIMENTO (2 Esp)"] = func(): _carta_avanzata(x, "combattimento")
 		bot["CARTA DI DIPLOMAZIA (2 Esp)"] = func(): _carta_avanzata(x, "diplomazia")
 	t += "\nMazzo di Combattimento: %d carte · Diplomazia: %d carte" % [x["mazzi"]["combattimento"]["mazzo"].size(), x["mazzi"]["diplomazia"]["mazzo"].size()]
+	var ab: Array = x.get("abilita", [])
+	if not ab.is_empty():
+		t += "\n\n[b]Abilità:[/b] " + ", ".join(ab.map(func(z): return "%s (%s)" % [str(z.get("nome", "")), Partita.NOMI_ATTRIBUTI.get(str(z.get("attributo", "")), "")] if z is Dictionary else str(z)))
+	var og: Array = x.get("oggetti", [])
+	t += "\n[b]Oggetti:[/b] " + (", ".join(og.map(func(z): return Carte.nome(z))) if not og.is_empty() else "nessuno")
 	_messaggio(str(x["nome"]), t, Callable(), bot, Personaggi.dati(id)["tessera"])
 
 func _carta_avanzata(x: Dictionary, tipo: String) -> void:

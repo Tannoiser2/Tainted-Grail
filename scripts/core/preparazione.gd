@@ -27,9 +27,9 @@ static func capitolo_1(p: Partita) -> void:
 
 ## Mazzi Incontro di un capitolo: le carte dei livelli previsti (dalla carta Preparazione,
 ## se trascritta; altrimenti il livello 1 al Capitolo 1, +1 livello ogni 3 Capitoli).
-static func prepara_incontri(p: Partita, capitolo: int) -> void:
+static func prepara_incontri(p: Partita, capitolo: int, lettera := "") -> void:
 	var tutte: Dictionary = Dati.carte.get("gruppi", {}).get("incontri", {})
-	var livelli := livelli_capitolo(capitolo, p.personaggi().size())
+	var livelli := livelli_capitolo(capitolo, p.personaggi().size(), lettera)
 	for colore in ["grigio", "verde", "viola", "blu"]:
 		var m := []
 		var primo := ""
@@ -48,12 +48,17 @@ static func prepara_incontri(p: Partita, capitolo: int) -> void:
 		p.d["mazzi"]["incontri_" + colore] = m
 
 ## Livelli dei mazzi Incontro per il capitolo e il numero di giocatori, dalla carta Preparazione.
-static func livelli_capitolo(capitolo: int, giocatori: int) -> Array:
+static func livelli_capitolo(capitolo: int, giocatori: int, lettera := "") -> Array:
 	for img in Carte.gruppo("eventi_storia"):
 		var c := Carte.dati(img)
-		if str(c.get("sottotipo", "")) != "preparazione" or int(c.get("capitolo", -1)) != capitolo:
+		if str(c.get("sottotipo", "")) != "preparazione" or Carte.num(c, "capitolo") != capitolo:
+			continue
+		if lettera != "" and Carte.txt(c, "lettera") not in ["", lettera, "<null>"]:
 			continue
 		var lp: Dictionary = c.get("preparazione", {}).get("mazzi_incontro", {}).get("livelli_per_giocatori", {})
+		var ap = Carte.auto(img).get("preparazione")
+		if ap is Dictionary and ap.get("mazzi_incontro") is Dictionary:
+			lp = ap["mazzi_incontro"].get("livelli_per_giocatori", lp)
 		for k in lp:
 			var parti := str(k).split("-")
 			var a := int(parti[0])
@@ -67,7 +72,7 @@ static func prepara_eventi(p: Partita, capitolo: int) -> void:
 	var parti := []
 	for img in Carte.gruppo("eventi_storia"):
 		var c := Carte.dati(img)
-		if int(c.get("capitolo", -1)) == capitolo and str(c.get("sottotipo", "")) == "storia":
+		if Carte.num(c, "capitolo") == capitolo and str(c.get("sottotipo", "")) == "storia":
 			parti.append(img)
 	parti.sort_custom(func(a, b): return int(Carte.dati(a).get("parte", 0)) < int(Carte.dati(b).get("parte", 0)))
 	p.d["mazzi"]["eventi"] = parti
@@ -75,3 +80,124 @@ static func prepara_eventi(p: Partita, capitolo: int) -> void:
 	var cas: Array = Carte.gruppo("eventi_casuali").duplicate()
 	cas.shuffle()
 	p.d["mazzi"]["eventi_casuali"] = cas
+
+## Carta "Preparazione del Capitolo" (capitolo e lettera), "" se non trovata.
+static func carta_preparazione(capitolo: int, lettera := "") -> String:
+	var trovata := ""
+	for img in Carte.gruppo("eventi_storia"):
+		var c := Carte.dati(img)
+		if str(c.get("sottotipo", "")) != "preparazione" or Carte.num(c, "capitolo") != capitolo:
+			continue
+		var l = c.get("lettera")
+		var ls := "" if l == null else str(l)
+		if ls == lettera:
+			return img
+		if trovata == "" and (ls == "" or lettera == ""):
+			trovata = img
+	return trovata
+
+## Preparazione di un nuovo Capitolo (dopo il completamento del precedente): mazzi Incontro,
+## mazzo Eventi con le Parti del Capitolo, Guardiani, Segreti ed effetti della carta Preparazione.
+static func capitolo(p: Partita, cap: int, lettera := "") -> void:
+	var d := p.d
+	d["capitolo"] = cap
+	d["lettera"] = lettera
+	d["capitolo_completato"] = false
+	var img := carta_preparazione(cap, lettera)
+	var ap = Carte.auto(img).get("preparazione") if img != "" else null
+	if not (ap is Dictionary):
+		ap = {}
+	prepara_incontri(p, cap, lettera)
+	# mazzo Eventi: le Parti dalla prima (in cima) all'ultima
+	var ev: Dictionary = ap.get("eventi", {}) if ap.get("eventi") is Dictionary else {}
+	var it := Interprete.new(p)
+	var parti: Array = ev.get("parti_dal_fondo", [])
+	for v in ev.get("varianti", []):
+		if v is Dictionary and it.valuta(v.get("condizione", {})) == true:
+			parti = v.get("parti_dal_fondo", parti)
+	var mazzo := []
+	if parti.is_empty():
+		prepara_eventi(p, cap)
+		mazzo = d["mazzi"]["eventi"]
+	else:
+		for n in parti:
+			var e := _parte(cap, int(n), lettera)
+			if e != "":
+				mazzo.push_front(e)
+		d["mazzi"]["eventi"] = mazzo
+	for sc in ev.get("scarta_dalla_cima", []):
+		if sc is Dictionary and it.valuta(sc.get("condizione", {})) == true:
+			for i in int(sc.get("n", 1)):
+				if not mazzo.is_empty():
+					d["mazzi"].get_or_add("eventi_scarti", []).append(mazzo.pop_front())
+	var cas: Array = Carte.gruppo("eventi_casuali").duplicate()
+	cas.shuffle()
+	d["mazzi"]["eventi_casuali"] = cas
+	# Guardiani
+	var g := p.personaggi().size()
+	for gu in ap.get("guardiani", []):
+		if not (gu is Dictionary):
+			continue
+		var gg: Dictionary = gu.get("giocatori", {}) if gu.get("giocatori") is Dictionary else {}
+		if g < int(gg.get("da", 1)) or g > int(gg.get("a", 4)):
+			continue
+		if gu.get("condizione") is Dictionary and it.valuta(gu["condizione"]) != true:
+			continue
+		piazza_guardiano(p, str(gu.get("colore", "")), str(gu.get("nome", "")), str(gu.get("luogo", "rivelato_numero_piu_basso")))
+	for sg in ap.get("segreti", []):
+		if sg is Dictionary and (not (sg.get("condizione") is Dictionary) or it.valuta(sg["condizione"]) == true):
+			p.ottieni_segreto(int(sg.get("n", 0)))
+	if ap.get("effetti") is Array:
+		it.esegui(ap["effetti"])
+	p.racconta("Preparazione del Capitolo %d%s" % [cap, lettera])
+	p.cambiato()
+
+static func _parte(cap: int, parte: int, lettera: String) -> String:
+	var di_riserva := ""
+	for img in Carte.gruppo("eventi_storia"):
+		var c := Carte.dati(img)
+		if str(c.get("sottotipo", "")) != "storia" or Carte.num(c, "capitolo") != cap or Carte.num(c, "parte") != parte:
+			continue
+		var l = c.get("lettera")
+		var ls := "" if l == null else str(l)
+		if ls == lettera:
+			return img
+		if di_riserva == "":
+			di_riserva = img
+	return di_riserva
+
+## Piazza un Guardiano (carta Incontro col nome dato) su un Luogo della mappa.
+static func piazza_guardiano(p: Partita, colore: String, nome: String, dove: String) -> void:
+	var img := ""
+	var m: Array = p.d["mazzi"].get("incontri_" + colore, [])
+	var chiave := _scheletro(nome)
+	for x in m:
+		if _scheletro(Carte.nome(x)) == chiave:
+			img = x
+	if img == "":
+		var tutte: Dictionary = Dati.carte.get("gruppi", {}).get("incontri", {}).get(colore, {})
+		for liv in tutte:
+			for x in tutte[liv]:
+				if _scheletro(Carte.nome(x)) == chiave:
+					img = x
+	if img == "":
+		p.racconta("Guardiano \"%s\" non trovato fra le carte Incontro." % nome)
+		return
+	m.erase(img)
+	var luoghi: Array = p.d["mappa"].keys().map(func(k): return int(k))
+	luoghi.sort()
+	if luoghi.is_empty():
+		return
+	var l: int = luoghi[-1] if dove.ends_with("alto") else luoghi[0]
+	if dove.is_valid_int():
+		l = int(dove)
+	p.d.get_or_add("guardiani", []).append({"img": img, "colore": colore, "luogo": l})
+	p.racconta("Guardiano %s sul Luogo %d" % [Carte.nome(img), l])
+
+## Nome ridotto alle consonanti (per riconoscere "Becco a Martello" = "Beccomartello").
+static func _scheletro(t: String) -> String:
+	var out := ""
+	for ch in t.to_lower():
+		if not (ch in " aeiouàèéìòù'’-"):
+			out += ch
+	return out

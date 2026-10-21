@@ -1,0 +1,946 @@
+{
+ "voci": [
+  {
+   "chiave": "r:70257b360cdf",
+   "ruolo": "risultato",
+   "testo": "Schivate i primi due spuntoni, ma uno vi graffia la gamba e perdete la concentrazione.",
+   "contesto": "Luogo 199 verso 35, scelta: [b]1-4[/b]"
+  },
+  {
+   "chiave": "c:874eba9e6cb0",
+   "ruolo": "condizione",
+   "testo": "[b]5+[/b]",
+   "contesto": "Luogo 199 verso 35: Verificare il vostro risultato:"
+  },
+  {
+   "chiave": "r:b15d73365102",
+   "ruolo": "risultato",
+   "testo": "Con calma, vi posizionate in mezzo agli spuntoni. Una volta che smettono di muoversi, avete tutto il tempo per pianificare come sfuggire alla trappola.\n\n[i]Ogni membro della Compagnia perde 2 {i:energy} e 1 {i:health}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 35, scelta: [b]5+[/b]"
+  },
+  {
+   "chiave": "r:d3e42f3e7511",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Esp}. Ottenete 2 Gettoni Cerca. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 199 verso 36, scelta: Continua."
+  },
+  {
+   "chiave": "v:843",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Tirare un dado e sommare la vostra {i:practicality}.\n\nIl vostro risultato è stato:[/i]",
+   "contesto": "Luogo 199 verso 38"
+  },
+  {
+   "chiave": "r:befb63bf3a9f",
+   "ruolo": "risultato",
+   "testo": "Saltate e cadete in mezzo al nulla.",
+   "contesto": "Luogo 199 verso 38, scelta: [b]1-4[/b]"
+  },
+  {
+   "chiave": "r:1c865665f462",
+   "ruolo": "risultato",
+   "testo": "Saltate e, dopo un breve volo, atterrate dall’altra parte della fenditura.\n\n[i]Ogni membro della Compagnia perde 2 {i:energy} e ottiene 2 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 38, scelta: [b]5+[/b]"
+  },
+  {
+   "chiave": "q:74bdd9a0e89f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se vincete[/i]",
+   "contesto": "Luogo 199 verso 40, scelta: Verificare il risultato"
+  },
+  {
+   "chiave": "r:5d740dbdc9f4",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 Gettone Cerca e ciascun membro della Compagnia ottiene 1 {r:Esp}, invece della Ricompensa indicata sulla carta Incontro.\n\nA prescindere dall’esito, ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 40, scelta: Verificare il risultato"
+  },
+  {
+   "chiave": "r:6c4ab7680303",
+   "ruolo": "risultato",
+   "testo": "[i]Questi strani doppelganger vi attaccano – invece di applicare la parte Fallimento della carta Incontro, ogni membro della Compagnia perde 2 {i:health}  e ottiene 2 {i:terror}.\nA prescindere dall’esito, ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 40, scelta: Verificare il risultato"
+  },
+  {
+   "chiave": "q:7ab214e2c8cb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]Se un qualsiasi membro della Compagnia ha 0 {i:aggression}[/b]",
+   "contesto": "Luogo 199 verso 43, scelta: Continua."
+  },
+  {
+   "chiave": "r:4a92c8b4f967",
+   "ruolo": "risultato",
+   "testo": "Spingete uno degli edifici senza dovervi sforzare neppure troppo, e questo crolla immediatamente. Il rumore è assordante. Quando la polvere si posa, scorgete un sentiero sgombro che conduce fuori da questo strano quartiere. \n\n[i]Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 199 verso 43, scelta: Continua."
+  },
+  {
+   "chiave": "r:ff8372345909",
+   "ruolo": "risultato",
+   "testo": "Vi sforzate, ma l’edificio è stabile. Non riuscite a spostarlo.\n\n[i]Ogni membro della Compagnia perde 1 {i:energy}.[/i]",
+   "contesto": "Luogo 199 verso 43, scelta: Continua."
+  },
+  {
+   "chiave": "c:2d36058b118f",
+   "ruolo": "condizione",
+   "testo": "[b]Nascondersi dal sole tra le ombre[/b]",
+   "contesto": "Luogo 199 verso 44: Il cielo sembra una vetrata colorata. Il sole è enorme e vi lambisce con il suo calore bruciante. Vagate tra piramidi di cristallo che proiettano ombre arcobal"
+  },
+  {
+   "chiave": "v:850",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Mentre attraversate di corsa una città morente, gli edifici crollano e tentacoli di anomalia scendono dal cielo, cercando qualcosa da afferrare. Il vento ulula nelle vostre orecchie, portandovi lamenti disperati. All’improvviso, anche il vicolo per cui state correndo inizia a venire smembrato. I ciottoli iniziano a volare verso il cielo!\n\n[i]Cercare di evitare i ciottoli e le buche nel terreno! Tirare un dado e sommare la vostra {i:practicality}. Se il vostro risultato è stato:[/i]",
+   "contesto": "Luogo 199 verso 45"
+  },
+  {
+   "chiave": "r:a03263e145c3",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2  {i:terror}.[/i]",
+   "contesto": "Luogo 199 verso 46, scelta: Continua."
+  },
+  {
+   "chiave": "q:bfc7cba8c21d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la parte 5 dello status [b]“Esplorare Tuathan”[/b]",
+   "contesto": "Luogo 199 verso 47, scelta: Continua."
+  },
+  {
+   "chiave": "q:e0eb52d26e72",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] al meno 3 {i:spirituality}[/i]",
+   "contesto": "Luogo 199 verso 48, scelta: Continua."
+  },
+  {
+   "chiave": "r:ae55d7a50bbf",
+   "ruolo": "risultato",
+   "testo": "Riuscite a trovare un modo di sfruttare queste aberrazioni spaziali a vostro vantaggio.\n\n[i]Ottenete 2 Gettoni Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 48, scelta: Continua."
+  },
+  {
+   "chiave": "r:243b69f8769b",
+   "ruolo": "risultato",
+   "testo": "Siete certi di riuscire a capire come funziona. Tuttavia, dopo molti esperimenti, passate l’intera giornata a girare in tondo.\n\n[i]Ogni membro della Compagnia perde tutta la {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 48, scelta: Continua."
+  },
+  {
+   "chiave": "r:b0ca65ef9d33",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete 2 {r:Cibo} per membro della Compagnia. Ottenete 1 Gettone Cerca. Poi, risolvere l’Incontro viola[b] “Becco a Martello”[/b] (Difficoltà 3). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 49, scelta: Continua."
+  },
+  {
+   "chiave": "r:90edb3662203",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere l’Incontro grigio [b]“Sosia” [/b](Difficoltà 3). Non potete Fuggire e non ricevete alcuna Ricompensa o Bottino riportati sulla carta Incontro.[/i]",
+   "contesto": "Luogo 199 verso 50, scelta: Continua."
+  },
+  {
+   "chiave": "r:b590c1521e39",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 51, scelta: Continua."
+  },
+  {
+   "chiave": "r:834cb874e5b7",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 52, scelta: [b]Lasciare questo luogo e proseguire il viaggio attraverso Tuathan[/b]"
+  },
+  {
+   "chiave": "q:59155cde7ecb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] la parte 1 dello status [b]“Esplorare Tuathan”[/b][/i]",
+   "contesto": "Luogo 199 verso 52, scelta: [b]Sedersi sul trono[/b]"
+  },
+  {
+   "chiave": "r:936aae6d724c",
+   "ruolo": "risultato",
+   "testo": "[i]Se siete in una Compagnia, scegliere un membro della Compagnia che risolverà il prossimo Verso.[/i]",
+   "contesto": "Luogo 199 verso 52, scelta: [b]Sedersi sul trono[/b]"
+  },
+  {
+   "chiave": "r:7e30be2fb119",
+   "ruolo": "risultato",
+   "testo": "Deformi o meno, avete bisogno di mangiare.",
+   "contesto": "Luogo 199 verso 53, scelta: [b]Procurarsi cibo e uova[/b]"
+  },
+  {
+   "chiave": "r:e439987cdf1f",
+   "ruolo": "risultato",
+   "testo": "Sembra una zona pericolosa.",
+   "contesto": "Luogo 199 verso 53, scelta: [b]Non disturbare gli uccelli e andarsene via di soppiatto[/b]"
+  },
+  {
+   "chiave": "r:17c2618cb61d",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 4 dello status [b]“Esplorare Tuathan”[/b]. Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 54, scelta: Continua."
+  },
+  {
+   "chiave": "r:068b3b82343c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 2 {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.-[/i]",
+   "contesto": "Luogo 199 verso 55, scelta: [b]Andarsene e trovare un modo di uscire da questo posto[/b]"
+  },
+  {
+   "chiave": "q:59c8b6380b78",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la parte 3 dello status [b]“Esplorare Tuathan”[/b]",
+   "contesto": "Luogo 199 verso 56, scelta: Continua."
+  },
+  {
+   "chiave": "r:e4492015d389",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror} e perde 2 {i:energy}; poi, ottenete 1 Gettone Cerca e l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 56, scelta: Continua."
+  },
+  {
+   "chiave": "r:05d4d4b4d641",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {i:health} e 1 {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 57, scelta: Continua."
+  },
+  {
+   "chiave": "v:863",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Tirare un dado e sommare la vostra {i:caution},  poi verificare il risultato ottenuto:[/i]",
+   "contesto": "Luogo 199 verso 58"
+  },
+  {
+   "chiave": "r:a53f06ce95f5",
+   "ruolo": "risultato",
+   "testo": "L’unica cosa che trovate sono delle opere d’arte inquietanti.\n\n[i]Ogni membro della Compagnia ottiene 2 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 58, scelta: [b]1-4[/b]"
+  },
+  {
+   "chiave": "r:a0e05955ecd8",
+   "ruolo": "risultato",
+   "testo": "Alcune delle statue puntano le loro dita in una direzione che decidete di seguire. Dopo un po’, trovate la via d’uscita. \n\n[i]Ottenete 2 Gettoni Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 58, scelta: [b]5+[/b]"
+  },
+  {
+   "chiave": "c:7d6a48c2e525",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la parte 4 dello status [b]“Esplorare Tuathan”[/b]",
+   "contesto": "Luogo 199 verso 59: Lo spazio tra gli edifici è pieno di fili tesi che ricordano dei tendini lucidi. Non avete altra scelta che attraversarli."
+  },
+  {
+   "chiave": "c:64ea8ac98b32",
+   "ruolo": "condizione",
+   "testo": "Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:",
+   "contesto": "Luogo 199 verso 59: Lo spazio tra gli edifici è pieno di fili tesi che ricordano dei tendini lucidi. Non avete altra scelta che attraversarli."
+  },
+  {
+   "chiave": "q:cfad01c28161",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]1-3 [/b]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:11b06f6728c1",
+   "ruolo": "risultato",
+   "testo": "I vostri abiti si impigliano nei fili, che vibrano e producono un rumore spaventoso. Il suono vi tormenta per ore e provoca visioni terrificanti. \n\n[i]Ogni membro della Compagnia ottiene 3 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "q:a41d9ddfa6bd",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]4-6 [/b]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:393273b1aed8",
+   "ruolo": "risultato",
+   "testo": "Nonostante tutti i vostri sforzi, urtate uno dei fili, che emette un violento strepito ma si azzittisce un attimo dopo. \n\n[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "q:d2ab81df9b9c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]7+ [/b]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "r:ea736b0b82d1",
+   "ruolo": "risultato",
+   "testo": "Sebbene ci voglia un po’ di tempo, riuscite a evitare tutti i fili.\n\n[i]Ogni membro della Compagnia perde 1 {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 59, scelta: Altrimenti, tirare un dado, sommare la vostra {i:caution}, e verificare il risultato ottenuto:"
+  },
+  {
+   "chiave": "c:c04fb04f0b1c",
+   "ruolo": "condizione",
+   "testo": "Se decidete di Fuggire o perdete",
+   "contesto": "Luogo 199 verso 60: Vi avvicinate a una piccola fucina il cui pavimento è ricoperto di macchie marroni. Notate che la sostanza che scorre negli scoli non è metallo liquido, ma sa"
+  },
+  {
+   "chiave": "r:0e06889ce4f3",
+   "ruolo": "risultato",
+   "testo": "[i]Scegliere tra:[/i]",
+   "contesto": "Luogo 199 verso 60, scelta: Se vincete"
+  },
+  {
+   "chiave": "r:3c6d75ce81ac",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia perde 1 {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.",
+   "contesto": "Luogo 199 verso 60, scelta: [b]Andare via[/b]"
+  },
+  {
+   "chiave": "q:9c673a77d894",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare il quantitativo di {i:health} che desiderate[/i]",
+   "contesto": "Luogo 199 verso 60, scelta: [b]Cercare di forgiare qualcosa con il vostro sangue[/b]"
+  },
+  {
+   "chiave": "r:892f501c17c1",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 3 {i:health} e 2 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 61, scelta: Continua."
+  },
+  {
+   "chiave": "q:f8a0313920da",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] la parte 2 dello status [b]“Esplorare Tuathan\"[/b][/i]",
+   "contesto": "Luogo 199 verso 62, scelta: [b]Contemplare le opere d’arte[/b]"
+  },
+  {
+   "chiave": "r:12c01481a04c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 2 {i:energy}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 63, scelta: [b]Lasciare l’arboreto e trovare un modo di aggirarlo[/b]"
+  },
+  {
+   "chiave": "r:1fcfe93e338c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete 5 {r:Ricchezza} e 1 Gettone Cerca. Poi, risolvere l’Incontro viola [b]“Becco a Martello” [/b](Difficoltà 3). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 64, scelta: Continua."
+  },
+  {
+   "chiave": "r:781aa1887105",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Esplorare Tuathan”[/b]. Ogni membro della Compagnia ottiene 3 {i:terror} e ottiene 1 {r:Esp}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 66, scelta: Continua."
+  },
+  {
+   "chiave": "c:f05e234c2cab",
+   "ruolo": "condizione",
+   "testo": "[b]Tentare di attraversare questo luogo tranquillo[/b]",
+   "contesto": "Luogo 199 verso 67: Vi infilate in un passaggio tra due strette pareti e dall’altra parte trovate un placido orto. Gli alberi sono perfettamente curati e carichi di frutti pronti a"
+  },
+  {
+   "chiave": "r:29e2951d4b60",
+   "ruolo": "risultato",
+   "testo": "Ottenete 1 Gettone Cerca.\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 199 verso 68, scelta: [b]Andare via.[/b]."
+  },
+  {
+   "chiave": "v:1135",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado e verificare il risultato ottenuto.\nQuesti tiri non possono essere modificati in alcun modo.",
+   "contesto": "Luogo 199 verso 1001"
+  },
+  {
+   "chiave": "v:1136",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1002"
+  },
+  {
+   "chiave": "q:e8b7b3ea5f53",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se riottenete questo risultato (e avete risolto un Incontro viola)[/i]",
+   "contesto": "Luogo 199 verso 1002, scelta: 5-6"
+  },
+  {
+   "chiave": "r:531762a1e7f8",
+   "ruolo": "risultato",
+   "testo": "[i]Ricevete 1 Gettone Cerca. L'Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 1002, scelta: 5-6"
+  },
+  {
+   "chiave": "r:32c7bd38844e",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere un Incontro viola, poi tirare di nuovo e selezionare il secondo risultato.[/i]",
+   "contesto": "Luogo 199 verso 1002, scelta: 5-6"
+  },
+  {
+   "chiave": "v:1137",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1003"
+  },
+  {
+   "chiave": "v:1138",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1004"
+  },
+  {
+   "chiave": "v:1139",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1005"
+  },
+  {
+   "chiave": "v:1140",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1006"
+  },
+  {
+   "chiave": "v:1141",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1007"
+  },
+  {
+   "chiave": "v:1142",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado e verificare il risultato ottenuto.\nQuesti tiri non possono essere modificati in alcun modo.",
+   "contesto": "Luogo 199 verso 1008"
+  },
+  {
+   "chiave": "v:1143",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1009"
+  },
+  {
+   "chiave": "r:a90df884c121",
+   "ruolo": "risultato",
+   "testo": "Pescare due Incontri viola, risolvere quello con il Valore più alto, poi tirare di nuovo e selezionare il secondo risultato.",
+   "contesto": "Luogo 199 verso 1009, scelta: 5-6"
+  },
+  {
+   "chiave": "v:1144",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1010"
+  },
+  {
+   "chiave": "v:1145",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1011"
+  },
+  {
+   "chiave": "v:1146",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1012"
+  },
+  {
+   "chiave": "v:1147",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1013"
+  },
+  {
+   "chiave": "v:1148",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Tirare un dado un'altra volta e verificare il risultato.",
+   "contesto": "Luogo 199 verso 1014"
+  },
+  {
+   "chiave": "c:15f7ab2f1f4d",
+   "ruolo": "condizione",
+   "testo": "Go to Verse 14",
+   "contesto": "Luogo 301 verso 0: [b]Regole della Preda![/b]\n\n[i][b]IMPORTANT[/b]: Puoi tornare a consultare le seguenti regole in qualsiasi momento. Lo puoi fare inserendo digitando il numero 3"
+  },
+  {
+   "chiave": "v:1150",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i][b]IMPORTANT[/b]: Puoi tornare a consultare le seguenti regole in qualsiasi momento. Lo puoi fare inserendo digitando il numero 302 nella selezione dei Luoghi..[/i]\n\n[b]Iniziare il vostro viaggio[/b]\n[i]Quando entrate a Tuathan, mescolare tutte e cinque le carte Tuathan ([b]199[/b]) e piazzarle in una pila, col lato della mappa a faccia in su. Prendere una carta dalla cima di questa pila e aggiun- gerla al Luogo da cui siete entrati (da Riverfall o da Timberwall).\n\nGirare questa carta a faccia in su e piazzare tutti i vostri Personaggi su questa carta, poi scartare tutte le altre carte Luogo, compresi i Menhir attivi.\n\nNon potete lasciare Tuathan a meno che il Diario vi dica di farlo! Qualsiasi altro metodo per Viaggiare o di Movimento (compresi gli oggetti come la Pergamena Intrisa d’Ombra) non può portarvi via da Tuathan.\n[/i]\n\n[b]Avanzare per Tuathan[/b]\n[i]Le carte Luogo di Tuathan non sono collegate tra di loro. Per avanzare in questa città (per uscirne o per entrarvi), dovrete svolgere la seconda azione che si trova sul retro del vostro Luogo di Tuathan. Questa azione richiede Gettoni Cerca, a rappresentare la vostra conoscenza della città, e che potete recuperare tramite vari eventi casuali in cui sarete incappati con l’aiuto della prima azione.\n\n[b]IMPORTANTE: ogni carta Luogo di Tuathan modifica anche una delle regole base del gioco. Questi cambiamenti si appli- cano dal momento in cui girate le regole della carta all’insù, fino al momento in cui il vostro Personaggio lascia la carta e la rigirate sul dorso.\n[/i]\n\n[b]I Menhir a Tuathan [/b]\n[i]Non ci sono Menhir a Tuathan. Siete immersi nell’anomalia primordiale. Tutte le carte Luogo restano sul tavolo a meno che non vi venga chiesto di rimuoverle.\n[/i]\n\n[b]Eventi a Tuathan [/b]\n[i]Ogni volta che pescate un Evento Casuale a Tuathan, scartatelo a faccia in giù senza leggerlo o risolverne le regole.\n\nA Tuathan, le carte Evento Casuale servono solo a contare i giorni di viaggio.[/i]\n\n[i][b]IMPORTANTE[/b]: le carte Evento della Storia numerate o gli Even- ti speciali vengono risolti comunque secondo le normali regole. [/i]\n\n[b]Riposare a Tuathan (solo per 2-4 giocatori) [/b]\n[i]Ogni volta che provate a riposare a Tuathan accadono delle cose strane. Rimpiazzare la normale procedura per Riposare con quanto segue:\n\nMangiare 1 {r:Cibo}. Se [b]non avete[/b] {r:Cibo} sufficiente o non volete mangiarlo adesso, portate la vostra {i:energy} a 0. Se è già a 0, perdete invece 1 {i:health}.\n\nOra, tirare un dado due volte (non potete modificare questi tiri), prima per la vostra {i:health}, poi per il vostro {i:terror}, e verificare i risultati come segue:[/i][/b]",
+   "contesto": "Luogo 302 verso 0"
+  },
+  {
+   "chiave": "c:b8a264529805",
+   "ruolo": "condizione",
+   "testo": "1-2",
+   "contesto": "Luogo 302 verso 0: [i][b]IMPORTANT[/b]: Puoi tornare a consultare le seguenti regole in qualsiasi momento. Lo puoi fare inserendo digitando il numero 302 nella selezione dei Luogh"
+  },
+  {
+   "chiave": "r:56c75ce00d5a",
+   "ruolo": "risultato",
+   "testo": "Ottenete 1 punto.",
+   "contesto": "Luogo 302 verso 0, scelta: 1-2"
+  },
+  {
+   "chiave": "r:bbea473fc0f4",
+   "ruolo": "risultato",
+   "testo": "Ottenete 2 punti.",
+   "contesto": "Luogo 302 verso 0, scelta: 3"
+  },
+  {
+   "chiave": "c:20d6fad35533",
+   "ruolo": "condizione",
+   "testo": "4-5",
+   "contesto": "Luogo 302 verso 0: [i][b]IMPORTANT[/b]: Puoi tornare a consultare le seguenti regole in qualsiasi momento. Lo puoi fare inserendo digitando il numero 302 nella selezione dei Luogh"
+  },
+  {
+   "chiave": "r:3747177254cc",
+   "ruolo": "risultato",
+   "testo": "Perdete 1 punto.",
+   "contesto": "Luogo 302 verso 0, scelta: 4-5"
+  },
+  {
+   "chiave": "r:48c2f2f3119a",
+   "ruolo": "risultato",
+   "testo": "Ottenete 1 Risorsa ({r:Cibo}, {r:Ricchezza} o {r:Magia}) a vostra scelta.",
+   "contesto": "Luogo 302 verso 0, scelta: 6"
+  },
+  {
+   "chiave": "r:fb0caef3dfbe",
+   "ruolo": "risultato",
+   "testo": "La Fine. Per ora...",
+   "contesto": "Luogo 999 verso 1, scelta: Continua."
+  },
+  {
+   "chiave": "r:d2c411d93d26",
+   "ruolo": "risultato",
+   "testo": "Ottenete le parti 2 e 3 dello status [b]“Sconfitti e Caduti”[/b].",
+   "contesto": "Luogo 999 verso 2, scelta: Continua."
+  },
+  {
+   "chiave": "r:79079a915fb1",
+   "ruolo": "risultato",
+   "testo": "[b]CONGRATULAZIONI![/b] Avete completato il vostro attuale Capitolo! Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 10[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!",
+   "contesto": "Luogo 999 verso 3, scelta: Continua."
+  },
+  {
+   "chiave": "r:09e33bbb4ea8",
+   "ruolo": "risultato",
+   "testo": "Ogni Personaggio ottiene 1 {i:terror}.",
+   "contesto": "Luogo 999 verso 5, scelta: Continua."
+  },
+  {
+   "chiave": "q:1e467f52e12f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]non avete[/b] alcuna parte dello status [b]“Sconfitti e Caduti”[/b]",
+   "contesto": "Luogo 999 verso 7, scelta: Continua."
+  },
+  {
+   "chiave": "r:ff5b26ac3249",
+   "ruolo": "risultato",
+   "testo": "Ottenete la carta Segreto [b]“Preda” (13)[/b]. Piazzare un Quadrante con un Gettone Cerca su di essa e mettetelo sull’1.\n\nDa questo momento in poi, siete seguiti da uno spietato cacciatore. Fare riferimento alle regole seguenti per ulteriori dettagli.",
+   "contesto": "Luogo 999 verso 13, scelta: Continua."
+  },
+  {
+   "chiave": "r:65b856de7a0f",
+   "ruolo": "risultato",
+   "testo": "Proseguire il gioco.",
+   "contesto": "Luogo 999 verso 14, scelta: Altrimenti"
+  },
+  {
+   "chiave": "r:e1055bb842fd",
+   "ruolo": "risultato",
+   "testo": "Il Personaggio marchiato dal Gettone Cerca perde 2 {i:health} e ottiene la carta Segreto [b]“Excalibur” (78)[/b]. Scartare questo Gettone Cerca. Ogni Personaggio ottiene 5 {r:Esp}.",
+   "contesto": "Luogo 999 verso 24, scelta: Continua."
+  },
+  {
+   "chiave": "r:e8be92f69e79",
+   "ruolo": "risultato",
+   "testo": "[b]Nuovo Compito:[/b] visitare Cuanacht Distrutta ([b]121[/b]) e decidere se volete mantenere la promessa fatta al vostro alleato.\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 36, scelta: Continua."
+  },
+  {
+   "chiave": "q:4bb42fe725d9",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] lo status [b]“Riparo in Mezzo alla Tempesta”[/b]",
+   "contesto": "Luogo 999 verso 40, scelta: Continua."
+  },
+  {
+   "chiave": "r:239d251a9647",
+   "ruolo": "risultato",
+   "testo": "Aggiungere la carta Tenacia di Orrin ([b]180[/b]) alla vostra attuale carta Tuathan e spostare lì tutti i Personaggi. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 40, scelta: Continua."
+  },
+  {
+   "chiave": "r:4e8d86f0b4cc",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete la carta Oggetto Gatto Selvatico. Se uno dei giocatori già possiede questa carta, ottenete invece 2 {r:Cibo}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 43, scelta: Continua."
+  },
+  {
+   "chiave": "q:f0f7d8eb971a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] la carta Segreto [b]3[/b]",
+   "contesto": "Luogo 999 verso 45, scelta: Continua."
+  },
+  {
+   "chiave": "r:7fff1feabb6d",
+   "ruolo": "risultato",
+   "testo": "Aggiungere una nuova carta Luogo Tuathan casuale e spostare lì i vostri Personaggi. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 45, scelta: Continua."
+  },
+  {
+   "chiave": "r:472a09a6c0f7",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete 4 {r:Cibo}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 47, scelta: Continua."
+  },
+  {
+   "chiave": "r:b8f2349d9c66",
+   "ruolo": "risultato",
+   "testo": "Aggiungere la carta Tenacia di Orrin [b](180)[/b] alla vostra attuale carta Tuathan e spostare lì tutti i Personaggi. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 50, scelta: Continua."
+  },
+  {
+   "chiave": "r:7e77a99348ed",
+   "ruolo": "risultato",
+   "testo": "Aggiungere la carta Luogo Cuore di Tuathan ([b]185[/b]) alla vostra attuale carta Tuathan e spostare lì tutti i Personaggi. Ogni Personaggio ottiene 2 {r:Esp}. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 55, scelta: Continua."
+  },
+  {
+   "chiave": "r:3efbecb4ab79",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete la carta Oggetto [b]“Spada Runica”[/b]. Se uno dei giocatori già possiede questa carta, ottenete un Oggetto casuale non Artigianale con la parola chiave Arma. Ottenete 1 Gettone Cerca. L’Esplorazione termina[/i]",
+   "contesto": "Luogo 999 verso 63, scelta: Continua."
+  },
+  {
+   "chiave": "r:e55cf32372d9",
+   "ruolo": "risultato",
+   "testo": "Exploration ends.",
+   "contesto": "Luogo 999 verso 65, scelta: Mentre la salutate, le ricordate che l’arroganza è un assassino lento e insidioso. Vi ringrazia per il vostro consiglio e per le parole gentili. Poi, parte per"
+  },
+  {
+   "chiave": "r:99995f4b60b5",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde tutto il {i:terror}, ottenete 1 {r:Rep} e 3 {r:Esp}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 65, scelta: Continua."
+  },
+  {
+   "chiave": "r:c7064ebee91c",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate. Ogni membro della Compagnia ottiene 3 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 67, scelta: Continua."
+  },
+  {
+   "chiave": "r:b8542eaf5450",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 4 {r:Esp}.\n\nOttenete la parte 2 dello status [b]“Menhir Errante”[/b]. \n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 79, scelta: Continua."
+  },
+  {
+   "chiave": "r:baf6f4323240",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete la parte 5 dello status [b]“Cosuil”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 85, scelta: Continua."
+  },
+  {
+   "chiave": "r:b09f34c0d4c7",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror} e 1 {r:Esp}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 101, scelta: Continua."
+  },
+  {
+   "chiave": "c:76b92b934010",
+   "ruolo": "condizione",
+   "testo": "[b]0-1[/b]",
+   "contesto": "Luogo 999 verso 102: [i]Sommare la vostra {i:practicality} e {i:empathy} (contano solo i livelli degli Attributi di [b]Verme[/b], anche se siete in Compagnia). Sommare +1 per ogni 5"
+  },
+  {
+   "chiave": "r:94e471177d61",
+   "ruolo": "risultato",
+   "testo": "Riuscite solo a farli arrabbiare ancora di più. \n\nRisolvere l’Incontro grigio [b]“Folla Inferocita”[/b] (Difficoltà 4).  L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 102, scelta: [b]0-1[/b]"
+  },
+  {
+   "chiave": "r:eb1d24385ba4",
+   "ruolo": "risultato",
+   "testo": "Venite picchiati e allontanati da Moonring. \n\nOgni membro della Compagnia perde 2 {i:health}  e deve spostarsi nel Luogo rivelato collegato a Moonring con il numero più basso. \n\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 102, scelta: [b]2-3[/b]"
+  },
+  {
+   "chiave": "c:9932cd58677c",
+   "ruolo": "condizione",
+   "testo": "[b]4+[/b]",
+   "contesto": "Luogo 999 verso 102: [i]Sommare la vostra {i:practicality} e {i:empathy} (contano solo i livelli degli Attributi di [b]Verme[/b], anche se siete in Compagnia). Sommare +1 per ogni 5"
+  },
+  {
+   "chiave": "r:6bafc514c4d9",
+   "ruolo": "risultato",
+   "testo": "Vi accolgono come il figliol prodigo. \n\nSe [b]non avete[/b] lo status [b]“Redenzione di Verme”[/b], ogni Personaggio ottiene 2{r:Esp}. Poi, ottenete lo status [b]“Redenzione di Verme”[/b]. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 102, scelta: [b]4+[/b]"
+  },
+  {
+   "chiave": "q:ca353ef68513",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se vincete (o il nemico Scappa)[/i]",
+   "contesto": "Luogo 999 verso 107, scelta: [b]Cercare di fermarli[/b] - [i]Risolvere l’Incontro grigio [b]“Folla Inferocita”[/b] (Difficoltà 4). [/i]"
+  },
+  {
+   "chiave": "r:026f2a215615",
+   "ruolo": "risultato",
+   "testo": "Riuscite a disperdere la folla.",
+   "contesto": "Luogo 999 verso 107, scelta: [b]Cercare di fermarli[/b] - [i]Risolvere l’Incontro grigio [b]“Folla Inferocita”[/b] (Difficoltà 4). [/i]"
+  },
+  {
+   "chiave": "r:21fc99685995",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia perde 1 {i:health}  e ottiene 1 {r:Esp}. Ottenete la carta Segreto [b]11[/b], qualora non l’abbiate ancora. Ottenete lo status [b]“Sapere Bruciato”[/b].\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 111, scelta: Continua."
+  },
+  {
+   "chiave": "q:8e23d72711a4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se state giocando il [b]Capitolo 3B[/b]",
+   "contesto": "Luogo 999 verso 112, scelta: Continua."
+  },
+  {
+   "chiave": "r:cab8845baaf9",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 2 dello status [b]“Guerra di Avalon”[/b]. Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Ricchezza}.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 112, scelta: Continua."
+  },
+  {
+   "chiave": "r:bbfff2381301",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 2 dello status [b]“Guerra di Avalon”[/b]. Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Ricchezza}.\n\nScartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 3B[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 112, scelta: Continua."
+  },
+  {
+   "chiave": "r:825087d30694",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Inaffidabile”[/b], 3 {r:Esp} e la parte 1 dello status[b] “Mistero Scottante”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 113, scelta: Continua."
+  },
+  {
+   "chiave": "q:2af58797eb8c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]tutti i Personaggi[/b] e la carta Segreto [b]“Riti del Menhir” (11)[/b]. Pagare 2 {i:energy}, 1 {r:Cibo} e 1 {r:Magia} (per giocatore): [/i]",
+   "contesto": "Luogo 999 verso 114, scelta: [b]Attivare il Menhir[/b]"
+  },
+  {
+   "chiave": "r:a9093c1a9fb6",
+   "ruolo": "risultato",
+   "testo": "Piazzare una nuova miniatura Menhir in questo Luogo e posizionate il suo Quadrante su [b]6[/b] (1-2 giocatori), [b]5[/b] (3 giocatori) o [b]4[/b] (4 giocatori). Se non restano miniature sufficienti, prendetene una da un altro Luogo a vostra scelta.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 114, scelta: [b]Attivare il Menhir[/b]"
+  },
+  {
+   "chiave": "r:5b17fbd5d284",
+   "ruolo": "risultato",
+   "testo": "Avete completato una Cerca! Ogni Personaggio ottiene 2 {r:Esp}. Scartare tutte le carte dalla pila della Cerca. Trovare e risolvere la Parte 5 del mazzo Eventi. Non cambiare la struttura del resto del mazzo Eventi.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 116, scelta: Continua."
+  },
+  {
+   "chiave": "c:eb33242eec2d",
+   "ruolo": "condizione",
+   "testo": "Verificare prima dell'azione",
+   "contesto": "Luogo 999 verso 117: La pira viene data alle fiamme. I partecipanti al funerale restano in silenzio per molto tempo. Poi, il maestro di cerimonia li conduce in una tenda vicina per "
+  },
+  {
+   "chiave": "r:b9b5c1fbff8e",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Caduta della Cavalleria”[/b] e la parte 2 dello status [b]“Ripristinare l’Ordine”[/b]. Ottenete lo status [b]“Pira Fredda”[/b]. Poi, decidete come volete impiegare il vostro tempo durante il banchetto. Scegliere [b]una[/b] tra le seguenti:[/i]",
+   "contesto": "Luogo 999 verso 117, scelta: Verificare prima dell'azione"
+  },
+  {
+   "chiave": "r:f39d056122b0",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 2 {r:Cibo} per membro della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 117, scelta: [b]Abbuffarvi di prelibatezze[/b]"
+  },
+  {
+   "chiave": "q:51ec0111f104",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] lo status [b]“Compito della Dama”[/b] e ci sono meno di 3 Gettoni Tempo su questo Luogo",
+   "contesto": "Luogo 999 verso 122, scelta: Continua."
+  },
+  {
+   "chiave": "r:2349e3821a70",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Maschera Sepolcrale”[/b] (3). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 123, scelta: Continua."
+  },
+  {
+   "chiave": "c:e6d58fc32497",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la parte 2 dello status [b]“Informazioni Inquietanti”[/b]",
+   "contesto": "Luogo 999 verso 124: Non appena entrate nella tomba, vi rendete conto che c’è qualcosa che non va. C’è un enorme sarcofago aperto e vuoto. Candele sciolte circondano una bacinella"
+  },
+  {
+   "chiave": "r:8bbbe331cae7",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete tale parte dello status; ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {i:terror}.[/i]",
+   "contesto": "Luogo 999 verso 124, scelta: Se [b]non avete[/b] la parte 2 dello status [b]“Informazioni Inquietanti”[/b]"
+  },
+  {
+   "chiave": "q:5da261f3f910",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se avete almeno 2 {i:caution}[/i]",
+   "contesto": "Luogo 999 verso 124, scelta: Continua."
+  },
+  {
+   "chiave": "r:3f9ec87caf8d",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 3 dello status [b]“Esplorare Tuathan”[/b]. Poi, risolvere l’Incontro verde [b]“Antica Selkie”[/b] al Verso 66.",
+   "contesto": "Luogo 999 verso 128, scelta: Continua."
+  },
+  {
+   "chiave": "r:1350ac264ed2",
+   "ruolo": "risultato",
+   "testo": "Riuscite a districarvi dalla battaglia e condurre la\nDama Pallida in un luogo sicuro.",
+   "contesto": "Luogo 999 verso 132, scelta: [b]Verificare il risultato[/b]"
+  },
+  {
+   "chiave": "r:be9ecbd5c3c3",
+   "ruolo": "risultato",
+   "testo": "Venite allontanati e separati dalla Dama Pallida. Senza la sua guida, avete un’unica pista – lo stregone Orrin è una delle ultime persone ancora in vita ad aver visitato Tuathan. Forse potrà aiutarvi.",
+   "contesto": "Luogo 999 verso 132, scelta: [b]Verificare il risultato[/b]"
+  },
+  {
+   "chiave": "r:c6a74609d14e",
+   "ruolo": "risultato",
+   "testo": "Risolvere l’Incontro blu [b]“Attrazione”[/b] al Verso 214.",
+   "contesto": "Luogo 999 verso 133, scelta: Continua."
+  },
+  {
+   "chiave": "r:ffeed9d53a2b",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 6 {i:health}, ridotte dalla sua {i:caution}. Ogni membro della Compagnia può pagare fino a 3 {i:energy}. Per ogni punto di {i:energy} speso, ridurre il Danno subito di 1.\nRimuovere 1 Gettone Tempo da questa carta Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 134, scelta: Continua."
+  },
+  {
+   "chiave": "r:5d0d03e93c4c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 2 {r:Ricchezza}. Ottenete la parte 2 dello status [b]“Diplomatico”[/b]. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 4B[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 999 verso 135, scelta: Continua."
+  },
+  {
+   "chiave": "c:78a7a87ab1de",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Mistero Risolto”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 142: Continuate a scendere nel labirinto finché non entrate nella camera più bassa dell’intero complesso, sepolta nelle profondità del volto della statua. Sul pav"
+  },
+  {
+   "chiave": "r:6b652d433067",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado, sommare la vostra {i:practicality} e {i:spirituality} (se in Compagnia, usare i valori più alti)[/i]",
+   "contesto": "Luogo 999 verso 142, scelta: [b]Cercare di comprendere i simboli.[/b]"
+  },
+  {
+   "chiave": "q:0224bbe4ee1a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i](richiede 4 Gettoni Tempo su questa carta Luogo)[/i]",
+   "contesto": "Luogo 999 verso 142, scelta: [b]Unire gli indizi[/b]"
+  },
+  {
+   "chiave": "r:60b41db97d96",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Mistero Risolto”,[/b] rimuovere tutti i Gettoni Tempo da questo Luogo e andare al Verso 114 del Libro dei Segreti..[/i]",
+   "contesto": "Luogo 999 verso 142, scelta: [b]Unire gli indizi[/b]"
+  },
+  {
+   "chiave": "r:08eaeeb2d926",
+   "ruolo": "risultato",
+   "testo": "[i]L'Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 142, scelta: [b]Andare via.[/b]."
+  },
+  {
+   "chiave": "r:20f7cdadfc39",
+   "ruolo": "risultato",
+   "testo": "[i] Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete la carta Segreto [b]“Amuleto di Padre Cervo” (17)[/b]. Scartare il Quadrante che rappresenta la Vergine Arciera. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 147, scelta: Continua."
+  },
+  {
+   "chiave": "r:382360816423",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia ottiene 3 {r:Esp}. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione {r:Capitolo 12} e seguire le sue istruzioni per iniziare il prossimo Capitolo!",
+   "contesto": "Luogo 999 verso 154, scelta: Continua."
+  },
+  {
+   "chiave": "r:db10b896821c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {r:Esp} e 3 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 157, scelta: Continua."
+  },
+  {
+   "chiave": "c:522cd6431ca2",
+   "ruolo": "condizione",
+   "testo": "Se c’è un Gettone Tempo su questo Luogo, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 163: L’acqua scorre tra le vostre vene di pietra. I vostri tentacoli eterei respingono l’anomalia circostante. Le vostre radici si diramano sotto terra, raggiungendo"
+  },
+  {
+   "chiave": "r:695f2efb278c",
+   "ruolo": "risultato",
+   "testo": "[i]Per oggi non potete più evocare altre visioni.[/i]",
+   "contesto": "Luogo 999 verso 163, scelta: Se c’è un Gettone Tempo su questo Luogo, scegliere questa opzione."
+  },
+  {
+   "chiave": "c:1be98c21a960",
+   "ruolo": "condizione",
+   "testo": "Se non c’è un Gettone Tempo su questo Luogo, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 163: L’acqua scorre tra le vostre vene di pietra. I vostri tentacoli eterei respingono l’anomalia circostante. Le vostre radici si diramano sotto terra, raggiungendo"
+  },
+  {
+   "chiave": "r:2aeb34844525",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}.\nPoi, piazzare un Gettone Tempo su questo Luogo e scegliere tra:[/i]",
+   "contesto": "Luogo 999 verso 163, scelta: Se non c’è un Gettone Tempo su questo Luogo, scegliere questa opzione."
+  },
+  {
+   "chiave": "q:2fff7b31ad60",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {r:Magia} e 2 {i:energy} per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 163, scelta: [b]Giorni fa, avete origliato una conversazione tra i cavalieri della Tavola Rotonda[/b]"
+  },
+  {
+   "chiave": "q:e7fa450671d5",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {r:Magia}per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 163, scelta: [b]Qualcosa in merito a una donna infuga[/b]"
+  },
+  {
+   "chiave": "q:f156f8100d1f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la parte 1 dello status [b]“Cosuil”[/b], pagare 1 {i:energy} per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 163, scelta: [b]C’è una persona curiosa in mezzo agli altri ricordi[/b]"
+  },
+  {
+   "chiave": "c:35b47b2bb142",
+   "ruolo": "condizione",
+   "testo": "[b]0-3[/b]",
+   "contesto": "Luogo 999 verso 164: Capite la loro sofferenza. Sono solo un uomo e una donna, spaventati e che cercano di proteggersi vicendevolmente dopo aver perso tutto ciò che avevano. La gen"
+  },
+  {
+   "chiave": "r:39b3ffccc322",
+   "ruolo": "risultato",
+   "testo": "Non riuscite a convincerli. \n[i]L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 164, scelta: [b]0-3[/b]"
+  },
+  {
+   "chiave": "r:f122ba28bf7f",
+   "ruolo": "risultato",
+   "testo": "Riuscite a convincerli a trasferirsi altrove. Potrebbero morire per strada. Potrebbero diffondere ulteriormente la pestilenza. Avete la sensazione che non finirà bene.\n[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {i:terror}. Ottenete la parte 4 dello status [b]“Dare una Mano”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 164, scelta: [b]4+[/b]"
+  },
+  {
+   "chiave": "q:344eef02be44",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Pagare 2 {r:Magia} per giocatore, richiede tutti i Personaggi e la carta Segreto [b]“Riti del Menhir” [/b] (11)",
+   "contesto": "Luogo 999 verso 166, scelta: [b]Attivare un Menhir con il loro aiuto[/b]"
+  },
+  {
+   "chiave": "r:7eea9329cb21",
+   "ruolo": "risultato",
+   "testo": "Piazzare una nuova miniatura Menhir in questo Luogo e posizionate il suo Quadrante su[b] 7[/b] (-1 per giocatore).\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 166, scelta: [b]Attivare un Menhir con il loro aiuto[/b]"
+  },
+  {
+   "chiave": "q:c54f7074fd3b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Pagare 3 {i:energy}; richiede la carta Segreto [b]“Attrezzi dello Scultore” (58)[/b] e il [b]Capitolo 11[/b]",
+   "contesto": "Luogo 999 verso 171, scelta: [b]Scavare la pietra anomala[/b]"
+  },
+  {
+   "chiave": "q:3c7d62e8d09c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 5 dello status [b]“Dare una Mano”[/b][/i]",
+   "contesto": "Luogo 999 verso 172, scelta: Continua."
+  },
+  {
+   "chiave": "r:0912c2691868",
+   "ruolo": "risultato",
+   "testo": "Tutti i membri della Compagnia perdono 1 {i:energy}, ottenete 1 {r:Ricchezza}, 2 {r:Esp}, la parte 7 dello status [b]“Mistero Scottante”[/b] e la parte 5 dello status [b]“Dare una Mano”.[/b]\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 172, scelta: Continua."
+  }
+ ]
+}

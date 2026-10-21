@@ -9,6 +9,11 @@ extends RefCounted
 static func dati(img: String) -> Dictionary:
 	return Dati.carte.get("carte", {}).get(img, {})
 
+## Effetti strutturati della carta (data/automazione.json), {} se non codificata.
+static func auto(img: String) -> Dictionary:
+	var v = Dati.automazione.get("carte", {}).get(img)
+	return v if v is Dictionary else {}
+
 ## Immagine da mostrare: quella italiana se disponibile, altrimenti l'originale.
 static func immagine(img: String) -> String:
 	var d := dati(img)
@@ -23,6 +28,9 @@ static func nome(img: String) -> String:
 	return str(n)
 
 ## Carta Luogo per numero.
+static func img_luogo(numero: int) -> String:
+	return str(Dati.carte.get("luoghi", {}).get(str(numero), ""))
+
 static func luogo(numero: int) -> Dictionary:
 	var img: String = Dati.carte.get("luoghi", {}).get(str(numero), "")
 	return dati(img) if img != "" else {}
@@ -40,3 +48,13 @@ static func segreto(numero: int) -> String:
 ## Elenco delle immagini di un gruppo ("oggetti", "eventi", "incontri_verde_1"…).
 static func gruppo(nome_: String) -> Array:
 	return Dati.carte.get("gruppi", {}).get(nome_, [])
+
+## Campo numerico di una carta (i valori null della trascrizione valgono def).
+static func num(d: Dictionary, k: String, def := -1) -> int:
+	var v = d.get(k)
+	return def if v == null else int(v)
+
+## Campo testuale di una carta ("" per null).
+static func txt(d: Dictionary, k: String) -> String:
+	var v = d.get(k)
+	return "" if v == null else str(v)

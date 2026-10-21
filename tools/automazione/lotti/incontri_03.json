@@ -1,0 +1,2333 @@
+{
+ "carte": [
+  {
+   "img": "carte/3_encuentros_morado/36619.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": true,
+   "nome": {
+    "es": "Picomartillo",
+    "it": "Beccomartello"
+   },
+   "testo": {
+    "es": "[i]Algunos frailecillos viven tanto y se imbuyen de tanta magia que alcanzan el tamaño de un caballo.[/i]",
+    "it": "[i]Alcune pulcinelle di mare vivono così a lungo e si impregnano di così tanta magia da raggiungere le dimensioni di un cavallo.[/i]"
+   },
+   "valore": 16,
+   "tratti": [
+    "Guardiano",
+    "Lento"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 7,
+     "a": 9,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "es": "4 {i:wound}",
+     "it": "4 {i:wound}"
+    },
+    {
+     "da": 11,
+     "a": 15,
+     "es": "Huir",
+     "it": "Fugge"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}",
+    "it": "Ottieni 1 {i:terror}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "3 de {r:Comida}",
+    "it": "3 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x"
+  },
+  {
+   "img": "carte/3_encuentros_morado/36618.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Espíritu de Primer Morador",
+    "it": "Spirito del Predecessore"
+   },
+   "testo": {
+    "es": "[i]Uno de los guerreros masacrados por los caballeros de Arturo, que revive su derrota en un ciclo interminable de agonía.[/i]",
+    "it": "[i]Uno dei guerrieri massacrati dai cavalieri di Artù, che rivive la propria sconfitta in un ciclo interminabile di agonia.[/i]"
+   },
+   "valore": 10,
+   "tratti": [
+    "Imboscata",
+    "Finta"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "Pierde 2 de {i:energy}, obtén 1 de {i:terror}",
+     "it": "Perdi 2 {i:energy}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 5,
+     "a": 7,
+     "es": "3 {i:wound}, {i:discard}",
+     "it": "3 {i:wound}, {i:discard}"
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "es": "1 {i:wound}, pierde {i:cube2}",
+     "it": "1 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 2 de {i:terror}",
+    "it": "Ottieni 2 {i:terror}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "3 de {r:Magia}",
+    "it": "3 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_gigante_enclenque_36320.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Gigante Enclenque",
+    "it": "Gigante Gracile"
+   },
+   "valore": 18,
+   "testo": {
+    "es": "[i]Hace siglos, los gigantes formaban la primera línea de los ejércitos de los Primeros Moradores.[/i]",
+    "it": "[i]Secoli fa, i giganti formavano la prima linea degli eserciti dei Primi Abitanti.[/i]"
+   },
+   "tratti": [
+    "Opportunista",
+    "Lento"
+   ],
+   "tratti_es": [
+    "Oportunista",
+    "Lento"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "4 {i:wound}",
+     "it": "4 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 8,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 9,
+     "a": 13,
+     "es": "1 {i:wound}, pierde {i:cube2}",
+     "it": "1 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 14,
+     "a": 17,
+     "es": "1 {i:wound}, pierde {i:cube}",
+     "it": "1 {i:wound}, perdi {i:cube}"
+    }
+   ],
+   "opportunita": {
+    "es": "3 {i:wound} (inevitable)",
+    "it": "3 {i:wound} (inevitabile)"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "4 de {r:Comida}",
+    "it": "4 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression",
+     "liv": 2
+    },
+    {
+     "riga": 2,
+     "apre": "courage",
+     "liv": 2
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_pesadilla_ribere_a_36322.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Pesadilla Ribereña",
+    "it": "Incubo Fluviale"
+   },
+   "valore": 13,
+   "testo": {
+    "es": "[i]Una rana con alas de águila y una cabeza de serpiente en la punta de la cola. Algunas son tan grandes como un jabalí.[/i]",
+    "it": "[i]Una rana con ali d'aquila e una testa di serpente sulla punta della coda. Alcune sono grandi come un cinghiale.[/i]"
+   },
+   "tratti": [
+    "Imboscata"
+   ],
+   "tratti_es": [
+    "Emboscada"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "es": "Pierde {i:cube2}, obtén 2 de {i:terror}",
+     "it": "Perdi {i:cube2}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    },
+    {
+     "da": 10,
+     "a": 12,
+     "es": "1 {i:wound}, pierde {i:cube2}",
+     "it": "1 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": null,
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality",
+     "liv": 2
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_selkie_36323.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 3,
+   "guardiano": true,
+   "nome": {
+    "es": "Selkie",
+    "it": "Selkie"
+   },
+   "valore": 13,
+   "testo": {
+    "es": "[i]Estas sirenas de dientes afilados esconden su verdadera forma bajo pieles de foca manchada.[/i]",
+    "it": "[i]Queste sirene dai denti aguzzi nascondono la loro vera forma sotto pelli di foca maculata.[/i]"
+   },
+   "tratti": [
+    "Guardiano",
+    "Imboscata"
+   ],
+   "tratti_es": [
+    "Guardián",
+    "Emboscada"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "2 {i:wound}, obtén 2 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "es": "Pierde {i:cube2}",
+     "it": "Perdi {i:cube2}"
+    },
+    {
+     "da": 5,
+     "a": 9,
+     "es": "2 {i:wound}, obtén 1 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "es": "Pierde {i:cube2}, {i:discard}",
+     "it": "Perdi {i:cube2}, {i:discard}"
+    },
+    {
+     "da": 11,
+     "a": 12,
+     "es": "2 {i:wound}, obtén 1 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 1 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36324.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 3,
+   "guardiano": true,
+   "nome": {
+    "es": "Sierpe de la Maleza",
+    "it": "Serpe del Sottobosco"
+   },
+   "valore": 15,
+   "testo": {
+    "es": "[i]Dicen que Arturo expulsó a todas las sierpes de la isla al mar. Sin embargo, aún quedan algunas, ocultas en las profundidades del bosque.[/i]",
+    "it": "[i]Si dice che Artù abbia scacciato in mare tutte le serpi dell'isola. Tuttavia, ne restano ancora alcune, nascoste nelle profondità della foresta.[/i]"
+   },
+   "tratti": [
+    "Guardiano",
+    "Opportunista"
+   ],
+   "tratti_es": [
+    "Guardián",
+    "Oportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "es": "1 {i:wound}",
+     "it": "1 {i:wound}"
+    },
+    {
+     "da": 7,
+     "a": 11,
+     "es": "2 {i:wound}, obtén 1 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 12,
+     "a": 14,
+     "es": "2 {i:wound}, Huir",
+     "it": "2 {i:wound}, Fuggire"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde {i:cube}, {i:discard}",
+    "it": "Perdi {i:cube}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "3 de {r:Comida}",
+    "it": "3 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression",
+     "liv": 2
+    },
+    {
+     "riga": 2,
+     "apre": "courage",
+     "liv": 2
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "copie_img": [
+    "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36325.webp"
+   ]
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_hombre_de_musgo_36321.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 4,
+   "guardiano": true,
+   "nome": {
+    "es": "Hombre de Musgo",
+    "it": "Uomo di Muschio"
+   },
+   "valore": 18,
+   "testo": {
+    "es": "[i]Algunos druidas llegaron tan lejos que crearon vida por sí mismos.[/i]",
+    "it": "[i]Alcuni druidi si spinsero tanto oltre da creare la vita da soli.[/i]"
+   },
+   "tratti": [
+    "Guardiano",
+    "Difensivo",
+    "Distruzione"
+   ],
+   "tratti_es": [
+    "Guardián",
+    "Defensivo",
+    "Destrucción"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "4 {i:wound}, obtén 1 de {i:terror}",
+     "it": "4 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 11,
+     "a": 14,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 15,
+     "a": 17,
+     "es": "5 {i:wound}",
+     "it": "5 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde 1 de {i:energy}, {i:discard}",
+    "it": "Perdi 1 {i:energy}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Exp}",
+    "it": "2 {r:Esp}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality",
+     "liv": 2
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36326.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Erizo de la Rareza",
+    "it": "Riccio Anomalo"
+   },
+   "valore": 17,
+   "testo": {
+    "es": "[i]Hasta ahora, pensabas que los erizos eran criaturas amigables.[/i]",
+    "it": "[i]Finora pensavi che i ricci fossero creature amichevoli.[/i]"
+   },
+   "tratti": [
+    "Difensivo",
+    "Improvviso"
+   ],
+   "tratti_es": [
+    "Defensivo",
+    "Repentino"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "3 {i:wound}, {i:discard}",
+     "it": "3 {i:wound}, {i:discard}"
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "es": "4 {i:wound}, pierde {i:cube2}",
+     "it": "4 {i:wound}, perdi {i:cube2}",
+     "etichetta": "5, 7, 9"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}",
+     "etichetta": "6, 8, 10"
+    },
+    {
+     "da": 7,
+     "a": 7,
+     "es": "4 {i:wound}, pierde {i:cube2}",
+     "it": "4 {i:wound}, perdi {i:cube2}",
+     "etichetta": "5, 7, 9"
+    },
+    {
+     "da": 8,
+     "a": 8,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}",
+     "etichetta": "6, 8, 10"
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "es": "4 {i:wound}, pierde {i:cube2}",
+     "it": "4 {i:wound}, perdi {i:cube2}",
+     "etichetta": "5, 7, 9"
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}",
+     "etichetta": "6, 8, 10"
+    },
+    {
+     "da": 11,
+     "a": 12,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 13,
+     "a": 16,
+     "es": "Huir",
+     "it": "Fuggire"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound}",
+    "it": "1 {i:wound}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "3 de {r:Comida}",
+    "it": "3 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression",
+     "liv": 2
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "copie_img": [
+    "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36327.webp"
+   ]
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_hada_36328.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Hada",
+    "it": "Fata"
+   },
+   "valore": 20,
+   "testo": {
+    "es": "[i]Dicen que hay otra isla invisible y habitada solo por hadas.[/i]",
+    "it": "[i]Si dice che esista un'altra isola, invisibile e abitata solo da fate.[/i]"
+   },
+   "tratti": [],
+   "tratti_es": [],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    },
+    {
+     "da": 8,
+     "a": 14,
+     "es": "3 {i:wound}, pierde {i:cube}",
+     "it": "3 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 15,
+     "a": 19,
+     "es": "1 {i:wound}, pierde {i:cube3}",
+     "it": "1 {i:wound}, perdi {i:cube3}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde 1 de {i:energy}",
+    "it": "Perdi 1 {i:energy}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "3 de {r:Magia}, 1 Objeto",
+    "it": "3 {r:Magia}, 1 Oggetto"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "regola_speciale": {
+    "es": "[i]Cuando el Hada ataque o haga un ataque de oportunidad, puedes pagar 2 de {r:Magia} para ignorar este ataque.[/i]",
+    "it": "[i]Quando la Fata attacca o effettua un attacco di opportunità, puoi pagare 2 {r:Magia} per ignorare questo attacco.[/i]"
+   }
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_sierpe_solar_36329.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "verde",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Sierpe Solar",
+    "it": "Serpe Solare"
+   },
+   "valore": 30,
+   "testo": {
+    "es": "[i]A las sierpes más ancianas y majestuosas les gusta estirar sus cuerpos sobre las rocas calentadas por el sol.[/i]",
+    "it": "[i]Alle serpi più antiche e maestose piace distendere i loro corpi sulle rocce scaldate dal sole.[/i]"
+   },
+   "tratti": [
+    "Opportunista"
+   ],
+   "tratti_es": [
+    "Oportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 6,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 7,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 13,
+     "a": 20,
+     "es": "1 {i:wound}, obtén 2 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 21,
+     "a": 25,
+     "es": "3 {i:wound}, pierde {i:cube}",
+     "it": "3 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 26,
+     "a": 29,
+     "es": "2 {i:wound}, {i:discard}",
+     "it": "2 {i:wound}, {i:discard}"
+    }
+   ],
+   "opportunita": {
+    "es": "4 {i:wound}",
+    "it": "4 {i:wound}"
+   },
+   "ricompensa": {
+    "es": "3 de {r:Exp}, 2 de {r:Rep}",
+    "it": "3 {r:Esp}, 2 {r:Rep}"
+   },
+   "bottino": {
+    "es": "6 de {r:Magia}, 3 de {r:Comida}",
+    "it": "6 {r:Magia}, 3 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression",
+     "liv": 2
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36500.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Banda de Forajidos",
+    "it": "Banda di Fuorilegge"
+   },
+   "valore": 8,
+   "testo": {
+    "es": "[i]Torpes pero ansiosos por hacerse con tus posesiones.[/i]",
+    "it": "[i]Maldestri, ma ansiosi di impossessarsi dei tuoi averi.[/i]"
+   },
+   "tratti": [
+    "Ladro"
+   ],
+   "tratti_es": [
+    "Ladrón"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "1 {i:wound}, pierde {i:cube}",
+     "it": "1 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 6,
+     "a": 7,
+     "es": "Huir",
+     "it": "Fuggire"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound}, {i:discard}",
+    "it": "1 {i:wound}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Riqueza}",
+    "it": "2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "copie_img": [
+    "carte/1_encuentros_blanco/36501.webp"
+   ]
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36502.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Enrarecido",
+    "it": "Distorto"
+   },
+   "valore": 7,
+   "testo": {
+    "es": "[i]Un hombre que se alejó demasiado del camino.[/i]",
+    "it": "[i]Un uomo che si è allontanato troppo dalla strada.[/i]"
+   },
+   "tratti": [],
+   "tratti_es": [],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "1 {i:wound}, obtén 2 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "Pierde {i:cube}, {i:discard}",
+     "it": "Perdi {i:cube}, {i:discard}"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound} (inevitable)",
+    "it": "1 {i:wound} (inevitabile)"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "copie_img": [
+    "carte/1_encuentros_blanco/36503.webp"
+   ]
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36504.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Granjero Enloquecido",
+    "it": "Contadino Impazzito"
+   },
+   "valore": 4,
+   "testo": {
+    "es": "[i]Es difícil conservar la cordura cuando el mundo parece haberse vuelto loco.[/i]",
+    "it": "[i]È difficile restare sani di mente quando il mondo sembra impazzito.[/i]"
+   },
+   "tratti": [
+    "Improvviso"
+   ],
+   "tratti_es": [
+    "Repentino"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}",
+     "it": "1 {i:wound}"
+    },
+    {
+     "da": 3,
+     "a": 3,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    }
+   ],
+   "opportunita": {
+    "es": "Huir",
+    "it": "Fuggire"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Comida}",
+    "it": "1 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "2x"
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36505.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Guerrero del Clan",
+    "it": "Guerriero del Clan"
+   },
+   "valore": 6,
+   "testo": {
+    "es": "[i]Que no te engañen su lanza oxidada y su barriga cervecera. Ha sido testigo de muchos derramamientos de sangre.[/i]",
+    "it": "[i]Non farti ingannare dalla sua lancia arrugginita e dalla sua pancia da birra. Ha assistito a molti spargimenti di sangue.[/i]"
+   },
+   "tratti": [
+    "Improvviso"
+   ],
+   "tratti_es": [
+    "Repentino"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}, pierde {i:cube2}",
+     "it": "1 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 5,
+     "a": 5,
+     "es": "2 {i:wound}, {i:discard}",
+     "it": "2 {i:wound}, {i:discard}"
+    }
+   ],
+   "opportunita": {
+    "es": "Huir",
+    "it": "Fuggire"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "2 de {r:Riqueza}",
+    "it": "2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36506.webp",
+   "tipo": "incontro",
+   "speciale": true,
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Mercader Ambulante",
+    "it": "Mercante Ambulante"
+   },
+   "testo": {
+    "es": "[i]Sus huraños guardaespaldas vigilan cada uno de tus movimientos.[/i]",
+    "it": "[i]Le sue scontrose guardie del corpo sorvegliano ogni tua mossa.[/i]"
+   },
+   "effetto": {
+    "es": "Roba 3 Objetos al azar. Puedes comprar cualquier Objeto Fabricable de esta pila por 1 de {r:Riqueza} y cualquier otro Objeto por 2 de {r:Riqueza}. Puedes vender cualquier Objeto por 1 de {r:Riqueza}.",
+    "it": "Pesca 3 Oggetti a caso. Puoi comprare qualsiasi Oggetto Fabbricabile di questa pila per 1 {r:Ricchezza} e qualsiasi altro Oggetto per 2 {r:Ricchezza}. Puoi vendere qualsiasi Oggetto per 1 {r:Ricchezza}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36507.webp",
+   "tipo": "incontro",
+   "speciale": true,
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Sacerdotisa Errante",
+    "it": "Sacerdotessa Errante"
+   },
+   "testo": {
+    "es": "[i]Cree que las antiguas costumbres la protegerán en el camino. Tú sabes que es solo cuestión de tiempo que descubra lo mucho que se equivoca.[/i]",
+    "it": "[i]Crede che le antiche usanze la proteggeranno lungo il cammino. Tu sai che è solo questione di tempo prima che scopra quanto si sbaglia.[/i]"
+   },
+   "effetto": {
+    "es": "Cada miembro del equipo puede pagar 1 de {r:Riqueza} o 1 de {r:Comida} para obtener 3 de {i:health}.",
+    "it": "Ogni membro della Compagnia può pagare 1 {r:Ricchezza} o 1 {r:Cibo} per ottenere 3 {i:health}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36508.webp",
+   "tipo": "incontro",
+   "sottotipo": "combattimento",
+   "colore": "grigio",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Vagabundo",
+    "it": "Vagabondo"
+   },
+   "valore": 5,
+   "testo": {
+    "es": "[i]Vivir a la intemperie te enseña rápidamente a aprovecharte de los más débiles.[/i]",
+    "it": "[i]Vivere all'addiaccio ti insegna in fretta ad approfittare dei più deboli.[/i]"
+   },
+   "tratti": [
+    "Rapido"
+   ],
+   "tratti_es": [
+    "Rápido"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "1 {i:wound}",
+     "it": "1 {i:wound}"
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 4,
+     "a": 4,
+     "es": "Huir",
+     "it": "Fuggire"
+    }
+   ],
+   "opportunita": {
+    "es": "Huir",
+    "it": "Fuggire"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 Objeto Fabricable",
+    "it": "1 Oggetto Fabbricabile"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "copie_img": [
+    "carte/1_encuentros_blanco/36509.webp"
+   ]
+  },
+  {
+   "img": "carte/3_encuentros_morado/36620.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Voracidad Incorpórea",
+    "it": "Voracità Incorporea"
+   },
+   "testo": {
+    "es": "[i]Cuando llegó el hambre insaciable, primero se comió su propio cuerpo.[/i]",
+    "it": "[i]Quando giunse la fame insaziabile, per prima cosa divorò il proprio corpo.[/i]"
+   },
+   "valore": 13,
+   "tratti": [
+    "Difensivo",
+    "Opportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "2 {i:wound} o descarta 1 Objeto",
+     "it": "2 {i:wound} o scarta 1 Oggetto"
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Paga 1 de {r:Comida} o 2 {i:discard}",
+    "it": "Paga 1 {r:Cibo} o 2 {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Magia}",
+    "it": "1 {r:Esp}, 1 {r:Magia}"
+   },
+   "bottino": null,
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "copie_img": [
+    "carte/3_encuentros_morado/36621.webp"
+   ]
+  },
+  {
+   "img": "carte/3_encuentros_morado/36622.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Yr Hen Wräch",
+    "it": "Yr Hen Wräch"
+   },
+   "testo": {
+    "es": "[i]Esta monstruosa bruja se cuela en las casas de la gente por la noche. Su aliento apesta a enfermedad.[/i]",
+    "it": "[i]Questa strega mostruosa si intrufola di notte nelle case della gente. Il suo alito puzza di malattia.[/i]"
+   },
+   "valore": 16,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:health} u obtienes el máximo de {i:terror}, obtén la carta de Secreto 66. Después, Escapa del Combate.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:health} o ottieni il massimo di {i:terror}, ottieni la carta Segreto 66. Poi Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "3 {i:wound}, pierde {i:cube}",
+     "it": "3 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "copie_img": [
+    "carte/3_encuentros_morado/36623.webp"
+   ]
+  },
+  {
+   "img": "carte/4_encuentros_morado/36624.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Hombre de Mimbre",
+    "it": "Uomo di Vimini"
+   },
+   "testo": {
+    "es": "[i]Un sacrificio fallido vuelve para vengarse.[/i]",
+    "it": "[i]Un sacrificio fallito ritorna per vendicarsi.[/i]"
+   },
+   "valore": 26,
+   "tratti": [
+    "Lento"
+   ],
+   "regola_speciale": {
+    "es": "[i]Obtén 1 de {i:terror} inevitable después de cada ataque. Si tienes 3 o más {i:empathy}, puedes descartar este Encuentro.[/i]",
+    "it": "[i]Ottieni 1 {i:terror} inevitabile dopo ogni attacco. Se hai 3 o più {i:empathy}, puoi scartare questo Incontro.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 8,
+     "es": "4 {i:wound}",
+     "it": "4 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 13,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 14,
+     "a": 20,
+     "es": "5 {i:wound}",
+     "it": "5 {i:wound}",
+     "valori": [
+      14,
+      16,
+      18,
+      20
+     ]
+    },
+    {
+     "da": 15,
+     "a": 19,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}",
+     "valori": [
+      15,
+      17,
+      19
+     ]
+    },
+    {
+     "da": 21,
+     "a": 25,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Exp}",
+    "it": "2 {r:Esp}"
+   },
+   "bottino": {
+    "es": "4 de {r:Magia}",
+    "it": "4 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/4_encuentros_morado/36625.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": true,
+   "nome": {
+    "es": "Masacre",
+    "it": "Massacro"
+   },
+   "testo": {
+    "es": "[i]Un muro de almas malditas que recorren la tierra como una ola marina.[/i]",
+    "it": "[i]Un muro di anime maledette che percorrono la terra come un'onda del mare.[/i]"
+   },
+   "valore": 14,
+   "tratti": [
+    "Guardiano",
+    "Orda"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 2,
+     "a": 6,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 7,
+     "a": 10,
+     "es": "2 {i:wound}, obtén 1 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 11,
+     "a": 13,
+     "es": "Pierde toda tu {i:health}",
+     "it": "Perdi tutta la tua {i:health}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/4_encuentros_morado/36626.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Primer Morador",
+    "it": "Predecessore"
+   },
+   "testo": {
+    "es": "[i]El espacio mismo parece deformarse a su alrededor.[/i]",
+    "it": "[i]Lo spazio stesso sembra deformarsi attorno a lui.[/i]"
+   },
+   "valore": 20,
+   "tratti": [
+    "Difensivo (2-4 giocatori)",
+    "Finta",
+    "Distruzione"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "Pierde 2 de {i:energy}, obtén 2 de {i:terror}",
+     "it": "Perdi 2 {i:energy}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 8,
+     "es": "3 {i:wound}, pierde 1 de {i:energy}",
+     "it": "3 {i:wound}, perdi 1 {i:energy}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 13,
+     "a": 15,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 16,
+     "a": 19,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Rep}",
+    "it": "1 {r:Esp}, 1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "3 de {r:Magia}",
+    "it": "3 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "copie_img": [
+    "carte/4_encuentros_morado/36627.webp"
+   ]
+  },
+  {
+   "img": "carte/4_encuentros_morado/36628.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Púca",
+    "it": "Púca"
+   },
+   "testo": {
+    "es": "[i]A pesar de su apariencia demoníaca, la cabra parece tranquila y amistosa.[/i]",
+    "it": "[i]Nonostante il suo aspetto demoniaco, la capra sembra tranquilla e amichevole.[/i]"
+   },
+   "effetto": {
+    "es": "Cada miembro del equipo puede obtener 2 de {r:Comida}, O BIEN puede pagar 4 de {r:Comida} para restaurar toda su {i:health}.",
+    "it": "Ogni membro della Compagnia può ottenere 2 {r:Cibo}, OPPURE può pagare 4 {r:Cibo} per ripristinare tutta la sua {i:health}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null
+  },
+  {
+   "img": "carte/4_encuentros_morado/36629.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": true,
+   "nome": {
+    "es": "Reconquistador",
+    "it": "Rivendicatore"
+   },
+   "testo": {
+    "es": "[i]Un resonante manto de Rareza lo rodea.[/i]",
+    "it": "[i]Un risonante manto di Wyrd lo avvolge.[/i]"
+   },
+   "valore": 25,
+   "tratti": [
+    "Guardiano",
+    "Difensivo",
+    "Rapido"
+   ],
+   "regola_speciale": {
+    "es": "[i]Solo las Habilidades de Espiritualidad están activas.[/i]",
+    "it": "[i]Solo le Abilità di Spiritualità sono attive.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "2 {i:wound}, obtén 2 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 11,
+     "a": 17,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 18,
+     "a": 21,
+     "es": "Pierde {i:cube4}",
+     "it": "Perdi {i:cube4}"
+    },
+    {
+     "da": 22,
+     "a": 24,
+     "es": "5 {i:wound}",
+     "it": "5 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "2 {i:wound}, {i:discard}",
+    "it": "2 {i:wound}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "3 de {r:Exp}, 2 de {r:Rep}",
+    "it": "3 {r:Esp}, 2 {r:Rep}"
+   },
+   "bottino": {
+    "es": "5 de {r:Magia}",
+    "it": "5 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_azul/36400.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "copie_img": [
+    "carte/1_encuentros_azul/36401.webp",
+    "carte/1_encuentros_azul/36402.webp",
+    "carte/1_encuentros_azul/36403.webp"
+   ]
+  },
+  {
+   "img": "carte/1_encuentros_azul/36404.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Dolientes",
+    "it": "Dolenti"
+   },
+   "testo": {
+    "es": "[i]El ritual de luto conocido como caoineadh es ahora tristemente común en Ávalon.[/i]",
+    "it": "[i]Il rituale di lutto noto come caoineadh è ora tristemente comune ad Avalon.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Únete a la multitud",
+      "it": "Unisciti alla folla"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}",
+      "it": "{i:arrowdown}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Reconforta a la viuda",
+      "it": "Conforta la vedova"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Obtén 1 de {i:terror}",
+      "it": "Ottieni 1 {i:terror}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 1 de {r:Rep}, obtén 1 de {i:terror} por cada punto de {i:empathy} que tengas",
+    "it": "Perdi 1 {r:Rep}, ottieni 1 {i:terror} per ogni punto di {i:empathy} che possiedi"
+   },
+   "ricompensa": {
+    "es": "Pierde 2 de {i:terror}, obtén 1 de {r:Rep}",
+    "it": "Perdi 2 {i:terror}, ottieni 1 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_azul/36405.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Epidemia",
+    "it": "Epidemia"
+   },
+   "testo": {
+    "es": "[i]Un equipo de marginados infectados por la Muerte Roja visita este asentamiento. Todas las puertas están cerradas.[/i]",
+    "it": "[i]Un gruppo di emarginati infettati dalla Morte Rossa visita questo insediamento. Tutte le porte sono chiuse.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VRRRGRR"
+   },
+   "evitare": {
+    "es": "(requiere 4 de {r:Rep}): Paga 1 de {i:energy}",
+    "it": "(richiede 4 {r:Rep}): Paga 1 {i:energy}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Evita a los infectados",
+      "it": "Evita gli infetti"
+     },
+     "speciale": {
+      "caution": "↑↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Búscales refugio",
+      "it": "Trova loro un rifugio"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "1 {i:wound}, obtén la carta de Secreto 66",
+    "it": "1 {i:wound}, ottieni la carta Segreto 66"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Magia}, 1 de {r:Rep}",
+    "it": "1 {r:Magia}, 1 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_azul/36406.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Ley de Hospitalidad",
+    "it": "Legge dell'Ospitalità"
+   },
+   "testo": {
+    "es": "[i]Aquí la gente no suele ser muy amigable, pero siempre puedes apelar a las viejas costumbres y leyes.[/i]",
+    "it": "[i]Qui la gente di solito non è molto amichevole, ma puoi sempre appellarti alle antiche usanze e leggi.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": {
+    "es": "Paga 1 de {i:energy}, mueve a una Localización conectada",
+    "it": "Paga 1 {i:energy}, muoviti in un Luogo collegato"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Apela a la ley",
+      "it": "Appellati alla legge"
+     },
+     "speciale": {
+      "*": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Obtén 2 de {i:terror}, mueve a una Localización conectada",
+    "it": "Ottieni 2 {i:terror}, muoviti in un Luogo collegato"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Comida}",
+    "it": "2 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x"
+  },
+  {
+   "img": "carte/1_encuentros_azul/36407.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Ráfaga de Rareza",
+    "it": "Raffica di Wyrd"
+   },
+   "testo": {
+    "es": "[i]Los callejones se retuercen alzándose hacia el cielo. Las casas se doblan en ángulos imposibles. ¡La Rareza ha llegado![/i]",
+    "it": "[i]I vicoli si contorcono innalzandosi verso il cielo. Le case si piegano ad angoli impossibili. Il Wyrd è arrivato![/i]"
+   },
+   "affinita": null,
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Avanza a través de la anomalía",
+      "it": "Avanza attraverso l'anomalia"
+     },
+     "prova": {
+      "attributo": "spirituality",
+      "minimo": 4
+     },
+     "es": "Tira un dado y añade tu Espiritualidad. Si el resultado es menor que 4, Fracasas en el Encuentro.",
+     "it": "Tira un dado e aggiungi la tua Spiritualità. Se il risultato è inferiore a 4, fallisci l'Incontro."
+    },
+    {
+     "nome": {
+      "es": "Evita la atención innecesaria",
+      "it": "Evita attenzioni inutili"
+     },
+     "prova": {
+      "attributo": "caution",
+      "minimo": 3
+     },
+     "es": "Tira un dado y suma tu Cautela. Si el resultado es menor que 3, Fracasas en el Encuentro.",
+     "it": "Tira un dado e somma la tua Cautela. Se il risultato è inferiore a 3, fallisci l'Incontro."
+    }
+   ],
+   "ricompensa": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "fallimento": {
+    "es": "Pierde 2 de {i:energy}, resuelve un Encuentro púrpura",
+    "it": "Perdi 2 {i:energy}, risolvi un Incontro viola"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null
+  },
+  {
+   "img": "carte/1_encuentros_azul/36408.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Tentaciones",
+    "it": "Tentazioni"
+   },
+   "testo": {
+    "es": "[i]Los visitantes pueden recrearse en múltiples vicios, ninguno de ellos barato ni seguro, todos ellos tentadores.[/i]",
+    "it": "[i]I visitatori possono abbandonarsi a molti vizi, nessuno dei quali economico o sicuro, tutti allettanti.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 1,
+    "sequenza": "VRRRRGR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Resiste la tentación",
+      "it": "Resisti alla tentazione"
+     },
+     "speciale": {
+      "caution": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {i:energy}, pierde 1 de {r:Riqueza}",
+      "it": "Perdi 1 {i:energy}, perdi 1 {r:Ricchezza}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 1 de {r:Rep}, pierde 2 de {r:Riqueza}",
+    "it": "Perdi 1 {r:Rep}, perdi 2 {r:Ricchezza}"
+   },
+   "ricompensa": {
+    "es": "Pierde 1 de {i:terror}",
+    "it": "Perdi 1 {i:terror}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "2x"
+  },
+  {
+   "img": "carte/1_encuentros_azul/36409.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Toque de queda",
+    "it": "Coprifuoco"
+   },
+   "testo": {
+    "es": "[i]Debido a algún terrible delito, los guardias locales impusieron un estricto toque de queda.[/i]",
+    "it": "[i]A causa di un qualche terribile crimine, le guardie locali hanno imposto un severo coprifuoco.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": {
+    "es": "Paga 2 de {i:energy}",
+    "it": "Paga 2 {i:energy}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Engaña a los guardias",
+      "it": "Inganna le guardie"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 2 de {i:energy}, resuelve el Encuentro gris «Guerrero del Clan»",
+    "it": "Perdi 2 {i:energy}, risolvi l'Incontro grigio «Guerriero del Clan»"
+   },
+   "ricompensa": {
+    "es": "Obtén 1 de {i:energy}",
+    "it": "Ottieni 1 {i:energy}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy2"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x"
+  }
+ ]
+}

@@ -1,0 +1,946 @@
+{
+ "voci": [
+  {
+   "chiave": "r:3bf4b9d334f7",
+   "ruolo": "risultato",
+   "testo": "Tutti i membri della Compagnia perdono 1 {i:energy}.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 172, scelta: Continua."
+  },
+  {
+   "chiave": "r:80572b986359",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete 2 Oggetti casuali non Compagno e la parte 1 dello status [b]“Underfern”[/b]. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 173, scelta: Continua."
+  },
+  {
+   "chiave": "c:cf009794dfad",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la carta Segreto [b]“Preda!” (13)[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 174: L’ultima parte della vostra analisi è la più orribile. Controllate attentamente le ferite di Yvain. Sono state inflitte da almeno due tipi diversi di armi – p"
+  },
+  {
+   "chiave": "c:54c77b3a5d39",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la carta Segreto [b]“Preda!” (13)[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 174: L’ultima parte della vostra analisi è la più orribile. Controllate attentamente le ferite di Yvain. Sono state inflitte da almeno due tipi diversi di armi – p"
+  },
+  {
+   "chiave": "r:ca309dd0454b",
+   "ruolo": "risultato",
+   "testo": "I Predecessori sono scomparsi da Avalon da seicento anni! Il fatto che uno di loro sia riapparso oggi è il peggior presagio che possiate aver mai immaginato. Il fatto che l’assassino di Yvain sia ancora in giro, vi riempie di terrore.\n\nOgni membro della Compagnia ottiene 1 {r:Esp}.\n\n[i]Ogni membro della Compagnia ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 174, scelta: Se [b]non avete[/b] la carta Segreto [b]“Preda!” (13)[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "c:b04fa46a8f66",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 3 dello status [b]“Cosuil”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 175: Scovate una strana caverna, piena di candele consumate e meravigliosi bassorilievi che raffigurano un gruppo di quattro avventurieri che combattono i Predecesso"
+  },
+  {
+   "chiave": "r:08093b60c0de",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 4 dello status [b]“Cosuil”[/b].",
+   "contesto": "Luogo 999 verso 175, scelta: Se [b]avete[/b] la parte 3 dello status [b]“Cosuil”[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "c:94ae9deed332",
+   "ruolo": "condizione",
+   "testo": "Altrimenti, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 175: Scovate una strana caverna, piena di candele consumate e meravigliosi bassorilievi che raffigurano un gruppo di quattro avventurieri che combattono i Predecesso"
+  },
+  {
+   "chiave": "c:bd13fc9aa49e",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] la parte 5 dello status [b]“Underfern”[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 181: Vi trovate di fronte a un’antica torre, in lieve pendenza. Le mura stanno crollando, ma la porta d’ingresso è sorprendentemente robusta e reca inciso sopra un "
+  },
+  {
+   "chiave": "r:cde0ab4d24e5",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Underfern”[/b] e ogni membro della Compagnia ottiene 1 {r:Esp}.[/i]",
+   "contesto": "Luogo 999 verso 181, scelta: Se [b]non avete[/b] la parte 5 dello status [b]“Underfern”[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "c:3431d8535f90",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 1 dello status [b]“Calderone Nero”[/b] e la carta Segreto [b]66[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 181: Vi trovate di fronte a un’antica torre, in lieve pendenza. Le mura stanno crollando, ma la porta d’ingresso è sorprendentemente robusta e reca inciso sopra un "
+  },
+  {
+   "chiave": "r:b940d1d4d133",
+   "ruolo": "risultato",
+   "testo": "[i]Tutti i membri della Compagnia perdono tutta la {i:health} e la {r:Ricchezza}, e non possono tenere più di due Oggetti. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 184, scelta: Continua."
+  },
+  {
+   "chiave": "v:927",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Avevano un accordo, e stava funzionando bene. Farete il possibile per ripristinarlo.\n\n[i]Aggiungete la vostra {i:empathy} al numero di parti acquisite dello status [b]“Missione Diplomatica”[/b]. Se siete [b]Beor[/b] (o fa parte della vostra Compagnia), aggiungere +1, dato che i cittadini rispettano i maniscalchi.\n\nPoi, tirare un dado e sommare il risultato al numero ottenuto. Potete ritirare il dado quante volte volete, pagando 3 {r:Rep} per ogni ritiro.[/i]",
+   "contesto": "Luogo 999 verso 200"
+  },
+  {
+   "chiave": "c:34d0beff4b39",
+   "ruolo": "condizione",
+   "testo": "Se il vostro risultato è stato: [b]5-10[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 200: Avevano un accordo, e stava funzionando bene. Farete il possibile per ripristinarlo.\n\n[i]Aggiungete la vostra {i:empathy} al numero di parti acquisite dello sta"
+  },
+  {
+   "chiave": "c:d20b9e7225bb",
+   "ruolo": "condizione",
+   "testo": "Se il vostro risultato è stato: [b]11+[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 200: Avevano un accordo, e stava funzionando bene. Farete il possibile per ripristinarlo.\n\n[i]Aggiungete la vostra {i:empathy} al numero di parti acquisite dello sta"
+  },
+  {
+   "chiave": "r:0a54ce91fcd8",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {r:Rep}. Risolvere l’Incontro verde [b]“Druido Vendicativo”[/b] (Difficoltà 2). Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 211, scelta: [b]Affrontarli[/b]"
+  },
+  {
+   "chiave": "r:10366fa3403a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 1 {i:health}\ne 1 {i:energy}. Muoversi nel Luogo rivelato collegato a Moonring con il numero più basso.[/i]\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 211, scelta: [b]Scappare[/b]"
+  },
+  {
+   "chiave": "r:7924524bfa24",
+   "ruolo": "risultato",
+   "testo": "A prescindere dall’esito, ottenete 1 Gettone Cerca.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 214, scelta: Verificare il risultato"
+  },
+  {
+   "chiave": "r:20e827c7e02a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {i:terror} e 1 {r:Magia}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 215, scelta: Continua."
+  },
+  {
+   "chiave": "r:e903b5eff1df",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Calderone Nero”[/b] e lo status [b]“Indicazioni Generali”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 219, scelta: Continua."
+  },
+  {
+   "chiave": "r:7a039dd768a0",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {r:Esp} e 2 {r:Ricchezza}.\n\nOttenete la parte 1 dello status [b]“Menhir Errante”[/b]. Rimpiazzare il Luogo [b]134[/b], Falfuar, con il Luogo [b]147[/b], Falfuar Abbandonata. Se la compagnia non si trova sul Luogo [b]135[/b], spostare lì tutte le miniature dei membri della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 220, scelta: Continua."
+  },
+  {
+   "chiave": "c:c191c5684740",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] la parte 6 dello status [b]“Missione Diplomatica”[/b]",
+   "contesto": "Luogo 999 verso 223: I messaggeri hanno informato gli abitanti di entrambi i villaggi dell’imminente incontro. Siete stupefatti di quanto le persone di qui diano valore ai vostri co"
+  },
+  {
+   "chiave": "q:b0283b528882",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Piazzare un Gettone Cerca su Falfuar (Luogo [b]134[/b]) e andare al Verso 390 nel Libro dei Segreti, a meno che vogliate pagare 2 {r:Rep} per ignorare questo trasferimento.[/i]",
+   "contesto": "Luogo 999 verso 223, scelta: Se [b]avete[/b] la parte 6 dello status [b]“Missione Diplomatica”[/b]"
+  },
+  {
+   "chiave": "r:59ce24e428b5",
+   "ruolo": "risultato",
+   "testo": "Pagare 2 {r:Rep}.",
+   "contesto": "Luogo 999 verso 223, scelta: Se [b]avete[/b] la parte 6 dello status [b]“Missione Diplomatica”[/b]"
+  },
+  {
+   "chiave": "r:8ddf3ad3e5e4",
+   "ruolo": "risultato",
+   "testo": "[i]Piazzare un Gettone Cerca sulla carta Luogo che rappresenta lo schieramento che sostenete.[/i]",
+   "contesto": "Luogo 999 verso 223, scelta: [b]Sostenere la rivendicazione di Falfuar (Luogo 134) o di Bundorca (Luogo 135) [/b]"
+  },
+  {
+   "chiave": "q:eb41cc02d434",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede almeno 4 parti dello status [b]“Missione Diplomatica”[/b][/i]",
+   "contesto": "Luogo 999 verso 223, scelta: [b]Cercare di fargli condividere il Menhir e rimetterlo in movimento[/b]"
+  },
+  {
+   "chiave": "q:81db8255b878",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 2 {i:empathy} o 6 {r:Rep}[/i]",
+   "contesto": "Luogo 999 verso 229, scelta: [b]Convincerla che deve tornare dalla sua famiglia e trascorrere il resto della sua esistenza con i suoi cari[/b]"
+  },
+  {
+   "chiave": "r:89d70f3efcf3",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status[b] “Cosuil”[/b].[/i]",
+   "contesto": "Luogo 999 verso 229, scelta: [b]Convincerla che deve tornare dalla sua famiglia e trascorrere il resto della sua esistenza con i suoi cari[/b]"
+  },
+  {
+   "chiave": "q:f8960ff34509",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la miniatura di un Menhir in questo Luogo E almeno 4 {r:Rep}[/i]",
+   "contesto": "Luogo 999 verso 229, scelta: [b]Convincerla a unirsi a voi; sarà una preziosa compagna[/b]"
+  },
+  {
+   "chiave": "r:595473cee787",
+   "ruolo": "risultato",
+   "testo": "D’ora in avanti, l’Incontro Predecessore innescato dalla car- ta Segreto [b]“Preda” (13)[/b] ottiene il seguente Tratto: ogni Personaggio può giocare al massimo [b]3[/b] carte durante la propria Attivazione.\nContinuare la partita.",
+   "contesto": "Luogo 999 verso 230, scelta: Continua."
+  },
+  {
+   "chiave": "r:c2448cb82b12",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Esplorare Tuathan”[/b]. Perdete 4 {i:health}. Ottenete 3 {i:terror}, 6 {r:Magia} e 2 {r:Esp}. Ottenete 2 Gettoni Cerca.\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 235, scelta: Continua."
+  },
+  {
+   "chiave": "r:2856f2e6f1d8",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 3 {i:terror}, e perde 2 {r:Cibo}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 238, scelta: Continua."
+  },
+  {
+   "chiave": "r:823c3b05d98b",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde tutta la {i:health}.[/i]",
+   "contesto": "Luogo 999 verso 241, scelta: Continua."
+  },
+  {
+   "chiave": "r:d9e84ee280c7",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status[b] “Cosuil”[/b].[/i]",
+   "contesto": "Luogo 999 verso 242, scelta: [b]Forse dovreste intervenire?[/b]"
+  },
+  {
+   "chiave": "r:dec8575ceb9e",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status[b] “Cosuil”[/b].[/i]\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 242, scelta: [b]Se non intervenite, Cosuil dice che parlerà con voi più tardi[/b]"
+  },
+  {
+   "chiave": "r:642010c2c5c6",
+   "ruolo": "risultato",
+   "testo": "D’ora in avanti, l’Incontro Predecessore innescato dalla carta Segreto [b]“Preda” (13)[/b] ottiene il seguente Tratto: ogni Personaggio va in Panico per l’intero Incontro a prescindere dal suo {i:terror}. Ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione.\nContinuare la partita.",
+   "contesto": "Luogo 999 verso 247, scelta: Continua."
+  },
+  {
+   "chiave": "c:00030d86d3f5",
+   "ruolo": "condizione",
+   "testo": "Verificare il risoltato",
+   "contesto": "Luogo 999 verso 248: [i]Premi il tasto {i:encounter} in alto sullo schermo per visualizzare la Carta Incontro. Risolvere l’Incontro blu [b]“Sacerdotessa sospettosa”[/b], poi verific"
+  },
+  {
+   "chiave": "r:23f33297a9d4",
+   "ruolo": "risultato",
+   "testo": "Non solo riuscite a difendervi, ma riuscite a ottenere delle informazioni dalla sacerdotessa.",
+   "contesto": "Luogo 999 verso 248, scelta: Verificare il risoltato"
+  },
+  {
+   "chiave": "r:ccdb5626c8fe",
+   "ruolo": "risultato",
+   "testo": "I guerrieri vi assaltano da tutte le parti. Vi fanno perdere i sensi e venite condotti dinnanzi a Sir Mordred.",
+   "contesto": "Luogo 999 verso 248, scelta: Verificare il risoltato"
+  },
+  {
+   "chiave": "q:0293925e1229",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se state giocando il [b]Capitolo 7: Parte 1[/b][/i]",
+   "contesto": "Luogo 999 verso 253, scelta: Continua."
+  },
+  {
+   "chiave": "r:bc6cf503b77a",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Campione del Popolo”[/b] e la carta Segreto [b]19[/b]. Ogni Personaggio ottiene 5 {r:Esp} e 5 {r:Rep}.[/i]",
+   "contesto": "Luogo 999 verso 253, scelta: Continua."
+  },
+  {
+   "chiave": "r:79cddd75c8c9",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Campione del Popolo”[/b] e la carta Segreto [b]19[/b]. Ogni Personaggio ottiene 5 {r:Esp} e 5 {r:Rep}.[/i]\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 253, scelta: Continua."
+  },
+  {
+   "chiave": "q:e7a678d25c36",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se state giocando il [b]Capitolo 3A[/b]",
+   "contesto": "Luogo 999 verso 257, scelta: Continua."
+  },
+  {
+   "chiave": "r:cadd5dc213bf",
+   "ruolo": "risultato",
+   "testo": "Scartare la carta Segreto Graal Corrotto ([b]8[/b]).\n\n[b]CONGRATULAZIONI! [/b]Avete completato la vostra Cerca! Ottenete la parte 7 dello status [b]“Fato della Spedizione”[/b] e ottenete lo status [b]“Compito della Dama”[/b].\n\nTrovare e risolvere la parte 4 della carta Capitolo 3A.\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 257, scelta: Continua."
+  },
+  {
+   "chiave": "r:3e81f1f22911",
+   "ruolo": "risultato",
+   "testo": "Scartare la carta Segreto Graal Corrotto ([b]8[/b]).\n\n[b]CONGRATULAZIONI! [/b]Avete completato la vostra Cerca! Ottenete la parte 7 dello status [b]“Fato della Spedizione”[/b] e ottenete lo status [b]“Compito della Dama”[/b].\n\nOgni giocatore ottiene 2 {r:Esp}. Poi, scartare il vostro mazzo Eventi, comprese le Cerche Attive, scegliere se Salvare la partita o cercare la carta Preparazione del [b]Capitolo 3A[/b] e seguire le istruzioni per iniziare questo Capitolo.\nL’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 257, scelta: Continua."
+  },
+  {
+   "chiave": "r:9e2432d57e45",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 2 dello status [b]“Tesori Nascosti”[/b].\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 263, scelta: [b]Lasciare che sia la donna a decidere per conto suo[/b]"
+  },
+  {
+   "chiave": "r:46aa5a6697cf",
+   "ruolo": "risultato",
+   "testo": "Ottenete la parte 2 dello status [b]“Tesori Nascosti”[/b].\n\nLa legge dice che le proprietà di ciascun cavaliere debbano essere riconsegnate a Camelot con un messaggio che spieghi la sua morte, in modo che, col tempo, una nuova anima coraggiosa possa prenderne il posto.",
+   "contesto": "Luogo 999 verso 263, scelta: [b]Portare l’equipaggiamento dal sovrano della Sbiancata.[/b]"
+  },
+  {
+   "chiave": "r:3b2fca944f20",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Tesori Nascosti”[/b].[/i]\n\nPer legge, tutte le proprietà di un cavaliere deceduto appartengono a Camelot. Ma di certo Fael non era più un cavaliere? \nOttenete 3 {r:Ricchezza} e la carta Segreto [b]5[/b]. Poi, ottenete la parte 1 dello status [b]“Caduta della Cavalleria”[/b]. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 263, scelta: [b]Tenere l’equipaggiamento[/b]"
+  },
+  {
+   "chiave": "q:bc216236da65",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] almeno 1 punto di {i:caution}[/i]",
+   "contesto": "Luogo 999 verso 264, scelta: Continua."
+  },
+  {
+   "chiave": "r:f510781c31d7",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia che abbia almeno  {i:empathy} ottiene 1 {i:terror}. Ogni Personaggio ottiene 2 {r:Esp}.\n\nOttenete la parte 6 dello status [b]“Fato della Spedizione”[/b], la parte 2 dello status [b]“Saccheggiatore”[/b] e la carta Segreto[b] “Talismano Splendente” (22).[/b]",
+   "contesto": "Luogo 999 verso 264, scelta: Continua."
+  },
+  {
+   "chiave": "r:aa949181d0cc",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia che abbia almeno  {i:empathy} ottiene 1 {i:terror}. Ogni Personaggio ottiene 2 {r:Esp}.\n\nOttenete la parte 6 dello status [b]“Fato della Spedizione”[/b], la parte 2 dello status [b]“Saccheggiatore”[/b] e la carta Segreto[b] “Talismano Splendente” (22).[/b]\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 264, scelta: Continua."
+  },
+  {
+   "chiave": "r:d4fa7b5886e6",
+   "ruolo": "risultato",
+   "testo": "[i][b]CONGRATULAZIONI![/b] Avete completato il vostro attuale Capitolo! Ottenete la parte 5 dello status [b]“Alleati di Avalon”[/b], oltre alla parte 1 dello status [b]“Diplomatico”[/b]. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 4B[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!\n\nTutti i membri della Compagnia devono Passare per il resto della giornata. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 265, scelta: Continua."
+  },
+  {
+   "chiave": "r:125536a6d7a5",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 4 {r:Rep} e 1 {r:Esp}.\nPoi, scartare la carta Segreto [b]9[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 266, scelta: [b]Consegnarla alla giustizia[/b]"
+  },
+  {
+   "chiave": "r:788a405f2eca",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 5 {r:Ricchezza} e 2 Oggetti non Compagno.\nPoi, scartare la carta Segreto [b]9[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 266, scelta: [b]Farsi corrompere da lei[/b]"
+  },
+  {
+   "chiave": "r:56c89c50a16d",
+   "ruolo": "risultato",
+   "testo": "D’ora in avanti, l’Incontro Predecessore innescato dalla carta Segreto [b]“Preda” (13)[/b] ottiene il seguente Tratto: ogni Personaggio può giocare al massimo [b]2[/b] carte durante la propria Attivazione. Ogni Personaggio va in Panico per l’intero Incontro a prescindere dal suo {i:terror}.\n\nContinuare la partita.",
+   "contesto": "Luogo 999 verso 270, scelta: Continua."
+  },
+  {
+   "chiave": "q:f3a12767bde0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la carta [b]Segreto 58[/b][/i]",
+   "contesto": "Luogo 999 verso 277, scelta: Continua."
+  },
+  {
+   "chiave": "r:11d8a7e59e37",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio ottiene 1 {r:Esp} e ottenete la carta Segreto [b]58[/b].[/i]",
+   "contesto": "Luogo 999 verso 277, scelta: Continua."
+  },
+  {
+   "chiave": "r:b900094c3451",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]50[/b] e 2 Oggetti casuali non Compagno. Ogni membro della Compagnia ottiene 3 {r:Esp} e 2 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 279, scelta: Continua."
+  },
+  {
+   "chiave": "r:f75980bc34cf",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Redenzione” (25)[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 281, scelta: Continua."
+  },
+  {
+   "chiave": "r:ebccef22bdca",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 Oggetto casuale non Compagno, un Oggetto [b]“Kit dell’Avventuriero”[/b], 1 {r:Ricchezza}, e la parte 7 dello status [b]“Tesori Nascosti”[/b].\n\nOttenete la carta Segreto [b]“Scoperta Inquietante” (2)[/b].\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 284, scelta: Continua."
+  },
+  {
+   "chiave": "r:73d65a17dfa4",
+   "ruolo": "risultato",
+   "testo": "La ragazza si butta in ginocchio piangendo copiosamente. I suoi occhi colmi di dolore e il pianto funereo vi penetrano il cuore più di quanto avesse mai potuto fare la spada dell’uomo. Afferra il pugnale portato alla cintola dal suo amante morto e lo punta contro il suo petto, ma gli astanti la fermano. Una folla inferocita la blocca e la trascina via, verso la casa di ricovero, per morire in maniera lenta e solitaria.\n\n[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Ogni membro della Compagnia ottiene 1  {i:terror} per ogni punto della sua {i:empathy}. Ottenete la parte 4 dello status [b]“Dare una Mano”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 288, scelta: Verificare il risultato"
+  },
+  {
+   "chiave": "r:5e09ae0f8848",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia recupera tutta la {i:health} e la {i:energy}. Ogni membro della Compagnia ottiene 3 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 295, scelta: Continua."
+  },
+  {
+   "chiave": "c:679f7920362f",
+   "ruolo": "condizione",
+   "testo": "Se perdete, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 299: [i]Risolvere l’Incontro blu [b]“Viscido Imbroglione”[/b] (Difficoltà 2). Dovete scegliere lo Stadio [b]“Rivelare un Falso”[/b]. Non potete evitare questo Incon"
+  },
+  {
+   "chiave": "r:a2ef5b86f960",
+   "ruolo": "risultato",
+   "testo": "Cosuil vi dice che fareste meglio ad andarvene. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 299, scelta: Se perdete, scegliere questa opzione."
+  },
+  {
+   "chiave": "c:5023f28a5899",
+   "ruolo": "condizione",
+   "testo": "Se vincete, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 299: [i]Risolvere l’Incontro blu [b]“Viscido Imbroglione”[/b] (Difficoltà 2). Dovete scegliere lo Stadio [b]“Rivelare un Falso”[/b]. Non potete evitare questo Incon"
+  },
+  {
+   "chiave": "q:7a730e23bdb0",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se avete almeno 2 {i:caution} e almeno 1 {i:practicality}[/i]",
+   "contesto": "Luogo 999 verso 301, scelta: Continua."
+  },
+  {
+   "chiave": "r:1435ca876736",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}.[/i]\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 301, scelta: Continua."
+  },
+  {
+   "chiave": "r:490102570e1b",
+   "ruolo": "risultato",
+   "testo": "Continuare la partita.",
+   "contesto": "Luogo 999 verso 305, scelta: Continua."
+  },
+  {
+   "chiave": "r:4f49b66f2e98",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Esp}.\n\nOttenete la parte 1 dello status “[b]Menhir Errante”[/b]. Rimuovere il Luogo[b] 134[/b] dal gioco e rimpiazzarlo con il Luogo [b]147[/b], Falfuar Abbandonata. Rimuovere il Luogo [b]135[/b] dal gioco e rimpiazzarlo con il Luogo[b] 148[/b], Faldorca. Se la compagnia non si trova sul Luogo [b]148[/b], spostare lì tutte le miniature dei membri della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 306, scelta: Continua."
+  },
+  {
+   "chiave": "r:4f03d73ffbd3",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Ricchezza}. Ottenete la parte 1 dello status [b]“Ripristinare l’Ordine”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 308, scelta: Continua."
+  },
+  {
+   "chiave": "r:5ad03ce2e416",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 2 {i:terror} e ottiene 2 {i:health}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 312, scelta: Continua."
+  },
+  {
+   "chiave": "c:ce4ce1a5785b",
+   "ruolo": "condizione",
+   "testo": "[b]Se avete perso almeno una battaglia o siete riusciti a Fuggire[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 313: [i]Pescare un Incontro grigio [b]“Vagabondo”[/b]. Se vincete, pescare l’Incontro grigio [b]“Vittima dell’Anomalia”[/b].[/i]"
+  },
+  {
+   "chiave": "r:0ac8681063b4",
+   "ruolo": "risultato",
+   "testo": "Le ferite che avete subito mostrano segni di infezione. \n\nOgni membro della Compagnia ottiene la carta Segreto [b]66[/b]. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 313, scelta: [b]Se avete perso almeno una battaglia o siete riusciti a Fuggire[/b], scegliere questa opzione"
+  },
+  {
+   "chiave": "c:57e523a1c273",
+   "ruolo": "condizione",
+   "testo": "[b]Se avete vinto entrambi gli Incontri, o il Nemico è Scappato[/b]",
+   "contesto": "Luogo 999 verso 313: [i]Pescare un Incontro grigio [b]“Vagabondo”[/b]. Se vincete, pescare l’Incontro grigio [b]“Vittima dell’Anomalia”[/b].[/i]"
+  },
+  {
+   "chiave": "r:cb3a1e2662af",
+   "ruolo": "risultato",
+   "testo": "[i][b]CONGRATULAZIONI! [/b]Avete completato il vostro attuale Capitolo! Ogni Giocatore ottiene 3 {r:Esp}. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 12[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 999 verso 316, scelta: Continua."
+  },
+  {
+   "chiave": "r:1262bf6d9963",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete la parte 2 dello status [b]“Conoscenza di Tangleroot”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 318, scelta: Continua."
+  },
+  {
+   "chiave": "c:0f031eb070df",
+   "ruolo": "condizione",
+   "testo": "Se tutti i Personaggi partecipano a questa Esplorazione, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 321: Questa profonda caverna sembra più antica della stessa Tuathan. Enormi bassorilievi sulle pareti, che raffigurano i rituali e i raduni dei Predecessori, sono v"
+  },
+  {
+   "chiave": "r:c9c46336b922",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status [b]“Underfern”[/b] e la carta Segreto [b]“Vero Graal” (7)[/b]. Ogni membro della Compagnia ottiene 3 {r:Esp} e 3 {r:Magia}.[/i]",
+   "contesto": "Luogo 999 verso 321, scelta: Se tutti i Personaggi partecipano a questa Esplorazione, scegliere questa opzione."
+  },
+  {
+   "chiave": "c:663dee54129c",
+   "ruolo": "condizione",
+   "testo": "Se non tutti i Personaggi sono presenti",
+   "contesto": "Luogo 999 verso 321: Questa profonda caverna sembra più antica della stessa Tuathan. Enormi bassorilievi sulle pareti, che raffigurano i rituali e i raduni dei Predecessori, sono v"
+  },
+  {
+   "chiave": "r:4d49682e5824",
+   "ruolo": "risultato",
+   "testo": "Risolvere l’Incontro verde [b]“Antico Wyrm”[/b] al Verso 343.",
+   "contesto": "Luogo 999 verso 325, scelta: Continua."
+  },
+  {
+   "chiave": "r:56c63c1f6940",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete 5 {r:Ricchezza}. Ottenete la parte 2 dello status [b]“Underfern”[/b]. Poi, ritornare al Verso 14 del Fernsea ([b]153[/b]) nel Diario di Esplorazione.[/i]",
+   "contesto": "Luogo 999 verso 327, scelta: Continua."
+  },
+  {
+   "chiave": "r:d35db98d3283",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status “[b]Menhir Errante”[/b]. Rimpiazzare il Luogo [b]134[/b], Falfuar, con il Luogo [b]147[/b], Falfuar Abbandonata. Se la compagnia non si trova sul Luogo [b]135[/b], spostare lì tutte le miniature dei membri della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 330, scelta: Continua."
+  },
+  {
+   "chiave": "r:8c6003d8d611",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 2 dello status [b]“Dare una Mano”[/b].[/i]",
+   "contesto": "Luogo 999 verso 331, scelta: [b]Arrestarli[/b]"
+  },
+  {
+   "chiave": "q:b6d36f119494",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se state giocando [b]il Capitolo 4A[/b][/i]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Lasciare i cavalieri alle loro preoccupazioni[/b] - Li lasciate distrutti e fiaccati."
+  },
+  {
+   "chiave": "r:3134ae2744df",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status [b]“Caduta della Cavalleria”[/b].\n\n[b]CONGRATULAZIONI![/b] Avete completato la vostra Cerca. Ogni Personaggio ottiene 1 {r:Esp}, poi trovare e risolvere la parte 3 del [b]Capitolo 4A[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Lasciare i cavalieri alle loro preoccupazioni[/b] - Li lasciate distrutti e fiaccati."
+  },
+  {
+   "chiave": "r:e314c6afbeab",
+   "ruolo": "risultato",
+   "testo": "[i][i]Ottenete la parte 3 dello status [b]“Caduta della Cavalleria”[/b]. L’Esplorazione termina.[/i].[/i]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Lasciare i cavalieri alle loro preoccupazioni[/b] - Li lasciate distrutti e fiaccati."
+  },
+  {
+   "chiave": "q:1aae45771612",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]Se state giocando il Capitolo 4A[/b]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Spronate i cavalieri [/b] - Li aiutate a capire che il regno ha ancora bisogno di loro."
+  },
+  {
+   "chiave": "r:074ac2cc143e",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 3 dello status[b] “Ripristinare l’Ordine”[/b].\n\n[b]CONGRATULAZIONI![/b] Avete completato la vostra Cerca. Ogni Personaggio ottiene 1 {r:Esp}, poi trovare e risolvere la parte 3 del [b]Capitolo 4A[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Spronate i cavalieri [/b] - Li aiutate a capire che il regno ha ancora bisogno di loro."
+  },
+  {
+   "chiave": "r:77a51ecd737a",
+   "ruolo": "risultato",
+   "testo": "[i][i]Ottenete la parte 3 dello status[b] “Ripristinare l’Ordine”[/b].\nL’Esplorazione termina.[/i].[/i]",
+   "contesto": "Luogo 999 verso 332, scelta: [b]Spronate i cavalieri [/b] - Li aiutate a capire che il regno ha ancora bisogno di loro."
+  },
+  {
+   "chiave": "r:48fcfa8668a5",
+   "ruolo": "risultato",
+   "testo": "Sta piangendo? O ha difficoltà a respirare? A ogni modo vi pare grata. Infila la mano sotto il manto e vi dona delle gemme preziose e un piccolo pendente. Per un attimo, vi rendete conto che le dita della creatura sono due volte più lunghe delle vostre.\n\n[i]Ottenete 1 {r:Ricchezza} e la carta Segreto [b]“Ciondolo del Predecessore” (44)[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 333, scelta: [b]Riconsegnare l’anello alla creatura[/b]"
+  },
+  {
+   "chiave": "r:5c9a899e6aac",
+   "ruolo": "risultato",
+   "testo": "La creatura sibila e si toglie il manto, rivelando la sua vera forma.\n\n[i]Risolvere l’Incontro viola [b]“Spirito del Predecessore” [/b] (Difficoltà 3). Se vincete, ottenete la carta Segreto [b]“Anello Strisciante” (39)[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 333, scelta: [b]Tenere l’anello[/b]"
+  },
+  {
+   "chiave": "r:421b6f15f093",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {r:Rep}. Ottenete la parte 5 dello status [b]“Cosuil”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 334, scelta: Continua."
+  },
+  {
+   "chiave": "q:714bb8aa9ca3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {r:Magia} e 1 {i:energy} per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 337, scelta: [b]Il gruppo entra a Tuathan[/b]"
+  },
+  {
+   "chiave": "q:352c7dac961b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 2 {i:energy} per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 337, scelta: [b]Aubert è disteso a terra, le mani premute sulle tempie[/b]"
+  },
+  {
+   "chiave": "q:e41c1d47a173",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare 1 {r:Magia}e 1 {i:energy} per Personaggio[/i]",
+   "contesto": "Luogo 999 verso 337, scelta: [b]Gli eroi entrano in una strana cittadella circondata dall’anomalia[/b]"
+  },
+  {
+   "chiave": "r:d131c3c7e325",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Rep}. Ottenete la parte 3 dello status[b] “Cosuil”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 340, scelta: Continua."
+  },
+  {
+   "chiave": "r:8020f5b72d38",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {i:terror} per ogni punto della sua {i:caution}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 341, scelta: Continua."
+  },
+  {
+   "chiave": "r:9be776f4578c",
+   "ruolo": "risultato",
+   "testo": "Avete visto le sue abilità. Prima o poi morirà se non è in grado di affrontare un orso anomalo.",
+   "contesto": "Luogo 999 verso 342, scelta: [b]Convincerla ad abbandonare la sua cerca[/b]"
+  },
+  {
+   "chiave": "q:931fd8888c29",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Perdere 1 {i:energy}",
+   "contesto": "Luogo 999 verso 342, scelta: [b]Darle qualche consiglio su come sopravvivere nella selva[/b]"
+  },
+  {
+   "chiave": "r:728f9fb71e7f",
+   "ruolo": "risultato",
+   "testo": "Non è una grande guerriera, ma è animata da un grande sogno. \n\nOttenete la parte 1 dello status[b] “Cosuil”[/b]. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 342, scelta: [b]Darle qualche consiglio su come sopravvivere nella selva[/b]"
+  },
+  {
+   "chiave": "r:84e8a6cb98f6",
+   "ruolo": "risultato",
+   "testo": "La vostra battaglia contro la bestia, nell’arena silenziosa dell’antico forte circolare, è stata degna di una canzone. Ora, la creatura giace morta ai vostri piedi, e la Prima Tenuta Rurale è di nuovo pronta a ospitare gli umani nel momento del bisogno. Fareste meglio a condurre qui qualcuno prima che vi si trasferiscano dei visitatori indesiderati. O prima che l’enorme carcassa inizi a marcire...\n\n[i]Ogni membro della Compagnia ottiene 2 {r:Esp}. Ottenete la parte 2 dello status [b]“Ultimo Rifugio”[/b] e 4 {r:Cibo}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 343, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "r:ce9d89e07c47",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror} e 1 {r:Esp}. Ottenete la parte 6 dello status[b] “Dare una Mano”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 344, scelta: Continua."
+  },
+  {
+   "chiave": "r:65f6d15c351d",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni Personaggio ottiene 2 {r:Esp} e 1 {r:Magia}. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 4A[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo!\n\n L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 345, scelta: Continua."
+  },
+  {
+   "chiave": "r:58811459cab4",
+   "ruolo": "risultato",
+   "testo": "Tutti i Personaggi che non si trovano nel Fernsea ([b]153[/b]) perdono 1 {i:energy}. Spostare immediatamente questi Personaggi sul Fernsea. Si uniscono al resto della Compagnia in questa Esplorazione e formano un’unica Compagnia.",
+   "contesto": "Luogo 999 verso 350, scelta: Continua."
+  },
+  {
+   "chiave": "r:fdb95a2fbdb9",
+   "ruolo": "risultato",
+   "testo": "Tornare all’inizio del Diario.",
+   "contesto": "Luogo 999 verso 352, scelta: Continua."
+  },
+  {
+   "chiave": "r:7e5d16405d63",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Ricchezza}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 354, scelta: Continua."
+  },
+  {
+   "chiave": "r:0531132f6793",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Indizi di Farpoint”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 355, scelta: Continua."
+  },
+  {
+   "chiave": "r:d23f4a46a4ae",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Rep}. Piazzare una nuova miniatura Menhir su questo Luogo e piazzare il suo Quadrante sul [b]5[/b] (-1 per giocatore).\nSe non restano miniature sufficienti, prendetene una da un altro Luogo a vostra scelta. [/i]",
+   "contesto": "Luogo 999 verso 359, scelta: Continua."
+  },
+  {
+   "chiave": "r:09c1455b08ab",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Profondo Segreto”[/b]. Risolvere l’Incontro viola [b]“Spirito del Predecessore”[/b] (Difficoltà 3). A prescindere dall’esito, l’Incubo termina.[/i]",
+   "contesto": "Luogo 999 verso 377, scelta: Continua."
+  },
+  {
+   "chiave": "q:3e35200b62ec",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se[b] non avete[/b] la carta Segreto “[b]Attrezzi dello Scultore” (58)[/b][/i]",
+   "contesto": "Luogo 999 verso 385, scelta: Continua."
+  },
+  {
+   "chiave": "r:ab5115a97030",
+   "ruolo": "risultato",
+   "testo": "[i]Potete pagare 2 {r:Ricchezza} per ottenere la carta Segreto “[b]Attrezzi dello Scultore” (58)[/b]. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 385, scelta: Continua."
+  },
+  {
+   "chiave": "v:1009",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Vi trascinate sulle mura della gola e vi trovate su terreno più alto. Iniziate a parlare...\n\n[i]Sommare la vostra {i:empathy} al numero di parti acquisite dello status [b]“Missione Diplomatica”[/b]. Se siete [b]Beor[/b] (o fa parte della vostra Compagnia), aggiungere 1 (in quando maniscalco, la popolazione vi rispetta). Poi, tirare un dado e sommare il risultato. Potete ritirare il dado quante volte volete, pagando 2 {r:Rep} ogni ritiro.[/i]",
+   "contesto": "Luogo 999 verso 390"
+  },
+  {
+   "chiave": "c:cf1e2814dc42",
+   "ruolo": "condizione",
+   "testo": "Se il vostro risultato è stato [b]1-6[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 390: Vi trascinate sulle mura della gola e vi trovate su terreno più alto. Iniziate a parlare...\n\n[i]Sommare la vostra {i:empathy} al numero di parti acquisite dell"
+  },
+  {
+   "chiave": "c:2dd5d62630cb",
+   "ruolo": "condizione",
+   "testo": "Se il vostro risultato è stato [b]7+[/b], scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 390: Vi trascinate sulle mura della gola e vi trovate su terreno più alto. Iniziate a parlare...\n\n[i]Sommare la vostra {i:empathy} al numero di parti acquisite dell"
+  },
+  {
+   "chiave": "q:28986d6063e4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se c’è un Gettone Cerca nel Luogo [b]135[/b][/i]",
+   "contesto": "Luogo 999 verso 390, scelta: Se il vostro risultato è stato [b]7+[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "q:cac98a70d6b8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se c’è un Gettone Cerca nel Luogo [b]134[/b][/i]",
+   "contesto": "Luogo 999 verso 390, scelta: Se il vostro risultato è stato [b]7+[/b], scegliere questa opzione."
+  },
+  {
+   "chiave": "c:82dd42a41ea5",
+   "ruolo": "condizione",
+   "testo": "Ricompensa",
+   "contesto": "Luogo 999 verso 396: [i]Premi il tasto {i:encounter} in alto sullo schermo per visualizzare la Carta Incontro.\n\nIgnorare la carta Segreto [b]“Sfiducia” (42)[/b] durante questo Incon"
+  },
+  {
+   "chiave": "c:3a42b73de61b",
+   "ruolo": "condizione",
+   "testo": "Se terminate questo Incontro senza vincere o fallire",
+   "contesto": "Luogo 999 verso 396: [i]Premi il tasto {i:encounter} in alto sullo schermo per visualizzare la Carta Incontro.\n\nIgnorare la carta Segreto [b]“Sfiducia” (42)[/b] durante questo Incon"
+  },
+  {
+   "chiave": "c:2ca715c3338f",
+   "ruolo": "condizione",
+   "testo": "Fallimento",
+   "contesto": "Luogo 999 verso 396: [i]Premi il tasto {i:encounter} in alto sullo schermo per visualizzare la Carta Incontro.\n\nIgnorare la carta Segreto [b]“Sfiducia” (42)[/b] durante questo Incon"
+  },
+  {
+   "chiave": "r:217eaf41c229",
+   "ruolo": "risultato",
+   "testo": "[i]Perdi tutta la {i:health} e {i:energy} , scartari tutti gli Oggetti. L'Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 396, scelta: Fallimento"
+  },
+  {
+   "chiave": "q:e5e711f7feef",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]non avete[/b] la parte 9 dello status [b]“Fato della Spedizione”[/b]",
+   "contesto": "Luogo 999 verso 405, scelta: Continua."
+  },
+  {
+   "chiave": "r:9607d8b67cee",
+   "ruolo": "risultato",
+   "testo": "Ogni Personaggio ottiene 5 {r:Esp}. Poi, ottenete la parte 9 dello status [b]“Fato della Spedizione”[/b] e proseguite la partita.",
+   "contesto": "Luogo 999 verso 405, scelta: Continua."
+  },
+  {
+   "chiave": "c:057e21d09337",
+   "ruolo": "condizione",
+   "testo": "Se scartate il Quadrate, decidete di Fuggire o perdete il Combattimento – La donna muore, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 410: Vi avvicinate alla fonte delle grida. Una giovane sta cercando disperatamente di affrontare un orso anomalo! La creatura la colpisce brutalmente, gettandola a t"
+  },
+  {
+   "chiave": "r:c0a4020b7b11",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Cosuil”[/b] e l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 410, scelta: Se scartate il Quadrate, decidete di Fuggire o perdete il Combattimento – La donna muore, scegliere questa opzione."
+  },
+  {
+   "chiave": "c:3d31912226eb",
+   "ruolo": "condizione",
+   "testo": "Se vincete prima che il Quadrante si esaurisca, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 410: Vi avvicinate alla fonte delle grida. Una giovane sta cercando disperatamente di affrontare un orso anomalo! La creatura la colpisce brutalmente, gettandola a t"
+  },
+  {
+   "chiave": "q:d2b280849b51",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto [b]2[/b][/i]",
+   "contesto": "Luogo 999 verso 413, scelta: [b]Mostrargli lo scrigno inapribile[/b]"
+  },
+  {
+   "chiave": "q:34ee15fad5c4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede 3 {i:empathy}[/i]",
+   "contesto": "Luogo 999 verso 413, scelta: [b]Scoprire perché non riescano a tornare indietro[/b]"
+  },
+  {
+   "chiave": "q:76d7b6fc11b3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Tutti i membri della Compagnia perdono 1 {i:energy}[/i]",
+   "contesto": "Luogo 999 verso 413, scelta: [b]Lasciare la Valle dopo un breve riposo[/b]"
+  },
+  {
+   "chiave": "r:289be252478e",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia deve Passare la Giornata. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 415, scelta: Continua."
+  },
+  {
+   "chiave": "r:1c50a6923768",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Magia}, 3 {i:health} e 4 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 416, scelta: Continua."
+  },
+  {
+   "chiave": "r:aa0e737b19e8",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Graal Corrotto” (8)[/b] e lo status [b]“Missione Moonring”[/b]. Ogni Personaggio ottiene 1 {r:Esp} e 1 {r:Magia}. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 4A[/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 999 verso 417, scelta: Continua."
+  },
+  {
+   "chiave": "r:2a0af8e736fa",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status [b]“Missione Moonring”[/b]. Ogni Personaggio ottiene 1 {r:Esp} e 1 [b]Magia[/b]. Scartare tutte le carte Evento, comprese le Cerche Attive. Poi, Salvare la vostra partita o pescare la carta Preparazione [b]Capitolo 4A [/b] e seguire le sue istruzioni per iniziare il prossimo Capitolo![/i]",
+   "contesto": "Luogo 999 verso 418, scelta: Continua."
+  },
+  {
+   "chiave": "r:59fe770f9434",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere la carta Segreto [b]“Scoperta Inquietante” (2)[/b] dal gioco. Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete la parte 8 dello status[b] “Mistero Scottante”[/b].[/i]",
+   "contesto": "Luogo 999 verso 419, scelta: Continua."
+  },
+  {
+   "chiave": "r:6790b985e7ff",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}, perde 2 {i:health} e ottiene 2 {r:Magia}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 421, scelta: Continua."
+  },
+  {
+   "chiave": "r:4a649b5b5fd5",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde tutta la {i:energy}, 2 {i:health} e la carta Segreto [b]“Stemma dell’Ordine” (51)[/b].\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 423, scelta: Verificare il risultato."
+  },
+  {
+   "chiave": "q:7e9d6131cb2b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]non avete[/b] la parte 1 dello status [b]“Tesori Nascosti”[/b][/i]",
+   "contesto": "Luogo 999 verso 427, scelta: Continua."
+  },
+  {
+   "chiave": "r:51c1677f73fd",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 2 {r:Ricchezza}, e la parte 1 dello status [b]“Tesori Nascosti”[/b]. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 427, scelta: Continua."
+  },
+  {
+   "chiave": "r:ba54ca7d5ec2",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}. Ottenete 4 {r:Ricchezza}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 430, scelta: [b]Saccheggiare la tomba[/b]"
+  },
+  {
+   "chiave": "r:f483f0e95e15",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 2 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 430, scelta: [b]Lasciare in pace questo luogo. Non volete disturbare i morti[/b]"
+  },
+  {
+   "chiave": "q:23b08346e728",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] almeno 5 {r:Rep}[/i]",
+   "contesto": "Luogo 999 verso 433, scelta: Continua."
+  },
+  {
+   "chiave": "r:337b3d2e9d13",
+   "ruolo": "risultato",
+   "testo": "Orrin vi dice di meditare su di voi e vi saluta – L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 433, scelta: Continua."
+  },
+  {
+   "chiave": "r:ec6b304a99d4",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Poi, ottenete 2 {r:Ricchezza} [b]O[/b] 2 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 434, scelta: Continua."
+  },
+  {
+   "chiave": "r:e6ed8b30b400",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 5 dello status [b]“Cosuil”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 435, scelta: [b]Ignorare le urla e andare per la vostra strada[/b]"
+  },
+  {
+   "chiave": "r:41baf29eb632",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {r:Esp}. Ottenete la parte 2 dello status [b]“Alleati di Avalon”[/b].[/i]",
+   "contesto": "Luogo 999 verso 436, scelta: Continua."
+  },
+  {
+   "chiave": "r:91e5eb1146f5",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror}.[/i]",
+   "contesto": "Luogo 999 verso 437, scelta: Continua."
+  },
+  {
+   "chiave": "r:b0291b241e4a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1{i:terror}.[/i]",
+   "contesto": "Luogo 999 verso 438, scelta: Continua."
+  },
+  {
+   "chiave": "r:d274d492ce7a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 2 {i:terror} e 2 {r:Exp}.\n\nOttenete la parte 1 dello status [b]“Menhir Errante”[/b]. Rimpiazzare il Luogo[b] 134[/b], Falfuar, con il Luogo[b] 147[/b], Falfuar Abbandonata. Rimpiazzare il Luogo [b]135[/b], Bundorca, con il Luogo [b]148[/b], Faldorca. Se la Compagnia non si trova sul Luogo [b]148[/b], spostarla lì. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 439, scelta: Continua."
+  },
+  {
+   "chiave": "r:2c2859c930bc",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete la parte 2 dello status [b]“Fato della Spedizione”[/b].[/i]",
+   "contesto": "Luogo 999 verso 440, scelta: Continua."
+  },
+  {
+   "chiave": "q:1a69c79aba51",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se siete [b]Arev[/b] e [b]non avete[/b] la parte 2 dello status [b]“Ultima Lezione”[/b][/i]",
+   "contesto": "Luogo 999 verso 443, scelta: Continua."
+  },
+  {
+   "chiave": "r:31eb77057b7d",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Magia}.\n\nOttenete la carta Segreto[b] 8[/b] e lo status [b]“Lascito di Fael”[/b].\nAggiungete 1 spunta allo status [b]“Qualcuno sta Osservando”[/b].\n\nScartare tutte le carte Evento, comprese le Cerche Attive.\n\nPotete Salvare la vostra partita. Poi, prendere la carta Preparazione [b]Capitolo 3A[/b] e seguire le sue istruzioni per iniziare il [b]Capitolo 3[/b]. Fatelo anche se state giocando il [b]Capitolo 3A[/b]! Vi permetterà di seguire un’altra versione di quel Capitolo!\n\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.[/i]",
+   "contesto": "Luogo 999 verso 443, scelta: Continua."
+  },
+  {
+   "chiave": "r:c249910ee0ae",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Magia}.\n\nOttenete la carta Segreto[b] 8[/b] e lo status [b]“Lascito di Fael”[/b].\nAggiungete 1 spunta allo status [b]“Qualcuno sta Osservando”[/b].\n\nScartare tutte le carte Evento, comprese le Cerche Attive.\n\nPotete Salvare la vostra partita. Poi, prendere la carta Preparazione [b]Capitolo 3A[/b] e seguire le sue istruzioni per iniziare il [b]Capitolo 3[/b]. Fatelo anche se state giocando il [b]Capitolo 3A[/b]! Vi permetterà di seguire un’altra versione di quel Capitolo!\n\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.\n\n[i]L’Esplorazione termina.[/i].[/i]",
+   "contesto": "Luogo 999 verso 443, scelta: Continua."
+  },
+  {
+   "chiave": "r:175fad893a93",
+   "ruolo": "risultato",
+   "testo": "Ottenete lo status [b]“Lascito di Fael”[/b].\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.",
+   "contesto": "Luogo 999 verso 446, scelta: Continua."
+  },
+  {
+   "chiave": "r:d2091b5f0431",
+   "ruolo": "risultato",
+   "testo": "Ottenete lo status [b]“Lascito di Fael”[/b].\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 446, scelta: Continua."
+  },
+  {
+   "chiave": "r:74b2fa6e37c5",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete la parte 5 dello status [b]“Fato della Spedizione”[/b].[/i]",
+   "contesto": "Luogo 999 verso 451, scelta: Continua."
+  },
+  {
+   "chiave": "r:05130725ef0f",
+   "ruolo": "risultato",
+   "testo": "[i]Continuare la partita.[/i]",
+   "contesto": "Luogo 999 verso 455, scelta: Continua."
+  },
+  {
+   "chiave": "r:5a08b9ff1a77",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ottenete la parte 3 dello status [b]“Fato della Spedizione”[/b].[/i]",
+   "contesto": "Luogo 999 verso 457, scelta: Continua."
+  },
+  {
+   "chiave": "r:499a659c5abf",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Cosuil, l’Irrequieta” (37)[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 460, scelta: Continua."
+  }
+ ]
+}
