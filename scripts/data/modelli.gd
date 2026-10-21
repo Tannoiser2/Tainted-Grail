@@ -51,6 +51,9 @@ func istanza(nome: String, cb: Callable) -> void:
 	for tentativo in 3:
 		var http := HTTPRequest.new()
 		http.timeout = 60
+		# nel browser la decompressione la fa già il browser: se Godot ci riprova (Safari lascia
+		# l'intestazione Content-Encoding: gzip) il download fallisce con "decompressione non riuscita"
+		http.accept_gzip = not OS.has_feature("web")
 		add_child(http)
 		var url := _base + "modelli/" + file.uri_encode()
 		http.request(url)

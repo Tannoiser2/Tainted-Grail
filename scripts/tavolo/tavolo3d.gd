@@ -274,7 +274,8 @@ func _crea_miniatura(nome: String, altezza: float, colore := Color(0.3, 0.25, 0.
 	Modelli.istanza(nome, func(n: Node3D):
 		if n == null or not is_instance_valid(radice):
 			return
-		sag.queue_free()
+		if is_instance_valid(sag):
+			sag.queue_free()
 		var h := Modelli.altezza(nome)
 		var s := altezza / maxf(h, 0.0001)
 		n.scale = Vector3.ONE * s
