@@ -1,6 +1,4 @@
 ## Scheda compatta di un Personaggio: tracce (Energia, Salute, Terrore), risorse e attributi.
-## Ogni valore si corregge a mano con un clic (sinistro +1, destro −1): serve quando un effetto
-## del Diario o di una carta non è stato automatizzato.
 class_name PannelloPersonaggio
 extends PanelContainer
 
@@ -120,8 +118,7 @@ func _traccia(x: Dictionary, k: String, ic: String, mx: int, col: Color) -> Cont
 			barra.draw_rect(r, col if i < v else Color(0.18, 0.14, 0.11), true)
 		)
 	barra.mouse_filter = Control.MOUSE_FILTER_STOP
-	barra.tooltip_text = "%s %d/%d — clic sinistro +1, destro −1" % [k.capitalize(), v, mx]
-	barra.gui_input.connect(func(e): _correggi(e, x, k))
+	barra.tooltip_text = "%s %d/%d" % [Partita.NOMI_RISORSE.get(k, k.capitalize()), v, mx]
 	h.add_child(barra)
 	var l := Label.new()
 	l.text = "%d" % v
@@ -149,20 +146,5 @@ func _valore(x: Dictionary, k: String, nome: String, icona: String, attributo :=
 	l.add_theme_color_override("font_color", Tema.RISORSA if nome != "" else Tema.TESTO)
 	l.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	h.add_child(l)
-	h.tooltip_text = "%s — clic sinistro +1, destro −1" % (Partita.NOMI_ATTRIBUTI.get(k, nome))
-	h.gui_input.connect(func(e): _correggi(e, x, k, attributo))
+	h.tooltip_text = str(Partita.NOMI_ATTRIBUTI.get(k, nome))
 	return h
-
-func _correggi(e: InputEvent, x: Dictionary, k: String, attributo := false) -> void:
-	if not (e is InputEventMouseButton and e.pressed):
-		return
-	var dlt := 1 if e.button_index == MOUSE_BUTTON_LEFT else (-1 if e.button_index == MOUSE_BUTTON_RIGHT else 0)
-	if dlt == 0:
-		return
-	if attributo:
-		x["attributi"][k] = maxi(0, partita.attributo(x, k) + dlt)
-		partita.cambiato()
-	else:
-		partita.modifica(x, k, dlt)
-	partita.racconta("Correzione a mano: %s %s %+d" % [x["nome"], Partita.NOMI_ATTRIBUTI.get(k, Partita.NOMI_RISORSE.get(k, k)), dlt])
-	aggiorna()

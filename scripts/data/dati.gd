@@ -78,6 +78,7 @@ func icona(nome: String) -> String:
 ## Converte i segnaposto del Diario in BBCode per RichTextLabel:
 ##   {i:nome} -> immagine dell'icona, {r:Ricchezza} -> risorsa in grassetto colorato.
 func testo_bb(t: String, dim := 24) -> String:
+	t = t.replace("💀", "☠")
 	if t.find("{") < 0:
 		return t
 	var rx := RegEx.create_from_string("\\{([ir]):([^}]*)\\}")

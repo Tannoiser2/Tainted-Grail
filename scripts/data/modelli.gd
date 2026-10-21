@@ -47,20 +47,32 @@ func istanza(nome: String, cb: Callable) -> void:
 	if _locale != "":
 		_fine(nome, FileAccess.get_file_as_bytes(_locale + file))
 		return
-	var http := HTTPRequest.new()
-	add_child(http)
-	http.request(_base + "modelli/" + file.uri_encode())
-	var res: Array = await http.request_completed
-	http.queue_free()
-	_fine(nome, res[3] if res[0] == HTTPRequest.RESULT_SUCCESS and res[1] == 200 else PackedByteArray())
+	var dati := PackedByteArray()
+	for tentativo in 3:
+		var http := HTTPRequest.new()
+		http.timeout = 60
+		add_child(http)
+		var url := _base + "modelli/" + file.uri_encode()
+		http.request(url)
+		var res: Array = await http.request_completed
+		http.queue_free()
+		if res[0] == HTTPRequest.RESULT_SUCCESS and res[1] == 200:
+			dati = res[3]
+			break
+		push_warning("Miniatura %s: download non riuscito (%s, HTTP %s), nuovo tentativo" % [url, res[0], res[1]])
+		await get_tree().create_timer(1.5).timeout
+	_fine(nome, dati)
 
 func _fine(nome: String, dati: PackedByteArray) -> void:
 	var ps: Node3D = null
 	if dati.size() > 0:
 		var doc := GLTFDocument.new()
 		var st := GLTFState.new()
-		if doc.append_from_buffer(dati, "", st) == OK:
+		var err := doc.append_from_buffer(dati, "", st)
+		if err == OK:
 			ps = doc.generate_scene(st) as Node3D
+		else:
+			push_warning("Miniatura %s: glTF non leggibile (errore %d, %d byte)" % [nome, err, dati.size()])
 	if ps == null:
 		push_warning("Miniatura non disponibile: " + nome)
 	_scene[nome] = ps

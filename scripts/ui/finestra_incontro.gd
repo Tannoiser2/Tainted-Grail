@@ -183,7 +183,6 @@ func _aggiorna() -> void:
 			for u in partita.inneschi("in_qualsiasi_momento", a):
 				var uu: Dictionary = u
 				_comandi.add_child(Tema.pulsante("USA: " + Carte.nome(str(uu["img"])), func(): await _usa_carta(uu), 14))
-			_correzioni()
 		"fine":
 			_anteprima.text = {"vittoria": "Vittoria!", "fallimento": "Fallimento.", "fuga": "Siete scappati.", "fuga_nemico": "Il nemico è fuggito.", "evitato": "Incontro evitato.", "morte": "La Compagnia è caduta."}.get(inc.concluso, inc.concluso)
 			_comandi.add_child(Tema.pulsante_primario("TORNA ALLA MAPPA", _chiudi, 17))
@@ -309,20 +308,3 @@ func _carta(c: String, dim: Vector2) -> TextureRect:
 	t.tooltip_text = Carte.nome(c)
 	Immagini.carica(Carte.immagine(c), func(tx): if is_instance_valid(t): t.texture = tx)
 	return t
-
-## Correzioni a mano della Riserva / Affinità (per gli effetti non automatizzati).
-func _correzioni() -> void:
-	var nome := "Affinità" if inc.diplomazia else "Riserva"
-	_comandi.add_child(Tema.pulsante("%s −1" % nome, func():
-		if inc.diplomazia:
-			inc.affinita -= 1
-		else:
-			inc.riserva = maxi(0, inc.riserva - 1)
-		_aggiorna(), 14))
-	_comandi.add_child(Tema.pulsante("%s +1" % nome, func():
-		if inc.diplomazia:
-			inc.affinita += 1
-		else:
-			inc.riserva += 1
-		inc._controlla_fine_carte()
-		_aggiorna(), 14))

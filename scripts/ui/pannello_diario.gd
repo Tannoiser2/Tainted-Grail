@@ -113,23 +113,28 @@ func aggiorna() -> void:
 	var condizioni := ops.filter(func(o): return o["tipo"] == 1)
 	var scelte := ops.filter(func(o): return o["tipo"] != 1)
 	# come nell'app: prima le condizioni da verificare, poi le azioni a scelta
-	var una_valida := false
+	# le condizioni si verificano in ordine: la prima soddisfatta va seguita (le altre e le azioni
+	# restano chiuse); quelle non soddisfatte non si possono scegliere
+	var obbligata := false
 	if not condizioni.is_empty():
 		_corpo.add_child(Tema.fregio(400))
 		if not scelte.is_empty():
-			_corpo.add_child(Tema.etichetta("VERIFICA PRIMA DI SCEGLIERE", 15, Tema.TESTO_2))
+			_corpo.add_child(Tema.etichetta("CONDIZIONI", 15, Tema.TESTO_2))
 		for o in condizioni:
 			var ok = o["valida"]
-			if o["testo"].to_lower().begins_with("altrimenti") and ok == null:
-				ok = not una_valida
+			var t0 := Dati.testo_piano(str(o["testo"])).to_lower()
+			if (t0.begins_with("altrimenti") or t0.begins_with("continua")) and ok == null:
+				ok = not obbligata
+			if obbligata and ok == true:
+				ok = false  # già seguita una condizione precedente
+			_corpo.add_child(_voce(o, ok, true, ok != false))
 			if ok == true:
-				una_valida = true
-			_corpo.add_child(_voce(o, ok, true))
+				obbligata = true
 	if not scelte.is_empty():
 		_corpo.add_child(Tema.fregio(400))
-		_corpo.add_child(Tema.etichetta("SCEGLI L'AZIONE", 15, Tema.TESTO_2))
+		_corpo.add_child(Tema.etichetta("SCEGLI L'AZIONE" if not obbligata else "AZIONI (prima va seguita la condizione soddisfatta)", 15, Tema.TESTO_2))
 		for o in scelte:
-			_corpo.add_child(_voce(o, null, false))
+			_corpo.add_child(_voce(o, null, false, not obbligata))
 	await get_tree().process_frame
 	if is_instance_valid(_scorri):
 		_scorri.scroll_vertical = 0
@@ -141,7 +146,7 @@ func _paragrafi(t: String) -> String:
 func _riga_tiro(tiro: Dictionary) -> Control:
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 12)
-	var b := Tema.pulsante_primario("🎲 TIRA IL DADO", func():
+	var b := Tema.pulsante_primario("TIRA IL DADO", func():
 		var mod := motore.modificatore_tiro()
 		var v := randi_range(1, 6)
 		motore.imposta_tiro(v + int(mod["valore"]))
@@ -168,7 +173,7 @@ func _riga_tiro(tiro: Dictionary) -> Control:
 	return h
 
 ## Una condizione o una scelta, con i suoi esiti.
-func _voce(o: Dictionary, ok, condizione: bool) -> Control:
+func _voce(o: Dictionary, ok, condizione: bool, attiva := true) -> Control:
 	var v := VBoxContainer.new()
 	v.add_theme_constant_override("separation", 4)
 	var testo := Dati.testo_bb(str(o["testo"]), 22)
@@ -179,6 +184,7 @@ func _voce(o: Dictionary, ok, condizione: bool) -> Control:
 		if q != "":
 			etichetta += "\n[color=#b9a98a][i]" + Dati.testo_bb(q, 20) + "[/i][/color]"
 		var stato = ok if condizione else valida
+		var cliccabile: bool = attiva and stato != false
 		var riga := HBoxContainer.new()
 		riga.add_theme_constant_override("separation", 8)
 		var segno := Label.new()
@@ -191,7 +197,7 @@ func _voce(o: Dictionary, ok, condizione: bool) -> Control:
 		elif stato == false:
 			segno.text = "✘"
 			segno.add_theme_color_override("font_color", Tema.ROSSO)
-			segno.tooltip_text = "Condizione non soddisfatta (puoi comunque sceglierla se lo stato non è aggiornato)"
+			segno.tooltip_text = "Condizione non soddisfatta"
 		else:
 			segno.text = "•" if not condizione else "?"
 			segno.add_theme_color_override("font_color", Tema.TESTO_2)
@@ -201,8 +207,8 @@ func _voce(o: Dictionary, ok, condizione: bool) -> Control:
 		# scelta: riquadro cliccabile con testo ricco (icone e grassetti come nell'app)
 		var b := PanelContainer.new()
 		b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		b.mouse_filter = Control.MOUSE_FILTER_STOP
-		b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		b.mouse_filter = Control.MOUSE_FILTER_STOP if cliccabile else Control.MOUSE_FILTER_IGNORE
+		b.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND if cliccabile else Control.CURSOR_ARROW
 		var verde: bool = stato == true and condizione
 		var sn := Tema.box(Color(0.2, 0.3, 0.14, 1) if verde else Color(0.14, 0.2, 0.12, 0.95), Tema.VERDE if verde else Color("5d7f4b"), 2 if verde else 1, 4, 14)
 		var sh := Tema.box(Color(0.22, 0.32, 0.17, 1), Tema.VERDE, 1, 4, 14)
@@ -216,8 +222,8 @@ func _voce(o: Dictionary, ok, condizione: bool) -> Control:
 		r.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		r.text = etichetta
 		b.add_child(r)
-		if stato == false:
-			b.modulate = Color(1, 1, 1, 0.55)
+		if not cliccabile:
+			b.modulate = Color(1, 1, 1, 0.4)
 		riga.add_child(b)
 		v.add_child(riga)
 		testo = ""  # più esiti della stessa voce: il testo una volta sola

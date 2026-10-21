@@ -825,6 +825,7 @@ func _messaggio(titolo: String, testo: String, alla_chiusura: Callable = Callabl
 	var r := Tema.testo_ricco(20)
 	r.text = Dati.testo_bb(testo, 22)
 	r.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	r.custom_minimum_size = Vector2(600 if img != "" else 700, 0)
 	sc.add_child(r)
 	v.add_child(sc)
 	r.resized.connect(func(): sc.custom_minimum_size.y = minf(r.size.y, 620))
@@ -843,8 +844,13 @@ func _messaggio(titolo: String, testo: String, alla_chiusura: Callable = Callabl
 		chiudi.call()
 		if alla_chiusura.is_valid():
 			alla_chiusura.call()))
-	p.resized.connect(func(): p.position = (vel.size - p.size) / 2)
-	vel.resized.connect(func(): p.position = (vel.size - p.size) / 2)
+	var centra := func():
+		p.reset_size()
+		p.position = ((vel.size - p.size) / 2).max(Vector2.ZERO)
+	p.resized.connect(func(): p.position = ((vel.size - p.size) / 2).max(Vector2.ZERO))
+	vel.resized.connect(centra)
+	v.minimum_size_changed.connect(func(): centra.call_deferred())
+	centra.call_deferred()
 
 func _scegli_carta(titolo: String, imgs: Array, cb: Callable) -> void:
 	var vel := ColorRect.new()

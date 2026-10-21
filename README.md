@@ -42,7 +42,6 @@ Tabletop Simulator (edizione spagnola, carte ritrascritte e ridisegnate in itali
   Le scansioni dell'edizione italiana potranno sostituirle una alla volta (stesso nome di file in `web/img/it/`).
 - **Salvataggio della campagna**: automatico dopo ogni modifica, sul dispositivo e su Firebase. Ogni campagna
   ha un **codice di 6 caratteri** (in alto): dal menu *Riprendi con un codice* la si riapre da qualunque dispositivo.
-- Ogni valore dei Personaggi si corregge a mano con un clic (sinistro +1, destro −1) sulla scheda.
 
 ## Automazione
 Tutti i testi di regole del gioco sono codificati in un linguaggio di effetti strutturato

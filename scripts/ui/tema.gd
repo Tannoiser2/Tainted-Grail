@@ -30,7 +30,13 @@ var testo_grassetto: FontFile
 var testo_grassetto_corsivo: FontFile
 var tema: Theme
 
+var _simboli: FontFile
+var _simboli_g: FontFile
+
 func _ready() -> void:
+	# simboli (✔ ✘ ☐ ◂ ↑ ↓…) che Alegreya e Cinzel non hanno: nel browser non c'è un font di sistema di riserva
+	_simboli = _f("Simboli.ttf")
+	_simboli_g = _f("Simboli-Bold.ttf")
 	testo = _f("Alegreya-Regular.ttf")
 	testo_corsivo = _f("Alegreya-Italic.ttf")
 	testo_grassetto = _f("Alegreya-Bold.ttf")
@@ -51,6 +57,8 @@ func _f(nome: String, fallback: Array = []) -> FontFile:
 	if f == null:
 		return ThemeDB.fallback_font as FontFile
 	f = f.duplicate()
+	if _simboli != null and not nome.begins_with("Simboli"):
+		fallback = fallback + [_simboli_g if nome.find("Bold") >= 0 or nome.find("700") >= 0 or nome.find("800") >= 0 or nome.find("900") >= 0 else _simboli]
 	f.fallbacks = fallback
 	f.antialiasing = TextServer.FONT_ANTIALIASING_GRAY
 	f.hinting = TextServer.HINTING_LIGHT

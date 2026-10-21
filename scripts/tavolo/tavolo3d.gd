@@ -258,9 +258,23 @@ func _crea_miniatura(nome: String, altezza: float, colore := Color(0.3, 0.25, 0.
 	base.material_override = bm
 	base.position.y = 0.03
 	radice.add_child(base)
+	# sagoma provvisoria finché la miniatura non è scaricata (e se il modello non è disponibile)
+	var sag := MeshInstance3D.new()
+	var cap := CapsuleMesh.new()
+	cap.radius = 0.16
+	cap.height = altezza
+	sag.mesh = cap
+	var sm := StandardMaterial3D.new()
+	sm.albedo_color = colore.lightened(0.15)
+	sm.roughness = 0.6
+	sag.material_override = sm
+	sag.position.y = 0.06 + altezza / 2
+	sag.name = "Sagoma"
+	radice.add_child(sag)
 	Modelli.istanza(nome, func(n: Node3D):
 		if n == null or not is_instance_valid(radice):
 			return
+		sag.queue_free()
 		var h := Modelli.altezza(nome)
 		var s := altezza / maxf(h, 0.0001)
 		n.scale = Vector3.ONE * s
