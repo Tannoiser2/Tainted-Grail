@@ -91,7 +91,7 @@ static func _frase(f: String, partita: Partita) -> Array:
 	# --- risorse: sequenze "verbo N risorsa (e N risorsa)" ---
 	var dest := _destinatari(f, partita)
 	var segno := 0
-	var rx := RegEx.create_from_string("([a-zà-ù']+)|(\\d+)\\s*(@\\w+@|cibo|ricchezza|richcezza|magia|esp|rep)\\b")
+	var rx := RegEx.create_from_string("([a-zà-ù']+)|(\\d+)\\s*(@\\w+@|(?:cibo|ricchezza|richcezza|magia|esp|rep)\\b)")
 	var applicate := []
 	for m in rx.search_all(l):
 		if m.get_string(1) != "":
