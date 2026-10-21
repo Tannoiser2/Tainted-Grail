@@ -1,0 +1,130 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/cuanacht_quebrada_30902.webp",
+   "mazzo": "",
+   "nome_tts": "121 - CUANACHT QUEBRADA",
+   "retro": "carte/mazzo/retro_30902.webp"
+  },
+  {
+   "img": "carte/mazzo/cuernos_del_sur_30901.webp",
+   "mazzo": "",
+   "nome_tts": "120 - CUERNOS DEL SUR",
+   "retro": "carte/mazzo/retro_30901.webp"
+  },
+  {
+   "img": "carte/mazzo/flota_abandonada_30900.webp",
+   "mazzo": "",
+   "nome_tts": "119 - FLOTA ABANDONADA",
+   "retro": "carte/mazzo/retro_30900.webp"
+  },
+  {
+   "img": "carte/mazzo/estampida_30808.webp",
+   "mazzo": "",
+   "nome_tts": "118 - ESTAMPIDA",
+   "retro": "carte/mazzo/retro_30808.webp"
+  },
+  {
+   "img": "carte/mazzo/primer_hogar_30807.webp",
+   "mazzo": "",
+   "nome_tts": "117 - PRIMER HOGAR",
+   "retro": "carte/mazzo/retro_30807.webp"
+  },
+  {
+   "img": "carte/mazzo/vallelejano_30806.webp",
+   "mazzo": "",
+   "nome_tts": "116 - VALLELEJANO",
+   "retro": "carte/mazzo/retro_30806.webp"
+  },
+  {
+   "img": "carte/mazzo/escalinata_del_titan_30805.webp",
+   "mazzo": "",
+   "nome_tts": "115 - ESCALINATA DEL TITAN",
+   "retro": "carte/mazzo/retro_30805.webp"
+  },
+  {
+   "img": "carte/mazzo/raizespesa_30804.webp",
+   "mazzo": "",
+   "nome_tts": "114 - RAIZESPESA",
+   "retro": "carte/mazzo/retro_30804.webp"
+  },
+  {
+   "img": "carte/mazzo/lago_del_espejo_30803.webp",
+   "mazzo": "",
+   "nome_tts": "113 - LAGO DEL ESPEJO",
+   "retro": "carte/mazzo/retro_30803.webp"
+  },
+  {
+   "img": "carte/mazzo/valle_sangriento_30802.webp",
+   "mazzo": "",
+   "nome_tts": "112 - VALLE SANGRIENTO",
+   "retro": "carte/mazzo/retro_30802.webp"
+  },
+  {
+   "img": "carte/mazzo/pie_de_la_muralla_30801.webp",
+   "mazzo": "",
+   "nome_tts": "111 - PIE DE LA MURALLA",
+   "retro": "carte/mazzo/retro_30801.webp"
+  },
+  {
+   "img": "carte/mazzo/30800.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_30800.webp"
+  },
+  {
+   "img": "carte/mazzo/asilo_de_la_isla_30708.webp",
+   "mazzo": "",
+   "nome_tts": "109 - ASILO DE LA ISLA",
+   "retro": "carte/mazzo/retro_30708.webp"
+  },
+  {
+   "img": "carte/mazzo/bosque_de_los_gusanos_30707.webp",
+   "mazzo": "",
+   "nome_tts": "108 - BOSQUE DE LOS GUSANOS",
+   "retro": "carte/mazzo/retro_30707.webp"
+  },
+  {
+   "img": "carte/mazzo/albura_30706.webp",
+   "mazzo": "",
+   "nome_tts": "107 -ALBURA",
+   "retro": "carte/mazzo/retro_30706.webp"
+  },
+  {
+   "img": "carte/mazzo/tumulos_de_los_primeros_moradores_30705.webp",
+   "mazzo": "",
+   "nome_tts": "106 - TUMULOS DE LOS PRIMEROS MORADORES",
+   "retro": "carte/mazzo/retro_30705.webp"
+  },
+  {
+   "img": "carte/mazzo/espadas_olvidadas_30704.webp",
+   "mazzo": "",
+   "nome_tts": "105 - ESPADAS OLVIDADAS",
+   "retro": "carte/mazzo/retro_30704.webp"
+  },
+  {
+   "img": "carte/mazzo/conclave_calcinado_30703.webp",
+   "mazzo": "",
+   "nome_tts": "104 - CONCLAVE CALCINADO",
+   "retro": "carte/mazzo/retro_30703.webp"
+  },
+  {
+   "img": "carte/mazzo/feria_del_guerrero_30702.webp",
+   "mazzo": "",
+   "nome_tts": "103 - FERIA DEL GUERRERO",
+   "retro": "carte/mazzo/retro_30702.webp"
+  },
+  {
+   "img": "carte/mazzo/arboleda_del_cazador_30701.webp",
+   "mazzo": "",
+   "nome_tts": "102 - ARBOLEDA DEL CAZADOR",
+   "retro": "carte/mazzo/retro_30701.webp"
+  },
+  {
+   "img": "carte/mazzo/cuanacht_30700.webp",
+   "mazzo": "",
+   "nome_tts": "101 - CUANACHT",
+   "retro": "carte/mazzo/retro_30700.webp"
+  }
+ ]
+}

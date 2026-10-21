@@ -1,0 +1,1052 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/32717.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32717.webp",
+   "facce": [
+    {
+     "numero": 35,
+     "nome": {
+      "es": "Maestría en la caza",
+      "it": "Maestria nella caccia"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que obtengas {r:Cibo} durante un Encuentro verde, obtén 1 de {r:Cibo} adicional.",
+      "it": "Ogni volta che ottieni {r:Cibo} durante un Incontro verde, ottieni 1 {r:Cibo} aggiuntivo."
+     }
+    },
+    {
+     "numero": 36,
+     "nome": {
+      "es": "Canibalismo",
+      "it": "Cannibalismo"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cuando ganes un Encuentro gris, puedes obtener 2 de {r:Cibo} y perder 2 de {r:Rep}.",
+      "it": "Quando vinci un Incontro grigio, puoi ottenere 2 {r:Cibo} e perdere 2 {r:Rep}."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32716.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32716.webp",
+   "facce": [
+    {
+     "numero": 33,
+     "nome": {
+      "es": "Ladrón de poca monta",
+      "it": "Ladruncolo"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Obtén 1 de {r:Ricchezza} (solo en Asentamientos, una vez al Día).",
+      "it": "{i:action} Ottieni 1 {r:Ricchezza} (solo negli Insediamenti, una volta al giorno)."
+     },
+     "azione": {
+      "costo": 0,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 34,
+     "nome": {
+      "es": "Apostar",
+      "it": "Scommettere"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Paga 1 de {r:Rep} y lanza un dial.\nGrial: Obtén 1 de {r:Ricchezza}.\nCalavera: No obtienes nada.",
+      "it": "{i:action} Paga 1 {r:Rep} e lancia un Quadrante.\nGraal: ottieni 1 {r:Ricchezza}.\nTeschio: non ottieni nulla."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32715.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32715.webp",
+   "facce": [
+    {
+     "numero": 31,
+     "nome": {
+      "es": "Clarividencia",
+      "it": "Chiaroveggenza"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Encuentro aleatorio azul, puedes robar 2 cartas y elegir 1. Pon el otro Encuentro debajo de su mazo.",
+      "it": "Ogni volta che peschi un Incontro casuale blu, puoi pescare 2 carte e sceglierne 1. Metti l'altro Incontro in fondo al suo mazzo."
+     }
+    },
+    {
+     "numero": 32,
+     "nome": {
+      "es": "Rastrear",
+      "it": "Seguire le tracce"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Encuentro aleatorio verde, puedes robar 2 cartas y elegir 1. Pon el otro Encuentro debajo del mazo.",
+      "it": "Ogni volta che peschi un Incontro casuale verde, puoi pescare 2 carte e sceglierne 1. Metti l'altro Incontro in fondo al mazzo."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32714.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32714.webp",
+   "facce": [
+    {
+     "numero": 29,
+     "nome": {
+      "es": "Cazarrecompensas",
+      "it": "Cacciatore di taglie"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Siempre que ganes un Encuentro con el Rasgo Guardián, obtén 1 de {r:Rep} y 1 de {r:Ricchezza}.",
+      "it": "Ogni volta che vinci un Incontro con il Tratto Guardiano, ottieni 1 {r:Rep} e 1 {r:Ricchezza}."
+     }
+    },
+    {
+     "numero": 30,
+     "nome": {
+      "es": "Rituales del viajero",
+      "it": "Rituali del viaggiatore"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Evento Aleatorio, puedes pagar 1 de {r:Magia} para descartarlo y robar uno nuevo del mazo de Eventos Aleatorios.",
+      "it": "Ogni volta che peschi un Evento Casuale, puoi pagare 1 {r:Magia} per scartarlo e pescarne uno nuovo dal mazzo Eventi Casuali."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32713.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32713.webp",
+   "facce": [
+    {
+     "numero": 27,
+     "nome": {
+      "es": "Coleccionista",
+      "it": "Collezionista"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Puedes usar hasta 2 cartas con la palabra clave Reliquia al mismo tiempo.",
+      "it": "Puoi usare fino a 2 carte con la parola chiave Reliquia contemporaneamente."
+     }
+    },
+    {
+     "numero": 28,
+     "nome": {
+      "es": "Resistente al hambre",
+      "it": "Resistente alla fame"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Al Descansar, restaura 1 de {i:health} y pierde 1 de {i:terror} aunque no comas.",
+      "it": "Quando Riposi, recupera 1 {i:health} e perdi 1 {i:terror} anche se non mangi."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32712.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32712.webp",
+   "facce": [
+    {
+     "numero": 25,
+     "nome": {
+      "es": "Trueque",
+      "it": "Baratto"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Añade 1 de tus Objetos al mazo, barájalo y roba 1 Objeto (solo en Asentamientos).",
+      "it": "{i:action} Aggiungi 1 dei tuoi Oggetti al mazzo, mescolalo e pesca 1 Oggetto (solo negli Insediamenti)."
+     },
+     "azione": {
+      "costo": 2,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 26,
+     "nome": {
+      "es": "Comerciante hábil",
+      "it": "Mercante abile"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Descarta 1 Objeto y obtén 2 de {r:Ricchezza}.",
+      "it": "{i:action} Scarta 1 Oggetto e ottieni 2 {r:Ricchezza}."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32711.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32711.webp",
+   "facce": [
+    {
+     "numero": 23,
+     "nome": {
+      "es": "Dieta de supervivencia",
+      "it": "Dieta di sopravvivenza"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "{i:action} Obtén 1 de {i:terror} para obtener 1 de {r:Cibo} (una vez al Día).",
+      "it": "{i:action} Ottieni 1 {i:terror} per ottenere 1 {r:Cibo} (una volta al giorno)."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 24,
+     "nome": {
+      "es": "La fuerza del miedo",
+      "it": "La forza della paura"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Puedes ignorar los efectos de tus Pesadillas. Si tienes una Pesadilla, obtén 1 de {r:Magia}.",
+      "it": "Puoi ignorare gli effetti dei tuoi Incubi. Se hai un Incubo, ottieni 1 {r:Magia}."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32710.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32710.webp",
+   "facce": [
+    {
+     "numero": 21,
+     "nome": {
+      "es": "Exploración audaz",
+      "it": "Esplorazione audace"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al Explorar, puedes sumar +1 al resultado de una tirada de dado (una vez por tirada).",
+      "it": "Quando Esplori, puoi aggiungere +1 al risultato di un tiro di dado (una volta per tiro)."
+     }
+    },
+    {
+     "numero": 22,
+     "nome": {
+      "es": "Pacto con el diablo",
+      "it": "Patto col diavolo"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al Explorar: Después de tirar un dado, puedes lanzar un dial.\nGrial: +2 al resultado.\nCalavera: -2 al resultado (mín. 1).",
+      "it": "Quando Esplori: dopo aver tirato un dado, puoi lanciare un Quadrante.\nGraal: +2 al risultato.\nTeschio: -2 al risultato (min. 1)."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32709.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32709.webp",
+   "facce": [
+    {
+     "numero": 19,
+     "nome": {
+      "es": "Inspiración",
+      "it": "Ispirazione"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "El coste de tu acción de personaje se reduce en 1 de {i:energy} (pero nunca puede ser menos de 1 de {i:energy}).",
+      "it": "Il costo della tua Azione del Personaggio si riduce di 1 {i:energy} (ma non può mai essere inferiore a 1 {i:energy})."
+     }
+    },
+    {
+     "numero": 20,
+     "nome": {
+      "es": "Moverse o morir",
+      "it": "Muoversi o morire"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Si estás Agotado, puedes gastar {i:health} en vez de {i:energy}.",
+      "it": "Se sei Esausto, puoi spendere {i:health} invece di {i:energy}."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32708.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32708.webp",
+   "facce": [
+    {
+     "numero": 17,
+     "nome": {
+      "es": "Siempre adelante",
+      "it": "Sempre avanti"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "En Combate: Obtén {i:cube} por cada carta que descartes durante la fase de Fin del turno.",
+      "it": "In Combattimento: ottieni {i:cube} per ogni carta che scarti durante la fase di Fine del turno."
+     }
+    },
+    {
+     "numero": 18,
+     "nome": {
+      "es": "Abrirse paso",
+      "it": "Farsi strada"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al comienzo de cada Encuentro, roba 1 carta adicional y luego descarta 1 carta.",
+      "it": "All'inizio di ogni Incontro, pesca 1 carta aggiuntiva e poi scarta 1 carta."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32707.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32707.webp",
+   "facce": [
+    {
+     "numero": 15,
+     "nome": {
+      "es": "Guardaespaldas",
+      "it": "Guardia del corpo"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "En Combate, cuando otro miembro del equipo reciba cualquier cantidad de {i:wound}, puedes decidir recibir esas {i:wound} en su lugar. Se vuelve inevitable.",
+      "it": "In Combattimento, quando un altro membro della Compagnia subisce un qualsiasi numero di {i:wound}, puoi decidere di subire tu quelle {i:wound} al suo posto. Diventano inevitabili."
+     }
+    },
+    {
+     "numero": 16,
+     "nome": {
+      "es": "Líder inspirador",
+      "it": "Leader carismatico"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Tus Compañeros no requieren ningún pago.",
+      "it": "I tuoi Compagni non richiedono alcun pagamento."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32706.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32706.webp",
+   "facce": [
+    {
+     "numero": 13,
+     "nome": {
+      "es": "Vigor inagotable",
+      "it": "Vigore inesauribile"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Si cuando llega el Fin del Día no estás Agotado, después de restaurar tu {i:energy}, obtén 1 punto adicional de {i:energy}.",
+      "it": "Se all'arrivo della Fine della Giornata non sei Esausto, dopo aver recuperato la tua {i:energy}, ottieni 1 punto aggiuntivo di {i:energy}."
+     }
+    },
+    {
+     "numero": 14,
+     "nome": {
+      "es": "Incansable",
+      "it": "Instancabile"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Solo estas Agotado si tu {i:energy} es 0.",
+      "it": "Sei Esausto solo se la tua {i:energy} è 0."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32705.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32705.webp",
+   "facce": [
+    {
+     "numero": 11,
+     "nome": {
+      "es": "Instinto de combate",
+      "it": "Istinto di combattimento"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Durante un Encuentro: Aumenta el límite de tu mano en 1.",
+      "it": "Durante un Incontro: aumenta di 1 il limite della tua mano."
+     }
+    },
+    {
+     "numero": 12,
+     "nome": {
+      "es": "Celeridad",
+      "it": "Rapidità"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que no uses ninguna carta con la palabra clave Armadura, ignora el rasgo [i]Emboscada[/i] y roba 1 carta adicional al comienzo de cada Combate.",
+      "it": "Finché non usi alcuna carta con la parola chiave Armatura, ignora il tratto [i]Imboscata[/i] e pesca 1 carta aggiuntiva all'inizio di ogni Combattimento."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32704.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32704.webp",
+   "facce": [
+    {
+     "numero": 9,
+     "nome": {
+      "es": "Infundir odio",
+      "it": "Infondere odio"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Al activar un Menhir, puedes pagar con {r:Magia} en vez de {i:energy}.",
+      "it": "Quando attivi un Menhir, puoi pagare con {r:Magia} invece che con {i:energy}."
+     }
+    },
+    {
+     "numero": 10,
+     "nome": {
+      "es": "Trabajo duro",
+      "it": "Duro lavoro"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que pagues el coste de activar un Menhir, puedes pagar con {i:energy} en lugar de con {r:Magia}.",
+      "it": "Ogni volta che paghi il costo per attivare un Menhir, puoi pagare con {i:energy} invece che con {r:Magia}."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32703.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32703.webp",
+   "facce": [
+    {
+     "numero": 7,
+     "nome": {
+      "es": "Último aliento",
+      "it": "Ultimo respiro"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Una vez por Encuentro, cuando tu mazo de Combate o Diplomacia esté vacío, baraja tu pila de descarte y añade las 5 primeras cartas a tu mazo.",
+      "it": "Una volta per Incontro, quando il tuo mazzo Combattimento o Diplomazia è vuoto, mescola la tua pila degli scarti e aggiungi le prime 5 carte al tuo mazzo."
+     }
+    },
+    {
+     "numero": 8,
+     "nome": {
+      "es": "Un paso por delante",
+      "it": "Un passo avanti"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Durante un Encuentro: Juega con la primera carta de tu mazo de Combate o Diplomacia bocarriba.",
+      "it": "Durante un Incontro: gioca con la prima carta del tuo mazzo Combattimento o Diplomazia scoperta."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32702.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32702.webp",
+   "facce": [
+    {
+     "numero": 5,
+     "nome": {
+      "es": "Esfuerzo",
+      "it": "Sforzo"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Una vez por Encuentro, puedes retirar 1 {i:delay} de cualquier carta de la Secuencia.",
+      "it": "Una volta per Incontro, puoi rimuovere 1 {i:delay} da qualsiasi carta della Sequenza."
+     }
+    },
+    {
+     "numero": 6,
+     "nome": {
+      "es": "Festín de héroes",
+      "it": "Banchetto degli eroi"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Al Descansar, puedes consumir cualquier cantidad de {r:Cibo} adicional para obtener la misma cantidad de {i:energy}.",
+      "it": "Quando Riposi, puoi consumare una qualsiasi quantità di {r:Cibo} aggiuntivo per ottenere la stessa quantità di {i:energy}."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   },
+   "dubbi": "Icona clessidra nell'esagono = gettone Tempo delle carte a Capacità ritardata: resa {i:delay}."
+  },
+  {
+   "img": "carte/mazzo/32701.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32701.webp",
+   "facce": [
+    {
+     "numero": 3,
+     "nome": {
+      "es": "Reflejos de combate",
+      "it": "Riflessi di combattimento"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Durante un Encuentro: Paga 1 de {i:energy} para robar 1 carta.",
+      "it": "Durante un Incontro: paga 1 {i:energy} per pescare 1 carta."
+     }
+    },
+    {
+     "numero": 4,
+     "nome": {
+      "es": "Ahora o nunca",
+      "it": "Ora o mai più"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Una vez por Encuentro: Roba 1 carta adicional durante la activación de tu personaje.",
+      "it": "Una volta per Incontro: pesca 1 carta aggiuntiva durante l'attivazione del tuo personaggio."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32700.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32700.webp",
+   "facce": [
+    {
+     "numero": 1,
+     "nome": {
+      "es": "Fuerza monstruosa",
+      "it": "Forza mostruosa"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "En Combate: Siempre que conectes una Clave {i:aggression2}, obtén {i:cube} adicional.",
+      "it": "In Combattimento: ogni volta che colleghi una Chiave {i:aggression2}, ottieni {i:cube} aggiuntivo."
+     }
+    },
+    {
+     "numero": 2,
+     "nome": {
+      "es": "Maestría doble",
+      "it": "Doppia maestria"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que no uses una carta con la palabra clave Escudo, puedes usar 2 cartas con la palabra clave Arma al mismo tiempo.",
+      "it": "Finché non usi una carta con la parola chiave Scudo, puoi usare 2 carte con la parola chiave Arma contemporaneamente."
+     }
+    }
+   ],
+   "aree": {
+    "numero": [
+     0.71,
+     0.4,
+     0.9,
+     0.62
+    ],
+    "titolo": [
+     0.06,
+     0.1,
+     0.61,
+     0.25
+    ],
+    "testo": [
+     0.04,
+     0.26,
+     0.62,
+     0.68
+    ],
+    "attributo": [
+     0.26,
+     0.71,
+     0.42,
+     0.92
+    ]
+   },
+   "dubbi": "Icona della Chiave: due teste d'orso (Chiave doppia di Aggressività?), resa {i:aggression2} (nome inventato)."
+  }
+ ]
+}

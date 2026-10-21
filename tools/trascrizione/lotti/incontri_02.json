@@ -1,0 +1,104 @@
+{
+ "carte": [
+  {
+   "img": "carte/3_encuentros_verdes/3_gigante_enclenque_36320.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - GIGANTE ENCLENQUE"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_pesadilla_ribere_a_36322.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - PESADILLA RIBEREÑA"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_selkie_36323.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - SELKIE"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36324.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - SIERPE DE LA MALEZA"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_sierpe_de_la_maleza_36325.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - SIERPE DE LA MALEZA"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_hombre_de_musgo_36321.webp",
+   "mazzo": "[4] - ENCUENTROS VERDES",
+   "nome_tts": "[4] - HOMBRE DE MUSGO"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36326.webp",
+   "mazzo": "[4] - ENCUENTROS VERDES",
+   "nome_tts": "[4] - ERIZO DE LA RAREZA"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_erizo_de_la_rareza_36327.webp",
+   "mazzo": "[4] - ENCUENTROS VERDES",
+   "nome_tts": "[4] - ERIZO DE LA RAREZA"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_hada_36328.webp",
+   "mazzo": "[4] - ENCUENTROS VERDES",
+   "nome_tts": "[4] - HADA"
+  },
+  {
+   "img": "carte/4_encuentros_verdes/4_sierpe_solar_36329.webp",
+   "mazzo": "[4] - ENCUENTROS VERDES",
+   "nome_tts": "[4] - SIERPE SOLAR"
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36500.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36501.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36502.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36503.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36504.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36505.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36506.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36507.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36508.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/1_encuentros_blanco/36509.webp",
+   "mazzo": "[1] - ENCUENTROS BLANCO",
+   "nome_tts": ""
+  }
+ ]
+}

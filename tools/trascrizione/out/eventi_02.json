@@ -1,0 +1,1918 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/36818.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 4,
+   "parte": 3,
+   "lettera": "A",
+   "titolo": {
+    "es": "El último superviviente",
+    "it": "L'ultima superstite"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]¡Una vez más, el Grial está fuera de tu alcance! Pero Neante no puede haber ido muy lejos. No queda mucha tierra al este de las Tumbas....[/i]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Ancora una volta il Graal è fuori dalla tua portata! Ma Neante non può essere andata molto lontano. Non resta molta terra a est delle Tombe...[/i]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Localiza a Neante en el Bosque de los Susurros (155) y obtén el Grial Verdadero.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Rintraccia Neante nella Foresta dei Sussurri (155) e ottieni il Vero Graal."
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] El Bosque se encuentra en la frontera entre la realidad humana y algo mucho más antiguo. Únicamente revelará sus secretos a unos verdaderos campeones.",
+    "it": "[b]Indizio:[/b] La Foresta si trova al confine tra la realtà umana e qualcosa di molto più antico. Rivelerà i suoi segreti soltanto a dei veri campioni."
+   },
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.21,
+     0.97,
+     0.43
+    ],
+    "cerca": [
+     0.21,
+     0.46,
+     0.97,
+     0.65
+    ],
+    "indizio": [
+     0.22,
+     0.67,
+     0.98,
+     0.81
+    ]
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 4A, Parte 3",
+     "it": "Evento — Capitolo 4A, Parte 3"
+    },
+    "capitolo": 4,
+    "parte": 3,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "Titolo 'El último superviviente' (maschile) riferito a Neante: tradotto al femminile 'L'ultima superstite'."
+  },
+  {
+   "img": "carte/mazzo/36905.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 4,
+   "parte": null,
+   "lettera": "B",
+   "titolo": {
+    "es": "Preparación del Capítulo 4B (Reverso)",
+    "it": "Preparazione del Capitolo 4B (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level1}, {i:level2} y {i:level3}\n[b]2-4 jugadores:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n\n[b]Guardián:[/b] Pon el Encuentro púrpura de «Picomartillo» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 4B de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level1}, {i:level2} e {i:level3}\n[b]2-4 giocatori:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n\n[b]Guardiano:[/b] Metti l'Incontro viola «Becco a Martello» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 4B de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       1,
+       2,
+       3
+      ],
+      "2-4": [
+       2,
+       3
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "viola",
+       "es": "Picomartillo",
+       "it": "Becco a Martello"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.2,
+     0.98,
+     0.83
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 4B (Anverso)",
+     "it": "Preparazione del Capitolo 4B (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 4B y apílalas de la 4 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 4B e impilale dalla 4 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "4B",
+      "parti_dal_fondo": [
+       4,
+       3,
+       2,
+       1
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.41,
+      0.95,
+      0.59
+     ]
+    }
+   },
+   "dubbi": "«Picomartillo» non è nel glossario dell'app: tradotto 'Becco a Martello'."
+  },
+  {
+   "img": "carte/mazzo/36819.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 4,
+   "parte": 1,
+   "lettera": "B",
+   "titolo": {
+    "es": "La llamada",
+    "it": "La chiamata"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Hacer que los tres gobernantes se sienten a negociar no será fácil, especialmente en una tierra fragmentada por la Rareza.[/i]\n[b]Pon el Evento especial A encima del mazo de Eventos. Después, pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Far sedere i tre sovrani al tavolo delle trattative non sarà facile, specialmente in una terra frammentata dall'Anomalia.[/i]\n[b]Metti l'Evento Speciale A in cima al mazzo Eventi. Poi metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Obtén 3 partes del Estado «Diplomático».\n[b]Pista:[/b] Debes llevar mensajes a Altomuro (131), Nido del Cuervo (160) o Vallelejano (116), dependiendo de quién sea tu aliado y de lo que haya ocurrido en el Capítulo anterior.\n[b]Éxito:[/b] Una vez tengas 3 partes del Estado «Diplomático», busca y resuelve la carta del Capítulo 4B: Parte 2 del mazo de Eventos.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Ottieni 3 parti dello status «Diplomatico».\n[b]Indizio:[/b] Devi portare messaggi a Timberwall (131), Crow's Nest (160) o Farshire (116), a seconda di chi sia il tuo alleato e di ciò che è accaduto nel Capitolo precedente.\n[b]Successo:[/b] Una volta che avrai 3 parti dello status «Diplomatico», cerca e risolvi la carta Capitolo 4B: Parte 2 dal mazzo Eventi."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.09,
+      0.97,
+      0.31
+     ],
+     [
+      0.2,
+      0.79,
+      0.97,
+      0.94
+     ]
+    ],
+    "cerca": [
+     0.21,
+     0.34,
+     0.98,
+     0.77
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 4B, Parte 1",
+     "it": "Evento — Capitolo 4B, Parte 1"
+    },
+    "capitolo": 4,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "Il riquadro Missione contiene anche una 'Pista' interna (inclusa nel campo cerca)."
+  },
+  {
+   "img": "carte/mazzo/36820.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 4,
+   "parte": 2,
+   "lettera": "B",
+   "titolo": {
+    "es": "La noche de las dagas",
+    "it": "La notte dei pugnali"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]¡Casi has terminado! Ahora, los tres gobernantes y sus séquitos necesitan tiempo para llegar al punto de reunión.[/i]\n[b]Preparación adicional:[/b] Pon un dial con una ficha de Misión en esta carta, con valor 3. Redúcelo al Comienzo del Día. Cuando llegue a 1, retira la carta de Localización de Mediocamino (152) del juego y sustitúyela por Encuentro en Mediocamino (158). Si la Localización 152 tenía un Menhir activo, transfiérelo a la 158.\n[b]Ahora, pon la carta del Capítulo 4B: Parte 3 encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Hai quasi finito! Ora i tre sovrani e i loro seguiti hanno bisogno di tempo per raggiungere il luogo dell'incontro.[/i]\n[b]Preparazione aggiuntiva:[/b] Metti su questa carta un Quadrante con un Gettone Cerca, impostato su 3. Riducilo all'Inizio della Giornata. Quando arriva a 1, rimuovi dal gioco la carta Luogo Halfway (152) e sostituiscila con Raduno di Halfway (158). Se il Luogo 152 aveva un Menhir attivo, trasferiscilo al 158.\n[b]Ora metti la carta Capitolo 4B: Parte 3 in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Ve a Encuentro en Mediocamino (158) cuando esté disponible y concluye las negociaciones en nombre de tu aliado ¡o cambia de aliado!",
+    "it": "[b]Cerca[/b]\n{i:bullet} Vai al Raduno di Halfway (158) quando sarà disponibile e concludi le trattative a nome del tuo alleato, oppure cambia alleato!"
+   },
+   "indizio": {
+    "es": "[b]Pista:[/b] Una traición a sangre fría podría poner fin al conflicto con más rapidez, pero no será olvidada fácilmente...",
+    "it": "[b]Indizio:[/b] Un tradimento a sangue freddo potrebbe porre fine al conflitto più rapidamente, ma non sarà dimenticato facilmente..."
+   },
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.08,
+      0.98,
+      0.49
+     ],
+     [
+      0.2,
+      0.89,
+      0.98,
+      0.95
+     ]
+    ],
+    "cerca": [
+     0.22,
+     0.51,
+     0.97,
+     0.75
+    ],
+    "indizio": [
+     0.22,
+     0.77,
+     0.97,
+     0.88
+    ]
+   },
+   "missione": true,
+   "quadrante": {
+    "tipo": "cerca",
+    "valore": 3,
+    "su": "questa carta",
+    "cala": "Inizio della Giornata",
+    "a_1": {
+     "rimuovi_luogo": 152,
+     "sostituisci_con": 158,
+     "trasferisci_menhir": true
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 4B, Parte 2",
+     "it": "Evento — Capitolo 4B, Parte 2"
+    },
+    "capitolo": 4,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "L'ultima riga 'Ahora, pon la carta del Capítulo 4B: Parte 3…' è sotto l'Indizio: messa in fondo al campo testo; l'area testo ha un secondo rettangolo per essa."
+  },
+  {
+   "img": "carte/mazzo/36821.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 4,
+   "parte": 3,
+   "lettera": "B",
+   "titolo": {
+    "es": "Encrucijada",
+    "it": "Crocevia"
+   },
+   "testo": {
+    "es": "[b]Suma la Riqueza, la Comida y la Magia de todos los personajes. Si el valor total es....[/b]\n{i:bullet} ...menos de 5 veces el número de jugadores, pon el [b]Evento especial H[/b] encima del mazo de Eventos.\n{i:bullet} ...más de 10 veces el número de jugadores, pon el [b]Evento especial I[/b] encima del mazo de Eventos.\n{i:bullet} ...un punto intermedio entre esos valores, pon el [b]Evento especial A[/b] encima del mazo de Eventos y 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima de este.",
+    "it": "[b]Somma la Ricchezza, il Cibo e la Magia di tutti i personaggi. Se il valore totale è...[/b]\n{i:bullet} ...meno di 5 volte il numero di giocatori, metti l'[b]Evento Speciale H[/b] in cima al mazzo Eventi.\n{i:bullet} ...più di 10 volte il numero di giocatori, metti l'[b]Evento Speciale I[/b] in cima al mazzo Eventi.\n{i:bullet} ...un valore intermedio fra questi, metti l'[b]Evento Speciale A[/b] in cima al mazzo Eventi e sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita)."
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.26,
+     0.97,
+     0.78
+    ]
+   },
+   "condizione": {
+    "somma": [
+     "Ricchezza",
+     "Cibo",
+     "Magia"
+    ],
+    "di": "tutti i personaggi",
+    "casi": [
+     {
+      "se": "< 5 × giocatori",
+      "metti_in_cima": "Speciale H"
+     },
+     {
+      "se": "> 10 × giocatori",
+      "metti_in_cima": "Speciale I"
+     },
+     {
+      "se": "altrimenti",
+      "metti_in_cima": "Speciale A",
+      "poi_eventi_casuali": {
+       "base": 7,
+       "meno_per_giocatore": 1
+      }
+     }
+    ]
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 4B, Parte 3",
+     "it": "Evento — Capitolo 4B, Parte 3"
+    },
+    "capitolo": 4,
+    "parte": 3,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36822.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 4,
+   "parte": 4,
+   "lettera": "B",
+   "titolo": {
+    "es": "Peregrinación hacia Anillo de Luna",
+    "it": "Pellegrinaggio verso Moonring"
+   },
+   "testo": {
+    "es": "[i]Solamente queda una forma de resolver el conflicto ahora...[/i]\n[b]Pon esta carta encima de la pila de Misiones activas.[/b]",
+    "it": "[i]Ormai resta un solo modo per risolvere il conflitto...[/i]\n[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Localiza el Grial utilizando el poder profético de Amergin, archidruida del Anillo de Luna (133).",
+    "it": "[b]Cerca[/b]\n{i:bullet} Localizza il Graal sfruttando il potere profetico di Amergin, arcidruido di Moonring (133)."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.29,
+     0.97,
+     0.48
+    ],
+    "cerca": [
+     0.22,
+     0.51,
+     0.97,
+     0.67
+    ]
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 4B, Parte 4",
+     "it": "Evento — Capitolo 4B, Parte 4"
+    },
+    "capitolo": 4,
+    "parte": 4,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36906.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 5,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 5 (Reverso)",
+    "it": "Preparazione del Capitolo 5 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1-3 jugadores:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]4 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n\n[b]Guardián, 3-4 jugadores:[/b] Pon el Encuentro gris de «Caballero Errante» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 5 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1-3 giocatori:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]4 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n\n[b]Guardiano, 3-4 giocatori:[/b] Metti l'Incontro grigio «Cavaliere Errante» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 5 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-3": [
+       2,
+       3
+      ],
+      "4": [
+       2,
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "3-4",
+      "incontro": {
+       "colore": "grigio",
+       "es": "Caballero Errante",
+       "it": "Cavaliere Errante"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.2,
+     0.97,
+     0.83
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 5 (Anverso)",
+     "it": "Preparazione del Capitolo 5 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 5 y apílalas de la 3 (debajo) a la 1 (encima).\n[b]Si tienes la carta de Secreto «¡Perseguido!» (13), descarta la primera carta del mazo de Eventos.[/b]\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 5 e impilale dalla 3 (in fondo) alla 1 (in cima).\n[b]Se hai la carta Segreto «Preda» (13), scarta la prima carta del mazzo Eventi.[/b]\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "5",
+      "parti_dal_fondo": [
+       3,
+       2,
+       1
+      ]
+     },
+     "condizioni": [
+      {
+       "se": "hai il Segreto 13",
+       "scarta_dalla_cima": 1
+      }
+     ]
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.36,
+      0.97,
+      0.67
+     ]
+    }
+   },
+   "dubbi": "«Caballero Errante» (Incontro grigio Guardiano) non è nel glossario: tradotto 'Cavaliere Errante'. Livello 4 = {i:level4} (quattro stendardi)."
+  },
+  {
+   "img": "carte/mazzo/36823.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 5,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "La caza se intensifica",
+    "it": "La caccia si intensifica"
+   },
+   "testo": {
+    "es": "[i]Sorprendentemente, has logrado evitar la atención de los poderes supremos durante mucho tiempo. Sin embargo, ahora estás demasiado cerca del Grial como para pasar desapercibido.[/i]\n[b]Cada personaje obtiene 2 de {r:Esp}.[/b]\n[b]Obtén todas las partes restantes del Estado «Algo te observa» y ve al Versículo 13 del Libro de los Secretos.[/b]\n[b]Luego, busca y resuelve la carta del Capítulo 5: Parte 2.[/b]",
+    "it": "[i]Sorprendentemente, sei riuscito a sfuggire a lungo all'attenzione dei poteri supremi. Ora però sei troppo vicino al Graal per passare inosservato.[/i]\n[b]Ogni personaggio ottiene 2 {r:Esp}.[/b]\n[b]Ottieni tutte le parti rimanenti dello status «Qualcuno Sta Osservando» e vai al verso 13 del Libro dei Segreti.[/b]\n[b]Poi cerca e risolvi la carta Capitolo 5: Parte 2.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.27,
+     0.96,
+     0.75
+    ]
+   },
+   "versi": [
+    {
+     "libro": "segreti",
+     "verso": 13
+    }
+   ],
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 5, Parte 1",
+     "it": "Evento — Capitolo 5, Parte 1"
+    },
+    "capitolo": 5,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36824.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 5,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Las Cuevas Verdes",
+    "it": "Le Grotte Verdi"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]El Mar Verde es famoso por el reto que supone recorrerlo, ya que está repleto de grietas y cavernas ocultas. Encontrar algo allí puede ser un esfuerzo considerable.[/i]\n[b]Pon el Evento especial B encima del mazo de Eventos. Después, pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]\n[b]Si tienes la carta de Secreto 8, resuelve la carta del Capítulo 5: Parte 3 del mazo de Eventos. De lo contrario, continúa con la partida.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Fernsea è famoso per quanto sia difficile percorrerlo, poiché è pieno di crepacci e caverne nascoste. Trovarvi qualcosa può richiedere uno sforzo considerevole.[/i]\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Poi metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]\n[b]Se hai la carta Segreto 8, risolvi la carta Capitolo 5: Parte 3 dal mazzo Eventi. Altrimenti, prosegui la partita.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Recupera el Grial Verdadero del Mar Verde (153).",
+    "it": "[b]Cerca[/b]\n{i:bullet} Recupera il Vero Graal da Fernsea (153)."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.14,
+      0.96,
+      0.42
+     ],
+     [
+      0.2,
+      0.61,
+      0.98,
+      0.89
+     ]
+    ],
+    "cerca": [
+     0.22,
+     0.45,
+     0.96,
+     0.59
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 5, Parte 2",
+     "it": "Evento — Capitolo 5, Parte 2"
+    },
+    "capitolo": 5,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "'Mar Verde' (153) reso con il nome dell'app 'Fernsea' anche nel testo narrativo."
+  },
+  {
+   "img": "carte/mazzo/36825.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 5,
+   "parte": 3,
+   "lettera": null,
+   "titolo": {
+    "es": "Imitación",
+    "it": "Imitazione"
+   },
+   "testo": {
+    "es": "[i]El hedor de uno de tus morrales te alarma. Te asomas a él y descubres que el Grial Corrompido se ha derretido hasta convertirse en un charco de lodo y algas putrefactas. La magia que mantuvo de una pieza este engaño debe de haberse agotado...[/i]\n[b]Descarta la carta de Secreto 8. Continúa con la partida.[/b]",
+    "it": "[i]Il fetore che esce da una delle tue bisacce ti allarma. Ci guardi dentro e scopri che il Graal Corrotto si è sciolto fino a diventare una pozza di fango e alghe putrefatte. La magia che teneva insieme questo inganno deve essersi esaurita...[/i]\n[b]Scarta la carta Segreto 8. Prosegui la partita.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.34,
+     0.97,
+     0.68
+    ]
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 5, Parte 3",
+     "it": "Evento — Capitolo 5, Parte 3"
+    },
+    "capitolo": 5,
+    "parte": 3,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36907.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 6,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 6 (Reverso)",
+    "it": "Preparazione del Capitolo 6 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1-2 jugadores:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]3-4 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n\n[b]¡Ya puedes comenzar el Capítulo 6 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1-2 giocatori:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]3-4 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n\n[b]Ora puoi iniziare il Capitolo 6 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-2": [
+       2,
+       3
+      ],
+      "3-4": [
+       2,
+       3,
+       4
+      ]
+     }
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.3,
+     0.97,
+     0.75
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 6 (Anverso)",
+     "it": "Preparazione del Capitolo 6 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 6 y apílalas de la 2 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 6 e impilale dalla 2 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "6",
+      "parti_dal_fondo": [
+       2,
+       1
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.19,
+      0.43,
+      0.95,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36826.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 6,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "El que regresó",
+    "it": "Colui che è tornato"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Ha llegado el momento de hacer lo imposible. La antigua ciudad de los Primeros Moradores te llama, como llamó a los desafortunados miembros de la anterior expedición. Sin embargo, entrar no será fácil. Necesitas la guía de una persona viva que haya regresado de ella, el último aprendiz de Merlín, Orrin.[/i]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]È giunto il momento di fare l'impossibile. L'antica città dei Predecessori ti chiama, come chiamò gli sfortunati membri della spedizione precedente. Entrarvi, però, non sarà facile. Ti serve la guida di una persona viva che ne sia tornata: l'ultimo apprendista di Merlino, Orrin.[/i]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n[b]Cumple uno de estos objetivos:[/b]\n{i:bullet} Pídele a Orrin que te guíe a Tuathán. Se encuentra en Confín de la Rareza (141), al oeste de Estampida (118).\n{i:bullet} Encuentra la forma de entrar en Tuathán por tu cuenta.",
+    "it": "[b]Cerca[/b]\n[b]Completa uno di questi obiettivi:[/b]\n{i:bullet} Chiedi a Orrin di guidarti a Tuathan. Si trova a Punta Anomala (141), a ovest di Stampede (118).\n{i:bullet} Trova il modo di entrare a Tuathan da solo."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.14,
+     0.98,
+     0.53
+    ],
+    "cerca": [
+     0.2,
+     0.56,
+     0.97,
+     0.88
+    ]
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 6, Parte 1",
+     "it": "Evento — Capitolo 6, Parte 1"
+    },
+    "capitolo": 6,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36827.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 6,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Una batalla nocturna",
+    "it": "Una battaglia notturna"
+   },
+   "testo": {
+    "es": "[i]La noche sigue siendo cerrada cuando el lejano sonido de una batalla te despierta de tu sueño. El ruido del acero entrechocando se asemeja al de dos gigantes metálicos que intentasen hacerse pedazos el uno al otro. Pero lo que te pone la piel de gallina es la ausencia de gritos de guerra... o cualquier voz humana.\nPor la mañana, investigas con detenimiento la zona. Todas las señales apuntan a una batalla de dimensiones épicas: árboles arrancados de raíz, grandes rocas cortadas en dos. Unas huellas pertenecen al Primer Morador que intenta darte caza, las otras a alguien casi de su tamaño. Si tu interpretación es correcta, el cazador se fue cojeando, sangrando y abatido. El vencedor siguió en dirección a Tuathán.[/i]\n[b]Si la miniatura de Primer Morador está presente en cualquier Localización revelada, ponla junto al área de juego, junto con un dial de Tiempo. Pon el dial en 2. Cuando se agote, pon la miniatura del Primer Morador en la Localización revelada con el número más bajo.[/b]\n[b]Pon el Evento especial B encima del mazo de Eventos. Después, pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[i]La notte è ancora fonda quando il suono lontano di una battaglia ti sveglia dal sonno. Il clangore dell'acciaio somiglia a quello di due giganti di metallo che cerchino di farsi a pezzi a vicenda. Ma ciò che ti fa venire la pelle d'oca è l'assenza di grida di guerra... o di qualsiasi voce umana.\nAl mattino esamini attentamente la zona. Tutti i segni indicano una battaglia di proporzioni epiche: alberi sradicati, grandi rocce spaccate in due. Alcune impronte appartengono al Predecessore che cerca di darti la caccia, le altre a qualcuno grande quasi quanto lui. Se la tua interpretazione è corretta, il cacciatore se n'è andato zoppicando, sanguinante e sconfitto. Il vincitore ha proseguito in direzione di Tuathan.[/i]\n[b]Se la miniatura del Predecessore è presente in un qualsiasi Luogo rivelato, mettila accanto all'area di gioco, insieme a un Quadrante Tempo. Imposta il Quadrante su 2. Quando si esaurisce, metti la miniatura del Predecessore nel Luogo rivelato con il numero più basso.[/b]\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Poi metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.06,
+     0.98,
+     0.95
+    ]
+   },
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "quadrante": {
+    "tipo": "tempo",
+    "valore": 2,
+    "condizione": "se la miniatura del Predecessore (Primer Morador, Segreto 13) è su un Luogo rivelato",
+    "a_fine": "rimetti la miniatura nel Luogo rivelato con il numero più basso"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 6, Parte 2",
+     "it": "Evento — Capitolo 6, Parte 2"
+    },
+    "capitolo": 6,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "'Primer Morador' (il cacciatore del Segreto 13 «¡Perseguido!»/Preda) reso con 'Predecessore'."
+  },
+  {
+   "img": "carte/mazzo/36908.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 7,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 7 (Reverso)",
+    "it": "Preparazione del Capitolo 7 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1-2 jugadores:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]3 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián:[/b] Pon el Encuentro verde de «Sierpe de la Maleza» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 7 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1-2 giocatori:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]3 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano:[/b] Metti l'Incontro verde «Serpe del Sottobosco» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 7 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1-2": [
+       2,
+       3
+      ],
+      "3": [
+       2,
+       3,
+       4
+      ],
+      "4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "verde",
+       "es": "Sierpe de la Maleza",
+       "it": "Serpe del Sottobosco"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.14,
+     0.97,
+     0.91
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 7 (Anverso)",
+     "it": "Preparazione del Capitolo 7 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 7 y apílalas de la 2 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 7 e impilale dalla 2 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "7",
+      "parti_dal_fondo": [
+       2,
+       1
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.42,
+      0.95,
+      0.6
+     ]
+    }
+   },
+   "dubbi": "«Sierpe de la Maleza» non è nel glossario: tradotto 'Serpe del Sottobosco'."
+  },
+  {
+   "img": "carte/mazzo/36828.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 7,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "No pasarán",
+    "it": "Non passeranno"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]La negativa de Orrin es decepcionante, pero comprensible. Las incursiones humanas en Tuathán ya han hecho más daño que bien. ¿Por qué iba a pensar que tu intento sería diferente? Para que cambie de opinión, tendrás que hacer alguna contribución al reino.[/i]\n[b]Pon el Evento especial B encima del mazo de Eventos. Pon 8 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Il rifiuto di Orrin è deludente, ma comprensibile. Le incursioni umane a Tuathan hanno già fatto più male che bene. Perché mai dovrebbe pensare che il tuo tentativo sarebbe diverso? Per fargli cambiare idea, dovrai dare un qualche contributo al regno.[/i]\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Metti 8 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n[b]Cumple uno de estos objetivos:[/b]\n{i:bullet} Obtén la parte 8 del Estado «Restaurando la Orden».\n{i:bullet} Obtén el Secreto «Ayuda del Pueblo» causando la caída de la Mesa Redonda.\n{i:bullet} Encuentra otra forma de entrar en Tuathán.\n[b]Éxito:[/b] En cuanto consigas la parte 8 del Estado «Restaurando la Orden» o la carta de Secreto 19, ve al Versículo 490 del Libro de los Secretos.",
+    "it": "[b]Cerca[/b]\n[b]Completa uno di questi obiettivi:[/b]\n{i:bullet} Ottieni la parte 8 dello status «Ripristinare l'Ordine».\n{i:bullet} Ottieni il Segreto «Aiuto del Popolo» provocando la caduta della Tavola Rotonda.\n{i:bullet} Trova un altro modo per entrare a Tuathan.\n[b]Successo:[/b] Non appena ottieni la parte 8 dello status «Ripristinare l'Ordine» o la carta Segreto 19, vai al verso 490 del Libro dei Segreti."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.06,
+      0.98,
+      0.34
+     ],
+     [
+      0.2,
+      0.84,
+      0.96,
+      0.96
+     ]
+    ],
+    "cerca": [
+     0.2,
+     0.36,
+     0.96,
+     0.81
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 8,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 7, Parte 1",
+     "it": "Evento — Capitolo 7, Parte 1"
+    },
+    "capitolo": 7,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   },
+   "dubbi": "Segreto 19 «Ayuda del Pueblo» non è nel glossario: tradotto 'Aiuto del Popolo'."
+  },
+  {
+   "img": "carte/mazzo/36829.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 7,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Caminos ocultos",
+    "it": "Sentieri nascosti"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]El Valle de los Guardianes, la base que usaron los ejércitos de Arturo hace seiscientos años para lanzar un ataque contra Tuathán, está ahora demasiado bien protegido.\nOtros dos caminos ocultos conducen a la ciudad, ambos igual de peligrosos. ¿Cuál deberías elegir?[/i]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]La Valle dei Guardiani, la base che gli eserciti di Artù usarono seicento anni fa per lanciare un attacco contro Tuathan, ora è fin troppo ben protetta.\nAltri due sentieri nascosti conducono alla città, entrambi ugualmente pericolosi. Quale dovresti scegliere?[/i]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Entra en Tuathán por la Sala del Rey en Altomuro (131) o por Ríos Altos (156).",
+    "it": "[b]Cerca[/b]\n{i:bullet} Entra a Tuathan attraverso la Sala del Re a Timberwall (131) o da Riverfall (156)."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.19,
+     0.97,
+     0.62
+    ],
+    "cerca": [
+     0.22,
+     0.65,
+     0.97,
+     0.83
+    ]
+   },
+   "missione": true,
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 7, Parte 2",
+     "it": "Evento — Capitolo 7, Parte 2"
+    },
+    "capitolo": 7,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36909.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 8,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 8 (Reverso)",
+    "it": "Preparazione del Capitolo 8 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]2 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]3-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]¡Ya puedes comenzar el Capítulo 8 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]2 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]3-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Ora puoi iniziare il Capitolo 8 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.22,
+     0.98,
+     0.85
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 8 (Anverso)",
+     "it": "Preparazione del Capitolo 8 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 8 y apílalas de la 2 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 8 e impilale dalla 2 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "8",
+      "parti_dal_fondo": [
+       2,
+       1
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.42,
+      0.95,
+      0.6
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36830.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 8,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "En las entrañas de Tuathán",
+    "it": "Nelle viscere di Tuathan"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]La ciudad de los Primeros Moradores, más antigua que la humanidad, quizás más antigua que el tiempo mismo, se abre ante ti con sus vistas vertiginosas y sus ondulantes nubes de Rareza.\nSabes que en las profundidades de este lugar se halla el corazón de Tuathán, donde se creó el Grial y lo encontraron los campeones de Cuanacht. Pero, ¿podrás llegar hasta él antes de que la Rareza acabe contigo?[/i]\n[b]Pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]La città dei Predecessori, più antica dell'umanità, forse più antica del tempo stesso, si apre davanti a te con i suoi panorami vertiginosi e le sue ondeggianti nubi di Anomalia.\nSai che nelle profondità di questo luogo si trova il cuore di Tuathan, dove fu creato il Graal e dove lo trovarono i campioni di Cuanacht. Ma riuscirai a raggiungerlo prima che l'Anomalia abbia la meglio su di te?[/i]\n[b]Metti 6 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Llega al Corazón de Tuathán (185) y descubre su secreto.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Raggiungi il Cuore di Tuathan (185) e scoprine il segreto."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.08,
+      0.98,
+      0.65
+     ],
+     [
+      0.2,
+      0.84,
+      0.96,
+      0.94
+     ]
+    ],
+    "cerca": [
+     0.22,
+     0.68,
+     0.97,
+     0.82
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 8, Parte 1",
+     "it": "Evento — Capitolo 8, Parte 1"
+    },
+    "capitolo": 8,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36831.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 8,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "Ecos de las eras",
+    "it": "Echi delle ere"
+   },
+   "testo": {
+    "es": "[i]Pasa otro día. Te duelen los ojos por la siempre cambiante Rareza, y apenas puedes recordar tu propio nombre.\nDespués de horas de viaje, te fijas en un grupo de cuatro personas que recorren cabeza abajo uno de los filamentos de rarapiedra, en dirección opuesta a la tuya: un caballero cubierto de vendas, una chica con un lobo y otras dos figuras. Tratas de llamarlos, pero tu voz queda ahogada por el ruido.\nSaber que otros humanos han logrado alcanzar estas profundidades enloquecidas te da esperanza.[/i]\n[b]Cada personaje obtiene 1 de {i:energy}. Pon el Evento especial D encima del mazo de Eventos y 2 Eventos Aleatorios encima de este.[/b]",
+    "it": "[i]Passa un altro giorno. Ti dolgono gli occhi per l'Anomalia in continuo mutamento, e riesci a malapena a ricordare il tuo nome.\nDopo ore di viaggio, noti un gruppo di quattro persone che percorrono a testa in giù uno dei filamenti di pietra anomala, nella direzione opposta alla tua: un cavaliere coperto di bende, una ragazza con un lupo e altre due figure. Provi a chiamarli, ma la tua voce viene soffocata dal frastuono.\nSapere che altri esseri umani sono riusciti a raggiungere queste profondità impazzite ti dà speranza.[/i]\n[b]Ogni personaggio ottiene 1 {i:energy}. Metti l'Evento Speciale D in cima al mazzo Eventi e sopra di esso 2 Eventi Casuali.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.12,
+     0.98,
+     0.89
+    ]
+   },
+   "eventi_casuali": {
+    "base": 2,
+    "meno_per_giocatore": 0
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 8, Parte 2",
+     "it": "Evento — Capitolo 8, Parte 2"
+    },
+    "capitolo": 8,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36910.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 9,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 9 (Reverso)",
+    "it": "Preparazione del Capitolo 9 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]2 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]3-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]¡Ya puedes comenzar el Capítulo 9 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]2 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]3-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Ora puoi iniziare il Capitolo 9 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.19,
+     0.22,
+     0.98,
+     0.84
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 9 (Anverso)",
+     "it": "Preparazione del Capitolo 9 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b]\n[b]Si tienes la carta de Secreto 78[/b], pon la carta del Capítulo 9: Parte 2 encima del mazo de Eventos.\nDe lo contrario, pon la carta del Capítulo 9: Parte 1 encima del mazo de Eventos.\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b]\n[b]Se hai la carta Segreto 78[/b], metti la carta Capitolo 9: Parte 2 in cima al mazzo Eventi.\nAltrimenti, metti la carta Capitolo 9: Parte 1 in cima al mazzo Eventi.\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "9",
+      "condizioni": [
+       {
+        "se": "hai il Segreto 78",
+        "metti_in_cima": "Capitolo 9: Parte 2"
+       },
+       {
+        "se": "altrimenti",
+        "metti_in_cima": "Capitolo 9: Parte 1"
+       }
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.33,
+      0.95,
+      0.71
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36832.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 9,
+   "parte": 1,
+   "lettera": null,
+   "titolo": {
+    "es": "El largo camino a casa",
+    "it": "La lunga strada verso casa"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Ya no soportas más este reino en constante cambio, pero todavía estás tan lejos de casa...[/i]\n[b]Pon el Evento especial D encima del mazo de Eventos y 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima de este.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Non sopporti più questo regno in continuo mutamento, ma sei ancora così lontano da casa...[/i]\n[b]Metti l'Evento Speciale D in cima al mazzo Eventi e sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} ¡Sal de Tuathán!",
+    "it": "[b]Cerca[/b]\n{i:bullet} Esci da Tuathan!"
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.27,
+      0.97,
+      0.43
+     ],
+     [
+      0.2,
+      0.62,
+      0.86,
+      0.78
+     ]
+    ],
+    "cerca": [
+     0.22,
+     0.46,
+     0.97,
+     0.6
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 9, Parte 1",
+     "it": "Evento — Capitolo 9, Parte 1"
+    },
+    "capitolo": 9,
+    "parte": 1,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36833.webp",
+   "tipo": "evento",
+   "sottotipo": "storia",
+   "capitolo": 9,
+   "parte": 2,
+   "lettera": null,
+   "titolo": {
+    "es": "El largo camino a casa",
+    "it": "La lunga strada verso casa"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Y solías pensar que la Rareza era hostil... ¡ahora ves cómo bulle a tu alrededor, tan letal como un torrente!\nEl hundimiento de la gran ciudadela debe de haber alterado algo en Tuathán.[/i]\n[b]Cada personaje pierde 1 de {i:health} y obtiene 1 de {i:terror}.[/b]\n[b]Pon el Evento especial D encima del mazo de Eventos y 4 (1 jugador), 3 (2 jugadores) o 2 (3 o 4 jugadores) Eventos Aleatorios encima de él.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]E pensavi che l'Anomalia fosse ostile... ora la vedi ribollire tutt'intorno a te, letale come un torrente!\nIl crollo della grande cittadella deve aver alterato qualcosa a Tuathan.[/i]\n[b]Ogni personaggio perde 1 {i:health} e ottiene 1 {i:terror}.[/b]\n[b]Metti l'Evento Speciale D in cima al mazzo Eventi e sopra di esso 4 (1 giocatore), 3 (2 giocatori) o 2 (3 o 4 giocatori) Eventi Casuali.[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} ¡Sal de Tuathán!",
+    "it": "[b]Cerca[/b]\n{i:bullet} Esci da Tuathan!"
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.16,
+     0.15,
+     0.7
+    ],
+    "capitolo_parte": [
+     0.07,
+     0.72,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     [
+      0.2,
+      0.17,
+      0.98,
+      0.56
+     ],
+     [
+      0.2,
+      0.72,
+      0.88,
+      0.88
+     ]
+    ],
+    "cerca": [
+     0.22,
+     0.57,
+     0.97,
+     0.7
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "per_giocatori": {
+     "1": 4,
+     "2": 3,
+     "3": 2,
+     "4": 2
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Capítulo 9, Parte 2",
+     "it": "Evento — Capitolo 9, Parte 2"
+    },
+    "capitolo": 9,
+    "parte": 2,
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.14,
+      0.53,
+      0.37,
+      0.85
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/36911.webp",
+   "tipo": "evento",
+   "sottotipo": "preparazione",
+   "capitolo": 10,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Preparación del Capítulo 10 (Reverso)",
+    "it": "Preparazione del Capitolo 10 (Retro)"
+   },
+   "testo": {
+    "es": "[b]Construye los mazos de Encuentros para este Capítulo:[/b]\n[b]1 jugador:[/b]\nUsa todas las cartas con {i:level2} y {i:level3}\n[b]2 jugadores:[/b]\nUsa todas las cartas con {i:level2}, {i:level3} y {i:level4}\n[b]3-4 jugadores:[/b]\nUsa todas las cartas con {i:level3} y {i:level4}\n\n[b]Guardián:[/b] Pon el Encuentro púrpura de «Masacre» en la Localización revelada con el número más bajo.\n\n[b]¡Ya puedes comenzar el Capítulo 10 de La Caída de Ávalon! Descarta esta carta y revela la primera carta del mazo de Eventos.[/b]",
+    "it": "[b]Costruisci i mazzi Incontro per questo Capitolo:[/b]\n[b]1 giocatore:[/b]\nUsa tutte le carte con {i:level2} e {i:level3}\n[b]2 giocatori:[/b]\nUsa tutte le carte con {i:level2}, {i:level3} e {i:level4}\n[b]3-4 giocatori:[/b]\nUsa tutte le carte con {i:level3} e {i:level4}\n\n[b]Guardiano:[/b] Metti l'Incontro viola «Massacro» nel Luogo rivelato con il numero più basso.\n\n[b]Ora puoi iniziare il Capitolo 10 de La Caduta di Avalon! Scarta questa carta e rivela la prima carta del mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "preparazione": {
+    "mazzi_incontro": {
+     "livelli_per_giocatori": {
+      "1": [
+       2,
+       3
+      ],
+      "2": [
+       2,
+       3,
+       4
+      ],
+      "3-4": [
+       3,
+       4
+      ]
+     }
+    },
+    "guardiani": [
+     {
+      "giocatori": "1-4",
+      "incontro": {
+       "colore": "viola",
+       "es": "Masacre",
+       "it": "Massacro"
+      },
+      "luogo": "Luogo rivelato con il numero più basso"
+     }
+    ]
+   },
+   "aree": {
+    "titolo": [
+     0.06,
+     0.1,
+     0.15,
+     0.94
+    ],
+    "testo": [
+     0.2,
+     0.14,
+     0.98,
+     0.91
+    ]
+   },
+   "retro": {
+    "lato": "anverso",
+    "titolo": {
+     "es": "Preparación del Capítulo 10 (Anverso)",
+     "it": "Preparazione del Capitolo 10 (Fronte)"
+    },
+    "testo": {
+     "es": "[b]Prepara el mazo de Eventos:[/b] Busca todas las Partes del Capítulo 10 y apílalas de la 3 (debajo) a la 1 (encima).\n[b]Ahora, sigue las instrucciones del reverso de esta carta.[/b]",
+     "it": "[b]Prepara il mazzo Eventi:[/b] Cerca tutte le Parti del Capitolo 10 e impilale dalla 3 (in fondo) alla 1 (in cima).\n[b]Ora segui le istruzioni sul retro di questa carta.[/b]"
+    },
+    "preparazione": {
+     "mazzo_eventi": {
+      "capitolo": "10",
+      "parti_dal_fondo": [
+       3,
+       2,
+       1
+      ]
+     }
+    },
+    "aree": {
+     "titolo": [
+      0.06,
+      0.1,
+      0.15,
+      0.94
+     ],
+     "testo": [
+      0.2,
+      0.42,
+      0.95,
+      0.6
+     ]
+    }
+   },
+   "dubbi": "«Masacre» (Incontro viola Guardiano) non è nel glossario: tradotto 'Massacro'."
+  }
+ ]
+}

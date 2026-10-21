@@ -1,0 +1,179 @@
+{
+ "carte": [
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33624.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33623.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33622.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33621.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33620.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33619.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33618.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33617.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33616.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33615.webp",
+   "mazzo": "AZUL - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33900.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33901.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33902.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33903.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33904.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33905.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33906.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33907.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33908.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33909.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33910.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33911.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33912.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33913.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33914.webp",
+   "mazzo": "AREV - MAZO BASICO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34000.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34001.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34002.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34003.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34004.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34005.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34006.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34007.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34008.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34009.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE DIPLOMACIA",
+   "nome_tts": ""
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/tuathan_31308.webp",
+   "mazzo": "",
+   "nome_tts": "199 - TUATHAN",
+   "retro": "carte/mazzo/retro_31308.webp"
+  },
+  {
+   "img": "carte/mazzo/tuathan_31307.webp",
+   "mazzo": "",
+   "nome_tts": "199 - TUATHAN",
+   "retro": "carte/mazzo/retro_31307.webp"
+  },
+  {
+   "img": "carte/mazzo/tuathan_31306.webp",
+   "mazzo": "",
+   "nome_tts": "199 -TUATHAN",
+   "retro": "carte/mazzo/retro_31306.webp"
+  },
+  {
+   "img": "carte/mazzo/tuathan_31305.webp",
+   "mazzo": "",
+   "nome_tts": "199 -TUATHAN",
+   "retro": "carte/mazzo/retro_31305.webp"
+  },
+  {
+   "img": "carte/mazzo/tuathan_31304.webp",
+   "mazzo": "",
+   "nome_tts": "199 -TUATHAN",
+   "retro": "carte/mazzo/retro_31304.webp"
+  },
+  {
+   "img": "carte/mazzo/nueva_camelot_asediada_31303.webp",
+   "mazzo": "",
+   "nome_tts": "195 - NUEVA CAMELOT ASEDIADA",
+   "retro": "carte/mazzo/retro_31303.webp"
+  },
+  {
+   "img": "carte/mazzo/nueva_camelot_31302.webp",
+   "mazzo": "",
+   "nome_tts": "190 - NUEVA CAMELOT",
+   "retro": "carte/mazzo/retro_31302.webp"
+  },
+  {
+   "img": "carte/mazzo/corazon_de_tuathan_31301.webp",
+   "mazzo": "",
+   "nome_tts": "185 - CORAZON  DE TUATHAN",
+   "retro": "carte/mazzo/retro_31301.webp"
+  },
+  {
+   "img": "carte/mazzo/el_refugio_de_orrin_31300.webp",
+   "mazzo": "",
+   "nome_tts": "180 - EL REFUGIO DE ORRIN",
+   "retro": "carte/mazzo/retro_31300.webp"
+  },
+  {
+   "img": "carte/mazzo/refugio_en_cabolejano_31208.webp",
+   "mazzo": "",
+   "nome_tts": "170 - REFUGIO EN CABOLEJANO",
+   "retro": "carte/mazzo/retro_31208.webp"
+  },
+  {
+   "img": "carte/mazzo/nido_del_cuervo_arrasado_31207.webp",
+   "mazzo": "",
+   "nome_tts": "165 - NIDO DEL CUERVO ARRASADO",
+   "retro": "carte/mazzo/retro_31207.webp"
+  },
+  {
+   "img": "carte/mazzo/corbenic_31206.webp",
+   "mazzo": "",
+   "nome_tts": "162 - CORBENIC",
+   "retro": "carte/mazzo/retro_31206.webp"
+  },
+  {
+   "img": "carte/mazzo/caboejano_31205.webp",
+   "mazzo": "",
+   "nome_tts": "161 - CABOEJANO",
+   "retro": "carte/mazzo/retro_31205.webp"
+  },
+  {
+   "img": "carte/mazzo/nido_del_cuervo_31204.webp",
+   "mazzo": "",
+   "nome_tts": "160 - NIDO DEL CUERVO",
+   "retro": "carte/mazzo/retro_31204.webp"
+  },
+  {
+   "img": "carte/mazzo/encuentro_en_mediocamino_31203.webp",
+   "mazzo": "",
+   "nome_tts": "158 - ENCUENTRO EN MEDIOCAMINO",
+   "retro": "carte/mazzo/retro_31203.webp"
+  },
+  {
+   "img": "carte/mazzo/costa_resplandeciente_31202.webp",
+   "mazzo": "",
+   "nome_tts": "157 - COSTA RESPLANDECIENTE",
+   "retro": "carte/mazzo/retro_31202.webp"
+  },
+  {
+   "img": "carte/mazzo/rios_altos_31201.webp",
+   "mazzo": "",
+   "nome_tts": "156 - RIOS ALTOS",
+   "retro": "carte/mazzo/retro_31201.webp"
+  },
+  {
+   "img": "carte/mazzo/bosque_de_los_susurros_31200.webp",
+   "mazzo": "",
+   "nome_tts": "155 - BOSQUE DE LOS SUSURROS",
+   "retro": "carte/mazzo/retro_31200.webp"
+  },
+  {
+   "img": "carte/mazzo/tumbas_de_la_orden_31108.webp",
+   "mazzo": "",
+   "nome_tts": "154 - TUMBAS DE LA ORDEN",
+   "retro": "carte/mazzo/retro_31108.webp"
+  },
+  {
+   "img": "carte/mazzo/mar_verde_31107.webp",
+   "mazzo": "",
+   "nome_tts": "153 - MAR VERDE",
+   "retro": "carte/mazzo/retro_31107.webp"
+  },
+  {
+   "img": "carte/mazzo/mediocamino_31106.webp",
+   "mazzo": "",
+   "nome_tts": "152 - MEDIOCAMINO",
+   "retro": "carte/mazzo/retro_31106.webp"
+  }
+ ]
+}

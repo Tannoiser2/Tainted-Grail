@@ -1,0 +1,2439 @@
+{
+ "carte": [
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33624.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Medidas desesperadas",
+    "it": "Misure disperate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33623.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.755,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33622.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Reunir indicios",
+    "it": "Raccogliere indizi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 Carga",
+     "it": "Ottieni 1 Carica"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Retira todas las Cargas de esta carta: {i:arrowup} por Carga retirada",
+     "it": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto. Carta passiva: 'apre' riga 2 (caution) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33621.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presumir",
+    "it": "Vantarsi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:health}",
+     "it": "Perdi 1 {i:health}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33620.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Historias escandalosas",
+    "it": "Storie scandalose"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Puedes pagar 1 de {r:Comida} para {i:arrowup}",
+     "it": "Puoi pagare 1 {r:Cibo} per {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33619.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Negociaciones",
+    "it": "Negoziati"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33618.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa firme",
+    "it": "Difesa salda"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Ignora todas las {i:arrowdown}",
+     "it": "Ignora tutte le {i:arrowdown}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto. La riga '{i:discard} después de la Respuesta' non ha icona: registrata come passiva."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33617.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Verdad honesta",
+    "it": "Verità sincera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33616.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Escuchar en silencio",
+    "it": "Ascoltare in silenzio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}",
+     "it": "Se subisci {i:wound}, {i:discard}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_diplomacia/33615.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Tono autoritario",
+    "it": "Tono autoritario"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowdown",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: {i:arrowdown} y roba 2 cartas",
+     "it": "Paga 1 Carica: {i:arrowdown} e pesca 2 carte"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AZUL - MAZO AVANZADO', ma i numeri sono n/25 A (mazzo Diplomazia blu base); mazzo='avanzato' come da lotto. Carta passiva: 'apre' righe 3 (spirituality), 4 (magic) e fondo 1x sul bordo destro. Fondo bonus = freccia GIÙ (insolito)."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33900.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Humor negro",
+    "it": "Umorismo nero"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}; obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}; ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 2 Cariche: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.53,
+      0.79,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null. Carta passiva: 'apre' riga 2 (caution) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33901.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Soborno",
+    "it": "Corruzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Puedes pagar 1 de {r:Riqueza} o descartar 1 Objeto para {i:arrowup}{i:arrowup}",
+     "it": "Puoi pagare 1 {r:Ricchezza} o scartare 1 Oggetto per {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33902.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Medidas desesperadas",
+    "it": "Misure disperate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33903.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ojo para el detalle",
+    "it": "Occhio per i dettagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.765,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33904.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "El arte de deducir",
+    "it": "L'arte della deduzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Prevén 1 {i:discard}",
+     "it": "Paga 1 Carica: previeni 1 {i:discard}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.7,
+      0.79,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null. Carta passiva: 'apre' righe 1 (empathy), 2 (caution), 3 (spirituality x2) e fondo 2x sul bordo destro; riga 4: solo bonus magico {i:extra}, nessuna semichiave magica a destra."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33905.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Determinación",
+    "it": "Determinazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}; {i:arrowup} por cada punto de {i:practicality} que tengas",
+    "it": "Perdi 1 {i:energy}; {i:arrowup} per ogni punto di {i:practicality} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.735,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33906.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Malas indicaciones",
+    "it": "Indicazioni sbagliate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33907.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Verdad honesta",
+    "it": "Verità sincera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33908.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Promesa falsa",
+    "it": "Falsa promessa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33909.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Promesa falsa",
+    "it": "Falsa promessa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33910.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Métodos extraños",
+    "it": "Metodi strani"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial\nCalavera: Pierde 1 de {r:Rep}\nGrial: No pasa nada",
+    "it": "Lancia un quadrante\nTeschio: perdi 1 {r:Rep}\nGraal: non succede nulla"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.695,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33911.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ganar tiempo",
+    "it": "Guadagnare tempo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora la Respuesta del oponente; {i:discard} después de la Respuesta",
+    "it": "Ignora la Risposta dell'avversario; {i:discard} dopo la Risposta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33912.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Evasivo",
+    "it": "Evasivo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "· Paga 1 Carga: Evita {i:arrowdown}\n· Paga 2 Cargas y 2 de {i:energy}: Finaliza este Encuentro sin Recompensa ni Fracaso",
+     "it": "· Paga 1 Carica: evita {i:arrowdown}\n· Paga 2 Cariche e 2 {i:energy}: termina questo Incontro senza Ricompensa né Fallimento"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.58,
+      0.79,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null. Carta passiva: 'apre' righe 2-4 e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33913.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.755,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_diplomacia/33914.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "G",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica",
+    "it": "Retorica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto 'AREV - MAZO BASICO', ma le carte sono il mazzo base Diplomazia grigio (n/25 G) senza nome del personaggio: personaggio=null. La riga '{i:discard} después de la Respuesta' non ha icona: registrata come passiva."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34000.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Humor macabro",
+    "it": "Umorismo macabro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}; obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}; ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 1 Carica: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.52,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 2 (caution) e 3 (spirituality) e fondo 2x sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34001.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Humor macabro",
+    "it": "Umorismo macabro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}; obtén 1 Carga por cada punto de {i:practicality} que tengas",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}; ottieni 1 Carica per ogni punto di {i:practicality} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: La siguiente carta no necesita conectar con {i:extra}",
+     "it": "Paga 1 Carica: la carta successiva non ha bisogno di connettersi con {i:extra}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.52,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 2 (caution) e 3 (spirituality) e fondo 2x sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34002.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica de aldeano",
+    "it": "Retorica da paesano"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). La riga '{i:discard} después de la Respuesta' non ha icona: registrata come passiva."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34003.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Persistencia",
+    "it": "Perseveranza"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}; {i:arrowup} por cada punto de {i:practicality} que tengas",
+    "it": "Perdi 1 {i:energy}; {i:arrowup} per ogni punto di {i:practicality} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.735,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34004.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Percibir peligro",
+    "it": "Percepire il pericolo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "· Paga 1 Carga: Prevén {i:arrowdown}\n· Paga 2 Cargas y 2 de {i:energy}: Finaliza este Encuentro con la mitad de la Recompensa (redondeando hacia abajo)",
+     "it": "· Paga 1 Carica: previeni {i:arrowdown}\n· Paga 2 Cariche e 2 {i:energy}: termina questo Incontro con metà della Ricompensa (arrotondando per difetto)"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.52,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 1-4 e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34005.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Historias de guerra",
+    "it": "Storie di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 3 {i:delay} en esta carta",
+     "it": "Metti 3 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 3,
+     "es": "Gana esta etapa",
+     "it": "Vinci questa fase"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.64,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' riga 4 (magic) e fondo ✖ sul bordo destro."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34006.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Chismorreo de granjeros",
+    "it": "Pettegolezzi di contadini"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Paga 1 de {i:energy}; roba 3 cartas",
+    "it": "Paga 1 {i:energy}; pesca 3 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.735,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34007.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sembrar la duda",
+    "it": "Seminare il dubbio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:arrowup}{i:arrowup}{i:arrowup}",
+    "it": "{i:arrowup}{i:arrowup}{i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34008.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sembrar la duda",
+    "it": "Seminare il dubbio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:arrowup}{i:arrowup}{i:arrowup}",
+    "it": "{i:arrowup}{i:arrowup}{i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_diplomacia/34009.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sabiduría antigua",
+    "it": "Saggezza antica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada {i:key_practicality} y {i:arrowup} por cada {i:key_empathy}",
+    "it": "{i:arrowup} per ogni {i:key_practicality} e {i:arrowup} per ogni {i:key_empathy}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AREV' sopra il nome (non inclusa nell'area titolo). Icone inventate {i:key_practicality}/{i:key_empathy}: Chiave di Praticità/Empatia (cornice di chiave) = Chiavi di quell'attributo fisicamente unite nella Sequenza."
+  }
+ ]
+}

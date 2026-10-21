@@ -1,0 +1,2508 @@
+{
+ "carte": [
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32920.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Verde generico (n/25 V, senza nome di personaggio), nel lotto come \"VERDE - MAZO AVANZADO\": personaggio null. Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32919.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Verde generico (n/25 V, senza nome di personaggio), nel lotto come \"VERDE - MAZO AVANZADO\": personaggio null."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32918.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}.",
+    "it": "Per ogni {i:cube} che dovresti perdere, invece ottieni {i:cube}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.97,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Verde generico (n/25 V, senza nome di personaggio), nel lotto come \"VERDE - MAZO AVANZADO\": personaggio null. Riga 2: semichiave destra doppia (2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32917.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa ingeniosa",
+    "it": "Trappola ingegnosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:practicality}.",
+    "it": "Ottieni {i:cube} per ogni {i:practicality}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.37,
+      0.755,
+      0.97,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Verde generico (n/25 V, senza nome di personaggio), nel lotto come \"VERDE - MAZO AVANZADO\": personaggio null. Righe 1 e 3 doppie → \"livello\": 2. Nel testo {i:practicality} è disegnato dentro una cornice di Chiave: probabilmente \"per ogni Chiave di Praticità fisicamente unita nella Sequenza\"."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32916.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Tácticas furtivas",
+    "it": "Tattiche furtive"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}, obtén 2 Cargas.",
+     "it": "Perdi 1 {i:energy}, ottieni 2 Cariche."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Prevén 2 {i:wound}, obtén {i:cube}.",
+     "it": "Paga 1 Carica: previeni 2 {i:wound}, ottieni {i:cube}."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.08,
+     0.78,
+     0.145
+    ],
+    "testo": [
+     [
+      0.21,
+      0.58,
+      0.8,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Verde generico (n/25 V, senza nome di personaggio), nel lotto come \"VERDE - MAZO AVANZADO\": personaggio null. Carta passiva: semichiavi \"apre\" (righe 2-3 doppie → livello 2, e 3x) sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33400.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33401.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33402.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:wound} recibida en este ataque.",
+    "it": "Ottieni {i:cube} per ogni {i:wound} subita in questo attacco."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33403.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe potente",
+    "it": "Colpo potente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube2}.",
+     "it": "Ottieni {i:cube2}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33404.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Grito de guerra",
+    "it": "Grido di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 1 {i:wound}.",
+    "it": "Previeni 1 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33405.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33406.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Eliges el ataque enemigo (excepto «Huir»); {i:discard} después del ataque.",
+    "it": "Scegli l'attacco nemico (tranne «Fuggire»); {i:discard} dopo l'attacco."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33407.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presa",
+    "it": "Presa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}.",
+     "it": "Se subisci {i:wound}, {i:discard}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33408.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33409.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe final",
+    "it": "Colpo finale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube2}, +1 {i:wound}.",
+    "it": "Perdi {i:cube2}, +1 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33410.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 3: semichiavi destre doppie (2 orsi, 2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33411.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe potente",
+    "it": "Colpo potente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube2}.",
+     "it": "Ottieni {i:cube2}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33412.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 3: semichiavi destre doppie (2 orsi, 2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33413.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe paralizante",
+    "it": "Colpo paralizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Pierde {i:cube} menos, roba 1 carta.",
+     "it": "Paga 1 Carica: perdi {i:cube} in meno, pesca 1 carta."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.145
+    ],
+    "testo": [
+     [
+      0.2,
+      0.645,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: le semichiavi \"apre\" (righe 1, 2 e 1x) sono sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33414.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33300.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe formidable",
+    "it": "Colpo formidabile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33301.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rabia implacable",
+    "it": "Rabbia implacabile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:aggression}.",
+    "it": "Ottieni {i:cube} per ogni {i:aggression}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1 doppia (2 orsi) → \"livello\": 2. Nel testo {i:aggression} è disegnato dentro una cornice di Chiave: probabilmente \"per ogni Chiave di Aggressività fisicamente unita nella Sequenza\"."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33302.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Encontrar punto débil",
+    "it": "Trovare il punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33303.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Intimidación brutal",
+    "it": "Intimidazione brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro gris, obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+    "it": "Se stai combattendo contro un Incontro grigio, ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.645,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 2: semichiave destra doppia (2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33304.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque brutal",
+    "it": "Attacco brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33305.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque brutal",
+    "it": "Attacco brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33306.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe asombroso",
+    "it": "Colpo strabiliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 2 {i:wound}.",
+    "it": "Previeni 2 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33307.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe asombroso",
+    "it": "Colpo strabiliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Prevén 2 {i:wound}.",
+    "it": "Previeni 2 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33308.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sangre negra",
+    "it": "Sangue nero"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:health}.",
+     "it": "Perdi 1 {i:health}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 de {r:Magia} o 1 de {i:health}: La siguiente carta no necesita conectar con {i:extra}.",
+     "it": "Paga 1 {r:Magia} o 1 {i:health}: la carta successiva non ha bisogno di collegarsi con {i:extra}."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.27,
+     0.09,
+     0.75,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.4,
+     0.045,
+     0.62,
+     0.087
+    ],
+    "testo": [
+     [
+      0.2,
+      0.585,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi \"apre\" (riga 1 doppia → livello 2, riga 4 magic, 2x) sul bordo destro; semichiave sinistra in fondo presente ma vuota."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33309.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Fuerza bruta",
+    "it": "Forza bruta"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}, obtén 2 Cargas.",
+     "it": "Perdi 1 {i:energy}, ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+     "it": "Paga 1 Carica: ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.27,
+     0.09,
+     0.75,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.4,
+     0.045,
+     0.62,
+     0.087
+    ],
+    "testo": [
+     [
+      0.2,
+      0.58,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi \"apre\" (righe 1-2 doppie → livello 2, 2x) sul bordo destro; bonus a sinistra (draw riga 1, cube in fondo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33310.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe de hombro",
+    "it": "Spallata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube} menos, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube} in meno, previeni 1 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.735,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Forcejeo",
+    "it": "Colluttazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "{i:discard} si recibes más de 1 {i:wound}.",
+     "it": "{i:discard} se subisci più di 1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.64,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33312.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.645,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33313.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.645,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33314.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Barrido de martillo",
+    "it": "Spazzata di martello"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Descarta 10 cartas de la parte superior de tu mazo de Combate.",
+     "it": "Scarta le prime 10 carte del tuo mazzo Combattimento."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube10}.",
+     "it": "Ottieni {i:cube10}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.35,
+      0.585,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1-2 doppie → \"livello\": 2. La Capacità ritardata mostra 10 cubi: icona non nel vocabolario, codificata come {i:cube10} (= 10 segnalini)."
+  }
+ ]
+}

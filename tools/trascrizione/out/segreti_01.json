@@ -1,0 +1,739 @@
+{
+ "carte": [
+  {
+   "img": "carte/secretos/32600.webp",
+   "tipo": "segreto",
+   "numero": 2,
+   "nome": {
+    "es": "Hallazgo inquietante",
+    "it": "Scoperta Inquietante"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 de {i:terror} al Comienzo del Día.\nPuedes descartar esta carta en cualquier momento.",
+    "it": "Ottieni 1 {i:terror} all'Inizio della Giornata.\nPuoi scartare questa carta in qualsiasi momento."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.15,
+     0.1,
+     0.85,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32601.webp",
+   "tipo": "segreto",
+   "numero": 3,
+   "nome": {
+    "es": "Máscara funeraria",
+    "it": "Maschera Sepolcrale"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada vez que debas robar un Encuentro púrpura aleatorio, roba 2 y elige 1. Pon el otro Encuentro debajo de su mazo.",
+    "it": "Ogni volta che devi pescare un Incontro viola casuale, pescane 2 e scegline 1. Metti l'altro Incontro in fondo al suo mazzo."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.67,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32602.webp",
+   "tipo": "segreto",
+   "numero": 4,
+   "nome": {
+    "es": "¡Furia!",
+    "it": "Furia!"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Mientras este Secreto esté en juego, todos los Encuentros de Combate obtienen el Rasgo de [i]Furia[/i].",
+    "it": "Finché questo Segreto è in gioco, tutti gli Incontri di Combattimento ottengono il Tratto [i]Furia[/i]."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.15,
+     0.1,
+     0.85,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.76,
+      0.94,
+      0.95
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 4 non presente nel glossario: traduzione provvisoria «Furia!»."
+  },
+  {
+   "img": "carte/secretos/32603.webp",
+   "tipo": "segreto",
+   "numero": 5,
+   "nome": {
+    "es": "Loriga",
+    "it": "Usbergo"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "effetto": {
+    "es": "{i:skull} Prevén 2 {i:wound}.\nPierde 1 de {i:energy} al comienzo de cada Encuentro de Combate.",
+    "it": "{i:skull} Previeni 2 {i:wound}.\nPerdi 1 {i:energy} all'inizio di ogni Incontro di Combattimento."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.32,
+     0.05,
+     0.68,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.75,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 5 non nel glossario: traduzione provvisoria «Usbergo»."
+  },
+  {
+   "img": "carte/secretos/32604.webp",
+   "tipo": "segreto",
+   "numero": 7,
+   "nome": {
+    "es": "Grial verdadero",
+    "it": "Vero Graal"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Al Comienzo del Día, pierde 1 de {i:terror} y después obtén 1 de {i:energy} o 1 de {i:health} o 1 de {r:Magia}.",
+    "it": "All'Inizio della Giornata, perdi 1 {i:terror} e poi ottieni 1 {i:energy} o 1 {i:health} o 1 {r:Magia}."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.75,
+      0.94,
+      0.97
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32605.webp",
+   "tipo": "segreto",
+   "numero": 8,
+   "nome": {
+    "es": "Grial corrompido",
+    "it": "Graal Corrotto"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Obtén 1 de {r:Magia} al Comienzo del Día.",
+    "it": "Ottieni 1 {r:Magia} all'Inizio della Giornata."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.81,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32606.webp",
+   "tipo": "segreto",
+   "numero": 9,
+   "nome": {
+    "es": "Información delicada",
+    "it": "Informazione Delicata"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]Alguien pagará generosamente por esto.[/i]",
+    "it": "[i]Qualcuno pagherà profumatamente per questo.[/i]"
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32607.webp",
+   "tipo": "segreto",
+   "numero": 11,
+   "nome": {
+    "es": "Rituales de Menhir",
+    "it": "Riti del Menhir"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "¡Ahora puedes activar Menhires!\nLos costes de esta acción se pueden encontrar en la cara trasera de cada Localización, junto al icono del Menhir.",
+    "it": "Ora puoi attivare i Menhir!\nI costi di questa azione si trovano sul retro di ogni Luogo, accanto all'icona del Menhir."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.67,
+      0.94,
+      0.96
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32608.webp",
+   "tipo": "segreto",
+   "numero": 12,
+   "nome": {
+    "es": "Prisionero famélico",
+    "it": "Prigioniero Affamato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al Comienzo del Día, paga 1 de {r:Comida} o 1 de {r:Magia} o descarta esta carta.",
+    "it": "All'Inizio della Giornata, paga 1 {r:Cibo} o 1 {r:Magia} oppure scarta questa carta."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.76,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32609.webp",
+   "tipo": "segreto",
+   "numero": 13,
+   "nome": {
+    "es": "¡Perseguido!",
+    "it": "Preda"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al Comienzo del Día, mueve a tu perseguidor según las reglas del Versículo 13 del Libro de los Secretos.",
+    "it": "All'Inizio della Giornata, muovi il tuo inseguitore secondo le regole del verso 13 del Libro dei Segreti."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.68,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32610.webp",
+   "tipo": "segreto",
+   "numero": 14,
+   "nome": {
+    "es": "Rarapiedra prístina",
+    "it": "Pietra Anomala Pura"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} ? {i:energy}: Paga 2 de Energía (por cada jugador) para mover la Rarapiedra Prístina y a todos los miembros del equipo desde tu Localización actual a cualquier Localización conectada.",
+    "it": "{i:action} ? {i:energy}: paga 2 Energia (per ogni giocatore) per muovere la Pietra Anomala Pura e tutti i membri della Compagnia dal tuo Luogo attuale a qualsiasi Luogo collegato."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": "?",
+    "risorsa": "energy",
+    "costo_per_giocatore": 2
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.61,
+      0.94,
+      0.94
+     ]
+    ]
+   },
+   "dubbi": "Costo d'azione «?»: il costo è 2 Energia per giocatore (scritto nel testo)."
+  },
+  {
+   "img": "carte/secretos/32611.webp",
+   "tipo": "segreto",
+   "numero": 15,
+   "nome": {
+    "es": "Menhir tosco",
+    "it": "Menhir Grezzo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Siempre que Viajes, paga 1 de {i:energy} adicional.\n{i:action} 0 {i:energy}: Paga 1 de {r:Magia} (por cada jugador) para poner junto a tu carta de Localización una Localización que encaje.\n¡Esta carta no necesita estar dentro del radio de un Menhir activo!",
+    "it": "Ogni volta che Viaggi, paga 1 {i:energy} aggiuntiva.\n{i:action} 0 {i:energy}: paga 1 {r:Magia} (per ogni giocatore) per mettere accanto alla tua carta Luogo un Luogo che vi si colleghi.\nQuesta carta non ha bisogno di trovarsi nel raggio di un Menhir attivo!"
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.5,
+      0.94,
+      0.95
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 15 non nel glossario: traduzione provvisoria «Menhir Grezzo»."
+  },
+  {
+   "img": "carte/secretos/32612.webp",
+   "tipo": "segreto",
+   "numero": 16,
+   "nome": {
+    "es": "Cabeza de Morrigan",
+    "it": "Testa di Morrigan"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Escucha sus susurros: Obtén 1 de {r:Magia} y 1 de {i:terror}.",
+    "it": "{i:action} 1 {i:energy}: ascolta i suoi sussurri: ottieni 1 {r:Magia} e 1 {i:terror}."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.76,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32613.webp",
+   "tipo": "segreto",
+   "numero": 17,
+   "nome": {
+    "es": "Amuleto del Ciervo Padre",
+    "it": "Amuleto di Padre Cervo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cuando robes el Encuentro «Acólita Arquera», ponlo otra vez debajo de su mazo, obtén 1 de {r:Comida} y sigue jugando.",
+    "it": "Quando peschi l'Incontro «Sagittario», rimettilo in fondo al suo mazzo, ottieni 1 {r:Cibo} e continua a giocare."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.67,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "'Acólita Arquera' resa con l'Incontro «Sagittario» del glossario (viola, liv. 3): corrispondenza da verificare."
+  },
+  {
+   "img": "carte/secretos/32614.webp",
+   "tipo": "segreto",
+   "numero": 18,
+   "nome": {
+    "es": "Almasa refinada",
+    "it": "Almasa Raffinata"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Coloca una ficha de Misión, que representa la Almasa, en tu Localización actual (una vez al Día).\nConsulta las reglas de la Almasa en el Versículo 455 del Libro de los Secretos.",
+    "it": "{i:action} 1 {i:energy}: piazza un Gettone Cerca, che rappresenta l'Almasa, nel tuo Luogo attuale (una volta al Giorno).\nConsulta le regole dell'Almasa nel verso 455 del Libro dei Segreti."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "una_volta_al_giorno": true,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.53,
+      0.94,
+      0.91
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 18 non nel glossario; 'Almasa' lasciato invariato (termine di ambientazione)."
+  },
+  {
+   "img": "carte/secretos/32615.webp",
+   "tipo": "segreto",
+   "numero": 19,
+   "nome": {
+    "es": "Ayuda del pueblo",
+    "it": "Aiuto del Popolo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada personaje puede tener hasta 2 Compañeros activos al mismo tiempo.\nCada vez que un personaje robe un Encuentro «Turba Enfurecida», ponlo de nuevo debajo de su mazo.",
+    "it": "Ogni Personaggio può avere fino a 2 Compagni attivi contemporaneamente.\nOgni volta che un Personaggio pesca l'Incontro «Folla Inferocita», rimettilo in fondo al suo mazzo."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.59,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 19 non nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/secretos/32616.webp",
+   "tipo": "segreto",
+   "numero": 21,
+   "nome": {
+    "es": "Talismán deslucido",
+    "it": "Talismano Opaco"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Cada vez que pierdas {i:terror}, pierdes 1 punto más.",
+    "it": "Ogni volta che perdi {i:terror}, ne perdi 1 punto in più."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32617.webp",
+   "tipo": "segreto",
+   "numero": 22,
+   "nome": {
+    "es": "Talismán brillante",
+    "it": "Talismano Splendente"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Cada vez que pierdas {i:terror}, pierdes 1 punto más.",
+    "it": "Ogni volta che perdi {i:terror}, ne perdi 1 punto in più."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32618.webp",
+   "tipo": "segreto",
+   "numero": 25,
+   "nome": {
+    "es": "Redención",
+    "it": "Redenzione"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 parte del Estado «Redención» cada vez que obtengas {r:Rep}.\nCuando tengas las 5 partes de este Estado, descarta esta carta y obtén 3 de {r:Exp}.",
+    "it": "Ottieni 1 parte dello status «Redenzione» ogni volta che ottieni {r:Rep}.\nQuando hai tutte e 5 le parti di questo status, scarta questa carta e ottieni 3 {r:Esp}."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.61,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32619.webp",
+   "tipo": "segreto",
+   "numero": 27,
+   "nome": {
+    "es": "Martillo de Viejoacero",
+    "it": "Martello di Antico Acciaio"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Obtén {i:cube} al comienzo de cada Encuentro púrpura.",
+    "it": "Ottieni {i:cube} all'inizio di ogni Incontro viola."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.13,
+     0.12,
+     0.87,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.81,
+      0.94,
+      0.91
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 27 non nel glossario; 'Viejoacero' reso «Antico Acciaio» come nello status «Enigma dell’Antico Acciaio»."
+  },
+  {
+   "img": "carte/secretos/32620.webp",
+   "tipo": "segreto",
+   "numero": 31,
+   "nome": {
+    "es": "Descubrimiento de Sigilo Arcano",
+    "it": "Scoperta del Sigillo Arcano"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Obtén 1 de {r:Magia} si Descansas en una Localización con un Sigilo Arcano visible (ver ilustración).",
+    "it": "Ottieni 1 {r:Magia} se Riposi in un Luogo con un Sigillo Arcano visibile (vedi illustrazione)."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.13,
+     0.1,
+     0.87,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.7,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 31 non nel glossario: traduzione provvisoria."
+  }
+ ]
+}

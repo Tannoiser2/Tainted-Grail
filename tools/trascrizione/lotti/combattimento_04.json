@@ -1,0 +1,179 @@
+{
+ "carte": [
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33710.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33711.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33712.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33713.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33714.webp",
+   "mazzo": "AREV - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33824.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33823.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33822.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33821.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33820.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33819.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33818.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33817.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33816.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33815.webp",
+   "mazzo": "BLANCO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34800.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34801.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34802.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34803.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34804.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34805.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34806.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34807.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34808.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34809.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34810.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34811.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34812.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34813.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34814.webp",
+   "mazzo": "GUSANO - MAZO BASICO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34400.webp",
+   "mazzo": "GUSANO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34401.webp",
+   "mazzo": "GUSANO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34402.webp",
+   "mazzo": "GUSANO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34403.webp",
+   "mazzo": "GUSANO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34404.webp",
+   "mazzo": "GUSANO - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  }
+ ]
+}

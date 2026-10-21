@@ -1,0 +1,2480 @@
+{
+ "carte": [
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33710.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Sintonía con la tierra",
+    "it": "Sintonia con la terra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Por cada {i:cube} otorgado por esta carta, puedes pagar 1 de {r:Magia} para obtener 1 de {i:health} o perder 1 de {i:terror}.",
+    "it": "{i:place} Per ogni {i:cube} fornito da questa carta, puoi pagare 1 {r:Magia} per ottenere 1 {i:health} o perdere 1 {i:terror}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.92,
+     0.165
+    ],
+    "testo": [
+     [
+      0.38,
+      0.65,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.56,
+     0.045,
+     0.76,
+     0.085
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33711.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa cruel",
+    "it": "Trappola crudele"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_practicality}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_practicality}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.15
+    ],
+    "testo": [
+     [
+      0.38,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.56,
+     0.045,
+     0.76,
+     0.085
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave di Attributo fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33712.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra rápida",
+    "it": "Manovra rapida"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.15
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.56,
+     0.045,
+     0.76,
+     0.085
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33713.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación extensiva",
+    "it": "Pianificazione estesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+    "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.085,
+     0.78,
+     0.165
+    ],
+    "testo": [
+     [
+      0.21,
+      0.7,
+      0.8,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.4,
+     0.045,
+     0.6,
+     0.085
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Semichiave Bonus in fondo vuota."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33714.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque de guadaña",
+    "it": "Attacco di falce"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Roba 1 carta",
+    "it": "{i:delay} Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.15
+    ],
+    "testo": [
+     [
+      0.37,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.56,
+     0.045,
+     0.76,
+     0.085
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33824.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque dirigido",
+    "it": "Attacco mirato"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Pierde {i:cube}",
+     "it": "{i:skull} Perdi {i:cube}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube3}",
+     "it": "{i:delay} Ottieni {i:cube3}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.96,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33823.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Sentido táctico",
+    "it": "Senso tattico"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 1 Carga: Obtén o pierde {i:cube}",
+     "it": "Paga 1 Carica: ottieni o perdi {i:cube}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.25,
+     0.085,
+     0.77,
+     0.14
+    ],
+    "testo": [
+     [
+      0.22,
+      0.65,
+      0.79,
+      0.71
+     ],
+     [
+      0.22,
+      0.72,
+      0.79,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33822.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} En vez del ataque enemigo, pierde {i:cube} y {i:discard}",
+    "it": "{i:skull} Invece dell'attacco nemico, perdi {i:cube} e {i:discard}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.075,
+     0.93,
+     0.15
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33821.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe crítico",
+    "it": "Colpo critico"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} El enemigo ataca usando el primer ataque de su Tabla de Combate",
+    "it": "{i:skull} Il nemico attacca usando il primo attacco della sua Tabella di Combattimento"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33820.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe paralizante",
+    "it": "Colpo paralizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Paga 1 Carga: Pierde {i:cube} menos, roba 1 carta",
+     "it": "{i:skull} Paga 1 Carica: perdi {i:cube} in meno, pesca 1 carta"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.085,
+     0.77,
+     0.14
+    ],
+    "testo": [
+     [
+      0.21,
+      0.65,
+      0.8,
+      0.71
+     ],
+     [
+      0.21,
+      0.72,
+      0.8,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33819.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Burlar",
+    "it": "Raggirare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Si estás combatiendo contra un Encuentro verde, obtén {i:cube} por cada punto de {i:practicality} que tengas",
+    "it": "{i:place} Se stai combattendo contro un Incontro verde, ottieni {i:cube} per ogni punto di {i:practicality} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.9,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.65,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33818.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}",
+    "it": "{i:skull} Per ogni {i:cube} che dovresti perdere, ottieni invece {i:cube}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.9,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33817.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa ingeniosa",
+    "it": "Trappola ingegnosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_practicality}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_practicality}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave di Attributo fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33816.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:key_courage}",
+    "it": "{i:place} Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:key_courage}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.735,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave di Attributo fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33815.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} +1 {i:wound}",
+     "it": "{i:skull} +1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.085,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "BLANCO = carte base grigie 16-25 di Arev (plancia grigia, Riserva Avanzata): mazzo 'base', personaggio 'arev' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34800.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Eliges el ataque enemigo (excepto «Huir»), {i:discard} después del ataque",
+    "it": "{i:skull} Scegli l'attacco nemico (eccetto «Fuggire»), {i:discard} dopo l'attacco"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.15
+    ],
+    "testo": [
+     [
+      0.37,
+      0.65,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34801.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} +1 {i:wound}",
+     "it": "{i:skull} +1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34802.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Recapacitar",
+    "it": "Ripensarci"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Pierde {i:cube}, roba 2 cartas",
+    "it": "{i:delay} Perdi {i:cube}, pesca 2 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.76,
+      0.96,
+      0.83
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34803.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe final",
+    "it": "Colpo finale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Pierde {i:cube2}, +1 {i:wound}",
+    "it": "{i:skull} Perdi {i:cube2}, +1 {i:wound}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Nessuna semichiave destra (apre) in tutte le righe."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34804.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición",
+    "it": "Maledizione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Si estás combatiendo contra un Encuentro púrpura, obtén {i:cube} por cada {i:key_magic}",
+    "it": "{i:place} Se stai combattendo contro un Incontro viola, ottieni {i:cube} per ogni {i:key_magic}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.7,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave di Attributo fisicamente unita') è resa con un nome inventato {i:key_<attributo>}. Qui è la Chiave Magica (cornice blu): {i:key_magic}."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34805.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de guerra",
+    "it": "Magia di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 1 de {i:terror}",
+     "it": "{i:place} Ottieni 1 {i:terror}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34806.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34807.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 2 {i:wound}",
+     "it": "{i:skull} Previeni 2 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.95,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34808.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} +1 {i:wound}",
+     "it": "{i:skull} +1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.96,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34809.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} En vez del ataque enemigo, pierde {i:cube} y {i:discard}",
+    "it": "{i:skull} Invece dell'attacco nemico, perdi {i:cube} e {i:discard}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.075,
+     0.93,
+     0.15
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.96,
+      0.83
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34810.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} +1 {i:wound}",
+     "it": "{i:skull} +1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.7,
+      0.96,
+      0.755
+     ],
+     [
+      0.37,
+      0.765,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34811.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Distracción",
+    "it": "Distrazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Si el enemigo inflige {i:wound}, en vez de eso pierde esa cantidad de {i:cube}",
+    "it": "{i:skull} Se il nemico infligge {i:wound}, perdi invece altrettanti {i:cube}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34812.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque cauteloso",
+    "it": "Attacco prudente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Pierde {i:cube} menos, prevén 1 {i:wound}",
+    "it": "{i:skull} Perdi {i:cube} in meno, previeni 1 {i:wound}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.735,
+      0.96,
+      0.83
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34813.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Grito de guerra",
+    "it": "Grido di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Prevén 1 {i:wound}",
+    "it": "{i:skull} Previeni 1 {i:wound}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34814.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}",
+    "it": "{i:place} Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.65,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Nel testo il {i:skull} dopo «Calavera:» indica che le +2 Ferite si applicano all'attacco nemico."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34400.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Corteza gruesa",
+    "it": "Corteccia spessa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Paga 1 de {r:Magia} o {i:discard}",
+     "it": "{i:place} Paga 1 {r:Magia} o {i:discard}"
+    },
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 4 {i:wound}",
+     "it": "{i:skull} Previeni 4 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.705
+     ],
+     [
+      0.36,
+      0.71,
+      0.96,
+      0.775
+     ],
+     [
+      0.36,
+      0.78,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista. Cartiglio «GUSANO» = Verme."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34401.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Necromancia",
+    "it": "Negromanzia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Puedes obtener 1 de {i:terror} y pagar 1 de {r:Magia} para obtener {i:cube2}",
+     "it": "{i:place} Puoi ottenere 1 {i:terror} e pagare 1 {r:Magia} per ottenere {i:cube2}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.765
+     ],
+     [
+      0.36,
+      0.775,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34402.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Necromancia",
+    "it": "Negromanzia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Puedes obtener 1 de {i:terror} y pagar 1 de {r:Magia} para obtener {i:cube2}",
+     "it": "{i:place} Puoi ottenere 1 {i:terror} e pagare 1 {r:Magia} per ottenere {i:cube2}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.765
+     ],
+     [
+      0.36,
+      0.775,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34403.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Vislumbrar el futuro",
+    "it": "Scorgere il futuro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Roba 3 cartas, después descarta 2 cartas",
+    "it": "{i:place} Pesca 3 carte, poi scarta 2 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.94,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34404.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Vislumbrar el futuro",
+    "it": "Scorgere il futuro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Roba 3 cartas, después descarta 2 cartas",
+    "it": "{i:place} Pesca 3 carte, poi scarta 2 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.94,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  }
+ ]
+}

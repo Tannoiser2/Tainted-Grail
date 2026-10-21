@@ -1,0 +1,1973 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/cuanacht_quebrada_30902.webp",
+   "tipo": "luogo",
+   "numero": 121,
+   "antico": 101,
+   "nome": {
+    "es": "Cuanacht Quebrada",
+    "it": "Cuanacht Distrutta"
+   },
+   "sigilli": [
+    "dream",
+    "settlement_friend",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 102,
+    "sinistra": 103,
+    "destra": 104,
+    "giu": 105
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Ayuda a los vecinos",
+     "it": "Aiutare i vicini"
+    },
+    "es": "Obtén 1 de {r:Rep} (una vez al Día)",
+    "it": "Ottieni 1 {r:Rep} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Los días finales de Cuanacht no tienen buen aspecto.",
+    "it": "Gli ultimi giorni di Cuanacht non promettono nulla di buono."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.2,
+     0.75,
+     0.245
+    ],
+    "numero": [
+     0.42,
+     0.15,
+     0.66,
+     0.19
+    ],
+    "azione": [
+     0.27,
+     0.7,
+     0.79,
+     0.785
+    ],
+    "ambientazione": [
+     0.12,
+     0.85,
+     0.87,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "⇨ [b]Si tienes[/b] la parte 1 del Estado [b]«Abandonado»[/b] – {i:journal}: Versículo 9. De lo contrario, sigue leyendo:\nTras el largo viaje, ver tu hogar debería ser un alivio. Pero solo te causa dolor. Incluso desde lejos, te das cuenta de que el destino no ha sido amable con Cuanacht y sus habitantes. La tierra se ha deformado y se ha abierto. Los monumentos y las casas de tu infancia han desaparecido. El menhir pende precariamente al borde del abismo.\nTras varias oleadas de emigración y la matanza del encuentro en Mediocamino, solo quedan unas pocas docenas de personas. A medida que te acercas, ves sus miradas cansadas y tristes. «Veo que recibiste nuestro mensaje», dice uno de ellos. «¿Has venido a ayudarnos?».\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y las cartas de Secreto [b]«Rituales de Menhir»[/b] (11) y [b]«Herramientas del Escultor»[/b] (58). Paga (por cada jugador de la partida) 1 de {i:energy}, 1 de {i:health}, 2 de {r:Riqueza} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 8 (-1 por cada jugador).",
+    "it": "⇨ [b]Se hai[/b] la parte 1 dello status [b]«Abbandonati»[/b] – {i:journal}: verso 9. Altrimenti, continua a leggere:\nDopo il lungo viaggio, vedere la tua casa dovrebbe essere un sollievo. Ma ti procura solo dolore. Anche da lontano ti rendi conto che il destino non è stato benevolo con Cuanacht e i suoi abitanti. La terra si è deformata e spaccata. I monumenti e le case della tua infanzia sono scomparsi. Il menhir pende precariamente sull'orlo dell'abisso.\nDopo varie ondate di emigrazione e la strage del raduno di Halfway, restano solo poche dozzine di persone. Mentre ti avvicini, vedi i loro sguardi stanchi e tristi. «Vedo che hai ricevuto il nostro messaggio», dice uno di loro. «Sei venuto ad aiutarci?».\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e le carte Segreto [b]«Riti del Menhir»[/b] (11) e [b]«Attrezzi dello Scultore»[/b] (58). Paga (per ogni giocatore della partita) 1 {i:energy}, 1 {i:health}, 2 {r:Ricchezza} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 8 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11,
+     58
+    ],
+    "paga_per_giocatore": {
+     "energy": 1,
+     "health": 1,
+     "Ricchezza": 2,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 7,
+     "2": 6,
+     "3": 5,
+     "4": 4
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.28,
+     0.115,
+     0.74,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.295,
+     0.93,
+     0.695
+    ],
+    "menhir": [
+     0.06,
+     0.775,
+     0.94,
+     0.955
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/cuernos_del_sur_30901.webp",
+   "tipo": "luogo",
+   "numero": 120,
+   "antico": null,
+   "nome": {
+    "es": "Cuernos del Sur",
+    "it": "Corni del Sud"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 118,
+    "sinistra": null,
+    "destra": 108,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Ayuda a los guardas",
+     "it": "Aiutare le guardie"
+    },
+    "es": "Obtén 1 de {r:Comida} (una vez al Día)",
+    "it": "Ottieni 1 {r:Cibo} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Un faro para los antiguos marineros que se dirigían a la isla.",
+    "it": "Un faro per gli antichi marinai diretti all'isola."
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.2,
+     0.71,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.25,
+     0.695,
+     0.8,
+     0.78
+    ],
+    "ambientazione": [
+     0.24,
+     0.835,
+     0.76,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Un abrupto acantilado divide la costa abatida por el viento. Ante ti, el mar se estrella con fuerza contra dos rocas. ¡Los Cuernos del Sur! Estas torres hermanas resistieron las tormentas que golpearon el borde sur de la isla durante seis largos siglos hasta que una de ellas se partió por la mitad durante un ciclón especialmente violento.\nLos puentes de cuerda que conectan las torres con el interior de la isla están viejos y mojados por la bruma marina, pero hay una luz cálida en una de las ventanas.\n{i:journal}",
+    "it": "Una scogliera scoscesa divide la costa sferzata dal vento. Davanti a te, il mare si infrange con violenza contro due rocce. I Corni del Sud! Queste torri gemelle hanno resistito alle tempeste che hanno colpito il margine meridionale dell'isola per sei lunghi secoli, finché una di esse si è spezzata a metà durante un ciclone particolarmente violento.\nI ponti di corda che collegano le torri all'entroterra dell'isola sono vecchi e bagnati dalla foschia marina, ma c'è una luce calda in una delle finestre.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.31,
+     0.115,
+     0.71,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.635,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessuna Chiave a sinistra e in basso."
+  },
+  {
+   "img": "carte/mazzo/flota_abandonada_30900.webp",
+   "tipo": "luogo",
+   "numero": 119,
+   "antico": null,
+   "nome": {
+    "es": "Flota Abandonada",
+    "it": "Flotta Abbandonada"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 117,
+    "sinistra": null,
+    "destra": null,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 4,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Registra los restos de barcos",
+     "it": "Perquisire i relitti delle navi"
+    },
+    "es": "Obtén 1 de {i:terror}, 1 de {r:Magia} y 1 de {r:Exp} (una vez al Día)",
+    "it": "Ottieni 1 {i:terror}, 1 {r:Magia} e 1 {r:Esp} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Se dice que estos barcos solían traer gente a Ávalon. Ahora yacen aquí, podridos y destrozados.",
+    "it": "Si dice che queste navi portassero gente ad Avalon. Ora giacciono qui, marce e distrutte."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.2,
+     0.74,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.27,
+     0.685,
+     0.9,
+     0.795
+    ],
+    "ambientazione": [
+     0.13,
+     0.835,
+     0.86,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Arturo llegó a Ávalon a bordo de tres barcos, cargados de caballeros, soldados y colonos. Tras la conquista, llegaron más y más embarcaciones, hasta que esta cala protegida se inundó de cascos quebrados, unidos por cadenas.\nMuchos de estos barcos se hundieron en el mar hace mucho, y el fuerte solitario que vigila la flota preside ahora un campo de restos podridos con un árbol solitario que se eleva desde el agua. La copa de este extraño árbol resplandece debido a runas de magia ancestral.\n{i:journal}",
+    "it": "Artù giunse ad Avalon a bordo di tre navi, cariche di cavalieri, soldati e coloni. Dopo la conquista arrivarono sempre più imbarcazioni, finché questa cala riparata non si riempì di scafi spezzati, uniti da catene.\nMolte di queste navi sono affondate in mare tanto tempo fa, e il forte solitario che sorveglia la flotta domina ora un campo di relitti marci con un albero solitario che si innalza dall'acqua. La chioma di questo strano albero risplende di rune di magia ancestrale.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.115,
+     0.73,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.635,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Il testo spagnolo dice «Registra» (perquisisci) i resti delle navi. Solo Chiave 117 in alto; il glossario scrive «Flotta Abbandonada» (refuso dell'app?)."
+  },
+  {
+   "img": "carte/mazzo/estampida_30808.webp",
+   "tipo": "luogo",
+   "numero": 118,
+   "antico": null,
+   "nome": {
+    "es": "Estampida",
+    "it": "Stampede"
+   },
+   "sigilli": [
+    "dream",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 116,
+    "sinistra": 141,
+    "destra": 103,
+    "giu": 120
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Ayuda a los refugiados",
+     "it": "Aiutare i profughi"
+    },
+    "es": "Paga 1 de {r:Comida} y obtén 1 de {r:Rep}",
+    "it": "Paga 1 {r:Cibo} e ottieni 1 {r:Rep}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Las llanuras sagradas están repletas de refugiados del oeste.",
+    "it": "Le pianure sacre sono gremite di profughi dall'ovest."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.24,
+     0.695,
+     0.8,
+     0.78
+    ],
+    "ambientazione": [
+     0.24,
+     0.835,
+     0.76,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "La mayor llanura de la isla ha servido desde hace mucho como una forma de honrar a los dioses. Fue el propio Merlín, uno de los legendarios archidruidas, quien ayudó a cavar la extensa red de zanjas llenas de caliza blanca, creando signos sagrados visibles solo desde el cielo.\nLa llanura solía ser un lugar sagrado, pero ahora tiene ecos de sonidos de animales asustados y lamentos humanos. Los supervivientes del borde occidental de Ávalon huyen cruzando la llanura, hacia Vallelejano, Cuanacht o Nueva Camelot.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b], el Secreto [b]«Rituales de Menhir»[/b] (11) y la carta de Secreto 7. Paga (por cada jugador de la partida) 2 de {i:energy}, 2 de {r:Comida} y 1 de {r:Riqueza}: coloca un nuevo Menhir en esta Localización y pon su dial en 5 (1-2 jugadores), 4 (3 jugadores) o 3 (4 jugadores).",
+    "it": "La più grande pianura dell'isola è servita a lungo come modo per onorare gli dèi. Fu lo stesso Merlino, uno dei leggendari arcidruidi, ad aiutare a scavare l'estesa rete di fossati riempiti di calcare bianco, creando segni sacri visibili solo dal cielo.\nUn tempo la pianura era un luogo sacro, ma ora riecheggia di versi di animali spaventati e di lamenti umani. I sopravvissuti del margine occidentale di Avalon fuggono attraversando la pianura, verso Farshire, Cuanacht o Camelot.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b], il Segreto [b]«Riti del Menhir»[/b] (11) e la carta Segreto 7. Paga (per ogni giocatore della partita) 2 {i:energy}, 2 {r:Cibo} e 1 {r:Ricchezza}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 5 (1-2 giocatori), 4 (3 giocatori) o 3 (4 giocatori)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11,
+     7
+    ],
+    "paga_per_giocatore": {
+     "energy": 2,
+     "Cibo": 2,
+     "Ricchezza": 1
+    },
+    "quadrante": {
+     "1": 5,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.38,
+     0.115,
+     0.63,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.4,
+     0.93,
+     0.675
+    ],
+    "menhir": [
+     0.06,
+     0.775,
+     0.94,
+     0.955
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/primer_hogar_30807.webp",
+   "tipo": "luogo",
+   "numero": 117,
+   "antico": null,
+   "nome": {
+    "es": "Primer Hogar",
+    "it": "Prima Tenuta Rurale"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 115,
+    "sinistra": 107,
+    "destra": 140,
+    "giu": 119
+   },
+   "immediata": {
+    "es": "Roba un Encuentro púrpura al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro viola quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "El primer asentamiento establecido en Ávalon por los conquistadores. Ahora está en ruinas y abandonado, al igual que su menhir.",
+    "it": "Il primo insediamento fondato ad Avalon dai conquistatori. Ora è in rovina e abbandonato, proprio come il suo menhir."
+   },
+   "aree": {
+    "titolo": [
+     0.32,
+     0.2,
+     0.7,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.29,
+     0.685,
+     0.76,
+     0.775
+    ],
+    "ambientazione": [
+     0.17,
+     0.805,
+     0.83,
+     0.885
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "Cuando los humanos pisaron Ávalon por primera vez, ocuparon un pequeño terreno, arrebatado a la Rareza por el druida de Arturo, Merlín. Rodeados de horrores y poderes ancestrales, erigieron el fuerte circular de Tintagel y sobrevivieron tres largos años dentro de sus murallas, repeliendo los ataques e ideando formas de viajar al interior de la isla.\nTras la conquista, solo quedó un pequeño asentamiento junto al fuerte. Por desgracia, el menhir local, al ser el más antiguo, también fue el primero en apagarse.\n⇨ [b]Si tienes[/b] la parte 2 del Estado [b]«Vestigios»[/b] – {i:journal}: Versículo 19\n⇨ De lo contrario – {i:journal}",
+    "it": "Quando gli umani misero piede per la prima volta ad Avalon, occuparono un piccolo appezzamento di terra, strappato all'Anomalia dal druido di Artù, Merlino. Circondati da orrori e poteri ancestrali, eressero il forte circolare di Tintagel e sopravvissero tre lunghi anni entro le sue mura, respingendo gli attacchi e ideando modi per viaggiare verso l'interno dell'isola.\nDopo la conquista, accanto al forte rimase solo un piccolo insediamento. Purtroppo il menhir locale, essendo il più antico, fu anche il primo a spegnersi.\n⇨ [b]Se hai[/b] la parte 2 dello status [b]«Resti»[/b] – {i:journal}: verso 19\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.34,
+     0.115,
+     0.68,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.555,
+     0.93,
+     0.975
+    ]
+   },
+   "dubbi": "Status «Vestigios» → «Resti» (corrispondenza presunta dal glossario status)."
+  },
+  {
+   "img": "carte/mazzo/vallelejano_30806.webp",
+   "tipo": "luogo",
+   "numero": 116,
+   "antico": null,
+   "nome": {
+    "es": "Vallelejano",
+    "it": "Farshire"
+   },
+   "sigilli": [
+    "dream",
+    "settlement_enemy"
+   ],
+   "direzioni": {
+    "su": 111,
+    "sinistra": 139,
+    "destra": 106,
+    "giu": 118
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Compra amuletos druídicos",
+     "it": "Comprare amuleti druidici"
+    },
+    "es": "Paga 1 de {r:Riqueza} y obtén 1 de {r:Magia}",
+    "it": "Paga 1 {r:Ricchezza} e ottieni 1 {r:Magia}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Vallelejano está resguardado del sol y la lluvia por la enorme roca que lo cubre precariamente.",
+    "it": "Farshire è riparata dal sole e dalla pioggia dall'enorme roccia che la sovrasta precariamente."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.62,
+     0.74,
+     0.68
+    ],
+    "azione": [
+     0.22,
+     0.72,
+     0.86,
+     0.8
+    ],
+    "ambientazione": [
+     0.16,
+     0.835,
+     0.83,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "⇨ [b]Si tienes[/b] la parte 3 del Estado [b]«Caído y perdido»[/b] – {i:journal}: Versículo 13. De lo contrario, sigue leyendo:\nOcupando una franja de tierra entre los impenetrables muros de Tuathán y el mar, Vallelejano ha sido siempre un importante epicentro comercial y la más próspera de las aldeas. Creyendo que la Madre de Todos es la responsable de su suerte, los habitantes de Vallelejano construyeron su ciudad a la sombra de su sagrado dolmen.\nAl acercarte al pueblo, observas patrullas armadas, vigilancias dobles y un largo estandarte de guerra, ondeando sobre el Gran Salón en la parte superior del pueblo.\n{i:journal}",
+    "it": "⇨ [b]Se hai[/b] la parte 3 dello status [b]«Sconfitti e Caduti»[/b] – {i:journal}: verso 13. Altrimenti, continua a leggere:\nOccupando una striscia di terra tra le impenetrabili mura di Tuathan e il mare, Farshire è sempre stata un importante centro commerciale e il più prospero dei villaggi. Convinti che la Madre di Tutti sia l'artefice della loro fortuna, gli abitanti di Farshire costruirono la loro città all'ombra del suo sacro dolmen.\nAvvicinandoti al villaggio, noti pattuglie armate, turni di guardia raddoppiati e un lungo stendardo di guerra che sventola sopra la Grande Sala nella parte alta del villaggio.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.37,
+     0.115,
+     0.65,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.575,
+     0.93,
+     0.91
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/escalinata_del_titan_30805.webp",
+   "tipo": "luogo",
+   "numero": 115,
+   "antico": null,
+   "nome": {
+    "es": "Escalinata del Titán",
+    "it": "Gradini dei Titani"
+   },
+   "sigilli": [
+    "menhir"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": 114,
+    "destra": 138,
+    "giu": 117
+   },
+   "immediata": {
+    "es": "Explora al entrar en esta Localización (esta Exploración es gratuita)",
+    "it": "Esplora quando entri in questo Luogo (questa Esplorazione è gratuita)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "En su camino hacia Nueva Camelot, los peregrinos solían dejar pequeñas piedras debajo de uno de los acantilados. Hoy día, las rampas de guijarros hacen que el camino sea más rápido, pero no mucho más seguro.",
+    "it": "Sulla strada per Camelot, i pellegrini erano soliti lasciare piccole pietre sotto una delle scogliere. Oggi le rampe di ciottoli rendono il cammino più rapido, ma non molto più sicuro."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.2,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.25,
+     0.675,
+     0.81,
+     0.735
+    ],
+    "ambientazione": [
+     0.18,
+     0.765,
+     0.82,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "Estas terrazas y escalones, más aptos para gigantes que para hombres, ofrecen vistas impresionantes de la isla (y la posibilidad de una caída mortal). Eran muy populares entre los ermitaños que vivían en sus numerosas cuevas.\nEn una de las terrazas más altas se encuentra el templo de la Madre de Todos, asediado ahora por un grupo de hombres armados, que maldicen y construyen piras junto a sus inclinadas paredes.\n⇨ [b]Si no hay ningún dial[/b] en esta carta de Localización y [b]no tienes[/b] el Estado [b]«Santuario seguro»[/b], coloca aquí un dial. Pon una ficha de Tiempo en el dial, con valor 3. Disminuye el número del dial al Comienzo de cada Día.\n⇨ Si el dial de esta Localización se agota, o si se descarta la Localización, retira esta carta de Localización y sustitúyela por la número [b]125[/b].\n⇨ Después – {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 2 de {i:energy} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 8 (-1 por cada jugador).",
+    "it": "Queste terrazze e gradini, più adatti a giganti che a uomini, offrono viste impressionanti sull'isola (e la possibilità di una caduta mortale). Erano molto apprezzati dagli eremiti che vivevano nelle sue numerose grotte.\nSu una delle terrazze più alte si trova il tempio della Madre di Tutti, ora assediato da un gruppo di uomini armati che imprecano e costruiscono pire accanto alle sue pareti inclinate.\n⇨ [b]Se non c'è alcun Quadrante[/b] su questa carta Luogo e [b]non hai[/b] lo status [b]«Santuario Sicuro»[/b], piazza qui un Quadrante. Metti un Gettone Tempo sul Quadrante, con valore 3. Diminuisci il numero del Quadrante all'Inizio di ogni Giornata.\n⇨ Se il Quadrante di questo Luogo si esaurisce, o se il Luogo viene scartato, rimuovi questa carta Luogo e sostituiscila con il numero [b]125[/b].\n⇨ Poi – {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 2 {i:energy} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 8 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 2,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 7,
+     "2": 6,
+     "3": 5,
+     "4": 4
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.115,
+     0.74,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.245,
+     0.93,
+     0.745
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.955
+    ]
+   },
+   "dubbi": "Retro: timer con Quadrante a 3 (Gettone Tempo) che porta alla sostituzione con il 125; il motore deve gestirlo all'Esplorazione."
+  },
+  {
+   "img": "carte/mazzo/raizespesa_30804.webp",
+   "tipo": "luogo",
+   "numero": 114,
+   "antico": null,
+   "nome": {
+    "es": "Raízespesa",
+    "it": "Tangleroot"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": 113,
+    "destra": 115,
+    "giu": 107
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Recolecta comida",
+     "it": "Raccogliere cibo"
+    },
+    "es": "Obtén 2 de {r:Comida} y roba un Encuentro verde",
+    "it": "Ottieni 2 {r:Cibo} e pesca un Incontro verde",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Durante muchos años, los viajeros han trabajado para convertir este descuidado desfiladero en un sendero. A pesar de su esfuerzo, sigue siendo un laberinto confuso.",
+    "it": "Per molti anni i viaggiatori hanno lavorato per trasformare questa gola trascurata in un sentiero. Nonostante i loro sforzi, resta un labirinto intricato."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.16,
+     0.68,
+     0.85,
+     0.765
+    ],
+    "ambientazione": [
+     0.19,
+     0.785,
+     0.81,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "El bosque más antiguo y grande de Ávalon está dividido en dos por un profundo desfiladero. Las raíces de enormes árboles sobresalen de sus paredes y convierten el sendero en un peligroso laberinto que conecta el sur y el norte de la isla. Tablas de madera, puentes colgantes y faroles, cuidados por la hermandad jurada de los guardas de los senderos, hacen este camino más accesible.\nAl entrar, oyes gritos humanos y de animales resonando en las profundidades del desfiladero.\n{i:journal}",
+    "it": "La foresta più antica e vasta di Avalon è divisa in due da una profonda gola. Le radici di alberi enormi sporgono dalle sue pareti e trasformano il sentiero in un pericoloso labirinto che collega il sud e il nord dell'isola. Assi di legno, ponti sospesi e lanterne, curati dalla confraternita giurata delle guardie dei sentieri, rendono questo cammino più accessibile.\nEntrando, senti grida umane e di animali che riecheggiano nelle profondità della gola.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.38,
+     0.115,
+     0.63,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.635,
+     0.93,
+     0.91
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/lago_del_espejo_30803.webp",
+   "tipo": "luogo",
+   "numero": 113,
+   "antico": null,
+   "nome": {
+    "es": "Lago del Espejo",
+    "it": "Lago Speculare"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 114,
+    "giu": 102
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Descansa junto al lago",
+     "it": "Riposare presso il lago"
+    },
+    "es": "Obtén 1 de {i:energy} y 1 de {i:health}, pierde 1 de {i:terror} (una vez al Día)",
+    "it": "Ottieni 1 {i:energy} e 1 {i:health}, perdi 1 {i:terror} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Como si un pedazo del cielo hubiera caído a la tierra. Te preguntas si ELLA sigue acechando en las frías y oscuras profundidades…",
+    "it": "Come se un pezzo di cielo fosse caduto sulla terra. Ti chiedi se LEI sia ancora in agguato nelle fredde e oscure profondità…"
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.2,
+     0.72,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.18,
+     0.68,
+     0.84,
+     0.79
+    ],
+    "ambientazione": [
+     0.17,
+     0.82,
+     0.83,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b] o el Estado [b]«Matricida»[/b], retira esta carta de Localización y sustitúyela por la [b]Localización 122[/b]. De lo contrario, sigue leyendo:\nEl cielo y la reflectante superficie de este sereno lago de las montañas se funden ante tus ojos. Te invade una sensación de serenidad. Te sientes tentado de tumbarte en la arenosa orilla y quedarte allí hasta el fin del mundo. Entonces, las historias del extraño ser que vive en las profundidades del lago resuenan en tu mente, haciéndote volver a la tierra.\n{i:journal}",
+    "it": "⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b] o lo status [b]«Matricidio»[/b], rimuovi questa carta Luogo e sostituiscila con il [b]Luogo 122[/b]. Altrimenti, continua a leggere:\nIl cielo e la superficie riflettente di questo sereno lago di montagna si fondono davanti ai tuoi occhi. Ti pervade una sensazione di serenità. Sei tentato di sdraiarti sulla riva sabbiosa e restare lì fino alla fine del mondo. Poi le storie sullo strano essere che vive nelle profondità del lago ti risuonano nella mente, riportandoti con i piedi per terra.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.32,
+     0.115,
+     0.68,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.62,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Status «Matricida» → «Matricidio» (glossario status)."
+  },
+  {
+   "img": "carte/mazzo/valle_sangriento_30802.webp",
+   "tipo": "luogo",
+   "numero": 112,
+   "antico": null,
+   "nome": {
+    "es": "Valle Sangriento",
+    "it": "Valle Insanguinata"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": 132,
+    "sinistra": 111,
+    "destra": null,
+    "giu": 106
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Saquea a los caídos",
+     "it": "Saccheggiare i caduti"
+    },
+    "es": "Paga 1 de {r:Rep} u obtén 1 de {i:terror} para obtener 1 de {r:Riqueza}",
+    "it": "Paga 1 {r:Rep} oppure ottieni 1 {i:terror} per ottenere 1 {r:Ricchezza}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Los lamentos de los moribundos se entremezclan en un sordo zumbido que suena como una brisa marina y te hiela como esta lo haría.",
+    "it": "I lamenti dei moribondi si mescolano in un ronzio sordo che suona come una brezza marina e ti gela come farebbe lei."
+   },
+   "aree": {
+    "titolo": [
+     0.29,
+     0.2,
+     0.73,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.28,
+     0.685,
+     0.78,
+     0.79
+    ],
+    "ambientazione": [
+     0.15,
+     0.82,
+     0.85,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b] – {i:journal}: Versículo 4. De lo contrario, sigue leyendo:\nPuedes oler el campo de batalla mucho antes de verlo.\nTres grandes ejércitos se enfrentaron aquí, pero no sabes cuándo, ni por qué (ni quién ganó). Quizá los druidas que vagan por el campo de batalla arrojen más luz al asunto.\nLos guerreros corrientes están a merced de los cuervos, pero hay alguien que está recibiendo un trato preferencial: ves a lo lejos una gran procesión fúnebre, reunida alrededor de una pira solitaria.\n{i:journal}",
+    "it": "⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b] – {i:journal}: verso 4. Altrimenti, continua a leggere:\nSenti l'odore del campo di battaglia molto prima di vederlo.\nTre grandi eserciti si sono scontrati qui, ma non sai quando, né perché (né chi abbia vinto). Forse i druidi che vagano per il campo di battaglia potranno far luce sulla faccenda.\nI guerrieri comuni sono alla mercé dei corvi, ma qualcuno sta ricevendo un trattamento di riguardo: in lontananza vedi un grande corteo funebre, riunito attorno a una pira solitaria.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.3,
+     0.11,
+     0.71,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.58,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessun sigillo; nessuna Chiave a destra."
+  },
+  {
+   "img": "carte/mazzo/pie_de_la_muralla_30801.webp",
+   "tipo": "luogo",
+   "numero": 111,
+   "antico": null,
+   "nome": {
+    "es": "Pie de la Muralla",
+    "it": "Sottovallo"
+   },
+   "sigilli": [
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 131,
+    "sinistra": null,
+    "destra": 112,
+    "giu": 116
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Recolecta comida",
+     "it": "Raccogliere cibo"
+    },
+    "es": "Obtén 2 de {r:Comida} y roba un Encuentro verde",
+    "it": "Ottieni 2 {r:Cibo} e pesca un Incontro verde",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Seiscientos años después de la caída de los Primeros Moradores, las murallas de Tuathán, su capital, todavía atraviesan la isla.",
+    "it": "Seicento anni dopo la caduta dei Predecessori, le mura di Tuathan, la loro capitale, attraversano ancora l'isola."
+   },
+   "aree": {
+    "titolo": [
+     0.29,
+     0.195,
+     0.72,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "azione": [
+     0.16,
+     0.73,
+     0.85,
+     0.81
+    ],
+    "ambientazione": [
+     0.17,
+     0.815,
+     0.83,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "El muro se eleva como una oscura nube sobre el bosque de árboles dispersos. Donde quiera que vayas, su perturbadora superficie sigue atrayendo tu mirada, con su textura de hueso deformado. Hay muchas aberturas en ella. ¿Podría alguna conducir hacia las legendarias riquezas de Tuathán?\nPor suerte, a las criaturas salvajes no parece importarles su majestuosa presencia. Las arboledas y los claros están llenos de presas. A lo lejos, puedes ver un grupo de viajeros arrastrando trabajosamente sus carros por la maleza.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 2 de {i:energy}, 1 de {r:Comida} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 7 (-1 por cada jugador).",
+    "it": "Il muro si innalza come una nube scura sopra la foresta dagli alberi radi. Ovunque tu vada, la sua superficie inquietante continua ad attirare il tuo sguardo, con la sua consistenza di osso deformato. Ci sono molte aperture. Potrebbe qualcuna condurre alle leggendarie ricchezze di Tuathan?\nPer fortuna, alle creature selvatiche la sua maestosa presenza non sembra importare. I boschetti e le radure sono pieni di prede. In lontananza vedi un gruppo di viaggiatori che trascina a fatica i propri carri tra la boscaglia.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 2 {i:energy}, 1 {r:Cibo} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 7 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 2,
+     "Cibo": 1,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.11,
+     0.72,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.09
+    ],
+    "testo": [
+     0.08,
+     0.43,
+     0.93,
+     0.71
+    ],
+    "menhir": [
+     0.06,
+     0.79,
+     0.94,
+     0.95
+    ]
+   },
+   "dubbi": "Nessuna Chiave a sinistra."
+  },
+  {
+   "img": "carte/mazzo/30800.webp",
+   "tipo": "luogo",
+   "numero": 110,
+   "antico": 108,
+   "nome": {
+    "es": "Bosque de los Gusanos Encantado",
+    "it": "Grubwood Infestata"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 103,
+    "sinistra": 120,
+    "destra": 105,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Cocina los gusanos",
+     "it": "Cucinare i vermi"
+    },
+    "es": "Obtén 1 de {i:terror} y 1 de {r:Comida}",
+    "it": "Ottieni 1 {i:terror} e 1 {r:Cibo}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "La carne de los gruesos gusanos que trepan por los árboles desplomados es acre y pegajosa. El sonido que hacen cuando los echas al agua hirviendo recuerda al chillido de un niño.",
+    "it": "La carne dei grossi vermi che si arrampicano sugli alberi abbattuti è acre e appiccicosa. Il suono che fanno quando li getti nell'acqua bollente ricorda lo strillo di un bambino."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.19,
+     0.75,
+     0.25
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.66,
+     0.185
+    ],
+    "azione": [
+     0.27,
+     0.69,
+     0.76,
+     0.775
+    ],
+    "ambientazione": [
+     0.14,
+     0.81,
+     0.86,
+     0.92
+    ]
+   },
+   "retro_testo": {
+    "es": "Incluso a plena luz del día, el Bosque de los Gusanos no es un lugar agradable. Sus viejos árboles se inclinan unos hacia otros como susurrantes brujas. Cadenas viejas, atadas a las copas de los árboles, resuenan con cada soplo de viento. El suelo tiene un fétido olor y está empapado de una extraña sustancia.\nSigues pensando en la criatura que asustaste en tu primera visita. ¿Es posible que alguien viva en este infecto lugar?\n{i:journal}",
+    "it": "Anche in pieno giorno, Grubwood non è un luogo piacevole. I suoi vecchi alberi si chinano gli uni verso gli altri come streghe che bisbigliano. Vecchie catene, legate alle chiome degli alberi, risuonano a ogni soffio di vento. Il terreno ha un odore fetido ed è impregnato di una strana sostanza.\nContinui a pensare alla creatura che hai spaventato durante la tua prima visita. È possibile che qualcuno viva in questo luogo infetto?\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.25,
+     0.115,
+     0.77,
+     0.17
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.69,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Immagine senza nome TTS (30800.webp): è il Luogo 110 «Bosque de los Gusanos Encantado» (antico 108). Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/asilo_de_la_isla_30708.webp",
+   "tipo": "luogo",
+   "numero": 109,
+   "antico": null,
+   "nome": {
+    "es": "Asilo de la Isla",
+    "it": "Casa di Ricovero sull'Isola"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 104,
+    "sinistra": null,
+    "destra": null,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Ritos curativos",
+     "it": "Riti curativi"
+    },
+    "es": "Paga 1 de {r:Riqueza} y obtén 3 de {i:health}",
+    "it": "Paga 1 {r:Ricchezza} e ottieni 3 {i:health}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "El primer lugar de esta isla que pisaron los humanos es ahora donde vienen a acabar sus días cuando enferman.",
+    "it": "Il primo luogo di quest'isola calpestato dagli umani è ora quello dove vengono a finire i loro giorni quando si ammalano."
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.2,
+     0.7,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.24,
+     0.695,
+     0.77,
+     0.78
+    ],
+    "ambientazione": [
+     0.22,
+     0.82,
+     0.78,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "Las olas rompen contra el casco. Un silencioso hombre encapuchado te conduce en su barco a una isla apartada. El pequeño y oscuro bosque de sauces está rodeado por una antigua necrópolis excavada en la ladera de la montaña.\nSabes que tienen a los enfermos en profundas y oscuras cuevas, y aun así te sientes temeroso al pisar la orilla. Unos monjes sombríos, los guardianes de este lugar, inspeccionan tu cuerpo a pesar de tu oposición. Solo entonces acceden a escucharte.\n⇨ [b]Si tienes[/b] la carta de Secreto 66 – {i:journal}: Versículo 9\n⇨ [b]Si tienes[/b] el Estado [b]«Rastreador»[/b] y un dial representando a la arquera – {i:journal}: Versículo 11\n⇨ De lo contrario – {i:journal}",
+    "it": "Le onde si infrangono contro lo scafo. Un silenzioso uomo incappucciato ti conduce con la sua barca a un'isola appartata. Il piccolo e cupo bosco di salici è circondato da un'antica necropoli scavata nel fianco della montagna.\nSai che tengono i malati in grotte profonde e buie, eppure ti senti intimorito nel mettere piede sulla riva. Dei monaci tetri, i guardiani di questo luogo, ispezionano il tuo corpo nonostante la tua opposizione. Solo allora acconsentono ad ascoltarti.\n⇨ [b]Se hai[/b] la carta Segreto 66 – {i:journal}: verso 9\n⇨ [b]Se hai[/b] lo status [b]«Battitore di Piste»[/b] e un Quadrante che rappresenta l'arciera – {i:journal}: verso 11\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.33,
+     0.11,
+     0.69,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.575,
+     0.93,
+     0.975
+    ]
+   },
+   "dubbi": "Status «Rastreador» reso con «Battitore di Piste» (corrispondenza presunta). Solo Chiave 104 in alto."
+  },
+  {
+   "img": "carte/mazzo/bosque_de_los_gusanos_30707.webp",
+   "tipo": "luogo",
+   "numero": 108,
+   "antico": null,
+   "nome": {
+    "es": "Bosque de los Gusanos",
+    "it": "Grubwood"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": 103,
+    "sinistra": 120,
+    "destra": 105,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Explora al entrar en esta Localización (esta Exploración es gratuita)",
+    "it": "Esplora quando entri in questo Luogo (questa Esplorazione è gratuita)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Este bosque alimentó a los colonos en tiempos de necesidad. Muchos creen que se llama así por los gusanos que trepan por sus árboles desplomados.",
+    "it": "Questa foresta ha sfamato i coloni nei momenti di bisogno. Molti credono che si chiami così per i vermi che si arrampicano sui suoi alberi abbattuti."
+   },
+   "aree": {
+    "titolo": [
+     0.25,
+     0.195,
+     0.76,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "immediata": [
+     0.25,
+     0.7,
+     0.81,
+     0.76
+    ],
+    "ambientazione": [
+     0.15,
+     0.815,
+     0.85,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "Incluso a plena luz del día, el Bosque de los Gusanos no es un lugar agradable. Sus viejos árboles se inclinan unos hacia otros como susurrantes brujas. Cadenas viejas, atadas a las copas de los árboles, resuenan con cada soplo de viento. El suelo tiene un fétido olor y está empapado de una extraña sustancia.\nAl inspeccionarla, una figura encapuchada que te observa tras los árboles te sorprende. Su capa deshilachada se arquea hacia arriba en su espalda, como si cubriera un par de alas. Cuando se da cuenta de que le has visto, huye.\nIntrigado, la persigues, pero al cabo de un rato desaparece entre los nudosos árboles. Cansado, te apoyas en uno de los troncos, para darte cuenta de que está totalmente cubierto de gusanos blancos y gruesos…\n⇨ Retira esta carta de Localización y sustitúyela por la [b]Localización 110[/b]. La Exploración finaliza.",
+    "it": "Anche in pieno giorno, Grubwood non è un luogo piacevole. I suoi vecchi alberi si chinano gli uni verso gli altri come streghe che bisbigliano. Vecchie catene, legate alle chiome degli alberi, risuonano a ogni soffio di vento. Il terreno ha un odore fetido ed è impregnato di una strana sostanza.\nMentre la esamini, ti sorprende una figura incappucciata che ti osserva da dietro gli alberi. Il suo mantello sfilacciato si inarca verso l'alto sulla schiena, come se coprisse un paio di ali. Quando si accorge che l'hai vista, fugge.\nIncuriosito, la insegui, ma dopo un po' scompare tra gli alberi nodosi. Stanco, ti appoggi a uno dei tronchi, solo per accorgerti che è completamente coperto di grossi vermi bianchi…\n⇨ Rimuovi questa carta Luogo e sostituiscila con il [b]Luogo 110[/b]. L'Esplorazione termina."
+   },
+   "retro_aree": {
+    "titolo": [
+     0.25,
+     0.115,
+     0.76,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.48,
+     0.93,
+     0.955
+    ]
+   },
+   "dubbi": "Nessun sigillo; nessuna Chiave in basso. Il retro non rimanda al Diario: sostituisce subito il Luogo con il 110."
+  },
+  {
+   "img": "carte/mazzo/albura_30706.webp",
+   "tipo": "luogo",
+   "numero": 107,
+   "antico": null,
+   "nome": {
+    "es": "Albura",
+    "it": "Sbiancata"
+   },
+   "sigilli": [
+    "dream",
+    "settlement_enemy",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 114,
+    "sinistra": 102,
+    "destra": 117,
+    "giu": 104
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Comercia con los habitantes",
+     "it": "Commerciare con gli abitanti"
+    },
+    "es": "Paga 1 de {r:Comida} y obtén 1 de {r:Riqueza}",
+    "it": "Paga 1 {r:Cibo} e ottieni 1 {r:Ricchezza}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Hace tiempo, este lugar tuvo otro nombre y un concurrido mercado, pero a día de hoy, nadie va allí.",
+    "it": "Tempo fa questo luogo aveva un altro nome e un mercato affollato, ma oggi nessuno ci va più."
+   },
+   "aree": {
+    "titolo": [
+     0.37,
+     0.2,
+     0.64,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.625,
+     0.74,
+     0.685
+    ],
+    "azione": [
+     0.21,
+     0.725,
+     0.84,
+     0.8
+    ],
+    "ambientazione": [
+     0.13,
+     0.84,
+     0.83,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "El agujero está aquí, como siempre, abierto en mitad de Albura. El liquen blanco que le dio al pueblo su nuevo nombre parece surgir de él. Cubre las paredes de los establos cercanos como un denso manto. Solo al acercarse a él puede verse que en realidad son pequeños y brillantes cristales, como la sal marina de los postes de madera de un muelle. Al inspeccionarlo, varias personas te miran con recelo.\n⇨ [b]Si tienes[/b] el Estado [b]«El legado de Fael»[/b] y [b]no tienes[/b] la parte 2 del Estado [b]«Tesoros ocultos»[/b] – {i:journal}: Versículo 10\n⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b] y [b]no tienes[/b] la parte 4 del Estado [b]«Remedio»[/b] – {i:journal}: Versículo 14\n⇨ [b]Si eres Ailei[/b] (o está en tu equipo) – {i:journal}: Versículo 13\n⇨ De lo contrario – {i:journal}: Versículo 7\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 3 de {i:energy}, 1 de {i:health}, 1 de {r:Riqueza} y 1 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 9 (-1 por cada jugador).",
+    "it": "Il buco è qui, come sempre, aperto nel mezzo di Sbiancata. Il lichene bianco che ha dato al villaggio il suo nuovo nome sembra sgorgare da lì. Ricopre le pareti delle stalle vicine come un fitto manto. Solo avvicinandosi si vede che in realtà sono piccoli cristalli lucenti, come il sale marino sui pali di legno di un molo. Mentre lo esamini, diverse persone ti guardano con sospetto.\n⇨ [b]Se hai[/b] lo status [b]«Lascito di Fael»[/b] e [b]non hai[/b] la parte 2 dello status [b]«Tesori Nascosti»[/b] – {i:journal}: verso 10\n⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b] e [b]non hai[/b] la parte 4 dello status [b]«Rimedio»[/b] – {i:journal}: verso 14\n⇨ [b]Se sei Ailei[/b] (o è nella tua Compagnia) – {i:journal}: verso 13\n⇨ Altrimenti – {i:journal}: verso 7\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 3 {i:energy}, 1 {i:health}, 1 {r:Ricchezza} e 1 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 9 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 3,
+     "health": 1,
+     "Ricchezza": 1,
+     "Magia": 1
+    },
+    "quadrante": {
+     "1": 8,
+     "2": 7,
+     "3": 6,
+     "4": 5
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.4,
+     0.115,
+     0.62,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.35,
+     0.93,
+     0.755
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.955
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/tumulos_de_los_primeros_moradores_30705.webp",
+   "tipo": "luogo",
+   "numero": 106,
+   "antico": null,
+   "nome": {
+    "es": "Túmulos de los Primeros Moradores",
+    "it": "Tumuli dei Predecessori"
+   },
+   "sigilli": [
+    "dream",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 112,
+    "sinistra": 116,
+    "destra": 102,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Búsqueda del tesoro",
+     "it": "Caccia al tesoro"
+    },
+    "es": "Obtén 1 de {i:terror}, 1 de {r:Riqueza} y lanza un dado. Si sale un 6, {i:journal}: Versículo 4.",
+    "it": "Ottieni 1 {i:terror}, 1 {r:Ricchezza} e lancia un dado. Se esce 6, {i:journal}: verso 4.",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Desde que los antiguos dueños de la isla se fueron, no queda nadie que proteja sus reliquias funerarias. Probablemente.",
+    "it": "Da quando gli antichi padroni dell'isola se ne sono andati, non è rimasto nessuno a proteggere le loro reliquie funerarie. Probabilmente."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.19,
+     0.75,
+     0.25
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.2,
+     0.685,
+     0.8,
+     0.795
+    ],
+    "ambientazione": [
+     0.21,
+     0.82,
+     0.79,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b], retira esta carta de Localización y sustitúyela por la Localización [b]123[/b]. De lo contrario, sigue leyendo:\nLos túmulos cubiertos de niebla resuenan con el sonido de las palas y los picos. Hace tiempo, solo los cazadores de tesoros más locos trabajaban aquí. Pero, a medida que emergía más y más oro de la tierra, estos cementerios se convirtieron en una mina corriente.\nO «casi» corriente: la gente aún desaparece o se vuelve loca al venir.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y la carta de Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 1 de {i:energy}, 1 de {i:health}, 2 de {r:Riqueza} y 1 de {r:Comida}: coloca un nuevo Menhir en esta Localización y pon su dial en 9 (-1 por cada jugador).",
+    "it": "⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b], rimuovi questa carta Luogo e sostituiscila con il Luogo [b]123[/b]. Altrimenti, continua a leggere:\nI tumuli avvolti dalla nebbia risuonano del rumore di pale e picconi. Un tempo qui lavoravano solo i cacciatori di tesori più folli. Ma man mano che dalla terra emergeva sempre più oro, questi cimiteri sono diventati una miniera qualunque.\nO «quasi» qualunque: la gente sparisce ancora o impazzisce venendo qui.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e la carta Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 1 {i:energy}, 1 {i:health}, 2 {r:Ricchezza} e 1 {r:Cibo}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 9 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 1,
+     "health": 1,
+     "Ricchezza": 2,
+     "Cibo": 1
+    },
+    "quadrante": {
+     "1": 8,
+     "2": 7,
+     "3": 6,
+     "4": 5
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.11,
+     0.74,
+     0.17
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.38,
+     0.93,
+     0.69
+    ],
+    "menhir": [
+     0.06,
+     0.765,
+     0.94,
+     0.95
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/espadas_olvidadas_30704.webp",
+   "tipo": "luogo",
+   "numero": 105,
+   "antico": null,
+   "nome": {
+    "es": "Espadas Olvidadas",
+    "it": "Spade Dimenticate"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 101,
+    "sinistra": 108,
+    "destra": null,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Tienda del herrero",
+     "it": "Bottega del fabbro"
+    },
+    "es": "Paga 1 de {r:Riqueza} y roba un Objeto Fabricable",
+    "it": "Paga 1 {r:Ricchezza} e pesca un Oggetto Fabbricabile",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Presagiando su propia extinción, los Primeros Moradores ordenaron a los gigantes que empujaran a los humanos al mar. Pero, en vez de eso, abandonaron aquí sus armas.",
+    "it": "Presagendo la propria estinzione, i Predecessori ordinarono ai giganti di ricacciare gli umani in mare. Ma invece di farlo, abbandonarono qui le loro armi."
+   },
+   "aree": {
+    "titolo": [
+     0.29,
+     0.2,
+     0.72,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.16,
+     0.695,
+     0.85,
+     0.78
+    ],
+    "ambientazione": [
+     0.17,
+     0.83,
+     0.82,
+     0.935
+    ]
+   },
+   "retro_testo": {
+    "es": "Descansas un rato a la sombra de las titánicas espadas, y su olor oxidado te provoca un cosquilleo en la nariz. A unos cien metros, un viejo herrero trabaja duro, rompiendo el filo dentado de una gigantesca arma. El martillo que utiliza para quebrar este acero ancestral parece muy extraño, al igual que el sonido que hace.\n⇨ [b]Si hay una ficha de Misión aquí[/b] – {i:journal}: Versículo 14\n⇨ De lo contrario – {i:journal}",
+    "it": "Riposi un po' all'ombra delle spade titaniche, e il loro odore di ruggine ti solletica il naso. A un centinaio di metri, un vecchio fabbro lavora sodo, spezzando il filo dentellato di un'arma gigantesca. Il martello che usa per spezzare questo acciaio ancestrale sembra molto strano, così come il suono che produce.\n⇨ [b]Se qui c'è un Gettone Cerca[/b] – {i:journal}: verso 14\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.31,
+     0.115,
+     0.71,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.715,
+     0.93,
+     0.97
+    ]
+   },
+   "dubbi": "Nessuna Chiave a destra e in basso."
+  },
+  {
+   "img": "carte/mazzo/conclave_calcinado_30703.webp",
+   "tipo": "luogo",
+   "numero": 104,
+   "antico": null,
+   "nome": {
+    "es": "Cónclave Calcinado",
+    "it": "Conclave Bruciato"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 107,
+    "sinistra": 101,
+    "destra": null,
+    "giu": 109
+   },
+   "immediata": {
+    "es": "Roba un Encuentro gris al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro grigio quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "La brisa que acaricia la hierba alta de estas tierras solitarias lleva consigo el olor a carne quemada.",
+    "it": "La brezza che accarezza l'erba alta di queste terre solitarie porta con sé l'odore di carne bruciata."
+   },
+   "aree": {
+    "titolo": [
+     0.25,
+     0.2,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.26,
+     0.73,
+     0.8,
+     0.79
+    ],
+    "ambientazione": [
+     0.14,
+     0.84,
+     0.85,
+     0.895
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "No te lleva mucho tiempo encontrarlo; solo tienes que usar tu olfato. Los restos de un enorme hombre de mimbre se arrodillan en la base de un pequeño valle.\nEstuviste aquí cuando le prendieron fuego, años atrás. Era un día húmedo. El hombre de mimbre ardió, pero no se quemó. Sus víctimas, decenas de druidas agolpados, siguen dentro; sus rostros derretidos y sus barbas carbonizadas apretadas contra los barrotes, mirando hacia el cielo gris y silencioso. Apenas perceptibles, incesantes susurros parecen llenar el aire.\n⇨ [b]Si eres Gusano[/b] (o está en tu equipo) – {i:journal}: Versículo 10\n⇨ De lo contrario – {i:journal}",
+    "it": "Non ci metti molto a trovarlo; ti basta usare l'olfatto. I resti di un enorme uomo di vimini sono inginocchiati in fondo a una piccola valle.\nEri qui quando gli diedero fuoco, anni fa. Era una giornata umida. L'uomo di vimini arse, ma non si consumò. Le sue vittime, decine di druidi ammassati, sono ancora dentro; i volti sciolti e le barbe carbonizzate premuti contro le sbarre, rivolti al cielo grigio e silenzioso. Appena percettibili, sussurri incessanti sembrano riempire l'aria.\n⇨ [b]Se sei Maggot[/b] (o è nella tua Compagnia) – {i:journal}: verso 10\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.31,
+     0.115,
+     0.71,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.57,
+     0.93,
+     0.945
+    ]
+   },
+   "dubbi": "Personaggio «Gusano» reso con il nome originale «Maggot». Nessuna Chiave a destra."
+  },
+  {
+   "img": "carte/mazzo/feria_del_guerrero_30702.webp",
+   "tipo": "luogo",
+   "numero": 103,
+   "antico": null,
+   "nome": {
+    "es": "Feria del Guerrero",
+    "it": "Fiera dei Guerrieri"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": null,
+    "sinistra": 118,
+    "destra": 101,
+    "giu": 108
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 4,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Haz prácticas de combate",
+     "it": "Fare pratica di combattimento"
+    },
+    "es": "Pierde 1 de {i:health} y obtén 1 de {r:Exp} (una vez al Día)",
+    "it": "Perdi 1 {i:health} e ottieni 1 {r:Esp} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Con todo lo que ha sucedido en la isla, los guerreros diestros se han convertido en moneda de cambio.",
+    "it": "Con tutto ciò che è accaduto sull'isola, i guerrieri esperti sono diventati merce di scambio."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.2,
+     0.74,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.15,
+     0.695,
+     0.86,
+     0.78
+    ],
+    "ambientazione": [
+     0.14,
+     0.835,
+     0.86,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "El mar de puestos está inundado por los sonidos de los combates y el regateo, aunque te cuesta pasar por alto que incluso esta feria ha empequeñecido desde el año pasado.\nEs un lugar extraño. Por un lado, señores y comerciantes ricos de toda la isla. Por otro lado, jóvenes que intentan demostrar su valía en el combate y conseguir un contrato (e incluso guerreros solitarios en busca de un nuevo maestro).\n{i:journal}",
+    "it": "Il mare di bancarelle è invaso dai rumori dei combattimenti e delle contrattazioni, anche se è difficile ignorare che persino questa fiera si è ridotta rispetto all'anno scorso.\nÈ un posto strano. Da un lato, signori e ricchi mercanti da tutta l'isola. Dall'altro, giovani che cercano di dimostrare il proprio valore in combattimento e ottenere un contratto (e persino guerrieri solitari in cerca di un nuovo padrone).\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.115,
+     0.73,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.69,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessun sigillo; nessuna Chiave in alto."
+  },
+  {
+   "img": "carte/mazzo/arboleda_del_cazador_30701.webp",
+   "tipo": "luogo",
+   "numero": 102,
+   "antico": null,
+   "nome": {
+    "es": "Arboleda del Cazador",
+    "it": "Bosco dei Cacciatori"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 113,
+    "sinistra": 106,
+    "destra": 107,
+    "giu": 101
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Recolecta comida",
+     "it": "Raccogliere cibo"
+    },
+    "es": "Obtén 2 de {r:Comida} y roba un Encuentro verde",
+    "it": "Ottieni 2 {r:Cibo} e pesca un Incontro verde",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Antiguamente, solo a los druidas se les permitía entrar en la arboleda. Era por una buena razón, ahora olvidada.",
+    "it": "Anticamente, solo ai druidi era permesso entrare nel bosco. C'era una buona ragione, ora dimenticata."
+   },
+   "aree": {
+    "titolo": [
+     0.25,
+     0.195,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "azione": [
+     0.16,
+     0.73,
+     0.85,
+     0.81
+    ],
+    "ambientazione": [
+     0.1,
+     0.83,
+     0.9,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "Aún sigue aquí, como siempre. Enormes y vacías cavidades oculares empiezan a observarte en cuanto desciendes a la cuenca cubierta de musgo. Los cuernos, tan anchos como un barco, son ahora el hogar de numerosas aves. En el interior del cráneo se encuentra un silencioso santuario iluminado por velas, con colchones de paja esparcidos.\nLos cazadores locales llaman a esta antigua calavera «Ciervo Padre» y dejan amuletos y ofrendas a su alrededor. Cuenta la leyenda que se lleva a los soñadores que pasan allí la noche para que se unan a él en la Gran Cacería.\n⇨ [b]Si no tienes[/b] el Estado [b]«Rastreador»[/b] – {i:journal}: Versículo 3\n⇨ De lo contrario – {i:journal}",
+    "it": "È ancora qui, come sempre. Enormi orbite vuote cominciano a osservarti non appena scendi nella conca coperta di muschio. Le corna, larghe quanto una nave, sono ora la dimora di numerosi uccelli. All'interno del cranio si trova un silenzioso santuario illuminato da candele, con giacigli di paglia sparsi.\nI cacciatori del posto chiamano questo antico teschio «Padre Cervo» e vi lasciano attorno amuleti e offerte. Narra la leggenda che porti con sé i sognatori che vi trascorrono la notte, perché si uniscano a lui nella Grande Caccia.\n⇨ [b]Se non hai[/b] lo status [b]«Battitore di Piste»[/b] – {i:journal}: verso 3\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.11,
+     0.73,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.58,
+     0.93,
+     0.97
+    ]
+   },
+   "dubbi": "Status «Rastreador» → «Battitore di Piste» (presunto); «Ciervo Padre» → «Padre Cervo» (cfr. Segreto 17 «Amuleto di Padre Cervo»)."
+  },
+  {
+   "img": "carte/mazzo/cuanacht_30700.webp",
+   "tipo": "luogo",
+   "numero": 101,
+   "antico": null,
+   "nome": {
+    "es": "Cuanacht",
+    "it": "Tenuta Rurale di Cuanacht"
+   },
+   "sigilli": [
+    "dream",
+    "settlement_friend",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 102,
+    "sinistra": 103,
+    "destra": 104,
+    "giu": 105
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Ayuda a los vecinos",
+     "it": "Aiutare i vicini"
+    },
+    "es": "Obtén 1 de {r:Rep} (una vez al Día)",
+    "it": "Ottieni 1 {r:Rep} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "Su historia, tan vasta como su cementerio; su futuro, tan vacío como sus casas.",
+    "it": "La sua storia, vasta come il suo cimitero; il suo futuro, vuoto come le sue case."
+   },
+   "aree": {
+    "titolo": [
+     0.36,
+     0.2,
+     0.65,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.24,
+     0.695,
+     0.79,
+     0.78
+    ],
+    "ambientazione": [
+     0.2,
+     0.835,
+     0.8,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Un profundo sentimiento de pérdida invade todo Cuanacht, desde los asentamientos en ruinas hasta los ojos hundidos de los que han permanecido en la ciudad. El menhir del mercado casi se ha apagado y todo aquel lo suficientemente valiente o ingenioso se ha marchado para encontrar una solución.\n⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b], retira esta carta de Localización y sustitúyela por la [b]Localización 121[/b]. Luego, Explora esa nueva Localización sin coste.\n⇨ [b]Si tienes[/b] la carta de Secreto [b]66[/b] – {i:journal}: Versículo 4\n⇨ [b]Si tienes[/b] el Estado [b]«La marca del cazador»[/b] – {i:journal}: Versículo 6\n⇨ De lo contrario – {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y las cartas de Secreto [b]«Rituales de Menhir»[/b] (11) y [b]«Herramientas del Escultor»[/b] (58). Paga (por cada jugador de la partida) 2 de {i:energy}, 2 de {i:health}, 2 de {r:Riqueza} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 8 (-1 por cada jugador).",
+    "it": "Un profondo senso di perdita pervade tutta Cuanacht, dagli insediamenti in rovina agli occhi infossati di chi è rimasto in città. Il menhir del mercato si è quasi spento e chiunque fosse abbastanza coraggioso o ingegnoso se n'è andato in cerca di una soluzione.\n⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b], rimuovi questa carta Luogo e sostituiscila con il [b]Luogo 121[/b]. Poi Esplora quel nuovo Luogo senza costi.\n⇨ [b]Se hai[/b] la carta Segreto [b]66[/b] – {i:journal}: verso 4\n⇨ [b]Se hai[/b] lo status [b]«Marchio del Cacciatore»[/b] – {i:journal}: verso 6\n⇨ Altrimenti – {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e le carte Segreto [b]«Riti del Menhir»[/b] (11) e [b]«Attrezzi dello Scultore»[/b] (58). Paga (per ogni giocatore della partita) 2 {i:energy}, 2 {i:health}, 2 {r:Ricchezza} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 8 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11,
+     58
+    ],
+    "paga_per_giocatore": {
+     "energy": 2,
+     "health": 2,
+     "Ricchezza": 2,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 7,
+     "2": 6,
+     "3": 5,
+     "4": 4
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.34,
+     0.11,
+     0.66,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.385,
+     0.93,
+     0.74
+    ],
+    "menhir": [
+     0.06,
+     0.77,
+     0.94,
+     0.955
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "luoghi": {
+  "101": "Tenuta Rurale di Cuanacht",
+  "102": "Bosco dei Cacciatori",
+  "103": "Fiera dei Guerrieri",
+  "104": "Conclave Bruciato",
+  "105": "Spade Dimenticate",
+  "106": "Tumuli dei Predecessori",
+  "107": "Sbiancata",
+  "108": "Grubwood",
+  "109": "Casa di Ricovero sull'Isola",
+  "110": "Grubwood Infestata",
+  "111": "Sottovallo",
+  "112": "Valle Insanguinata",
+  "113": "Lago Speculare",
+  "114": "Tangleroot",
+  "115": "Gradini dei Titani",
+  "116": "Farshire",
+  "117": "Prima Tenuta Rurale",
+  "118": "Stampede",
+  "119": "Flotta Abbandonada",
+  "120": "Corni del Sud",
+  "121": "Cuanacht Distrutta",
+  "122": "Lago Prosciugato",
+  "123": "Tumuli Sprofondati",
+  "125": "Gradini dei Titani",
+  "126": "Dolmen Crollato",
+  "131": "Timberwall",
+  "132": "Volto Sereno",
+  "133": "Moonring",
+  "134": "Falfuar",
+  "135": "Bundorca",
+  "136": "Broch Cruach",
+  "137": "Timberwall Conquistata",
+  "138": "Borgo Infettato",
+  "139": "Devastazione",
+  "140": "Pantano Nero",
+  "141": "Punta Anomala",
+  "142": "Borgo Tranquillo",
+  "147": "Falfuar Abbandonata",
+  "148": "Faldorca",
+  "149": "Broch Rotto",
+  "150": "Valle dei Guardiani",
+  "151": "Longbarrow",
+  "152": "Halfway",
+  "153": "Fernsea",
+  "154": "Tombe dell'Ordine",
+  "155": "Foresta dei Sussurri",
+  "156": "Riverfall",
+  "157": "Piane Scintillanti",
+  "158": "Raduno di Halfway",
+  "160": "Crow's Nest",
+  "161": "Farpoint",
+  "162": "Corbenic",
+  "165": "Nido Razziato",
+  "170": "Rifugio di Farpoint",
+  "180": "Tenacia di Orrin",
+  "185": "Cuore di Tuathan",
+  "190": "Camelot",
+  "195": "Camelot Assediata",
+  "199": "Tuathan",
+  "301": "Regole della Preda!",
+  "302": "Regole di Tuathan"
+ },
+ "segreti": {
+  "2": "Scoperta Inquietante",
+  "3": "Maschera Sepolcrale",
+  "7": "Vero Graal",
+  "8": "Graal Corrotto",
+  "9": "Informazione Delicata",
+  "11": "Riti del Menhir",
+  "12": "Prigioniero Affamato",
+  "13": "Preda",
+  "14": "Pietra Anomala Pura",
+  "16": "Testa di Morrigan",
+  "17": "Amuleto di Padre Cervo",
+  "21": "Talismano Opaco",
+  "22": "Talismano Splendente",
+  "25": "Redenzione",
+  "33": "Coloni Speranzosi",
+  "37": "Cosuil, l’Irrequieta",
+  "39": "Anello Strisciante",
+  "42": "Sfiducia",
+  "44": "Ciondolo del Predecessore",
+  "47": "Scoperta della Felce Rossa",
+  "51": "Stemma dell’Ordine",
+  "58": "Attrezzi dello Scultore",
+  "65": "In Cerca di Antichi Poteri",
+  "67": "Riposo Disturbato",
+  "78": "Excalibur"
+ },
+ "oggetti": [
+  "Bevanda Intorpidente",
+  "Bile di Strega",
+  "Estratto Curativo",
+  "Foglie del Viandante",
+  "Gesso Rituale",
+  "Kit dell’Avventuriero",
+  "Mulo da Sella",
+  "Pergamena Intrisa d’Ombra",
+  "Rete da Pesca",
+  "Spada Runica"
+ ],
+ "incontri": {
+  "Predecessore\\nMiserabile": [
+   "viola",
+   2
+  ],
+  "Orso Anomalo": [
+   "verde",
+   2
+  ],
+  "Lepre\\ndella Foresta": [
+   "verde",
+   1
+  ],
+  "Lord Ribello": [
+   "grigio",
+   4
+  ],
+  "Tribù Barbara": [
+   "blu",
+   3
+  ],
+  "Folla Inferocita": [
+   "grigio",
+   2
+  ],
+  "Selkie": [
+   "verde",
+   3
+  ],
+  "Sopravvissuti della Nave\\nAppestata": [
+   "blu",
+   2
+  ],
+  "Cacciatore Nascosto": [
+   "viola",
+   2
+  ],
+  "Morte Alata": [
+   "viola",
+   5
+  ],
+  "Bestia da Guerra Scatenata": [
+   "grigio",
+   3
+  ],
+  "Coloni Scoraggiati": [
+   "blu",
+   1
+  ],
+  "Distorto": [
+   "viola",
+   2
+  ],
+  "Rivendicatore": [
+   "viola",
+   4
+  ],
+  "Avanguardia dei Giganti": [
+   "verde",
+   4
+  ],
+  "Lord Ribelle": [
+   "grigio",
+   4
+  ],
+  "Bean-Chioch": [
+   "viola",
+   2
+  ],
+  "Cacciatore di Taglie": [
+   "verde",
+   3
+  ],
+  "Predecessore Miserabile": [
+   "viola",
+   2
+  ],
+  "Spirito del Predecessore": [
+   "viola",
+   3
+  ],
+  "Signora della Caccia": [
+   "grigio",
+   4
+  ],
+  "Grindylow": [
+   "verde",
+   1
+  ],
+  "Ordine del Cavaliere": [
+   "blu",
+   5
+  ],
+  "Wyrm Maestoso": [
+   "verde",
+   5
+  ],
+  "Ammazzabestie": [
+   "grigio",
+   3
+  ],
+  "Caccia al Sosia": [
+   "blu",
+   3
+  ],
+  "Disputa sui Terreni": [
+   "blu",
+   3
+  ],
+  "Slaugh": [
+   "viola",
+   4
+  ],
+  "Falsa Accusa": [
+   "blu",
+   3
+  ],
+  "Portanebbia": [
+   "verde",
+   4
+  ],
+  "Sagittario": [
+   "viola",
+   3
+  ]
+ },
+ "status": [
+  "Abbandonati",
+  "Aiutare i Cavalieri",
+  "Alleati di Avalon",
+  "Amate Proprietà",
+  "Apripista",
+  "Battitore di Piste",
+  "Caduta della Cavalleria",
+  "Calderone Nero",
+  "Campione del Popolo",
+  "Canto Funebre",
+  "Compito della Dama",
+  "Confronti Fi- nali",
+  "Confronti Finali",
+  "Conoscenza di Tangleroot",
+  "Cosuil",
+  "Dare una Mano",
+  "Diplomatico",
+  "Enigma dell’Antico Acciaio",
+  "Esplorare Tuathan",
+  "Fato della Spedizione",
+  "Fine della Strada",
+  "Guerra di Avalon",
+  "Inaffidabile",
+  "Incarico di Morgana",
+  "Incontri Propizi",
+  "Indicazioni Generali",
+  "Indizi di Farpoint",
+  "Informazioni Inquietanti",
+  "Intensificazione",
+  "Intrigo ad Halfway",
+  "Intrigoad Halfway",
+  "Lascito di Fael",
+  "Marchio del Cacciatore",
+  "Matricidio",
+  "Menhir Errante",
+  "Missione Diplomatica",
+  "Missione Moonring",
+  "Mistero Risolto",
+  "Mistero Scottante",
+  "Monastero Scoperto",
+  "Nemici di Avalon",
+  "Ospite d’Ono-re",
+  "Ospite d’Onore",
+  "Pace nel Borgo",
+  "Pira Fredda",
+  "Profondo Segreto",
+  "Qualcuno Sta Osservando",
+  "Qualcuno sta Osservando",
+  "Redenzione di Verme",
+  "Resti",
+  "Richiamo dall’Aldilà",
+  "Rimedio",
+  "Riparo in Mezzo alla Tempesta",
+  "Ripristinare l’Ordine",
+  "Rituale della Valle",
+  "Rivendicazione",
+  "Saccheggiatore",
+  "Salvati dalla Dea",
+  "Santuario Sicuro",
+  "Sapere Bruciato",
+  "Sconfitti e Caduti",
+  "Scroccone",
+  "Segreti della Foresta",
+  "Segreto del Muratore",
+  "Sogni e Profezie",
+  "Sostenere la Rivolta",
+  "Strani Incontri",
+  "Successore di Geraint",
+  "Tesori Nascosti",
+  "Ultima Lezione",
+  "Ultimo Rifugio",
+  "Underfern",
+  "Venti dell’Anomalia"
+ ]
+}

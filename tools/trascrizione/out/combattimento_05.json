@@ -1,0 +1,2565 @@
+{
+ "carte": [
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34405.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición perversa",
+    "it": "Maledizione perversa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_magic}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_magic}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34406.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maldición perversa",
+    "it": "Maledizione perversa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_magic}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_magic}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34407.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Bandada de cuervos",
+    "it": "Stormo di corvi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 1 {i:wound}",
+     "it": "{i:skull} Previeni 1 {i:wound}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}, roba 1 carta",
+     "it": "{i:delay} Ottieni {i:cube2}, pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.7,
+      0.96,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34408.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe desde lo alto",
+    "it": "Colpo dall'alto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} +1 {i:wound}, pierde {i:cube} menos",
+    "it": "{i:skull} +1 {i:wound}, perdi {i:cube} in meno"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.37,
+      0.735,
+      0.96,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34409.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ritual de marchitamiento",
+    "it": "Rituale di avvizzimento"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pon 2 {i:delay} en esta carta; paga 2 de {r:Magia} y pierde 1 de {r:Rep} O BIEN {i:discard}",
+     "it": "{i:place} Metti 2 {i:delay} su questa carta; paga 2 {r:Magia} e perdi 1 {r:Rep} OPPURE {i:discard}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 2,
+     "es": "{i:delay} Obtén {i:cube6}",
+     "it": "{i:delay} Ottieni {i:cube6}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.2,
+     0.08,
+     0.8,
+     0.17
+    ],
+    "testo": [
+     [
+      0.2,
+      0.59,
+      0.8,
+      0.745
+     ],
+     [
+      0.2,
+      0.755,
+      0.8,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.36,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista. Nel testo sono raffigurati 6 cubi (3+3): nome inventato {i:cube6}. Nessuna semichiave Bonus a sinistra (in fondo vuota)."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34410.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mordedura de serpiente",
+    "it": "Morso di serpente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube2",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": null,
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.16
+    ],
+    "testo": [],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Carta senza Capacità (nessun riquadro di testo)."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34411.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Estoicismo",
+    "it": "Stoicismo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 2 Cargas: Ignora el ataque enemigo",
+     "it": "Paga 2 Cariche: ignora l'attacco nemico"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.08,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.65,
+      0.8,
+      0.715
+     ],
+     [
+      0.21,
+      0.725,
+      0.8,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.36,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34412.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Postura defensiva",
+    "it": "Postura difensiva"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Prevén 2 {i:wound}, pierde {i:cube} menos",
+     "it": "{i:skull} Previeni 2 {i:wound}, perdi {i:cube} in meno"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Roba 1 carta",
+     "it": "{i:delay} Pesca 1 carta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.94,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.53,
+     0.045,
+     0.78,
+     0.09
+    ]
+   },
+   "dubbi": "Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34413.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de sangre",
+    "it": "Magia di sangue"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:health}, obtén 3 Cargas",
+     "it": "{i:place} Perdi 1 {i:health}, ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Puedes usar estas Cargas como {r:Magia} durante este Encuentro",
+     "it": "Puoi usare queste Cariche come {r:Magia} durante questo Incontro"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.22,
+      0.58,
+      0.8,
+      0.695
+     ],
+     [
+      0.22,
+      0.705,
+      0.8,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.36,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista. Riga 1: solo semichiave destra aggression (bordo destro)."
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34414.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Aura exaltada",
+    "it": "Aura esaltata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo pueden tratar {i:extra} como {i:draw} (y viceversa)",
+    "it": "Tutti i membri della Compagnia possono considerare {i:extra} come {i:draw} (e viceversa)"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.08,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.7,
+      0.79,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.36,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34824.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de guerra",
+    "it": "Magia di guerra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 1 de {i:terror}",
+     "it": "{i:place} Ottieni 1 {i:terror}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.7,
+      0.95,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34823.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Aura heroica",
+    "it": "Aura eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo ignoran los efectos del Pánico",
+    "it": "Tutti i membri della Compagnia ignorano gli effetti del Panico"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.78,
+     0.14
+    ],
+    "testo": [
+     [
+      0.21,
+      0.7,
+      0.79,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34822.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Aura inspiradora",
+    "it": "Aura ispiratrice"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Roba 2 cartas",
+    "it": "{i:place} Pesca 2 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34821.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Arremetida",
+    "it": "Assalto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 1 Carga: Retira {i:delay} de cualquier carta de la Secuencia",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da qualsiasi carta della Sequenza"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.78,
+     0.14
+    ],
+    "testo": [
+     [
+      0.21,
+      0.585,
+      0.79,
+      0.665
+     ],
+     [
+      0.21,
+      0.675,
+      0.79,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Più Capacità separate da una linea: 'capacita' è una lista. Nessuna semichiave Bonus a sinistra. {i:delay} qui = gettone Tempo."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34820.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:energy}",
+     "it": "{i:place} Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.78,
+     0.165
+    ],
+    "testo": [
+     [
+      0.2,
+      0.585,
+      0.79,
+      0.67
+     ],
+     [
+      0.2,
+      0.68,
+      0.79,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34819.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound} recibida en este ataque",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound} subita in questo attacco"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34818.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Acopio de fuerzas",
+    "it": "Raccogliere le forze"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Pierde {i:cube}, roba 2 cartas",
+    "it": "{i:delay} Perdi {i:cube}, pesca 2 carte"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.73,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34817.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa ingeniosa",
+    "it": "Trappola ingegnosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada {i:key_practicality}",
+    "it": "{i:place} Ottieni {i:cube} per ogni {i:key_practicality}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.96,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34816.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:key_courage}",
+    "it": "{i:place} Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:key_courage}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.37,
+      0.735,
+      0.95,
+      0.83
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). L'icona di attributo dentro una cornice di Chiave nel testo (= 'Chiave fisicamente unita') è resa con un nome inventato {i:key_<attributo>}."
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34815.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe potente",
+    "it": "Colpo potente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:energy}",
+     "it": "{i:place} Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "{i:delay} Obtén {i:cube2}",
+     "it": "{i:delay} Ottieni {i:cube2}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.93,
+     0.14
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartella TTS 'ROJO' ma le carte sono le base marroni 16-25 'M' di Gusano (Verme): mazzo 'base', personaggio 'gusano' dedotto. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34300.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Seccionar tendón",
+    "it": "Recidere il tendine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 1 de {i:energy}",
+    "it": "{i:place} Perdi 1 {i:energy}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.9,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.765,
+      0.94,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34301.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mordisco",
+    "it": "Morso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Lanza un dial: Calavera: Pierde 1 de {i:health}. Grial: Obtén {i:cube2}",
+    "it": "{i:place} Lancia un Quadrante: Teschio: perdi 1 {i:health}. Graal: ottieni {i:cube2}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.9,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.65,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34302.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cebo",
+    "it": "Esca"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Paga 1 de {r:Ricchezza} para obtener {i:cube}",
+    "it": "{i:place} Paga 1 {r:Ricchezza} per ottenere {i:cube}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.9,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.95,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34303.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Puñalada furiosa",
+    "it": "Pugnalata furiosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "{i:delay} Obtén {i:cube2}",
+    "it": "{i:delay} Ottieni {i:cube2}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.96,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34304.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Escabullirse",
+    "it": "Sgattaiolare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Paga 2 de {i:energy} para ignorar el ataque enemigo",
+    "it": "{i:skull} Paga 2 {i:energy} per ignorare l'attacco nemico"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.735,
+      0.79,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.38,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34305.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Puñalada por la espalda",
+    "it": "Pugnalata alle spalle"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada punto de {i:practicality} que tengas si esta es tu primera carta jugada durante tu activación",
+    "it": "{i:place} Ottieni {i:cube} per ogni punto di {i:practicality} che possiedi se questa è la prima carta che giochi durante la tua attivazione"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.09,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34306.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Despistar",
+    "it": "Depistare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora todas las pérdidas de {i:cube}",
+     "it": "{i:skull} Ignora tutte le perdite di {i:cube}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Si {i:discard}, pierde 2 de {i:energy}",
+     "it": "Se {i:discard}, perdi 2 {i:energy}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.9,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.94,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.94,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2). Più Capacità separate da una linea: 'capacita' è una lista. La seconda parte («Si {i:discard}…») non ha icona di innesco: messa come passiva; probabilmente si applica quando questa carta viene scartata dalla Sequenza."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34307.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "El legado de los siglos",
+    "it": "L'eredità dei secoli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Retira cualquier número de Cargas de cualquier carta de la Secuencia. Ignora una pérdida de {i:cube} o 1 {i:wound} por cada Carga retirada",
+    "it": "{i:skull} Rimuovi un numero qualsiasi di Cariche da qualsiasi carta della Sequenza. Ignora una perdita di {i:cube} o 1 {i:wound} per ogni Carica rimossa"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.08,
+     0.78,
+     0.17
+    ],
+    "testo": [
+     [
+      0.2,
+      0.585,
+      0.79,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.38,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34308.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Enjambre sin fin",
+    "it": "Sciame senza fine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Cada miembro del equipo obtiene 1 de {i:terror}; pon 4 {i:delay} en esta carta",
+     "it": "{i:place} Ogni membro della Compagnia ottiene 1 {i:terror}; metti 4 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Siempre que retires {i:delay}, obtén {i:cube}",
+     "it": "Ogni volta che rimuovi {i:delay}, ottieni {i:cube}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.585,
+      0.79,
+      0.73
+     ],
+     [
+      0.2,
+      0.74,
+      0.79,
+      0.84
+     ]
+    ],
+    "personaggio": [
+     0.38,
+     0.045,
+     0.62,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Carta passiva: semichiavi Bonus a sinistra e semichiavi 'apre' sul bordo destro; le righe sono le stesse. Più Capacità separate da una linea: 'capacita' è una lista. {i:delay} qui = gettoni Tempo (non è una Capacità ritardata)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34309.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "¡A por los ojos!",
+    "it": "Agli occhi!"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora el ataque enemigo",
+     "it": "{i:skull} Ignora l'attacco nemico"
+    },
+    {
+     "innesco": "attacco",
+     "es": "{i:discard} después del ataque",
+     "it": "{i:discard} dopo l'attacco"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.755
+     ],
+     [
+      0.36,
+      0.765,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Più Capacità separate da una linea: 'capacita' è una lista. La seconda parte non ha icona propria: considerata parte della Capacità 💀 (dopo l'attacco)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34310.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rata acorralada",
+    "it": "Ratto alle strette"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound}",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.765,
+      0.94,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Roer",
+    "it": "Rosicchiare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén 2 de {i:terror}. Luego, obtén {i:cube} por cada 2 puntos de {i:aggression} y/o {i:practicality} que tengas",
+    "it": "{i:place} Ottieni 2 {i:terror}. Poi ottieni {i:cube} per ogni 2 punti di {i:aggression} e/o {i:practicality} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Nessuna semichiave destra (apre) nelle 4 righe."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34312.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Amigos diminutos",
+    "it": "Piccoli amici"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén {i:cube} por cada punto en tu {i:caution}; pierde 1 de {r:Cibo}",
+    "it": "{i:place} Ottieni {i:cube} per ogni punto della tua {i:caution}; perdi 1 {r:Cibo}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34313.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Juego sucio",
+    "it": "Gioco sporco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "4x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Pierde 2 de {r:Rep}",
+    "it": "{i:place} Perdi 2 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.96,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Moltiplicatore 4x. Nessuna semichiave destra (apre) nelle 4 righe."
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34314.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mil cortes",
+    "it": "Mille tagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén 1 de {i:terror}",
+    "it": "{i:place} Ottieni 1 {i:terror}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.1,
+     0.92,
+     0.16
+    ],
+    "testo": [
+     [
+      0.36,
+      0.76,
+      0.94,
+      0.83
+     ]
+    ],
+    "personaggio": [
+     0.52,
+     0.045,
+     0.76,
+     0.09
+    ]
+   },
+   "dubbi": "Lettera del colore stampata 'R' (Rojo), non prevista dallo schema (A/V/M/G). Icona attributo doppia (due teste) nella semichiave destra: interpretata come requisito di livello 2 (campo 'livello':2)."
+  }
+ ]
+}

@@ -1,0 +1,2058 @@
+{
+ "carte": [
+  {
+   "img": "carte/2_encuentros_azul/36410.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Alucinaciones",
+    "it": "Allucinazioni"
+   },
+   "testo": {
+    "es": "[i]El granero local estaba contaminado con cornezuelo, lo que convirtió a los aldeanos en locos descontrolados.[/i]",
+    "it": "[i]Il granaio locale era contaminato dalla segale cornuta, che ha trasformato gli abitanti del villaggio in folli fuori controllo.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 1,
+    "sequenza": "VVVRRGR"
+   },
+   "evitare": {
+    "es": "Obtén 1 de {i:terror} por cada punto de {i:empathy} que tengas; paga 2 de {r:Rep}",
+    "it": "Ottieni 1 {i:terror} per ogni punto di {i:empathy} che possiedi; paga 2 {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Evita a la multitud",
+      "it": "Evita la folla"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}",
+      "it": "{i:arrowdown}, 1 {i:wound}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Finge que estás loco",
+      "it": "Fingi di essere pazzo"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, obtén 1 de {i:terror}",
+      "it": "{i:arrowdown}, ottieni 1 {i:terror}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "2 {i:wound}, obtén 2 de {i:terror}",
+    "it": "2 {i:wound}, ottieni 2 {i:terror}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 2 de {r:Magia}",
+    "it": "1 {r:Esp}, 2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.2,
+     0.17,
+     0.82,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.535,
+     0.86,
+     0.715
+    ],
+    "ricompensa": [
+     0.14,
+     0.73,
+     0.8,
+     0.82
+    ],
+    "evitare": [
+     0.14,
+     0.83,
+     0.87,
+     0.9
+    ]
+   },
+   "dubbi": "Misuratore: dall'alto 3 verdi, 2 rossi, grigio, 1 rosso. Due vie alternative ('O BIEN') per la fase I."
+  },
+  {
+   "img": "carte/2_encuentros_azul/36411.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Caballero Borracho",
+    "it": "Cavaliere Ubriaco"
+   },
+   "testo": {
+    "es": "[i]Intentó ahogar sus problemas en hidromiel. Ahora él es el problema.[/i]",
+    "it": "[i]Ha cercato di affogare i suoi problemi nell'idromele. Ora il problema è lui.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": {
+    "es": "(requiere 2 de {i:courage}): Paga 1 de {r:Rep} y 1 de {i:energy}, resuelve el Encuentro gris «Guerrero del Clan»",
+    "it": "(richiede 2 {i:courage}): Paga 1 {r:Rep} e 1 {i:energy}, risolvi l'Incontro grigio «Guerriero del Clan»"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Redúcelo",
+      "it": "Immobilizzalo"
+     },
+     "speciale": {
+      "*": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}",
+      "it": "{i:arrowdown}, 1 {i:wound}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Cálmalo hablando",
+      "it": "Calmalo parlandogli"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}",
+      "it": "{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "2 {i:wound}, pierde 1 de {i:energy}",
+    "it": "2 {i:wound}, perdi 1 {i:energy}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}, 1 de {r:Comida}",
+    "it": "1 {r:Rep}, 1 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy2"
+    },
+    {
+     "riga": 2,
+     "apre": "caution2"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality2"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.22,
+     0.19,
+     0.79,
+     0.245
+    ],
+    "tabella": [
+     0.13,
+     0.535,
+     0.86,
+     0.715
+    ],
+    "ricompensa": [
+     0.14,
+     0.73,
+     0.8,
+     0.8
+    ],
+    "evitare": [
+     0.14,
+     0.81,
+     0.87,
+     0.915
+    ]
+   },
+   "dubbi": "Chiavi destra tutte doppie (empathy2, caution2, spirituality2). Fase I: bonus speciale '↑' senza attributo ('*')."
+  },
+  {
+   "img": "carte/2_encuentros_azul/36412.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/2_encuentros_azul/36413.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/2_encuentros_azul/36414.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Estafador Astuto",
+    "it": "Truffatore Astuto"
+   },
+   "testo": {
+    "es": "[i]Una ganga increíble.[/i]",
+    "it": "[i]Un affare incredibile.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VVVVGRR"
+   },
+   "evitare": {
+    "es": "(requiere 2 de {i:caution}): Resuelve el Encuentro gris «Guerrero Curtido»",
+    "it": "(richiede 2 {i:caution}): Risolvi l'Incontro grigio «Guerriero Esperto»"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Revela el timo",
+      "it": "Smaschera la truffa"
+     },
+     "speciale": {
+      "caution": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Estafa al estafador",
+      "it": "Truffa il truffatore"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 3 de {r:Riqueza} y 1 de {r:Rep}",
+    "it": "Perdi 3 {r:Ricchezza} e 1 {r:Rep}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}, 2 de {r:Riqueza}",
+    "it": "1 {r:Rep}, 2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.32,
+     0.17,
+     0.69,
+     0.205
+    ],
+    "tabella": [
+     0.13,
+     0.54,
+     0.86,
+     0.72
+    ],
+    "ricompensa": [
+     0.14,
+     0.735,
+     0.86,
+     0.82
+    ],
+    "evitare": [
+     0.14,
+     0.83,
+     0.84,
+     0.9
+    ]
+   },
+   "dubbi": "Due vie alternative ('O BIEN') per la fase I. «Guerrero Curtido» tradotto 'Guerriero Esperto' (non nel glossario)."
+  },
+  {
+   "img": "carte/2_encuentros_azul/36415.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Huérfano Desconsolado",
+    "it": "Orfano Sconsolato"
+   },
+   "testo": {
+    "es": "[i]Otra tragedia más por desvelar.[/i]",
+    "it": "[i]Un'altra tragedia ancora da svelare.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VVVVGRR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Consuélalo",
+      "it": "Consolalo"
+     },
+     "speciale": {
+      "empathy": "↑↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, obtén 1 de {i:terror}",
+      "it": "{i:arrowdown}, ottieni 1 {i:terror}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Búscale acogida",
+      "it": "Trovagli una casa"
+     },
+     "speciale": {
+      "caution": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {i:energy}, {i:discard}",
+      "it": "Perdi 1 {i:energy}, {i:discard}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Obtén 2 de {i:terror}, pierde 1 de {r:Rep}",
+    "it": "Ottieni 2 {i:terror}, perdi 1 {r:Rep}"
+   },
+   "ricompensa": {
+    "es": "Pierde 1 de {i:terror}, obtén 1 de {r:Rep} y 1 de {r:Exp}",
+    "it": "Perdi 1 {i:terror}, ottieni 1 {r:Rep} e 1 {r:Esp}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.24,
+     0.19,
+     0.77,
+     0.225
+    ],
+    "tabella": [
+     0.13,
+     0.605,
+     0.86,
+     0.785
+    ],
+    "ricompensa": [
+     0.13,
+     0.79,
+     0.86,
+     0.905
+    ]
+   }
+  },
+  {
+   "img": "carte/2_encuentros_azul/36416.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Reclutamiento Forzoso",
+    "it": "Reclutamento Forzato"
+   },
+   "testo": {
+    "es": "[i]Un equipo de reclutadores se acerca con contundentes garrotes y un contrato ilegible.[/i]",
+    "it": "[i]Una squadra di reclutatori si avvicina con randelli pesanti e un contratto illeggibile.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 3,
+    "sequenza": "VVVVGRRR"
+   },
+   "evitare": {
+    "es": "Resuelve el Encuentro gris «Compañía Guerrera»",
+    "it": "Risolvi l'Incontro grigio «Compagnia Guerriera»"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Escapa",
+      "it": "Scappa"
+     },
+     "speciale": {
+      "caution": "↑↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}, perdi 1 {i:energy}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Negocia",
+      "it": "Negozia"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "2 {i:wound}, obtén 2 de {i:terror}, pierde toda tu {i:energy}",
+    "it": "2 {i:wound}, ottieni 2 {i:terror}, perdi tutta la tua {i:energy}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Rep}, 1 de {r:Riqueza}",
+    "it": "1 {r:Esp}, 1 {r:Rep}, 1 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.25,
+     0.19,
+     0.76,
+     0.28
+    ],
+    "tabella": [
+     0.13,
+     0.535,
+     0.86,
+     0.715
+    ],
+    "ricompensa": [
+     0.14,
+     0.725,
+     0.82,
+     0.86
+    ],
+    "evitare": [
+     0.14,
+     0.87,
+     0.78,
+     0.94
+    ]
+   },
+   "dubbi": "Riga 2: Cautela doppia ('caution2'). Due vie alternative ('O BIEN'). «Compañía Guerrera» tradotto (non nel glossario)."
+  },
+  {
+   "img": "carte/2_encuentros_azul/36417.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Última Opción",
+    "it": "Ultima Possibilità"
+   },
+   "testo": {
+    "es": "[i]Un grupo de gente desesperada trata de forzarte a reactivar su menhir.[/i]",
+    "it": "[i]Un gruppo di persone disperate cerca di costringerti a riattivare il loro menhir.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VVVVGRR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Razona con ellos",
+      "it": "Ragiona con loro"
+     },
+     "speciale": {
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Intenta escapar",
+      "it": "Tenta di scappare"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}, perdi 1 {i:energy}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 1 de {r:Rep}, 3 {i:wound}, pierde 3 de {i:energy}",
+    "it": "Perdi 1 {r:Rep}, 3 {i:wound}, perdi 3 {i:energy}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 2 de {r:Rep}",
+    "it": "1 {r:Esp}, 2 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.21,
+     0.175,
+     0.81,
+     0.235
+    ],
+    "tabella": [
+     0.13,
+     0.62,
+     0.86,
+     0.805
+    ],
+    "ricompensa": [
+     0.14,
+     0.835,
+     0.75,
+     0.945
+    ]
+   },
+   "dubbi": "Riga 2: Cautela doppia ('caution2'). Due vie alternative ('O BIEN')."
+  },
+  {
+   "img": "carte/3_encuentros_azul/36418.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Acusación Falsa",
+    "it": "Falsa Accusa"
+   },
+   "testo": {
+    "es": "[i]Un forastero siempre es un buen chivo expiatorio.[/i]",
+    "it": "[i]Un forestiero è sempre un buon capro espiatorio.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VVVVGRR"
+   },
+   "evitare": {
+    "es": "(requiere 5 de {r:Rep}): Paga 3 de {r:Rep}, pierde 1 de {i:health} y 1 de {i:energy}, obtén 1 de {i:terror}",
+    "it": "(richiede 5 {r:Rep}): Paga 3 {r:Rep}, perdi 1 {i:health} e 1 {i:energy}, ottieni 1 {i:terror}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Calma a la multitud",
+      "it": "Calma la folla"
+     },
+     "speciale": {
+      "*": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}, obtén 1 de {i:terror}, {i:discard}",
+      "it": "{i:arrowdown}, 1 {i:wound}, ottieni 1 {i:terror}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Demuestra tu inocencia",
+      "it": "Dimostra la tua innocenza"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}",
+      "it": "{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Resuelve el Encuentro gris «Turba Enfurecida»",
+    "it": "Risolvi l'Incontro grigio «Folla Inferocita»"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Rep}, 1 de {r:Exp}",
+    "it": "2 {r:Rep}, 1 {r:Esp}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.27,
+     0.17,
+     0.74,
+     0.235
+    ],
+    "tabella": [
+     0.13,
+     0.505,
+     0.86,
+     0.69
+    ],
+    "ricompensa": [
+     0.14,
+     0.7,
+     0.82,
+     0.815
+    ],
+    "evitare": [
+     0.14,
+     0.825,
+     0.87,
+     0.9
+    ]
+   },
+   "dubbi": "Riga 3: Spiritualità doppia ('spirituality2'). Fase I: '↑' senza attributo ('*')."
+  },
+  {
+   "img": "carte/3_encuentros_azul/36419.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/3_encuentros_azul/36420.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Incriminado",
+    "it": "Incastrato"
+   },
+   "testo": {
+    "es": "[i]Los guardias te atrapan con algo que pertenece a otra persona en los bolsillos.[/i]",
+    "it": "[i]Le guardie ti sorprendono con in tasca qualcosa che appartiene a un'altra persona.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VVVVGRR"
+   },
+   "evitare": {
+    "es": "(requiere 2 de {i:practicality} o 5 de {r:Rep}): Pierde toda tu {r:Rep}",
+    "it": "(richiede 2 {i:practicality} o 5 {r:Rep}): Perdi tutta la tua {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Demuestra tu inocencia",
+      "it": "Dimostra la tua innocenza"
+     },
+     "speciale": {
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}, {i:discard}",
+      "it": "{i:arrowdown}, 1 {i:wound}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Encuentra al culpable",
+      "it": "Trova il colpevole"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}{i:arrowdown}, perdi 1 {i:energy}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda tu {i:health} y tu {i:energy}",
+    "it": "Perdi tutta la tua {i:health} e la tua {i:energy}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}, 2 de {r:Exp}",
+    "it": "1 {r:Rep}, 2 {r:Esp}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.17,
+     0.17,
+     0.84,
+     0.23
+    ],
+    "tabella": [
+     0.13,
+     0.54,
+     0.86,
+     0.725
+    ],
+    "ricompensa": [
+     0.14,
+     0.735,
+     0.8,
+     0.82
+    ],
+    "evitare": [
+     0.14,
+     0.83,
+     0.82,
+     0.9
+    ]
+   }
+  },
+  {
+   "img": "carte/3_encuentros_azul/36421.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Juicio de los Pares",
+    "it": "Giudizio dei Pari"
+   },
+   "testo": {
+    "es": "[i]A veces un forastero se ve obligado a arbitrar en casos judiciales difíciles.[/i]",
+    "it": "[i]A volte un forestiero si trova costretto a fare da arbitro in casi giudiziari difficili.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 3,
+    "sequenza": "VVVVVGRRR"
+   },
+   "evitare": {
+    "es": "(requiere 2 de {i:empathy}): Paga 5 de {r:Rep}, paga 1 de {i:energy}",
+    "it": "(richiede 2 {i:empathy}): Paga 5 {r:Rep}, paga 1 {i:energy}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Analiza las pruebas",
+      "it": "Analizza le prove"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {i:energy}, {i:discard}",
+      "it": "Perdi 1 {i:energy}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Dicta sentencia",
+      "it": "Pronuncia la sentenza"
+     },
+     "speciale": {
+      "caution": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}",
+      "it": "{i:arrowdown}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Calma a las dos partes",
+      "it": "Calma entrambe le parti"
+     },
+     "speciale": {
+      "empathy": "↑↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}, 1 {i:wound}",
+      "it": "{i:arrowdown}{i:arrowdown}, 1 {i:wound}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda tu {r:Rep}",
+    "it": "Perdi tutta la tua {r:Rep}"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Rep}, 2 de {r:Exp}",
+    "it": "2 {r:Rep}, 2 {r:Esp}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality2"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.3,
+     0.17,
+     0.71,
+     0.255
+    ],
+    "tabella": [
+     0.13,
+     0.445,
+     0.86,
+     0.72
+    ],
+    "ricompensa": [
+     0.14,
+     0.735,
+     0.75,
+     0.82
+    ],
+    "evitare": [
+     0.14,
+     0.83,
+     0.87,
+     0.9
+    ]
+   },
+   "dubbi": "Riga 3: Spiritualità doppia ('spirituality2')."
+  },
+  {
+   "img": "carte/3_encuentros_azul/36422.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Noble Ofendido",
+    "it": "Nobile Offeso"
+   },
+   "testo": {
+    "es": "[i]Has llevado la contraria a una de las personas más ricas y poderosas del asentamiento.[/i]",
+    "it": "[i]Hai contraddetto una delle persone più ricche e potenti dell'insediamento.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 3,
+    "sequenza": "VVVVVGRRR"
+   },
+   "evitare": {
+    "es": "Paga 2 de {r:Riqueza}, pierde 2 de {r:Rep}",
+    "it": "Paga 2 {r:Ricchezza}, perdi 2 {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Cálmalo",
+      "it": "Calmalo"
+     },
+     "speciale": {
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}, {i:discard}",
+      "it": "{i:arrowdown}, 1 {i:wound}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Llega a un acuerdo",
+      "it": "Raggiungi un accordo"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 3 de {r:Rep}. Resuelve el Encuentro gris «Guerrero Curtido»",
+    "it": "Perdi 3 {r:Rep}. Risolvi l'Incontro grigio «Guerriero Esperto»"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}, 1 de {r:Riqueza}, 1 de {r:Exp}",
+    "it": "1 {r:Rep}, 1 {r:Ricchezza}, 1 {r:Esp}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.25,
+     0.19,
+     0.77,
+     0.28
+    ],
+    "tabella": [
+     0.13,
+     0.535,
+     0.86,
+     0.72
+    ],
+    "ricompensa": [
+     0.13,
+     0.73,
+     0.85,
+     0.86
+    ],
+    "evitare": [
+     0.13,
+     0.87,
+     0.86,
+     0.91
+    ]
+   },
+   "dubbi": "«Guerrero Curtido» tradotto 'Guerriero Esperto' (non nel glossario)."
+  },
+  {
+   "img": "carte/3_encuentros_azul/36423.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Presagio",
+    "it": "Presagio"
+   },
+   "testo": {
+    "es": "[i]Parece que la mala suerte te acompaña. Una muchedumbre de aldeanos decide expulsarte del asentamiento.[/i]",
+    "it": "[i]Sembra che la sfortuna ti accompagni. Una folla di abitanti decide di cacciarti dall'insediamento.[/i]"
+   },
+   "affinita": {
+    "verdi": 7,
+    "rossi": 0,
+    "sequenza": "VVVRRRRg",
+    "nota": "lo spazio più basso (in cornice) è grigio con motivo a ragnatela: sembra lo spazio iniziale, senza spazi sotto"
+   },
+   "evitare": {
+    "es": "(requiere 6 de {r:Rep}): Paga 3 de {r:Rep}, pierde 1 de {i:health}, obtén 2 de {i:terror}",
+    "it": "(richiede 6 {r:Rep}): Paga 3 {r:Rep}, perdi 1 {i:health}, ottieni 2 {i:terror}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Demuestra que los dioses están contigo",
+      "it": "Dimostra che gli dèi sono con te"
+     },
+     "speciale": {
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {r:Magia}, {i:discard}",
+      "it": "Perdi 1 {r:Magia}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Culpa a otros",
+      "it": "Incolpa altri"
+     },
+     "speciale": {
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {r:Rep}, {i:discard}",
+      "it": "Perdi 1 {r:Rep}, {i:discard}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 2 de {i:energy}, 2 {i:wound}, mueve a una Localización conectada",
+    "it": "Perdi 2 {i:energy}, 2 {i:wound}, muoviti in un Luogo collegato"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Rep}, 1 de {r:Magia}",
+    "it": "2 {r:Rep}, 1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy2"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.2,
+     0.17,
+     0.85,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.5,
+     0.86,
+     0.685
+    ],
+    "ricompensa": [
+     0.14,
+     0.7,
+     0.86,
+     0.815
+    ],
+    "evitare": [
+     0.14,
+     0.825,
+     0.87,
+     0.9
+    ]
+   },
+   "dubbi": "Misuratore anomalo: dall'alto 3 verdi, 4 rossi e in fondo uno spazio grigio con motivo diverso (ragnatela) dove sembra partire il marcatore; nessuno spazio sotto. Da verificare la regola (forse si fallisce ricadendo sotto? o il grigio-ragnatela è lo spazio di Fallimento e si parte da altro spazio). Righe 1 e 3: Empatia e Spiritualità doppie."
+  },
+  {
+   "img": "carte/3_encuentros_azul/36424.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "¡Robo!",
+    "it": "Furto!"
+   },
+   "testo": {
+    "es": "[i]Tardas un rato en percatarte de que algunos de tus objetos y tu oro han desaparecido.[/i]",
+    "it": "[i]Ti ci vuole un po' per accorgerti che alcuni dei tuoi oggetti e il tuo oro sono spariti.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 1,
+    "sequenza": "VVVVVGR"
+   },
+   "evitare": {
+    "es": "Pierde toda la {r:Riqueza} y 1 Objeto aleatorio",
+    "it": "Perdi tutta la {r:Ricchezza} e 1 Oggetto a caso"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Atrapa a los ladrones",
+      "it": "Cattura i ladri"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {i:energy}, {i:discard}",
+      "it": "Perdi 1 {i:energy}, {i:discard}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda la {r:Riqueza} y 1 Objeto aleatorio",
+    "it": "Perdi tutta la {r:Ricchezza} e 1 Oggetto a caso"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}, 1 Objeto, 2 de {r:Riqueza}",
+    "it": "1 {r:Rep}, 1 Oggetto, 2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.26,
+     0.17,
+     0.75,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.595,
+     0.86,
+     0.69
+    ],
+    "ricompensa": [
+     0.14,
+     0.715,
+     0.75,
+     0.855
+    ],
+    "evitare": [
+     0.14,
+     0.865,
+     0.72,
+     0.935
+    ]
+   }
+  },
+  {
+   "img": "carte/4_encuentros_azul/36425.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Agente Hostil",
+    "it": "Agente Ostile"
+   },
+   "testo": {
+    "es": "[i]Alguien puso a toda esa gente en tu contra.[/i]",
+    "it": "[i]Qualcuno ha messo tutta questa gente contro di te.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 3,
+    "sequenza": "VVVVVGRRR"
+   },
+   "evitare": {
+    "es": "(requiere 3 de {i:empathy} y 5 de {r:Rep}): Pierde toda tu {r:Rep}",
+    "it": "(richiede 3 {i:empathy} e 5 {r:Rep}): Perdi tutta la tua {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Detén esta locura",
+      "it": "Ferma questa follia"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}, {i:discard}",
+      "it": "{i:arrowdown}, 1 {i:wound}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Encuentra al culpable",
+      "it": "Trova il colpevole"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}, perdi 1 {i:energy}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda la {r:Rep}, resuelve el Encuentro gris «Turba Enfurecida»",
+    "it": "Perdi tutta la {r:Rep}, risolvi l'Incontro grigio «Folla Inferocita»"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 3 de {r:Rep}, resuelve el Encuentro gris «Escudero Solitario»",
+    "it": "1 {r:Esp}, 3 {r:Rep}, risolvi l'Incontro grigio «Scudiero Solitario»"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.3,
+     0.17,
+     0.71,
+     0.225
+    ],
+    "tabella": [
+     0.13,
+     0.47,
+     0.86,
+     0.655
+    ],
+    "ricompensa": [
+     0.13,
+     0.665,
+     0.86,
+     0.83
+    ],
+    "evitare": [
+     0.13,
+     0.84,
+     0.8,
+     0.91
+    ]
+   },
+   "dubbi": "«Escudero Solitario» tradotto (non nel glossario); «Turba Enfurecida» = Folla Inferocita (glossario)."
+  },
+  {
+   "img": "carte/4_encuentros_azul/36426.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Agente Hostil",
+    "it": "Agente Ostile"
+   },
+   "testo": {
+    "es": "[i]Alguien puso a toda esa gente en tu contra.[/i]",
+    "it": "[i]Qualcuno ha messo tutta questa gente contro di te.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 3,
+    "sequenza": "VVVVVGRRR"
+   },
+   "evitare": {
+    "es": "(requiere 3 de {i:empathy} y 5 de {r:Rep}): Pierde toda tu {r:Rep}",
+    "it": "(richiede 3 {i:empathy} e 5 {r:Rep}): Perdi tutta la tua {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Detén esta locura",
+      "it": "Ferma questa follia"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}, {i:discard}",
+      "it": "{i:arrowdown}, 1 {i:wound}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Encuentra al culpable",
+      "it": "Trova il colpevole"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}, perdi 1 {i:energy}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda la {r:Rep}, resuelve el Encuentro gris «Turba Enfurecida»",
+    "it": "Perdi tutta la {r:Rep}, risolvi l'Incontro grigio «Folla Inferocita»"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 3 de {r:Rep}, resuelve el Encuentro gris «Escudero Solitario»",
+    "it": "1 {r:Esp}, 3 {r:Rep}, risolvi l'Incontro grigio «Scudiero Solitario»"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.3,
+     0.17,
+     0.71,
+     0.225
+    ],
+    "tabella": [
+     0.13,
+     0.47,
+     0.86,
+     0.655
+    ],
+    "ricompensa": [
+     0.13,
+     0.665,
+     0.86,
+     0.83
+    ],
+    "evitare": [
+     0.13,
+     0.84,
+     0.8,
+     0.91
+    ]
+   },
+   "dubbi": "«Escudero Solitario» tradotto (non nel glossario); «Turba Enfurecida» = Folla Inferocita (glossario)."
+  },
+  {
+   "img": "carte/4_encuentros_azul/36427.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Un Festín de Muerte",
+    "it": "Un Banchetto di Morte"
+   },
+   "testo": {
+    "es": "[i]Un caudillo local con fama de ser un maníaco sediento de sangre te invita a un banquete.[/i]",
+    "it": "[i]Un capo locale, noto per essere un maniaco assetato di sangue, ti invita a un banchetto.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 2,
+    "sequenza": "VVVVVGRR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Préstale atención",
+      "it": "Prestagli attenzione"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Impresiónale",
+      "it": "Impressionalo"
+     },
+     "speciale": {
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, pierde 1 de {i:energy}",
+      "it": "{i:arrowdown}, perdi 1 {i:energy}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Preguntas peligrosas",
+      "it": "Domande pericolose"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda tu {i:health} y tu {i:energy}",
+    "it": "Perdi tutta la tua {i:health} e la tua {i:energy}"
+   },
+   "ricompensa": {
+    "es": "3 de {r:Comida}, 2 de {r:Exp}, 2 de {r:Rep}",
+    "it": "3 {r:Cibo}, 2 {r:Esp}, 2 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy2"
+    },
+    {
+     "riga": 2,
+     "apre": "caution2"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.22,
+     0.185,
+     0.78,
+     0.27
+    ],
+    "tabella": [
+     0.13,
+     0.535,
+     0.86,
+     0.805
+    ],
+    "ricompensa": [
+     0.14,
+     0.815,
+     0.83,
+     0.915
+    ]
+   },
+   "dubbi": "Righe 1-2: Empatia e Cautela doppie ('empathy2','caution2')."
+  },
+  {
+   "img": "carte/4_encuentros_azul/36428.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Inquisidor del Círculo",
+    "it": "Inquisitore del Circolo"
+   },
+   "testo": {
+    "es": "[i]Un Archidruida severo ha llegado para purgar todo signo de Rareza. Sospecha mucho de ti...[/i]",
+    "it": "[i]Un severo Arcidruido è giunto per purgare ogni segno di Wyrd. Sospetta molto di te...[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 1,
+    "sequenza": "VVVVVGR"
+   },
+   "evitare": {
+    "es": "(requiere 2 {i:spirituality} y 5 de {r:Rep}): Paga 3 de {r:Rep}",
+    "it": "(richiede 2 {i:spirituality} e 5 {r:Rep}): Paga 3 {r:Rep}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Despeja sus sospechas",
+      "it": "Fuga i suoi sospetti"
+     },
+     "speciale": {
+      "caution": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, 1 {i:wound}",
+      "it": "{i:arrowdown}, 1 {i:wound}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Mantén una conversación",
+      "it": "Intrattieni una conversazione"
+     },
+     "speciale": {
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Gánate su confianza",
+      "it": "Guadagnati la sua fiducia"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde toda tu {i:health} y tu {i:energy}",
+    "it": "Perdi tutta la tua {i:health} e la tua {i:energy}"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Exp}, 2 de {r:Magia}",
+    "it": "2 {r:Esp}, 2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution2"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.155
+    ],
+    "testo": [
+     0.23,
+     0.195,
+     0.78,
+     0.285
+    ],
+    "tabella": [
+     0.13,
+     0.44,
+     0.86,
+     0.715
+    ],
+    "ricompensa": [
+     0.14,
+     0.725,
+     0.79,
+     0.815
+    ],
+    "evitare": [
+     0.14,
+     0.825,
+     0.76,
+     0.9
+    ]
+   },
+   "dubbi": "Righe 2-3: Cautela e Spiritualità doppie. Testo Evitare parzialmente sbiadito ('requiere 2 [gufo] y 5 de Rep')."
+  },
+  {
+   "img": "carte/4_encuentros_azul/36429.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 4,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Persecución",
+    "it": "Inseguimento"
+   },
+   "testo": {
+    "es": "[i]No hay ni un alma, todas las puertas están cerradas... Y, lo que es peor, sientes que algo te vigila desde las sombras.[/i]",
+    "it": "[i]Non c'è anima viva, tutte le porte sono chiuse... E, quel che è peggio, senti che qualcosa ti osserva dalle ombre.[/i]"
+   },
+   "affinita": null,
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Encuentra a tu perseguidor",
+      "it": "Trova il tuo inseguitore"
+     },
+     "prova": {
+      "attributo": "caution",
+      "minimo": 6
+     },
+     "es": "Tira un dado y suma tu Cautela. Si el resultado es inferior a 6, Fracasas en el Encuentro.",
+     "it": "Tira un dado e somma la tua Cautela. Se il risultato è inferiore a 6, fallisci l'Incontro."
+    },
+    {
+     "nome": {
+      "es": "¡Es un Primer Morador! ¡Huye!",
+      "it": "È un Predecessore! Fuggi!"
+     },
+     "prova": {
+      "attributo": "practicality",
+      "minimo": 7
+     },
+     "es": "Tira un dado y suma tu Lógica. Si el resultado es inferior a 7, Fracasas en el Encuentro.",
+     "it": "Tira un dado e somma la tua Praticità. Se il risultato è inferiore a 7, fallisci l'Incontro."
+    }
+   ],
+   "ricompensa": {
+    "es": "1 de {r:Exp}, mueve a una Localización conectada",
+    "it": "1 {r:Esp}, muoviti in un Luogo collegato"
+   },
+   "fallimento": {
+    "es": "Obtén 1 de {i:terror}, pierde 1 de {i:health} y resuelve el Encuentro púrpura «Primer Morador»",
+    "it": "Ottieni 1 {i:terror}, perdi 1 {i:health} e risolvi l'Incontro viola «Predecessore»"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.17,
+     0.17,
+     0.84,
+     0.255
+    ],
+    "tabella": [
+     0.07,
+     0.34,
+     0.8,
+     0.77
+    ],
+    "ricompensa": [
+     0.07,
+     0.79,
+     0.96,
+     0.94
+    ]
+   },
+   "dubbi": "Incontro blu senza misuratore né Chiavi: due prove a dado consecutive ('prova' = attributo e minimo). «Primer Morador» = Predecessore (incontro viola 36626/36627)."
+  }
+ ]
+}

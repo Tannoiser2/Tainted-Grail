@@ -1,0 +1,2439 @@
+{
+ "carte": [
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33424.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2. Nome \"Carga\" = carica (assalto), da non confondere con il segnalino Carica."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33423.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Carga",
+    "it": "Carica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2. Nome \"Carga\" = carica (assalto), da non confondere con il segnalino Carica."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33422.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Intimidar",
+    "it": "Intimidire"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si estás combatiendo contra un Encuentro gris, obtén {i:cube} por cada punto de {i:aggression} que tengas.",
+    "it": "Se stai combattendo contro un Incontro grigio, ottieni {i:cube} per ogni punto di {i:aggression} che possiedi."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 2: semichiave destra doppia (2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33421.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Arremetida",
+    "it": "Assalto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Retira {i:delay} de cualquier carta de la Secuencia.",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da una qualsiasi carta della Sequenza."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.08,
+     0.78,
+     0.145
+    ],
+    "testo": [
+     [
+      0.21,
+      0.58,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Carta passiva: semichiavi \"apre\" sul bordo destro; semichiave sinistra in fondo presente ma vuota."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33420.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Acopio de fuerzas",
+    "it": "Raccogliere le forze"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Pierde {i:cube}, roba 2 cartas.",
+    "it": "Perdi {i:cube}, pesca 2 carte."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33419.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33418.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}.",
+    "it": "Per ogni {i:cube} che dovresti perdere, invece ottieni {i:cube}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 2: semichiave destra doppia (2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33417.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:courage}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:courage}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 1 doppia (2 orsi) → \"livello\": 2. Nel testo {i:courage} è disegnato in una cornice di Chiave: probabilmente \"per ogni Chiave di Coraggio fisicamente unita nella Sequenza\"."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33416.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Envite heroico",
+    "it": "Sfida eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:courage}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:courage}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Riga 1 doppia (2 orsi) → \"livello\": 2. Nel testo {i:courage} è disegnato in una cornice di Chiave: probabilmente \"per ogni Chiave di Coraggio fisicamente unita nella Sequenza\"."
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33415.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Enfurecer",
+    "it": "Infuriare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {i:energy}, obtén {i:cube} por cada {i:aggression}.",
+    "it": "Perdi 1 {i:energy}, ottieni {i:cube} per ogni {i:aggression}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta del mazzo Blu generico (n/25 A, senza nome di personaggio), nel lotto come \"AZUL - MAZO AVANZADO\": personaggio null. Nel testo {i:aggression} è disegnato in una cornice di Chiave: probabilmente \"per ogni Chiave di Aggressività fisicamente unita nella Sequenza\"."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33800.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque",
+    "it": "Attacco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33801.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque cauteloso",
+    "it": "Attacco prudente"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube} menos, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube} in meno, previeni 1 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33802.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar.",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca."
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.22,
+     0.075,
+     0.8,
+     0.15
+    ],
+    "testo": [
+     [
+      0.2,
+      0.58,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi \"apre\" sul bordo destro; semichiave sinistra in fondo presente ma vuota."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33803.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33804.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Defensa",
+    "it": "Difesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33805.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe final",
+    "it": "Colpo finale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube2}, +1 {i:wound}.",
+    "it": "Perdi {i:cube2}, +1 {i:wound}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.755,
+      0.95,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33806.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Buscar debilidad",
+    "it": "Cercare un punto debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+1 {i:wound}.",
+     "it": "+1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33807.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Recapacitar",
+    "it": "Ripensarci"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Pierde {i:cube}, roba 2 cartas.",
+    "it": "Perdi {i:cube}, pesca 2 carte."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.37,
+      0.755,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33808.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Mantén la guardia",
+    "it": "Mantieni la guardia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Eliges el ataque enemigo (excepto «Huir»), {i:discard} después del ataque.",
+    "it": "Scegli l'attacco nemico (tranne «Fuggire»), {i:discard} dopo l'attacco."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33809.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:wound} recibida en este ataque.",
+    "it": "Ottieni {i:cube} per ogni {i:wound} subita in questo attacco."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 2: semichiavi destre doppie (2 orsi, 2 cinghiali) → \"livello\": 2."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33810.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.69,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33811.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 1 e 3: semichiavi destre doppie (2 orsi, 2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33812.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque sorpresa",
+    "it": "Attacco a sorpresa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.37,
+      0.755,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33813.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque sorpresa",
+    "it": "Attacco a sorpresa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta.",
+    "it": "Pesca 1 carta."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.37,
+      0.755,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33814.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.08,
+     0.92,
+     0.145
+    ],
+    "testo": [
+     [
+      0.37,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33700.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Truco sucio",
+    "it": "Trucco sporco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 1 Carga en la carta de Siembra.",
+     "it": "Metti 1 Carica sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 3: semichiave destra doppia (2 serpenti) → \"livello\": 2. \"Carta de Siembra\" = carta speciale di Arev (meccanica Semina): tradotta \"carta Semina\", verificare il termine ufficiale italiano."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33701.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Tirón de guadaña",
+    "it": "Strattone di falce"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 1 Carga en la carta de Siembra.",
+     "it": "Metti 1 Carica sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Elige un Ataque enemigo de un rango más bajo o más alto en la Tabla de Combate, {i:discard} después del ataque.",
+     "it": "Scegli un attacco nemico di una fascia più bassa o più alta nella Tabella di Combattimento, {i:discard} dopo l'attacco."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.525,
+      0.95,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 2 e 3: semichiavi destre doppie (2 cinghiali, 2 serpenti) → \"livello\": 2. \"Carta de Siembra\" = carta speciale di Arev (meccanica Semina): tradotta \"carta Semina\", verificare il termine ufficiale italiano."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33702.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Siembra",
+    "it": "Semina"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en esta carta O BIEN pon 1 Carga sobre cualquier carta de la Secuencia y {i:discard}.",
+    "it": "Metti 3 Cariche su questa carta OPPURE metti 1 Carica su una qualsiasi carta della Sequenza e {i:discard}."
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.09,
+     0.77,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.4,
+     0.045,
+     0.62,
+     0.087
+    ],
+    "testo": [
+     [
+      0.2,
+      0.655,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva (è la \"carta de Siembra\" citata da altre carte di Arev): semichiavi \"apre\" (riga 3 doppia → livello 2, 2x) sul bordo destro; semichiave sinistra in fondo presente ma vuota. Nome italiano \"Semina\" da verificare."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33703.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Siembra",
+    "it": "Semina"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en esta carta O BIEN pon 1 Carga sobre cualquier carta de la Secuencia y {i:discard}.",
+    "it": "Metti 3 Cariche su questa carta OPPURE metti 1 Carica su una qualsiasi carta della Sequenza e {i:discard}."
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.09,
+     0.77,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.4,
+     0.045,
+     0.62,
+     0.087
+    ],
+    "testo": [
+     [
+      0.2,
+      0.655,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva (è la \"carta de Siembra\" citata da altre carte di Arev): semichiavi \"apre\" (riga 3 doppia → livello 2, 2x) sul bordo destro; semichiave sinistra in fondo presente ma vuota. Nome italiano \"Semina\" da verificare."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33704.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cosecha",
+    "it": "Raccolto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Retira todas las Cargas de todas las cartas de Siembra en la Secuencia; obtén {i:cube2} por cada Carga retirada de esta forma.",
+    "it": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni {i:cube2} per ogni Carica rimossa in questo modo."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.585,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 2 e 3: semichiavi destre doppie (2 cinghiali, 2 serpenti) → \"livello\": 2. Semichiave sinistra in fondo presente ma vuota. \"Carta de Siembra\" = carta speciale di Arev (meccanica Semina): tradotta \"carta Semina\", verificare il termine ufficiale italiano."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33705.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cosecha",
+    "it": "Raccolto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Retira todas las Cargas de todas las cartas de Siembra en la Secuencia; obtén {i:cube2} por cada Carga retirada de esta forma.",
+    "it": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni {i:cube2} per ogni Carica rimossa in questo modo."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.585,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Righe 2 e 3: semichiavi destre doppie (2 cinghiali, 2 serpenti) → \"livello\": 2. Semichiave sinistra in fondo presente ma vuota. \"Carta de Siembra\" = carta speciale di Arev (meccanica Semina): tradotta \"carta Semina\", verificare il termine ufficiale italiano."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33706.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Torbellino",
+    "it": "Turbine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 2 Cargas en la carta de Siembra.",
+     "it": "Metti 2 Cariche sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+2 {i:wound}.",
+     "it": "+2 {i:wound}."
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.92,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Riga 1: semichiave destra doppia (2 orsi) → \"livello\": 2. \"Carta de Siembra\" = carta speciale di Arev (meccanica Semina): tradotta \"carta Semina\", verificare il termine ufficiale italiano."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33707.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Gran alcance",
+    "it": "Grande portata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Pierde {i:cube}, prevén 1 {i:wound}.",
+    "it": "Perdi {i:cube}, previeni 1 {i:wound}."
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.09,
+     0.77,
+     0.145
+    ],
+    "nome_personaggio": [
+     0.4,
+     0.045,
+     0.62,
+     0.087
+    ],
+    "testo": [
+     [
+      0.22,
+      0.76,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi \"apre\" (righe 1, 3, 4 e 2x) sul bordo destro; semichiave sinistra in fondo presente ma vuota."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33708.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Extender la maldición",
+    "it": "Diffondere la maledizione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén 2 de {i:terror}. Paga cualquier cantidad de {r:Magia} para obtener 2 veces esa cantidad en {i:cube}.",
+    "it": "Ottieni 2 {i:terror}. Paga una qualsiasi quantità di {r:Magia} per ottenere il doppio di quella quantità in {i:cube}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.38,
+     0.08,
+     0.92,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.645,
+      0.96,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Non è separata da una linea: le due frasi sembrano entrambe parte della Capacità \"al piazzarla\". Semichiave sinistra in fondo presente ma vuota."
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33709.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Adiestramiento de mercenario",
+    "it": "Addestramento da mercenario"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "La siguiente carta no necesita conectar con {i:extra}.",
+    "it": "La carta successiva non ha bisogno di collegarsi con {i:extra}."
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.4,
+     0.09,
+     0.9,
+     0.16
+    ],
+    "nome_personaggio": [
+     0.55,
+     0.045,
+     0.76,
+     0.087
+    ],
+    "testo": [
+     [
+      0.36,
+      0.735,
+      0.96,
+      0.835
+     ]
+    ]
+   }
+  }
+ ]
+}

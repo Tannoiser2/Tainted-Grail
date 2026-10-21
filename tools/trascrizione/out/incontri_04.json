@@ -1,0 +1,2094 @@
+{
+ "carte": [
+  {
+   "img": "carte/1_encuentros_morado/36600.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Acechador de la Niebla",
+    "it": "Predatore della Nebbia"
+   },
+   "testo": {
+    "es": "[i]A menudo caza en la gris extensión de la Rareza.[/i]",
+    "it": "[i]Spesso caccia nella grigia distesa del Wyrd.[/i]"
+   },
+   "valore": 5,
+   "tratti": [
+    "Imboscata"
+   ],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:energy}, Escapa del Combate.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:energy}, Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "Pierde {i:cube}, pierde 2 de {i:energy}",
+     "it": "Perdi {i:cube}, perdi 2 {i:energy}"
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "es": "Pierde {i:cube2}, pierde 1 de {i:energy}",
+     "it": "Perdi {i:cube2}, perdi 1 {i:energy}"
+    },
+    {
+     "da": 4,
+     "a": 4,
+     "es": "Pierde 1 de {i:energy}",
+     "it": "Perdi 1 {i:energy}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde 1 de {i:energy}",
+    "it": "Perdi 1 {i:energy}"
+   },
+   "ricompensa": {
+    "es": "Obtén 1 de {i:energy}",
+    "it": "Ottieni 1 {i:energy}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.19,
+     0.08,
+     0.52,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.53,
+     0.83,
+     0.565
+    ],
+    "tratti": [
+     0.04,
+     0.58,
+     0.7,
+     0.645
+    ],
+    "tabella": [
+     0.05,
+     0.67,
+     0.75,
+     0.86
+    ],
+    "ricompensa": [
+     0.04,
+     0.88,
+     0.62,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). Dopo il tratto c'è una regola speciale in corsivo, messa in 'regola_speciale'."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36601.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Acechador de la Niebla",
+    "it": "Predatore della Nebbia"
+   },
+   "testo": {
+    "es": "[i]A menudo caza en la gris extensión de la Rareza.[/i]",
+    "it": "[i]Spesso caccia nella grigia distesa del Wyrd.[/i]"
+   },
+   "valore": 5,
+   "tratti": [
+    "Imboscata"
+   ],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:energy}, Escapa del Combate.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:energy}, Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "Pierde {i:cube}, pierde 2 de {i:energy}",
+     "it": "Perdi {i:cube}, perdi 2 {i:energy}"
+    },
+    {
+     "da": 2,
+     "a": 3,
+     "es": "Pierde {i:cube2}, pierde 1 de {i:energy}",
+     "it": "Perdi {i:cube2}, perdi 1 {i:energy}"
+    },
+    {
+     "da": 4,
+     "a": 4,
+     "es": "Pierde 1 de {i:energy}",
+     "it": "Perdi 1 {i:energy}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde 1 de {i:energy}",
+    "it": "Perdi 1 {i:energy}"
+   },
+   "ricompensa": {
+    "es": "Obtén 1 de {i:energy}",
+    "it": "Ottieni 1 {i:energy}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.19,
+     0.08,
+     0.52,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.53,
+     0.83,
+     0.565
+    ],
+    "tratti": [
+     0.04,
+     0.58,
+     0.7,
+     0.645
+    ],
+    "tabella": [
+     0.05,
+     0.67,
+     0.75,
+     0.86
+    ],
+    "ricompensa": [
+     0.04,
+     0.88,
+     0.62,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). Dopo il tratto c'è una regola speciale in corsivo, messa in 'regola_speciale'."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36602.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Aparición",
+    "it": "Apparizione"
+   },
+   "testo": {
+    "es": "[i]Tus miedos encarnados.[/i]",
+    "it": "[i]Le tue paure fatte carne.[/i]"
+   },
+   "valore": 6,
+   "tratti": [
+    "Opportunista"
+   ],
+   "regola_speciale": {
+    "es": "[i]Recibe 1 {i:wound} inevitable por cada Ataque si tienes 1 o más de {i:terror}.[/i]",
+    "it": "[i]Subisci 1 {i:wound} inevitabile per ogni Attacco se hai 1 o più {i:terror}.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "Pierde {i:cube}",
+     "it": "Perdi {i:cube}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "Pierde {i:cube2}",
+     "it": "Perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}",
+    "it": "Ottieni 1 {i:terror}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.2,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.585,
+     0.62,
+     0.615
+    ],
+    "tratti": [
+     0.04,
+     0.62,
+     0.62,
+     0.715
+    ],
+    "tabella": [
+     0.05,
+     0.755,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto)."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36603.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Aparición",
+    "it": "Apparizione"
+   },
+   "testo": {
+    "es": "[i]Tus miedos encarnados.[/i]",
+    "it": "[i]Le tue paure fatte carne.[/i]"
+   },
+   "valore": 6,
+   "tratti": [
+    "Opportunista"
+   ],
+   "regola_speciale": {
+    "es": "[i]Recibe 1 {i:wound} inevitable por cada Ataque si tienes 1 o más de {i:terror}.[/i]",
+    "it": "[i]Subisci 1 {i:wound} inevitabile per ogni Attacco se hai 1 o più {i:terror}.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "Pierde {i:cube}",
+     "it": "Perdi {i:cube}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "Pierde {i:cube2}",
+     "it": "Perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}",
+    "it": "Ottieni 1 {i:terror}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.2,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.585,
+     0.62,
+     0.615
+    ],
+    "tratti": [
+     0.04,
+     0.62,
+     0.62,
+     0.715
+    ],
+    "tabella": [
+     0.05,
+     0.755,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto)."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36604.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Enrarecido",
+    "it": "Distorto"
+   },
+   "testo": {
+    "es": "[i]Un hombre que se alejó demasiado del camino.[/i]",
+    "it": "[i]Un uomo che si è allontanato troppo dal sentiero.[/i]"
+   },
+   "valore": 7,
+   "tratti": [],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "1 {i:wound}, obtén 2 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "Pierde {i:cube}, {i:discard}",
+     "it": "Perdi {i:cube}, {i:discard}"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound} (inevitable)",
+    "it": "1 {i:wound} (inevitabile)"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.17,
+     0.08,
+     0.5,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.63,
+     0.45,
+     0.685
+    ],
+    "tabella": [
+     0.05,
+     0.71,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome: 'Enrarecido' reso con 'Distorto' (glossario app: Distorto, viola, ma indicato livello 2 mentre la carta è nel mazzo [1]); da confermare."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36605.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Enrarecido",
+    "it": "Distorto"
+   },
+   "testo": {
+    "es": "[i]Un hombre que se alejó demasiado del camino.[/i]",
+    "it": "[i]Un uomo che si è allontanato troppo dal sentiero.[/i]"
+   },
+   "valore": 7,
+   "tratti": [],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "1 {i:wound}, obtén 2 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "Pierde {i:cube}, {i:discard}",
+     "it": "Perdi {i:cube}, {i:discard}"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound} (inevitable)",
+    "it": "1 {i:wound} (inevitabile)"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.17,
+     0.08,
+     0.5,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.63,
+     0.45,
+     0.685
+    ],
+    "tabella": [
+     0.05,
+     0.71,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome: 'Enrarecido' reso con 'Distorto' (glossario app: Distorto, viola, ma indicato livello 2 mentre la carta è nel mazzo [1]); da confermare."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36606.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Sacerdotisa Errante",
+    "it": "Sacerdotessa Errante"
+   },
+   "testo": {
+    "es": "[i]Cree que las antiguas costumbres la protegerán en el camino. Tú sabes que es solo cuestión de tiempo que descubra lo mucho que se equivoca.[/i]",
+    "it": "[i]Crede che le antiche usanze la proteggeranno lungo il cammino. Tu sai che è solo questione di tempo prima che scopra quanto si sbaglia.[/i]"
+   },
+   "effetto": {
+    "es": "Cada miembro del equipo puede pagar 1 de {r:Riqueza} o 1 de {r:Comida} para obtener 3 de {i:health}.",
+    "it": "Ogni membro della Compagnia può pagare 1 {r:Ricchezza} o 1 {r:Cibo} per ottenere 3 {i:health}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.08,
+     0.09,
+     0.6,
+     0.145
+    ],
+    "testo": [
+     0.04,
+     0.735,
+     0.8,
+     0.82
+    ],
+    "effetto": [
+     0.04,
+     0.84,
+     0.8,
+     0.95
+    ]
+   },
+   "dubbi": "Carta senza Chiavi né tabella: solo testo; regola messa in 'effetto'."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36608.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Voluta Susurrante",
+    "it": "Voluta Sussurrante"
+   },
+   "testo": {
+    "es": "[i]Dicen que si escuchas con atención, podrás oír la hora y el lugar de tu muerte.[/i]",
+    "it": "[i]Dicono che, se ascolti con attenzione, potrai udire l'ora e il luogo della tua morte.[/i]"
+   },
+   "valore": 6,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si alcanzas el máximo de {i:terror}, Escapa del Combate.[/i]",
+    "it": "[i]Se raggiungi il massimo di {i:terror}, Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "Obtén 1 de {i:terror}",
+     "it": "Ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde {i:cube2}",
+    "it": "Perdi {i:cube2}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.08,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.585,
+     0.72,
+     0.645
+    ],
+    "regola": [
+     0.04,
+     0.66,
+     0.5,
+     0.72
+    ],
+    "tabella": [
+     0.05,
+     0.75,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). Nessun tratto: la riga in corsivo è una regola speciale ('regola_speciale')."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36609.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Voluta Susurrante",
+    "it": "Voluta Sussurrante"
+   },
+   "testo": {
+    "es": "[i]Dicen que si escuchas con atención, podrás oír la hora y el lugar de tu muerte.[/i]",
+    "it": "[i]Dicono che, se ascolti con attenzione, potrai udire l'ora e il luogo della tua morte.[/i]"
+   },
+   "valore": 6,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si alcanzas el máximo de {i:terror}, Escapa del Combate.[/i]",
+    "it": "[i]Se raggiungi il massimo di {i:terror}, Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "Obtén 1 de {i:terror}",
+     "it": "Ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde {i:cube2}",
+    "it": "Perdi {i:cube2}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.08,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.585,
+     0.72,
+     0.645
+    ],
+    "regola": [
+     0.04,
+     0.66,
+     0.5,
+     0.72
+    ],
+    "tabella": [
+     0.05,
+     0.75,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). Nessun tratto: la riga in corsivo è una regola speciale ('regola_speciale')."
+  },
+  {
+   "img": "carte/1_encuentros_morado/36610.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Voluta Susurrante",
+    "it": "Voluta Sussurrante"
+   },
+   "testo": {
+    "es": "[i]Dicen que si escuchas con atención, podrás oír la hora y el lugar de tu muerte.[/i]",
+    "it": "[i]Dicono che, se ascolti con attenzione, potrai udire l'ora e il luogo della tua morte.[/i]"
+   },
+   "valore": 6,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si alcanzas el máximo de {i:terror}, Escapa del Combate.[/i]",
+    "it": "[i]Se raggiungi il massimo di {i:terror}, Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "Obtén 1 de {i:terror}",
+     "it": "Ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde {i:cube2}",
+    "it": "Perdi {i:cube2}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Magia}",
+    "it": "1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.08,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.585,
+     0.72,
+     0.645
+    ],
+    "regola": [
+     0.04,
+     0.66,
+     0.5,
+     0.72
+    ],
+    "tabella": [
+     0.05,
+     0.75,
+     0.61,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). Nessun tratto: la riga in corsivo è una regola speciale ('regola_speciale')."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36607.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Saqueadora de Tumbas",
+    "it": "Saccheggiatrice di Tombe"
+   },
+   "testo": {
+    "es": "[i]Una vida dedicada a buscar reliquias de los Primeros Moradores le ha enseñado muchos trucos sucios.[/i]",
+    "it": "[i]Una vita dedicata alla ricerca delle reliquie dei Predecessori le ha insegnato molti trucchi sporchi.[/i]"
+   },
+   "valore": 7,
+   "tratti": [
+    "Rapido",
+    "Ladro"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "1 {i:wound}",
+     "it": "1 {i:wound}"
+    },
+    {
+     "da": 2,
+     "a": 2,
+     "es": "3 {i:wound}, {i:discard}",
+     "it": "3 {i:wound}, {i:discard}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "1 {i:wound}, pierde {i:cube2}, {i:discard}",
+     "it": "1 {i:wound}, perdi {i:cube2}, {i:discard}"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "Huir",
+     "it": "Fugge"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Riqueza}, 1 Objeto",
+    "it": "1 {r:Ricchezza}, 1 Oggetto"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.15,
+     0.09,
+     0.55,
+     0.165
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.155
+    ],
+    "testo": [
+     0.04,
+     0.505,
+     0.66,
+     0.595
+    ],
+    "tratti": [
+     0.04,
+     0.61,
+     0.4,
+     0.645
+    ],
+    "tabella": [
+     0.05,
+     0.675,
+     0.6,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.65,
+     0.965
+    ]
+   },
+   "dubbi": "Nome italiano non presente nel glossario (tradotto). 'Primeros Moradores' = Predecessori (glossario: Spirito del Predecessore)."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36611.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Cuatro Urracas",
+    "it": "Quattro Gazze"
+   },
+   "testo": {
+    "es": "[i]Las leyendas dicen que ver cuatro urracas trae mala suerte. ¿Y si lo que ves son dos, pero con dos cabezas cada una?[/i]",
+    "it": "[i]Le leggende dicono che vedere quattro gazze porti sfortuna. E se quelle che vedi sono due, ma con due teste ciascuna?[/i]"
+   },
+   "valore": 8,
+   "tratti": [
+    "Rapido"
+   ],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:health}, pierde toda tu {r:Exp}.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:health}, perdi tutta la tua {r:Esp}.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 6,
+     "a": 7,
+     "es": "1 {i:wound}, pierde {i:cube}",
+     "it": "1 {i:wound}, perdi {i:cube}"
+    }
+   ],
+   "opportunita": {
+    "es": "Pierde 1 de {r:Riqueza}, {i:discard}",
+    "it": "Perdi 1 {r:Ricchezza}, {i:discard}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "1 de {r:Comida}, 3 de {r:Riqueza}",
+    "it": "1 {r:Cibo}, 3 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.12,
+     0.08,
+     0.56,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.155
+    ],
+    "testo": [
+     0.04,
+     0.525,
+     0.73,
+     0.61
+    ],
+    "tratti": [
+     0.04,
+     0.625,
+     0.68,
+     0.69
+    ],
+    "tabella": [
+     0.05,
+     0.715,
+     0.75,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.73,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 2: icona Coraggio doppia (due cinghiali) = probabilmente requisito di livello 2, scritta 'courage2'. Nome italiano tradotto."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36612.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Espectro Descarnado",
+    "it": "Spettro Scarnificato"
+   },
+   "testo": {
+    "es": "[i]Cuanto más te debilitas, más fuerte se vuelve.[/i]",
+    "it": "[i]Più tu ti indebolisci, più lui diventa forte.[/i]"
+   },
+   "valore": 10,
+   "tratti": [
+    "Finta"
+   ],
+   "regola_speciale": {
+    "es": "[i]Pon un dial con una ficha de Misión en el Espectro Descarnado y ponlo en 1. El valor del Espectro Descarnado aumenta la misma cantidad que el valor de este dial.[/i]",
+    "it": "[i]Metti un Quadrante con un Gettone Cerca sullo Spettro Scarnificato e impostalo su 1. Il Valore dello Spettro Scarnificato aumenta della stessa quantità del valore di questo Quadrante.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 99,
+     "es": "0 {i:wound} + el valor del dial del Espectro descarnado. Si este ataque inflige {i:wound}, aumenta el dial en 1",
+     "it": "0 {i:wound} + il valore del Quadrante dello Spettro Scarnificato. Se questo attacco infligge {i:wound}, aumenta il Quadrante di 1"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard} todas las cartas",
+    "it": "{i:discard} tutte le carte"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "1 de {r:Riqueza}, 1 de {r:Magia}",
+    "it": "1 {r:Ricchezza}, 1 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.17,
+     0.085,
+     0.5,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.69,
+     0.155
+    ],
+    "testo": [
+     0.04,
+     0.31,
+     0.45,
+     0.37
+    ],
+    "tratti": [
+     0.04,
+     0.395,
+     0.78,
+     0.54
+    ],
+    "tabella": [
+     0.05,
+     0.585,
+     0.75,
+     0.86
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.68,
+     0.965
+    ]
+   },
+   "dubbi": "Riga unica '0+' codificata da 0 a 99. Opportunità: icona carta rossa + 'todas las cartas' (scarta tutte le carte della Sequenza?). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36613.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": true,
+   "nome": {
+    "es": "Hijo de la Rareza",
+    "it": "Figlio del Wyrd"
+   },
+   "testo": {
+    "es": "[i]Ocurren cosas horribles cuando la Rareza se adueña de una embarazada.[/i]",
+    "it": "[i]Accadono cose orribili quando il Wyrd si impossessa di una donna incinta.[/i]"
+   },
+   "valore": 10,
+   "tratti": [
+    "Guardiano",
+    "Opportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "Pierde {i:cube2}",
+     "it": "Perdi {i:cube2}"
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 7,
+     "a": 7,
+     "es": "Pierde {i:cube4}",
+     "it": "Perdi {i:cube4}"
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "es": "1 {i:wound}, obtén 3 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound} (inevitable)",
+    "it": "1 {i:wound} (inevitabile)"
+   },
+   "ricompensa": {
+    "es": "Pierde 1 de {i:terror}",
+    "it": "Perdi 1 {i:terror}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.2,
+     0.085,
+     0.67,
+     0.145
+    ],
+    "valore": [
+     0.69,
+     0.08,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.445,
+     0.68,
+     0.505
+    ],
+    "tratti": [
+     0.04,
+     0.53,
+     0.53,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.595,
+     0.67,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.63,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 7: icona con 4 cubi, scritta {i:cube4} (non presente nel foglio icone). Icona Guardiano 'G' nel cartiglio. Nome italiano tradotto."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36614.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Mercader Ambulante",
+    "it": "Mercante Ambulante"
+   },
+   "testo": {
+    "es": "[i]Sus huraños guardaespaldas vigilan cada uno de tus movimientos.[/i]",
+    "it": "[i]Le sue scontrose guardie del corpo sorvegliano ogni tua mossa.[/i]"
+   },
+   "effetto": {
+    "es": "Roba 3 Objetos al azar. Puedes comprar cualquier Objeto Fabricable de esta pila por 1 de {r:Riqueza} y cualquier otro Objeto por 2 de {r:Riqueza}. Puedes vender cualquier Objeto por 1 de {r:Riqueza}.",
+    "it": "Pesca 3 Oggetti a caso. Puoi comprare qualsiasi Oggetto Fabbricabile di questa pila per 1 {r:Ricchezza} e qualsiasi altro Oggetto per 2 {r:Ricchezza}. Puoi vendere qualsiasi Oggetto per 1 {r:Ricchezza}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.2,
+     0.09,
+     0.53,
+     0.16
+    ],
+    "testo": [
+     0.04,
+     0.67,
+     0.63,
+     0.725
+    ],
+    "effetto": [
+     0.04,
+     0.755,
+     0.82,
+     0.965
+    ]
+   },
+   "dubbi": "Carta senza Chiavi né tabella (incontro-evento); regola messa in 'effetto'."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36615.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Reptador Terrible",
+    "it": "Strisciante Terribile"
+   },
+   "testo": {
+    "es": "[i]Todo el contenido de un túmulo funerario se fusionó en una avalancha reptante.[/i]",
+    "it": "[i]L'intero contenuto di un tumulo funerario si è fuso in una valanga strisciante.[/i]"
+   },
+   "valore": 14,
+   "tratti": [
+    "Distruzione",
+    "Lento"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "4 {i:wound}, pierde {i:cube2}",
+     "it": "4 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 10,
+     "a": 13,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "2 {i:discard}",
+    "it": "2 {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Riqueza}",
+    "it": "2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x",
+   "aree": {
+    "titolo": [
+     0.09,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.69,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.465,
+     0.57,
+     0.55
+    ],
+    "tratti": [
+     0.04,
+     0.565,
+     0.45,
+     0.605
+    ],
+    "tabella": [
+     0.05,
+     0.63,
+     0.6,
+     0.86
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 3: icona Praticità doppia (due serpenti) = probabile requisito livello 2 ('practicality2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/2_encuentros_morado/36616.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 2,
+   "guardiano": false,
+   "nome": {
+    "es": "Reptador Terrible",
+    "it": "Strisciante Terribile"
+   },
+   "testo": {
+    "es": "[i]Todo el contenido de un túmulo funerario se fusionó en una avalancha reptante.[/i]",
+    "it": "[i]L'intero contenuto di un tumulo funerario si è fuso in una valanga strisciante.[/i]"
+   },
+   "valore": 14,
+   "tratti": [
+    "Distruzione",
+    "Lento"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "4 {i:wound}, pierde {i:cube2}",
+     "it": "4 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 10,
+     "a": 13,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "2 {i:discard}",
+    "it": "2 {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Riqueza}",
+    "it": "2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x",
+   "aree": {
+    "titolo": [
+     0.09,
+     0.08,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.69,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.465,
+     0.57,
+     0.55
+    ],
+    "tratti": [
+     0.04,
+     0.565,
+     0.45,
+     0.605
+    ],
+    "tabella": [
+     0.05,
+     0.63,
+     0.6,
+     0.86
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 3: icona Praticità doppia (due serpenti) = probabile requisito livello 2 ('practicality2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36617.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Abhartach",
+    "it": "Abhartach"
+   },
+   "testo": null,
+   "valore": 12,
+   "tratti": [
+    "Rapido",
+    "Opportunista"
+   ],
+   "regola_speciale": {
+    "es": "[i]Después de este Encuentro, añádelo de nuevo al mazo y barájalo a menos que pagues 1 de {r:Magia}.[/i]",
+    "it": "[i]Dopo questo Incontro, rimettilo nel mazzo e mescolalo, a meno che tu non paghi 1 {r:Magia}.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "1 {i:wound}, obtén 1 de {i:terror}",
+     "it": "1 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 9,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}",
+     "valori": [
+      3,
+      6,
+      9
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "Pierde {i:cube2}",
+     "it": "Perdi {i:cube2}"
+    },
+    {
+     "da": 7,
+     "a": 8,
+     "es": "1 {i:wound}, pierde {i:cube}",
+     "it": "1 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 10,
+     "a": 11,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "1 {i:wound}, obtén 1 de {i:terror}",
+    "it": "1 {i:wound}, ottieni 1 {i:terror}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Rep}",
+    "it": "1 {r:Esp}, 1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Riqueza}",
+    "it": "2 {r:Ricchezza}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality2"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.18,
+     0.085,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "tratti": [
+     0.04,
+     0.465,
+     0.76,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.67,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.7,
+     0.965
+    ]
+   },
+   "dubbi": "Nessun testo narrativo. Riga di tabella '3, 6, 9' non contigua: codificata con 'valori':[3,6,9] (da/a indicativi). Riga 3: Praticità doppia ('practicality2')."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36619.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": true,
+   "nome": {
+    "es": "Picomartillo",
+    "it": "Beccomartello"
+   },
+   "testo": {
+    "es": "[i]Algunos frailecillos viven tanto y se imbuyen de tanta magia que alcanzan el tamaño de un caballo.[/i]",
+    "it": "[i]Alcune pulcinelle di mare vivono così a lungo e si impregnano di così tanta magia da raggiungere le dimensioni di un cavallo.[/i]"
+   },
+   "valore": 16,
+   "tratti": [
+    "Guardiano",
+    "Lento"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 6,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 7,
+     "a": 9,
+     "es": "2 {i:wound}",
+     "it": "2 {i:wound}"
+    },
+    {
+     "da": 10,
+     "a": 10,
+     "es": "4 {i:wound}",
+     "it": "4 {i:wound}"
+    },
+    {
+     "da": 11,
+     "a": 15,
+     "es": "Huir",
+     "it": "Fugge"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}",
+    "it": "Ottieni 1 {i:terror}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "3 de {r:Comida}",
+    "it": "3 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "2x",
+   "aree": {
+    "titolo": [
+     0.22,
+     0.085,
+     0.66,
+     0.145
+    ],
+    "valore": [
+     0.69,
+     0.08,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.425,
+     0.6,
+     0.505
+    ],
+    "tratti": [
+     0.04,
+     0.53,
+     0.39,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.66,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 2: Coraggio doppio ('courage2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36618.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Espíritu de Primer Morador",
+    "it": "Spirito del Predecessore"
+   },
+   "testo": {
+    "es": "[i]Uno de los guerreros masacrados por los caballeros de Arturo, que revive su derrota en un ciclo interminable de agonía.[/i]",
+    "it": "[i]Uno dei guerrieri massacrati dai cavalieri di Artù, che rivive la propria sconfitta in un ciclo interminabile di agonia.[/i]"
+   },
+   "valore": 10,
+   "tratti": [
+    "Imboscata",
+    "Finta"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "es": "Pierde 2 de {i:energy}, obtén 1 de {i:terror}",
+     "it": "Perdi 2 {i:energy}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 3,
+     "a": 4,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 5,
+     "a": 7,
+     "es": "3 {i:wound}, {i:discard}",
+     "it": "3 {i:wound}, {i:discard}"
+    },
+    {
+     "da": 8,
+     "a": 9,
+     "es": "1 {i:wound}, pierde {i:cube2}",
+     "it": "1 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 2 de {i:terror}",
+    "it": "Ottieni 2 {i:terror}"
+   },
+   "ricompensa": null,
+   "bottino": {
+    "es": "3 de {r:Magia}",
+    "it": "3 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.17,
+     0.08,
+     0.56,
+     0.15
+    ],
+    "valore": [
+     0.6,
+     0.07,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.505,
+     0.74,
+     0.59
+    ],
+    "tratti": [
+     0.04,
+     0.61,
+     0.43,
+     0.645
+    ],
+    "tabella": [
+     0.05,
+     0.67,
+     0.75,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.92,
+     0.42,
+     0.965
+    ]
+   }
+  }
+ ]
+}

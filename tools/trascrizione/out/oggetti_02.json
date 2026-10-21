@@ -1,0 +1,1149 @@
+{
+ "carte": [
+  {
+   "img": "carte/objetos/32532.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Criada taciturna",
+    "it": "Serva Taciturna"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Obtén 1 de {i:energy} al Comienzo del Día.\nEn el Fin del Día, paga 1 de {r:Riqueza} o 1 de {r:Rep}, o descarta esta carta.",
+    "it": "Ottieni 1 {i:energy} all'Inizio della Giornata.\nAlla Fine della Giornata, paga 1 {r:Ricchezza} o 1 {r:Rep}, oppure scarta questa carta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32533.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Escaldo voluble",
+    "it": "Scaldo Volubile"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cuando robes cartas al comienzo del Encuentro, roba 1 más.\nEn el Fin del Día, paga 1 de {r:Riqueza} o 1 de {r:Rep}, o descarta esta carta.",
+    "it": "Quando peschi carte all'inizio dell'Incontro, pescane 1 in più.\nAlla Fine della Giornata, paga 1 {r:Ricchezza} o 1 {r:Rep}, oppure scarta questa carta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.63,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32534.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Mercenario adusto",
+    "it": "Mercenario Arcigno"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Obtén {i:cube2} al comienzo del Combate.\nEn el Fin del Día, paga 1 de {r:Riqueza} o 1 de {r:Rep}, o descarta esta carta.",
+    "it": "Ottieni {i:cube2} all'inizio del Combattimento.\nAlla Fine della Giornata, paga 1 {r:Ricchezza} o 1 {r:Rep}, oppure scarta questa carta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32535.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Guía experimentado",
+    "it": "Guida Esperta"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cada Día, tu primer Viaje cuesta 1 de {i:energy} menos para ti y todos los miembros de tu equipo.\nEn el Fin del Día, paga 1 de {r:Riqueza} o 1 de {r:Rep}, o descarta esta carta.",
+    "it": "Ogni Giorno, il tuo primo Viaggio costa 1 {i:energy} in meno per te e per tutti i membri della tua Compagnia.\nAlla Fine della Giornata, paga 1 {r:Ricchezza} o 1 {r:Rep}, oppure scarta questa carta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.62,
+      0.94,
+      0.96
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32536.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Lechón de la suerte",
+    "it": "Maialino Portafortuna"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Después de robar un Encuentro aleatorio, puedes ponerlo debajo de su mazo y robar otro (una vez al Día).",
+    "it": "Dopo aver pescato un Incontro casuale, puoi metterlo in fondo al suo mazzo e pescarne un altro (una volta al Giorno)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.67,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "una_volta_al_giorno": true
+  },
+  {
+   "img": "carte/objetos/32537.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Viejo cuervo",
+    "it": "Vecchio Corvo"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Mira la primera carta del mazo de Eventos siempre que sea un Evento Aleatorio. Puedes descartar dicho Evento Aleatorio y poner uno nuevo en su lugar.",
+    "it": "{i:action} 1 {i:energy}: guarda la prima carta del mazzo Eventi, purché sia un Evento Casuale. Puoi scartare quell'Evento Casuale e metterne uno nuovo al suo posto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.62,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32538.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Tienda impermeable",
+    "it": "Tenda Impermeabile"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Todos los personajes de tu Localización ignoran los Eventos [i]Frío antinatural[/i] y [i]Ventisca rugiente[/i].",
+    "it": "Tutti i Personaggi nel tuo Luogo ignorano gli Eventi [i]Freddo Innaturale[/i] e [i]Bufera Ruggente[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Frío antinatural' e 'Ventisca rugiente' non nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32539.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Gato salvaje",
+    "it": "Gatto Selvatico"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "En el Fin del Día, si no tienes {r:Comida}, obtén 1 de {r:Comida} y 2 de {i:terror}.\nIgnora el Rasgo [i]Emboscada[/i].",
+    "it": "Alla Fine della Giornata, se non hai {r:Cibo}, ottieni 1 {r:Cibo} e 2 {i:terror}.\nIgnora il Tratto [i]Imboscata[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.7,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32540.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Tiza para rituales",
+    "it": "Gesso Rituale"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Al activar un Menhir, reduce el coste de activación en 1 de {i:energy} y 1 de otro recurso cualquiera. Después, lanza un dial.\nGrial: No pasa nada.\nCalavera: Descarta este Objeto.",
+    "it": "Quando attivi un Menhir, riduci il costo di attivazione di 1 {i:energy} e di 1 di un'altra risorsa qualsiasi. Poi lancia un Quadrante.\nGraal: non succede nulla.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.59,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32541.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Tomo enmohecido",
+    "it": "Tomo Ammuffito"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "En el Fin del Día, puedes elegir no restaurar {i:health} ni perder {i:terror}, y en vez de eso obtener 1 de {r:Magia}.",
+    "it": "Alla Fine della Giornata, puoi scegliere di non recuperare {i:health} né perdere {i:terror}, e invece ottenere 1 {r:Magia}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32542.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Recuerdo preciado",
+    "it": "Ricordo Prezioso"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Pierde 1 más de {i:terror} al Descansar.\nNo puedes darle este Objeto a otro personaje.",
+    "it": "Perdi 1 {i:terror} in più quando Riposi.\nNon puoi dare questo Oggetto a un altro Personaggio."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32543.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Tejón misterioso",
+    "it": "Tasso Misterioso"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Voltea esta carta cuando juegues una carta de Combate o Diplomacia para conectar su Clave Mágica sin gastar {r:Magia}.",
+    "it": "Gira questa carta quando giochi una carta Combattimento o Diplomazia per collegarne la Chiave Magica senza spendere {r:Magia}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.95
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32544.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Carillón agudo",
+    "it": "Carillon Stridulo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Ignora los efectos de los Eventos [i]Asalto nocturno[/i] y [i]Bestia de caza[/i].",
+    "it": "Ignora gli effetti degli Eventi [i]Assalto Notturno[/i] e [i]Bestia da Caccia[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Asalto nocturno' e 'Bestia de caza' non nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32545.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Corazón de Rarapiedra",
+    "it": "Cuore di Pietra Anomala"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Agrega 2 al dial de un Menhir activo en tu Localización y descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: aggiungi 2 al Quadrante di un Menhir attivo nel tuo Luogo e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "dubbi": "'Rarapiedra' reso con 'Pietra Anomala' (cfr. Segreto 14 'Pietra Anomala Pura')."
+  },
+  {
+   "img": "carte/objetos/32546.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Incienso sagrado",
+    "it": "Incenso Sacro"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "En el Fin del Día, descarta este Objeto para retirar 3 de {i:terror} de cada personaje de tu Localización.",
+    "it": "Alla Fine della Giornata, scarta questo Oggetto per rimuovere 3 {i:terror} da ogni Personaggio nel tuo Luogo."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.69,
+      0.94,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32547.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Espada oxidada",
+    "it": "Spada Arrugginita"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Cuando tu personaje se active en Combate, puedes obtener {i:cube} y luego lanzar un dial.\nGrial: No pasa nada.\nCalavera: Descarta este Objeto.",
+    "it": "Quando il tuo Personaggio si attiva in Combattimento, puoi ottenere {i:cube} e poi lanciare un Quadrante.\nGraal: non succede nulla.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.09
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Copia identica di 32500."
+  },
+  {
+   "img": "carte/objetos/32548.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Brebaje embotador",
+    "it": "Bevanda Intorpidente"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Durante un Encuentro: Voltea esta carta para perder todo tu {i:terror}.\nAl final del Encuentro: Si volteaste esta carta, descártala y obtén 4 de {i:terror}.",
+    "it": "Durante un Incontro: gira questa carta per perdere tutto il tuo {i:terror}.\nAlla fine dell'Incontro: se hai girato questa carta, scartala e ottieni 4 {i:terror}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.62,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32549.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Trampa cebada",
+    "it": "Trappola con Esca"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Lanza un dial (fuera de un Asentamiento).\nGrial: Obtén 1 de {r:Comida}.\nCalavera: Descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: lancia un Quadrante (fuori da un Insediamento).\nGraal: ottieni 1 {r:Cibo}.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.96,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "dubbi": "Copia identica di 32531."
+  },
+  {
+   "img": "carte/objetos/32550.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Hidromiel",
+    "it": "Idromele"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Puedes descartarla al Descansar: en este Descanso, ignora los efectos del Agotamiento y la Pesadilla y el Evento [i]Ventisca rugiente[/i].",
+    "it": "Puoi scartarla quando Riposi: durante questo Riposo, ignora gli effetti dell'Esaurimento e dell'Incubo e l'Evento [i]Bufera Ruggente[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.68,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome italiano dell'Evento 'Ventisca rugiente' non nel glossario (provvisorio: Bufera Ruggente). 'Agotamiento' = stato Esausto (Agotado)."
+  },
+  {
+   "img": "carte/objetos/32551.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Hidromiel",
+    "it": "Idromele"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Puedes descartarla al Descansar: en este Descanso, ignora los efectos del Agotamiento y la Pesadilla y el Evento [i]Ventisca rugiente[/i].",
+    "it": "Puoi scartarla quando Riposi: durante questo Riposo, ignora gli effetti dell'Esaurimento e dell'Incubo e l'Evento [i]Bufera Ruggente[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.68,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome italiano dell'Evento 'Ventisca rugiente' non nel glossario (provvisorio: Bufera Ruggente). 'Agotamiento' = stato Esausto (Agotado)."
+  },
+  {
+   "img": "carte/objetos/32552.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Extracto curativo",
+    "it": "Estratto Curativo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Obtén 3 de {i:health} y descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: ottieni 3 {i:health} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.8,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32553.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Extracto curativo",
+    "it": "Estratto Curativo"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Obtén 3 de {i:health} y descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: ottieni 3 {i:health} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.8,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32554.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Sangre de Morrigan",
+    "it": "Sangue di Morrigan"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Obtén 2 de {i:terror} y 3 de {r:Magia} y descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ottieni 2 {i:terror} e 3 {r:Magia} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32555.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Hojas de viajero",
+    "it": "Foglie del Viandante"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Restaura completamente tu {i:energy}. Recibe 1 {i:wound} inevitable y descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ripristina completamente la tua {i:energy}. Subisci 1 {i:wound} inevitabile e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32556.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Hojas de viajero",
+    "it": "Foglie del Viandante"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Restaura completamente tu {i:energy}. Recibe 1 {i:wound} inevitable y descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ripristina completamente la tua {i:energy}. Subisci 1 {i:wound} inevitabile e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32557.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Tercer ojo",
+    "it": "Terzo Occhio"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Obtén 1 de {r:Magia} y 1 de {i:terror}. Mira la primera carta de cada mazo de Encuentros. Después, puedes barajar cualquiera de estos mazos. Descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ottieni 1 {r:Magia} e 1 {i:terror}. Guarda la prima carta di ogni mazzo Incontro. Poi puoi mescolare uno qualsiasi di questi mazzi. Scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.62,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32558.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Bilis de bruja",
+    "it": "Bile di Strega"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "En Combate: Descarta este Objeto para obtener {i:cube3} y recibir 1 {i:wound} inevitable.",
+    "it": "In Combattimento: scarta questo Oggetto per ottenere {i:cube3} e subire 1 {i:wound} inevitabile."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32559.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Bomba de humo",
+    "it": "Bomba Fumogena"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "En Combate: Descarta este Objeto para Escapar sin provocar un ataque de oportunidad.",
+    "it": "In Combattimento: scarta questo Oggetto per Scappare senza provocare un Attacco di opportunità."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32560.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Bomba de humo",
+    "it": "Bomba Fumogena"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "En Combate: Descarta este Objeto para Escapar sin provocar un ataque de oportunidad.",
+    "it": "In Combattimento: scarta questo Oggetto per Scappare senza provocare un Attacco di opportunità."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32561.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Lágrima de la Madre de Todos",
+    "it": "Lacrima della Madre di Tutti"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Obtén 1 de {i:energy} y 1 de {i:health}, pierde 1 de {i:terror} y descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ottieni 1 {i:energy} e 1 {i:health}, perdi 1 {i:terror} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.2
+    ],
+    "testo": [
+     [
+      0.06,
+      0.76,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32562.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Lágrima de la Madre de Todos",
+    "it": "Lacrima della Madre di Tutti"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 0 {i:energy}: Obtén 1 de {i:energy} y 1 de {i:health}, pierde 1 de {i:terror} y descarta este Objeto.",
+    "it": "{i:action} 0 {i:energy}: ottieni 1 {i:energy} e 1 {i:health}, perdi 1 {i:terror} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.2
+    ],
+    "testo": [
+     [
+      0.06,
+      0.76,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32563.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Pergamino de las sombras",
+    "it": "Pergamena Intrisa d’Ombra"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Mueve tu personaje a cualquier otra Localización revelada, obtén 2 de {i:terror} y descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: muovi il tuo Personaggio in qualsiasi altro Luogo rivelato, ottieni 2 {i:terror} e scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.2
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32564.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Báculo arcano",
+    "it": "Bastone Arcano"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Obtén {i:cube} cada vez que conectes una Clave Mágica en Combate.",
+    "it": "Ottieni {i:cube} ogni volta che colleghi una Chiave Magica in Combattimento."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  }
+ ]
+}

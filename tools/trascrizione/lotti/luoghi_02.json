@@ -1,0 +1,130 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/el_torreon_31105.webp",
+   "mazzo": "",
+   "nome_tts": "151 - EL TORREON",
+   "retro": "carte/mazzo/retro_31105.webp"
+  },
+  {
+   "img": "carte/mazzo/valle_de_los_guardianes_31104.webp",
+   "mazzo": "",
+   "nome_tts": "150 - VALLE DE LOS GUARDIANES",
+   "retro": "carte/mazzo/retro_31104.webp"
+  },
+  {
+   "img": "carte/mazzo/broch_destrozado_31103.webp",
+   "mazzo": "",
+   "nome_tts": "149 - BROCH DESTROZADO",
+   "retro": "carte/mazzo/retro_31103.webp"
+  },
+  {
+   "img": "carte/mazzo/faldorca_31102.webp",
+   "mazzo": "",
+   "nome_tts": "148 - FALDORCA",
+   "retro": "carte/mazzo/retro_31102.webp"
+  },
+  {
+   "img": "carte/mazzo/falfuar_abandonado_31101.webp",
+   "mazzo": "",
+   "nome_tts": "147 - FALFUAR ABANDONADO",
+   "retro": "carte/mazzo/retro_31101.webp"
+  },
+  {
+   "img": "carte/mazzo/distrito_en_calma_31100.webp",
+   "mazzo": "",
+   "nome_tts": "142 - DISTRITO EN CALMA",
+   "retro": "carte/mazzo/retro_31100.webp"
+  },
+  {
+   "img": "carte/mazzo/confin_de_la_rareza_31008.webp",
+   "mazzo": "",
+   "nome_tts": "141 - CONFIN DE LA RAREZA",
+   "retro": "carte/mazzo/retro_31008.webp"
+  },
+  {
+   "img": "carte/mazzo/pantano_oscuro_31007.webp",
+   "mazzo": "",
+   "nome_tts": "140 - PANTANO OSCURO",
+   "retro": "carte/mazzo/retro_31007.webp"
+  },
+  {
+   "img": "carte/mazzo/devastacion_31006.webp",
+   "mazzo": "",
+   "nome_tts": "139 - DEVASTACION",
+   "retro": "carte/mazzo/retro_31006.webp"
+  },
+  {
+   "img": "carte/mazzo/distrito_infectado_31005.webp",
+   "mazzo": "",
+   "nome_tts": "138 - DISTRITO INFECTADO",
+   "retro": "carte/mazzo/retro_31005.webp"
+  },
+  {
+   "img": "carte/mazzo/altomuro_conquistado_31004.webp",
+   "mazzo": "",
+   "nome_tts": "137 - ALTOMURO CONQUISTADO",
+   "retro": "carte/mazzo/retro_31004.webp"
+  },
+  {
+   "img": "carte/mazzo/broch_cruach_31003.webp",
+   "mazzo": "",
+   "nome_tts": "136 - BROCH CRUACH",
+   "retro": "carte/mazzo/retro_31003.webp"
+  },
+  {
+   "img": "carte/mazzo/bundorca_31002.webp",
+   "mazzo": "",
+   "nome_tts": "135 - BUNDORCA",
+   "retro": "carte/mazzo/retro_31002.webp"
+  },
+  {
+   "img": "carte/mazzo/falfuar_31001.webp",
+   "mazzo": "",
+   "nome_tts": "134 - FALFUAR",
+   "retro": "carte/mazzo/retro_31001.webp"
+  },
+  {
+   "img": "carte/mazzo/anillo_de_luna_31000.webp",
+   "mazzo": "",
+   "nome_tts": "133 - ANILLO DE LUNA",
+   "retro": "carte/mazzo/retro_31000.webp"
+  },
+  {
+   "img": "carte/mazzo/rostro_sereno_30908.webp",
+   "mazzo": "",
+   "nome_tts": "132 - ROSTRO SERENO",
+   "retro": "carte/mazzo/retro_30908.webp"
+  },
+  {
+   "img": "carte/mazzo/altomuro_30907.webp",
+   "mazzo": "",
+   "nome_tts": "131 - ALTOMURO",
+   "retro": "carte/mazzo/retro_30907.webp"
+  },
+  {
+   "img": "carte/mazzo/dolmen_derrumbado_30906.webp",
+   "mazzo": "",
+   "nome_tts": "126 - DOLMEN DERRUMBADO",
+   "retro": "carte/mazzo/retro_30906.webp"
+  },
+  {
+   "img": "carte/mazzo/escalinata_del_titan_30905.webp",
+   "mazzo": "",
+   "nome_tts": "125 - ESCALINATA DEL TITAN",
+   "retro": "carte/mazzo/retro_30905.webp"
+  },
+  {
+   "img": "carte/mazzo/tumulos_hundidos_30904.webp",
+   "mazzo": "",
+   "nome_tts": "123 - TUMULOS HUNDIDOS",
+   "retro": "carte/mazzo/retro_30904.webp"
+  },
+  {
+   "img": "carte/mazzo/lago_del_espejo_desecado_30903.webp",
+   "mazzo": "",
+   "nome_tts": "122 - LAGO DEL ESPEJO DESECADO",
+   "retro": "carte/mazzo/retro_30903.webp"
+  }
+ ]
+}

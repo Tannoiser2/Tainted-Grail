@@ -1,0 +1,2409 @@
+{
+ "carte": [
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33200.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ojo para el detalle",
+    "it": "Occhio per i dettagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.76,
+      0.92,
+      0.845
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33201.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Momento de claridad",
+    "it": "Momento di lucidità"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y roba 1 carta",
+    "it": "Se {i:discard}, {i:arrowdown} e pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.76,
+      0.92,
+      0.845
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33202.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ganar tiempo",
+    "it": "Guadagnare tempo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora la Respuesta del oponente; {i:discard} después de la Respuesta",
+    "it": "Ignora la Risposta dell'avversario; {i:discard} dopo la Risposta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.92,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33203.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Malas indicaciones",
+    "it": "Indicazioni sbagliate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.91,
+      0.845
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33204.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Reunir indicios",
+    "it": "Raccogliere indizi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 Carga",
+     "it": "Ottieni 1 Carica"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Retira todas las Cargas de esta carta: {i:arrowup} por Carga retirada",
+     "it": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.09,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.785,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi Bonus sul bordo sinistro, semichiavi 'apre' (riga 2 caution, fondo 1x) sul bordo destro. Capacità in due parti (lista)."
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33205.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Métodos extraños",
+    "it": "Metodi strani"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial\nCalavera: Pierde 1 de {r:Rep}\nGrial: No pasa nada",
+    "it": "Lancia un quadrante\nTeschio: perdi 1 {r:Rep}\nGraal: non succede nulla"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.695,
+      0.91,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33206.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.755,
+      0.92,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33207.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.755,
+      0.92,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33208.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Medidas desesperadas",
+    "it": "Misure disperate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.64,
+      0.91,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33209.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Actuación magistral",
+    "it": "Esibizione magistrale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Si la Afinidad es verde, roba 1 carta",
+    "it": "Se l'Affinità è verde, pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.73,
+      0.92,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33210.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Voz tranquilizadora",
+    "it": "Voce rassicurante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén todas las {i:wound}",
+     "it": "Previeni tutte le {i:wound}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.325,
+      0.64,
+      0.915,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33211.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Canción cautivadora",
+    "it": "Canzone ammaliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.65,
+      0.92,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33212.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Dulces mentiras",
+    "it": "Dolci menzogne"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Retira {i:delay} de una carta elegida de la Secuencia",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da una carta a scelta della Sequenza"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.09,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.64,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' riga 1 (empathy x2) e fondo 2x sul bordo destro."
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33213.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Sostegno"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 2 Cargas en una carta elegida de la Secuencia",
+    "it": "Metti 2 Cariche su una carta a scelta della Sequenza"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.69,
+      0.91,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33214.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Argucia arriesgada",
+    "it": "Stratagemma rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.09,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' riga 2 (caution), riga 4 (magic) e fondo ✖ sul bordo destro."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33100.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Simpatizar",
+    "it": "Simpatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.915,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AILEI' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33101.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Simpatizar",
+    "it": "Simpatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.915,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'AILEI' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33102.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Aroma a flor silvestre",
+    "it": "Profumo di fiori selvatici"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si la Afinidad es verde, {i:arrowup}",
+    "it": "Se l'Affinità è verde, {i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.075,
+     0.91,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.92,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33103.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Brebaje intoxicante",
+    "it": "Intruglio inebriante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial\nGrial: {i:arrowup}{i:arrowup}\nCalavera: {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Lancia un quadrante\nGraal: {i:arrowup}{i:arrowup}\nTeschio: {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.075,
+     0.91,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.645,
+      0.92,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33104.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Reflexión",
+    "it": "Riflessione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.69,
+      0.92,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "La seconda riga ('{i:discard} después de la Respuesta') non ha icona propria: registrata come passiva, ma potrebbe far parte dell'effetto {i:skull}."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33105.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Oculta tus miedos",
+    "it": "Nascondi le tue paure"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Cada miembro del equipo roba 1 carta",
+    "it": "Ogni membro della Compagnia pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.73,
+      0.93,
+      0.83
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33106.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Paciencia de la naturaleza",
+    "it": "Pazienza della natura"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Prevén 1 {i:discard}\nPaga 1 Carga: Prevén {i:arrowdown}",
+     "it": "Paga 1 Carica: previeni 1 {i:discard}\nPaga 1 Carica: previeni {i:arrowdown}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.27,
+     0.075,
+     0.78,
+     0.16
+    ],
+    "testo": [
+     [
+      0.2,
+      0.64,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: semichiavi 'apre' (righe 2-4) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33107.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo necesario",
+    "it": "Sostegno necessario"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 2 Cargas en una carta a tu elección de la Secuencia",
+     "it": "Metti 2 Cariche su una carta a tua scelta della Sequenza"
+    },
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Retira 2 {i:delay} de una carta a tu elección de la Secuencia",
+     "it": "Rimuovi 2 {i:delay} da una carta a tua scelta della Sequenza"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.57,
+      0.93,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33108.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Confianza del sanador",
+    "it": "Fiducia del guaritore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada {i:key_empathy}",
+    "it": "{i:arrowup} per ogni {i:key_empathy}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.075,
+     0.91,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.755,
+      0.92,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Icona inventata {i:key_empathy}: Chiave di Empatia (cornice di chiave con l'uccello) = Chiavi di Empatia fisicamente unite nella Sequenza."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33109.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Visión perspicaz",
+    "it": "Visione acuta"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 3 Cargas",
+     "it": "Ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Pon 1 Carga en una carta a tu elección de la Secuencia",
+     "it": "Paga 1 Carica: metti 1 Carica su una carta a tua scelta della Sequenza"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.27,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.195,
+      0.58,
+      0.8,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 2-3 e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33110.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Danza cautivadora",
+    "it": "Danza ammaliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}",
+     "it": "Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.075,
+     0.91,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.69,
+      0.92,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33111.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Diagnosticar",
+    "it": "Diagnosticare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 2 {i:delay} en esta carta",
+     "it": "Metti 2 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada vez que retires {i:delay} de esta carta: 1 miembro del equipo cualquiera roba 1 carta",
+     "it": "Ogni volta che rimuovi {i:delay} da questa carta: 1 membro qualsiasi della Compagnia pesca 1 carta"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.27,
+     0.07,
+     0.78,
+     0.15
+    ],
+    "testo": [
+     [
+      0.195,
+      0.515,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 1 e 3 e fondo 1x sul bordo destro. {i:delay} qui indica un gettone Tempo."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33112.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Lágrima",
+    "it": "Lacrima"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Cada efecto de {i:special} desencadenado por esta carta se duplica",
+    "it": "Ogni effetto di {i:special} attivato da questa carta è raddoppiato"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.69,
+      0.92,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33113.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Augurio",
+    "it": "Presagio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "{i:arrowup} por cada {i:key_connected} de esta carta",
+    "it": "{i:arrowup} per ogni {i:key_connected} di questa carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.07,
+     0.91,
+     0.15
+    ],
+    "testo": [
+     [
+      0.32,
+      0.73,
+      0.92,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Icona inventata {i:key_connected}: cornice di Chiave vuota = 'Clave conectada' (carta di riferimento)."
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33114.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Señales y presagios",
+    "it": "Segni e presagi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": [
+     "arrowup",
+     "arrowup"
+    ],
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Roba 2 cartas\nO BIEN\npasa de inmediato a la fase de «Fin del turno»",
+    "it": "Pesca 2 carte\nOPPURE\npassa immediatamente alla fase di «Fine del turno»"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.075,
+     0.91,
+     0.17
+    ],
+    "testo": [
+     [
+      0.32,
+      0.64,
+      0.92,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Fondo: icona con due frecce su sovrapposte, resa come ['arrowup','arrowup']."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33223.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Danza hipnótica",
+    "it": "Danza ipnotica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}; si la Afinidad no es verde, pierde 1 de {r:Rep}",
+     "it": "Perdi 1 {i:energy}; se l'Affinità non è verde, perdi 1 {r:Rep}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.33,
+      0.58,
+      0.92,
+      0.835
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33222.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Promesa falsa",
+    "it": "Falsa promessa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.92,
+      0.845
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33221.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Dulces mentiras",
+    "it": "Dolci menzogne"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Retira {i:delay} de una carta elegida de la Secuencia",
+     "it": "Paga 1 Carica: rimuovi {i:delay} da una carta a scelta della Sequenza"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.09,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.64,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' riga 1 (empathy x2) e fondo 2x sul bordo destro. Identica a 13/25 del mazzo base."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33220.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Empatizar",
+    "it": "Empatizzare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.09,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.755,
+      0.92,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Identica a 7/25 del mazzo base."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33219.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apaciguar",
+    "it": "Placare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Si la Afinidad no es verde, {i:arrowup}",
+     "it": "Paga 1 Carica: se l'Affinità non è verde, {i:arrowup}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.09,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 1-2 e fondo 2x sul bordo destro."
+  }
+ ]
+}

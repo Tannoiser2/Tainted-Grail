@@ -1,0 +1,1955 @@
+{
+ "carte": [
+  {
+   "img": "carte/3_encuentros_morado/36620.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Voracidad Incorpórea",
+    "it": "Voracità Incorporea"
+   },
+   "testo": {
+    "es": "[i]Cuando llegó el hambre insaciable, primero se comió su propio cuerpo.[/i]",
+    "it": "[i]Quando giunse la fame insaziabile, per prima cosa divorò il proprio corpo.[/i]"
+   },
+   "valore": 13,
+   "tratti": [
+    "Difensivo",
+    "Opportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "2 {i:wound} o descarta 1 Objeto",
+     "it": "2 {i:wound} o scarta 1 Oggetto"
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Paga 1 de {r:Comida} o 2 {i:discard}",
+    "it": "Paga 1 {r:Cibo} o 2 {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Magia}",
+    "it": "1 {r:Esp}, 1 {r:Magia}"
+   },
+   "bottino": null,
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.19,
+     0.09,
+     0.49,
+     0.165
+    ],
+    "valore": [
+     0.6,
+     0.09,
+     0.68,
+     0.165
+    ],
+    "testo": [
+     0.04,
+     0.505,
+     0.63,
+     0.555
+    ],
+    "tratti": [
+     0.04,
+     0.575,
+     0.54,
+     0.61
+    ],
+    "tabella": [
+     0.05,
+     0.635,
+     0.66,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.925,
+     0.75,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 1: Aggressività doppia ('aggression2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36621.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Voracidad Incorpórea",
+    "it": "Voracità Incorporea"
+   },
+   "testo": {
+    "es": "[i]Cuando llegó el hambre insaciable, primero se comió su propio cuerpo.[/i]",
+    "it": "[i]Quando giunse la fame insaziabile, per prima cosa divorò il proprio corpo.[/i]"
+   },
+   "valore": 13,
+   "tratti": [
+    "Difensivo",
+    "Opportunista"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "es": "2 {i:wound} o descarta 1 Objeto",
+     "it": "2 {i:wound} o scarta 1 Oggetto"
+    },
+    {
+     "da": 6,
+     "a": 8,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    }
+   ],
+   "opportunita": {
+    "es": "Paga 1 de {r:Comida} o 2 {i:discard}",
+    "it": "Paga 1 {r:Cibo} o 2 {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Magia}",
+    "it": "1 {r:Esp}, 1 {r:Magia}"
+   },
+   "bottino": null,
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.19,
+     0.09,
+     0.49,
+     0.165
+    ],
+    "valore": [
+     0.6,
+     0.09,
+     0.68,
+     0.165
+    ],
+    "testo": [
+     0.04,
+     0.505,
+     0.63,
+     0.555
+    ],
+    "tratti": [
+     0.04,
+     0.575,
+     0.54,
+     0.61
+    ],
+    "tabella": [
+     0.05,
+     0.635,
+     0.66,
+     0.905
+    ],
+    "ricompensa": [
+     0.04,
+     0.925,
+     0.75,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 1: Aggressività doppia ('aggression2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36622.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Yr Hen Wräch",
+    "it": "Yr Hen Wräch"
+   },
+   "testo": {
+    "es": "[i]Esta monstruosa bruja se cuela en las casas de la gente por la noche. Su aliento apesta a enfermedad.[/i]",
+    "it": "[i]Questa strega mostruosa si intrufola di notte nelle case della gente. Il suo alito puzza di malattia.[/i]"
+   },
+   "valore": 16,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:health} u obtienes el máximo de {i:terror}, obtén la carta de Secreto 66. Después, Escapa del Combate.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:health} o ottieni il massimo di {i:terror}, ottieni la carta Segreto 66. Poi Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "3 {i:wound}, pierde {i:cube}",
+     "it": "3 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.12,
+     0.085,
+     0.55,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.445,
+     0.61,
+     0.53
+    ],
+    "regola": [
+     0.04,
+     0.55,
+     0.83,
+     0.605
+    ],
+    "tabella": [
+     0.05,
+     0.63,
+     0.6,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Nessun tratto (riga in corsivo = regola speciale). Segreto 66 non presente nel glossario."
+  },
+  {
+   "img": "carte/3_encuentros_morado/36623.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 3,
+   "guardiano": false,
+   "nome": {
+    "es": "Yr Hen Wräch",
+    "it": "Yr Hen Wräch"
+   },
+   "testo": {
+    "es": "[i]Esta monstruosa bruja se cuela en las casas de la gente por la noche. Su aliento apesta a enfermedad.[/i]",
+    "it": "[i]Questa strega mostruosa si intrufola di notte nelle case della gente. Il suo alito puzza di malattia.[/i]"
+   },
+   "valore": 16,
+   "tratti": [],
+   "regola_speciale": {
+    "es": "[i]Si pierdes toda tu {i:health} u obtienes el máximo de {i:terror}, obtén la carta de Secreto 66. Después, Escapa del Combate.[/i]",
+    "it": "[i]Se perdi tutta la tua {i:health} o ottieni il massimo di {i:terror}, ottieni la carta Segreto 66. Poi Scappa dal Combattimento.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "es": "Obtén 2 de {i:terror}",
+     "it": "Ottieni 2 {i:terror}"
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "es": "3 {i:wound}, pierde {i:cube}",
+     "it": "3 {i:wound}, perdi {i:cube}"
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "es": "Obtén 3 de {i:terror}",
+     "it": "Ottieni 3 {i:terror}"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Rep}",
+    "it": "1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.12,
+     0.085,
+     0.55,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.445,
+     0.61,
+     0.53
+    ],
+    "regola": [
+     0.04,
+     0.55,
+     0.83,
+     0.605
+    ],
+    "tabella": [
+     0.05,
+     0.63,
+     0.6,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Nessun tratto (riga in corsivo = regola speciale). Segreto 66 non presente nel glossario."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36624.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Hombre de Mimbre",
+    "it": "Uomo di Vimini"
+   },
+   "testo": {
+    "es": "[i]Un sacrificio fallido vuelve para vengarse.[/i]",
+    "it": "[i]Un sacrificio fallito ritorna per vendicarsi.[/i]"
+   },
+   "valore": 26,
+   "tratti": [
+    "Lento"
+   ],
+   "regola_speciale": {
+    "es": "[i]Obtén 1 de {i:terror} inevitable después de cada ataque. Si tienes 3 o más {i:empathy}, puedes descartar este Encuentro.[/i]",
+    "it": "[i]Ottieni 1 {i:terror} inevitabile dopo ogni attacco. Se hai 3 o più {i:empathy}, puoi scartare questo Incontro.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 8,
+     "es": "4 {i:wound}",
+     "it": "4 {i:wound}"
+    },
+    {
+     "da": 9,
+     "a": 13,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 14,
+     "a": 20,
+     "es": "5 {i:wound}",
+     "it": "5 {i:wound}",
+     "valori": [
+      14,
+      16,
+      18,
+      20
+     ]
+    },
+    {
+     "da": 15,
+     "a": 19,
+     "es": "2 {i:wound}, pierde {i:cube}",
+     "it": "2 {i:wound}, perdi {i:cube}",
+     "valori": [
+      15,
+      17,
+      19
+     ]
+    },
+    {
+     "da": 21,
+     "a": 25,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "{i:discard}",
+    "it": "{i:discard}"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Exp}",
+    "it": "2 {r:Esp}"
+   },
+   "bottino": {
+    "es": "4 de {r:Magia}",
+    "it": "4 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.08,
+     0.085,
+     0.58,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.425,
+     0.72,
+     0.46
+    ],
+    "tratti": [
+     0.04,
+     0.47,
+     0.83,
+     0.585
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.67,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Righe non contigue (14,16,18,20 / 15,17,19) codificate con 'valori'. Riga 2: Coraggio doppio ('courage2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36625.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": true,
+   "nome": {
+    "es": "Masacre",
+    "it": "Massacro"
+   },
+   "testo": {
+    "es": "[i]Un muro de almas malditas que recorren la tierra como una ola marina.[/i]",
+    "it": "[i]Un muro di anime maledette che percorrono la terra come un'onda del mare.[/i]"
+   },
+   "valore": 14,
+   "tratti": [
+    "Guardiano",
+    "Orda"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 1,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 2,
+     "a": 6,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 7,
+     "a": 10,
+     "es": "2 {i:wound}, obtén 1 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 1 {i:terror}"
+    },
+    {
+     "da": 11,
+     "a": 13,
+     "es": "Pierde toda tu {i:health}",
+     "it": "Perdi tutta la tua {i:health}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}",
+    "it": "1 {r:Esp}"
+   },
+   "bottino": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.2,
+     0.085,
+     0.67,
+     0.145
+    ],
+    "valore": [
+     0.69,
+     0.08,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.49,
+     0.72,
+     0.545
+    ],
+    "tratti": [
+     0.04,
+     0.57,
+     0.41,
+     0.605
+    ],
+    "tabella": [
+     0.05,
+     0.635,
+     0.67,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.5,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 2: Coraggio doppio ('courage2'). Nome italiano tradotto."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36626.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Primer Morador",
+    "it": "Predecessore"
+   },
+   "testo": {
+    "es": "[i]El espacio mismo parece deformarse a su alrededor.[/i]",
+    "it": "[i]Lo spazio stesso sembra deformarsi attorno a lui.[/i]"
+   },
+   "valore": 20,
+   "tratti": [
+    "Difensivo (2-4 giocatori)",
+    "Finta",
+    "Distruzione"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "Pierde 2 de {i:energy}, obtén 2 de {i:terror}",
+     "it": "Perdi 2 {i:energy}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 8,
+     "es": "3 {i:wound}, pierde 1 de {i:energy}",
+     "it": "3 {i:wound}, perdi 1 {i:energy}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 13,
+     "a": 15,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 16,
+     "a": 19,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Rep}",
+    "it": "1 {r:Esp}, 1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "3 de {r:Magia}",
+    "it": "3 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.1,
+     0.085,
+     0.57,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.425,
+     0.48,
+     0.48
+    ],
+    "tratti": [
+     0.04,
+     0.505,
+     0.53,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.78,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.7,
+     0.965
+    ]
+   },
+   "dubbi": "'Defensivo (2-4 jugadores)': il tratto Difensivo vale solo con 2-4 giocatori. Righe 1-2: Aggressività e Coraggio doppi ('aggression2','courage2'). Nome reso 'Predecessore' per coerenza con il glossario (Spirito del Predecessore, Predecessore Miserabile)."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36627.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "nome": {
+    "es": "Primer Morador",
+    "it": "Predecessore"
+   },
+   "testo": {
+    "es": "[i]El espacio mismo parece deformarse a su alrededor.[/i]",
+    "it": "[i]Lo spazio stesso sembra deformarsi attorno a lui.[/i]"
+   },
+   "valore": 20,
+   "tratti": [
+    "Difensivo (2-4 giocatori)",
+    "Finta",
+    "Distruzione"
+   ],
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "Pierde 2 de {i:energy}, obtén 2 de {i:terror}",
+     "it": "Perdi 2 {i:energy}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 8,
+     "es": "3 {i:wound}, pierde 1 de {i:energy}",
+     "it": "3 {i:wound}, perdi 1 {i:energy}"
+    },
+    {
+     "da": 9,
+     "a": 12,
+     "es": "2 {i:wound}, pierde {i:cube2}",
+     "it": "2 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 13,
+     "a": 15,
+     "es": "Pierde {i:cube3}",
+     "it": "Perdi {i:cube3}"
+    },
+    {
+     "da": 16,
+     "a": 19,
+     "es": "3 {i:wound}",
+     "it": "3 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "Obtén 1 de {i:terror}, {i:discard}",
+    "it": "Ottieni 1 {i:terror}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Exp}, 1 de {r:Rep}",
+    "it": "1 {r:Esp}, 1 {r:Rep}"
+   },
+   "bottino": {
+    "es": "3 de {r:Magia}",
+    "it": "3 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "aggression2"
+    },
+    {
+     "riga": 2,
+     "apre": "courage2"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "x",
+   "aree": {
+    "titolo": [
+     0.1,
+     0.085,
+     0.57,
+     0.145
+    ],
+    "valore": [
+     0.6,
+     0.08,
+     0.68,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.425,
+     0.48,
+     0.48
+    ],
+    "tratti": [
+     0.04,
+     0.505,
+     0.53,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.78,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.7,
+     0.965
+    ]
+   },
+   "dubbi": "'Defensivo (2-4 jugadores)': il tratto Difensivo vale solo con 2-4 giocatori. Righe 1-2: Aggressività e Coraggio doppi ('aggression2','courage2'). Nome reso 'Predecessore' per coerenza con il glossario (Spirito del Predecessore, Predecessore Miserabile)."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36628.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Púca",
+    "it": "Púca"
+   },
+   "testo": {
+    "es": "[i]A pesar de su apariencia demoníaca, la cabra parece tranquila y amistosa.[/i]",
+    "it": "[i]Nonostante il suo aspetto demoniaco, la capra sembra tranquilla e amichevole.[/i]"
+   },
+   "effetto": {
+    "es": "Cada miembro del equipo puede obtener 2 de {r:Comida}, O BIEN puede pagar 4 de {r:Comida} para restaurar toda su {i:health}.",
+    "it": "Ogni membro della Compagnia può ottenere 2 {r:Cibo}, OPPURE può pagare 4 {r:Cibo} per ripristinare tutta la sua {i:health}."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.2,
+     0.09,
+     0.53,
+     0.145
+    ],
+    "testo": [
+     0.04,
+     0.75,
+     0.69,
+     0.8
+    ],
+    "effetto": [
+     0.04,
+     0.835,
+     0.9,
+     0.945
+    ]
+   },
+   "dubbi": "Carta senza Chiavi né tabella (incontro-evento); regola messa in 'effetto'."
+  },
+  {
+   "img": "carte/4_encuentros_morado/36629.webp",
+   "tipo": "incontro",
+   "colore": "viola",
+   "livello": 4,
+   "guardiano": true,
+   "nome": {
+    "es": "Reconquistador",
+    "it": "Rivendicatore"
+   },
+   "testo": {
+    "es": "[i]Un resonante manto de Rareza lo rodea.[/i]",
+    "it": "[i]Un risonante manto di Wyrd lo avvolge.[/i]"
+   },
+   "valore": 25,
+   "tratti": [
+    "Guardiano",
+    "Difensivo",
+    "Rapido"
+   ],
+   "regola_speciale": {
+    "es": "[i]Solo las Habilidades de Espiritualidad están activas.[/i]",
+    "it": "[i]Solo le Abilità di Spiritualità sono attive.[/i]"
+   },
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "es": "2 {i:wound}, obtén 2 de {i:terror}",
+     "it": "2 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "es": "3 {i:wound}, pierde {i:cube2}",
+     "it": "3 {i:wound}, perdi {i:cube2}"
+    },
+    {
+     "da": 11,
+     "a": 17,
+     "es": "3 {i:wound}, obtén 2 de {i:terror}",
+     "it": "3 {i:wound}, ottieni 2 {i:terror}"
+    },
+    {
+     "da": 18,
+     "a": 21,
+     "es": "Pierde {i:cube4}",
+     "it": "Perdi {i:cube4}"
+    },
+    {
+     "da": 22,
+     "a": 24,
+     "es": "5 {i:wound}",
+     "it": "5 {i:wound}"
+    }
+   ],
+   "opportunita": {
+    "es": "2 {i:wound}, {i:discard}",
+    "it": "2 {i:wound}, {i:discard}"
+   },
+   "ricompensa": {
+    "es": "3 de {r:Exp}, 2 de {r:Rep}",
+    "it": "3 {r:Esp}, 2 {r:Rep}"
+   },
+   "bottino": {
+    "es": "5 de {r:Magia}",
+    "it": "5 {r:Magia}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.2,
+     0.085,
+     0.67,
+     0.145
+    ],
+    "valore": [
+     0.69,
+     0.08,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     0.04,
+     0.445,
+     0.71,
+     0.48
+    ],
+    "tratti": [
+     0.04,
+     0.5,
+     0.81,
+     0.565
+    ],
+    "tabella": [
+     0.05,
+     0.59,
+     0.67,
+     0.865
+    ],
+    "ricompensa": [
+     0.04,
+     0.885,
+     0.71,
+     0.965
+    ]
+   },
+   "dubbi": "Riga 18-21: icona con 4 cubi ({i:cube4}, non nel foglio icone)."
+  },
+  {
+   "img": "carte/1_encuentros_azul/36400.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/1_encuentros_azul/36401.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/1_encuentros_azul/36402.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/1_encuentros_azul/36403.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Calma antes de la Tempestad",
+    "it": "Quiete prima della Tempesta"
+   },
+   "testo": null,
+   "effetto": {
+    "es": "No pasa nada. Coloca esta carta debajo del mazo de Encuentros azules.",
+    "it": "Non succede nulla. Metti questa carta in fondo al mazzo degli Incontri blu."
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.28,
+     0.08,
+     0.73,
+     0.155
+    ],
+    "effetto": [
+     0.23,
+     0.87,
+     0.77,
+     0.965
+    ]
+   }
+  },
+  {
+   "img": "carte/1_encuentros_azul/36404.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Dolientes",
+    "it": "Dolenti"
+   },
+   "testo": {
+    "es": "[i]El ritual de luto conocido como caoineadh es ahora tristemente común en Ávalon.[/i]",
+    "it": "[i]Il rituale di lutto noto come caoineadh è ora tristemente comune ad Avalon.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Únete a la multitud",
+      "it": "Unisciti alla folla"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}",
+      "it": "{i:arrowdown}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Reconforta a la viuda",
+      "it": "Conforta la vedova"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Obtén 1 de {i:terror}",
+      "it": "Ottieni 1 {i:terror}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 1 de {r:Rep}, obtén 1 de {i:terror} por cada punto de {i:empathy} que tengas",
+    "it": "Perdi 1 {r:Rep}, ottieni 1 {i:terror} per ogni punto di {i:empathy} che possiedi"
+   },
+   "ricompensa": {
+    "es": "Pierde 2 de {i:terror}, obtén 1 de {r:Rep}",
+    "it": "Perdi 2 {i:terror}, ottieni 1 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.75,
+     0.14
+    ],
+    "testo": [
+     0.15,
+     0.17,
+     0.86,
+     0.23
+    ],
+    "tabella": [
+     0.13,
+     0.585,
+     0.85,
+     0.77
+    ],
+    "ricompensa": [
+     0.14,
+     0.78,
+     0.88,
+     0.895
+    ]
+   }
+  },
+  {
+   "img": "carte/1_encuentros_azul/36405.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Epidemia",
+    "it": "Epidemia"
+   },
+   "testo": {
+    "es": "[i]Un equipo de marginados infectados por la Muerte Roja visita este asentamiento. Todas las puertas están cerradas.[/i]",
+    "it": "[i]Un gruppo di emarginati infettati dalla Morte Rossa visita questo insediamento. Tutte le porte sono chiuse.[/i]"
+   },
+   "affinita": {
+    "verdi": 4,
+    "rossi": 2,
+    "sequenza": "VRRRGRR"
+   },
+   "evitare": {
+    "es": "(requiere 4 de {r:Rep}): Paga 1 de {i:energy}",
+    "it": "(richiede 4 {r:Rep}): Paga 1 {i:energy}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Evita a los infectados",
+      "it": "Evita gli infetti"
+     },
+     "speciale": {
+      "caution": "↑↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    },
+    {
+     "nome": {
+      "es": "Búscales refugio",
+      "it": "Trova loro un rifugio"
+     },
+     "speciale": {
+      "empathy": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     },
+     "alternativa_alla_precedente": true
+    }
+   ],
+   "fallimento": {
+    "es": "1 {i:wound}, obtén la carta de Secreto 66",
+    "it": "1 {i:wound}, ottieni la carta Segreto 66"
+   },
+   "ricompensa": {
+    "es": "1 de {r:Magia}, 1 de {r:Rep}",
+    "it": "1 {r:Magia}, 1 {r:Rep}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.75,
+     0.14
+    ],
+    "testo": [
+     0.25,
+     0.17,
+     0.77,
+     0.285
+    ],
+    "tabella": [
+     0.13,
+     0.57,
+     0.85,
+     0.75
+    ],
+    "ricompensa": [
+     0.14,
+     0.775,
+     0.88,
+     0.855
+    ],
+    "evitare": [
+     0.14,
+     0.865,
+     0.85,
+     0.905
+    ]
+   },
+   "dubbi": "Misuratore insolito: dall'alto 1 verde, 3 rossi, grigio, 2 rossi ('verdi'/'rossi' = spazi sopra/sotto il grigio; vedi 'sequenza'). Due vie alternative ('O BIEN') per la fase I."
+  },
+  {
+   "img": "carte/1_encuentros_azul/36406.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Ley de Hospitalidad",
+    "it": "Legge dell'Ospitalità"
+   },
+   "testo": {
+    "es": "[i]Aquí la gente no suele ser muy amigable, pero siempre puedes apelar a las viejas costumbres y leyes.[/i]",
+    "it": "[i]Qui la gente di solito non è molto amichevole, ma puoi sempre appellarti alle antiche usanze e leggi.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": {
+    "es": "Paga 1 de {i:energy}, mueve a una Localización conectada",
+    "it": "Paga 1 {i:energy}, muoviti in un Luogo collegato"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Apela a la ley",
+      "it": "Appellati alla legge"
+     },
+     "speciale": {
+      "*": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}, {i:discard}",
+      "it": "{i:arrowdown}, {i:discard}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Obtén 2 de {i:terror}, mueve a una Localización conectada",
+    "it": "Ottieni 2 {i:terror}, muoviti in un Luogo collegato"
+   },
+   "ricompensa": {
+    "es": "2 de {r:Comida}",
+    "it": "2 {r:Cibo}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.2,
+     0.17,
+     0.82,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.59,
+     0.86,
+     0.685
+    ],
+    "ricompensa": [
+     0.14,
+     0.705,
+     0.75,
+     0.81
+    ],
+    "evitare": [
+     0.14,
+     0.825,
+     0.8,
+     0.895
+    ]
+   },
+   "dubbi": "Colonna bonus speciale: solo '↑' senza icona di attributo; interpretato come valido per qualsiasi attributo (chiave '*')."
+  },
+  {
+   "img": "carte/1_encuentros_azul/36407.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "speciale": true,
+   "nome": {
+    "es": "Ráfaga de Rareza",
+    "it": "Raffica di Wyrd"
+   },
+   "testo": {
+    "es": "[i]Los callejones se retuercen alzándose hacia el cielo. Las casas se doblan en ángulos imposibles. ¡La Rareza ha llegado![/i]",
+    "it": "[i]I vicoli si contorcono innalzandosi verso il cielo. Le case si piegano ad angoli impossibili. Il Wyrd è arrivato![/i]"
+   },
+   "affinita": null,
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Avanza a través de la anomalía",
+      "it": "Avanza attraverso l'anomalia"
+     },
+     "prova": {
+      "attributo": "spirituality",
+      "minimo": 4
+     },
+     "es": "Tira un dado y añade tu Espiritualidad. Si el resultado es menor que 4, Fracasas en el Encuentro.",
+     "it": "Tira un dado e aggiungi la tua Spiritualità. Se il risultato è inferiore a 4, fallisci l'Incontro."
+    },
+    {
+     "nome": {
+      "es": "Evita la atención innecesaria",
+      "it": "Evita attenzioni inutili"
+     },
+     "prova": {
+      "attributo": "caution",
+      "minimo": 3
+     },
+     "es": "Tira un dado y suma tu Cautela. Si el resultado es menor que 3, Fracasas en el Encuentro.",
+     "it": "Tira un dado e somma la tua Cautela. Se il risultato è inferiore a 3, fallisci l'Incontro."
+    }
+   ],
+   "ricompensa": {
+    "es": "2 de {r:Magia}",
+    "it": "2 {r:Magia}"
+   },
+   "fallimento": {
+    "es": "Pierde 2 de {i:energy}, resuelve un Encuentro púrpura",
+    "it": "Perdi 2 {i:energy}, risolvi un Incontro viola"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": null,
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.75,
+     0.155
+    ],
+    "testo": [
+     0.15,
+     0.195,
+     0.86,
+     0.285
+    ],
+    "tabella": [
+     0.07,
+     0.35,
+     0.81,
+     0.765
+    ],
+    "ricompensa": [
+     0.14,
+     0.785,
+     0.75,
+     0.9
+    ]
+   },
+   "dubbi": "Incontro blu senza misuratore né Chiavi: due prove a dado consecutive (fasi I e II), campo 'prova' = attributo e risultato minimo (fallisce se < minimo). 'dado' presumibilmente = lancio del dado/quadrante."
+  },
+  {
+   "img": "carte/1_encuentros_azul/36408.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Tentaciones",
+    "it": "Tentazioni"
+   },
+   "testo": {
+    "es": "[i]Los visitantes pueden recrearse en múltiples vicios, ninguno de ellos barato ni seguro, todos ellos tentadores.[/i]",
+    "it": "[i]I visitatori possono abbandonarsi a molti vizi, nessuno dei quali economico o sicuro, tutti allettanti.[/i]"
+   },
+   "affinita": {
+    "verdi": 5,
+    "rossi": 1,
+    "sequenza": "VRRRRGR"
+   },
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": {
+      "es": "Resiste la tentación",
+      "it": "Resisti alla tentazione"
+     },
+     "speciale": {
+      "caution": "↑",
+      "spirituality": "↑"
+     },
+     "risposta": {
+      "es": "Pierde 1 de {i:energy}, pierde 1 de {r:Riqueza}",
+      "it": "Perdi 1 {i:energy}, perdi 1 {r:Ricchezza}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 1 de {r:Rep}, pierde 2 de {r:Riqueza}",
+    "it": "Perdi 1 {r:Rep}, perdi 2 {r:Ricchezza}"
+   },
+   "ricompensa": {
+    "es": "Pierde 1 de {i:terror}",
+    "it": "Perdi 1 {i:terror}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "apre": null
+    }
+   ],
+   "fondo_molt": "2x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.18,
+     0.17,
+     0.84,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.715,
+     0.86,
+     0.81
+    ],
+    "ricompensa": [
+     0.14,
+     0.82,
+     0.85,
+     0.905
+    ]
+   },
+   "dubbi": "Misuratore: dall'alto 1 verde, 4 rossi, grigio, 1 rosso (vedi 'sequenza'). Nella Risposta 'Riq.' è l'abbreviazione di Riqueza. REGOLE.md: Tentazioni = si continua a perdere a ogni Risposta."
+  },
+  {
+   "img": "carte/1_encuentros_azul/36409.webp",
+   "tipo": "incontro",
+   "colore": "blu",
+   "livello": 1,
+   "guardiano": false,
+   "nome": {
+    "es": "Toque de queda",
+    "it": "Coprifuoco"
+   },
+   "testo": {
+    "es": "[i]Debido a algún terrible delito, los guardias locales impusieron un estricto toque de queda.[/i]",
+    "it": "[i]A causa di un qualche terribile crimine, le guardie locali hanno imposto un severo coprifuoco.[/i]"
+   },
+   "affinita": {
+    "verdi": 3,
+    "rossi": 3,
+    "sequenza": "VVVGRRR"
+   },
+   "evitare": {
+    "es": "Paga 2 de {i:energy}",
+    "it": "Paga 2 {i:energy}"
+   },
+   "fasi": [
+    {
+     "nome": {
+      "es": "Engaña a los guardias",
+      "it": "Inganna le guardie"
+     },
+     "speciale": {
+      "caution": "↑",
+      "empathy": "↑"
+     },
+     "risposta": {
+      "es": "{i:arrowdown}{i:arrowdown}",
+      "it": "{i:arrowdown}{i:arrowdown}"
+     }
+    }
+   ],
+   "fallimento": {
+    "es": "Pierde 2 de {i:energy}, resuelve el Encuentro gris «Guerrero del Clan»",
+    "it": "Perdi 2 {i:energy}, risolvi l'Incontro grigio «Guerriero del Clan»"
+   },
+   "ricompensa": {
+    "es": "Obtén 1 de {i:energy}",
+    "it": "Ottieni 1 {i:energy}"
+   },
+   "chiavi_destra": [
+    {
+     "riga": 1,
+     "apre": "empathy2"
+    },
+    {
+     "riga": 2,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "apre": "magic"
+    }
+   ],
+   "fondo_molt": "1x",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.08,
+     0.76,
+     0.14
+    ],
+    "testo": [
+     0.25,
+     0.17,
+     0.77,
+     0.26
+    ],
+    "tabella": [
+     0.13,
+     0.625,
+     0.86,
+     0.72
+    ],
+    "ricompensa": [
+     0.14,
+     0.735,
+     0.82,
+     0.85
+    ],
+    "evitare": [
+     0.14,
+     0.86,
+     0.55,
+     0.9
+    ]
+   },
+   "dubbi": "Riga 1: Empatia doppia ('empathy2'). Nome Incontro grigio «Guerrero del Clan» tradotto (non nel glossario)."
+  }
+ ]
+}

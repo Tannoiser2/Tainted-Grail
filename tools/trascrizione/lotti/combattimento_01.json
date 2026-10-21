@@ -1,0 +1,179 @@
+{
+ "carte": [
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32901.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32902.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32903.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32904.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32905.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32906.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32907.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32908.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32909.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32910.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32911.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32912.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32913.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32914.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32915.webp",
+   "mazzo": "AILEI - MAZO DE COMBATE BASICO",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32800.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32801.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32802.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32803.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32804.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32805.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32806.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32807.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32808.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32809.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32810.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32811.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32812.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32813.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32814.webp",
+   "mazzo": "AILEI - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32925.webp",
+   "mazzo": "VERDE - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32924.webp",
+   "mazzo": "VERDE - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32923.webp",
+   "mazzo": "VERDE - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32922.webp",
+   "mazzo": "VERDE - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32921.webp",
+   "mazzo": "VERDE - MAZO AVANZADO DE COMBATE",
+   "nome_tts": ""
+  }
+ ]
+}

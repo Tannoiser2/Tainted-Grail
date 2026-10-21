@@ -1,0 +1,1215 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/34908.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Luna de sangre",
+    "it": "Luna di sangue"
+   },
+   "testo": {
+    "es": "Cada vez que resuelvas un Encuentro gris, verde o púrpura, recibe 1 {i:wound} adicional inevitable por cada ataque enemigo.\n[i]El signo de Crom Cruach, el dios de los gusanos y las tumbas.[/i]",
+    "it": "Ogni volta che risolvi un Incontro grigio, verde o viola, subisci 1 {i:wound} aggiuntiva inevitabile per ogni attacco nemico.\n[i]Il segno di Crom Cruach, il dio dei vermi e delle tombe.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "incontri": [
+     "grigio",
+     "verde",
+     "viola"
+    ],
+    "ferite_inevitabili_extra_per_attacco": 1
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.35,
+     0.74,
+     0.43
+    ],
+    "testo": [
+     0.09,
+     0.47,
+     0.92,
+     0.7
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34909.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Luna llena",
+    "it": "Luna piena"
+   },
+   "testo": {
+    "es": "Siempre que vayas a robar un Encuentro púrpura al azar, roba 2 y escoge el de valor más alto.\nSiempre que vayas a robar un Encuentro verde o gris al azar, en vez de eso roba un Encuentro púrpura.\nEl coste de activar Menhires se reduce en 1 de {r:Magia}.\n[i]La fuerza de los antiguos poderes crece.[/i]",
+    "it": "Ogni volta che devi pescare un Incontro viola a caso, pescane 2 e scegli quello di valore più alto.\nOgni volta che devi pescare un Incontro verde o grigio a caso, pesca invece un Incontro viola.\nIl costo per attivare i Menhir si riduce di 1 {r:Magia}.\n[i]La forza degli antichi poteri cresce.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "incontro_viola_casuale": "pesca 2, scegli quello di valore più alto",
+    "verde_grigio_sostituiti_da": "viola",
+    "sconto_attivazione_menhir": {
+     "Magia": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.32,
+     0.25,
+     0.68,
+     0.33
+    ],
+    "testo": [
+     0.14,
+     0.37,
+     0.86,
+     0.76
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34910.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Tormenta violenta",
+    "it": "Tempesta violenta"
+   },
+   "testo": {
+    "es": "Pierde 1 de {i:health} cada vez que Viajes hoy.\n[i]Mejor buscar refugio.[/i]",
+    "it": "Perdi 1 {i:health} ogni volta che Viaggi oggi.\n[i]Meglio cercare un riparo.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "per_viaggio_perdi": {
+     "health": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.2,
+     0.39,
+     0.8,
+     0.48
+    ],
+    "testo": [
+     0.24,
+     0.51,
+     0.78,
+     0.63
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34911.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Frío antinatural",
+    "it": "Freddo innaturale"
+   },
+   "testo": {
+    "es": "Si estás fuera de un Asentamiento cuando comience el Fin del Día, pierde 2 de {i:health}.\n[i]El agua se congela y la hierba se cubre de escarcha. Los ancianos lo llaman la Maldición de los Primeros Moradores.[/i]",
+    "it": "Se sei fuori da un Insediamento quando inizia la Fine della Giornata, perdi 2 {i:health}.\n[i]L'acqua gela e l'erba si copre di brina. Gli anziani la chiamano la Maledizione dei Predecessori.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "fine_giornata_fuori_insediamento_perdi": {
+     "health": 2
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.24,
+     0.35,
+     0.77,
+     0.43
+    ],
+    "testo": [
+     0.07,
+     0.47,
+     0.94,
+     0.68
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34912.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Ventisca rugiente",
+    "it": "Bufera ruggente"
+   },
+   "testo": {
+    "es": "Al Descansar, no restauras {i:health} ni pierdes {i:terror}.\n[i]Los infernales lamentos y gemidos no dejarán descansar a nadie esta noche.[/i]",
+    "it": "Quando Riposi, non recuperi {i:health} né perdi {i:terror}.\n[i]Gli infernali lamenti e gemiti non lasceranno riposare nessuno stanotte.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "riposo": "nessun recupero di Salute né perdita di Terrore"
+   },
+   "aree": {
+    "titolo": [
+     0.22,
+     0.37,
+     0.79,
+     0.45
+    ],
+    "testo": [
+     0.19,
+     0.49,
+     0.82,
+     0.66
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34913.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Lluvia torrencial",
+    "it": "Pioggia torrenziale"
+   },
+   "testo": {
+    "es": "Cada Viaje cuesta 1 de {i:energy} adicional.\n[i]Cada riachuelo se convierte en un río caudaloso, cada colina en una cascada.[/i]",
+    "it": "Ogni Viaggio costa 1 {i:energy} aggiuntiva.\n[i]Ogni ruscello diventa un fiume in piena, ogni collina una cascata.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "viaggio_costo_extra": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.22,
+     0.37,
+     0.79,
+     0.45
+    ],
+    "testo": [
+     0.17,
+     0.49,
+     0.85,
+     0.66
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34914.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Lluvia torrencial",
+    "it": "Pioggia torrenziale"
+   },
+   "testo": {
+    "es": "Cada Viaje cuesta 1 de {i:energy} adicional.\n[i]Cada riachuelo se convierte en un río caudaloso, cada colina en una cascada.[/i]",
+    "it": "Ogni Viaggio costa 1 {i:energy} aggiuntiva.\n[i]Ogni ruscello diventa un fiume in piena, ogni collina una cascata.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "viaggio_costo_extra": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.22,
+     0.37,
+     0.79,
+     0.45
+    ],
+    "testo": [
+     0.17,
+     0.49,
+     0.85,
+     0.66
+    ]
+   },
+   "dubbi": "Copia identica della carta 34913."
+  },
+  {
+   "img": "carte/mazzo/34915.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34916.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/34917.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/34918.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/34919.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/34920.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/34921.webp",
+   "tipo": "evento",
+   "sottotipo": "casuale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": null,
+   "titolo": {
+    "es": "Buen tiempo",
+    "it": "Bel tempo"
+   },
+   "testo": {
+    "es": "Tu primer Viaje de hoy cuesta 1 de {i:energy} menos.\n[i]Los viajeros experimentados saben sacarle el máximo partido a un clima decente mientras dure.[/i]",
+    "it": "Il tuo primo Viaggio di oggi costa 1 {i:energy} in meno.\n[i]I viaggiatori esperti sanno sfruttare al massimo un tempo discreto finché dura.[/i]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "effetto": {
+    "durata": "Giornata",
+    "primo_viaggio_sconto": {
+     "energy": 1
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.38,
+     0.7,
+     0.46
+    ],
+    "testo": [
+     0.14,
+     0.5,
+     0.88,
+     0.68
+    ]
+   },
+   "dubbi": "Copia identica della carta 34915."
+  },
+  {
+   "img": "carte/mazzo/35000.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "A",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[b]Si tienes la carta de Secreto 13, sustituye este Evento por el Evento especial B y resuélvelo de inmediato.[/b]\n[i]A medida que te enfrentas a los peligros de Ávalon y empiezas a influir en el devenir de la isla, tus acciones comienzan a llamar la atención de varias entidades poderosas. No todas son amistosas.[/i]\n[b]Obtén 1 parte del Estado «Algo te observa».[/b]\nSi tienes las 4 partes, busca y resuelve el Evento especial C de inmediato.\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\n[b]Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[b]Se hai la carta Segreto 13, sostituisci questo Evento con l'Evento Speciale B e risolvilo immediatamente.[/b]\n[i]Man mano che affronti i pericoli di Avalon e cominci a influire sul destino dell'isola, le tue azioni iniziano ad attirare l'attenzione di varie entità potenti. Non tutte sono amichevoli.[/i]\n[b]Ottieni 1 parte dello status «Qualcuno Sta Osservando».[/b]\nSe hai tutte e 4 le parti, cerca e risolvi immediatamente l'Evento Speciale C.\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\n[b]Poi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.2,
+     0.16,
+     0.93,
+     0.86
+    ]
+   },
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial A",
+     "it": "Evento — Speciale A"
+    },
+    "lettera": "A",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/35001.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "B",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]El tiempo pasa mientras Ávalon se sumerge cada vez más profundamente en el caos.[/i]\n[b]Cada personaje obtiene 1 de {i:terror}.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\nDespués, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.",
+    "it": "[i]Il tempo passa mentre Avalon sprofonda sempre più nel caos.[/i]\n[b]Ogni personaggio ottiene 1 {i:terror}.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\nPoi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita)."
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.32,
+     0.93,
+     0.69
+    ]
+   },
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial B",
+     "it": "Evento — Speciale B"
+    },
+    "lettera": "B",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/35002.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "C",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Te despierta un frío repentino y una sensación de miedo indescriptible. Entonces, ves ESO. Una figura corpulenta se dirige hacia ti, con una velocidad inimaginable en algo de semejante tamaño. Al principio, lo confundes con un semigigante o un guerrero que haya crecido por métodos antinaturales. Entonces te fijas en el casco de tres ojos y los dos pares de brazos que blanden armas que nunca habías visto antes....[/i]\n[b]¡CORRE POR TU VIDA![/b]\nColoca una [b]miniatura de Primer Morador[/b] en la Localización con el mayor número de personajes. Si no existe tal Localización, colócala en la Localización del personaje con el número de personaje más alto.\n[b]Pon el Evento especial B encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]\nAhora, ve al Versículo 13 del Libro de los Secretos.",
+    "it": "[i]Ti sveglia un freddo improvviso e una sensazione di paura indescrivibile. Poi vedi QUELLO. Una figura massiccia si dirige verso di te, con una velocità inimmaginabile per qualcosa di tali dimensioni. All'inizio la scambi per un mezzo gigante o per un guerriero cresciuto con metodi innaturali. Poi noti l'elmo a tre occhi e le due paia di braccia che brandiscono armi mai viste prima...[/i]\n[b]CORRI PER LA TUA VITA![/b]\nColloca una [b]miniatura del Predecessore[/b] nel Luogo con il maggior numero di personaggi. Se tale Luogo non esiste, collocala nel Luogo del personaggio con il numero di personaggio più alto.\n[b]Metti l'Evento Speciale B in cima al mazzo Eventi. Poi metti sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]\nOra vai al verso 13 del Libro dei Segreti."
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.06,
+     0.98,
+     0.96
+    ]
+   },
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "versi": [
+    {
+     "libro": "segreti",
+     "verso": 13
+    }
+   ],
+   "miniatura": {
+    "es": "Primer Morador",
+    "it": "Predecessore",
+    "luogo": "Luogo con più personaggi; altrimenti Luogo del personaggio col numero più alto"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial C",
+     "it": "Evento — Speciale C"
+    },
+    "lettera": "C",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   },
+   "dubbi": "'Si no existe tal Localización' = parità/nessun Luogo con più personaggi; trascritto letteralmente."
+  },
+  {
+   "img": "carte/mazzo/35003.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "D",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Comienzas a perder el control de tu cuerpo, deformado por el efecto corruptor de la Rareza.[/i]\n[b]Cada personaje pierde 1 punto en el Atributo que elija.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos.[/b]\nDespués, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.",
+    "it": "[i]Cominci a perdere il controllo del tuo corpo, deformato dall'effetto corruttore dell'Anomalia.[/i]\n[b]Ogni personaggio perde 1 punto nell'Attributo che preferisce.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi.[/b]\nPoi metti sopra di essa 7 Eventi Casuali (-1 per ogni giocatore della partita)."
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.32,
+     0.93,
+     0.69
+    ]
+   },
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial D",
+     "it": "Evento — Speciale D"
+    },
+    "lettera": "D",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/35004.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "E",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Un grupo tan grande como el tuyo atrae mucha atención no deseada...[/i]\n[b]Guardián:[/b] Lanza un dial.\n[b]Grial:[/b] Pon el Encuentro verde «Sierpe de la Maleza» en la Localización revelada con el número más bajo. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Calavera:[/b] Pon el Encuentro púrpura «Reconquistador» en la Localización revelada con el número más alto. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[i]Un gruppo grande come il tuo attira molta attenzione indesiderata...[/i]\n[b]Guardiano:[/b] Lancia un Quadrante.\n[b]Graal:[/b] Metti l'Incontro verde «Serpe del Sottobosco» nel Luogo rivelato con il numero più basso. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Teschio:[/b] Metti l'Incontro viola «Rivendicatore» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti 7 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.17,
+     0.95,
+     0.86
+    ]
+   },
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "guardiano_quadrante": {
+    "grail": {
+     "incontro": {
+      "colore": "verde",
+      "es": "Sierpe de la Maleza",
+      "it": "Serpe del Sottobosco"
+     },
+     "luogo": "Luogo rivelato con il numero più basso",
+     "se_personaggi": "Incontro immediato"
+    },
+    "skull": {
+     "incontro": {
+      "colore": "viola",
+      "es": "Reconquistador",
+      "it": "Rivendicatore"
+     },
+     "luogo": "Luogo rivelato con il numero più alto",
+     "se_personaggi": "Incontro immediato"
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial E",
+     "it": "Evento — Speciale E"
+    },
+    "lettera": "E",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   },
+   "dubbi": "«Sierpe de la Maleza» non è nel glossario: tradotto 'Serpe del Sottobosco'."
+  },
+  {
+   "img": "carte/mazzo/35005.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "F",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Un grupo tan grande como el tuyo atrae mucha atención no deseada...[/i]\n[b]Guardián:[/b] Lanza un dial.\n[b]Grial:[/b] Pon el Encuentro gris «Turba Enfurecida» en la Localización revelada con el número más alto. Si hay personajes allí, comienza el Encuentro de inmediato.\n[b]Calavera:[/b] Pon el Encuentro gris «Caballero Errante» en la Localización del personaje con el número de personaje más alto.\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima del mazo de Eventos.[/b]",
+    "it": "[i]Un gruppo grande come il tuo attira molta attenzione indesiderata...[/i]\n[b]Guardiano:[/b] Lancia un Quadrante.\n[b]Graal:[/b] Metti l'Incontro grigio «Folla Inferocita» nel Luogo rivelato con il numero più alto. Se ci sono personaggi lì, inizia immediatamente l'Incontro.\n[b]Teschio:[/b] Metti l'Incontro grigio «Cavaliere Errante» nel Luogo del personaggio con il numero di personaggio più alto.\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti 6 Eventi Casuali (-1 per ogni giocatore della partita) in cima al mazzo Eventi.[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.17,
+     0.95,
+     0.86
+    ]
+   },
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   },
+   "guardiano_quadrante": {
+    "grail": {
+     "incontro": {
+      "colore": "grigio",
+      "es": "Turba Enfurecida",
+      "it": "Folla Inferocita"
+     },
+     "luogo": "Luogo rivelato con il numero più alto",
+     "se_personaggi": "Incontro immediato"
+    },
+    "skull": {
+     "incontro": {
+      "colore": "grigio",
+      "es": "Caballero Errante",
+      "it": "Cavaliere Errante"
+     },
+     "luogo": "Luogo del personaggio con il numero di personaggio più alto"
+    }
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial F",
+     "it": "Evento — Speciale F"
+    },
+    "lettera": "F",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   },
+   "dubbi": "«Caballero Errante» non è nel glossario: tradotto 'Cavaliere Errante'. Il ramo Calavera non dice 'comienza el Encuentro de inmediato' (è comunque nel Luogo di un personaggio)."
+  },
+  {
+   "img": "carte/mazzo/35006.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "G",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]¡Ya no reconoces esta isla! Los viejos senderos han desaparecido. No se puede confiar en los mapas, ni tampoco en los recuerdos. La Rareza está por todas partes, y abrirte paso a través de su masa retorcida es casi tan agotador como lo fue tu viaje a Tuathán.[/i]\n[b]Cada personaje obtiene 2 de {i:terror} y pierde 1 de {i:health}.[/b]\n[b]Tira un dado por cada Menhir activo. Si el resultado es 5 o 6, reduce el dial de dicho Menhir en 1.[/b]\n[b]Pon esta carta de nuevo encima del mazo de Eventos. Después, pon 6 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[i]Non riconosci più quest'isola! I vecchi sentieri sono scomparsi. Non ci si può fidare delle mappe, e nemmeno dei ricordi. L'Anomalia è ovunque, e aprirsi un varco nella sua massa contorta è stancante quasi quanto lo è stato il tuo viaggio a Tuathan.[/i]\n[b]Ogni personaggio ottiene 2 {i:terror} e perde 1 {i:health}.[/b]\n[b]Tira un dado per ogni Menhir attivo. Se il risultato è 5 o 6, riduci di 1 il Quadrante di quel Menhir.[/b]\n[b]Rimetti questa carta in cima al mazzo Eventi. Poi metti sopra di essa 6 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.19,
+     0.23,
+     0.98,
+     0.8
+    ]
+   },
+   "eventi_casuali": {
+    "base": 6,
+    "meno_per_giocatore": 1
+   },
+   "menhir": {
+    "per_ogni_menhir_attivo": "tira un dado; con 5-6 riduci il Quadrante di 1"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial G",
+     "it": "Evento — Speciale G"
+    },
+    "lettera": "G",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/35007.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "H",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[b]Pon esta carta encima de la pila de Misiones activas.[/b]\n[i]Una mañana te preparas para salir del campamento, cuando una mujer baja y corpulenta corre en tu busca. Jadeando, explica que su carromato fue atacado por una criatura de la Rareza, no muy lejos de aquí. Sus hijos están atrapados. Te ruega que la ayudes.[/i]\n[b]Preparación adicional:[/b] Pon un Encuentro verde «Oso de la Rareza» en la Localización revelada con el número más bajo que esté adyacente a un personaje, y pon allí 1 ficha de Tiempo. El Oso permanecerá allí hasta el próximo Comienzo del Día.\n[b]Pon el Evento especial A encima del mazo de Eventos. Después, pon 7 Eventos Aleatorios (-1 por cada jugador de la partida) encima.[/b]",
+    "it": "[b]Metti questa carta in cima alla pila delle Cerche attive.[/b]\n[i]Una mattina, mentre ti prepari a lasciare l'accampamento, una donna bassa e robusta corre a cercarti. Ansimando, spiega che il suo carro è stato attaccato da una creatura dell'Anomalia, non lontano da qui. I suoi figli sono intrappolati. Ti supplica di aiutarla.[/i]\n[b]Preparazione aggiuntiva:[/b] Metti un Incontro verde «Orso Anomalo» nel Luogo rivelato con il numero più basso adiacente a un personaggio, e mettici 1 Gettone Tempo. L'Orso resterà lì fino al prossimo Inizio della Giornata.\n[b]Metti l'Evento Speciale A in cima al mazzo Eventi. Poi metti sopra di esso 7 Eventi Casuali (-1 per ogni giocatore della partita).[/b]"
+   },
+   "cerca": {
+    "es": "[b]Misión[/b]\n{i:bullet} Derrota al «Oso de la Rareza» señalado con una ficha de Tiempo.\n[b]Éxito:[/b] Ve al Versículo 550 del Libro de los Secretos.",
+    "it": "[b]Cerca[/b]\n{i:bullet} Sconfiggi l'«Orso Anomalo» segnato con un Gettone Tempo.\n[b]Successo:[/b] Vai al verso 550 del Libro dei Segreti."
+   },
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     [
+      0.19,
+      0.08,
+      0.98,
+      0.59
+     ],
+     [
+      0.19,
+      0.82,
+      0.85,
+      0.96
+     ]
+    ],
+    "cerca": [
+     0.2,
+     0.61,
+     0.97,
+     0.8
+    ]
+   },
+   "missione": true,
+   "eventi_casuali": {
+    "base": 7,
+    "meno_per_giocatore": 1
+   },
+   "incontro": {
+    "colore": "verde",
+    "es": "Oso de la Rareza",
+    "it": "Orso Anomalo",
+    "luogo": "Luogo rivelato con il numero più basso adiacente a un personaggio",
+    "gettone_tempo": 1,
+    "fino_a": "prossimo Inizio della Giornata"
+   },
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial H",
+     "it": "Evento — Speciale H"
+    },
+    "lettera": "H",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  },
+  {
+   "img": "carte/mazzo/35008.webp",
+   "tipo": "evento",
+   "sottotipo": "speciale",
+   "capitolo": null,
+   "parte": null,
+   "lettera": "I",
+   "titolo": {
+    "es": "Evento especial",
+    "it": "Evento Speciale"
+   },
+   "testo": {
+    "es": "[i]Encuentras un gran caserío rodeado por una empalizada cubierta de musgo en un valle al lado de tu camino. Parece cálido, acogedor. Decides hacer una parada. Los dueños son agradables, aunque un poco retraídos. Insisten en que te quedes a comer.\nAntes de aceptar, compruebas discretamente si hay armas ocultas, veneno o asaltantes al acecho. Todo parece en orden. Disfrutas de tu comida y sientes una agradable sensación de calor recorriéndote las tripas.\nTe despiertas momentos después incrustado en la madera del banco y con la pared rodeándote los hombros como una capa. Mientras dormitabas, el caserío te envolvió como una planta carnívora. La cara de uno de los dueños, que asoma ahora del techo deformado, se carcajea desquiciadamente...[/i]\nVe al Versículo 560 del Libro de los Secretos.",
+    "it": "[i]Trovi una grande fattoria circondata da una palizzata coperta di muschio, in una valle accanto alla tua strada. Sembra calda, accogliente. Decidi di fermarti. I padroni sono gentili, anche se un po' schivi. Insistono perché tu resti a mangiare.\nPrima di accettare, controlli discretamente che non ci siano armi nascoste, veleno o aggressori in agguato. Sembra tutto in ordine. Ti godi il pasto e senti un piacevole calore che ti scorre nelle viscere.\nTi svegli poco dopo incastrato nel legno della panca, con la parete che ti avvolge le spalle come un mantello. Mentre sonnecchiavi, la fattoria ti ha avvolto come una pianta carnivora. Il volto di uno dei padroni, che ora sporge dal soffitto deformato, ride in modo folle...[/i]\nVai al verso 560 del Libro dei Segreti."
+   },
+   "cerca": null,
+   "indizio": null,
+   "aree": {
+    "titolo": [
+     0.07,
+     0.12,
+     0.15,
+     0.75
+    ],
+    "lettera": [
+     0.07,
+     0.79,
+     0.15,
+     0.92
+    ],
+    "testo": [
+     0.2,
+     0.06,
+     0.98,
+     0.96
+    ]
+   },
+   "versi": [
+    {
+     "libro": "segreti",
+     "verso": 560
+    }
+   ],
+   "retro": {
+    "lato": "dorso",
+    "titolo": {
+     "es": "Evento — Especial I",
+     "it": "Evento — Speciale I"
+    },
+    "lettera": "I",
+    "testo": null,
+    "aree": {
+     "intestazione": [
+      0.32,
+      0.11,
+      0.51,
+      0.19
+     ],
+     "titolo": [
+      0.1,
+      0.58,
+      0.32,
+      0.9
+     ]
+    }
+   }
+  }
+ ]
+}

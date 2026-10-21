@@ -1,0 +1,58 @@
+extends SceneTree
+## Screenshot automatici (serve un display: xvfb-run).
+## TG_PROVA=1 TG_DB_URL=off xvfb-run -s "-screen 0 1920x1080x24" godot --path . -s res://tests/foto.gd
+var main
+var n := 0
+var cartella := ""
+
+func _initialize() -> void:
+	cartella = OS.get_user_data_dir() + "/foto"
+	DirAccess.make_dir_recursive_absolute(cartella)
+	root.size = Vector2i(1920, 1080)
+	main = load("res://scenes/Main.tscn").instantiate()
+	root.add_child(main)
+	_run.call_deferred()
+
+func foto(nome: String) -> void:
+	for i in 6:
+		await process_frame
+	var img := root.get_viewport().get_texture().get_image()
+	n += 1
+	img.save_png(cartella + "/%02d_%s.png" % [n, nome])
+	print("foto ", nome)
+
+func aspetta(sec: float) -> void:
+	var t := Time.get_ticks_msec()
+	while Time.get_ticks_msec() - t < sec * 1000:
+		await process_frame
+
+func _run() -> void:
+	main.mostra_menu()
+	await aspetta(1.0)
+	await foto("menu")
+	root.get_node("Campagna").nuova(1, "Prova", ["arev", "ailei"], {})
+	main.mostra_gioco()
+	await aspetta(4.0)
+	await foto("inizio_giornata")
+	var g = main._attuale
+	if is_instance_valid(g._modale):
+		g._modale.queue_free()
+	await aspetta(2.0)
+	await foto("tavolo")
+	g._esplora()
+	await aspetta(2.0)
+	await foto("diario")
+	if is_instance_valid(g._diario):
+		g._diario.queue_free()
+	g._avvia_incontro("verde")
+	await aspetta(3.0)
+	await foto("incontro")
+	var fi = g._ui.get_child(g._ui.get_child_count() - 1)
+	fi._fase = "scegli"
+	fi._aggiorna()
+	fi.inc.attiva("arev")
+	fi._fase = "gioca"
+	fi._aggiorna()
+	await aspetta(2.0)
+	await foto("incontro_gioca")
+	quit()

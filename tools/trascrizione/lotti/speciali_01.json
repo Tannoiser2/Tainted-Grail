@@ -1,0 +1,98 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/37200.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37200.webp"
+  },
+  {
+   "img": "carte/mazzo/37201.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37201.webp"
+  },
+  {
+   "img": "carte/mazzo/37202.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37202.webp"
+  },
+  {
+   "img": "carte/mazzo/37203.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37203.webp"
+  },
+  {
+   "img": "carte/mazzo/37300.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37300.webp"
+  },
+  {
+   "img": "carte/mazzo/37301.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37301.webp"
+  },
+  {
+   "img": "carte/mazzo/37302.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37302.webp"
+  },
+  {
+   "img": "carte/mazzo/37303.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37303.webp"
+  },
+  {
+   "img": "carte/mazzo/37304.webp",
+   "mazzo": "",
+   "nome_tts": "",
+   "retro": "carte/mazzo/retro_37304.webp"
+  },
+  {
+   "img": "carte/mazzo/33001.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/mazzo/33002.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/mazzo/33003.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/mazzo/34101.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/mazzo/34102.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/mazzo/34103.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/carte_sciolte/34100.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  },
+  {
+   "img": "carte/carte_sciolte/33000.webp",
+   "mazzo": "",
+   "nome_tts": ""
+  }
+ ]
+}

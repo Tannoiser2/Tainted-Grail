@@ -1,0 +1,748 @@
+{
+ "carte": [
+  {
+   "img": "carte/secretos/32621.webp",
+   "tipo": "segreto",
+   "numero": 32,
+   "nome": {
+    "es": "Cristales pálidos",
+    "it": "Cristalli Pallidi"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Reduce un dial de esta carta en 1 cada Comienzo del Día. Descarta este Secreto cuando el dial se agote.",
+    "it": "Riduci di 1 un Quadrante su questa carta a ogni Inizio della Giornata. Scarta questo Segreto quando il Quadrante si esaurisce."
+   },
+   "quadrante": true,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.74,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 32 non nel glossario: traduzione provvisoria. Valore iniziale del Quadrante non indicato sulla carta (dato dal verso che la assegna)."
+  },
+  {
+   "img": "carte/secretos/32622.webp",
+   "tipo": "segreto",
+   "numero": 33,
+   "nome": {
+    "es": "Colonos esperanzados",
+    "it": "Coloni Speranzosi"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "En el Fin del Día, si no hay fichas de Misión en esta carta, paga 1 de {r:Riqueza} o pierde 1 de {r:Rep}; o descarta esta carta.",
+    "it": "Alla Fine della Giornata, se non ci sono Gettoni Cerca su questa carta, paga 1 {r:Ricchezza} o perdi 1 {r:Rep}; oppure scarta questa carta."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.13,
+     0.1,
+     0.87,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32623.webp",
+   "tipo": "segreto",
+   "numero": 37,
+   "nome": {
+    "es": "Cosuil la Incansable",
+    "it": "Cosuil, l’Irrequieta"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "effetto": {
+    "es": "Reduce todos los costes de {i:energy} en 1 (hasta un mínimo de 1). Aumenta todas las ganancias de {r:Rep} en 1. Disminuye todas las ganancias de {r:Exp} en 1. Puedes descartar esta carta en cualquier momento.",
+    "it": "Riduci di 1 tutti i costi in {i:energy} (fino a un minimo di 1). Aumenta di 1 tutti i guadagni di {r:Rep}. Diminuisci di 1 tutti i guadagni di {r:Esp}. Puoi scartare questa carta in qualsiasi momento."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.22
+    ],
+    "parola": [
+     0.32,
+     0.04,
+     0.68,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.61,
+      0.94,
+      0.95
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32624.webp",
+   "tipo": "segreto",
+   "numero": 39,
+   "nome": {
+    "es": "Anillo reptante",
+    "it": "Anello Strisciante"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Obtén 1 de {i:energy} al Comienzo del Día.",
+    "it": "Ottieni 1 {i:energy} all'Inizio della Giornata."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32625.webp",
+   "tipo": "segreto",
+   "numero": 40,
+   "nome": {
+    "es": "Bolsa de diamantes",
+    "it": "Sacchetto di Diamanti"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Véndelos (solo en Asentamientos): Obtén 10 de {r:Riqueza} y descarta esta carta.",
+    "it": "{i:action} 1 {i:energy}: vendili (solo negli Insediamenti): ottieni 10 {r:Ricchezza} e scarta questa carta."
+   },
+   "quadrante": false,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.91
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 40 non nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/secretos/32626.webp",
+   "tipo": "segreto",
+   "numero": 42,
+   "nome": {
+    "es": "Desconfianza",
+    "it": "Sfiducia"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "La primera carta de Diplomacia jugada durante una activación de personaje da {i:arrowup} menos.",
+    "it": "La prima carta Diplomazia giocata durante l'Attivazione di un Personaggio dà {i:arrowup} in meno."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.74,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32627.webp",
+   "tipo": "segreto",
+   "numero": 44,
+   "nome": {
+    "es": "Artefacto de los Primeros Moradores",
+    "it": "Ciondolo del Predecessore"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "{i:skull} Prevén 1 {i:wound} y 1 de {i:terror} (solo en Encuentros púrpura).",
+    "it": "{i:skull} Previeni 1 {i:wound} e 1 {i:terror} (solo negli Incontri viola)."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.81,
+      0.94,
+      0.91
+     ]
+    ]
+   },
+   "dubbi": "Il nome italiano del glossario per il n. 44 («Ciondolo del Predecessore») non corrisponde letteralmente allo spagnolo («Artefatto dei Primi Abitanti»): usato il glossario."
+  },
+  {
+   "img": "carte/secretos/32628.webp",
+   "tipo": "segreto",
+   "numero": 47,
+   "nome": {
+    "es": "Descubrimiento de Rojohelecho",
+    "it": "Scoperta della Felce Rossa"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Restaura 1 de {i:health} adicional y pierde 1 de {i:terror} adicional si Descansas en una Localización con un macizo de Rojohelecho visible (ver ilustración).",
+    "it": "Recupera 1 {i:health} aggiuntiva e perdi 1 {i:terror} aggiuntivo se Riposi in un Luogo con un cespuglio di Felce Rossa visibile (vedi illustrazione)."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.13,
+     0.1,
+     0.87,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.63,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32629.webp",
+   "tipo": "segreto",
+   "numero": 50,
+   "nome": {
+    "es": "Sable de Naazer",
+    "it": "Sciabola di Naazer"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Si tu Secuencia termina con una Clave {i:practicality} o {i:practicality2} conectada, ignora el Rasgo de [i]Finta[/i].",
+    "it": "Se la tua Sequenza termina con una Chiave {i:practicality} o {i:practicality2} collegata, ignora il Tratto [i]Finta[/i]."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.32,
+     0.05,
+     0.68,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 50 non nel glossario. Icona 'practicality2' (doppio serpente) inventata."
+  },
+  {
+   "img": "carte/secretos/32630.webp",
+   "tipo": "segreto",
+   "numero": 51,
+   "nome": {
+    "es": "Blasón de la Orden",
+    "it": "Stemma dell’Ordine"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Cada personaje puede tener hasta 2 Compañeros activos al mismo tiempo.\nCada vez que un personaje robe un Encuentro de «Caballero Errante», ponlo de nuevo debajo de su mazo.",
+    "it": "Ogni Personaggio può avere fino a 2 Compagni attivi contemporaneamente.\nOgni volta che un Personaggio pesca l'Incontro «Cavaliere Errante», rimettilo in fondo al suo mazzo."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.57,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Incontro 'Caballero Errante' non nel glossario incontri: nome provvisorio «Cavaliere Errante»."
+  },
+  {
+   "img": "carte/secretos/32631.webp",
+   "tipo": "segreto",
+   "numero": 58,
+   "nome": {
+    "es": "Herramientas del escultor",
+    "it": "Attrezzi dello Scultore"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]El arte de moldear la extraña piedra de la que están hechos los menhires prácticamente ha sido olvidado, pero todavía hay quienes lo recuerdan...[/i]",
+    "it": "[i]L'arte di plasmare la strana pietra di cui sono fatti i menhir è stata quasi dimenticata, ma c'è ancora chi la ricorda...[/i]"
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32632.webp",
+   "tipo": "segreto",
+   "numero": 65,
+   "nome": {
+    "es": "En busca de poder",
+    "it": "In Cerca di Antichi Poteri"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Pon un dial con una ficha de Misión en esta carta y ponlo en 1. Cada vez que derrotes un Encuentro púrpura, aumenta el dial en 1 (máximo 8).",
+    "it": "Metti su questa carta un Quadrante con un Gettone Cerca e impostalo su 1. Ogni volta che sconfiggi un Incontro viola, aumenta il Quadrante di 1 (massimo 8)."
+   },
+   "quadrante": true,
+   "quadrante_iniziale": 1,
+   "quadrante_max": 8,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32633.webp",
+   "tipo": "segreto",
+   "numero": 66,
+   "nome": {
+    "es": "Marca roja",
+    "it": "Marchio Rosso"
+   },
+   "parola": "Personale",
+   "parola_es": "Personal",
+   "effetto": {
+    "es": "No puedes darle esta carta a otro personaje.",
+    "it": "Non puoi dare questa carta a un altro Personaggio."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.06,
+     0.7,
+     0.11
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 66 non nel glossario: traduzione provvisoria «Marchio Rosso»."
+  },
+  {
+   "img": "carte/secretos/32634.webp",
+   "tipo": "segreto",
+   "numero": 66,
+   "nome": {
+    "es": "Marca roja",
+    "it": "Marchio Rosso"
+   },
+   "parola": "Personale",
+   "parola_es": "Personal",
+   "effetto": {
+    "es": "No puedes darle esta carta a otro personaje.",
+    "it": "Non puoi dare questa carta a un altro Personaggio."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.06,
+     0.7,
+     0.11
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 66 non nel glossario: traduzione provvisoria «Marchio Rosso»."
+  },
+  {
+   "img": "carte/secretos/32635.webp",
+   "tipo": "segreto",
+   "numero": 66,
+   "nome": {
+    "es": "Marca roja",
+    "it": "Marchio Rosso"
+   },
+   "parola": "Personale",
+   "parola_es": "Personal",
+   "effetto": {
+    "es": "No puedes darle esta carta a otro personaje.",
+    "it": "Non puoi dare questa carta a un altro Personaggio."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.06,
+     0.7,
+     0.11
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 66 non nel glossario: traduzione provvisoria «Marchio Rosso»."
+  },
+  {
+   "img": "carte/secretos/32636.webp",
+   "tipo": "segreto",
+   "numero": 66,
+   "nome": {
+    "es": "Marca roja",
+    "it": "Marchio Rosso"
+   },
+   "parola": "Personale",
+   "parola_es": "Personal",
+   "effetto": {
+    "es": "No puedes darle esta carta a otro personaje.",
+    "it": "Non puoi dare questa carta a un altro Personaggio."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.06,
+     0.7,
+     0.11
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 66 non nel glossario: traduzione provvisoria «Marchio Rosso»."
+  },
+  {
+   "img": "carte/secretos/32637.webp",
+   "tipo": "segreto",
+   "numero": 67,
+   "nome": {
+    "es": "Descanso intranquilo",
+    "it": "Riposo Disturbato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Siempre que un personaje Descanse, usa las reglas modificadas de Descanso del Versículo 605 del Libro de los Secretos.",
+    "it": "Ogni volta che un Personaggio Riposa, usa le regole modificate di Riposo del verso 605 del Libro dei Segreti."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.67,
+      0.94,
+      0.91
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32638.webp",
+   "tipo": "segreto",
+   "numero": 73,
+   "nome": {
+    "es": "Séquito armado",
+    "it": "Seguito Armato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "Al comienzo del combate, obtén {i:cube2}. Descarta esta carta si Escapas o Fracasas en un Encuentro de Combate.",
+    "it": "All'inizio del Combattimento, ottieni {i:cube2}. Scarta questa carta se Scappi o Fallisci in un Incontro di Combattimento."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.9
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 73 non nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/secretos/32639.webp",
+   "tipo": "segreto",
+   "numero": 78,
+   "nome": {
+    "es": "Excalibur",
+    "it": "Excalibur"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "effetto": {
+    "es": "Ignora los Rasgos [i]Rápido[/i] y [i]Defensivo[/i].\nCada vez que juegues una carta en Combate, obtén {i:cube}.\nCada vez que comiences un Combate usando a Excalibur, pierde 2 de {i:health}.",
+    "it": "Ignora i Tratti [i]Rapido[/i] e [i]Difensivo[/i].\nOgni volta che giochi una carta in Combattimento, ottieni {i:cube}.\nOgni volta che inizi un Combattimento usando Excalibur, perdi 2 {i:health}."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.21
+    ],
+    "parola": [
+     0.32,
+     0.05,
+     0.68,
+     0.11
+    ],
+    "testo": [
+     [
+      0.06,
+      0.6,
+      0.94,
+      0.97
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/secretos/32640.webp",
+   "tipo": "segreto",
+   "numero": 90,
+   "nome": {
+    "es": "La Caída de Ávalon",
+    "it": "La Caduta di Avalon"
+   },
+   "parola": null,
+   "parola_es": null,
+   "effetto": {
+    "es": "[i]A través de....[/i]",
+    "it": "[i]Attraverso....[/i]"
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.85,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Testo volutamente tronco («A través de....»): resa letterale."
+  },
+  {
+   "img": "carte/secretos/32641.webp",
+   "tipo": "segreto",
+   "numero": 95,
+   "nome": {
+    "es": "Vaina de Excalibur",
+    "it": "Fodero di Excalibur"
+   },
+   "parola": "Reliquia",
+   "parola_es": "Reliquia",
+   "effetto": {
+    "es": "Al final de tu Descanso, puedes obtener 1 de {i:terror} para restaurar 1 de {i:health} adicional.",
+    "it": "Alla fine del tuo Riposo, puoi ottenere 1 {i:terror} per recuperare 1 {i:health} aggiuntiva."
+   },
+   "quadrante": false,
+   "aree": {
+    "titolo": [
+     0.14,
+     0.12,
+     0.86,
+     0.2
+    ],
+    "parola": [
+     0.3,
+     0.05,
+     0.7,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.75,
+      0.94,
+      0.94
+     ]
+    ]
+   },
+   "dubbi": "Nome del Segreto 95 non nel glossario: traduzione provvisoria."
+  }
+ ]
+}

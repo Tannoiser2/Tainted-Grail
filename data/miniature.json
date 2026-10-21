@@ -1,0 +1,362 @@
+{
+ "Ailei": {
+  "file": "ailei.glb",
+  "altezza": 0.0218,
+  "triangoli": 9000,
+  "originali": 50018
+ },
+ "Aillén Trenchend": {
+  "file": "aill_n_trenchend.glb",
+  "altezza": 0.038,
+  "triangoli": 9000,
+  "originali": 50199
+ },
+ "Allfather's Inquisition": {
+  "file": "allfather_s_inquisition.glb",
+  "altezza": 0.0333,
+  "triangoli": 8999,
+  "originali": 50054
+ },
+ "Angry Mob": {
+  "file": "angry_mob.glb",
+  "altezza": 0.0201,
+  "triangoli": 8998,
+  "originali": 50048
+ },
+ "Arev": {
+  "file": "arev.glb",
+  "altezza": 0.0189,
+  "triangoli": 9000,
+  "originali": 50028
+ },
+ "Bean Chioch": {
+  "file": "bean_chioch.glb",
+  "altezza": 0.0322,
+  "triangoli": 9000,
+  "originali": 50068
+ },
+ "Beor": {
+  "file": "beor.glb",
+  "altezza": 0.0229,
+  "triangoli": 8999,
+  "originali": 49984
+ },
+ "Bowmaiden": {
+  "file": "bowmaiden.glb",
+  "altezza": 0.0251,
+  "triangoli": 8999,
+  "originali": 50057
+ },
+ "Caolin": {
+  "file": "caolin.glb",
+  "altezza": 0.0222,
+  "triangoli": 8999,
+  "originali": 50044
+ },
+ "Child of Morrigan": {
+  "file": "child_of_morrigan.glb",
+  "altezza": 0.026,
+  "triangoli": 9000,
+  "originali": 50024
+ },
+ "Corrupted Druid": {
+  "file": "corrupted_druid.glb",
+  "altezza": 0.0301,
+  "triangoli": 8998,
+  "originali": 50056
+ },
+ "Dagan": {
+  "file": "dagan.glb",
+  "altezza": 0.0225,
+  "triangoli": 8998,
+  "originali": 50016
+ },
+ "Dance Macabre": {
+  "file": "dance_macabre.glb",
+  "altezza": 9.9918,
+  "triangoli": 8999,
+  "originali": 49982
+ },
+ "Dearg Due": {
+  "file": "dearg_due.glb",
+  "altezza": 0.0332,
+  "triangoli": 9000,
+  "originali": 50041
+ },
+ "Doomwing": {
+  "file": "doomwing.glb",
+  "altezza": 0.0605,
+  "triangoli": 9000,
+  "originali": 50361
+ },
+ "Duana": {
+  "file": "duana.glb",
+  "altezza": 0.0217,
+  "triangoli": 8999,
+  "originali": 50006
+ },
+ "Dullahan": {
+  "file": "dullahan.glb",
+  "altezza": 0.0379,
+  "triangoli": 8999,
+  "originali": 50058
+ },
+ "Fachan": {
+  "file": "fachan.glb",
+  "altezza": 0.0336,
+  "triangoli": 9000,
+  "originali": 50042
+ },
+ "Fomorian Sentinel": {
+  "file": "fomorian_sentinel.glb",
+  "altezza": 10.0,
+  "triangoli": 9000,
+  "originali": 50017
+ },
+ "Fore-dweller": {
+  "file": "fore_dweller.glb",
+  "altezza": 0.0307,
+  "triangoli": 9000,
+  "originali": 50025
+ },
+ "Fuathan": {
+  "file": "fuathan.glb",
+  "altezza": 0.0365,
+  "triangoli": 9000,
+  "originali": 50058
+ },
+ "Fyul": {
+  "file": "fyul.glb",
+  "altezza": 0.027,
+  "triangoli": 8999,
+  "originali": 50080
+ },
+ "Gigelorum": {
+  "file": "gigelorum.glb",
+  "altezza": 0.0298,
+  "triangoli": 8999,
+  "originali": 50250
+ },
+ "Glastig": {
+  "file": "glastig.glb",
+  "altezza": 0.0275,
+  "triangoli": 8999,
+  "originali": 50008
+ },
+ "Hammerbeak": {
+  "file": "hammerbeak.glb",
+  "altezza": 0.0327,
+  "triangoli": 8998,
+  "originali": 50076
+ },
+ "Hellpig": {
+  "file": "hellpig.glb",
+  "altezza": 0.0259,
+  "triangoli": 8999,
+  "originali": 50031
+ },
+ "Hooded Crow": {
+  "file": "hooded_crow.glb",
+  "altezza": 0.0273,
+  "triangoli": 8999,
+  "originali": 50038
+ },
+ "Horned Warden": {
+  "file": "horned_warden.glb",
+  "altezza": 0.0291,
+  "triangoli": 8999,
+  "originali": 50074
+ },
+ "Kelpie": {
+  "file": "kelpie.glb",
+  "altezza": 0.0296,
+  "triangoli": 9000,
+  "originali": 50029
+ },
+ "Knight Errant": {
+  "file": "knight_errant.glb",
+  "altezza": 0.0333,
+  "triangoli": 8999,
+  "originali": 50094
+ },
+ "Lost Knight": {
+  "file": "lost_knight.glb",
+  "altezza": 0.0234,
+  "triangoli": 8999,
+  "originali": 50017
+ },
+ "Mabd": {
+  "file": "mabd.glb",
+  "altezza": 0.0261,
+  "triangoli": 8999,
+  "originali": 50064
+ },
+ "Mad Warrior": {
+  "file": "mad_warrior.glb",
+  "altezza": 0.0338,
+  "triangoli": 8998,
+  "originali": 50015
+ },
+ "Maggot": {
+  "file": "maggot.glb",
+  "altezza": 0.0248,
+  "triangoli": 8999,
+  "originali": 49993
+ },
+ "Manipede": {
+  "file": "manipede.glb",
+  "altezza": 0.0362,
+  "triangoli": 9000,
+  "originali": 50090
+ },
+ "Menhir 1": {
+  "file": "menhir_1.glb",
+  "altezza": 0.052,
+  "triangoli": 9000,
+  "originali": 50109
+ },
+ "Menhir 2": {
+  "file": "menhir_2.glb",
+  "altezza": 0.043,
+  "triangoli": 8999,
+  "originali": 50038
+ },
+ "Menhir 3": {
+  "file": "menhir_3.glb",
+  "altezza": 0.048,
+  "triangoli": 9000,
+  "originali": 50173
+ },
+ "Mist Bearer": {
+  "file": "mist_bearer.glb",
+  "altezza": 0.0419,
+  "triangoli": 8999,
+  "originali": 50224
+ },
+ "Mulch Man": {
+  "file": "mulch_man.glb",
+  "altezza": 0.0382,
+  "triangoli": 9000,
+  "originali": 50058
+ },
+ "Naazer": {
+  "file": "naazer.glb",
+  "altezza": 0.0253,
+  "triangoli": 9000,
+  "originali": 49989
+ },
+ "Orphaned Heart": {
+  "file": "orphaned_heart.glb",
+  "altezza": 0.0322,
+  "triangoli": 9000,
+  "originali": 50153
+ },
+ "Pack Donkey": {
+  "file": "pack_donkey.glb",
+  "altezza": 9.9921,
+  "triangoli": 8998,
+  "originali": 50016
+ },
+ "Pale Lady": {
+  "file": "pale_lady.glb",
+  "altezza": 0.0268,
+  "triangoli": 9000,
+  "originali": 50005
+ },
+ "Plaguebeast": {
+  "file": "plaguebeast.glb",
+  "altezza": 10.0,
+  "triangoli": 8999,
+  "originali": 49983
+ },
+ "Reclaimer": {
+  "file": "reclaimer.glb",
+  "altezza": 0.0345,
+  "triangoli": 8999,
+  "originali": 50060
+ },
+ "Royal Elk": {
+  "file": "royal_elk.glb",
+  "altezza": 0.0353,
+  "triangoli": 9000,
+  "originali": 50082
+ },
+ "Selkie": {
+  "file": "selkie.glb",
+  "altezza": 0.0285,
+  "triangoli": 9000,
+  "originali": 50024
+ },
+ "Slaugh": {
+  "file": "slaugh.glb",
+  "altezza": 0.0313,
+  "triangoli": 9000,
+  "originali": 50096
+ },
+ "Sloan": {
+  "file": "sloan.glb",
+  "altezza": 0.0235,
+  "triangoli": 8999,
+  "originali": 50000
+ },
+ "Thebalt": {
+  "file": "thebalt.glb",
+  "altezza": 0.0264,
+  "triangoli": 8999,
+  "originali": 50020
+ },
+ "Torch Bearer": {
+  "file": "torch_bearer.glb",
+  "altezza": 0.0341,
+  "triangoli": 8999,
+  "originali": 50019
+ },
+ "Unchained Warbeast": {
+  "file": "unchained_warbeast.glb",
+  "altezza": 0.0271,
+  "triangoli": 9000,
+  "originali": 50075
+ },
+ "Underbrush Wyrm": {
+  "file": "underbrush_wyrm.glb",
+  "altezza": 0.0314,
+  "triangoli": 8999,
+  "originali": 50023
+ },
+ "Warped One": {
+  "file": "warped_one.glb",
+  "altezza": 0.024,
+  "triangoli": 8999,
+  "originali": 50022
+ },
+ "Wolf Walker": {
+  "file": "wolf_walker.glb",
+  "altezza": 0.0266,
+  "triangoli": 9000,
+  "originali": 50025
+ },
+ "Wyrdbear": {
+  "file": "wyrdbear.glb",
+  "altezza": 0.0208,
+  "triangoli": 8999,
+  "originali": 50032
+ },
+ "Wyrdchild": {
+  "file": "wyrdchild.glb",
+  "altezza": 0.0342,
+  "triangoli": 9000,
+  "originali": 50028
+ },
+ "Wyrmlings": {
+  "file": "wyrmlings.glb",
+  "altezza": 0.0122,
+  "triangoli": 8999,
+  "originali": 49999
+ },
+ "Wyrmtangle": {
+  "file": "wyrmtangle.glb",
+  "altezza": 0.025,
+  "triangoli": 9000,
+  "originali": 50017
+ }
+}

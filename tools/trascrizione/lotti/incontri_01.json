@@ -1,0 +1,104 @@
+{
+ "carte": [
+  {
+   "img": "carte/1_encuentros_verdes/1_liebre_de_los_claros_36304.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - LIEBRE DE LOS CLAROS"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_liebre_de_los_claros_36305.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - LIEBRE DE LOS CLAROS"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_liebre_de_los_claros_36306.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - LIEBRE DE LOS CLAROS"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_jabali_desquiciado_36302.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - JABALI DESQUICIADO"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_jabali_desquiciado_36303.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1]- JABALI DESQUICIADO"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_alce_real_36301.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - ALCE REAL"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_alce_real_36300.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1]  ALCE REAL"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_oso_de_la_rareza_36307.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - OSO DE LA RAREZA"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_perros_asilvestrados_36308.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - PERROS ASILVESTRADOS"
+  },
+  {
+   "img": "carte/1_encuentros_verdes/1_perros_asilvestrados_36309.webp",
+   "mazzo": "[1] - ENCUENTROS VERDES",
+   "nome_tts": "[1] - PERROS ASILVESTRADOS"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_ara_a_cazadora_36310.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - ARAÑA CAZADORA"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_babosa_escupidora_36311.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - BABOSA ESCUPIDORA"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_bandada_de_frailecillos_36312.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - BANDADA DE FRAILECILLOS"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_dobhar_ch_36313.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - DOBHAR CHÚ"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_druida_vengativo_36314.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - DRUIDA VENGATIVO"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_mercader_ambulante_36315.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - MERCADER AMBULANTE"
+  },
+  {
+   "img": "carte/2_encuentros_verdes/2_oso_de_la_rareza_36316.webp",
+   "mazzo": "[2] - ENCUENTROS VERDES",
+   "nome_tts": "[2] - OSO DE LA RAREZA"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_aliso_36317.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - ALISO"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_doncella_del_pantano_36318.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - DONCELLA DEL PANTANO"
+  },
+  {
+   "img": "carte/3_encuentros_verdes/3_doncella_del_pantano_36319.webp",
+   "mazzo": "[3]- ENCUENTROS VERDES",
+   "nome_tts": "[3] - DONCELLA DEL PANTANO"
+  }
+ ]
+}

@@ -1,0 +1,2418 @@
+{
+ "carte": [
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33218.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retórica",
+    "it": "Retorica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Por cada {i:arrowdown}, en vez de eso, {i:arrowup}",
+     "it": "Per ogni {i:arrowdown}, invece, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "La riga '{i:discard} después de la Respuesta' non ha icona propria: registrata come passiva, ma è probabilmente legata alla Risposta ({i:skull})."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33217.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Verdad honesta",
+    "it": "Verità sincera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown}",
+    "it": "Se {i:discard}, {i:arrowdown}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33216.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "17/25",
+   "copie": 1,
+   "nome": {
+    "es": "Escuchar en silencio",
+    "it": "Ascoltare in silenzio"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}",
+     "it": "Se subisci {i:wound}, {i:discard}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.84
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33215.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "16/25",
+   "copie": 1,
+   "nome": {
+    "es": "Calma mística",
+    "it": "Calma mistica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Ignora 1 ganancia de {i:terror} o 1 pérdida de {i:energy}",
+     "it": "Paga 1 Carica: ignora 1 guadagno di {i:terror} o 1 perdita di {i:energy}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.07,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.58,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 1-4 e fondo 1x sul bordo destro; fondo bonus vuoto."
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_diplomacia/33224.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "25/25",
+   "copie": 1,
+   "nome": {
+    "es": "Argucia arriesgada",
+    "it": "Stratagemma rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.07,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.645,
+      0.79,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' riga 2 (caution), riga 4 (magic) e fondo ✖ sul bordo destro. Identica a 15/25 del mazzo base."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33600.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "1/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ojo para el detalle",
+    "it": "Occhio per i dettagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.765,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33601.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Retroceder",
+    "it": "Indietreggiare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si la Afinidad no es verde, {i:arrowup}",
+    "it": "Se l'Affinità non è verde, {i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.765,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33602.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presumir",
+    "it": "Vantarsi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:health}",
+     "it": "Perdi 1 {i:health}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33603.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Malas indicaciones",
+    "it": "Indicazioni sbagliate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.76,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33604.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Voz amenazadora",
+    "it": "Voce minacciosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; si tienes al menos 2 de {i:aggression}, {i:arrowup}",
+    "it": "Perdi 1 {r:Rep}; se hai almeno 2 {i:aggression}, {i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.735,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33605.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "La ley del más fuerte",
+    "it": "La legge del più forte"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+     "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33606.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Métodos extraños",
+    "it": "Metodi strani"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial\nCalavera: Pierde 1 de {r:Rep}\nGrial: No pasa nada",
+    "it": "Lancia un quadrante\nTeschio: perdi 1 {r:Rep}\nGraal: non succede nulla"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.695,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33607.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ganar tiempo",
+    "it": "Guadagnare tempo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora la Respuesta del oponente; {i:discard} después de la Respuesta",
+    "it": "Ignora la Risposta dell'avversario; {i:discard} dopo la Risposta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.69,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33608.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Voz amenazadora",
+    "it": "Voce minacciosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; si tienes al menos 2 de {i:aggression}, {i:arrowup}",
+    "it": "Perdi 1 {r:Rep}; se hai almeno 2 {i:aggression}, {i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.735,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33609.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Soborno",
+    "it": "Corruzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Puedes pagar 1 de {r:Riqueza} o descartar un Objeto para {i:arrowup}{i:arrowup}",
+     "it": "Puoi pagare 1 {r:Ricchezza} o scartare un Oggetto per {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33610.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Métodos extraños",
+    "it": "Metodi strani"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial\nCalavera: Pierde 1 de {r:Rep}\nGrial: No pasa nada",
+    "it": "Lancia un quadrante\nTeschio: perdi 1 {r:Rep}\nGraal: non succede nulla"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.695,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33611.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ojo para el detalle",
+    "it": "Occhio per i dettagli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "ritardata",
+    "tempo": 1,
+    "es": "Roba 1 carta",
+    "it": "Pesca 1 carta"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.765,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33612.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Evasivo",
+    "it": "Evasivo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "· Paga 1 Carga: Evita {i:arrowdown}\n· Paga 2 Cargas y 2 de {i:energy}: Finaliza este Encuentro sin Recompensa ni Fracaso",
+     "it": "· Paga 1 Carica: evita {i:arrowdown}\n· Paga 2 Cariche e 2 {i:energy}: termina questo Incontro senza Ricompensa né Fallimento"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.23,
+     0.07,
+     0.77,
+     0.15
+    ],
+    "testo": [
+     [
+      0.19,
+      0.58,
+      0.79,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null. Carta passiva: 'apre' righe 2-4 e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33613.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Medidas desesperadas",
+    "it": "Misure disperate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_diplomacia/33614.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "La ley del más fuerte",
+    "it": "La legge del più forte"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+     "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.35,
+     0.07,
+     0.89,
+     0.16
+    ],
+    "testo": [
+     [
+      0.31,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Lotto etichettato 'BEOR - MAZO BASICO', ma le carte sono il mazzo base Diplomazia blu (n/25 A), senza nome del personaggio: personaggio=null."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33500.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Voz siniestra",
+    "it": "Voce sinistra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+    "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.73,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33501.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Voz siniestra",
+    "it": "Voce sinistra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+    "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.73,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33502.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Evasivo",
+    "it": "Evasivo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Ignora la Respuesta",
+     "it": "Paga 1 Carica: ignora la Risposta"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas y 2 de {i:energy}: Finaliza este Encuentro sin Recompensa ni Fracaso",
+     "it": "Paga 2 Cariche e 2 {i:energy}: termina questo Incontro senza Ricompensa né Fallimento"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.52,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 2-4 e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33503.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Demostrar supremacía",
+    "it": "Dimostrare supremazia"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}",
+     "it": "Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.18
+    ],
+    "testo": [
+     [
+      0.32,
+      0.695,
+      0.95,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33504.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Pose intimidante",
+    "it": "Posa intimidatoria"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Trata todos los {i:special} como {i:arrowup}",
+    "it": "Considera tutti i {i:special} come {i:arrowup}"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.76,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 1 (empathy), 3 (spirituality) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33505.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Voz atronadora",
+    "it": "Voce tonante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 3 Cargas",
+     "it": "Ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: {i:discard}",
+     "it": "Paga 1 Carica: {i:discard}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.69,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 3 (spirituality x2), 4 (magic) e fondo 1x sul bordo destro. 'Paga 1 Carga: {i:discard}' = scarta l'ultima carta della Sequenza (interpretazione)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33506.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Voz atronadora",
+    "it": "Voce tonante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 3 Cargas",
+     "it": "Ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: {i:discard}",
+     "it": "Paga 1 Carica: {i:discard}"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.69,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Carta passiva: 'apre' righe 3 (spirituality x2), 4 (magic) e fondo 1x sul bordo destro. 'Paga 1 Carga: {i:discard}' = scarta l'ultima carta della Sequenza (interpretazione)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33507.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Furia negra",
+    "it": "Furia nera"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Cada vez que vayas a perder 1 de {r:Rep}, en vez de eso, obtén 1 de {i:terror}",
+    "it": "Ogni volta che stai per perdere 1 {r:Rep}, invece ottieni 1 {i:terror}"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.69,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 3 (spirituality x2), 4 (magic) e fondo 3x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33508.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Anécdotas de trabajo",
+    "it": "Aneddoti di lavoro"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Ignora la Respuesta del enemigo",
+     "it": "Ignora la Risposta del nemico"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.18
+    ],
+    "testo": [
+     [
+      0.32,
+      0.645,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33509.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "Amenaza brutal",
+    "it": "Minaccia brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}, {i:arrowup}{i:arrowup}",
+    "it": "Perdi 1 {r:Rep}, {i:arrowup}{i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33510.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Amenaza brutal",
+    "it": "Minaccia brutale"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde 1 de {r:Rep}, {i:arrowup}{i:arrowup}",
+    "it": "Perdi 1 {r:Rep}, {i:arrowup}{i:arrowup}"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.76,
+      0.93,
+      0.84
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33511.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "El dominio de la fuerza",
+    "it": "Il dominio della forza"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {r:Rep}; {i:arrowup} por cada punto de {i:aggression} que tengas",
+     "it": "Perdi 1 {r:Rep}; {i:arrowup} per ogni punto di {i:aggression} che possiedi"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    }
+   ],
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.18
+    ],
+    "testo": [
+     [
+      0.32,
+      0.64,
+      0.93,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33512.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Abandonar",
+    "it": "Abbandonare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 3 {i:delay} en esta carta",
+     "it": "Metti 3 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 3,
+     "es": "Finaliza este Encuentro sin Recompensa ni Fracaso",
+     "it": "Termina questo Incontro senza Ricompensa né Fallimento"
+    }
+   ],
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.64,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 2 (caution), 4 (magic) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33513.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Burlarse del débil",
+    "it": "Deridere il debole"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Ignora todas las pérdidas de {r:Rep}",
+    "it": "Ignora tutte le perdite di {r:Rep}"
+   },
+   "passiva": true,
+   "aree": {
+    "titolo": [
+     0.24,
+     0.08,
+     0.77,
+     0.16
+    ],
+    "testo": [
+     [
+      0.21,
+      0.76,
+      0.8,
+      0.835
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo). Carta passiva: 'apre' righe 2 (caution), 3 (spirituality x2) e fondo 1x sul bordo destro."
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_diplomacia/33514.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Mandato del poder",
+    "it": "Mandato del potere"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Si tienes 3 o más {i:aggression}, paga 3 de {r:Rep} para ganar la etapa",
+    "it": "Se hai 3 o più {i:aggression}, paga 3 {r:Rep} per vincere la fase"
+   },
+   "passiva": false,
+   "aree": {
+    "titolo": [
+     0.37,
+     0.08,
+     0.93,
+     0.16
+    ],
+    "testo": [
+     [
+      0.32,
+      0.74,
+      0.93,
+      0.845
+     ]
+    ]
+   },
+   "dubbi": "Cartiglio con l'intestazione 'BEOR' sopra il nome (non inclusa nell'area titolo)."
+  }
+ ]
+}

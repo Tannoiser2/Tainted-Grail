@@ -1,0 +1,642 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/37200.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.05,
+     0.85,
+     0.14
+    ],
+    "testo": [
+     [
+      0.06,
+      0.17,
+      0.94,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.05,
+     0.72,
+     0.95,
+     0.83
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria.",
+   "retro": "carte/mazzo/retro_37200.webp"
+  },
+  {
+   "img": "carte/mazzo/37201.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.05,
+     0.85,
+     0.14
+    ],
+    "testo": [
+     [
+      0.06,
+      0.17,
+      0.94,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.05,
+     0.72,
+     0.95,
+     0.83
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. Copia identica di 37200.",
+   "retro": "carte/mazzo/retro_37201.webp"
+  },
+  {
+   "img": "carte/mazzo/37202.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.05,
+     0.85,
+     0.14
+    ],
+    "testo": [
+     [
+      0.06,
+      0.17,
+      0.94,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.05,
+     0.72,
+     0.95,
+     0.83
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. Copia identica di 37200.",
+   "retro": "carte/mazzo/retro_37202.webp"
+  },
+  {
+   "img": "carte/mazzo/37203.webp",
+   "tipo": "speciale",
+   "nome": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "testo": {
+    "es": "[i]De todos los peligros de esta isla, la locura que te invade poco a poco es el más insidioso...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu marcador de Terror esté en uno de los espacios rojos del medidor de Terror.\n• Al Descansar, ya no restauras tu {i:health}.\n• No tienes Sueños, solo Pesadillas.\n• Cada vez que Viajes o Explores, lanza un dial:\nCalavera: Pierde 1 de {i:energy} y continúa con tu acción (si tienes 0 de {i:energy}, en vez de eso pierde 1 de {i:health}).\nGrial: No pasa nada, continúa con tu acción.\n• Descarta esta carta cuando tu marcador de {i:terror} no esté en la zona roja del medidor de {i:terror}.",
+    "it": "[i]Di tutti i pericoli di quest'isola, la follia che ti invade a poco a poco è il più insidioso...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che il tuo segnalino Terrore si trova in uno degli spazi rossi della traccia del Terrore.\n• Quando Riposi, non recuperi più la tua {i:health}.\n• Non hai Sogni, solo Incubi.\n• Ogni volta che Viaggi o Esplori, lancia un Quadrante:\nTeschio: perdi 1 {i:energy} e prosegui con la tua azione (se hai 0 {i:energy}, perdi invece 1 {i:health}).\nGraal: non succede nulla, prosegui con la tua azione.\n• Scarta questa carta quando il tuo segnalino {i:terror} non è nella zona rossa della traccia del {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Estás enloqueciendo",
+    "it": "Stai impazzendo"
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.05,
+     0.85,
+     0.14
+    ],
+    "testo": [
+     [
+      0.06,
+      0.17,
+      0.94,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.05,
+     0.72,
+     0.95,
+     0.83
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. Copia identica di 37200.",
+   "retro": "carte/mazzo/retro_37203.webp"
+  },
+  {
+   "img": "carte/mazzo/37300.webp",
+   "tipo": "speciale",
+   "modalita": "solitario",
+   "nome": {
+    "es": "Te estás muriendo",
+    "it": "Stai morendo"
+   },
+   "testo": {
+    "es": "[i]Sigues adelante por pura fuerza de voluntad... pero no esperes que esto dure mucho.[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 1 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Solo puedes llevar 3 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Cada vez que recibas más {i:wound}, lanza un dial. Si cae con la Calavera bocarriba, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Descarta esta carta cuando tu {i:health} esté por encima de 0.\n[b]Al Comienzo del Día:[/b]\nObtén 1 de {i:terror}.",
+    "it": "[i]Vai avanti per pura forza di volontà... ma non sperare che duri a lungo.[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 1 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Puoi portare solo 3 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Ogni volta che subisci altre {i:wound}, lancia un Quadrante. Se cade con il Teschio a faccia in su, muori (consulta la sezione Morte e follia del Regolamento).\n• Scarta questa carta quando la tua {i:health} è sopra 0.\n[b]All'Inizio della Giornata:[/b]\nOttieni 1 {i:terror}."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo",
+    "it": "Stai morendo"
+   },
+   "limite_oggetti": 3,
+   "aree": {
+    "titolo": [
+     0.18,
+     0.05,
+     0.82,
+     0.14
+    ],
+    "testo": [
+     [
+      0.05,
+      0.17,
+      0.95,
+      0.93
+     ]
+    ],
+    "retro_titolo": [
+     0.1,
+     0.74,
+     0.9,
+     0.85
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria.",
+   "retro": "carte/mazzo/retro_37300.webp"
+  },
+  {
+   "img": "carte/mazzo/37301.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.18,
+     0.05,
+     0.82,
+     0.19
+    ],
+    "testo": [
+     [
+      0.05,
+      0.21,
+      0.95,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.08,
+     0.7,
+     0.92,
+     0.91
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. L'azione «Vendar las heridas» può essere svolta presumibilmente da un altro membro della Compagnia sullo stesso Luogo (testo: «a este personaje»).",
+   "retro": "carte/mazzo/retro_37301.webp"
+  },
+  {
+   "img": "carte/mazzo/37302.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.18,
+     0.05,
+     0.82,
+     0.19
+    ],
+    "testo": [
+     [
+      0.05,
+      0.21,
+      0.95,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.08,
+     0.7,
+     0.92,
+     0.91
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. L'azione «Vendar las heridas» può essere svolta presumibilmente da un altro membro della Compagnia sullo stesso Luogo (testo: «a este personaje»). Copia identica di 37301.",
+   "retro": "carte/mazzo/retro_37302.webp"
+  },
+  {
+   "img": "carte/mazzo/37303.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.18,
+     0.05,
+     0.82,
+     0.19
+    ],
+    "testo": [
+     [
+      0.05,
+      0.21,
+      0.95,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.08,
+     0.7,
+     0.92,
+     0.91
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. L'azione «Vendar las heridas» può essere svolta presumibilmente da un altro membro della Compagnia sullo stesso Luogo (testo: «a este personaje»). Copia identica di 37301.",
+   "retro": "carte/mazzo/retro_37303.webp"
+  },
+  {
+   "img": "carte/mazzo/37304.webp",
+   "tipo": "speciale",
+   "modalita": "cooperativo",
+   "nome": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "testo": {
+    "es": "[i]Sin ayuda, no llegarás muy lejos...[/i]\nPon esta carta junto a tu tablero de personaje siempre que tu {i:health} esté en 0. Obtén 2 de {i:terror} y Fracasa o Escapa de tu Encuentro actual.\n• Al Descansar, no restauras tu {i:health} ni reduces tu {i:terror}.\n• Solo puedes llevar 2 Objetos. Descarta inmediatamente los Objetos sobrantes (recuerda que los Secretos no cuentan para este límite).\n• Pon un dial con 1 ficha de Tiempo al lado de tu figura y ponlo en 3. Reduce este dial al Comienzo del Día. Si llega a 0, mueres (consulta la sección de Muerte y locura del Reglamento).\n• Cada vez que vayas a recibir más {i:wound}, en vez de eso reduce tu dial en 1. Descarta esta carta cuando tu {i:health} esté por encima de 0.\n{i:action} 2 {i:energy} [b]Vendar las heridas:[/b] Restaura 1 de {i:health} a este personaje.",
+    "it": "[i]Senza aiuto, non andrai molto lontano...[/i]\nMetti questa carta accanto alla tua plancia del Personaggio ogni volta che la tua {i:health} è a 0. Ottieni 2 {i:terror} e Fallisci o Scappa dal tuo Incontro attuale.\n• Quando Riposi, non recuperi la tua {i:health} né riduci il tuo {i:terror}.\n• Puoi portare solo 2 Oggetti. Scarta immediatamente gli Oggetti in eccesso (ricorda che i Segreti non contano per questo limite).\n• Metti un Quadrante con 1 Gettone Tempo accanto alla tua miniatura e impostalo su 3. Riduci questo Quadrante all'Inizio della Giornata. Se arriva a 0, muori (consulta la sezione Morte e follia del Regolamento).\n• Ogni volta che stai per subire altre {i:wound}, riduci invece il tuo Quadrante di 1. Scarta questa carta quando la tua {i:health} è sopra 0.\n{i:action} 2 {i:energy} [b]Fasciare le ferite:[/b] recupera 1 {i:health} a questo Personaggio."
+   },
+   "retro_testo": {
+    "es": "Te estás muriendo (Cooperativo)",
+    "it": "Stai morendo (Cooperativo)"
+   },
+   "limite_oggetti": 2,
+   "quadrante_iniziale": 3,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Vendar las heridas",
+     "it": "Fasciare le ferite"
+    }
+   },
+   "aree": {
+    "titolo": [
+     0.18,
+     0.05,
+     0.82,
+     0.19
+    ],
+    "testo": [
+     [
+      0.05,
+      0.21,
+      0.95,
+      0.96
+     ]
+    ],
+    "retro_titolo": [
+     0.08,
+     0.7,
+     0.92,
+     0.91
+    ]
+   },
+   "dubbi": "Nome italiano della carta non presente nel glossario dell'app: resa provvisoria. L'azione «Vendar las heridas» può essere svolta presumibilmente da un altro membro della Compagnia sullo stesso Luogo (testo: «a este personaje»). Copia identica di 37301.",
+   "retro": "carte/mazzo/retro_37304.webp"
+  },
+  {
+   "img": "carte/mazzo/33001.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Combate",
+    "it": "Riserva Avanzata – Combattimento"
+   },
+   "testo": {
+    "es": "COMBATE\nRESERVA AVANZADA",
+    "it": "COMBATTIMENTO\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "combattimento",
+   "colore": "grigio",
+   "lettera_colore": "G",
+   "aree": {
+    "titolo": [
+     0.27,
+     0.64,
+     0.73,
+     0.8
+    ],
+    "parola": [
+     0.33,
+     0.43,
+     0.67,
+     0.51
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/33002.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Combate",
+    "it": "Riserva Avanzata – Combattimento"
+   },
+   "testo": {
+    "es": "COMBATE\nRESERVA AVANZADA",
+    "it": "COMBATTIMENTO\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "combattimento",
+   "colore": "blu",
+   "lettera_colore": "A",
+   "aree": {
+    "titolo": [
+     0.27,
+     0.64,
+     0.73,
+     0.8
+    ],
+    "parola": [
+     0.33,
+     0.43,
+     0.67,
+     0.51
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/33003.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Combate",
+    "it": "Riserva Avanzata – Combattimento"
+   },
+   "testo": {
+    "es": "COMBATE\nRESERVA AVANZADA",
+    "it": "COMBATTIMENTO\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "combattimento",
+   "colore": "marrone",
+   "lettera_colore": "M",
+   "aree": {
+    "titolo": [
+     0.27,
+     0.64,
+     0.73,
+     0.8
+    ],
+    "parola": [
+     0.33,
+     0.43,
+     0.67,
+     0.51
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34101.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Diplomacia",
+    "it": "Riserva Avanzata – Diplomazia"
+   },
+   "testo": {
+    "es": "DIPLOMACIA\nRESERVA AVANZADA",
+    "it": "DIPLOMAZIA\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "diplomazia",
+   "colore": "verde",
+   "lettera_colore": "V",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.65,
+     0.75,
+     0.8
+    ],
+    "parola": [
+     0.3,
+     0.44,
+     0.7,
+     0.52
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34102.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Diplomacia",
+    "it": "Riserva Avanzata – Diplomazia"
+   },
+   "testo": {
+    "es": "DIPLOMACIA\nRESERVA AVANZADA",
+    "it": "DIPLOMAZIA\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "diplomazia",
+   "colore": "blu",
+   "lettera_colore": "A",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.65,
+     0.75,
+     0.8
+    ],
+    "parola": [
+     0.3,
+     0.44,
+     0.7,
+     0.52
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/34103.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Diplomacia",
+    "it": "Riserva Avanzata – Diplomazia"
+   },
+   "testo": {
+    "es": "DIPLOMACIA\nRESERVA AVANZADA",
+    "it": "DIPLOMAZIA\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "diplomazia",
+   "colore": "grigio",
+   "lettera_colore": "G",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.65,
+     0.75,
+     0.8
+    ],
+    "parola": [
+     0.3,
+     0.44,
+     0.7,
+     0.52
+    ]
+   }
+  },
+  {
+   "img": "carte/carte_sciolte/34100.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Diplomacia",
+    "it": "Riserva Avanzata – Diplomazia"
+   },
+   "testo": {
+    "es": "DIPLOMACIA\nRESERVA AVANZADA",
+    "it": "DIPLOMAZIA\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "diplomazia",
+   "colore": "marrone",
+   "lettera_colore": "M",
+   "aree": {
+    "titolo": [
+     0.25,
+     0.65,
+     0.75,
+     0.8
+    ],
+    "parola": [
+     0.3,
+     0.44,
+     0.7,
+     0.52
+    ]
+   }
+  },
+  {
+   "img": "carte/carte_sciolte/33000.webp",
+   "tipo": "dorso",
+   "nome": {
+    "es": "Reserva Avanzada – Combate",
+    "it": "Riserva Avanzata – Combattimento"
+   },
+   "testo": {
+    "es": "COMBATE\nRESERVA AVANZADA",
+    "it": "COMBATTIMENTO\nRISERVA AVANZATA"
+   },
+   "mazzo_dorso": "combattimento",
+   "colore": "verde",
+   "lettera_colore": "V",
+   "aree": {
+    "titolo": [
+     0.27,
+     0.64,
+     0.73,
+     0.8
+    ],
+    "parola": [
+     0.33,
+     0.43,
+     0.67,
+     0.51
+    ]
+   }
+  }
+ ]
+}

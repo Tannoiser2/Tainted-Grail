@@ -1,0 +1,1144 @@
+{
+ "carte": [
+  {
+   "img": "carte/objetos/32500.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Espada oxidada",
+    "it": "Spada Arrugginita"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Cuando tu personaje se active en Combate, puedes obtener {i:cube} y luego lanzar un dial.\nGrial: No pasa nada.\nCalavera: Descarta este Objeto.",
+    "it": "Quando il tuo Personaggio si attiva in Combattimento, puoi ottenere {i:cube} e poi lanciare un Quadrante.\nGraal: non succede nulla.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.84,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.09
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32501.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Cuerno de batalla",
+    "it": "Corno da Battaglia"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Al comienzo del Combate, los personajes en Localizaciones conectadas pueden gastar 1 de {i:energy} para mover a tu Localización y unirse a ti en el Combate.\nSi no hay más personajes en juego, obtén {i:cube} al inicio del Combate.",
+    "it": "All'inizio del Combattimento, i Personaggi nei Luoghi collegati possono spendere 1 {i:energy} per muoversi nel tuo Luogo e unirsi a te nel Combattimento.\nSe non ci sono altri Personaggi in gioco, ottieni {i:cube} all'inizio del Combattimento."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.84,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.51,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32502.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Lanza de caza",
+    "it": "Lancia da Caccia"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Siempre que pierdas {i:health} debido a un ataque* enemigo, obtén {i:cube}.\n[i]* excepto los ataques de oportunidad[/i]\nSi el Encuentro tiene el Rasgo [i]Repentino[/i], obtén {i:cube3} al comienzo del Combate.",
+    "it": "Ogni volta che perdi {i:health} a causa di un attacco* nemico, ottieni {i:cube}.\n[i]* eccetto gli Attacchi di opportunità[/i]\nSe l'Incontro ha il Tratto [i]Improvviso[/i], ottieni {i:cube3} all'inizio del Combattimento."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.12,
+     0.85,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.96
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32503.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Espada rúnica",
+    "it": "Spada Runica"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cuando conectes una Clave {i:courage} o {i:courage2}, obtén {i:cube}.\nIgnora el Rasgo [i]Rápido[/i] (solo tú).",
+    "it": "Quando colleghi una Chiave {i:courage} o {i:courage2}, ottieni {i:cube}.\nIgnora il Tratto [i]Rapido[/i] (solo tu)."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.85,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Icona 'courage2' (due cinghiali sovrapposti = Chiave doppia di Coraggio) non presente nel foglio icone: nome inventato."
+  },
+  {
+   "img": "carte/objetos/32504.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Espada de clan",
+    "it": "Spada del Clan"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cuando conectes una Clave {i:aggression} o {i:aggression2}, puedes descartar 1 carta de Combate para obtener {i:cube2}.",
+    "it": "Quando colleghi una Chiave {i:aggression} o {i:aggression2}, puoi scartare 1 carta Combattimento per ottenere {i:cube2}."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.85,
+     0.19
+    ],
+    "parola": [
+     0.29,
+     0.04,
+     0.73,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.72,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Icona 'aggression2' (doppio orso) inventata."
+  },
+  {
+   "img": "carte/objetos/32505.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Escudo maltrecho",
+    "it": "Scudo Malandato"
+   },
+   "parola": "Scudo",
+   "parola_es": "Escudo",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:skull} Si tu secuencia termina con una Clave {i:practicality} o {i:practicality2} conectada, prevén 1 {i:wound}.",
+    "it": "{i:skull} Se la tua Sequenza termina con una Chiave {i:practicality} o {i:practicality2} collegata, previeni 1 {i:wound}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.29,
+     0.04,
+     0.73,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Icona 'practicality2' (doppio serpente) inventata."
+  },
+  {
+   "img": "carte/objetos/32506.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Maza gigante",
+    "it": "Mazza Gigante"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "El enemigo obtiene el Rasgo [i]Rápido[/i] (solo para ti). Después de jugar la primera carta de tu activación, puedes descartar 2 cartas de tu mazo de Combate para obtener {i:cube2}.",
+    "it": "Il nemico ottiene il Tratto [i]Rapido[/i] (solo per te). Dopo aver giocato la prima carta della tua Attivazione, puoi scartare 2 carte dal tuo mazzo Combattimento per ottenere {i:cube2}."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.85,
+     0.22
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.59,
+      0.94,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32507.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Daga envenenada",
+    "it": "Pugnale Avvelenato"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Voltea esta carta en Combate: Pon 3 {i:delay} en la carta del Encuentro. Durante cada paso de Capacidades con retardo, retira una de estas fichas y obtén {i:cube}.",
+    "it": "Gira questa carta in Combattimento: metti 3 {i:delay} sulla carta dell'Incontro. Durante ogni passo delle Capacità ritardate, rimuovi uno di questi gettoni e ottieni {i:cube}."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.63,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "{i:delay} qui indica il Gettone Tempo (clessidra nell'esagono)."
+  },
+  {
+   "img": "carte/objetos/32508.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Escudo maltrecho",
+    "it": "Scudo Malandato"
+   },
+   "parola": "Scudo",
+   "parola_es": "Escudo",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:skull} Si tu secuencia termina con una Clave {i:practicality} o {i:practicality2} conectada, prevén 1 {i:wound}.",
+    "it": "{i:skull} Se la tua Sequenza termina con una Chiave {i:practicality} o {i:practicality2} collegata, previeni 1 {i:wound}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.84,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Copia identica di 32505. Icona 'practicality2' inventata."
+  },
+  {
+   "img": "carte/objetos/32509.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Hacha nórdica",
+    "it": "Ascia Nordica"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cada vez que una carta de Combate te dé {i:cube3} o más, obtén {i:cube}.\nIgnora el Rasgo [i]Defensivo[/i].",
+    "it": "Ogni volta che una carta Combattimento ti dà {i:cube3} o più, ottieni {i:cube}.\nIgnora il Tratto [i]Difensivo[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32510.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Arco",
+    "it": "Arco"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Al comienzo del Combate, obtén {i:cube}. Si el enemigo tiene el Rasgo [i]Lento[/i], obtén además {i:cube2}. Este Objeto no tiene efecto si el Encuentro tiene el Rasgo [i]Emboscada[/i].",
+    "it": "All'inizio del Combattimento, ottieni {i:cube}. Se il nemico ha il Tratto [i]Lento[/i], ottieni inoltre {i:cube2}. Questo Oggetto non ha effetto se l'Incontro ha il Tratto [i]Imboscata[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.15,
+     0.11,
+     0.85,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.62,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32511.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Armadura improvisada",
+    "it": "Armatura Improvvisata"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:skull} Prevén 1 {i:wound} (no se puede reducir a 0).",
+    "it": "{i:skull} Previeni 1 {i:wound} (non può essere ridotta a 0)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.22
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32512.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Armadura improvisada",
+    "it": "Armatura Improvvisata"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:skull} Prevén 1 {i:wound} (no se puede reducir a 0).",
+    "it": "{i:skull} Previeni 1 {i:wound} (non può essere ridotta a 0)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.22
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "dubbi": "Copia identica di 32511."
+  },
+  {
+   "img": "carte/objetos/32513.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Red de pesca",
+    "it": "Rete da Pesca"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Descarta este Objeto para lanzar un dado, sumando tu {i:practicality} y el número de {i:cube} en la reserva de Combate. Si el resultado es mayor que el Valor del Encuentro, ignora el siguiente ataque enemigo.",
+    "it": "Scarta questo Oggetto per lanciare un dado, sommando la tua {i:practicality} e il numero di {i:cube} nella Riserva di Combattimento. Se il risultato è maggiore del Valore dell'Incontro, ignora il prossimo attacco nemico."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.84,
+     0.17
+    ],
+    "testo": [
+     [
+      0.06,
+      0.58,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32514.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Jabalina",
+    "it": "Giavellotto"
+   },
+   "parola": "Arma",
+   "parola_es": "Arma",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Voltea esta carta en Combate para lanzar un dial.\nGrial: Obtén {i:cube3}.\nCalavera: Descarta esta carta.",
+    "it": "Gira questa carta in Combattimento per lanciare un Quadrante.\nGraal: ottieni {i:cube3}.\nTeschio: scarta questa carta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.84,
+     0.18
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.09
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.86
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32515.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Atuendo elegante",
+    "it": "Abito Elegante"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Al comienzo de la Diplomacia, aumenta tu Afinidad en 1.",
+    "it": "All'inizio della Diplomazia, aumenta la tua Affinità di 1."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.05,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.81,
+      0.94,
+      0.95
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32516.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Palafrén fiel",
+    "it": "Palafreno Fedele"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cada Día, tus dos primeros Viajes cuestan 1 de {i:energy} menos.",
+    "it": "Ogni Giorno, i tuoi primi due Viaggi costano 1 {i:energy} in meno."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32517.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Burro de monta",
+    "it": "Mulo da Sella"
+   },
+   "parola": "Compagno",
+   "parola_es": "Compañero",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Cada Día, tu primer Viaje cuesta 1 de {i:energy} menos.",
+    "it": "Ogni Giorno, il tuo primo Viaggio costa 1 {i:energy} in meno."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.82,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32518.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Baratijas",
+    "it": "Cianfrusaglie"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Obtén 1 de {r:Riqueza} por cada punto de {i:practicality} que tengas y descarta este Objeto (solo en Asentamientos).",
+    "it": "{i:action} 1 {i:energy}: ottieni 1 {r:Ricchezza} per ogni punto di {i:practicality} che possiedi e scarta questo Oggetto (solo negli Insediamenti)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.69,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  },
+  {
+   "img": "carte/objetos/32519.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Baratijas",
+    "it": "Cianfrusaglie"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Obtén 1 de {r:Riqueza} por cada punto de {i:practicality} que tengas y descarta este Objeto (solo en Asentamientos).",
+    "it": "{i:action} 1 {i:energy}: ottieni 1 {r:Ricchezza} per ogni punto di {i:practicality} che possiedi e scarta questo Oggetto (solo negli Insediamenti)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.69,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   },
+   "dubbi": "Copia identica di 32518."
+  },
+  {
+   "img": "carte/objetos/32520.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Equipo del aventurero",
+    "it": "Kit dell’Avventuriero"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Ignora los efectos de los Eventos [i]Lluvia torrencial[/i] y [i]Frío antinatural[/i].",
+    "it": "Ignora gli effetti degli Eventi [i]Pioggia Torrenziale[/i] e [i]Freddo Innaturale[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Lluvia torrencial' e 'Frío antinatural' non presenti nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32521.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Equipo del aventurero",
+    "it": "Kit dell’Avventuriero"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Ignora los efectos de los Eventos [i]Lluvia torrencial[/i] y [i]Frío antinatural[/i].",
+    "it": "Ignora gli effetti degli Eventi [i]Pioggia Torrenziale[/i] e [i]Freddo Innaturale[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Lluvia torrencial' e 'Frío antinatural' non presenti nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32522.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Equipo del aventurero",
+    "it": "Kit dell’Avventuriero"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Ignora los efectos de los Eventos [i]Lluvia torrencial[/i] y [i]Frío antinatural[/i].",
+    "it": "Ignora gli effetti degli Eventi [i]Pioggia Torrenziale[/i] e [i]Freddo Innaturale[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Lluvia torrencial' e 'Frío antinatural' non presenti nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32523.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Equipo del aventurero",
+    "it": "Kit dell’Avventuriero"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Ignora los efectos de los Eventos [i]Lluvia torrencial[/i] y [i]Frío antinatural[/i].",
+    "it": "Ignora gli effetti degli Eventi [i]Pioggia Torrenziale[/i] e [i]Freddo Innaturale[/i]."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.92
+     ]
+    ]
+   },
+   "dubbi": "Nomi italiani degli Eventi 'Lluvia torrencial' e 'Frío antinatural' non presenti nel glossario: traduzione provvisoria."
+  },
+  {
+   "img": "carte/objetos/32524.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Asesor disecado",
+    "it": "Consigliere Imbalsamato"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:action} 2 {i:terror}: Si no «Estás enloqueciendo», obtén 2 de {r:Magia} y lanza un dial.\nGrial: Obtén 1 de {r:Exp}.\nCalavera: Descarta este Objeto.",
+    "it": "{i:action} 2 {i:terror}: se non hai la carta «Stai impazzendo», ottieni 2 {r:Magia} e lancia un Quadrante.\nGraal: ottieni 1 {r:Esp}.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.64,
+      0.94,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 2,
+    "risorsa": "terror"
+   },
+   "dubbi": "Costo d'azione pagato in Terrore (icona viola): l'azione fa guadagnare Terrore come costo? Nome italiano della carta 'Estás enloqueciendo' non nel glossario (usato «Stai impazzendo»)."
+  },
+  {
+   "img": "carte/objetos/32525.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Armadura ornamental",
+    "it": "Armatura Ornamentale"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:skull} Prevén 1 {i:wound} (no se puede reducir a 0).\nAl comienzo de la Diplomacia, aumenta tu Afinidad en 1.",
+    "it": "{i:skull} Previeni 1 {i:wound} (non può essere ridotta a 0).\nAll'inizio della Diplomazia, aumenta la tua Affinità di 1."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.22
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.66,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32526.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Casco de héroe",
+    "it": "Elmo dell'Eroe"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "En Combate o Diplomacia: Voltea este Objeto para prevenir {i:discard}.\n{i:skull} Voltea este Objeto para prevenir 1 de {i:terror}.",
+    "it": "In Combattimento o Diplomazia: gira questo Oggetto per prevenire {i:discard}.\n{i:skull} Gira questo Oggetto per prevenire 1 {i:terror}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.71,
+      0.94,
+      0.95
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32527.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Amuleto de la suerte",
+    "it": "Amuleto Portafortuna"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Paga 1 de {r:Magia} para volver a lanzar un dado o repetir un lanzamiento de dial. Tienes que aceptar el segundo resultado.",
+    "it": "Paga 1 {r:Magia} per rilanciare un dado o ripetere un lancio di Quadrante. Devi accettare il secondo risultato."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.09,
+     0.86,
+     0.19
+    ],
+    "testo": [
+     [
+      0.06,
+      0.69,
+      0.94,
+      0.92
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32528.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Armadura magistral",
+    "it": "Armatura Magistrale"
+   },
+   "parola": "Armatura",
+   "parola_es": "Armadura",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "Disminuye el límite de tu mano en 1.\n{i:skull} Prevén 1 {i:wound}.",
+    "it": "Riduci di 1 il limite della tua Mano.\n{i:skull} Previeni 1 {i:wound}."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.22
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.78,
+      0.94,
+      0.95
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32529.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Escudo de mimbre",
+    "it": "Scudo di Vimini"
+   },
+   "parola": "Scudo",
+   "parola_es": "Escudo",
+   "fabbricabile": true,
+   "effetto": {
+    "es": "Descarta este Objeto para prevenir 2 {i:wound} de un ataque o Respuesta.",
+    "it": "Scarta questo Oggetto per prevenire 2 {i:wound} da un attacco o da una Risposta."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.1,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.09
+    ],
+    "testo": [
+     [
+      0.06,
+      0.77,
+      0.94,
+      0.93
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32530.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Escudo de lágrima",
+    "it": "Scudo a Goccia"
+   },
+   "parola": "Scudo",
+   "parola_es": "Escudo",
+   "fabbricabile": false,
+   "effetto": {
+    "es": "{i:skull} Si no has jugado más de 1 carta en tu activación, prevén 2 {i:wound} (no se puede reducir a 0).",
+    "it": "{i:skull} Se non hai giocato più di 1 carta nella tua Attivazione, previeni 2 {i:wound} (non può essere ridotta a 0)."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.11,
+     0.86,
+     0.19
+    ],
+    "parola": [
+     0.28,
+     0.04,
+     0.72,
+     0.1
+    ],
+    "testo": [
+     [
+      0.06,
+      0.69,
+      0.94,
+      0.88
+     ]
+    ]
+   }
+  },
+  {
+   "img": "carte/objetos/32531.webp",
+   "tipo": "oggetto",
+   "nome": {
+    "es": "Trampa cebada",
+    "it": "Trappola con Esca"
+   },
+   "parola": null,
+   "parola_es": null,
+   "fabbricabile": true,
+   "effetto": {
+    "es": "{i:action} 1 {i:energy}: Lanza un dial (fuera de un Asentamiento).\nGrial: Obtén 1 de {r:Comida}.\nCalavera: Descarta este Objeto.",
+    "it": "{i:action} 1 {i:energy}: lancia un Quadrante (fuori da un Insediamento).\nGraal: ottieni 1 {r:Cibo}.\nTeschio: scarta questo Oggetto."
+   },
+   "aree": {
+    "titolo": [
+     0.14,
+     0.08,
+     0.86,
+     0.18
+    ],
+    "testo": [
+     [
+      0.06,
+      0.73,
+      0.96,
+      0.93
+     ]
+    ]
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy"
+   }
+  }
+ ]
+}

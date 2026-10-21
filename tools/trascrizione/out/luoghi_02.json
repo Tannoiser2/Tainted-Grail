@@ -1,0 +1,2013 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/el_torreon_31105.webp",
+   "tipo": "luogo",
+   "numero": 151,
+   "antico": null,
+   "nome": {
+    "es": "El Torreón",
+    "it": "Longbarrow"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": null,
+    "sinistra": 150,
+    "destra": null,
+    "giu": 132
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Abastece el puesto avanzado",
+     "it": "Rifornire l'avamposto"
+    },
+    "es": "Descarta 1 Objeto, obtén 1 de {r:Riqueza} y 1 de {r:Rep}",
+    "it": "Scarta 1 Oggetto, ottieni 1 {r:Ricchezza} e 1 {r:Rep}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Una antigua torre aún vigila continuamente la entrada a Tuathán.",
+    "it": "Un'antica torre sorveglia ancora senza sosta l'ingresso a Tuathan."
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.2,
+     0.71,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "azione": [
+     0.16,
+     0.695,
+     0.85,
+     0.78
+    ],
+    "ambientazione": [
+     0.22,
+     0.825,
+     0.77,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "Un elevado obelisco se alza frente a las puertas del infierno. Ofrece un lugar de descanso para cientos de guerreros, que murieron aquí en la Edad de las Leyendas, intentando afianzar la conquista de Ávalon mediante la destrucción de la capital sagrada de sus enemigos. La ciudad de los Primeros Moradores nunca cedió, y los humanos se rindieron. Arturo ordenó construir una atalaya sobre las tumbas de sus soldados.\nLa torre tenía un doble propósito: se suponía que sus guardias se encargarían de que los Primeros Moradores no volvieran a las tierras de los hombres. Y la atalaya en sí era un recordatorio de que las propiedades humanas en Ávalon no son seguras.\n{i:journal}",
+    "it": "Un alto obelisco si erge davanti alle porte dell'inferno. Offre un luogo di riposo a centinaia di guerrieri, morti qui nell'Era delle Leggende nel tentativo di consolidare la conquista di Avalon distruggendo la capitale sacra dei loro nemici. La città dei Predecessori non cedette mai, e gli umani si arresero. Artù ordinò di costruire una torre di guardia sopra le tombe dei suoi soldati.\nLa torre aveva un duplice scopo: le sue guardie avrebbero dovuto assicurarsi che i Predecessori non tornassero nelle terre degli uomini. E la torre stessa era un monito che i possedimenti umani ad Avalon non sono al sicuro.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.37,
+     0.115,
+     0.65,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.575,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessun sigillo sotto il nome."
+  },
+  {
+   "img": "carte/mazzo/valle_de_los_guardianes_31104.webp",
+   "tipo": "luogo",
+   "numero": 150,
+   "antico": null,
+   "nome": {
+    "es": "Valle de los Guardianes",
+    "it": "Valle dei Guardiani"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 151,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Explora al entrar en esta Localización (esta Exploración es gratuita)",
+    "it": "Esplora quando entri in questo Luogo (questa Esplorazione è gratuita)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Una brisa fría sopla por el desfiladero, desenterrando algunos huesos y cubriendo otros de polvo.",
+    "it": "Una brezza fredda soffia attraverso la gola, dissotterrando alcune ossa e coprendone altre di polvere."
+   },
+   "aree": {
+    "titolo": [
+     0.24,
+     0.2,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "immediata": [
+     0.24,
+     0.7,
+     0.81,
+     0.76
+    ],
+    "ambientazione": [
+     0.12,
+     0.83,
+     0.87,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Estás en el único acceso conocido a Tuathán. Lejos, al final del desfiladero, hay mesetas y construcciones imposibles. Pero, para llegar allí, primero tendrás que caminar a través de un valle cubierto de huesos donde muchos aventureros y locos han perdido sus vidas.\nLas estatuas perennemente vigilantes parecen estar observándote ya, atravesando tu alma, buscando cualquier debilidad.\n¿Seguro que quieres continuar?\n{i:journal}",
+    "it": "Sei davanti all'unico accesso noto a Tuathan. Lontano, in fondo alla gola, ci sono altopiani e costruzioni impossibili. Ma per arrivarci dovrai prima attraversare una valle coperta di ossa dove molti avventurieri e folli hanno perso la vita.\nLe statue eternamente vigili sembrano già osservarti, trapassarti l'anima, in cerca di qualsiasi debolezza.\nSei sicuro di voler proseguire?\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.24,
+     0.115,
+     0.78,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.615,
+     0.93,
+     0.91
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/broch_destrozado_31103.webp",
+   "tipo": "luogo",
+   "numero": 149,
+   "antico": 136,
+   "nome": {
+    "es": "Broch Destrozado",
+    "it": "Broch Rotto"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 155,
+    "sinistra": 135,
+    "destra": null,
+    "giu": 138
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Rinde culto al Devorador",
+     "it": "Rendere culto al Divoratore"
+    },
+    "es": "Paga 1 de {r:Rep} y obtén 1 de {r:Magia}",
+    "it": "Paga 1 {r:Rep} e ottieni 1 {r:Magia}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "El Devorador de Secretos te llama por tu verdadero nombre, que nunca antes habías oído.",
+    "it": "Il Divoratore di Segreti ti chiama con il tuo vero nome, che non avevi mai sentito prima."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.2,
+     0.74,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.66,
+     0.185
+    ],
+    "azione": [
+     0.28,
+     0.7,
+     0.86,
+     0.785
+    ],
+    "ambientazione": [
+     0.14,
+     0.835,
+     0.85,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Las piedras salen disparadas desde la torre circular. Algo oscuro y terrible emana de la nube de polvo, cerniéndose sobre ti y helando tus entrañas de miedo. Un conocimiento misterioso inunda tu mente. Es el Devorador de Secretos. Su enorme poder te aterra, pero en vez de devorarte o aplastarte, aguarda.\n{i:journal}",
+    "it": "Le pietre schizzano via dalla torre circolare. Qualcosa di oscuro e terribile emana dalla nube di polvere, incombendo su di te e gelandoti le viscere di paura. Una conoscenza misteriosa ti inonda la mente. È il Divoratore di Segreti. Il suo immenso potere ti terrorizza, ma invece di divorarti o schiacciarti, attende.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.115,
+     0.72,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.765,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "«Devorador de Secretos» reso con «Divoratore di Segreti» (nome ufficiale non verificato)."
+  },
+  {
+   "img": "carte/mazzo/faldorca_31102.webp",
+   "tipo": "luogo",
+   "numero": 148,
+   "antico": 135,
+   "nome": {
+    "es": "Faldorca",
+    "it": "Faldorca"
+   },
+   "sigilli": [
+    "settlement_enemy",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 154,
+    "sinistra": 134,
+    "destra": 136,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": {
+    "costo": 5,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Desplaza el Menhir",
+     "it": "Spostare il Menhir"
+    },
+    "es": "Mueve la miniatura del Menhir y todos los miembros del equipo de esta Localización a Falfuar Abandonado (147)",
+    "it": "Sposta la miniatura del Menhir e tutti i membri della Compagnia da questo Luogo a Falfuar Abbandonata (147)",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "El pueblo está creciendo rápido, y las tensiones entre ambas culturas con él.",
+    "it": "Il villaggio sta crescendo rapidamente, e con esso le tensioni tra le due culture."
+   },
+   "aree": {
+    "titolo": [
+     0.32,
+     0.2,
+     0.69,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.66,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.59,
+     0.73,
+     0.65
+    ],
+    "azione": [
+     0.22,
+     0.67,
+     0.81,
+     0.81
+    ],
+    "ambientazione": [
+     0.22,
+     0.835,
+     0.77,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "La ciudad está abarrotada. Hay una gran tensión entre los habitantes de Bundorca y Falfuar, y nadie está satisfecho con la situación actual, pero al menos los habitantes de Falfuar están protegidos por un menhir.\nPero hay algunas buenas señales: se están construyendo nuevos edificios, los ancianos debaten de sus religiones y el extraño licor de leche de oveja se ha convertido en un alimento básico en las tabernas locales.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 1 de {i:energy}, 1 de {r:Riqueza} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 7 (-1 por cada jugador).",
+    "it": "La città è sovraffollata. C'è grande tensione tra gli abitanti di Bundorca e di Falfuar, e nessuno è soddisfatto della situazione attuale, ma almeno gli abitanti di Falfuar sono protetti da un menhir.\nMa ci sono alcuni buoni segnali: si stanno costruendo nuovi edifici, gli anziani discutono delle loro religioni e lo strano liquore di latte di pecora è diventato un alimento base nelle taverne locali.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 1 {i:energy}, 1 {r:Ricchezza} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 7 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 1,
+     "Ricchezza": 1,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.38,
+     0.115,
+     0.64,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.465,
+     0.93,
+     0.71
+    ],
+    "menhir": [
+     0.06,
+     0.79,
+     0.94,
+     0.95
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso. L'azione «Desplaza el Menhir» costa 5 Energia."
+  },
+  {
+   "img": "carte/mazzo/falfuar_abandonado_31101.webp",
+   "tipo": "luogo",
+   "numero": 147,
+   "antico": 134,
+   "nome": {
+    "es": "Falfuar Abandonado",
+    "it": "Falfuar Abbandonata"
+   },
+   "sigilli": [
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 153,
+    "sinistra": 133,
+    "destra": 135,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 5,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Desplaza el Menhir",
+     "it": "Spostare il Menhir"
+    },
+    "es": "Mueve la miniatura del Menhir y todos los miembros del equipo de esta Localización a la Localización 135 (o a la 148 si la 135 se ha retirado de la partida)",
+    "it": "Sposta la miniatura del Menhir e tutti i membri della Compagnia da questo Luogo al Luogo 135 (o al 148 se il 135 è stato rimosso dalla partita)",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Los restos abandonados del pueblo son un perfecto decorado para una pesadilla.",
+    "it": "I resti abbandonati del villaggio sono lo scenario perfetto per un incubo."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.2,
+     0.75,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.67,
+     0.185
+    ],
+    "azione": [
+     0.23,
+     0.655,
+     0.81,
+     0.815
+    ],
+    "ambientazione": [
+     0.2,
+     0.85,
+     0.8,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "Este lugar te hace sentir incómodo. Solo quedan edificios reducidos a ruinas deformes: vigas y postes doblados, casas sobre sus techos. Solo ver esta escena te daña la mente. Empeora cuando te das cuenta de que eres una de las razones por las que Falfuar tiene este aspecto.\n⇨ Cada miembro del equipo obtiene 1 de {i:terror}. Luego, {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 2 de {i:energy}, 2 de {r:Magia} y 2 de {r:Riqueza}: coloca un nuevo Menhir en esta Localización y pon su dial en 7 (-1 por cada jugador).",
+    "it": "Questo luogo ti mette a disagio. Restano solo edifici ridotti a rovine deformi: travi e pali piegati, case capovolte sui loro tetti. Solo vedere questa scena ti ferisce la mente. Peggiora quando ti rendi conto di essere una delle ragioni per cui Falfuar ha questo aspetto.\n⇨ Ogni membro della Compagnia ottiene 1 {i:terror}. Poi, {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 2 {i:energy}, 2 {r:Magia} e 2 {r:Ricchezza}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 7 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 2,
+     "Magia": 2,
+     "Ricchezza": 2
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.115,
+     0.75,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.56,
+     0.93,
+     0.75
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.955
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/distrito_en_calma_31100.webp",
+   "tipo": "luogo",
+   "numero": 142,
+   "antico": 138,
+   "nome": {
+    "es": "Distrito en Calma",
+    "it": "Borgo Tranquillo"
+   },
+   "sigilli": [
+    "settlement_friend"
+   ],
+   "direzioni": {
+    "su": 136,
+    "sinistra": 115,
+    "destra": 190,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Cuando entres en esta Localización, lanza un dial (una vez al Día):\nGrial: Roba un Encuentro azul\nCalavera: Roba un Encuentro gris",
+    "it": "Quando entri in questo Luogo, lancia un Quadrante (una volta al giorno):\nGraal: Pesca un Incontro blu\nTeschio: Pesca un Incontro grigio"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Durante años, gente de toda la isla ha venido al pie de Nueva Camelot buscando protección. Lo único que encontraron fue el hedor de esta superpoblada ciudad.",
+    "it": "Per anni, gente da tutta l'isola è venuta ai piedi di Camelot in cerca di protezione. L'unica cosa che ha trovato è stato il fetore di questa città sovrappopolata."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.2,
+     0.74,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.67,
+     0.185
+    ],
+    "immediata": [
+     0.26,
+     0.67,
+     0.8,
+     0.795
+    ],
+    "ambientazione": [
+     0.21,
+     0.81,
+     0.8,
+     0.915
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "immediata_lancio": {
+    "grail": "Pesca un Incontro blu",
+    "skull": "Pesca un Incontro grigio"
+   },
+   "retro_testo": {
+    "es": "Estas tierras son demasiado estrechas para un asentamiento de este tamaño. Algunas casas cuelgan del borde del acantilado, construidas sobre precarias estructuras de madera y cuerda. Otras están montadas unas sobre otras, como plantas en busca de sol.\nUna gruesa capa de humo pende sobre el asentamiento. Sus calles están en silencio. Su gente, agotada de luchar.\n{i:journal}",
+    "it": "Queste terre sono troppo anguste per un insediamento di queste dimensioni. Alcune case pendono dal bordo della scogliera, costruite su precarie strutture di legno e corda. Altre sono ammassate le une sulle altre, come piante in cerca di sole.\nUna spessa coltre di fumo incombe sull'insediamento. Le sue strade sono silenziose. La sua gente, stremata dalla lotta.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.3,
+     0.12,
+     0.72,
+     0.155
+    ],
+    "numero": [
+     0.44,
+     0.025,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.695,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/confin_de_la_rareza_31008.webp",
+   "tipo": "luogo",
+   "numero": 141,
+   "antico": null,
+   "nome": {
+    "es": "Confín de la Rareza",
+    "it": "Punta Anomala"
+   },
+   "sigilli": [
+    "menhir"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 118,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Compra pociones curativas",
+     "it": "Comprare pozioni curative"
+    },
+    "es": "Paga 2 de {r:Riqueza} o 2 de {r:Magia}, obtén 3 de {i:health}",
+    "it": "Paga 2 {r:Ricchezza} o 2 {r:Magia}, ottieni 3 {i:health}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Una estructura solitaria resiste milagrosamente la fuerza de la Rareza, que la ataca por todos los lados.",
+    "it": "Una struttura solitaria resiste miracolosamente alla forza dell'Anomalia, che la assale da ogni lato."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.195,
+     0.75,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "azione": [
+     0.14,
+     0.695,
+     0.86,
+     0.78
+    ],
+    "ambientazione": [
+     0.13,
+     0.835,
+     0.86,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "No hace mucho, este viejo crannog estaba sobre un lago. Ahora, la Rareza se enrosca encima y debajo de la estructura de madera, y su puente se ha convertido en la última hebra de realidad que lo ancla al mundo humano.\nSolo conoces a una persona que podría haber vivido rodeado de pura Rareza: Orrin, el último hechicero de la isla y heredero del conocimiento de Merlín.\n⇨ [b]Si tienes[/b] el Estado [b]«Vientos de Rareza»[/b] – {i:journal}: Versículo 3\n⇨ De lo contrario – {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 1 de {i:energy}, 2 de {r:Riqueza} y 1 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 6 (-1 por cada jugador).",
+    "it": "Non molto tempo fa, questo vecchio crannog sorgeva su un lago. Ora l'Anomalia si avvolge sopra e sotto la struttura di legno, e il suo ponte è diventato l'ultimo filo di realtà che lo ancora al mondo umano.\nConosci solo una persona che potrebbe aver vissuto circondata da pura Anomalia: Orrin, l'ultimo stregone dell'isola ed erede della conoscenza di Merlino.\n⇨ [b]Se hai[/b] lo status [b]«Venti dell'Anomalia»[/b] – {i:journal}: verso 3\n⇨ Altrimenti – {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 1 {i:energy}, 2 {r:Ricchezza} e 1 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 6 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 1,
+     "Ricchezza": 2,
+     "Magia": 1
+    },
+    "quadrante": {
+     "1": 5,
+     "2": 4,
+     "3": 3,
+     "4": 2
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.115,
+     0.75,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.445,
+     0.93,
+     0.75
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.955
+    ]
+   },
+   "dubbi": "Solo Chiave 118 a destra. Nome italiano dal glossario (141 = «Punta Anomala»)."
+  },
+  {
+   "img": "carte/mazzo/pantano_oscuro_31007.webp",
+   "tipo": "luogo",
+   "numero": 140,
+   "antico": null,
+   "nome": {
+    "es": "Pantano Oscuro",
+    "it": "Pantano Nero"
+   },
+   "sigilli": [
+    "dream",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": 117,
+    "destra": 157,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Busca reliquias",
+     "it": "Cercare reliquie"
+    },
+    "es": "Pierde 1 de {i:health} y obtén 1 de {r:Magia}",
+    "it": "Perdi 1 {i:health} e ottieni 1 {r:Magia}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Situado a la sombra de la legendaria Nueva Camelot, antaño fue el hogar del monasterio de la Madre de Todos, antes de que se hundiese en el pantano.",
+    "it": "Situato all'ombra della leggendaria Camelot, un tempo ospitava il monastero della Madre di Tutti, prima che sprofondasse nella palude."
+   },
+   "aree": {
+    "titolo": [
+     0.29,
+     0.2,
+     0.72,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.56,
+     0.18
+    ],
+    "azione": [
+     0.24,
+     0.695,
+     0.77,
+     0.785
+    ],
+    "ambientazione": [
+     0.12,
+     0.825,
+     0.86,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "El hedor de este pantano, acentuado por las aguas residuales del barrio vecino, te marea. Para navegar con seguridad por estas sucias aguas, se necesita un par de zancos o un bote de base plana, como los que usan los habitantes. Están encantados de dártelos… por un precio.\n⇨ Paga 1 de {r:Riqueza} o 1 de {r:Comida}, o pierde 1 de {i:health}. Después, {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 1 de {i:energy}, 2 de {r:Comida} y 1 de {r:Riqueza}: coloca un nuevo Menhir en esta Localización y pon su dial en 6 (1-2 jugadores), 5 (3 jugadores) o 4 (4 jugadores).",
+    "it": "Il fetore di questa palude, accentuato dagli scarichi del quartiere vicino, ti dà il capogiro. Per navigare in sicurezza in queste acque sudice servono un paio di trampoli o una barca a fondo piatto, come quelle che usano gli abitanti. Sono felici di dartele… a un prezzo.\n⇨ Paga 1 {r:Ricchezza} o 1 {r:Cibo}, oppure perdi 1 {i:health}. Poi, {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 1 {i:energy}, 2 {r:Cibo} e 1 {r:Ricchezza}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 6 (1-2 giocatori), 5 (3 giocatori) o 4 (4 giocatori)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 1,
+     "Cibo": 2,
+     "Ricchezza": 1
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 6,
+     "3": 5,
+     "4": 4
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.32,
+     0.115,
+     0.7,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.53,
+     0.93,
+     0.745
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.955
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/devastacion_31006.webp",
+   "tipo": "luogo",
+   "numero": 139,
+   "antico": null,
+   "nome": {
+    "es": "Devastación",
+    "it": "Devastazione"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": 156,
+    "destra": 116,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Extrae minerales sobrenaturales",
+     "it": "Estrarre minerali soprannaturali"
+    },
+    "es": "Pierde 2 de {i:health} y obtén 3 de {r:Riqueza}",
+    "it": "Perdi 2 {i:health} e ottieni 3 {r:Ricchezza}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Esta tierra deforme es un presagio del destino que pronto acontecerá sobre todo Ávalon.",
+    "it": "Questa terra deforme è un presagio del destino che presto si abbatterà su tutta Avalon."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "azione": [
+     0.22,
+     0.69,
+     0.86,
+     0.78
+    ],
+    "ambientazione": [
+     0.16,
+     0.83,
+     0.83,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "Este lugar estuvo sin la protección de un menhir durante mucho tiempo. El resultado se ve a simple vista: la tierra está ondulada y con surcos, como la frente de un anciano. Los árboles crecen bocabajo en las olas solidificadas de roca y tierra. Un arroyo hierve en un extremo y se hiela en el otro.\nNo puedes evitar preguntarte si así es como estaba todo Ávalon cuando estuvo completamente envuelta en la Rareza primitiva, hace unos seiscientos años.\n{i:journal}",
+    "it": "Questo luogo è rimasto a lungo senza la protezione di un menhir. Il risultato è visibile a occhio nudo: la terra è ondulata e solcata, come la fronte di un anziano. Gli alberi crescono a testa in giù nelle onde solidificate di roccia e terra. Un ruscello bolle a un'estremità e gela all'altra.\nNon puoi fare a meno di chiederti se fosse così tutta Avalon quando era completamente avvolta dall'Anomalia primordiale, circa seicento anni fa.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.37,
+     0.115,
+     0.65,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.66,
+     0.93,
+     0.91
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/distrito_infectado_31005.webp",
+   "tipo": "luogo",
+   "numero": 138,
+   "antico": null,
+   "nome": {
+    "es": "Distrito Infectado",
+    "it": "Borgo Infettato"
+   },
+   "sigilli": [
+    "settlement_enemy"
+   ],
+   "direzioni": {
+    "su": 136,
+    "sinistra": 115,
+    "destra": 190,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Durante años, gente de toda la isla ha venido al pie de Nueva Camelot buscando protección. Lo único que encontraron fue el hedor de esta superpoblada ciudad.",
+    "it": "Per anni, gente da tutta l'isola è venuta ai piedi di Camelot in cerca di protezione. L'unica cosa che ha trovato è stato il fetore di questa città sovrappopolata."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.2,
+     0.74,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.18
+    ],
+    "immediata": [
+     0.32,
+     0.7,
+     0.74,
+     0.76
+    ],
+    "ambientazione": [
+     0.2,
+     0.805,
+     0.8,
+     0.91
+    ]
+   },
+   "retro_testo": {
+    "es": "Estas tierras son demasiado estrechas para un asentamiento de este tamaño. Algunas casas cuelgan del borde del acantilado, construidas sobre precarias estructuras de madera y cuerda. Otras están montadas unas sobre otras, como plantas en busca de sol.\nEn un día típico, los callejones oscuros y húmedos del barrio serían peligrosos. Ahora, a juzgar por las columnas de humo, los sonidos de las peleas y los estandartes rojos que advierten de la epidemia, es un suicidio recorrerlos.\n{i:journal}",
+    "it": "Queste terre sono troppo anguste per un insediamento di queste dimensioni. Alcune case pendono dal bordo della scogliera, costruite su precarie strutture di legno e corda. Altre sono ammassate le une sulle altre, come piante in cerca di sole.\nIn un giorno qualunque, i vicoli bui e umidi del quartiere sarebbero pericolosi. Ora, a giudicare dalle colonne di fumo, dai rumori delle risse e dagli stendardi rossi che avvertono dell'epidemia, percorrerli è un suicidio.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.12,
+     0.72,
+     0.155
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.64,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/altomuro_conquistado_31004.webp",
+   "tipo": "luogo",
+   "numero": 137,
+   "antico": 131,
+   "nome": {
+    "es": "Altomuro Conquistado",
+    "it": "Timberwall Conquistata"
+   },
+   "sigilli": [
+    "settlement_enemy"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 132,
+    "giu": 111
+   },
+   "immediata": {
+    "es": "Roba un Encuentro gris al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro grigio quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Comercia con los supervivientes",
+     "it": "Commerciare con i sopravvissuti"
+    },
+    "es": "Paga 1 de {r:Comida} y obtén 1 de {r:Riqueza}",
+    "it": "Paga 1 {r:Cibo} e ottieni 1 {r:Ricchezza}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "La ciudad más poderosa de Ávalon ha caído.",
+    "it": "La città più potente di Avalon è caduta."
+   },
+   "aree": {
+    "titolo": [
+     0.25,
+     0.205,
+     0.76,
+     0.245
+    ],
+    "numero": [
+     0.42,
+     0.15,
+     0.67,
+     0.19
+    ],
+    "immediata": [
+     0.32,
+     0.6,
+     0.74,
+     0.69
+    ],
+    "azione": [
+     0.24,
+     0.72,
+     0.86,
+     0.8
+    ],
+    "ambientazione": [
+     0.18,
+     0.85,
+     0.81,
+     0.88
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "Ni siquiera las altas fortificaciones de Altomuro fueron capaces de proteger a la ciudad de los ataques que asolan Ávalon. Al acercarte, ves que han echado abajo el portón y que muchas casas siguen ardiendo.\n{i:journal}",
+    "it": "Neppure le alte fortificazioni di Timberwall sono riuscite a proteggere la città dagli attacchi che devastano Avalon. Avvicinandoti, vedi che il portone è stato abbattuto e che molte case stanno ancora bruciando.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.25,
+     0.12,
+     0.77,
+     0.155
+    ],
+    "numero": [
+     0.44,
+     0.025,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.795,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessuna Chiave su e sinistra."
+  },
+  {
+   "img": "carte/mazzo/broch_cruach_31003.webp",
+   "tipo": "luogo",
+   "numero": 136,
+   "antico": null,
+   "nome": {
+    "es": "Broch Cruach",
+    "it": "Broch Cruach"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": 155,
+    "sinistra": 135,
+    "destra": null,
+    "giu": 138
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Investiga los brochs",
+     "it": "Indagare sui broch"
+    },
+    "es": "Obtén 1 de {r:Riqueza} y roba un Encuentro púrpura",
+    "it": "Ottieni 1 {r:Ricchezza} e pesca un Incontro viola",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Torres de muros gruesos diseminados en el horizonte. La mayoría se usan para encarcelar personas, pero algunos encierran amenazas más antiguas y poderosas.",
+    "it": "Torri dalle spesse mura disseminate all'orizzonte. La maggior parte serve a imprigionare persone, ma alcune rinchiudono minacce più antiche e potenti."
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.2,
+     0.71,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.3,
+     0.66,
+     0.78,
+     0.77
+    ],
+    "ambientazione": [
+     0.18,
+     0.78,
+     0.81,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Estás inmerso en un sueño de cien años, negro y pegajoso como alquitrán caliente, cuando un fuerte tirón te lleva de vuelta a la realidad. ¡Algo se acerca! No es uno de esos ordinarios humanos de vida corta que pasean por la meseta, preocupados por sus asuntos de poca importancia.\nNo, este es diferente.\nUn alma mayor y radiante. Un exiliado al borde de dos realidades. Un peregrino que ha estado aquí muchas veces, pero que todavía lo ve todo con ojos nuevos.\n⇨ [b]Si tienes al menos 2 de Espiritualidad, y no tienes[/b] el Estado [b]«Llamada desde el más allá»[/b] – {i:journal}: Versículo 2\n⇨ De lo contrario – {i:journal}",
+    "it": "Sei immerso in un sonno di cent'anni, nero e appiccicoso come catrame caldo, quando uno strattone ti riporta alla realtà. Qualcosa si avvicina! Non è uno di quei comuni umani dalla vita breve che vagano per l'altopiano, preoccupati delle loro faccende di poco conto.\nNo, questo è diverso.\nUn'anima più antica e radiosa. Un esule al confine tra due realtà. Un pellegrino che è stato qui molte volte, ma che vede ancora tutto con occhi nuovi.\n⇨ [b]Se hai almeno 2 di Spiritualità e non hai[/b] lo status [b]«Richiamo dall'Aldilà»[/b] – {i:journal}: verso 2\n⇨ Altrimenti – {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.34,
+     0.115,
+     0.67,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.565,
+     0.93,
+     0.975
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/bundorca_31002.webp",
+   "tipo": "luogo",
+   "numero": 135,
+   "antico": null,
+   "nome": {
+    "es": "Bundorca",
+    "it": "Bundorca"
+   },
+   "sigilli": [
+    "settlement_enemy",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 154,
+    "sinistra": 134,
+    "destra": 136,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Comercia",
+     "it": "Commerciare"
+    },
+    "es": "Paga 2 de {r:Comida} y obtén 1 de {r:Riqueza}",
+    "it": "Paga 2 {r:Cibo} e ottieni 1 {r:Ricchezza}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Un extraño canal de piedra sale del pueblo y desaparece en la distancia, como un cauce seco.",
+    "it": "Uno strano canale di pietra esce dal villaggio e scompare in lontananza, come un letto di fiume in secca."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.6,
+     0.74,
+     0.69
+    ],
+    "azione": [
+     0.21,
+     0.715,
+     0.79,
+     0.8
+    ],
+    "ambientazione": [
+     0.16,
+     0.835,
+     0.83,
+     0.89
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "Bundorca es una pequeña población situada entre dos colinas rocosas. Un amplio barranco se extiende al oeste, hacia otro pueblo que se ve a lo lejos. Los edificios en Bundorca son bajos y robustos, hechos de piedra y arcilla.\nLas calles están muy concurridas, pero se nota que mucha gente deambula sin rumbo. Algunos tratan de mezclarse con su entorno y evitan a los demás. No parece un lugar feliz ni tranquilo. Pensándolo bien, ¿acaso quedan sitios así en Ávalon?\n⇨ [b]Si no tienes[/b] ninguna parte del Estado [b]«Misión diplomática»[/b] – {i:journal}: Versículo 1\n⇨ De lo contrario – {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\n[b]Si tienes[/b] la parte 2 del Estado [b]«Menhir itinerante»[/b] – {i:journal}: Versículo 166 en el Libro de los Secretos. De lo contrario: Requiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 2 de {i:energy}, 2 de {r:Riqueza} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 7 (-1 por cada jugador).",
+    "it": "Bundorca è un piccolo villaggio situato tra due colline rocciose. Un ampio burrone si estende a ovest, verso un altro villaggio che si vede in lontananza. Gli edifici di Bundorca sono bassi e robusti, fatti di pietra e argilla.\nLe strade sono molto affollate, ma si nota che molta gente vaga senza meta. Alcuni cercano di confondersi con l'ambiente ed evitano gli altri. Non sembra un luogo felice né tranquillo. A pensarci bene, esistono ancora luoghi così ad Avalon?\n⇨ [b]Se non hai[/b] alcuna parte dello status [b]«Missione Diplomatica»[/b] – {i:journal}: verso 1\n⇨ Altrimenti – {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\n[b]Se hai[/b] la parte 2 dello status [b]«Menhir Errante»[/b] – {i:journal}: verso 166 del Libro dei Segreti. Altrimenti: Richiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 2 {i:energy}, 2 {r:Ricchezza} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 7 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "se_status": {
+     "status": "Menhir Errante",
+     "parte": 2,
+     "libro_segreti": 166
+    },
+    "paga_per_giocatore": {
+     "energy": 2,
+     "Ricchezza": 2,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.4,
+     0.11,
+     0.62,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.09
+    ],
+    "testo": [
+     0.08,
+     0.31,
+     0.93,
+     0.7
+    ],
+    "menhir": [
+     0.06,
+     0.745,
+     0.94,
+     0.955
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/falfuar_31001.webp",
+   "tipo": "luogo",
+   "numero": 134,
+   "antico": null,
+   "nome": {
+    "es": "Falfuar",
+    "it": "Falfuar"
+   },
+   "sigilli": [
+    "settlement_enemy",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 153,
+    "sinistra": 133,
+    "destra": 135,
+    "giu": null
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": {
+    "costo": 1,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Busca provisiones",
+     "it": "Cercare provviste"
+    },
+    "es": "Paga 1 de {r:Riqueza} y obtén 1 de {r:Comida}",
+    "it": "Paga 1 {r:Ricchezza} e ottieni 1 {r:Cibo}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "El asentamiento es caótico, pero robusto. Un extraño canal de piedra sale del pueblo y desaparece en la distancia, como un cauce seco.",
+    "it": "L'insediamento è caotico, ma robusto. Uno strano canale di pietra esce dal villaggio e scompare in lontananza, come un letto di fiume in secca."
+   },
+   "aree": {
+    "titolo": [
+     0.36,
+     0.2,
+     0.65,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.6,
+     0.74,
+     0.69
+    ],
+    "azione": [
+     0.22,
+     0.715,
+     0.79,
+     0.8
+    ],
+    "ambientazione": [
+     0.16,
+     0.82,
+     0.83,
+     0.9
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "El espeso humo serpentea entre las casas de madera. La niebla se enrosca alrededor de la parte oeste del asentamiento, y oyes ruidos extraños que vienen de allí. Incluso bajo la protección del menhir, este lugar no es completamente seguro.\nUn profundo barranco conduce al este, hacia otro pueblo, usado para trasladar el menhir entre este asentamiento y Bundorca desde la antigüedad.\n⇨ [b]Si no tienes[/b] ninguna parte del Estado [b]«Misión diplomática»[/b] – {i:journal}: Versículo 1\n⇨ De lo contrario – {i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b], el Secreto [b]«Rituales de Menhir»[/b] (11) y una miniatura de Menhir en esta Localización. Paga (por cada jugador de la partida) 1 de {i:energy}, 2 de {r:Magia} y 1 de {r:Riqueza}: pon el dial del menhir en 7 (-1 por cada jugador).",
+    "it": "Il fumo denso serpeggia tra le case di legno. La nebbia si avvolge attorno alla parte occidentale dell'insediamento, e senti strani rumori provenire da lì. Persino sotto la protezione del menhir, questo luogo non è del tutto sicuro.\nUn profondo burrone conduce a est, verso un altro villaggio, ed è usato fin dall'antichità per trasportare il menhir tra questo insediamento e Bundorca.\n⇨ [b]Se non hai[/b] alcuna parte dello status [b]«Missione Diplomatica»[/b] – {i:journal}: verso 1\n⇨ Altrimenti – {i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b], il Segreto [b]«Riti del Menhir»[/b] (11) e una miniatura di Menhir in questo Luogo. Paga (per ogni giocatore della partita) 1 {i:energy}, 2 {r:Magia} e 1 {r:Ricchezza}: imposta il Quadrante del menhir su 7 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "richiede_miniatura_menhir": true,
+    "paga_per_giocatore": {
+     "energy": 1,
+     "Magia": 2,
+     "Ricchezza": 1
+    },
+    "quadrante": {
+     "1": 6,
+     "2": 5,
+     "3": 4,
+     "4": 3
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.38,
+     0.115,
+     0.62,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.42,
+     0.93,
+     0.745
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.95
+    ]
+   },
+   "dubbi": "Nessuna Chiave in basso. L'attivazione del Menhir richiede che la miniatura sia già in questo Luogo (si reimposta solo il quadrante)."
+  },
+  {
+   "img": "carte/mazzo/anillo_de_luna_31000.webp",
+   "tipo": "luogo",
+   "numero": 133,
+   "antico": null,
+   "nome": {
+    "es": "Anillo de Luna",
+    "it": "Moonring"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": 152,
+    "sinistra": 132,
+    "destra": 134,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Conocimiento druídico",
+     "it": "Sapere druidico"
+    },
+    "es": "Paga 1 de {r:Riqueza} o 1 de {r:Comida}, obtén 1 de {r:Magia}",
+    "it": "Paga 1 {r:Ricchezza} o 1 {r:Cibo}, ottieni 1 {r:Magia}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Un asentamiento de archidruidas donde uno puede encontrar conocimiento inimaginable… o convertirse en una ofrenda para los dioses.",
+    "it": "Un insediamento di arcidruidi dove si può trovare una conoscenza inimmaginabile… o diventare un'offerta per gli dèi."
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.2,
+     0.71,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.13,
+     0.695,
+     0.88,
+     0.78
+    ],
+    "ambientazione": [
+     0.17,
+     0.815,
+     0.82,
+     0.895
+    ]
+   },
+   "retro_testo": {
+    "es": "Antaño, este lugar estuvo lleno de druidas jóvenes y ancianos, y la gente viajaba aquí desde todas partes de la isla buscando sabiduría, consejos o curaciones. Por la noche, las hogueras se veían a kilómetros y las canciones resonaban entre las titánicas piedras del círculo sagrado, a veces interrumpidas por el grito de un sacrificio humano.\nAl acercarte, solo ves un par de ancianos descansando junto a una de las chozas de piedra junto al círculo. ¿Se habrán ido los otros druidas, o solo quedan unos pocos?\n{i:journal}",
+    "it": "Un tempo questo luogo era pieno di druidi giovani e anziani, e la gente vi giungeva da ogni parte dell'isola in cerca di saggezza, consigli o guarigioni. Di notte i falò si vedevano a chilometri di distanza e i canti risuonavano tra le titaniche pietre del cerchio sacro, a volte interrotti dal grido di un sacrificio umano.\nAvvicinandoti, vedi solo un paio di anziani che riposano accanto a una delle capanne di pietra vicino al cerchio. Gli altri druidi se ne saranno andati, o ne restano solo pochi?\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.34,
+     0.115,
+     0.68,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.64,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Nessun sigillo e nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/rostro_sereno_30908.webp",
+   "tipo": "luogo",
+   "numero": 132,
+   "antico": null,
+   "nome": {
+    "es": "Rostro Sereno",
+    "it": "Volto Sereno"
+   },
+   "sigilli": [
+    "dream",
+    "menhir"
+   ],
+   "direzioni": {
+    "su": 151,
+    "sinistra": 131,
+    "destra": 133,
+    "giu": 112
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 3,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Trepa al monumento",
+     "it": "Scalare il monumento"
+    },
+    "es": "Pierde 2 de {i:terror} y obtén 1 de {r:Magia}",
+    "it": "Perdi 2 {i:terror} e ottieni 1 {r:Magia}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Sus ojos llenos de agua miran fijamente hacia el cielo, igual que lo hacían cuando los primeros humanos llegaron a Ávalon.",
+    "it": "I suoi occhi pieni d'acqua fissano il cielo, proprio come facevano quando i primi umani giunsero ad Avalon."
+   },
+   "aree": {
+    "titolo": [
+     0.31,
+     0.2,
+     0.7,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "azione": [
+     0.25,
+     0.695,
+     0.8,
+     0.78
+    ],
+    "ambientazione": [
+     0.19,
+     0.8,
+     0.81,
+     0.885
+    ]
+   },
+   "retro_testo": {
+    "es": "La estatua ya estaba enterrada cuando los humanos llegaron por primera vez a esta parte de la isla. Nadie conoce su verdadero propósito. Algunos dicen que es solo una cabeza, otros dicen que también hay un cuerpo bajo tierra, con las piernas llegando incluso hasta Tuathán. Nadie lo sabe con certeza.\nLos peregrinos vienen aquí en busca de paz o revelación en las calmadas aguas que llenan los ojos de la estatua. Algunos incluso entran en su oreja y vagan durante horas en el laberinto, saliendo con un extraño brillo en los ojos.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b], el Secreto [b]«Rituales de Menhir»[/b] (11) y el Estado [b]«Misterio resuelto»[/b]. {i:journal}: Versículo 142 en el LdlS.",
+    "it": "La statua era già sepolta quando gli umani giunsero per la prima volta in questa parte dell'isola. Nessuno ne conosce il vero scopo. Alcuni dicono che sia solo una testa, altri che sotto terra ci sia anche un corpo, con le gambe che arrivano fino a Tuathan. Nessuno lo sa con certezza.\nI pellegrini vengono qui in cerca di pace o di rivelazione nelle acque calme che riempiono gli occhi della statua. Alcuni entrano persino nel suo orecchio e vagano per ore nel labirinto, uscendone con uno strano bagliore negli occhi.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b], il Segreto [b]«Riti del Menhir»[/b] (11) e lo status [b]«Mistero Risolto»[/b]. {i:journal}: verso 142 del Libro dei Segreti."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "richiede_status": [
+     "Mistero Risolto"
+    ],
+    "libro_segreti": 142
+   },
+   "retro_aree": {
+    "titolo": [
+     0.33,
+     0.11,
+     0.68,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.05,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.455,
+     0.93,
+     0.765
+    ],
+    "menhir": [
+     0.06,
+     0.84,
+     0.94,
+     0.95
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/altomuro_30907.webp",
+   "tipo": "luogo",
+   "numero": 131,
+   "antico": null,
+   "nome": {
+    "es": "Altomuro",
+    "it": "Timberwall"
+   },
+   "sigilli": [
+    "settlement_enemy"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 132,
+    "giu": 111
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Rodeado por todos lados por murallas de rarapiedra y campamentos de un ejército hostil.",
+    "it": "Circondata da ogni lato da mura di pietra anomala e dagli accampamenti di un esercito ostile."
+   },
+   "aree": {
+    "titolo": [
+     0.33,
+     0.2,
+     0.68,
+     0.24
+    ],
+    "numero": [
+     0.43,
+     0.145,
+     0.57,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.7,
+     0.74,
+     0.76
+    ],
+    "ambientazione": [
+     0.13,
+     0.835,
+     0.84,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Con la espalda apoyada sobre la seguridad de una infranqueable fortificación de los Primeros Moradores, Altomuro se eleva tanto que es visible a kilómetros de distancia. La gente de esta ciudad se parece a su hogar: oportunista, orgullosa y aferrada a cualquier ventaja que pueda obtener en este brutal mundo.\n⇨ [b]Si tienes[/b] la parte 2 del Estado [b]«Caído y perdido»[/b], retira esta carta de Localización y sustitúyela por la [b]Localización 137[/b]. Luego, Explora esta nueva Localización sin coste.\n⇨ De lo contrario, [b]si tienes[/b] las partes 3 o 4 del Estado [b]«Caído y perdido»[/b] – {i:journal}: Versículo 20\nSi no – {i:journal}: Versículo 1",
+    "it": "Con le spalle appoggiate alla sicurezza di un'invalicabile fortificazione dei Predecessori, Timberwall si innalza tanto da essere visibile a chilometri di distanza. La gente di questa città somiglia alla sua dimora: opportunista, orgogliosa e aggrappata a qualsiasi vantaggio possa ottenere in questo mondo brutale.\n⇨ [b]Se hai[/b] la parte 2 dello status [b]«Sconfitti e Caduti»[/b], rimuovi questa carta Luogo e sostituiscila con il [b]Luogo 137[/b]. Poi Esplora questo nuovo Luogo senza costi.\n⇨ Altrimenti, [b]se hai[/b] le parti 3 o 4 dello status [b]«Sconfitti e Caduti»[/b] – {i:journal}: verso 20\nSe no – {i:journal}: verso 1"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.38,
+     0.11,
+     0.63,
+     0.145
+    ],
+    "numero": [
+     0.44,
+     0.045,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.6,
+     0.93,
+     0.97
+    ]
+   },
+   "dubbi": "Status «Caído y perdido» → «Sconfitti e Caduti» (corrispondenza presunta)."
+  },
+  {
+   "img": "carte/mazzo/dolmen_derrumbado_30906.webp",
+   "tipo": "luogo",
+   "numero": 126,
+   "antico": 116,
+   "nome": {
+    "es": "Dolmen Derrumbado",
+    "it": "Dolmen Crollato"
+   },
+   "sigilli": [
+    "settlement_enemy"
+   ],
+   "direzioni": {
+    "su": 111,
+    "sinistra": 139,
+    "destra": 106,
+    "giu": 118
+   },
+   "immediata": {
+    "es": "Roba un Encuentro azul al entrar en esta Localización",
+    "it": "Pesca un Incontro blu quando entri in questo Luogo"
+   },
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Rescata a los supervivientes",
+     "it": "Soccorrere i sopravvissuti"
+    },
+    "es": "Obtén 2 de {r:Rep}",
+    "it": "Ottieni 2 {r:Rep}",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "Los lamentos de aquellos que siguen tratando de desenterrar a sus seres queridos se oyen a kilómetros de distancia.",
+    "it": "I lamenti di coloro che cercano ancora di dissotterrare i propri cari si sentono a chilometri di distanza."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.2,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.67,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.615,
+     0.74,
+     0.675
+    ],
+    "azione": [
+     0.28,
+     0.72,
+     0.86,
+     0.8
+    ],
+    "ambientazione": [
+     0.19,
+     0.82,
+     0.81,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "Aunque el dolmen gigante siempre tuvo un aspecto precario, la gente se acostumbró tanto a él que nunca pensó que podría derrumbarse mientras ellos vivieran.\nAhora, una larga fila de supervivientes cubiertos de polvo pasan frente a ti con dolor e incredulidad en sus rostros. Observando las ruinas bajo la gigante roca, ves que solo hizo falta un instante para que una de las potencias más importantes de Ávalon desapareciera del mapa.\n{i:journal}",
+    "it": "Sebbene il dolmen gigante abbia sempre avuto un aspetto precario, la gente ci si era così abituata da non pensare mai che potesse crollare finché loro erano in vita.\nOra, una lunga fila di sopravvissuti coperti di polvere ti passa davanti con dolore e incredulità sul volto. Osservando le rovine sotto la roccia gigante, capisci che è bastato un istante perché una delle potenze più importanti di Avalon scomparisse dalla mappa.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.115,
+     0.75,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.025,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.665,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "Sigillo rosso (Insediamento nemico) sotto il nome."
+  },
+  {
+   "img": "carte/mazzo/escalinata_del_titan_30905.webp",
+   "tipo": "luogo",
+   "numero": 125,
+   "antico": 115,
+   "nome": {
+    "es": "Escalinata del Titán",
+    "it": "Gradini dei Titani"
+   },
+   "sigilli": [
+    "menhir"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": 114,
+    "destra": 138,
+    "giu": 117
+   },
+   "immediata": {
+    "es": "Roba un Encuentro gris al entrar en esta Localización (una vez al Día)",
+    "it": "Pesca un Incontro grigio quando entri in questo Luogo (una volta al giorno)"
+   },
+   "azione": null,
+   "ambientazione": {
+    "es": "Las cenizas del templo están empezando a enfriarse.",
+    "it": "Le ceneri del tempio cominciano a raffreddarsi."
+   },
+   "aree": {
+    "titolo": [
+     0.26,
+     0.2,
+     0.77,
+     0.24
+    ],
+    "numero": [
+     0.42,
+     0.145,
+     0.67,
+     0.185
+    ],
+    "immediata": [
+     0.32,
+     0.685,
+     0.74,
+     0.775
+    ],
+    "ambientazione": [
+     0.13,
+     0.845,
+     0.86,
+     0.875
+    ]
+   },
+   "immediata_una_volta_al_giorno": true,
+   "retro_testo": {
+    "es": "Estas terrazas y escalones, más aptos para gigantes que para hombres, ofrecen vistas impresionantes de la isla (y la posibilidad de una caída mortal). Eran muy populares entre los ermitaños que vivían en sus numerosas cuevas.\nEn una de las terrazas más altas están las ruinas humeantes del templo saqueado de la Madre de Todos.\n{i:journal}\n{i:menhir} {i:action}0 [b]Activar el Menhir[/b]\nRequiere a [b]todos los personajes[/b] y el Secreto [b]«Rituales de Menhir»[/b] (11). Paga (por cada jugador de la partida) 3 de {i:energy} y 2 de {r:Magia}: coloca un nuevo Menhir en esta Localización y pon su dial en 8 (-1 por cada jugador).",
+    "it": "Queste terrazze e gradini, più adatti a giganti che a uomini, offrono viste impressionanti sull'isola (e la possibilità di una caduta mortale). Erano molto apprezzati dagli eremiti che vivevano nelle sue numerose grotte.\nSu una delle terrazze più alte si trovano le rovine fumanti del tempio saccheggiato della Madre di Tutti.\n{i:journal}\n{i:menhir} {i:action}0 [b]Attivare il Menhir[/b]\nRichiede [b]tutti i Personaggi[/b] e il Segreto [b]«Riti del Menhir»[/b] (11). Paga (per ogni giocatore della partita) 3 {i:energy} e 2 {r:Magia}: piazza un nuovo Menhir in questo Luogo e imposta il suo Quadrante su 8 (-1 per ogni giocatore)."
+   },
+   "retro_menhir": {
+    "costo": 0,
+    "richiede_tutti": true,
+    "segreti": [
+     11
+    ],
+    "paga_per_giocatore": {
+     "energy": 3,
+     "Magia": 2
+    },
+    "quadrante": {
+     "1": 7,
+     "2": 6,
+     "3": 5,
+     "4": 4
+    }
+   },
+   "retro_aree": {
+    "titolo": [
+     0.27,
+     0.115,
+     0.74,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.095
+    ],
+    "testo": [
+     0.08,
+     0.515,
+     0.93,
+     0.705
+    ],
+    "menhir": [
+     0.06,
+     0.8,
+     0.94,
+     0.95
+    ]
+   },
+   "dubbi": "Nessuna Chiave in alto. Chiave destra 138 verificata ingrandendo (coerente con 138 sinistra=115)."
+  },
+  {
+   "img": "carte/mazzo/tumulos_hundidos_30904.webp",
+   "tipo": "luogo",
+   "numero": 123,
+   "antico": 106,
+   "nome": {
+    "es": "Túmulos Hundidos",
+    "it": "Tumuli Sprofondati"
+   },
+   "sigilli": [],
+   "direzioni": {
+    "su": 112,
+    "sinistra": 116,
+    "destra": 102,
+    "giu": null
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 2,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Búsqueda del tesoro",
+     "it": "Caccia al tesoro"
+    },
+    "es": "Obtén 2 de {i:terror}, 2 de {r:Riqueza} y lanza un dado. Si sale un 6, {i:journal}: Versículo 1.",
+    "it": "Ottieni 2 {i:terror}, 2 {r:Ricchezza} e lancia un dado. Se esce 6, {i:journal}: verso 1.",
+    "una_volta_al_giorno": false
+   },
+   "ambientazione": {
+    "es": "El menhir que solía haber aquí se desmoronó y hundió en la Rareza, junto con la mayoría de los túmulos.",
+    "it": "Il menhir che un tempo sorgeva qui si è sgretolato ed è sprofondato nell'Anomalia, insieme alla maggior parte dei tumuli."
+   },
+   "aree": {
+    "titolo": [
+     0.27,
+     0.205,
+     0.74,
+     0.245
+    ],
+    "numero": [
+     0.42,
+     0.15,
+     0.67,
+     0.19
+    ],
+    "azione": [
+     0.2,
+     0.685,
+     0.8,
+     0.795
+    ],
+    "ambientazione": [
+     0.24,
+     0.82,
+     0.76,
+     0.9
+    ]
+   },
+   "retro_testo": {
+    "es": "A estas alturas, has visitado tantos menhires que puedes notar su poder a grandes distancias. Al entrar al familiar laberinto de los túmulos mortuorios, no percibes la estatua local. Parece que no está y, sin su influencia, esta peligrosa tierra ha caído aún más profundamente en la Rareza. El caótico poder tira de cada fibra de tu ser. Simplemente estar aquí causa dolor físico.\nPodrías trazar un camino por las cimas de los túmulos más altos, pero hay muy poco que explorar aquí ahora.\n⇨ Cada miembro del equipo obtiene 1 de {r:Magia} y pierde 1 de {i:health}. Después, {i:journal}",
+    "it": "Ormai hai visitato così tanti menhir da percepirne il potere a grandi distanze. Entrando nel familiare labirinto dei tumuli funerari, non avverti la statua del luogo. Sembra che non ci sia e, senza la sua influenza, questa terra pericolosa è sprofondata ancora di più nell'Anomalia. Il potere caotico tira ogni fibra del tuo essere. Il solo stare qui causa dolore fisico.\nPotresti tracciare un percorso lungo le cime dei tumuli più alti, ma ora qui c'è ben poco da esplorare.\n⇨ Ogni membro della Compagnia ottiene 1 {r:Magia} e perde 1 {i:health}. Poi, {i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.29,
+     0.115,
+     0.72,
+     0.15
+    ],
+    "numero": [
+     0.44,
+     0.025,
+     0.56,
+     0.1
+    ],
+    "testo": [
+     0.08,
+     0.655,
+     0.93,
+     0.97
+    ]
+   },
+   "dubbi": "Nessun sigillo; nessuna Chiave in basso."
+  },
+  {
+   "img": "carte/mazzo/lago_del_espejo_desecado_30903.webp",
+   "tipo": "luogo",
+   "numero": 122,
+   "antico": 113,
+   "nome": {
+    "es": "Lago del Espejo Desecado",
+    "it": "Lago Prosciugato"
+   },
+   "sigilli": [
+    "dream"
+   ],
+   "direzioni": {
+    "su": null,
+    "sinistra": null,
+    "destra": 114,
+    "giu": 102
+   },
+   "immediata": null,
+   "azione": {
+    "costo": 0,
+    "risorsa": "energy",
+    "nome": {
+     "es": "Descansa junto a la cuenca",
+     "it": "Riposare presso il bacino"
+    },
+    "es": "Obtén 1 de {i:energy} y 1 de {i:health} (una vez al Día)",
+    "it": "Ottieni 1 {i:energy} e 1 {i:health} (una volta al giorno)",
+    "una_volta_al_giorno": true
+   },
+   "ambientazione": {
+    "es": "El lago sagrado ha desaparecido, revelando una inquietante estructura que siempre estuvo en su interior.",
+    "it": "Il lago sacro è scomparso, rivelando un'inquietante struttura che è sempre stata al suo interno."
+   },
+   "aree": {
+    "titolo": [
+     0.3,
+     0.19,
+     0.72,
+     0.245
+    ],
+    "numero": [
+     0.42,
+     0.14,
+     0.67,
+     0.18
+    ],
+    "azione": [
+     0.19,
+     0.695,
+     0.82,
+     0.775
+    ],
+    "ambientazione": [
+     0.23,
+     0.81,
+     0.77,
+     0.89
+    ]
+   },
+   "retro_testo": {
+    "es": "Durante siglos, la gente de toda la isla peregrinó al Lago del Espejo, rogándole a la Dama Pálida sanación, favores o simplemente consuelo. Ahora, las reflectantes aguas han desaparecido, absorbidas por el suelo agrietado. Esta es la consecuencia más grave y desafortunada de los problemas que Ávalon ha experimentado hasta ahora.\nLo más inquietante es que la falta de agua ha revelado un secreto escondido bajo el Lago del Espejo desde la antigüedad: una solitaria torre de rarapiedra, cuya cúspide formaba hasta ahora la isla en medio del lago.\n{i:journal}",
+    "it": "Per secoli, la gente di tutta l'isola si è recata in pellegrinaggio al Lago Speculare, implorando dalla Dama Pallida guarigione, favori o semplicemente conforto. Ora le acque riflettenti sono scomparse, assorbite dal terreno crepato. È la conseguenza più grave e sfortunata dei problemi che Avalon ha vissuto finora.\nLa cosa più inquietante è che la mancanza d'acqua ha rivelato un segreto nascosto sotto il Lago Speculare fin dall'antichità: una solitaria torre di pietra anomala, la cui sommità formava finora l'isola in mezzo al lago.\n{i:journal}"
+   },
+   "retro_aree": {
+    "titolo": [
+     0.32,
+     0.105,
+     0.69,
+     0.165
+    ],
+    "numero": [
+     0.44,
+     0.02,
+     0.56,
+     0.09
+    ],
+    "testo": [
+     0.08,
+     0.6,
+     0.93,
+     0.91
+    ]
+   },
+   "dubbi": "«Dama Pálida» resa con «Dama Pallida»."
+  }
+ ]
+}
