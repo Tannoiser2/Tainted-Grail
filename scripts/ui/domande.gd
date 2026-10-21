@@ -5,6 +5,8 @@ class_name Domande
 extends Node
 
 signal _risposta(i: int)
+signal aperta
+signal chiusa
 
 ## Callable(colore, nome, livello) -> esito (coroutine), fornita dal Gioco.
 var incontro: Callable
@@ -51,8 +53,10 @@ func scegli(titolo: String, opzioni: Array) -> int:
 	vel.resized.connect(centra)
 	v.minimum_size_changed.connect(func(): centra.call_deferred())
 	centra.call_deferred()
+	aperta.emit()
 	var r: int = await _risposta
 	vel.queue_free()
+	chiusa.emit()
 	return r
 
 func scegli_personaggio(titolo: String, lista: Array) -> Dictionary:
@@ -101,8 +105,10 @@ func _avviso(titolo: String, testo: String) -> void:
 	vel.resized.connect(centra)
 	v.minimum_size_changed.connect(func(): centra.call_deferred())
 	centra.call_deferred()
+	aperta.emit()
 	await _risposta
 	vel.queue_free()
+	chiusa.emit()
 
 ## Testo ricco di larghezza fissa dentro uno scorrimento (al massimo 560 px di altezza).
 func _testo(bb: String, dim: int, larghezza: int) -> Control:

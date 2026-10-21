@@ -1,0 +1,2535 @@
+{
+ "voci": [
+  {
+   "chiave": "r:84aff6d660c4",
+   "ruolo": "risultato",
+   "testo": "Rimuovere questa carta Luogo dal gioco e rimpiazzarla con il [b]Luogo 121[/b]. Potete quindi Esplorare questo nuovo Luogo gratuitamente.",
+   "contesto": "Luogo 101 verso 0, scelta: Se avete lo status [b]“Venti dell’Anomalia”[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "sostituisci",
+      "vecchio": "questo",
+      "nuovo": 121
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Potete quindi Esplorare il nuovo Luogo 121 gratuitamente (senza spendere l’azione)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:2a1cbd127b27",
+   "ruolo": "risultato",
+   "testo": "[i]Dovete Passare il resto della giornata. Leggere la sezione Sogno di questo Luogo. L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 102 verso 1, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Leggete la sezione Sogno di questo Luogo (102)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:4524ab19a3f3",
+   "ruolo": "condizione",
+   "testo": "[b]Se vincete[/b] (o il nemico usa Scappare), scegli questa opzione.",
+   "contesto": "Luogo 102 verso 6: Tornate al bosco e vi ritrovate di fronte all’antico Padre Cervo con la rabbia nel cuore e una torcia accesa in mano. All’ultimo istante, la vostra mente è att",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "il nemico ha usato Scappare/Fuggire"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:14043563f8e8",
+   "ruolo": "condizione",
+   "testo": "Se vincete (o se il nemico usa Scappare), scegli questa opzione.",
+   "contesto": "Luogo 103 verso 2: Entrate in un cerchio ricoperto di sabbia, circondato da una recinzione di legno, avidi scommettitori e interessati acquirenti di contratti. Salutate il vostro ",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "il nemico ha usato Scappare/Fuggire"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:5cc0ac20684d",
+   "ruolo": "risultato",
+   "testo": "[i]Non ricevete alcun Bottino per aver vinto questo Incontro![/i]",
+   "contesto": "Luogo 103 verso 2, scelta: Se vincete (o se il nemico usa Scappare), scegli questa opzione.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Non ricevete alcun Bottino per aver vinto questo Incontro."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:a056ec437354",
+   "ruolo": "condizione",
+   "testo": "Se perdete o decidete di Fuggire",
+   "contesto": "Luogo 103 verso 2: Entrate in un cerchio ricoperto di sabbia, circondato da una recinzione di legno, avidi scommettitori e interessati acquirenti di contratti. Salutate il vostro ",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "avete deciso di Fuggire dall'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:777b97a8601b",
+   "ruolo": "condizione",
+   "testo": "Se perdete o decidete di Fuggire, scegli questa opzione.",
+   "contesto": "Luogo 103 verso 3: Un cupo dottore esamina le vostre ferite e contusioni, applicandovi sopra degli unguenti che bruciano. Nel frattempo, notate un diverbio in corso tra gli scomme",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "avete deciso di Fuggire dall'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:344edddb4391",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Inaffidabile”[/b], o se c’è un Gettone Tempo su questo Luogo",
+   "contesto": "Luogo 103 verso 9: Dopo un po’, riuscite a procurarvi il contratto mercenario di un giovane guerriero. Privo di esperienza, ma pieno di potenziale – proprio come voi.",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "status",
+       "nome": "Inaffidabile",
+       "parti": []
+      },
+      {
+       "tipo": "manuale",
+       "testo": "c’è un Gettone Tempo su questo Luogo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:29f5862c5bd3",
+   "ruolo": "condizione",
+   "testo": "Se [b]non avete[/b] lo status [b]“Inaffidabile”[/b], o se non c’è un Gettone Tempo su questo Luogo, tirare un dado e sommare +1 per ogni punto di {i:practicality}",
+   "contesto": "Luogo 103 verso 9: Dopo un po’, riuscite a procurarvi il contratto mercenario di un giovane guerriero. Privo di esperienza, ma pieno di potenziale – proprio come voi.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Inaffidabile",
+        "parti": []
+       }
+      },
+      {
+       "tipo": "manuale",
+       "testo": "non c’è un Gettone Tempo su questo Luogo"
+      }
+     ]
+    },
+    "effetti": [
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "practicality",
+        "per": 1
+       }
+      ],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:5af3782305a3",
+   "ruolo": "risultato",
+   "testo": "[i] Ottenete 1 Oggetto non Compagno e la parte 1 dello status [b]“Saccheggiatore”[/b]. Ciascun membro della Compagnia che abbia più di 1 {i:empathy} ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 104 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 1 Oggetto casuale non Compagno (scartate e ripescate i Compagni)."
+     },
+     {
+      "tipo": "status",
+      "nome": "Saccheggiatore",
+      "parti": [
+       1
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "attributo",
+       "attr": "empathy",
+       "min": 2
+      },
+      "allora": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 1,
+        "chi": "attivo"
+       }
+      ],
+      "chi": "ognuno"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:3613a25f7072",
+   "ruolo": "condizione",
+   "testo": "Se in questo Luogo c’è un Gettone Cerca, scegli questa opzione.",
+   "contesto": "Luogo 105 verso 0: Sostate a riposare all’ombra di queste spade titaniche, il cui odore di ruggine tintilla il vostro olfatto. A un centinaio di metri di distanza, un anziano fabb",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "c’è un Gettone Cerca su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "r:4db0969185c1",
+   "ruolo": "risultato",
+   "testo": "[i]Andare al Sogno. Poi, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 105 verso 5, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Leggete la sezione Sogno di questo Luogo (105)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:bbb051af0751",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se su questa carta Luogo [b]non c’è[/b] un Gettone Cerca[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 10-13",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "su questa carta Luogo non c’è un Gettone Cerca"
+    }
+   }
+  },
+  {
+   "chiave": "q:2b0d19caca29",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se su questa carta Luogo [b]non c’è[/b] un Gettone Cerca[/i]",
+   "contesto": "Luogo 105 verso 10, scelta: Il vostro risultato: 14+",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "su questa carta Luogo non c’è un Gettone Cerca"
+    }
+   }
+  },
+  {
+   "chiave": "r:b23d48ebc172",
+   "ruolo": "risultato",
+   "testo": "[i]Sommare +1.[/i]",
+   "contesto": "Luogo 107 verso 4, scelta: Se avete più di 3 {r:Ricchezza} E 3 {r:Cibo}",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Sommate +1 al risultato del dado appena tirato."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:96ef5bb365f3",
+   "ruolo": "risultato",
+   "testo": "[i]Sommare +3.[/i]",
+   "contesto": "Luogo 107 verso 4, scelta: Se avete meno di 3 {r:Ricchezza} O meno di 3 {r:Cibo}",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Sommate +3 al risultato del dado appena tirato."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:692ee12f61cb",
+   "ruolo": "risultato",
+   "testo": "[i]Sommare +6.[/i]",
+   "contesto": "Luogo 107 verso 4, scelta: Se avete meno di 2 {r:Ricchezza} E meno di 2 {r:Cibo}",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Sommate +6 al risultato del dado appena tirato."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:2bf97648f76a",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto[b] 32[/b]. Piazzare un Gettone Tempo e un Quadrante su questo segreto e posizionarlo sul 3. A ogni Inizio della Giornata, ridurre il Quadrante di 1. Una volta che il Quadrante si esaurisce, scartare questa carta Segreto (la potete riottenere in seguito). l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 107 verso 5, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "segreto",
+      "n": 32,
+      "rimuovi": false
+     },
+     {
+      "tipo": "quadrante",
+      "dove": "segreto:32",
+      "valore": 3,
+      "gettone": "tempo"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Quando il Quadrante sul Segreto 32 si esaurisce, scartate la carta Segreto 32 (potrete riottenerla in seguito)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:048866e51da2",
+   "ruolo": "condizione",
+   "testo": "Se [b]avete[/b] lo status [b]“Battitore di Piste”[/b] e un Quadrante, che rappresenta la Vergine Arciera",
+   "contesto": "Luogo 109 verso 0: Le onde si infrangono sullo scafo dell’imbarcazione. Un uomo incappucciato, silenzioso, vi traghetta lentamente a un’isola solitaria, i cui boschi di salici scu",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "status",
+       "nome": "Battitore di Piste",
+       "parti": []
+      },
+      {
+       "tipo": "manuale",
+       "testo": "avete un Quadrante che rappresenta la Vergine Arciera"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:53aa567da51c",
+   "ruolo": "condizione",
+   "testo": "Se il Diario di Esplorazione vi rimanda qui all'Inizio della Giornata",
+   "contesto": "Luogo 109 verso 0: Le onde si infrangono sullo scafo dell’imbarcazione. Un uomo incappucciato, silenzioso, vi traghetta lentamente a un’isola solitaria, i cui boschi di salici scu",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "il Diario di Esplorazione vi ha rimandato qui all’Inizio della Giornata"
+    }
+   }
+  },
+  {
+   "chiave": "q:b49c249c2d2c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Only as a result of a previous exploration![/i]",
+   "contesto": "Luogo 109 verso 0, scelta: Se il Diario di Esplorazione vi rimanda qui all'Inizio della Giornata",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "solo come conseguenza di una precedente Esplorazione (rimando all’Inizio della Giornata)"
+    }
+   }
+  },
+  {
+   "chiave": "r:ecead67389d8",
+   "ruolo": "risultato",
+   "testo": "[i]Il vostro Personaggio muore. Vedere il capitolo[b] “Morte e Follia”[/b] del Regolamento per maggiori informazioni.[/i]",
+   "contesto": "Luogo 109 verso 6, scelta: [b]Rinunciare alla vita e restare nella casa di ricovero[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Il vostro Personaggio muore: applicate il capitolo “Morte e Follia” del Regolamento."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:021e7297c70b",
+   "ruolo": "risultato",
+   "testo": "I vostri piani muoiono sul nascere, mentre il tempo continua a scorrere. \n[i]Tutti i membri della Compagnia devono Passare per il resto della giornata. Al successivo Inizio della Giornata, tutti i membri della Compagnia devono tornare al Verso 6 della Casa di Ricovero sull’Isola ([b]109[/b]) sul Diario di Esplorazione prima di svolgere qualsiasi altra Azione. Appuntarselo per ricordarselo.[/i]",
+   "contesto": "Luogo 109 verso 12, scelta: Il tuo risultato è stato: 1-4",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Al successivo Inizio della Giornata tutti i membri della Compagnia devono tornare al Verso 6 della Casa di Ricovero sull’Isola (109) prima di svolgere qualsiasi altra Azione."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:394ade4c31d2",
+   "ruolo": "risultato",
+   "testo": "Una strana bestia sta leccando e succhiando la melma deposta nel sottobosco. \n\n[i]Pescare due carte Incontro viola e risolvere quella con il Valore più basso. Dopo questo Combattimento, l’Esplorazione termina.[/i]",
+   "contesto": "Luogo 110 verso 10, scelta: Il tuo risultato è stato: 1-4",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescate due carte Incontro viola e risolvete quella con il Valore più basso."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:a0d284d642ba",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 2 Oggetti casuali non Compagno, la carta Segreto [b]“Talismano Opaco” (21)[/b], e la parte 3 dello status [b]“Sogni e Profezie”[/b]. Ciascun membro della Compagnia ottiene 1 {r:Esp}.[/i]",
+   "contesto": "Luogo 111 verso 8, scelta: Verificare il risultato prima dell'azione!",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 2 Oggetti casuali non Compagno (scartate e ripescate i Compagni)."
+     },
+     {
+      "tipo": "segreto",
+      "n": 21,
+      "rimuovi": false,
+      "nome": "Talismano Opaco"
+     },
+     {
+      "tipo": "status",
+      "nome": "Sogni e Profezie",
+      "parti": [
+       3
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:a994c050b2a8",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato: 0-1",
+   "contesto": "Luogo 112 verso 3: [i]Sommare +1 per ogni punto {r:Ricchezza} offerto, +1 per ogni Oggetto Artigianale e +2 per ogni altro Oggetto.\n\nScartate le vostre offerte e verificate il ris",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "punteggio dell’offerta (+1 per Ricchezza offerta, +1 per Oggetto Artigianale, +2 per ogni altro Oggetto): 0-1"
+    }
+   }
+  },
+  {
+   "chiave": "c:2e1a4808978d",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato: 2",
+   "contesto": "Luogo 112 verso 3: [i]Sommare +1 per ogni punto {r:Ricchezza} offerto, +1 per ogni Oggetto Artigianale e +2 per ogni altro Oggetto.\n\nScartate le vostre offerte e verificate il ris",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "punteggio dell’offerta (+1 per Ricchezza offerta, +1 per Oggetto Artigianale, +2 per ogni altro Oggetto): 2"
+    }
+   }
+  },
+  {
+   "chiave": "c:08431fe5cfdb",
+   "ruolo": "condizione",
+   "testo": "Il tuo risultato è stato: 3-4",
+   "contesto": "Luogo 112 verso 3: [i]Sommare +1 per ogni punto {r:Ricchezza} offerto, +1 per ogni Oggetto Artigianale e +2 per ogni altro Oggetto.\n\nScartate le vostre offerte e verificate il ris",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "punteggio dell’offerta (+1 per Ricchezza offerta, +1 per Oggetto Artigianale, +2 per ogni altro Oggetto): 3-4"
+    }
+   }
+  },
+  {
+   "chiave": "q:6c1f6d4eb3dc",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scegliere quanta {r:Ricchezza} e Oggetti donare.[/i]",
+   "contesto": "Luogo 112 verso 7, scelta: [b]Fare un’offerta[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Scegliete quanta Ricchezza e quali Oggetti donare e scartateli; il punteggio dell’offerta è +1 per Ricchezza, +1 per Oggetto Artigianale, +2 per ogni altro Oggetto."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:eadd92468cbb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]c’è[/b] un Gettone Tempo su questo Luogo[/i]",
+   "contesto": "Luogo 113 verso 0, scelta: [b]Cacciare[/b] – A giudicare dalle tracce nella sabbia, tanti sono gli animali che vengono qui ad abbeverarsi.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "c’è un Gettone Tempo su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "c:b43c600ceb05",
+   "ruolo": "condizione",
+   "testo": "Se [b]c’è[/b] un Gettone Tempo su questo Luogo, o se [b]avete[/b] lo status [b]“Missione Moonring”[/b]",
+   "contesto": "Luogo 113 verso 1: Restate per un po’ dinanzi alla superficie riflettente, tentando varie suppliche cortesi, ma il vento le trascina via senza dare risposta. Dopo un po’, non pote",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "manuale",
+       "testo": "c’è un Gettone Tempo su questo Luogo"
+      },
+      {
+       "tipo": "status",
+       "nome": "Missione Moonring",
+       "parti": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:8979b00ee27b",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia perde 1 {i:energy} e ottiene 1 {i:terror}. Ottenete l’Oggetto [b]“Pergamena Intrisa d’Ombra”[/b] (od ottenete 1 {r:Magia} se non è disponibile). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 113 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": -1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "nome",
+      "n": 1,
+      "nome": "Pergamena Intrisa d’Ombra"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Se l’Oggetto “Pergamena Intrisa d’Ombra” non è disponibile, ottenete invece 1 Magia."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4f2794f070fd",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 1 {r:Esp}.\nOttenete l’Oggetto [b]“Spada Runica”[/b] (se non è disponibile, ottenete invece 3 {r:Magia}).\nOttenete la parte 5 dello status [b]“Fato della Spedizione”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 113 verso 7, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "nome",
+      "n": 1,
+      "nome": "Spada Runica"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Se l’Oggetto “Spada Runica” non è disponibile, ottenete invece 3 Magia."
+     },
+     {
+      "tipo": "status",
+      "nome": "Fato della Spedizione",
+      "parti": [
+       5
+      ],
+      "rimuovi": false
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:b33a06119412",
+   "ruolo": "condizione",
+   "testo": "Se il Diario di Esplorazione vi indica di tornare qui all'inizio della Giornata",
+   "contesto": "Luogo 114 verso 0: La più antica e imponente foresta di Avalon è divisa in due da una profonda gola. Le radici di alberi enormi fuoriescono dai suoi pendii e trasformano le pist",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Diario di Esplorazione vi ha indicato di tornare qui all'Inizio della Giornata"
+    }
+   }
+  },
+  {
+   "chiave": "q:647210aa06b8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Only as a result of a previous exploration!",
+   "contesto": "Luogo 114 verso 0, scelta: Se il Diario di Esplorazione vi indica di tornare qui all'inizio della Giornata",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Solo come conseguenza di un'Esplorazione precedente (rimando del Diario all'Inizio della Giornata)"
+    }
+   }
+  },
+  {
+   "chiave": "r:bb2f1a112497",
+   "ruolo": "risultato",
+   "testo": "[i]Dovete Passare il resto della giornata. Ciascun membro della Compagnia ottiene 1 {i:terror} e perde 1 {i:health}. Dopo l’Inizio della Giornata successiva, ritornare al Verso 2.[/i]",
+   "contesto": "Luogo 114 verso 4, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Dopo l'Inizio della Giornata successiva, ritornare al Verso 2 di questo Luogo (114)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:097f8dc7b681",
+   "ruolo": "condizione",
+   "testo": "Se [b]c’è[/b] un Gettone Tempo su questo Luogo",
+   "contesto": "Luogo 114 verso 5: Trovate la loggia, collocata in cima a una delle rupi che sovrasta la gola. Salite una rampa di scale scavata nel fianco del canyon.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è un Gettone Tempo su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "q:92d77486ce34",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Teschio:",
+   "contesto": "Luogo 114 verso 8, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante lanciato mostra il Teschio"
+    }
+   }
+  },
+  {
+   "chiave": "q:6f413b34662a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Graal:",
+   "contesto": "Luogo 114 verso 8, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante lanciato mostra il Graal"
+    }
+   }
+  },
+  {
+   "chiave": "r:ce0d70ffb899",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare e risolvere l’Incontro grigio [b]“Gruppo di Banditi”[/b] (Difficoltà 1). Ogni membro della Compagnia pesca 2 carte extra nel primo turno di Combattimento. Dopo il Combattimento, piazzare un Gettone Tempo su questo Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 114 verso 9, scelta: [b]Tendergli un’imboscata[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia pesca 2 carte extra nel primo turno del Combattimento seguente."
+     },
+     {
+      "tipo": "incontro",
+      "colore": "grigio",
+      "nome": "Gruppo di Banditi",
+      "livello": 1
+     },
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:48859b73d2b8",
+   "ruolo": "risultato",
+   "testo": "[i]Aggiungere il Luogo [b]134[/b] in cima a questa carta. Se non è più disponibile, aggiungere invece la carta [b]147[/b]. Poi, piazzare lì tutte le miniature dei membri della Compagnia. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 114 verso 11, scelta: [b]Vai al Nord[/b] - [i]Questa azione sposterà tutti i membri della Compagnia in un'altro Luogo[/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 134 è ancora disponibile"
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 134
+       },
+       {
+        "tipo": "muovi",
+        "dove": 134,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 147
+       },
+       {
+        "tipo": "muovi",
+        "dove": 147,
+        "chi": "compagnia"
+       }
+      ]
+     },
+     {
+      "tipo": "nota",
+      "testo": "Il nuovo Luogo va aggiunto sopra (a nord di) questa carta."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:f1ce3b750ae0",
+   "ruolo": "risultato",
+   "testo": "[i]Arev ottiene 1 {i:caution} o 1 {i:empathy}. Poi, ottenete la parte 2 dello status [b]“Ultima Lezione”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 114 verso 13, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Arev ottiene 1 {i:caution} o 1 {i:empathy}."
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultima Lezione",
+      "parti": [
+       2
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:568596105c57",
+   "ruolo": "condizione",
+   "testo": "Se [b]non c’è[/b] un Quadrante su questa carta Luogo, e se [b]non avete[/b] lo status [b]“Santuario Sicuro”[/b]",
+   "contesto": "Luogo 115 verso 0: Questi terrazzamenti e gradini, più adatti ai giganti che agli uomini, offrono una vista mozzafiato del resto dell’isola (e tante occasioni di scivolare verso ",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "manuale",
+       "testo": "Non c'è un Quadrante su questa carta Luogo"
+      },
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Santuario Sicuro",
+        "parti": []
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:df98b2bf138b",
+   "ruolo": "risultato",
+   "testo": "[i]Piazzare qui un Quadrante. Piazzare un Gettone Tempo sul Quadrante e piazzarlo sul 3. Ridurre il Quadrante a ogni Inizio della Giornata.\n\nSe il Quadrante in questo Luogo si estingue, o se il Luogo viene scartato, rimuovere questa carta Luogo dal gioco e rimpiazzarla con il Luogo [b]125[/b].\n\nAdesso, scegliere una tra:[/i]",
+   "contesto": "Luogo 115 verso 0, scelta: Se [b]non c’è[/b] un Quadrante su questa carta Luogo, e se [b]non avete[/b] lo status [b]“Santuario Sicuro”[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "quadrante",
+      "dove": "luogo:115",
+      "valore": 3,
+      "gettone": "tempo"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ridurre il Quadrante del Luogo 115 a ogni Inizio della Giornata; se si estingue, o se il Luogo viene scartato, rimuovere il Luogo 115 dal gioco e rimpiazzarlo con il Luogo 125."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:5a2d9fc3949c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se c’è un Quadrante su questo Luogo[/i]",
+   "contesto": "Luogo 115 verso 0, scelta: [b]Visitare il tempio assediato[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è un Quadrante su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "r:a9e2414e26f7",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Rep}. Rimuovere il Quadrante e tutti i Gettoni Tempo da questa carta Luogo. [/i]",
+   "contesto": "Luogo 115 verso 1, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovere il Quadrante e tutti i Gettoni Tempo da questa carta Luogo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:202",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Se in un qualsiasi momento ci sono 4 Gettoni Cerca su questa carta Luogo, rimuovere questo Luogo dalla partita e rimpiazzarlo col Luogo[b] 125[/b], l’Esplorazione termina.[/i]\n\nTirare un dado e sommare +1 per ogni punto delle vostre {i:empathy} e {r:Rep} (se in Compagnia, usare il livello di Attributo più alto e il valore di {r:Rep} più alto). Poi, sottrarre 1 dal punteggio per ogni Gettone Cerca su questa carta Luogo. Verificare il risultato totale:",
+   "contesto": "Luogo 115 verso 2",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "gettoni_cerca",
+       "min": 4,
+       "luogo": "qui"
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": "questo",
+        "nuovo": 125
+       },
+       {
+        "tipo": "fine_esplorazione"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "manuale",
+        "testo": "Al tiro seguente sommare anche +1 per ogni punto di {r:Rep} (il valore più alto in Compagnia) e sottrarre 1 per ogni Gettone Cerca su questa carta Luogo."
+       },
+       {
+        "tipo": "dado",
+        "mod": [
+         {
+          "attr": "empathy",
+          "per": 1
+         }
+        ],
+        "risultati": []
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:8cf49d824dc9",
+   "ruolo": "risultato",
+   "testo": "Ci vuole un po’, ma riuscite a convincerli a lasciare in pace il tempio. La folla zittisce rapidamente i pochi contestatori. Iniziano a disperdersi e la maggior parte di loro si dirige a est verso il Borgo.\n\n[i]Ciascun membro della Compagnia ottiene 2 {r:Esp}. Rimuovere il Quadrante e tutti i Gettoni da questa carta Luogo.[/i]",
+   "contesto": "Luogo 115 verso 2, scelta: Il tuo risultato è stato: 8+",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovere il Quadrante e tutti i Gettoni da questa carta Luogo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:b770d207fb0a",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere il Quadrante e tutti i Gettoni Cerca da questa carta Luogo[/i]",
+   "contesto": "Luogo 115 verso 8, scelta: [b]Tentare di disperderla[/b] - [i]Ottenete la carta Segreto [b]66 [/b] (se in Compagnia, ciascun membro della Compagnia ne riceve una). Risolvere l’Incontro gr",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovere il Quadrante e tutti i Gettoni Cerca da questa carta Luogo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:577da0206ad2",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pescare le 5 carte Oggetto in cima al mazzo. Potete comprarne quante volete al costo di 3 {r:Ricchezza} ciascuna.[/i]",
+   "contesto": "Luogo 116 verso 3, scelta: [b]Comprare equipaggiamento[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescare le 5 carte Oggetto in cima al mazzo: potete comprarne quante volete al costo di 3 {r:Ricchezza} ciascuna."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:9a65d74618a7",
+   "ruolo": "risultato",
+   "testo": "[i]Rimescolare quelle non acquistate nel mazzo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 116 verso 3, scelta: [b]Comprare equipaggiamento[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Rimescolare nel mazzo gli Oggetti pescati e non acquistati."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:c91ace9ae6c4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scartare tutte le carte Oggetto che volete e ottenete 1 {r:Ricchezza} per ciascuna di esse. [/i]",
+   "contesto": "Luogo 116 verso 3, scelta: [i]Vendere equipaggiamento[/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartare tutte le carte Oggetto che volete e ottenere 1 {r:Ricchezza} per ciascuna di esse."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:97f528212c8b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se il popolo dell’isola vuole una speranza di sopravvivere, questa guerra deve finire. A parte questo, Dama Kincaid vi aiuterà sicuramente a equipaggiarvi per il vostro viaggio.\n[i]\nRichiede il consenso di tutti i giocatori; potrebbe portare alla conclusione del Capitolo attuale.[/i]",
+   "contesto": "Luogo 116 verso 7, scelta: [b]Accettare[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Consenso di tutti i giocatori (potrebbe portare alla conclusione del Capitolo attuale)"
+    }
+   }
+  },
+  {
+   "chiave": "r:16fe7c32209c",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere tutti i Gettoni Tempo da questa carta Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 117 verso 3, scelta: [b]Lasciare questo luogo[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovere tutti i Gettoni Tempo da questa carta Luogo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:233",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Tirare un dado e sommare +2 per ogni Gettone Tempo su questo Luogo.[/i]",
+   "contesto": "Luogo 117 verso 7",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Al tiro seguente sommare +2 per ogni Gettone Tempo su questo Luogo."
+     },
+     {
+      "tipo": "dado",
+      "mod": [],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:edb8f5fd7d4c",
+   "ruolo": "condizione",
+   "testo": "Se la carta Cerca [b]“Compito della Dama”[/b] ([b]Capitolo 3A, Parte 4[/b]) è stata rivelata",
+   "contesto": "Luogo 117 verso 8: I margini della fossa sono già crollati, ma mostrano ancora segni di pale e picconi. Lo scavo conduce a una galleria di fattura umana, molto più antica del cr",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "La carta Cerca \"Compito della Dama\" (Capitolo 3A, Parte 4) è stata rivelata"
+    }
+   }
+  },
+  {
+   "chiave": "r:e6ea4e531f43",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia che abbia 1 o più {i:empathy} ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 117 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ciascun membro della Compagnia che abbia 1 o più {i:empathy} ottiene 1 {i:terror}."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:e2b8151d706f",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia che abbia più di 1 {i:empathy} perde 1 {i:terror}. L’Esplorazione termina. [/i]",
+   "contesto": "Luogo 117 verso 14, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ciascun membro della Compagnia che abbia più di 1 {i:empathy} perde 1 {i:terror}."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:1c0df0310449",
+   "ruolo": "risultato",
+   "testo": "[i][b]Beor[/b] ottiene 1 {i:courage} o 1 {i:spirituality}. Ottenete la parte 3 dello status “Ultima Lezione”.[/i]",
+   "contesto": "Luogo 117 verso 16, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Beor ottiene 1 {i:courage} o 1 {i:spirituality}."
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultima Lezione",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:c6124d37371a",
+   "ruolo": "condizione",
+   "testo": "Se [b]non c’è[/b] un Gettone Tempo su questo Luogo, e avete meno di 3{r:Cibo} per membro della Compagnia",
+   "contesto": "Luogo 117 verso 19: L’insediamento è ancora agli inizi, ma i coloni sembrano apprezzarlo. Sono pronti a ripagare la vostra gentilezza se mai ne aveste bisogno.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "manuale",
+       "testo": "Non c'è un Gettone Tempo su questo Luogo"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete meno di 3 {r:Cibo} per membro della Compagnia"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:ab05847a4aa9",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se, al momento, a Cuanacht [b]non c’è[/b] un Menhir attivo[/i]",
+   "contesto": "Luogo 118 verso 3, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Al momento a Cuanacht (Luogo 121) non c'è un Menhir attivo"
+    }
+   }
+  },
+  {
+   "chiave": "r:0f165679e008",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}.[/i]",
+   "contesto": "Luogo 118 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:8441e2605b5b",
+   "ruolo": "risultato",
+   "testo": "[i]Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 118 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ciascun membro della Compagnia con 2 o meno {r:Magia} ottiene 1 {r:Magia}."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:e8f0c3ea6e07",
+   "ruolo": "risultato",
+   "testo": "Verme ottiene 1 {i:empathy} o 1 {i:courage}. Ottenete la parte 4 dello status [b]“Ultima Lezione”[/b].",
+   "contesto": "Luogo 118 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Verme ottiene 1 {i:empathy} o 1 {i:courage}."
+     },
+     {
+      "tipo": "status",
+      "nome": "Ultima Lezione",
+      "parti": [
+       4
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:b27178a0c5ce",
+   "ruolo": "risultato",
+   "testo": "Il custode vi ricompensa offrendovi alcuni dei loro equipaggiamenti migliori.\n\n[i]Pescare cinque carte Oggetto non Compagno, sceglierne due, e poi ottenete la parte 3 dello status [b]“Incontri Propizi”[/b].[/i]",
+   "contesto": "Luogo 120 verso 7, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescare cinque carte Oggetto non Compagno e sceglierne due (rimettere le altre)."
+     },
+     {
+      "tipo": "status",
+      "nome": "Incontri Propizi",
+      "parti": [
+       3
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4abd2486c16c",
+   "ruolo": "risultato",
+   "testo": "[i]Arev perde tutto il {i:terror} e ottiene 1 {r:Esp}; ottenete la parte 1 dello status [b]“Incontri Propizi”[/b].\nPoi, scegliere una tra:[/i]",
+   "contesto": "Luogo 120 verso 12, scelta: Se [b]non avete[/b] la parte 1 dello status[b] “Incontri Propizi”[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Arev perde tutto il {i:terror} e ottiene 1 {r:Esp}."
+     },
+     {
+      "tipo": "status",
+      "nome": "Incontri Propizi",
+      "parti": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:d43ea9711d6c",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 1 dello status [b]“Abbandonati”[/b]. Ottenete la parte 7 dello status [b]“Confronti Finali”[/b]. Ottenete la carta Segreto[b] “Coloni Speranzosi” (33)[/b], poi piazzare un Gettone Cerca su di essa.\n\n[b]Nuovo Compito:[/b] guidare gli abitanti di Cuanacht a un luogo sicuro in Avalon.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 121 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "status",
+      "nome": "Abbandonati",
+      "parti": [
+       1
+      ]
+     },
+     {
+      "tipo": "status",
+      "nome": "Confronti Finali",
+      "parti": [
+       7
+      ]
+     },
+     {
+      "tipo": "segreto",
+      "n": 33,
+      "nome": "Coloni Speranzosi"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Piazzare un Gettone Cerca sulla carta Segreto 33 (\"Coloni Speranzosi\")."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Nuovo Compito: guidare gli abitanti di Cuanacht a un luogo sicuro in Avalon."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:dfe656f34f6d",
+   "ruolo": "risultato",
+   "testo": "Mettete il piede su di una pietra coperta di alghe, scivolando nelle profondità del bacino. Dopo mezzo minuto di puro terrore, finite sul fondo del lago, contusi e sfiniti.\n\n[i]Ogni membro della Compagnia perde 6 {i:health}. I Personaggi possono ridurre la perdita di 1 punto per ogni punto della loro {i:practicality}, e di ulteriori 2 punti se [b]hanno[/b] l’Oggetto [b]“Kit dell’Avventuriero”[/b].[/i]",
+   "contesto": "Luogo 122 verso 1, scelta: Il vostro risultato è stato: 1-6",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia perde 6 {i:health}, ridotte di 1 per ogni punto della propria {i:practicality} e di ulteriori 2 se ha l'Oggetto \"Kit dell'Avventuriero\"."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:fa91854bf8fa",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia con {i:spirituality} 1 o più ottiene 1{i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 3, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia con {i:spirituality} 1 o più ottiene 1 {i:terror}."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:e8bcba8f40fe",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete l’Oggetto [b]“Spada Runica”[/b] (se non è disponibile, ottenete invece 6 {r:Magia}).\n\nCiascun membro della Compagnia ottiene 2 {r:Esp}. Ottenete la parte 5 dello status [b]“Fato della Spedizione”[/b].[/i]",
+   "contesto": "Luogo 122 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "L'Oggetto \"Spada Runica\" è disponibile"
+      },
+      "allora": [
+       {
+        "tipo": "oggetto",
+        "modo": "nome",
+        "n": 1,
+        "nome": "Spada Runica"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "risorsa",
+        "ris": "magia",
+        "n": 6,
+        "chi": "diviso"
+       }
+      ]
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "status",
+      "nome": "Fato della Spedizione",
+      "parti": [
+       5
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:1d68b8178e6d",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete l’Oggetto [b]“Spada Runica”[/b] (se non è disponibile, ottenete invece 6 {r:Magia}). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 122 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "L'Oggetto \"Spada Runica\" è disponibile"
+      },
+      "allora": [
+       {
+        "tipo": "oggetto",
+        "modo": "nome",
+        "n": 1,
+        "nome": "Spada Runica"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "risorsa",
+        "ris": "magia",
+        "n": 6,
+        "chi": "diviso"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:3a0933058054",
+   "ruolo": "risultato",
+   "testo": "[i]Rimuovere tutti i Gettoni Cerca da questo Luogo.[/i]",
+   "contesto": "Luogo 126 verso 3, scelta: [b]Entrare nei resti della Grande Sala[/b] - [i]Richiede almeno 3 Gettoni Cerca su questo Luogo[/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovere tutti i Gettoni Cerca da questo Luogo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:906c9d828450",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]“Attrezzi dello Scultore” (58) e 1 Oggetto casuale non Compagno. L’Esplorazione termina.[/i][/b]",
+   "contesto": "Luogo 126 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "segreto",
+      "n": 58,
+      "nome": "Attrezzi dello Scultore"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 1 Oggetto casuale non Compagno."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7bcd9eff6829",
+   "ruolo": "risultato",
+   "testo": "[i] Ottenete 1 Oggetto casuale non Compagno. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 126 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 1 Oggetto casuale non Compagno."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:7bd7eed0a66a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se vincete o riuscite a Evitare l’Incontro[/i]",
+   "contesto": "Luogo 131 verso 3, scelta: Verificare il risultato.",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Siete riusciti a Evitare l'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:789ee12cdb06",
+   "ruolo": "risultato",
+   "testo": "[i]Invece di applicare il risultato Fallimento della carta, muovere tutti i membri della Compagnia verso il Luogo dal numero più basso collegato a Timberwall. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 3, scelta: Verificare il risultato.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Non applicare il risultato Fallimento della carta Incontro."
+     },
+     {
+      "tipo": "muovi",
+      "dove": "collegato_a:131",
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:abbde98ecbce",
+   "ruolo": "risultato",
+   "testo": "[i]Mescolare quelle avanzate nel mazzo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Comprare equipaggiamento[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Rimescolare nel mazzo gli Oggetti pescati e non acquistati."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:4b9fb29ad60f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scartare un qualsiasi quantitativo di carte Oggetto e ottenere 1 {r:Ricchezza} per ciascuna di esse.[/i]",
+   "contesto": "Luogo 131 verso 10, scelta: [b]Vendere equipaggiamento[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartare un qualsiasi numero di carte Oggetto e ottenere 1 {r:Ricchezza} per ciascuna di esse."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:2d09ded2534f",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il consenso di tutti i giocatori; conclude il Capitolo in corso[/i]",
+   "contesto": "Luogo 131 verso 14, scelta: [b]Accettare[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Consenso di tutti i giocatori (conclude il Capitolo in corso)"
+    }
+   }
+  },
+  {
+   "chiave": "q:1c4b6a6ad317",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede [b]tutti i Personaggi[/b] e la carta Evento [b]Capitolo 7: parte 2[/b][/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Seguire le indicazioni di Orrin[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "La carta Evento \"Capitolo 7: parte 2\" è in gioco"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:6031430bce5c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]solo se non c’è un Gettone Tempo su questo Luogo[/i]",
+   "contesto": "Luogo 131 verso 18, scelta: [b]Mangiare a sazietà e andarsene[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Non c'è un Gettone Tempo su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "q:3ee8e8c34874",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 4B: parte 4[/b][/i]",
+   "contesto": "Luogo 133 verso 4, scelta: [b]Chiedere ad Amergin di aiutarvi a trovare il Graal[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "capitolo",
+       "da": 4,
+       "a": 4,
+       "lettera": "B"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "La Cerca attiva è il Capitolo 4B: parte 4"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:40a217854a36",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto [b]65[/b] con il Quadrante messo sul 5[/i]",
+   "contesto": "Luogo 133 verso 4, scelta: [b]Dirgli che avete accumulato potere sufficiente[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "segreto",
+       "n": 65
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Quadrante della carta Segreto 65 è sul 5"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:72e7168892aa",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia può pagare 2{r:Esp} e poi pagare 3 {r:Cibo} o 3 {r:Ricchezza} o 3 {r:Magia} per scartare una delle sue Abilità di un Attributo a sua scelta e ottenere una nuova Abilità per lo stesso Attributo.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 133 verso 14, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Non cambiare Abilità",
+        "effetti": []
+       },
+       {
+        "testo": "2 Esp e 3 Cibo",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "esp",
+          "n": 2,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "paga",
+          "ris": "cibo",
+          "n": 3,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "manuale",
+          "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+         }
+        ]
+       },
+       {
+        "testo": "2 Esp e 3 Ricchezza",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "esp",
+          "n": 2,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "paga",
+          "ris": "ricchezza",
+          "n": 3,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "manuale",
+          "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+         }
+        ]
+       },
+       {
+        "testo": "2 Esp e 3 Magia",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "esp",
+          "n": 2,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 3,
+          "chi": "attivo"
+         },
+         {
+          "tipo": "manuale",
+          "testo": "Scarta una delle tue Abilità di un Attributo a tua scelta e ottieni una nuova Abilità per lo stesso Attributo."
+         }
+        ]
+       }
+      ],
+      "chi": "ognuno"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "s:b9136e8be248",
+   "ruolo": "menhir",
+   "testo": "Richiede [b]tutti i Personaggi[/b] e la carta Segreto [b]Riti del Menhir[/b] e la [b]miniatura Menhir[/b] su questo Luogo.\n\nPagare 1 {i:energy}, 2 {r:Magia} e 1 {r:Ricchezza} (per giocatore): posizionare il Quadrante del Menhir su [b]7[/b] (-1 per giocatore).",
+   "contesto": "Luogo 134",
+   "codifica_attuale": {
+    "menhir": {
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "segreto",
+        "n": 11
+       },
+       {
+        "tipo": "manuale",
+        "testo": "C'è la miniatura Menhir su questo Luogo"
+       }
+      ]
+     },
+     "costo": [
+      {
+       "tipo": "ripeti",
+       "per": {
+        "giocatori": true
+       },
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ],
+     "quadrante": 7,
+     "meno_per_giocatore": true,
+     "effetti": []
+    }
+   }
+  },
+  {
+   "chiave": "q:747faa0ba10d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se su questa carta Luogo c’è una miniatura Menhir[/i]",
+   "contesto": "Luogo 134 verso 0, scelta: [b]Trascinare il Menhir a Bundorca[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è una miniatura Menhir su questa carta Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "q:df1380c090f5",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se non avete nessuna parte dello status [b]“Menhir Errante”[/b], e [b]c’è[/b] una miniatura Menhir nel [b]Luogo 135, Bundorca[/b].[/i]",
+   "contesto": "Luogo 134 verso 0, scelta: [b]Avviare le trattative[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Menhir Errante",
+        "parti": []
+       }
+      },
+      {
+       "tipo": "manuale",
+       "testo": "C'è una miniatura Menhir nel Luogo 135, Bundorca"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:ca5c76115936",
+   "ruolo": "risultato",
+   "testo": "Scendete le scale ed entrate in una piccola cantina. Il soffitto si piega stranamente verso di voi – come se seguisse i vostri spostamenti. Afferrate rapidamente tutto ciò che potete e scappate. Uno degli oggetti sembra particolarmente intrigante. Lo ridarete al suo proprietario, vero?\n\n[i]Ottenete due Oggetti non Compagno o ciascun membro della Compagnia ottiene 1 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 134 verso 2, scelta: Il tuo risultato è stato: 8+",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Due Oggetti non Compagno",
+        "effetti": [
+         {
+          "tipo": "oggetto",
+          "modo": "casuale",
+          "n": 2
+         },
+         {
+          "tipo": "manuale",
+          "testo": "Gli Oggetti devono essere non Compagno: rimettete i Compagni pescati e pescatene altri."
+         }
+        ]
+       },
+       {
+        "testo": "Ogni membro ottiene 1 Rep",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "rep",
+          "n": 1,
+          "chi": "compagnia"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:8233c5ddfb27",
+   "ruolo": "risultato",
+   "testo": "[i]Aggiungere il Luogo [b]114[/b] in fondo a questa carta e piazzare lì i membri della Compagnia, purché il Luogo [b]114 [/b] sia a portata di un Menhir attivo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 134 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 114, aggiunto in fondo a questa carta, è a portata di un Menhir attivo"
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 114
+       },
+       {
+        "tipo": "muovi",
+        "dove": 114,
+        "chi": "compagnia"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:bd4d97f933d1",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se c’è la miniatura di un Menhir nel [b]Luogo 135[/b], Bundorca[/i]",
+   "contesto": "Luogo 134 verso 7, scelta: [b]Accompagnare gli uomini a Bundorca.[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è la miniatura di un Menhir nel Luogo 135, Bundorca"
+    }
+   }
+  },
+  {
+   "chiave": "r:0b6bdc6f3a19",
+   "ruolo": "risultato",
+   "testo": "Andare a Bundorca ([b]135[/b]) sul Diario di Esplorazione. Potete Attivare il Menhir di Bundorca (solo se non c’è la miniatura di un Menhir a Falfuar) – in tal caso, piazzare il Luogo [b]135[/b] alla destra della carta Luogo Falfuar, e piazzarvi sopra la miniatura Menhir.\n\n[b]Non muovere[/b] le miniature dei Personaggi – prima che questa Esplorazione termini, tornerete a Falfuar.",
+   "contesto": "Luogo 134 verso 10, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Potete Attivare il Menhir di Bundorca (solo se non c'è la miniatura di un Menhir a Falfuar): in tal caso piazzate il Luogo 135 alla destra della carta Luogo Falfuar e piazzatevi sopra la miniatura Menhir."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Non muovete le miniature dei Personaggi: prima che questa Esplorazione termini tornerete a Falfuar."
+     },
+     {
+      "tipo": "diario",
+      "luogo": 135
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:b6e61306f7b2",
+   "ruolo": "risultato",
+   "testo": "[i]Muovere la miniatura Menhir e le miniature dei membri della Compagnia sulla carta Luogo [b]135[/b], Bundorca, L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 134 verso 11, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Muovete la miniatura Menhir sulla carta Luogo 135, Bundorca."
+     },
+     {
+      "tipo": "muovi",
+      "dove": 135,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:686d5a86ad3e",
+   "ruolo": "risultato",
+   "testo": "[i]Andare alla sezione Menhir di Bundorca nel Diario di Esplorazione.[/i]",
+   "contesto": "Luogo 135 verso 0, scelta: [b]Ispezionare il Menhir[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Andate alla sezione Menhir di Bundorca (135) nel Diario di Esplorazione."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:dfda69abead6",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se [b]non avete[/b] nessuna parte dello status [b]“Menhir Errante”[/b], e c’è una miniatura Menhir in questo Luogo[/i]",
+   "contesto": "Luogo 135 verso 0, scelta: [b]Avviare le trattative[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "non": {
+        "tipo": "status",
+        "nome": "Menhir Errante",
+        "parti": []
+       }
+      },
+      {
+       "tipo": "manuale",
+       "testo": "C'è una miniatura Menhir in questo Luogo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:6aa2476d3a6a",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia che [b]non ha[/b] alcuna {r:Magia} ottiene 1 {r:Magia}.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 135 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia che non ha alcuna Magia ottiene 1 Magia."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:85c859592b5f",
+   "ruolo": "risultato",
+   "testo": "[i]Poi, muovere la miniatura Menhir al Luogo [b]134[/b], Falfuar (o [b]147[/b], se il Luogo [b]134[/b] è stato rimosso dal gioco) e muovere tutti i membri della Compagnia in quel Luogo. \nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 135 verso 8, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Muovete la miniatura Menhir al Luogo 134, Falfuar (o al 147, se il Luogo 134 è stato rimosso dal gioco)."
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "luogo_rivelato",
+       "n": 134
+      },
+      "allora": [
+       {
+        "tipo": "muovi",
+        "dove": 134,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "muovi",
+        "dove": 147,
+        "chi": "compagnia"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:69f2bf15a3b8",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare carte Oggetto finché non si pesca un Compagno non animale. Prendere questo Compagno e rimescolare le altre carte nel mazzo Oggetti. \nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 136 verso 1, scelta: [b]Il viaggiatore acquista la libertà di un prigioniero[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 1,
+      "parola": "Compagno"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Compagno deve essere non animale: pescate carte Oggetto finché non pescate un Compagno non animale, tenetelo e rimescolate le altre nel mazzo Oggetti."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:839b5d6e7299",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Solo se la vostra Cerca Attiva è il [b]Capitolo 7: parte 2[/b][/i]",
+   "contesto": "Luogo 137 verso 1, scelta: [b]Seguire le indicazioni di Orrin[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "capitolo",
+       "da": 7,
+       "a": 7
+      },
+      {
+       "tipo": "manuale",
+       "testo": "La vostra Cerca Attiva è il Capitolo 7: parte 2"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:3817dbd8ac14",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]vincete[/b] (o pescate [b]“Calma Prima della Tempesta”[/b])[/i]",
+   "contesto": "Luogo 138 verso 3, scelta: [b]Dare una mano[/b] – Ci sono delle questioni delicate a cui potreste prestarvi per sostenere la loro causa.  [i]Pescare e risolvere un Incontro blu. [/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete pescato l'Incontro “Calma Prima della Tempesta”"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:1dbd1dcd522a",
+   "ruolo": "risultato",
+   "testo": "[i]Aggiungere 1 spunta allo status [b]“Aiutare i Cavalieri”[/b]. Poi, prendere un’altra scelta..[/i]",
+   "contesto": "Luogo 138 verso 3, scelta: [b]Consiglio tattico[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Aiutare i Cavalieri”."
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:acff670a48b7",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]vincete[/b] (o pescate[b] “Calma Prima della Tempesta”[/b])",
+   "contesto": "Luogo 138 verso 6, scelta: [b]Dare una mano[/b] - Ci sono delle questioni delicate a cui potreste prestarvi per sostenere la loro causa.[i]Pescare e risolvere un Incontro blu.[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete pescato l'Incontro “Calma Prima della Tempesta”"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:b758485cfe6c",
+   "ruolo": "risultato",
+   "testo": "[i]Aggiungere 1 spunta allo status [b]“Sostenere la Rivolta”[/b]. Poi, prendere un’altra scelta.[/i]",
+   "contesto": "Luogo 138 verso 6, scelta: [b]Consiglio militare[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Sostenere la Rivolta”."
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:57df47534d69",
+   "ruolo": "risultato",
+   "testo": "Add 1 mark to the [b]“Supplying the Revolt”[/b] status on your Save Sheet. Exploration ends.",
+   "contesto": "Luogo 138 verso 7, scelta: [i]Aggiungere 1 spunta allo status [b]“Sostenere la Rivolta”[/b] sulla vostra Scheda Salvataggio.[/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Sostenere la Rivolta” sulla Scheda Salvataggio."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:6b5c3b8ab932",
+   "ruolo": "risultato",
+   "testo": "Add 1 mark to the [b]“Helping the Knights”[/b] status on your Save Sheet.  Exploration ends.",
+   "contesto": "Luogo 138 verso 8, scelta: [i]Aggiungere 1 spunta allo status [b]“Aiutare i Cavalieri”[/b] sulla vostra Scheda Salvataggio.[/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Aiutare i Cavalieri” sulla Scheda Salvataggio."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:cf962de28c29",
+   "ruolo": "risultato",
+   "testo": "Vi trovate in un luogo pericoloso. Gli sfortunati avventurieri, di cui avete appena ritrovato i cadaveri, lo hanno imparato a loro spese. Perlomeno una parte del loro equipaggiamento sembra ancora utilizzabile... \n\n[i]Ottenete 1 Oggetto non Compagno casuale, 1 {r:Ricchezza}, e la parte 8 dello status [b]“Tesori Nascosti” [/b][/i]",
+   "contesto": "Luogo 139 verso 2, scelta: Il vostro risultato è stato: 7",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 1
+     },
+     {
+      "tipo": "manuale",
+      "testo": "L'Oggetto deve essere non Compagno: se pescate un Compagno rimettetelo e pescatene un altro."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "status",
+      "nome": "Tesori Nascosti",
+      "parti": [
+       8
+      ],
+      "rimuovi": false
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:9ce5411a72b0",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la parte 4 dello status [b]“Mistero Scottante”[/b] e la parte 7 dello status [b]“Sogni e Profezie”[/b].\n\nOgni membro della Compagnia con meno di 4 {i:terror} muove il suo segnalino a 4 {i:terror}. Poi ottenete 4 {r:Magia} per ogni punto di {i:terror} ottenuto. \n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 139 verso 6, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "status",
+      "nome": "Mistero Scottante",
+      "parti": [
+       4
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "status",
+      "nome": "Sogni e Profezie",
+      "parti": [
+       7
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia con meno di 4 Terrore porta il suo Terrore a 4; poi ottenete 4 Magia per ogni punto di Terrore così ottenuto."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:546303f1b04d",
+   "ruolo": "risultato",
+   "testo": "[i]Potete pagare 2{r:Ricchezza} o scartare un Oggetto non Artigianale per ottenere la parte 1 dello status [b]“Alleati di Avalon”[/b].\n\nPoi, dovete Passare per il resto della giornata. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 140 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "scelta",
+      "opzioni": [
+       {
+        "testo": "Non pagare",
+        "effetti": []
+       },
+       {
+        "testo": "Pagare 2 Ricchezza",
+        "effetti": [
+         {
+          "tipo": "paga",
+          "ris": "ricchezza",
+          "n": 2,
+          "chi": "diviso"
+         },
+         {
+          "tipo": "status",
+          "nome": "Alleati di Avalon",
+          "parti": [
+           1
+          ],
+          "rimuovi": false
+         }
+        ]
+       },
+       {
+        "testo": "Scartare un Oggetto non Artigianale",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Scartate un Oggetto non Artigianale (non fabbricabile)."
+         },
+         {
+          "tipo": "status",
+          "nome": "Alleati di Avalon",
+          "parti": [
+           1
+          ],
+          "rimuovi": false
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:c46a3fb26921",
+   "ruolo": "condizione",
+   "testo": "Se lo [b]vincete[/b] (o pescate un Incontro [b]“Calma Prima della Tempesta[/b]”) o [b]avete[/b] la parte 1 dello status[b] “Alleati di Avalon”[/b]",
+   "contesto": "Luogo 140 verso 3: Arrivate in un piccolo villaggio che si erge al di sopra della superficie della palude in quanto formato da palafitte. Tossendo, gli infermi uomini della palude",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete pescato l'Incontro “Calma Prima della Tempesta”"
+      },
+      {
+       "tipo": "status",
+       "nome": "Alleati di Avalon",
+       "parti": [
+        1
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:17d35ca93841",
+   "ruolo": "risultato",
+   "testo": "Vagate a lungo per il Pantano Nero, ma non trovate nulla di interessante. Sulla via del ritorno, vi sentite frastornati. Deve essere per colpa dei fumi tossici dell’acquitrino. Poco dopo, perdete i sensi e sprofondate in visioni malevole.\n\n[i]Ogni membro della Compagnia deve Passare per il resto della giornata. Quando si riposa, leggere l’Incubo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 140 verso 8, scelta: Il vostro risultato è stato: 4-5",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Quando riposate, leggete l'Incubo di questo Luogo (invece del Sogno)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:d2dd89b3ac30",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia che abbia 1 {i:caution} o meno perde 1 {i:health}.\n\nAggiungere il Luogo [b]138[/b] in cima a questa carta (purché resti a portata di un Menhir attivo). Se il Luogo [b]138[/b] non è più disponibile, aggiungere al suo posto il Luogo [b]142[/b]. Piazzare tutte le miniature dei membri della Compagnia sul Luogo aggiunto.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 140 verso 12, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia che abbia 1 Cautela o meno perde 1 Salute."
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 138 è ancora disponibile (altrimenti si usa il Luogo 142)"
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 138
+       },
+       {
+        "tipo": "muovi",
+        "dove": 138,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 142
+       },
+       {
+        "tipo": "muovi",
+        "dove": 142,
+        "chi": "compagnia"
+       }
+      ]
+     },
+     {
+      "tipo": "nota",
+      "testo": "Il Luogo va aggiunto in cima a questa carta, purché resti a portata di un Menhir attivo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:133779935f17",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare le 2 carte in cima al mazzo Oggetti. Ne potete comprare quante ne volete al costo di 2 {r:Magia} ciascuna. Altrimenti, rimescolarle nel mazzo. Poi, l’Esplorazione termina..[/i]",
+   "contesto": "Luogo 141 verso 2, scelta: [i]Vedere se ha qualcosa da vendere[/i] – Orrin accetta solo ninnoli magici come pagamento.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescate le 2 carte in cima al mazzo Oggetti: potete comprarne quante volete al costo di 2 Magia ciascuna; rimescolate le altre nel mazzo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:9b4f0c11f760",
+   "ruolo": "risultato",
+   "testo": "[i]Se [b]non avete[/b] quattro spunte sullo status [b]“Sostenere la Rivolta”[/b], ogni membro della Compagnia ottiene 1 {i:terror} e 1 {r:Esp}. Ottenete una spunta sullo status [b]“Sostenere la Rivolta”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 142 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Non avete quattro spunte sullo status “Sostenere la Rivolta”"
+      },
+      "allora": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 1,
+        "chi": "compagnia"
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1,
+        "chi": "compagnia"
+       }
+      ]
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Sostenere la Rivolta”."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:946257ea651e",
+   "ruolo": "risultato",
+   "testo": "[i]Se [b]non avete[/b] quattro spunte sullo status [b]“Aiutare i Cavalieri”[/b], ogni membro della Compagnia ottiene 1 {i:terror} e 1 {r:Esp}. Ottenete una spunta sullo status [b]“Aiutare i Cavalieri”[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 142 verso 4, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Non avete quattro spunte sullo status “Aiutare i Cavalieri”"
+      },
+      "allora": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 1,
+        "chi": "compagnia"
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1,
+        "chi": "compagnia"
+       }
+      ]
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Aiutare i Cavalieri”."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4893c82a0176",
+   "ruolo": "risultato",
+   "testo": "[i]Se il Pantano Nero ([b]140[/b]) è stato rivelato, piazzare lì le miniature dei membri della Compagnia. Altrimenti, aggiungere il Luogo [b]140[/b] in fondo a questa carta e piazzare lì le miniature dei membri della Compagnia, purché il Luogo [b]140[/b] sia a portata di un Menhir attivo. Poi, ogni membro della Compagnia che abbia meno di 2 {i:courage} ottiene 1 {i:terror}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 142 verso 6, scelta: [b]Calarsi nel Pantano Nero[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "luogo_rivelato",
+       "n": 140
+      },
+      "allora": [
+       {
+        "tipo": "muovi",
+        "dove": 140,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "Il Luogo 140, aggiunto in fondo a questa carta, è a portata di un Menhir attivo"
+        },
+        "allora": [
+         {
+          "tipo": "luogo",
+          "azione": "prepara",
+          "n": 140
+         },
+         {
+          "tipo": "muovi",
+          "dove": 140,
+          "chi": "compagnia"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia che abbia meno di 2 Coraggio ottiene 1 Terrore."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:3c58b3a1f928",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pescare 3 carte Oggetto. Potete comprarne un qualsiasi quantitativo al costo di 2 {r:Ricchezza} ciascuna. Altrimenti, rimescolatele nel mazzo.[/i]",
+   "contesto": "Luogo 142 verso 7, scelta: [b]Girare per i banchi[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescate 3 carte Oggetto: potete comprarne quante volete al costo di 2 Ricchezza ciascuna; rimescolate le altre nel mazzo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:08758c7bbd2e",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare un qualsiasi numero di carte Oggetto e ottenere 1 {r:Ricchezza} per ciascuna di esse. Mescolare il mazzo Oggetti. Poi, prendere un’altra scelta.[/i]",
+   "contesto": "Luogo 142 verso 7, scelta: [b]Vendere equipaggiamento[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartate un qualsiasi numero di Oggetti e ottenete 1 Ricchezza per ciascuno; poi mescolate il mazzo Oggetti."
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "s:f74c4752c8d8",
+   "ruolo": "menhir",
+   "testo": "Questa sezione è disponibile solo se su questa carta Luogo c’è una miniatura Menhir!\n\nRichiede [b]tutti i Personaggi[/b] e la carta Segreto [b]Riti del Menhir[/b]. \n\nPagare 2 {r:Magia}, 2 {i:energy} e 1 {r:Ricchezza} (per giocatore): posizionare il quadrante del Menhir a [b]7 [/b](-1 per giocatore).\n\nSe non restano miniature sufficienti, prendetene una da un altro Luogo a vostra scelta.",
+   "contesto": "Luogo 147",
+   "codifica_attuale": {
+    "menhir": {
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "manuale",
+        "testo": "C'è una miniatura Menhir su questa carta Luogo"
+       },
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "segreto",
+        "n": 11
+       }
+      ]
+     },
+     "costo": [
+      {
+       "tipo": "ripeti",
+       "per": {
+        "giocatori": true
+       },
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "diviso"
+        }
+       ]
+      }
+     ],
+     "quadrante": 7,
+     "meno_per_giocatore": true,
+     "effetti": [
+      {
+       "tipo": "nota",
+       "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

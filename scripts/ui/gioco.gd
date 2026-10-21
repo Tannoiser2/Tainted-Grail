@@ -27,6 +27,13 @@ func _ready() -> void:
 	domande = Domande.new()
 	add_child(domande)
 	domande.incontro = _incontro_richiesto
+	# una domanda nasconde la finestra di messaggio sotto (la si rivede dopo la risposta)
+	domande.aperta.connect(func():
+		if is_instance_valid(_modale):
+			_modale.visible = false)
+	domande.chiusa.connect(func():
+		if is_instance_valid(_modale):
+			_modale.visible = true)
 	domande.diario = func(l, v):
 		if partita.diario.apri_numero(l, v):
 			_apri_diario()
@@ -185,7 +192,6 @@ func _aggiorna_azioni() -> void:
 		_azione("CARTE (%d)" % usabili.size(), _usa_carte, true, "Oggetti, Segreti e Abilità con un'azione o usabili in qualsiasi momento")
 	if not partita.d.get("cerche", []).is_empty():
 		_azione("CERCHE", _mostra_cerche, true, "Cerche attive e loro condizioni di successo")
-	_azione("INCONTRO", _incontro_manuale, true, "Pesca un Incontro di un colore (quando il Diario o una carta lo chiedono)")
 	var f := Control.new()
 	f.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	_azioni.add_child(f)
@@ -468,8 +474,11 @@ func _attiva_menhir_auto(n: int, am: Dictionary) -> void:
 	var q := int(am.get("quadrante", 8))
 	if am.get("meno_per_giocatore", false):
 		q -= partita.personaggi().size() - 1
+	for m in partita.modificatori("costo_menhir", partita.attivo()):
+		await it.esegui([{"tipo": "paga", "ris": str(m.get("ris", "magia")), "n": int(m.get("n", 1)), "chi": "diviso"}])
 	partita.attiva_menhir(n, maxi(1, q))
 	await it.esegui(am.get("effetti", []))
+	await _scatena("attiva_menhir")
 	_riassunto(it.rapporto)
 	_dopo_azione()
 
@@ -534,9 +543,11 @@ func _incontro_carta(img: String, colore: String) -> String:
 	if colore == "":
 		colore = str(Carte.dati(img).get("colore", "grigio"))
 	await _scatena("pesca_incontro")
+	partita.d["ultimo_incontro"] = img
 	var fi := FinestraIncontro.new(partita, img, colore, domande)
 	_ui.add_child(fi)
 	var esito: String = await fi.finito
+	partita.d["esito_incontro"] = esito
 	_aggiorna()
 	return esito
 
@@ -695,17 +706,11 @@ func _controlla_capitolo() -> void:
 
 func _mostra_cerche() -> void:
 	var cerche: Array = partita.d.get("cerche", [])
-	var nomi := []
+	var t := ""
 	for img in cerche:
-		nomi.append(Carte.nome(str(img)) + " — " + Dati.testo_leggibile(str(Carte.dati(str(img)).get("cerca", {}).get("it", ""))))
-	nomi.append("Chiudi")
-	var k := await domande.scegli("Cerche attive (scegline una per segnarla come completata se il gioco non può verificarla da solo)", nomi)
-	if k >= cerche.size():
-		return
-	if await domande.scegli("Segnare come completata \"%s\"?" % Carte.nome(str(cerche[k])), ["Sì, applica il Successo", "No"]) == 0:
-		await _completa_cerca(str(cerche[k]))
-		await _controlla_capitolo()
-		_aggiorna()
+		t += "[b]%s[/b]\n%s\n\n" % [Carte.nome(str(img)), str(Carte.dati(str(img)).get("cerca", {}).get("it", ""))]
+	t += "[color=#b9a98a]Le Cerche si completano da sole quando ne raggiungete l'obiettivo (dal Diario o dalle carte).[/color]"
+	_messaggio("Cerche attive", t)
 
 ## Effetti in coda (Incontri chiesti dal Diario o dalle carte).
 func _controlla_richieste() -> void:
@@ -734,6 +739,14 @@ func _inizio_giornata() -> void:
 	elif t != "":
 		_messaggio("Inizio della Giornata %d" % int(partita.d["giorno"]), t)
 	await _scatena("inizio_giornata")
+	# rimando del Diario: si riprende dal verso indicato
+	var rim = partita.d.get("rimando")
+	if rim is Dictionary:
+		partita.d.erase("rimando")
+		await _domanda_avviso("Diario", "Il Diario vi aveva rimandato qui all'Inizio della Giornata: si riprende dal Luogo %d." % int(rim.get("luogo", 0)))
+		if partita.diario.apri_numero(int(rim.get("luogo", 0)), int(rim.get("verso", -1))):
+			partita.diario.stato["rimando"] = true
+			_apri_diario()
 	# Guardiani arrivati dove ci sono i Personaggi
 	for g in giornata.guardiani_con_personaggi():
 		await _domanda_avviso("Guardiano", "Il Guardiano %s raggiunge il Luogo %d: Incontro!" % [Carte.nome(str(g["img"])), int(g["luogo"])])

@@ -350,7 +350,7 @@ func quadrante_iniziale(base := 8) -> int:
 
 ## --- Oggetti --------------------------------------------------------------------------
 
-func pesca_oggetto(fabbricabile := false, x: Dictionary = {}, parola := "") -> String:
+func pesca_oggetto(fabbricabile := false, x: Dictionary = {}, parola := "", escludi := "") -> String:
 	if x.is_empty():
 		x = attivo()
 	var m: Array = d["mazzi"].get_or_add("oggetti", [])
@@ -358,7 +358,10 @@ func pesca_oggetto(fabbricabile := false, x: Dictionary = {}, parola := "") -> S
 		var img: String = m[i]
 		if fabbricabile and not (Carte.dati(img).get("fabbricabile", false) or Carte.auto(img).get("fabbricabile", false)):
 			continue
-		if parola != "" and str(Carte.auto(img).get("parola", Carte.dati(img).get("parola", ""))).to_lower() != parola.to_lower():
+		var pw := str(Carte.auto(img).get("parola", Carte.dati(img).get("parola", ""))).to_lower()
+		if parola != "" and pw != parola.to_lower():
+			continue
+		if escludi != "" and pw == escludi.to_lower():
 			continue
 		m.remove_at(i)
 		x["oggetti"].append(img)

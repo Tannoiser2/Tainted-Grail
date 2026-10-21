@@ -1,0 +1,6509 @@
+{
+ "carte": {
+  "carte/mazzo/34901.webp": {
+   "rivelato": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "chi": "tiro_piu_basso"
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34902.webp": {
+   "rivelato": [
+    {
+     "tipo": "guardiano",
+     "colore": "verde",
+     "luogo": "rivelato_numero_piu_basso"
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34903.webp": {
+   "rivelato": [
+    {
+     "tipo": "guardiano",
+     "colore": "grigio",
+     "luogo": "rivelato_numero_piu_basso"
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/34906.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": -1,
+       "primo": true
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_incontro",
+       "colore": "verde",
+       "n": 2,
+       "scegli": "minore"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "cerca": null,
+   "preparazione": null,
+   "copie_img": [
+    "carte/mazzo/34907.webp"
+   ]
+  },
+  "carte/mazzo/36803.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "menhir",
+      "luogo": 101,
+      "attivo": true
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "in_cima",
+       "questa": true
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "regola",
+       "nome": "Menhir e Anomalia",
+       "attiva": true
+      },
+      {
+       "tipo": "nota",
+       "testo": "L'Anomalia si avvicina! D'ora in poi chi è fuori dal raggio di un Menhir attivo perde 2 Salute e ottiene 2 Terrore a ogni Inizio della Giornata."
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "in_raggio_menhir",
+         "n": "qui"
+        }
+       },
+       "allora": [
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": -2
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": 2
+        }
+       ],
+       "chi": "ognuno"
+      },
+      {
+       "tipo": "evento",
+       "azione": "in_cima",
+       "questa": true
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36804.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "una": [
+      {
+       "tipo": "menhir",
+       "luogo": 106,
+       "attivo": true
+      },
+      {
+       "tipo": "menhir",
+       "luogo": 107,
+       "attivo": true
+      }
+     ]
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 1,
+      "parte": 6
+     },
+     {
+      "tipo": "evento",
+      "azione": "scarta_questo"
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36805.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "miglioramento",
+     "mazzo": "combattimento",
+     "n": 1,
+     "chi": "compagnia",
+     "gratuito": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_tutti"
+    },
+    {
+     "tipo": "evento",
+     "azione": "rimescola_casuali"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "completato"
+    },
+    {
+     "tipo": "capitolo",
+     "azione": "prepara",
+     "capitolo": 2
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36806.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 1,
+     "meno_per_giocatore": false
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Completa uno di questi obiettivi: indaga sul destino della prima spedizione (a ovest); raggiungi Camelot (190) e ottieni l'aiuto del suo sovrano; oppure trova un modo diverso per progredire nella storia."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36807.webp": {
+   "rivelato": [
+    {
+     "tipo": "miglioramento",
+     "mazzo": "diplomazia",
+     "n": 1,
+     "chi": "compagnia",
+     "gratuito": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Non lasciare che l'Anomalia ti circondi! Controlla sempre per prima cosa i Menhir vicini e tieni pronto un piano per attivarli quando necessario."
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36808.webp": {
+   "rivelato": [
+    {
+     "tipo": "status",
+     "nome": "Qualcuno Sta Osservando",
+     "prossima": true,
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Se in qualsiasi momento hai tutte e 4 le parti di «Qualcuno Sta Osservando», risolvi immediatamente l'Evento Speciale C."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Qualcuno Sta Osservando",
+      "parti": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "speciale",
+       "lettera": "C"
+      }
+     ]
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "questa": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36809.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Mostra il Graal Corrotto a Morgana a Camelot (190) o alla Dama Pallida al Lago Speculare (113)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36810.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Qualcuno Sta Osservando",
+     "prossima": true,
+     "parti": [],
+     "rimuovi": false
+    },
+    {
+     "tipo": "nota",
+     "testo": "Se in qualsiasi momento hai tutte e 4 le parti di «Qualcuno Sta Osservando», risolvi immediatamente l'Evento Speciale C."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "status",
+      "nome": "Qualcuno Sta Osservando",
+      "parti": [
+       1,
+       2,
+       3,
+       4
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "speciale",
+       "lettera": "C"
+      }
+     ]
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "questa": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36811.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "A"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Completa uno di questi obiettivi: recupera gli effetti personali di Morgana nella torre crollata delle Piane Scintillanti (157), oppure trova un modo per cambiare schieramento."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36812.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "A"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 5,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Completa uno di questi obiettivi: segui Erfyr fino alla Prima Tenuta Rurale (117) e verifica se ha il Vero Graal, oppure trova un modo per cambiare schieramento."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36813.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Completa uno di questi obiettivi: vai a Camelot (190) e parla con Lancillotto di Neante, oppure, mentre sei a Camelot (190), cambia schieramento."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36814.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 1,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Accettare un compito da uno degli alleati non significa che tu non possa lavorare anche per gli altri... almeno finché non fai qualcosa che provochi il loro odio."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Porta a termine il compito che ti ha affidato il tuo alleato (Lady Kincaid, Ultan o Sir Mordred)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36815.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "A"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_questo"
+    },
+    {
+     "tipo": "diario",
+     "luogo": 999,
+     "verso": 305
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36816.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "scarta_cima",
+     "n": 1
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "somma",
+       "termini": [
+        {
+         "ris": [
+          "ricchezza",
+          "cibo",
+          "magia"
+         ],
+         "chi": "tutti"
+        }
+       ],
+       "da": 5,
+       "a": 999,
+       "per_giocatori": true
+      }
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "in_cima",
+       "speciale": "H"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "somma",
+         "termini": [
+          {
+           "ris": [
+            "ricchezza",
+            "cibo",
+            "magia"
+           ],
+           "chi": "tutti"
+          }
+         ],
+         "da": 0,
+         "a": 10,
+         "per_giocatori": true
+        }
+       },
+       "allora": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "I"
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "A"
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Segui Neante fino alle Tombe dell'Ordine (154)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36817.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "somma",
+       "termini": [
+        {
+         "ris": [
+          "ricchezza",
+          "cibo",
+          "magia"
+         ],
+         "chi": "tutti"
+        }
+       ],
+       "da": 5,
+       "a": 999,
+       "per_giocatori": true
+      }
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "in_cima",
+       "speciale": "H"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "somma",
+         "termini": [
+          {
+           "ris": [
+            "ricchezza",
+            "cibo",
+            "magia"
+           ],
+           "chi": "tutti"
+          }
+         ],
+         "da": 0,
+         "a": 10,
+         "per_giocatori": true
+        }
+       },
+       "allora": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "I"
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "A"
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Porta il Graal Corrotto ad Amergin a Moonring (133)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36818.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: La Foresta si trova al confine tra la realtà umana e qualcosa di molto più antico. Rivelerà i suoi segreti soltanto a dei veri campioni."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Rintraccia Neante nella Foresta dei Sussurri (155) e ottieni il Vero Graal."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36819.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "A"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Devi portare messaggi a Timberwall (131), Crow's Nest (160) o Farshire (116), a seconda di chi sia il tuo alleato e di ciò che è accaduto nel Capitolo precedente."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "tipo": "status",
+     "nome": "Diplomatico",
+     "parti": [],
+     "almeno": 3
+    },
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 4,
+      "parte": 2,
+      "lettera": "B"
+     }
+    ]
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36820.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "evento:4B-2",
+     "valore": 3,
+     "gettone": "cerca",
+     "cala": "inizio_giornata",
+     "a_soglia": {
+      "valore": 1,
+      "effetti": [
+       {
+        "tipo": "luogo",
+        "azione": "sostituisci",
+        "vecchio": 152,
+        "nuovo": 158,
+        "trasferisci_menhir": true
+       },
+       {
+        "tipo": "quadrante",
+        "dove": "evento:4B-2",
+        "rimuovi": true
+       }
+      ]
+     }
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "capitolo": 4,
+     "parte": 3,
+     "lettera": "B"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Indizio: Un tradimento a sangue freddo potrebbe porre fine al conflitto più rapidamente, ma non sarà dimenticato facilmente..."
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Vai al Raduno di Halfway (158) quando sarà disponibile e concludi le trattative a nome del tuo alleato, oppure cambia alleato!"
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36821.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "somma",
+       "termini": [
+        {
+         "ris": [
+          "ricchezza",
+          "cibo",
+          "magia"
+         ],
+         "chi": "tutti"
+        }
+       ],
+       "da": 5,
+       "a": 999,
+       "per_giocatori": true
+      }
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "in_cima",
+       "speciale": "H"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "non": {
+         "tipo": "somma",
+         "termini": [
+          {
+           "ris": [
+            "ricchezza",
+            "cibo",
+            "magia"
+           ],
+           "chi": "tutti"
+          }
+         ],
+         "da": 0,
+         "a": 10,
+         "per_giocatori": true
+        }
+       },
+       "allora": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "I"
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "evento",
+         "azione": "in_cima",
+         "speciale": "A"
+        },
+        {
+         "tipo": "evento",
+         "azione": "casuali_in_cima",
+         "n": 7,
+         "meno_per_giocatore": true
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36822.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Localizza il Graal sfruttando il potere profetico di Amergin, arcidruido di Moonring (133)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36824.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "B"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "segreto",
+      "n": 8
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "risolvi_parte",
+       "capitolo": 5,
+       "parte": 3
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Recupera il Vero Graal da Fernsea (153)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36826.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Completa uno di questi obiettivi: chiedi a Orrin di guidarti a Tuathan (si trova a Punta Anomala, 141, a ovest di Stampede, 118), oppure trova il modo di entrare a Tuathan da solo."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36827.webp": {
+   "rivelato": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "miniatura",
+      "nome": "Predecessore",
+      "su_mappa": true
+     },
+     "allora": [
+      {
+       "tipo": "miniatura",
+       "nome": "Predecessore",
+       "luogo": "fuori_mappa"
+      },
+      {
+       "tipo": "quadrante",
+       "dove": "Predecessore",
+       "valore": 2,
+       "gettone": "tempo",
+       "cala": "inizio_giornata",
+       "a_soglia": {
+        "valore": 0,
+        "effetti": [
+         {
+          "tipo": "miniatura",
+          "nome": "Predecessore",
+          "luogo": "rivelato_numero_piu_basso"
+         },
+         {
+          "tipo": "quadrante",
+          "dove": "Predecessore",
+          "rimuovi": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "B"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36828.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "B"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 8,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": {
+     "una": [
+      {
+       "tipo": "status",
+       "nome": "Ripristinare l'Ordine",
+       "parti": [
+        8
+       ]
+      },
+      {
+       "tipo": "segreto",
+       "n": 19
+      }
+     ]
+    },
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 999,
+      "verso": 490
+     }
+    ],
+    "nota": "Altrimenti: trova un altro modo per entrare a Tuathan."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36829.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Entra a Tuathan attraverso la Sala del Re a Timberwall (131) o da Riverfall (156)."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36830.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 6,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Raggiungi il Cuore di Tuathan (185) e scoprine il segreto."
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36831.webp": {
+   "rivelato": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "D"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 2,
+     "meno_per_giocatore": false
+    }
+   ],
+   "giorno": [],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/mazzo/36832.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "D"
+    },
+    {
+     "tipo": "evento",
+     "azione": "casuali_in_cima",
+     "n": 7,
+     "meno_per_giocatore": true
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Esci da Tuathan!"
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/36833.webp": {
+   "rivelato": [
+    {
+     "tipo": "evento",
+     "azione": "cerca_attiva"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "evento",
+     "azione": "in_cima",
+     "speciale": "D"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 4,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 2,
+      "a": 2
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 3,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 3,
+      "a": 3
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 4,
+      "a": 4
+     },
+     "allora": [
+      {
+       "tipo": "evento",
+       "azione": "casuali_in_cima",
+       "n": 2,
+       "meno_per_giocatore": false
+      }
+     ]
+    }
+   ],
+   "giorno": [],
+   "cerca": {
+    "successo": null,
+    "effetti": [],
+    "nota": "Esci da Tuathan!"
+   },
+   "preparazione": null
+  },
+  "carte/mazzo/34909.webp": {
+   "rivelato": [],
+   "giorno": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_incontro",
+       "colore": "viola",
+       "n": 2,
+       "scegli": "maggiore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_incontro",
+       "colore": [
+        "verde",
+        "grigio"
+       ],
+       "sostituisci": "viola"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "niente_menhir_costo_magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "cerca": null,
+   "preparazione": null
+  },
+  "carte/4_encuentros_verdes/4_hada_36328.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 15,
+     "a": 19,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 3,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    },
+    {
+     "quando": "attacco_opportunita",
+     "effetti": [
+      {
+       "tipo": "senza_opportunita"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_blanco/36506.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "mercato",
+     "n": 3,
+     "prezzo": 2,
+     "prezzo_fabbricabile": 1,
+     "vendita": 1
+    }
+   ],
+   "inizio": []
+  },
+  "carte/2_encuentros_verdes/2_mercader_ambulante_36315.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "mercato",
+     "n": 3,
+     "prezzo": 2,
+     "prezzo_fabbricabile": 1,
+     "vendita": 1
+    }
+   ],
+   "inizio": []
+  },
+  "carte/2_encuentros_morado/36614.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [],
+   "bottino": [],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": null,
+   "effetto": [
+    {
+     "tipo": "mercato",
+     "n": 3,
+     "prezzo": 2,
+     "prezzo_fabbricabile": 1,
+     "vendita": 1
+    }
+   ],
+   "inizio": []
+  },
+  "carte/3_encuentros_morado/36622.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 12,
+     "a": 15,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "perdi_salute",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "min": 1,
+       "chi": "attivo"
+      }
+     }
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "max": true,
+      "chi": "attivo"
+     },
+     "ris": "terrore"
+    }
+   ],
+   "effetto": [],
+   "inizio": [],
+   "copie_img": [
+    "carte/3_encuentros_morado/36623.webp"
+   ]
+  },
+  "carte/3_encuentros_verdes/3_doncella_del_pantano_36318.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 7,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 8,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 14,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 4
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "perdi_salute",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "min": 1,
+       "chi": "attivo"
+      }
+     }
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 66,
+       "rimuovi": false
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "max": true,
+      "chi": "attivo"
+     },
+     "ris": "terrore"
+    }
+   ],
+   "effetto": [],
+   "inizio": [],
+   "copie_img": [
+    "carte/3_encuentros_verdes/3_doncella_del_pantano_36319.webp"
+   ]
+  },
+  "carte/4_encuentros_morado/36629.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 4,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 5,
+     "a": 10,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 11,
+     "a": 17,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "da": 18,
+     "a": 21,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -4
+      }
+     ]
+    },
+    {
+     "da": 22,
+     "a": 24,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 5
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 2
+    },
+    {
+     "tipo": "scarta_carte",
+     "n": 1,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 3,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 5,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "solo_abilita",
+       "attr": "spirituality"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_azul/36407.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola"
+    }
+   ],
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": "Avanza attraverso l'anomalia",
+     "prova": {
+      "attributo": "spirituality",
+      "minimo": 4
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "spirituality",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 3,
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "da": 4,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "Evita attenzioni inutili",
+     "prova": {
+      "attributo": "caution",
+      "minimo": 3
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "caution",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 2,
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "da": 3,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/3_encuentros_azul/36424.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "imposta",
+     "ris": "ricchezza",
+     "n": 0,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "scarta_casuale",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "evitare": {
+    "condizione": null,
+    "costo": [
+     {
+      "tipo": "imposta",
+      "ris": "ricchezza",
+      "n": 0,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "scarta_casuale",
+      "n": 1,
+      "chi": "compagnia"
+     }
+    ]
+   },
+   "fasi": [
+    {
+     "nome": "Cattura i ladri",
+     "speciale": {
+      "caution": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     "risposta": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_carte",
+       "n": 1,
+       "da": "mano"
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/4_encuentros_azul/36429.webp": {
+   "tabella": [],
+   "opportunita": [],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "muovi",
+     "dove": "collegato_scelto",
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [],
+   "fallimento": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "nome": "Predecessore"
+    }
+   ],
+   "evitare": null,
+   "fasi": [
+    {
+     "nome": "Trova il tuo inseguitore",
+     "prova": {
+      "attributo": "caution",
+      "minimo": 6
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "caution",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 5,
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "da": 6,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "nome": "È un Predecessore! Fuggi!",
+     "prova": {
+      "attributo": "practicality",
+      "minimo": 7
+     },
+     "effetti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "practicality",
+         "per": 1
+        }
+       ],
+       "risultati": [
+        {
+         "da": 1,
+         "a": 6,
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "da": 7,
+         "a": 99,
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "regola_speciale": null,
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/1_encuentros_morado/36608.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 3
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "cubi",
+     "n": -2
+    }
+   ],
+   "ricompensa": [],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "max": true,
+      "chi": "attivo"
+     },
+     "ris": "terrore"
+    }
+   ],
+   "effetto": [],
+   "inizio": [],
+   "copie_img": [
+    "carte/1_encuentros_morado/36609.webp",
+    "carte/1_encuentros_morado/36610.webp"
+   ]
+  },
+  "carte/2_encuentros_morado/36612.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 99,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1,
+       "per": {
+        "quadrante": "nemico"
+       }
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "ferite_subite",
+        "min": 1
+       },
+       "allora": [
+        {
+         "tipo": "quadrante",
+         "dove": "nemico",
+         "n": 1
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "scarta_carte",
+     "n": 99,
+     "da": "mano"
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "magia",
+     "n": 1,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "valore_nemico",
+       "n": 1,
+       "per": {
+        "quadrante": "nemico"
+       }
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "effetto": [],
+   "inizio": [
+    {
+     "tipo": "quadrante",
+     "dove": "nemico",
+     "valore": 1,
+     "gettone": "cerca"
+    }
+   ]
+  },
+  "carte/3_encuentros_morado/36617.webp": {
+   "tabella": [
+    {
+     "da": 0,
+     "a": 2,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "da": 3,
+     "a": 3,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 4,
+     "a": 5,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -2
+      }
+     ]
+    },
+    {
+     "da": 6,
+     "a": 6,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 7,
+     "a": 8,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 1
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      }
+     ]
+    },
+    {
+     "da": 9,
+     "a": 9,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "da": 10,
+     "a": 11,
+     "effetti": [
+      {
+       "tipo": "ferite",
+       "n": 2
+      }
+     ]
+    }
+   ],
+   "opportunita": [
+    {
+     "tipo": "ferite",
+     "n": 1
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    }
+   ],
+   "ricompensa": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ],
+   "bottino": [
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 2,
+     "chi": "diviso"
+    }
+   ],
+   "fallimento": [],
+   "evitare": null,
+   "fasi": [],
+   "regola_speciale": [
+    {
+     "quando": "fine_incontro",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Magia (Abhartach non torna nel mazzo)",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "magia",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        },
+        {
+         "testo": "Non pagare: rimetti Abhartach nel mazzo e mescolalo",
+         "effetti": [
+          {
+           "tipo": "rimescola_incontro"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "effetto": [],
+   "inizio": []
+  },
+  "carte/mazzo/tuathan_31308.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "conta_luoghi",
+        "numero": 199,
+        "min": 2,
+        "max": 2
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "conta_luoghi",
+          "numero": 199,
+          "min": 5,
+          "max": 5
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 199,
+           "casuale": true,
+           "accanto": "tuathan"
+          },
+          {
+           "tipo": "muovi",
+           "dove": "ultimo_preparato",
+           "chi": "tutti"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "gettoni_cerca",
+        "min": 2
+       }
+      ]
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "gira",
+      "n": "questo"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "nutrimento",
+        "ris": "ricchezza"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": null
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31307.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "conta_luoghi",
+        "numero": 199,
+        "min": 2,
+        "max": 2
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "conta_luoghi",
+          "numero": 199,
+          "min": 5,
+          "max": 5
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 199,
+           "casuale": true,
+           "accanto": "tuathan"
+          },
+          {
+           "tipo": "muovi",
+           "dove": "ultimo_preparato",
+           "chi": "tutti"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "gettoni_cerca",
+        "min": 2
+       }
+      ]
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "gira",
+      "n": "questo"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "fine_giornata",
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": -4
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "non": {
+        "tipo": "esausto"
+       }
+      }
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31306.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "conta_luoghi",
+        "numero": 199,
+        "min": 2,
+        "max": 2
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "conta_luoghi",
+          "numero": 199,
+          "min": 5,
+          "max": 5
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 199,
+           "casuale": true,
+           "accanto": "tuathan"
+          },
+          {
+           "tipo": "muovi",
+           "dove": "ultimo_preparato",
+           "chi": "tutti"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "gettoni_cerca",
+        "min": 2
+       }
+      ]
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "gira",
+      "n": "questo"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "converti",
+        "da": "terrore_ottenuto",
+        "a": "salute_persa"
+       },
+       {
+        "tipo": "modificatore",
+        "cosa": "converti",
+        "da": "salute_persa",
+        "a": "terrore_ottenuto"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": null
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31305.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "conta_luoghi",
+        "numero": 199,
+        "min": 2,
+        "max": 2
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "conta_luoghi",
+          "numero": 199,
+          "min": 5,
+          "max": 5
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 199,
+           "casuale": true,
+           "accanto": "tuathan"
+          },
+          {
+           "tipo": "muovi",
+           "dove": "ultimo_preparato",
+           "chi": "tutti"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "gettoni_cerca",
+        "min": 2
+       }
+      ]
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "gira",
+      "n": "questo"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1
+       },
+       {
+        "tipo": "imposta",
+        "ris": "terrore",
+        "n": 0,
+        "chi": "attivo"
+       },
+       {
+        "tipo": "imposta",
+        "ris": "energia",
+        "n": 0,
+        "chi": "attivo"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "follia"
+      }
+     },
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "esp",
+        "n": 1
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": 99
+       },
+       {
+        "tipo": "imposta",
+        "ris": "energia",
+        "n": 0,
+        "chi": "attivo"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "morente"
+      }
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/tuathan_31304.webp": {
+   "azione": [
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "diario",
+       "luogo": 199,
+       "verso": 1
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": null
+    },
+    {
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      },
+      {
+       "tipo": "gettoni_cerca",
+       "n": -2
+      }
+     ],
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "conta_luoghi",
+        "numero": 199,
+        "min": 2,
+        "max": 2
+       },
+       "allora": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "capitolo",
+          "da": 8,
+          "a": 8
+         },
+         "allora": [
+          {
+           "tipo": "diario",
+           "luogo": 999,
+           "verso": 665
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 9,
+            "a": 9
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 40
+            }
+           ]
+          }
+         ]
+        }
+       ],
+       "altrimenti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "conta_luoghi",
+          "numero": 199,
+          "min": 5,
+          "max": 5
+         },
+         "allora": [
+          {
+           "tipo": "se",
+           "condizione": {
+            "tipo": "capitolo",
+            "da": 8,
+            "a": 8
+           },
+           "allora": [
+            {
+             "tipo": "diario",
+             "luogo": 999,
+             "verso": 55
+            }
+           ],
+           "altrimenti": [
+            {
+             "tipo": "se",
+             "condizione": {
+              "tipo": "capitolo",
+              "da": 9,
+              "a": 9
+             },
+             "allora": [
+              {
+               "tipo": "diario",
+               "luogo": 999,
+               "verso": 666
+              }
+             ]
+            }
+           ]
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 199,
+           "casuale": true,
+           "accanto": "tuathan"
+          },
+          {
+           "tipo": "muovi",
+           "dove": "ultimo_preparato",
+           "chi": "tutti"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "una_volta_al_giorno": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "tutti_personaggi"
+       },
+       {
+        "tipo": "gettoni_cerca",
+        "min": 2
+       }
+      ]
+     }
+    }
+   ],
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "luogo",
+      "azione": "gira",
+      "n": "questo"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [],
+    "inneschi": [
+     {
+      "quando": "fine_giornata",
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 2
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "ailei"
+      },
+      "prima_del_riposo": true
+     },
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "no_azione_personaggio"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "arev"
+      }
+     },
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "no_ripristino",
+        "ris": "salute"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "beor"
+      }
+     },
+     {
+      "quando": "sempre",
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "no_paga",
+        "ris": "magia"
+       }
+      ],
+      "costo": [],
+      "una_volta": null,
+      "facoltativo": false,
+      "condizione": {
+       "tipo": "personaggio",
+       "id": "maggot"
+      }
+     }
+    ]
+   },
+   "permanente": true
+  },
+  "carte/mazzo/escalinata_del_titan_30805.webp": {
+   "azione": null,
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "diario",
+      "luogo": 115
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 8,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tutte": [
+        {
+         "non": {
+          "tipo": "quadrante",
+          "dove": "luogo:115"
+         }
+        },
+        {
+         "non": {
+          "tipo": "status",
+          "nome": "Santuario Sicuro",
+          "parti": []
+         }
+        }
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "quadrante",
+        "dove": "luogo:115",
+        "valore": 3,
+        "gettone": "tempo",
+        "cala": "inizio_giornata",
+        "a_soglia": {
+         "valore": 0,
+         "effetti": [
+          {
+           "tipo": "luogo",
+           "azione": "sostituisci",
+           "vecchio": 115,
+           "nuovo": 125
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "tipo": "diario",
+      "luogo": 115
+     }
+    ]
+   },
+   "permanente": false,
+   "alla_rimozione": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": 115,
+     "nuovo": 125
+    }
+   ]
+  },
+  "carte/mazzo/asilo_de_la_isla_30708.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 3
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "segreto",
+       "n": 66
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 109,
+        "verso": 9
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tutte": [
+          {
+           "tipo": "status",
+           "nome": "Battitore di Piste",
+           "parti": []
+          },
+          {
+           "tipo": "quadrante",
+           "dove": "arciera"
+          }
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "diario",
+          "luogo": 109,
+          "verso": 11
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "diario",
+          "luogo": 109
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/espadas_olvidadas_30704.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "fabbricabile",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": null,
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "gettoni_cerca",
+       "luogo": "qui",
+       "min": 1
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 105,
+        "verso": 14
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 105
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/faldorca_31102.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 5
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "menhir",
+      "azione": "sposta",
+      "da": "qui",
+      "luogo": 147
+     },
+     {
+      "tipo": "muovi",
+      "dove": 147,
+      "chi": "compagnia"
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": false
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": null,
+   "permanente": false
+  },
+  "carte/mazzo/falfuar_abandonado_31101.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 5
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "luogo_rimosso",
+       "n": 135
+      },
+      "allora": [
+       {
+        "tipo": "menhir",
+        "azione": "sposta",
+        "da": "qui",
+        "luogo": 148
+       },
+       {
+        "tipo": "muovi",
+        "dove": 148,
+        "chi": "compagnia"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "menhir",
+        "azione": "sposta",
+        "da": "qui",
+        "luogo": 135
+       },
+       {
+        "tipo": "muovi",
+        "dove": 135,
+        "chi": "compagnia"
+       }
+      ]
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": null,
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "diario",
+      "luogo": 147
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/mazzo/falfuar_31001.webp": {
+   "azione": {
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1
+     }
+    ],
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 1
+     }
+    ],
+    "una_volta_al_giorno": false,
+    "condizione": null
+   },
+   "immediata": {
+    "effetti": [
+     {
+      "tipo": "incontro",
+      "colore": "blu"
+     }
+    ],
+    "una_volta_al_giorno": true
+   },
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "menhir",
+       "luogo": "qui"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "paga",
+      "ris": "energia",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "magia",
+      "n": 2,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     },
+     {
+      "tipo": "paga",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso",
+      "per": {
+       "giocatori": true
+      }
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   },
+   "esplorazione": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "non": {
+        "tipo": "status",
+        "nome": "Missione Diplomatica",
+        "parti": []
+       }
+      },
+      "allora": [
+       {
+        "tipo": "diario",
+        "luogo": 134,
+        "verso": 1
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "diario",
+        "luogo": 134
+       }
+      ]
+     }
+    ]
+   },
+   "permanente": false
+  },
+  "carte/objetos/32563.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "muovi",
+       "dove": "rivelato_scelto",
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/secretos/32601.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_incontro",
+       "colore": "viola",
+       "n": 2,
+       "scegli": "scelta",
+       "altri": "fondo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32602.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "tratto_extra",
+       "tratto": "Furia",
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32607.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "nota",
+       "testo": "Ora puoi attivare i Menhir: i costi sono sul retro di ogni Luogo, accanto all'icona del Menhir (le condizioni dei Menhir verificano il Segreto 11)."
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32610.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "muovi",
+       "dove": "collegato_scelto",
+       "chi": "compagnia",
+       "porta": "Pietra Anomala Pura"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2,
+       "chi": "diviso",
+       "per": {
+        "giocatori": true
+       }
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32611.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_viaggio",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": "collegato_scelto",
+       "accanto": "qui"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 1,
+       "chi": "diviso",
+       "per": {
+        "giocatori": true
+       }
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "fuori_raggio_ok"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32616.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "perdita",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32617.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "perdita",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia"
+  },
+  "carte/secretos/32620.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo in cui Riposi ha un Sigillo Arcano visibile nell'illustrazione della carta?"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32621.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "segreto:32",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "segreto:32",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "segreto",
+         "n": 32,
+         "rimuovi": true
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ]
+  },
+  "carte/secretos/32622.webp": {
+   "inneschi": [
+    {
+     "quando": "fine_giornata",
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Paga 1 Ricchezza",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "ricchezza",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Perdi 1 Rep",
+         "effetti": [
+          {
+           "tipo": "paga",
+           "ris": "rep",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "segreto",
+           "n": 33,
+           "rimuovi": true
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "gettoni_cerca",
+      "luogo": "segreto:33",
+      "min": 0,
+      "max": 0
+     }
+    }
+   ]
+  },
+  "carte/secretos/32626.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "frecce_prima_carta",
+       "n": -1,
+       "chi": "tutti"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "diplomazia"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32627.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      },
+      {
+       "tipo": "previeni",
+       "n": 1,
+       "ris": "terrore"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento",
+        "colore": "viola"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia",
+        "colore": "viola"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32628.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "manuale",
+      "testo": "Il Luogo in cui Riposi ha un cespuglio di Felce Rossa visibile nell'illustrazione della carta?"
+     }
+    }
+   ]
+  },
+  "carte/secretos/32629.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "ignora_tratto",
+       "tratto": "Finta"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "sequenza_termina",
+        "attr": "practicality"
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Arma"
+  },
+  "carte/secretos/32633.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "non_cedibile"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Personale",
+   "copie_img": [
+    "carte/secretos/32634.webp",
+    "carte/secretos/32635.webp",
+    "carte/secretos/32636.webp"
+   ]
+  },
+  "carte/secretos/32638.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "fine_incontro",
+     "effetti": [
+      {
+       "tipo": "segreto",
+       "n": 73,
+       "rimuovi": true
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "una": [
+         {
+          "tipo": "esito_incontro",
+          "esito": "fuga"
+         },
+         {
+          "tipo": "esito_incontro",
+          "esito": "fallimento"
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "carte/secretos/32639.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Rapido"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "gioca_carta",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Arma"
+  },
+  "carte/mazzo/37300.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 3
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "min": 1,
+      "chi": "attivo"
+     },
+     "ris": "salute"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Fallisci l'Incontro",
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "testo": "Scappa dall'Incontro",
+         "effetti": [
+          {
+           "tipo": "scappa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/37301.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      },
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "rimuovi": true
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "min": 1,
+      "chi": "attivo"
+     },
+     "ris": "salute"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Fallisci l'Incontro",
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "testo": "Scappa dall'Incontro",
+         "effetti": [
+          {
+           "tipo": "scappa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "personaggio",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "carte/mazzo/37302.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      },
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "rimuovi": true
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "min": 1,
+      "chi": "attivo"
+     },
+     "ris": "salute"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Fallisci l'Incontro",
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "testo": "Scappa dall'Incontro",
+         "effetti": [
+          {
+           "tipo": "scappa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "personaggio",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "carte/mazzo/37303.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      },
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "rimuovi": true
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "min": 1,
+      "chi": "attivo"
+     },
+     "ris": "salute"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Fallisci l'Incontro",
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "testo": "Scappa dall'Incontro",
+         "effetti": [
+          {
+           "tipo": "scappa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "personaggio",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "carte/mazzo/37304.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_oggetti",
+       "n": 2
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "inizio_giornata",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "ferite",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 99
+      },
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "n": -1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "quadrante",
+        "dove": "personaggio",
+        "da": 0,
+        "a": 0
+       },
+       "allora": [
+        {
+         "tipo": "morte"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "proprietario"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null,
+     "da": "compagnia",
+     "nome": "Fasciare le ferite"
+    },
+    {
+     "quando": "ottieni_risorsa",
+     "effetti": [
+      {
+       "tipo": "quadrante",
+       "dove": "personaggio",
+       "rimuovi": true
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "min": 1,
+      "chi": "attivo"
+     },
+     "ris": "salute"
+    }
+   ],
+   "ottenuta": [
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 2
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Fallisci l'Incontro",
+         "effetti": [
+          {
+           "tipo": "fallisci"
+          }
+         ]
+        },
+        {
+         "testo": "Scappa dall'Incontro",
+         "effetti": [
+          {
+           "tipo": "scappa"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "personaggio",
+     "valore": 3,
+     "gettone": "tempo"
+    }
+   ]
+  },
+  "carte/objetos/32501.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "unisciti",
+       "da": "collegati",
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "giocatori",
+       "da": 1,
+       "a": 1
+      }
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "giocatori",
+      "da": 1,
+      "a": 1
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32502.webp": {
+   "inneschi": [
+    {
+     "quando": "perdi_salute",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "non": {
+         "tipo": "attacco_opportunita"
+        }
+       }
+      ]
+     }
+    },
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "tratto",
+      "nome": "Improvviso"
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32505.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "sequenza_termina",
+        "attr": "practicality"
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Scudo",
+   "fabbricabile": true,
+   "copie_img": [
+    "carte/objetos/32508.webp"
+   ]
+  },
+  "carte/objetos/32506.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "tratto_extra",
+       "tratto": "Rapido",
+       "chi": "attivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    },
+    {
+     "quando": "attivazione",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "scarta_carte",
+       "n": 2,
+       "da": "mazzo"
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "carte_giocate",
+        "min": 1,
+        "max": 1
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32507.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": 3,
+       "su": "incontro"
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     },
+     "gira": true
+    },
+    {
+     "quando": "capacita_ritardate",
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -1,
+       "su": "incontro"
+      },
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "carta_girata"
+       },
+       {
+        "tipo": "gettone_tempo",
+        "su": "incontro",
+        "min": 1
+       }
+      ]
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32509.webp": {
+   "inneschi": [
+    {
+     "quando": "gioca_carta",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "cubi_carta",
+        "min": 3
+       }
+      ]
+     }
+    },
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_tratto",
+       "tratto": "Difensivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32510.webp": {
+   "inneschi": [
+    {
+     "quando": "inizio_combattimento",
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "tratto",
+        "nome": "Lento"
+       },
+       "allora": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "non": {
+       "tipo": "tratto",
+       "nome": "Imboscata"
+      }
+     }
+    }
+   ],
+   "parola": "Arma",
+   "fabbricabile": false
+  },
+  "carte/objetos/32513.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "practicality",
+         "per": 1
+        },
+        {
+         "riserva": true,
+         "per": 1
+        }
+       ],
+       "risultati": []
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "tiro",
+        "maggiore_di": "valore_incontro"
+       },
+       "allora": [
+        {
+         "tipo": "ignora_attacco"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true
+  },
+  "carte/objetos/32526.webp": {
+   "inneschi": [
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni_scarto",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    },
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1,
+       "ris": "terrore"
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32527.webp": {
+   "inneschi": [
+    {
+     "quando": "rilancio",
+     "effetti": [
+      {
+       "tipo": "rilancia"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32528.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "limite_mano",
+       "n": -1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    },
+    {
+     "quando": "attacco",
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": "Armatura",
+   "fabbricabile": false
+  },
+  "carte/objetos/32536.webp": {
+   "inneschi": [
+    {
+     "quando": "pesca_incontro",
+     "effetti": [
+      {
+       "tipo": "ripesca_incontro",
+       "in_fondo": true
+      }
+     ],
+     "costo": [],
+     "una_volta": "giorno",
+     "facoltativo": true,
+     "condizione": null,
+     "casuale": true
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32537.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "evento",
+       "azione": "guarda_cima"
+      },
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "evento_casuale"
+       },
+       "allora": [
+        {
+         "tipo": "scelta",
+         "opzioni": [
+          {
+           "testo": "Scarta l'Evento Casuale e mettine uno nuovo al suo posto",
+           "effetti": [
+            {
+             "tipo": "evento",
+             "azione": "scarta_cima",
+             "n": 1
+            },
+            {
+             "tipo": "evento",
+             "azione": "casuali_in_cima",
+             "n": 1,
+             "meno_per_giocatore": false
+            }
+           ]
+          },
+          {
+           "testo": "Lascialo in cima",
+           "effetti": []
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 1
+      }
+     ],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32540.webp": {
+   "inneschi": [
+    {
+     "quando": "attiva_menhir",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_menhir",
+       "ris": "energia",
+       "n": -1
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "costo_menhir",
+       "ris": "scelta",
+       "n": -1
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [],
+       "teschio": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta_questo"
+        }
+       ]
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32541.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_salute",
+       "durata": "riposo"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "no_riposo_terrore",
+       "durata": "riposo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": "Reliquia",
+   "fabbricabile": false
+  },
+  "carte/objetos/32542.webp": {
+   "inneschi": [
+    {
+     "quando": "sempre",
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "riposo_terrore",
+       "n": 1
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "non_cedibile"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32543.webp": {
+   "inneschi": [
+    {
+     "quando": "collega_chiave",
+     "effetti": [
+      {
+       "tipo": "chiave_magica_gratis"
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true,
+     "attr": "magic"
+    }
+   ],
+   "parola": "Compagno",
+   "fabbricabile": false
+  },
+  "carte/objetos/32548.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 0,
+       "chi": "attivo"
+      }
+     ],
+     "costo": [],
+     "una_volta": "incontro",
+     "facoltativo": true,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      ]
+     },
+     "gira": true
+    },
+    {
+     "quando": "fine_incontro",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 4
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": {
+      "tipo": "carta_girata"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32550.webp": {
+   "inneschi": [
+    {
+     "quando": "riposo",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_esaurimento",
+       "durata": "riposo"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_incubo",
+       "durata": "riposo"
+      },
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_evento",
+       "nome": "Bufera Ruggente",
+       "durata": "riposo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false,
+   "copie_img": [
+    "carte/objetos/32551.webp"
+   ]
+  },
+  "carte/objetos/32557.webp": {
+   "inneschi": [
+    {
+     "quando": "azione",
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1
+      },
+      {
+       "tipo": "incontro",
+       "azione": "guarda_cime",
+       "mescola": "scelta"
+      },
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": false,
+     "condizione": null
+    }
+   ],
+   "parola": null,
+   "fabbricabile": false
+  },
+  "carte/objetos/32559.webp": {
+   "inneschi": [
+    {
+     "quando": "in_qualsiasi_momento",
+     "effetti": [
+      {
+       "tipo": "oggetto",
+       "modo": "scarta_questo"
+      },
+      {
+       "tipo": "senza_opportunita"
+      },
+      {
+       "tipo": "scappa"
+      }
+     ],
+     "costo": [],
+     "una_volta": null,
+     "facoltativo": true,
+     "condizione": {
+      "tipo": "incontro_tipo",
+      "tipo_incontro": "combattimento"
+     }
+    }
+   ],
+   "parola": null,
+   "fabbricabile": true,
+   "copie_img": [
+    "carte/objetos/32560.webp"
+   ]
+  }
+ }
+}

@@ -1,0 +1,8084 @@
+{
+ "carte": [
+  {
+   "img": "carte/mazzo/32715.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32715.webp",
+   "facce": [
+    {
+     "numero": 31,
+     "nome": {
+      "es": "Clarividencia",
+      "it": "Chiaroveggenza"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Encuentro aleatorio azul, puedes robar 2 cartas y elegir 1. Pon el otro Encuentro debajo de su mazo.",
+      "it": "Ogni volta che peschi un Incontro casuale blu, puoi pescare 2 carte e sceglierne 1. Metti l'altro Incontro in fondo al suo mazzo."
+     }
+    },
+    {
+     "numero": 32,
+     "nome": {
+      "es": "Rastrear",
+      "it": "Seguire le tracce"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Encuentro aleatorio verde, puedes robar 2 cartas y elegir 1. Pon el otro Encuentro debajo del mazo.",
+      "it": "Ogni volta che peschi un Incontro casuale verde, puoi pescare 2 carte e sceglierne 1. Metti l'altro Incontro in fondo al mazzo."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 31,
+      "nome": "Chiaroveggenza",
+      "inneschi": [
+       {
+        "quando": "pesca_incontro",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Pesca 2 Incontri blu e scegline 1; metti l'altro in fondo al suo mazzo."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": null,
+        "colore": "blu"
+       }
+      ]
+     },
+     {
+      "numero": 32,
+      "nome": "Seguire le tracce",
+      "inneschi": [
+       {
+        "quando": "pesca_incontro",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Pesca 2 Incontri verdi e scegline 1; metti l'altro in fondo al suo mazzo."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": null,
+        "colore": "verde"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32714.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32714.webp",
+   "facce": [
+    {
+     "numero": 29,
+     "nome": {
+      "es": "Cazarrecompensas",
+      "it": "Cacciatore di taglie"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Siempre que ganes un Encuentro con el Rasgo Guardián, obtén 1 de {r:Rep} y 1 de {r:Ricchezza}.",
+      "it": "Ogni volta che vinci un Incontro con il Tratto Guardiano, ottieni 1 {r:Rep} e 1 {r:Ricchezza}."
+     }
+    },
+    {
+     "numero": 30,
+     "nome": {
+      "es": "Rituales del viajero",
+      "it": "Rituali del viaggiatore"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Cada vez que robes un Evento Aleatorio, puedes pagar 1 de {r:Magia} para descartarlo y robar uno nuevo del mazo de Eventos Aleatorios.",
+      "it": "Ogni volta che peschi un Evento Casuale, puoi pagare 1 {r:Magia} per scartarlo e pescarne uno nuovo dal mazzo Eventi Casuali."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 29,
+      "nome": "Cacciatore di taglie",
+      "inneschi": [
+       {
+        "quando": "vittoria",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "rep",
+          "n": 1
+         },
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "l'Incontro ha il Tratto Guardiano"
+        }
+       }
+      ]
+     },
+     {
+      "numero": 30,
+      "nome": "Rituali del viaggiatore",
+      "inneschi": [
+       {
+        "quando": "inizio_giornata",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Scarta l'Evento Casuale pescato e pescane uno nuovo dal mazzo Eventi Casuali."
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 1
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "hai pescato un Evento Casuale"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32713.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32713.webp",
+   "facce": [
+    {
+     "numero": 27,
+     "nome": {
+      "es": "Coleccionista",
+      "it": "Collezionista"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Puedes usar hasta 2 cartas con la palabra clave Reliquia al mismo tiempo.",
+      "it": "Puoi usare fino a 2 carte con la parola chiave Reliquia contemporaneamente."
+     }
+    },
+    {
+     "numero": 28,
+     "nome": {
+      "es": "Resistente al hambre",
+      "it": "Resistente alla fame"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "Al Descansar, restaura 1 de {i:health} y pierde 1 de {i:terror} aunque no comas.",
+      "it": "Quando Riposi, recupera 1 {i:health} e perdi 1 {i:terror} anche se non mangi."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 27,
+      "nome": "Collezionista",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "reliquie_attive",
+          "n": 2
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 28,
+      "nome": "Resistente alla fame",
+      "inneschi": [
+       {
+        "quando": "riposo",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "salute",
+          "n": 1
+         },
+         {
+          "tipo": "risorsa",
+          "ris": "terrore",
+          "n": -1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "non hai mangiato in questo Riposo"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32712.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32712.webp",
+   "facce": [
+    {
+     "numero": 25,
+     "nome": {
+      "es": "Trueque",
+      "it": "Baratto"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Añade 1 de tus Objetos al mazo, barájalo y roba 1 Objeto (solo en Asentamientos).",
+      "it": "{i:action} Aggiungi 1 dei tuoi Oggetti al mazzo, mescolalo e pesca 1 Oggetto (solo negli Insediamenti)."
+     },
+     "azione": {
+      "costo": 2,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 26,
+     "nome": {
+      "es": "Comerciante hábil",
+      "it": "Mercante abile"
+     },
+     "attributo": "practicality",
+     "effetto": {
+      "es": "{i:action} Descarta 1 Objeto y obtén 2 de {r:Ricchezza}.",
+      "it": "{i:action} Scarta 1 Oggetto e ottieni 2 {r:Ricchezza}."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 25,
+      "nome": "Baratto",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Aggiungi 1 dei tuoi Oggetti al mazzo Oggetti e mescolalo."
+         },
+         {
+          "tipo": "oggetto",
+          "modo": "casuale",
+          "n": 1
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 2
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "una": [
+          {
+           "tipo": "insediamento",
+           "nemico": false
+          },
+          {
+           "tipo": "insediamento",
+           "nemico": true
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 26,
+      "nome": "Mercante abile",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "oggetto",
+          "modo": "scarta",
+          "n": 1
+         },
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 2
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 1
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32711.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32711.webp",
+   "facce": [
+    {
+     "numero": 23,
+     "nome": {
+      "es": "Dieta de supervivencia",
+      "it": "Dieta di sopravvivenza"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "{i:action} Obtén 1 de {i:terror} para obtener 1 de {r:Cibo} (una vez al Día).",
+      "it": "{i:action} Ottieni 1 {i:terror} per ottenere 1 {r:Cibo} (una volta al giorno)."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 24,
+     "nome": {
+      "es": "La fuerza del miedo",
+      "it": "La forza della paura"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Puedes ignorar los efectos de tus Pesadillas. Si tienes una Pesadilla, obtén 1 de {r:Magia}.",
+      "it": "Puoi ignorare gli effetti dei tuoi Incubi. Se hai un Incubo, ottieni 1 {r:Magia}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 23,
+      "nome": "Dieta di sopravvivenza",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "terrore",
+          "n": 1
+         },
+         {
+          "tipo": "risorsa",
+          "ris": "cibo",
+          "n": 1
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 1
+         }
+        ],
+        "una_volta": "giorno",
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 24,
+      "nome": "La forza della paura",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Puoi ignorare gli effetti dei tuoi Incubi."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       },
+       {
+        "quando": "riposo",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "magia",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "hai avuto un Incubo"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32710.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32710.webp",
+   "facce": [
+    {
+     "numero": 21,
+     "nome": {
+      "es": "Exploración audaz",
+      "it": "Esplorazione audace"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al Explorar, puedes sumar +1 al resultado de una tirada de dado (una vez por tirada).",
+      "it": "Quando Esplori, puoi aggiungere +1 al risultato di un tiro di dado (una volta per tiro)."
+     }
+    },
+    {
+     "numero": 22,
+     "nome": {
+      "es": "Pacto con el diablo",
+      "it": "Patto col diavolo"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al Explorar: Después de tirar un dado, puedes lanzar un dial.\nGrial: +2 al resultado.\nCalavera: -2 al resultado (mín. 1).",
+      "it": "Quando Esplori: dopo aver tirato un dado, puoi lanciare un Quadrante.\nGraal: +2 al risultato.\nTeschio: -2 al risultato (min. 1)."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 21,
+      "nome": "Esplorazione audace",
+      "inneschi": [
+       {
+        "quando": "esplorazione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Puoi aggiungere +1 al risultato di un tiro di dado (una volta per tiro)."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 22,
+      "nome": "Patto col diavolo",
+      "inneschi": [
+       {
+        "quando": "esplorazione",
+        "effetti": [
+         {
+          "tipo": "quadrante_lancio",
+          "graal": [
+           {
+            "tipo": "manuale",
+            "testo": "+2 al risultato del dado."
+           }
+          ],
+          "teschio": [
+           {
+            "tipo": "manuale",
+            "testo": "-2 al risultato del dado (minimo 1)."
+           }
+          ]
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "hai appena tirato un dado"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32709.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32709.webp",
+   "facce": [
+    {
+     "numero": 19,
+     "nome": {
+      "es": "Inspiración",
+      "it": "Ispirazione"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "El coste de tu acción de personaje se reduce en 1 de {i:energy} (pero nunca puede ser menos de 1 de {i:energy}).",
+      "it": "Il costo della tua Azione del Personaggio si riduce di 1 {i:energy} (ma non può mai essere inferiore a 1 {i:energy})."
+     }
+    },
+    {
+     "numero": 20,
+     "nome": {
+      "es": "Moverse o morir",
+      "it": "Muoversi o morire"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Si estás Agotado, puedes gastar {i:health} en vez de {i:energy}.",
+      "it": "Se sei Esausto, puoi spendere {i:health} invece di {i:energy}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 19,
+      "nome": "Ispirazione",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "costo_energia",
+          "n": -1,
+          "min": 1,
+          "su": "azione_personaggio"
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 20,
+      "nome": "Muoversi o morire",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Se sei Esausto, puoi spendere Salute invece di Energia."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32708.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32708.webp",
+   "facce": [
+    {
+     "numero": 17,
+     "nome": {
+      "es": "Siempre adelante",
+      "it": "Sempre avanti"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "En Combate: Obtén {i:cube} por cada carta que descartes durante la fase de Fin del turno.",
+      "it": "In Combattimento: ottieni {i:cube} per ogni carta che scarti durante la fase di Fine del turno."
+     }
+    },
+    {
+     "numero": 18,
+     "nome": {
+      "es": "Abrirse paso",
+      "it": "Farsi strada"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Al comienzo de cada Encuentro, roba 1 carta adicional y luego descarta 1 carta.",
+      "it": "All'inizio di ogni Incontro, pesca 1 carta aggiuntiva e poi scarta 1 carta."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 17,
+      "nome": "Sempre avanti",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "In Combattimento: ottieni 1 cubo per ogni carta che scarti durante la fase di Fine del turno."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 18,
+      "nome": "Farsi strada",
+      "inneschi": [
+       {
+        "quando": "inizio_incontro",
+        "effetti": [
+         {
+          "tipo": "pesca_carte",
+          "n": 1
+         },
+         {
+          "tipo": "scarta_carte",
+          "n": 1,
+          "da": "mano"
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32707.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32707.webp",
+   "facce": [
+    {
+     "numero": 15,
+     "nome": {
+      "es": "Guardaespaldas",
+      "it": "Guardia del corpo"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "En Combate, cuando otro miembro del equipo reciba cualquier cantidad de {i:wound}, puedes decidir recibir esas {i:wound} en su lugar. Se vuelve inevitable.",
+      "it": "In Combattimento, quando un altro membro della Compagnia subisce un qualsiasi numero di {i:wound}, puoi decidere di subire tu quelle {i:wound} al suo posto. Diventano inevitabili."
+     }
+    },
+    {
+     "numero": 16,
+     "nome": {
+      "es": "Líder inspirador",
+      "it": "Leader carismatico"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Tus Compañeros no requieren ningún pago.",
+      "it": "I tuoi Compagni non richiedono alcun pagamento."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 15,
+      "nome": "Guardia del corpo",
+      "inneschi": [
+       {
+        "quando": "attacco",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Quando un altro membro della Compagnia subisce Ferite, puoi subirle tu al suo posto: diventano inevitabili."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": {
+         "tipo": "incontro_tipo",
+         "tipo_incontro": "combattimento"
+        }
+       }
+      ]
+     },
+     {
+      "numero": 16,
+      "nome": "Leader carismatico",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "I tuoi Compagni non richiedono alcun pagamento."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32706.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32706.webp",
+   "facce": [
+    {
+     "numero": 13,
+     "nome": {
+      "es": "Vigor inagotable",
+      "it": "Vigore inesauribile"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Si cuando llega el Fin del Día no estás Agotado, después de restaurar tu {i:energy}, obtén 1 punto adicional de {i:energy}.",
+      "it": "Se all'arrivo della Fine della Giornata non sei Esausto, dopo aver recuperato la tua {i:energy}, ottieni 1 punto aggiuntivo di {i:energy}."
+     }
+    },
+    {
+     "numero": 14,
+     "nome": {
+      "es": "Incansable",
+      "it": "Instancabile"
+     },
+     "attributo": "courage",
+     "effetto": {
+      "es": "Solo estas Agotado si tu {i:energy} es 0.",
+      "it": "Sei Esausto solo se la tua {i:energy} è 0."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 13,
+      "nome": "Vigore inesauribile",
+      "inneschi": [
+       {
+        "quando": "fine_giornata",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "energia",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "non eri Esausto all'arrivo della Fine della Giornata (si applica dopo il recupero dell'Energia)"
+        }
+       }
+      ]
+     },
+     {
+      "numero": 14,
+      "nome": "Instancabile",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Sei Esausto solo se la tua Energia è 0."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32705.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32705.webp",
+   "facce": [
+    {
+     "numero": 11,
+     "nome": {
+      "es": "Instinto de combate",
+      "it": "Istinto di combattimento"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Durante un Encuentro: Aumenta el límite de tu mano en 1.",
+      "it": "Durante un Incontro: aumenta di 1 il limite della tua mano."
+     }
+    },
+    {
+     "numero": 12,
+     "nome": {
+      "es": "Celeridad",
+      "it": "Rapidità"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que no uses ninguna carta con la palabra clave Armadura, ignora el rasgo [i]Emboscada[/i] y roba 1 carta adicional al comienzo de cada Combate.",
+      "it": "Finché non usi alcuna carta con la parola chiave Armatura, ignora il tratto [i]Imboscata[/i] e pesca 1 carta aggiuntiva all'inizio di ogni Combattimento."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 11,
+      "nome": "Istinto di combattimento",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Durante un Incontro: aumenta di 1 il limite della tua mano.",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 12,
+      "nome": "Rapidità",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "ignora_tratto",
+          "tratto": "Imboscata"
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "non": {
+          "tipo": "oggetto",
+          "parola": "Armatura"
+         }
+        }
+       },
+       {
+        "quando": "inizio_combattimento",
+        "effetti": [
+         {
+          "tipo": "pesca_carte",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "non": {
+          "tipo": "oggetto",
+          "parola": "Armatura"
+         }
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32704.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32704.webp",
+   "facce": [
+    {
+     "numero": 9,
+     "nome": {
+      "es": "Infundir odio",
+      "it": "Infondere odio"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Al activar un Menhir, puedes pagar con {r:Magia} en vez de {i:energy}.",
+      "it": "Quando attivi un Menhir, puoi pagare con {r:Magia} invece che con {i:energy}."
+     }
+    },
+    {
+     "numero": 10,
+     "nome": {
+      "es": "Trabajo duro",
+      "it": "Duro lavoro"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que pagues el coste de activar un Menhir, puedes pagar con {i:energy} en lugar de con {r:Magia}.",
+      "it": "Ogni volta che paghi il costo per attivare un Menhir, puoi pagare con {i:energy} invece che con {r:Magia}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 9,
+      "nome": "Infondere odio",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Quando attivi un Menhir, puoi pagare con Magia invece che con Energia."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 10,
+      "nome": "Duro lavoro",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Quando paghi il costo per attivare un Menhir, puoi pagare con Energia invece che con Magia."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32703.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32703.webp",
+   "facce": [
+    {
+     "numero": 7,
+     "nome": {
+      "es": "Último aliento",
+      "it": "Ultimo respiro"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Una vez por Encuentro, cuando tu mazo de Combate o Diplomacia esté vacío, baraja tu pila de descarte y añade las 5 primeras cartas a tu mazo.",
+      "it": "Una volta per Incontro, quando il tuo mazzo Combattimento o Diplomazia è vuoto, mescola la tua pila degli scarti e aggiungi le prime 5 carte al tuo mazzo."
+     }
+    },
+    {
+     "numero": 8,
+     "nome": {
+      "es": "Un paso por delante",
+      "it": "Un passo avanti"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Durante un Encuentro: Juega con la primera carta de tu mazo de Combate o Diplomacia bocarriba.",
+      "it": "Durante un Incontro: gioca con la prima carta del tuo mazzo Combattimento o Diplomazia scoperta."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 7,
+      "nome": "Ultimo respiro",
+      "inneschi": [
+       {
+        "quando": "in_qualsiasi_momento",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Mescola la tua pila degli scarti e aggiungi le prime 5 carte al tuo mazzo."
+         }
+        ],
+        "costo": [],
+        "una_volta": "incontro",
+        "facoltativo": false,
+        "condizione": {
+         "tutte": [
+          {
+           "una": [
+            {
+             "tipo": "incontro_tipo",
+             "tipo_incontro": "combattimento"
+            },
+            {
+             "tipo": "incontro_tipo",
+             "tipo_incontro": "diplomazia"
+            }
+           ]
+          },
+          {
+           "tipo": "manuale",
+           "testo": "il tuo mazzo Combattimento o Diplomazia è vuoto"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 8,
+      "nome": "Un passo avanti",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Durante un Incontro: gioca con la prima carta del tuo mazzo Combattimento o Diplomazia scoperta."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32702.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32702.webp",
+   "facce": [
+    {
+     "numero": 5,
+     "nome": {
+      "es": "Esfuerzo",
+      "it": "Sforzo"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Una vez por Encuentro, puedes retirar 1 {i:delay} de cualquier carta de la Secuencia.",
+      "it": "Una volta per Incontro, puoi rimuovere 1 {i:delay} da qualsiasi carta della Sequenza."
+     }
+    },
+    {
+     "numero": 6,
+     "nome": {
+      "es": "Festín de héroes",
+      "it": "Banchetto degli eroi"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Al Descansar, puedes consumir cualquier cantidad de {r:Cibo} adicional para obtener la misma cantidad de {i:energy}.",
+      "it": "Quando Riposi, puoi consumare una qualsiasi quantità di {r:Cibo} aggiuntivo per ottenere la stessa quantità di {i:energy}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 5,
+      "nome": "Sforzo",
+      "inneschi": [
+       {
+        "quando": "in_qualsiasi_momento",
+        "effetti": [
+         {
+          "tipo": "gettone_tempo_carta",
+          "n": -1
+         }
+        ],
+        "costo": [],
+        "una_volta": "incontro",
+        "facoltativo": true,
+        "condizione": {
+         "una": [
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "combattimento"
+          },
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "diplomazia"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 6,
+      "nome": "Banchetto degli eroi",
+      "inneschi": [
+       {
+        "quando": "riposo",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Consuma una qualsiasi quantità di Cibo aggiuntivo e ottieni la stessa quantità di Energia."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32700.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32700.webp",
+   "facce": [
+    {
+     "numero": 1,
+     "nome": {
+      "es": "Fuerza monstruosa",
+      "it": "Forza mostruosa"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "En Combate: Siempre que conectes una Clave {i:aggression2}, obtén {i:cube} adicional.",
+      "it": "In Combattimento: ogni volta che colleghi una Chiave {i:aggression2}, ottieni {i:cube} aggiuntivo."
+     }
+    },
+    {
+     "numero": 2,
+     "nome": {
+      "es": "Maestría doble",
+      "it": "Doppia maestria"
+     },
+     "attributo": "aggression",
+     "effetto": {
+      "es": "Siempre que no uses una carta con la palabra clave Escudo, puedes usar 2 cartas con la palabra clave Arma al mismo tiempo.",
+      "it": "Finché non usi una carta con la parola chiave Scudo, puoi usare 2 carte con la parola chiave Arma contemporaneamente."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 1,
+      "nome": "Forza mostruosa",
+      "inneschi": [
+       {
+        "quando": "collega_chiave",
+        "effetti": [
+         {
+          "tipo": "cubi",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "incontro_tipo",
+         "tipo_incontro": "combattimento"
+        },
+        "attr": "aggression2"
+       }
+      ]
+     },
+     {
+      "numero": 2,
+      "nome": "Doppia maestria",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Puoi usare 2 carte con la parola chiave Arma contemporaneamente.",
+          "parola": "Arma",
+          "n": 2
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "non": {
+          "tipo": "oggetto",
+          "parola": "Scudo"
+         }
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32731.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32731.webp",
+   "facce": [
+    {
+     "numero": 63,
+     "nome": {
+      "es": "Poder de las eras",
+      "it": "Potere delle ere"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "Cada vez que actives un Menhir, pon su dial en 1 más de lo indicado (máximo 8).",
+      "it": "Ogni volta che attivi un Menhir, imposta il suo Quadrante a 1 in più di quanto indicato (massimo 8)."
+     }
+    },
+    {
+     "numero": 64,
+     "nome": {
+      "es": "Reactivador",
+      "it": "Riattivatore"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "{i:action} Paga 2 de {r:Magia} para añadir 1 al dial del Menhir activo de tu Localización (máximo 8).",
+      "it": "{i:action} Paga 2 {r:Magia} per aggiungere 1 al Quadrante del Menhir attivo nel tuo Luogo (massimo 8)."
+     },
+     "azione": {
+      "costo": 2,
+      "risorsa": "energy"
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 63,
+      "nome": "Potere delle ere",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Ogni volta che attivi un Menhir, imposta il suo Quadrante a 1 in più di quanto indicato (massimo 8).",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 64,
+      "nome": "Riattivatore",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "quadrante",
+          "dove": "menhir_qui",
+          "n": 1,
+          "max": 8
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 2
+         },
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 2
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "menhir_qui",
+         "attivo": true
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32735.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32735.webp",
+   "facce": [
+    {
+     "numero": 71,
+     "nome": {
+      "es": "Concentración total",
+      "it": "Concentrazione totale"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "Durante un Encuentro: Puedes tratar cada bonificación conectada a una Clave de {r:Magia} como {i:extra}.",
+      "it": "Durante un Incontro: puoi considerare ogni bonus collegato a una Chiave di {r:Magia} come {i:extra}."
+     }
+    },
+    {
+     "numero": 72,
+     "nome": {
+      "es": "Magia letal",
+      "it": "Magia letale"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "En Combate: Cada vez que conectes una Clave de {r:Magia}, obtén {i:cube}.",
+      "it": "In Combattimento: ogni volta che colleghi una Chiave di {r:Magia}, ottieni {i:cube}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 71,
+      "nome": "Concentrazione totale",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Durante un Incontro: puoi considerare ogni bonus collegato a una Chiave di Magia come {i:extra}."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 72,
+      "nome": "Magia letale",
+      "inneschi": [
+       {
+        "quando": "collega_chiave",
+        "effetti": [
+         {
+          "tipo": "cubi",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "incontro_tipo",
+         "tipo_incontro": "combattimento"
+        },
+        "attr": "magia"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32733.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32733.webp",
+   "facce": [
+    {
+     "numero": 67,
+     "nome": {
+      "es": "Limosna",
+      "it": "Elemosina"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "Cada vez que Descanses en un Asentamiento, obtén 1 de {r:Cibo}.",
+      "it": "Ogni volta che Riposi in un Insediamento, ottieni 1 {r:Cibo}."
+     }
+    },
+    {
+     "numero": 68,
+     "nome": {
+      "es": "Ascetismo",
+      "it": "Ascetismo"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "En el Fin del Día: Puedes consumir {r:Magia} en lugar de {r:Cibo}.",
+      "it": "Alla Fine della Giornata: puoi consumare {r:Magia} invece di {r:Cibo}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 67,
+      "nome": "Elemosina",
+      "inneschi": [
+       {
+        "quando": "riposo",
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "cibo",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "una": [
+          {
+           "tipo": "insediamento",
+           "nemico": false
+          },
+          {
+           "tipo": "insediamento",
+           "nemico": true
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 68,
+      "nome": "Ascetismo",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Alla Fine della Giornata puoi consumare Magia invece di Cibo."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32732.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32732.webp",
+   "facce": [
+    {
+     "numero": 65,
+     "nome": {
+      "es": "Caminante espiritual",
+      "it": "Viandante spirituale"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "{i:action} Paga 1 de {r:Magia} y 1 de {r:Magia} adicional por cada miembro del equipo (incluyéndote a ti) para mover al equipo entero desde una Localización con un Menhir activo a otra.",
+      "it": "{i:action} Paga 1 {r:Magia} e 1 {r:Magia} aggiuntiva per ogni membro della Compagnia (te compreso) per spostare l'intera Compagnia da un Luogo con un Menhir attivo a un altro."
+     },
+     "azione": {
+      "costo": 0,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 66,
+     "nome": {
+      "es": "Afinidad con los Menhires",
+      "it": "Affinità con i Menhir"
+     },
+     "attributo": "spirituality",
+     "effetto": {
+      "es": "Siempre que actives un Menhir que ya esté activo, reduce el coste de activación en 1 de {i:energy} y 1 de otro recurso cualquiera.",
+      "it": "Ogni volta che attivi un Menhir già attivo, riduci il costo di attivazione di 1 {i:energy} e di 1 di un'altra risorsa qualsiasi."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 65,
+      "nome": "Viandante spirituale",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Sposta l'intera Compagnia in un altro Luogo con un Menhir attivo."
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 1,
+          "chi": "diviso"
+         },
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 1,
+          "chi": "diviso",
+          "per": {
+           "membri": true
+          }
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "menhir_qui",
+         "attivo": true
+        }
+       }
+      ]
+     },
+     {
+      "numero": 66,
+      "nome": "Affinità con i Menhir",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Quando attivi un Menhir già attivo, riduci il costo di attivazione di 1 Energia e di 1 di un'altra risorsa a scelta."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32729.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32729.webp",
+   "facce": [
+    {
+     "numero": 59,
+     "nome": {
+      "es": "Pedir ayuda",
+      "it": "Chiedere aiuto"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Al comienzo del Encuentro, un personaje en una Localización conectada puede moverse a la tuya y unirse a tu equipo.",
+      "it": "All'inizio dell'Incontro, un personaggio in un Luogo collegato può spostarsi nel tuo e unirsi alla tua Compagnia."
+     }
+    },
+    {
+     "numero": 60,
+     "nome": {
+      "es": "Movimiento cauteloso",
+      "it": "Movimento cauto"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "{i:action} Muévete a cualquier Localización conectada con un Guardián sin desencadenar el Encuentro con dicho Guardián.",
+      "it": "{i:action} Spostati in un qualsiasi Luogo collegato in cui c'è un Guardiano senza innescare l'Incontro con quel Guardiano."
+     },
+     "azione": {
+      "costo": 2,
+      "risorsa": "energy"
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 59,
+      "nome": "Chiedere aiuto",
+      "inneschi": [
+       {
+        "quando": "inizio_incontro",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Un Personaggio in un Luogo collegato può spostarsi nel tuo Luogo e unirsi alla tua Compagnia."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 60,
+      "nome": "Movimento cauto",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Questo spostamento non innesca l'Incontro con il Guardiano."
+         },
+         {
+          "tipo": "muovi",
+          "dove": "collegato_scelto",
+          "chi": "attivo"
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 2
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "il Luogo collegato di destinazione ha un Guardiano"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32727.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32727.webp",
+   "facce": [
+    {
+     "numero": 55,
+     "nome": {
+      "es": "Artería",
+      "it": "Astuzia"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Si no juegas ninguna carta durante la activación de tu personaje, cada uno de los otros miembros del equipo puede robar 1 carta.",
+      "it": "Se non giochi alcuna carta durante l'attivazione del tuo personaggio, ciascuno degli altri membri della Compagnia può pescare 1 carta."
+     }
+    },
+    {
+     "numero": 56,
+     "nome": {
+      "es": "Último recurso",
+      "it": "Ultima risorsa"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Al inicio de la comprobación de Afinidad, si el marcador está en la casilla inferior del medidor, puedes jugar cualquier carta de Diplomacia de tu mano (una vez por Encuentro).",
+      "it": "All'inizio della verifica dell'Affinità, se il segnalino è nella casella più bassa del misuratore, puoi giocare una qualsiasi carta Diplomazia dalla tua mano (una volta per Incontro)."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 55,
+      "nome": "Astuzia",
+      "inneschi": [
+       {
+        "quando": "attivazione",
+        "effetti": [
+         {
+          "tipo": "pesca_carte",
+          "n": 1,
+          "chi": "compagnia",
+          "escludi_attivo": true
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": {
+         "tutte": [
+          {
+           "una": [
+            {
+             "tipo": "incontro_tipo",
+             "tipo_incontro": "combattimento"
+            },
+            {
+             "tipo": "incontro_tipo",
+             "tipo_incontro": "diplomazia"
+            }
+           ]
+          },
+          {
+           "tipo": "carte_giocate",
+           "max": 0
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 56,
+      "nome": "Ultima risorsa",
+      "inneschi": [
+       {
+        "quando": "in_qualsiasi_momento",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "All'inizio della verifica dell'Affinità puoi giocare una qualsiasi carta Diplomazia dalla tua mano."
+         }
+        ],
+        "costo": [],
+        "una_volta": "incontro",
+        "facoltativo": true,
+        "condizione": {
+         "tutte": [
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "diplomazia"
+          },
+          {
+           "tipo": "manuale",
+           "testo": "il segnalino è nella casella più bassa del misuratore di Affinità"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32726.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32726.webp",
+   "facce": [
+    {
+     "numero": 53,
+     "nome": {
+      "es": "Sentidos agudizados",
+      "it": "Sensi acuti"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Cada vez que lances un dial, puedes volver a lanzarlo. Tienes que aceptar el segundo resultado.",
+      "it": "Ogni volta che lanci un Quadrante, puoi lanciarlo di nuovo. Devi accettare il secondo risultato."
+     }
+    },
+    {
+     "numero": 54,
+     "nome": {
+      "es": "Afortunado",
+      "it": "Fortunato"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Al Explorar: Puedes volver a tirar un dado 1 vez por Exploración. Debes aceptar el segundo resultado.",
+      "it": "Quando Esplori: puoi ritirare un dado 1 volta per Esplorazione. Devi accettare il secondo risultato."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 53,
+      "nome": "Sensi acuti",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Ogni volta che lanci un Quadrante, puoi lanciarlo di nuovo; devi accettare il secondo risultato."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 54,
+      "nome": "Fortunato",
+      "inneschi": [
+       {
+        "quando": "esplorazione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Puoi ritirare un dado (1 volta per Esplorazione); devi accettare il secondo risultato."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32725.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32725.webp",
+   "facce": [
+    {
+     "numero": 51,
+     "nome": {
+      "es": "Resistencia",
+      "it": "Resistenza"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "Siempre que pierdas 3 o más de {i:health}, reduce esta pérdida en 1.",
+      "it": "Ogni volta che perdi 3 o più {i:health}, riduci questa perdita di 1."
+     }
+    },
+    {
+     "numero": 52,
+     "nome": {
+      "es": "Presencia tranquilizadora",
+      "it": "Presenza rassicurante"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "En Combate: {i:skull} Si la última carta de la Secuencia no tiene Claves {i:aggression} o {i:aggression2}, prevén 1 {i:wound}.",
+      "it": "In Combattimento: {i:skull} Se l'ultima carta della Sequenza non ha Chiavi {i:aggression} o {i:aggression2}, previeni 1 {i:wound}."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 51,
+      "nome": "Resistenza",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Ogni volta che perdi 3 o più Salute, riduci questa perdita di 1.",
+          "ris": "salute",
+          "n": 1,
+          "soglia": 3
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 52,
+      "nome": "Presenza rassicurante",
+      "inneschi": [
+       {
+        "quando": "attacco",
+        "effetti": [
+         {
+          "tipo": "previeni",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "tutte": [
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "combattimento"
+          },
+          {
+           "tipo": "manuale",
+           "testo": "l'ultima carta della Sequenza non ha Chiavi Aggressività"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32724.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32724.webp",
+   "facce": [
+    {
+     "numero": 49,
+     "nome": {
+      "es": "Experto en artes marciales",
+      "it": "Esperto di arti marziali"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "En Combate, al final de tu activación, puedes {i:discard} 1 carta.",
+      "it": "In Combattimento, alla fine della tua attivazione, puoi {i:discard} 1 carta."
+     }
+    },
+    {
+     "numero": 50,
+     "nome": {
+      "es": "Ataque furtivo",
+      "it": "Attacco furtivo"
+     },
+     "attributo": "caution",
+     "effetto": {
+      "es": "En Combate: Al jugar la primera carta de la Secuencia, duplica el número total de {i:cube} que añade a la reserva de Combate.",
+      "it": "In Combattimento: quando giochi la prima carta della Sequenza, raddoppia il numero totale di {i:cube} che aggiunge alla Riserva di Combattimento."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 49,
+      "nome": "Esperto di arti marziali",
+      "inneschi": [
+       {
+        "quando": "attivazione",
+        "effetti": [
+         {
+          "tipo": "scarta_carte",
+          "n": 1,
+          "da": "mano"
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": true,
+        "condizione": {
+         "tipo": "incontro_tipo",
+         "tipo_incontro": "combattimento"
+        }
+       }
+      ]
+     },
+     {
+      "numero": 50,
+      "nome": "Attacco furtivo",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "In Combattimento: quando giochi la prima carta della Sequenza, raddoppia il numero totale di cubi che aggiunge alla Riserva."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32722.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32722.webp",
+   "facce": [
+    {
+     "numero": 45,
+     "nome": {
+      "es": "Faro de esperanza",
+      "it": "Faro di speranza"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "Al comienzo de cada Encuentro azul, aumenta la Afinidad en 1.",
+      "it": "All'inizio di ogni Incontro blu, aumenta l'Affinità di 1."
+     }
+    },
+    {
+     "numero": 46,
+     "nome": {
+      "es": "Entendimiento mutuo",
+      "it": "Comprensione reciproca"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "Durante la Diplomacia: Cuando juegues una carta, puedes tratar las casillas grises y rojas del medidor de Afinidad como si fueran verdes.",
+      "it": "Durante la Diplomazia: quando giochi una carta, puoi considerare le caselle grigie e rosse del misuratore di Affinità come se fossero verdi."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 45,
+      "nome": "Faro di speranza",
+      "inneschi": [
+       {
+        "quando": "inizio_incontro",
+        "effetti": [
+         {
+          "tipo": "affinita",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": {
+         "una": [
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "combattimento",
+           "colore": "blu"
+          },
+          {
+           "tipo": "incontro_tipo",
+           "tipo_incontro": "diplomazia",
+           "colore": "blu"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "numero": 46,
+      "nome": "Comprensione reciproca",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Durante la Diplomazia: quando giochi una carta, puoi considerare le caselle grigie e rosse del misuratore di Affinità come verdi."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32721.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32721.webp",
+   "facce": [
+    {
+     "numero": 43,
+     "nome": {
+      "es": "Perspicacia",
+      "it": "Perspicacia"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "Al comienzo del Encuentro, puedes descartar tu mano, barajar tu mazo de Combate o Diplomacia y robar el mismo número de cartas que descartaste (una vez por Encuentro).",
+      "it": "All'inizio dell'Incontro, puoi scartare la tua mano, mescolare il tuo mazzo Combattimento o Diplomazia e pescare lo stesso numero di carte che hai scartato (una volta per Incontro)."
+     }
+    },
+    {
+     "numero": 44,
+     "nome": {
+      "es": "Aprendiz rápido",
+      "it": "Apprendista rapido"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "Cada vez que mejores tu mazo de Combate o Diplomacia, roba 4 cartas en lugar de 3 y luego elige 1.",
+      "it": "Ogni volta che migliori il tuo mazzo Combattimento o Diplomazia, pesca 4 carte invece di 3 e poi scegline 1."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 43,
+      "nome": "Perspicacia",
+      "inneschi": [
+       {
+        "quando": "inizio_incontro",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Scarta la tua mano, mescola il tuo mazzo Combattimento o Diplomazia e pesca lo stesso numero di carte scartate."
+         }
+        ],
+        "costo": [],
+        "una_volta": "incontro",
+        "facoltativo": true,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 44,
+      "nome": "Apprendista rapido",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Ogni volta che migliori il tuo mazzo Combattimento o Diplomazia, pesca 4 carte invece di 3 e scegline 1.",
+          "n": 1
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/mazzo/32720.webp",
+   "tipo": "abilita",
+   "retro": "carte/mazzo/retro_32720.webp",
+   "facce": [
+    {
+     "numero": 41,
+     "nome": {
+      "es": "Transferencia de energía",
+      "it": "Trasferimento di energia"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "{i:action} Paga 1 de {r:Magia} y 1 de {i:health} para intercambiar los diales de 2 Menhires activos cualesquiera.",
+      "it": "{i:action} Paga 1 {r:Magia} e 1 {i:health} per scambiare i Quadranti di 2 Menhir attivi qualsiasi."
+     },
+     "azione": {
+      "costo": 1,
+      "risorsa": "energy"
+     }
+    },
+    {
+     "numero": 42,
+     "nome": {
+      "es": "Audacia",
+      "it": "Audacia"
+     },
+     "attributo": "empathy",
+     "effetto": {
+      "es": "Durante un Encuentro: Trata todas las Claves sin coste {i:x} como 1x.",
+      "it": "Durante un Incontro: considera tutte le Chiavi senza costo {i:x} come 1x."
+     }
+    }
+   ],
+   "gruppo": "abilita",
+   "codifica_attuale": {
+    "facce": [
+     {
+      "numero": 41,
+      "nome": "Trasferimento di energia",
+      "inneschi": [
+       {
+        "quando": "azione",
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Scambia i Quadranti di 2 Menhir attivi qualsiasi."
+         }
+        ],
+        "costo": [
+         {
+          "tipo": "paga",
+          "ris": "energia",
+          "n": 1
+         },
+         {
+          "tipo": "paga",
+          "ris": "magia",
+          "n": 1
+         },
+         {
+          "tipo": "paga",
+          "ris": "salute",
+          "n": 1
+         }
+        ],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     },
+     {
+      "numero": 42,
+      "nome": "Audacia",
+      "inneschi": [
+       {
+        "quando": "sempre",
+        "effetti": [
+         {
+          "tipo": "modificatore",
+          "cosa": "altro",
+          "testo": "Durante un Incontro: considera tutte le Chiavi senza costo {i:x} come 1x."
+         }
+        ],
+        "costo": [],
+        "una_volta": null,
+        "facoltativo": false,
+        "condizione": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33407.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "8/25",
+   "copie": 1,
+   "nome": {
+    "es": "Presa",
+    "it": "Presa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si recibes {i:wound}, {i:discard}.",
+     "it": "Se subisci {i:wound}, {i:discard}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "Hai subito Ferite in questo attacco"
+        },
+        "allora": [
+         {
+          "tipo": "scarta_ultima"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "innesco": "ritardata",
+      "tempo": 1,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cubi",
+        "n": 3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33410.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "quadrante_lancio",
+        "graal": [
+         {
+          "tipo": "cubi",
+          "n": 2
+         }
+        ],
+        "teschio": [
+         {
+          "tipo": "manuale",
+          "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33412.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "quadrante_lancio",
+        "graal": [
+         {
+          "tipo": "cubi",
+          "n": 2
+         }
+        ],
+        "teschio": [
+         {
+          "tipo": "manuale",
+          "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Forcejeo",
+    "it": "Colluttazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "{i:discard} si recibes más de 1 {i:wound}.",
+     "it": "{i:discard} se subisci più di 1 {i:wound}."
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "es": "Obtén {i:cube3}.",
+     "it": "Ottieni {i:cube3}."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "manuale",
+         "testo": "Hai subito più di 1 Ferita in questo attacco"
+        },
+        "allora": [
+         {
+          "tipo": "scarta_ultima"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "innesco": "ritardata",
+      "tempo": 1,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cubi",
+        "n": 3
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33312.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni punto di Salute che ti manca (Salute massima − Salute attuale)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_avanzado_de_combate/33313.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Retribución",
+    "it": "Retribuzione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada punto de {i:health} que te falte.",
+    "it": "Ottieni {i:cube} per ogni punto di {i:health} che ti manca."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni punto di Salute che ti manca (Salute massima − Salute attuale)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32904.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Distracción",
+    "it": "Distrazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Si el enemigo inflige {i:wound}, en vez de eso pierde esa cantidad de {i:cube}.",
+    "it": "Se il nemico infligge {i:wound}, invece perdi quella quantità di {i:cube}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Se il nemico infligge Ferite, invece perdi altrettanti segnalini (non subisci quelle Ferite)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32905.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "En vez del ataque enemigo, pierde {i:cube} y {i:discard}.",
+    "it": "Invece dell'attacco nemico, perdi {i:cube} e {i:discard}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico (invece dell'attacco)"
+       },
+       {
+        "tipo": "cubi",
+        "n": -1
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32909.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Falsa retirada",
+    "it": "Falsa ritirata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pierde {i:cube} y lanza un dial: Calavera: Resuelve un ataque de oportunidad. Grial: {i:skull} ignora el ataque enemigo, obtén {i:cube2}, {i:discard}.",
+    "it": "Perdi {i:cube} e lancia un Quadrante: Teschio: risolvi un attacco di opportunità. Graal: {i:skull} ignora l'attacco nemico, ottieni {i:cube2}, {i:discard}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cubi",
+        "n": -1
+       },
+       {
+        "tipo": "quadrante_lancio",
+        "graal": [
+         {
+          "tipo": "manuale",
+          "testo": "Durante l'attacco nemico di questa attivazione: ignora l'attacco nemico, ottieni 2 segnalini e scarta questa carta"
+         }
+        ],
+        "teschio": [
+         {
+          "tipo": "manuale",
+          "testo": "Risolvi un attacco di opportunità del nemico"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32911.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32912.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32913.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "13/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Supporto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Añade 2 Cargas a cualquier carta de la Secuencia.",
+    "it": "Aggiungi 2 Cariche a una qualsiasi carta della Sequenza."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Aggiungi 2 Cariche su una qualsiasi carta della Sequenza"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_de_combate_basico/32915.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": {
+       "una": [
+        {
+         "tipo": "oggetto",
+         "parola": "Arma"
+        },
+        {
+         "tipo": "oggetto",
+         "parola": "Scudo"
+        }
+       ]
+      },
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Gira 1 Arma o Scudo che stai usando: resta inattivo fino alla fine del Combattimento"
+       },
+       {
+        "tipo": "cubi",
+        "n": 2
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32800.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Polvo cegador",
+    "it": "Polvere accecante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, {i:discard} después del ataque.",
+    "it": "Ignora l'attacco nemico, {i:discard} dopo l'attacco."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32801.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Polvo cegador",
+    "it": "Polvere accecante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, {i:discard} después del ataque.",
+    "it": "Ignora l'attacco nemico, {i:discard} dopo l'attacco."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32804.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra ágil",
+    "it": "Manovra agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+     "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "pesca_carte",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32805.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra ágil",
+    "it": "Manovra agile"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Roba 1 carta.",
+     "it": "Pesca 1 carta."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+     "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "pesca_carte",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32808.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rodar y esquivar",
+    "it": "Rotolare e schivare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora el ataque enemigo, pierde 1 de {i:energy}.",
+    "it": "Ignora l'attacco nemico, perdi 1 {i:energy}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "energia",
+        "n": -1,
+        "chi": "attivo"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32811.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Brebaje de poder",
+    "it": "Pozione di potere"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas: Duplica todas las Claves (de Bonificación, Mágicas y sin coste) de una sola carta (usar solo al jugar dicha carta).",
+     "it": "Paga 2 Cariche: raddoppia tutte le Chiavi (di Bonus, Magiche e senza costo) di una sola carta (da usare solo quando giochi quella carta)."
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cariche",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Raddoppia tutte le Chiavi (di Bonus, Magiche e senza costo) di una sola carta, solo quando giochi quella carta"
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "cariche",
+        "n": -2
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32812.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Ayuda de la naturaleza",
+    "it": "Aiuto della natura"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas.",
+     "it": "Ottieni 2 Cariche."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 Cargas: Ignora el ataque enemigo.",
+     "it": "Paga 2 Cariche: ignora l'attacco nemico."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 2 de {r:Magia}: Restaura 1 de {i:health} a cualquier miembro del equipo.",
+     "it": "Paga 2 {r:Magia}: ripristina 1 {i:health} a un qualsiasi membro della Compagnia."
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cariche",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "cariche",
+        "n": -2
+       }
+      ],
+      "facoltativo": true
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": 1,
+        "chi": "scelto"
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "attivo"
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32813.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo firme",
+    "it": "Supporto saldo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en cualquier carta de la Secuencia.",
+    "it": "Metti 3 Cariche su una qualsiasi carta della Sequenza."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 3 Cariche su una qualsiasi carta della Sequenza"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_combate/32814.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo firme",
+    "it": "Supporto saldo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en cualquier carta de la Secuencia.",
+    "it": "Metti 3 Cariche su una qualsiasi carta della Sequenza."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 3 Cariche su una qualsiasi carta della Sequenza"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32924.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Supporto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Añade 2 Cargas a cualquier carta de la Secuencia.",
+    "it": "Aggiungi 2 Cariche a una qualsiasi carta della Sequenza."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Aggiungi 2 Cariche su una qualsiasi carta della Sequenza"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32922.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar.",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca."
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "energia",
+        "n": -1,
+        "chi": "attivo"
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca (Fine del turno)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32921.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe crítico",
+    "it": "Colpo critico"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "El enemigo ataca usando el primer ataque de su Tabla de Combate.",
+    "it": "Il nemico attacca usando il primo attacco della sua Tabella di Combattimento."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Il nemico attacca usando il primo attacco (prima fascia) della sua Tabella di Combattimento"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33814.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": {
+       "una": [
+        {
+         "tipo": "oggetto",
+         "parola": "Arma"
+        },
+        {
+         "tipo": "oggetto",
+         "parola": "Scudo"
+        }
+       ]
+      },
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Gira 1 Arma o Scudo che stai usando: resta inattivo fino alla fine del Combattimento"
+       },
+       {
+        "tipo": "cubi",
+        "n": 2
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33700.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "1/15",
+   "copie": 1,
+   "nome": {
+    "es": "Truco sucio",
+    "it": "Trucco sporco"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 1 Carga en la carta de Siembra.",
+     "it": "Metti 1 Carica sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Prevén 2 {i:wound}.",
+     "it": "Previeni 2 {i:wound}."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 1 Carica sulla carta Semina"
+       }
+      ]
+     },
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "previeni",
+        "n": 2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33701.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "2/15",
+   "copie": 1,
+   "nome": {
+    "es": "Tirón de guadaña",
+    "it": "Strattone di falce"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 1 Carga en la carta de Siembra.",
+     "it": "Metti 1 Carica sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Elige un Ataque enemigo de un rango más bajo o más alto en la Tabla de Combate, {i:discard} después del ataque.",
+     "it": "Scegli un attacco nemico di una fascia più bassa o più alta nella Tabella di Combattimento, {i:discard} dopo l'attacco."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 1 Carica sulla carta Semina"
+       }
+      ]
+     },
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Scegli l'attacco nemico di una fascia immediatamente più bassa o più alta nella Tabella di Combattimento"
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33702.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/15",
+   "copie": 1,
+   "nome": {
+    "es": "Siembra",
+    "it": "Semina"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en esta carta O BIEN pon 1 Carga sobre cualquier carta de la Secuencia y {i:discard}.",
+    "it": "Metti 3 Cariche su questa carta OPPURE metti 1 Carica su una qualsiasi carta della Sequenza e {i:discard}."
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "scelta",
+        "opzioni": [
+         {
+          "testo": "Metti 3 Cariche su questa carta",
+          "effetti": [
+           {
+            "tipo": "cariche",
+            "n": 3
+           }
+          ]
+         },
+         {
+          "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza e scarta questa carta",
+          "effetti": [
+           {
+            "tipo": "manuale",
+            "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza"
+           },
+           {
+            "tipo": "scarta_ultima"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33703.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "4/15",
+   "copie": 1,
+   "nome": {
+    "es": "Siembra",
+    "it": "Semina"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 3 Cargas en esta carta O BIEN pon 1 Carga sobre cualquier carta de la Secuencia y {i:discard}.",
+    "it": "Metti 3 Cariche su questa carta OPPURE metti 1 Carica su una qualsiasi carta della Sequenza e {i:discard}."
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "scelta",
+        "opzioni": [
+         {
+          "testo": "Metti 3 Cariche su questa carta",
+          "effetti": [
+           {
+            "tipo": "cariche",
+            "n": 3
+           }
+          ]
+         },
+         {
+          "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza e scarta questa carta",
+          "effetti": [
+           {
+            "tipo": "manuale",
+            "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza"
+           },
+           {
+            "tipo": "scarta_ultima"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33704.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cosecha",
+    "it": "Raccolto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Retira todas las Cargas de todas las cartas de Siembra en la Secuencia; obtén {i:cube2} por cada Carga retirada de esta forma.",
+    "it": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni {i:cube2} per ogni Carica rimossa in questo modo."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni 2 segnalini per ogni Carica rimossa"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33705.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "6/15",
+   "copie": 1,
+   "nome": {
+    "es": "Cosecha",
+    "it": "Raccolto"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Retira todas las Cargas de todas las cartas de Siembra en la Secuencia; obtén {i:cube2} por cada Carga retirada de esta forma.",
+    "it": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni {i:cube2} per ogni Carica rimossa in questo modo."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Rimuovi tutte le Cariche da tutte le carte Semina nella Sequenza; ottieni 2 segnalini per ogni Carica rimossa"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33706.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Torbellino",
+    "it": "Turbine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube2",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 2 Cargas en la carta de Siembra.",
+     "it": "Metti 2 Cariche sulla carta Semina."
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "+2 {i:wound}.",
+     "it": "+2 {i:wound}."
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 2 Cariche sulla carta Semina"
+       }
+      ]
+     },
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "ferite",
+        "n": 2
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33708.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Extender la maldición",
+    "it": "Diffondere la maledizione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Obtén 2 de {i:terror}. Paga cualquier cantidad de {r:Magia} para obtener 2 veces esa cantidad en {i:cube}.",
+    "it": "Ottieni 2 {i:terror}. Paga una qualsiasi quantità di {r:Magia} per ottenere il doppio di quella quantità in {i:cube}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 2,
+        "chi": "attivo"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "Paga una qualsiasi quantità di Magia per ottenere il doppio di quella quantità in segnalini"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33712.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "13/15",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra rápida",
+    "it": "Manovra rapida"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_avanzado_de_combate/33713.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación extensiva",
+    "it": "Pianificazione estesa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+    "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca (Fine del turno)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33822.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "23/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} En vez del ataque enemigo, pierde {i:cube} y {i:discard}",
+    "it": "{i:skull} Invece dell'attacco nemico, perdi {i:cube} e {i:discard}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico (invece dell'attacco)"
+       },
+       {
+        "tipo": "cubi",
+        "n": -1
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33821.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "22/25",
+   "copie": 1,
+   "nome": {
+    "es": "Golpe crítico",
+    "it": "Colpo critico"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube2",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} El enemigo ataca usando el primer ataque de su Tabla de Combate",
+    "it": "{i:skull} Il nemico attacca usando il primo attacco della sua Tabella di Combattimento"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Il nemico attacca usando il primo attacco (prima fascia) della sua Tabella di Combattimento"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/blanco_mazo_avanzado_de_combate/33818.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}",
+    "it": "{i:skull} Per ogni {i:cube} che dovresti perdere, ottieni invece {i:cube}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Per ogni segnalino che dovresti perdere in questo attacco, ottieni invece 1 segnalino"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34806.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "7/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34809.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Trampa inmovilizante",
+    "it": "Trappola immobilizzante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} En vez del ataque enemigo, pierde {i:cube} y {i:discard}",
+    "it": "{i:skull} Invece dell'attacco nemico, perdi {i:cube} e {i:discard}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico (invece dell'attacco)"
+       },
+       {
+        "tipo": "cubi",
+        "n": -1
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34811.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Distracción",
+    "it": "Distrazione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Si el enemigo inflige {i:wound}, en vez de eso pierde esa cantidad de {i:cube}",
+    "it": "{i:skull} Se il nemico infligge {i:wound}, perdi invece altrettanti {i:cube}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Se il nemico infligge Ferite, invece perdi altrettanti segnalini (non subisci quelle Ferite)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_basico_de_combate/34814.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}",
+    "it": "{i:place} Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "quadrante_lancio",
+        "graal": [
+         {
+          "tipo": "cubi",
+          "n": 2
+         }
+        ],
+        "teschio": [
+         {
+          "tipo": "manuale",
+          "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_avanzado_de_combate/32918.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "18/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}.",
+    "it": "Per ogni {i:cube} che dovresti perdere, invece ottieni {i:cube}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Per ogni segnalino che dovresti perdere in questo attacco, ottieni invece 1 segnalino"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33401.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33402.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:wound} recibida en este ataque.",
+    "it": "Ottieni {i:cube} per ogni {i:wound} subita in questo attacco."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni Ferita subita in questo attacco"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/beor_mazo_basico_de_combate/33405.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "beor",
+   "colore": "A",
+   "numero": "6/25",
+   "copie": 1,
+   "nome": {
+    "es": "Lanzar",
+    "it": "Lanciare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Voltea 1 Arma o Escudo que estés usando para obtener {i:cube2} (esa carta está inactiva hasta el fin del Combate).",
+    "it": "Gira 1 Arma o Scudo che stai usando per ottenere {i:cube2} (quella carta è inattiva fino alla fine del Combattimento)."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": {
+       "una": [
+        {
+         "tipo": "oggetto",
+         "parola": "Arma"
+        },
+        {
+         "tipo": "oggetto",
+         "parola": "Scudo"
+        }
+       ]
+      },
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Gira 1 Arma o Scudo che stai usando: resta inattivo fino alla fine del Combattimento"
+       },
+       {
+        "tipo": "cubi",
+        "n": 2
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34411.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Estoicismo",
+    "it": "Stoicismo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Obtén 2 Cargas",
+     "it": "{i:place} Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Paga 2 Cargas: Ignora el ataque enemigo",
+     "it": "Paga 2 Cariche: ignora l'attacco nemico"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cariche",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "cariche",
+        "n": -2
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34413.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "14/15",
+   "copie": 1,
+   "nome": {
+    "es": "Magia de sangre",
+    "it": "Magia di sangue"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:health}, obtén 3 Cargas",
+     "it": "{i:place} Perdi 1 {i:health}, ottieni 3 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Puedes usar estas Cargas como {r:Magia} durante este Encuentro",
+     "it": "Puoi usare queste Cariche come {r:Magia} durante questo Incontro"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "salute",
+        "n": -1,
+        "chi": "attivo"
+       },
+       {
+        "tipo": "cariche",
+        "n": 3
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Le Cariche di questa carta si possono usare come Magia durante questo Incontro"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/gusano_mazo_avanzado_de_combate/34414.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "15/15",
+   "copie": 1,
+   "nome": {
+    "es": "Aura exaltada",
+    "it": "Aura esaltata"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo pueden tratar {i:extra} como {i:draw} (y viceversa)",
+    "it": "Tutti i membri della Compagnia possono considerare {i:extra} come {i:draw} (e viceversa)"
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Tutti i membri della Compagnia possono considerare il bonus carta aggiuntiva (dorata) come pesca 1 carta, e viceversa"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34823.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "24/25",
+   "copie": 1,
+   "nome": {
+    "es": "Aura heroica",
+    "it": "Aura eroica"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "cube",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "es": "Todos los miembros del equipo ignoran los efectos del Pánico",
+    "it": "Tutti i membri della Compagnia ignorano gli effetti del Panico"
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Tutti i membri della Compagnia ignorano gli effetti del Panico"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34820.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "21/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Pierde 1 de {i:energy}",
+     "it": "{i:place} Perdi 1 {i:energy}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "energia",
+        "n": -1,
+        "chi": "attivo"
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca (Fine del turno)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/rojo_mazo_avanzado_de_combate/34819.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "gusano",
+   "colore": "M",
+   "numero": "20/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound} recibida en este ataque",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound} subita in questo attacco"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni Ferita subita in questo attacco"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34304.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Escabullirse",
+    "it": "Sgattaiolare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Paga 2 de {i:energy} para ignorar el ataque enemigo",
+    "it": "{i:skull} Paga 2 {i:energy} per ignorare l'attacco nemico"
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 2,
+        "chi": "attivo"
+       }
+      ],
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34306.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Despistar",
+    "it": "Depistare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora todas las pérdidas de {i:cube}",
+     "it": "{i:skull} Ignora tutte le perdite di {i:cube}"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Si {i:discard}, pierde 2 de {i:energy}",
+     "it": "Se {i:discard}, perdi 2 {i:energy}"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "meno_cubi",
+        "n": 99
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Se questa carta viene scartata, perdi 2 Energia"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34307.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "El legado de los siglos",
+    "it": "L'eredità dei secoli"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Retira cualquier número de Cargas de cualquier carta de la Secuencia. Ignora una pérdida de {i:cube} o 1 {i:wound} por cada Carga retirada",
+    "it": "{i:skull} Rimuovi un numero qualsiasi di Cariche da qualsiasi carta della Sequenza. Ignora una perdita di {i:cube} o 1 {i:wound} per ogni Carica rimossa"
+   },
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Rimuovi un numero qualsiasi di Cariche da qualsiasi carta della Sequenza; per ogni Carica rimossa ignora una perdita di 1 segnalino o 1 Ferita"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34308.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "9/15",
+   "copie": 1,
+   "nome": {
+    "es": "Enjambre sin fin",
+    "it": "Sciame senza fine"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "es": "{i:place} Cada miembro del equipo obtiene 1 de {i:terror}; pon 4 {i:delay} en esta carta",
+     "it": "{i:place} Ogni membro della Compagnia ottiene 1 {i:terror}; metti 4 {i:delay} su questa carta"
+    },
+    {
+     "innesco": "passiva",
+     "es": "Siempre que retires {i:delay}, obtén {i:cube}",
+     "it": "Ogni volta che rimuovi {i:delay}, ottieni {i:cube}"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 1,
+        "chi": "compagnia"
+       },
+       {
+        "tipo": "gettone_tempo_carta",
+        "n": 4
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ogni volta che rimuovi un gettone Tempo, ottieni 1 segnalino"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34309.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "10/15",
+   "copie": 1,
+   "nome": {
+    "es": "¡A por los ojos!",
+    "it": "Agli occhi!"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "es": "{i:skull} Ignora el ataque enemigo",
+     "it": "{i:skull} Ignora l'attacco nemico"
+    },
+    {
+     "innesco": "attacco",
+     "es": "{i:discard} después del ataque",
+     "it": "{i:discard} dopo l'attacco"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora l'attacco nemico"
+       }
+      ]
+     },
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34310.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "11/15",
+   "copie": 1,
+   "nome": {
+    "es": "Rata acorralada",
+    "it": "Ratto alle strette"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "3x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "es": "{i:skull} Obtén {i:cube} por cada {i:wound}",
+    "it": "{i:skull} Ottieni {i:cube} per ogni {i:wound}"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni Ferita (subita in questo attacco)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/niamh_mazo_avanzado_de_combate/34311.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": "niamh",
+   "colore": "R",
+   "numero": "12/15",
+   "copie": 1,
+   "nome": {
+    "es": "Roer",
+    "it": "Rosicchiare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube3",
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "es": "{i:place} Obtén 2 de {i:terror}. Luego, obtén {i:cube} por cada 2 puntos de {i:aggression} y/o {i:practicality} que tengas",
+    "it": "{i:place} Ottieni 2 {i:terror}. Poi ottieni {i:cube} per ogni 2 punti di {i:aggression} e/o {i:practicality} che possiedi"
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "n": 2,
+        "chi": "attivo"
+       },
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni 2 punti della somma di Aggressività e Praticità che possiedi"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/azul_mazo_avanzado_de_combate/33418.webp",
+   "tipo": "combattimento",
+   "mazzo": "avanzato",
+   "personaggio": null,
+   "colore": "A",
+   "numero": "19/25",
+   "copie": 1,
+   "nome": {
+    "es": "Fintar",
+    "it": "Fintare"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Por cada {i:cube} que vayas a perder, en vez de eso obtén {i:cube}.",
+    "it": "Per ogni {i:cube} che dovresti perdere, invece ottieni {i:cube}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Per ogni segnalino che dovresti perdere in questo attacco, ottieni invece 1 segnalino"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33802.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Planificación meticulosa",
+    "it": "Pianificazione meticolosa"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pierde 1 de {i:energy}.",
+     "it": "Perdi 1 {i:energy}."
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar.",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca."
+    }
+   ],
+   "passiva": true,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "energia",
+        "n": -1,
+        "chi": "attivo"
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca (Fine del turno)"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33809.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "10/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ignorar el dolor",
+    "it": "Ignorare il dolore"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "courage",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Obtén {i:cube} por cada {i:wound} recibida en este ataque.",
+    "it": "Ottieni {i:cube} per ogni {i:wound} subita in questo attacco."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ottieni 1 segnalino per ogni Ferita subita in questo attacco"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33810.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "11/25",
+   "copie": 1,
+   "nome": {
+    "es": "Maniobra",
+    "it": "Manovra"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "courage"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "practicality"
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si Escapas del Combate, ignora el ataque de oportunidad.",
+    "it": "Se Scappi dal Combattimento, ignora l'attacco di opportunità."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Se Scappi dal Combattimento, ignora l'attacco di opportunità"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/arev_mazo_basico_de_combate/33811.webp",
+   "tipo": "combattimento",
+   "mazzo": "base",
+   "personaggio": "arev",
+   "colore": "G",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ataque arriesgado",
+    "it": "Attacco rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "aggression",
+     "livello": 2
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "cube",
+     "cornice": "attributo",
+     "apre": "practicality",
+     "livello": 2
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "cube",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Lanza un dial: Calavera: {i:skull} +2 {i:wound}. Grial: Obtén {i:cube2}.",
+    "it": "Lancia un Quadrante: Teschio: {i:skull} +2 {i:wound}. Graal: ottieni {i:cube2}."
+   },
+   "passiva": false,
+   "gruppo": "combattimento",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "quadrante_lancio",
+        "graal": [
+         {
+          "tipo": "cubi",
+          "n": 2
+         }
+        ],
+        "teschio": [
+         {
+          "tipo": "manuale",
+          "testo": "Durante l'attacco nemico di questa attivazione: +2 Ferite"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33201.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "2/25",
+   "copie": 1,
+   "nome": {
+    "es": "Momento de claridad",
+    "it": "Momento di lucidità"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y roba 1 carta",
+    "it": "Se {i:discard}, {i:arrowdown} e pesca 1 carta"
+   },
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": -1
+       },
+       {
+        "tipo": "pesca_carte",
+        "n": 1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33202.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "3/25",
+   "copie": 1,
+   "nome": {
+    "es": "Ganar tiempo",
+    "it": "Guadagnare tempo"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": {
+    "innesco": "attacco",
+    "tempo": 0,
+    "es": "Ignora la Respuesta del oponente; {i:discard} después de la Respuesta",
+    "it": "Ignora la Risposta dell'avversario; {i:discard} dopo la Risposta"
+   },
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Ignora la Risposta dell'avversario"
+       },
+       {
+        "tipo": "scarta_ultima"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33203.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "4/25",
+   "copie": 1,
+   "nome": {
+    "es": "Malas indicaciones",
+    "it": "Indicazioni sbagliate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": {
+    "innesco": "passiva",
+    "tempo": 0,
+    "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+    "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+   },
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": -1
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "rep",
+        "n": -1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33204.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "5/25",
+   "copie": 1,
+   "nome": {
+    "es": "Reunir indicios",
+    "it": "Raccogliere indizi"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": null,
+     "apre": null
+    }
+   ],
+   "fondo": {
+    "bonus": "draw",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 1 Carga",
+     "it": "Ottieni 1 Carica"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Retira todas las Cargas de esta carta: {i:arrowup} por Carga retirada",
+     "it": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cariche",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Rimuovi tutte le Cariche da questa carta: {i:arrowup} per ogni Carica rimossa"
+       }
+      ],
+      "quando": "in_qualsiasi_momento",
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33208.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "9/25",
+   "copie": 1,
+   "nome": {
+    "es": "Medidas desesperadas",
+    "it": "Misure disperate"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "extra",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, {i:arrowup}{i:arrowup}",
+     "it": "Se l'Affinità non è verde, {i:arrowup}{i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown} y pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, {i:arrowdown} e perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": {
+       "non": {
+        "tipo": "affinita",
+        "colore": "verde"
+       }
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": -1
+       },
+       {
+        "tipo": "risorsa",
+        "ris": "rep",
+        "n": -1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33211.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "12/25",
+   "copie": 1,
+   "nome": {
+    "es": "Canción cautivadora",
+    "it": "Canzone ammaliante"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "draw",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Si la Afinidad no es verde, pierde 1 de {r:Rep}",
+     "it": "Se l'Affinità non è verde, perdi 1 {r:Rep}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, pierde 1 de {r:Rep}",
+     "it": "Se {i:discard}, perdi 1 {r:Rep}"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": {
+       "non": {
+        "tipo": "affinita",
+        "colore": "verde"
+       }
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "rep",
+        "n": -1
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "risorsa",
+        "ris": "rep",
+        "n": -1
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33213.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "14/25",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo",
+    "it": "Sostegno"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "2x"
+   },
+   "capacita": {
+    "innesco": "piazza",
+    "tempo": 0,
+    "es": "Pon 2 Cargas en una carta elegida de la Secuencia",
+    "it": "Metti 2 Cariche su una carta a scelta della Sequenza"
+   },
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 2 Cariche su una carta a scelta della Sequenza"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/verde_mazo_de_diplomacia_basico/33214.webp",
+   "tipo": "diplomazia",
+   "mazzo": "base",
+   "personaggio": null,
+   "colore": "V",
+   "numero": "15/25",
+   "copie": 1,
+   "nome": {
+    "es": "Argucia arriesgada",
+    "it": "Stratagemma rischioso"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": null,
+     "apre": "caution"
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "x"
+   },
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}",
+     "it": "Se {i:discard}, {i:arrowdown}{i:arrowdown}{i:arrowdown}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Cada miembro del equipo roba 1 carta adicional en su paso de robar",
+     "it": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel suo passo di pesca"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": -3
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "modificatore",
+        "cosa": "altro",
+        "testo": "Ogni membro della Compagnia pesca 1 carta aggiuntiva nel passo di pesca di Fine del turno"
+       }
+      ],
+      "quando": "sempre"
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33104.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "5/15",
+   "copie": 1,
+   "nome": {
+    "es": "Reflexión",
+    "it": "Riflessione"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": null,
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "es": "Si {i:discard}, {i:arrowup}",
+     "it": "Se {i:discard}, {i:arrowup}"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "{i:discard} después de la Respuesta",
+     "it": "{i:discard} dopo la Risposta"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "attacco",
+      "tempo": 0,
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Questa carta viene scartata ({i:discard})"
+      },
+      "effetti": [
+       {
+        "tipo": "affinita",
+        "n": 1
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "scarta_ultima"
+       }
+      ],
+      "quando": "dopo_attacco"
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33106.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "7/15",
+   "copie": 1,
+   "nome": {
+    "es": "Paciencia de la naturaleza",
+    "it": "Pazienza della natura"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": null,
+     "apre": null
+    },
+    {
+     "riga": 2,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "caution",
+     "livello": 2
+    },
+    {
+     "riga": 3,
+     "bonus": "special",
+     "cornice": "attributo",
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "extra",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "1x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Obtén 2 Cargas",
+     "it": "Ottieni 2 Cariche"
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "es": "Paga 1 Carga: Prevén 1 {i:discard}\nPaga 1 Carga: Prevén {i:arrowdown}",
+     "it": "Paga 1 Carica: previeni 1 {i:discard}\nPaga 1 Carica: previeni {i:arrowdown}"
+    }
+   ],
+   "passiva": true,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "cariche",
+        "n": 2
+       }
+      ]
+     },
+     {
+      "innesco": "passiva",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "scelta",
+        "opzioni": [
+         {
+          "testo": "Previeni 1 {i:discard}",
+          "effetti": [
+           {
+            "tipo": "manuale",
+            "testo": "Previeni 1 {i:discard}"
+           }
+          ]
+         },
+         {
+          "testo": "Previeni {i:arrowdown}",
+          "effetti": [
+           {
+            "tipo": "manuale",
+            "testo": "Previeni 1 {i:arrowdown}"
+           }
+          ]
+         }
+        ]
+       }
+      ],
+      "costo": [
+       {
+        "tipo": "cariche",
+        "n": -1
+       }
+      ],
+      "quando": "in_qualsiasi_momento",
+      "facoltativo": true
+     }
+    ]
+   }
+  },
+  {
+   "img": "carte/ailei_mazo_avanzado_de_diplomacia/33107.webp",
+   "tipo": "diplomazia",
+   "mazzo": "avanzato",
+   "personaggio": "ailei",
+   "colore": "V",
+   "numero": "8/15",
+   "copie": 1,
+   "nome": {
+    "es": "Apoyo necesario",
+    "it": "Sostegno necessario"
+   },
+   "chiavi": [
+    {
+     "riga": 1,
+     "bonus": "extra",
+     "cornice": "attributo",
+     "apre": "empathy"
+    },
+    {
+     "riga": 2,
+     "bonus": "draw",
+     "cornice": "attributo",
+     "apre": null
+    },
+    {
+     "riga": 3,
+     "bonus": null,
+     "apre": "spirituality"
+    },
+    {
+     "riga": 4,
+     "bonus": "arrowup",
+     "cornice": "magia",
+     "apre": "magic"
+    }
+   ],
+   "fondo": {
+    "bonus": "arrowup",
+    "molt": "2x"
+   },
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Pon 2 Cargas en una carta a tu elección de la Secuencia",
+     "it": "Metti 2 Cariche su una carta a tua scelta della Sequenza"
+    },
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "es": "Retira 2 {i:delay} de una carta a tu elección de la Secuencia",
+     "it": "Rimuovi 2 {i:delay} da una carta a tua scelta della Sequenza"
+    }
+   ],
+   "passiva": false,
+   "gruppo": "diplomazia",
+   "codifica_attuale": {
+    "capacita": [
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "manuale",
+        "testo": "Metti 2 Cariche su una carta a tua scelta della Sequenza"
+       }
+      ]
+     },
+     {
+      "innesco": "piazza",
+      "tempo": 0,
+      "condizione": null,
+      "effetti": [
+       {
+        "tipo": "gettone_tempo_carta",
+        "n": -2
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

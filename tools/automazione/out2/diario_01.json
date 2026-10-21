@@ -1,0 +1,2712 @@
+{
+ "voci": {
+  "r:84aff6d660c4": {
+   "effetti": [
+    {
+     "tipo": "luogo",
+     "azione": "sostituisci",
+     "vecchio": "questo",
+     "nuovo": 121
+    },
+    {
+     "tipo": "diario",
+     "luogo": 121
+    }
+   ]
+  },
+  "r:2a1cbd127b27": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "diario",
+     "luogo": 102,
+     "sezione": "sogno",
+     "quando": "riposo"
+    }
+   ]
+  },
+  "c:4524ab19a3f3": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "esito_incontro",
+      "esito": "fuga_nemico"
+     }
+    ]
+   }
+  },
+  "c:14043563f8e8": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "esito_incontro",
+      "esito": "fuga_nemico"
+     }
+    ]
+   }
+  },
+  "r:5cc0ac20684d": {
+   "effetti": [
+    {
+     "tipo": "nessun_bottino"
+    }
+   ]
+  },
+  "c:a056ec437354": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "esito_incontro",
+      "esito": "fuga"
+     }
+    ]
+   }
+  },
+  "c:777b97a8601b": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_perso"
+     },
+     {
+      "tipo": "esito_incontro",
+      "esito": "fuga"
+     }
+    ]
+   }
+  },
+  "c:344edddb4391": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "status",
+      "nome": "Inaffidabile",
+      "parti": []
+     },
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "min": 1
+     }
+    ]
+   }
+  },
+  "c:29f5862c5bd3": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Inaffidabile",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "max": 0
+     }
+    ]
+   },
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "attr": "practicality",
+       "per": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:5af3782305a3": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "escludi_parola": "Compagno"
+    },
+    {
+     "tipo": "status",
+     "nome": "Saccheggiatore",
+     "parti": [
+      1
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "c:3613a25f7072": {
+   "condizione": {
+    "tipo": "gettoni_cerca",
+    "luogo": "qui",
+    "min": 1
+   }
+  },
+  "r:4db0969185c1": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 105,
+     "sezione": "sogno"
+    }
+   ]
+  },
+  "q:bbb051af0751": {
+   "condizione": {
+    "tipo": "gettoni_cerca",
+    "luogo": "qui",
+    "max": 0
+   }
+  },
+  "q:2b0d19caca29": {
+   "condizione": {
+    "tipo": "gettoni_cerca",
+    "luogo": "qui",
+    "max": 0
+   }
+  },
+  "r:b23d48ebc172": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "n": 1
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:96ef5bb365f3": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "n": 3
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:692ee12f61cb": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "n": 6
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "r:2bf97648f76a": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 32,
+     "rimuovi": false
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "segreto:32",
+     "valore": 3,
+     "gettone": "tempo"
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il Quadrante del Segreto 32 scende di 1 a ogni Inizio della Giornata; quando si esaurisce il Segreto viene scartato (regola della carta; potrete riottenerlo)."
+    }
+   ]
+  },
+  "c:048866e51da2": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "status",
+      "nome": "Battitore di Piste",
+      "parti": []
+     },
+     {
+      "tipo": "quadrante",
+      "dove": "Vergine Arciera"
+     }
+    ]
+   }
+  },
+  "c:53aa567da51c": {
+   "condizione": {
+    "tipo": "rimando"
+   }
+  },
+  "q:b49c249c2d2c": {
+   "condizione": {
+    "tipo": "rimando"
+   }
+  },
+  "r:ecead67389d8": {
+   "effetti": [
+    {
+     "tipo": "morte",
+     "chi": "attivo"
+    }
+   ]
+  },
+  "r:021e7297c70b": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "rimando",
+     "luogo": 109,
+     "verso": 6
+    }
+   ]
+  },
+  "r:394ade4c31d2": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "viola",
+     "pesca": 2,
+     "piu_basso": true
+    }
+   ]
+  },
+  "r:a0d284d642ba": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 2,
+     "escludi_parola": "Compagno"
+    },
+    {
+     "tipo": "segreto",
+     "n": 21,
+     "rimuovi": false,
+     "nome": "Talismano Opaco"
+    },
+    {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      3
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:a994c050b2a8": {
+   "condizione": {
+    "tipo": "sacrificio",
+    "da": 0,
+    "a": 1
+   }
+  },
+  "c:2e1a4808978d": {
+   "condizione": {
+    "tipo": "sacrificio",
+    "da": 2,
+    "a": 2
+   }
+  },
+  "c:08431fe5cfdb": {
+   "condizione": {
+    "tipo": "sacrificio",
+    "da": 3,
+    "a": 4
+   }
+  },
+  "q:6c1f6d4eb3dc": {
+   "costo": [
+    {
+     "tipo": "offerta",
+     "valori": {
+      "ricchezza": 1,
+      "oggetto_fabbricabile": 1,
+      "oggetto": 2
+     },
+     "testo": "Scegliete quanta Ricchezza e quali Oggetti donare (vengono scartati): +1 per Ricchezza, +1 per Oggetto Artigianale, +2 per ogni altro Oggetto."
+    }
+   ]
+  },
+  "q:eadd92468cbb": {
+   "condizione": {
+    "tipo": "gettone_tempo",
+    "luogo": "qui",
+    "min": 1
+   }
+  },
+  "c:b43c600ceb05": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "min": 1
+     },
+     {
+      "tipo": "status",
+      "nome": "Missione Moonring",
+      "parti": []
+     }
+    ]
+   }
+  },
+  "r:8979b00ee27b": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "energia",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Pergamena Intrisa d’Ombra",
+     "alternativa": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1,
+       "chi": "diviso"
+      }
+     ]
+    }
+   ]
+  },
+  "r:4f2794f070fd": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Spada Runica",
+     "alternativa": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 3,
+       "chi": "diviso"
+      }
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      5
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "c:b33a06119412": {
+   "condizione": {
+    "tipo": "rimando"
+   }
+  },
+  "q:647210aa06b8": {
+   "condizione": {
+    "tipo": "rimando"
+   }
+  },
+  "r:bb2f1a112497": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "terrore",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "salute",
+     "n": -1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "rimando",
+     "luogo": 114,
+     "verso": 2
+    }
+   ]
+  },
+  "c:097f8dc7b681": {
+   "condizione": {
+    "tipo": "gettone_tempo",
+    "luogo": "qui",
+    "min": 1
+   }
+  },
+  "q:92d77486ce34": {
+   "condizione": {
+    "tipo": "lancio",
+    "esito": "teschio"
+   }
+  },
+  "q:6f413b34662a": {
+   "condizione": {
+    "tipo": "lancio",
+    "esito": "graal"
+   }
+  },
+  "r:ce0d70ffb899": {
+   "effetti": [
+    {
+     "tipo": "incontro",
+     "colore": "grigio",
+     "nome": "Gruppo di Banditi",
+     "livello": 1,
+     "inizio": [
+      {
+       "tipo": "pesca_carte",
+       "n": 2,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": 1
+    }
+   ]
+  },
+  "r:48859b73d2b8": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "luogo_disponibile",
+      "n": 134
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 134
+      },
+      {
+       "tipo": "muovi",
+       "dove": 134,
+       "chi": "compagnia"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 147
+      },
+      {
+       "tipo": "muovi",
+       "dove": 147,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il nuovo Luogo va aggiunto sopra (a nord di) questa carta."
+    }
+   ]
+  },
+  "r:f1ce3b750ae0": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "arev"
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "+1 caution",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "caution",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        },
+        {
+         "testo": "+1 empathy",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "empathy",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      2
+     ]
+    }
+   ]
+  },
+  "c:568596105c57": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "quadrante",
+       "dove": "luogo:115"
+      }
+     },
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Santuario Sicuro",
+       "parti": []
+      }
+     }
+    ]
+   }
+  },
+  "r:df98b2bf138b": {
+   "effetti": [
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:115",
+     "valore": 3,
+     "gettone": "tempo",
+     "esaurito": [
+      {
+       "tipo": "luogo",
+       "azione": "sostituisci",
+       "vecchio": 115,
+       "nuovo": 125
+      }
+     ],
+     "anche_se_luogo_rimosso": true
+    }
+   ]
+  },
+  "q:5a2d9fc3949c": {
+   "condizione": {
+    "tipo": "quadrante",
+    "dove": "luogo:115"
+   }
+  },
+  "r:a9e2414e26f7": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "rep",
+     "n": 1,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:115",
+     "rimuovi": true
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": -99
+    }
+   ]
+  },
+  "v:202": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Se in qualsiasi momento ci sono 4 Gettoni Cerca su questo Luogo, viene rimosso e rimpiazzato dal Luogo 125."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "gettoni_cerca",
+      "luogo": "qui",
+      "min": 4
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "sostituisci",
+       "vecchio": "questo",
+       "nuovo": 125
+      },
+      {
+       "tipo": "fine_esplorazione"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "dado",
+       "mod": [
+        {
+         "attr": "empathy",
+         "per": 1
+        },
+        {
+         "ris": "rep",
+         "per": 1
+        },
+        {
+         "gettoni_cerca": "qui",
+         "per": -1
+        }
+       ],
+       "risultati": []
+      }
+     ]
+    }
+   ]
+  },
+  "r:8cf49d824dc9": {
+   "effetti": [
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:115",
+     "rimuovi": true
+    },
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": -99
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "luogo": "qui",
+     "n": -99
+    }
+   ]
+  },
+  "r:b770d207fb0a": {
+   "effetti": [
+    {
+     "tipo": "quadrante",
+     "dove": "luogo:115",
+     "rimuovi": true
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "luogo": "qui",
+     "n": -99
+    }
+   ]
+  },
+  "q:577da0206ad2": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 5,
+     "prezzo": 3,
+     "prezzo_fabbricabile": 3
+    }
+   ]
+  },
+  "r:9a65d74618a7": {
+   "effetti": []
+  },
+  "q:c91ace9ae6c4": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 0,
+     "prezzo": 0,
+     "vendita": 1
+    }
+   ]
+  },
+  "q:97f528212c8b": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Scelta da concordare fra tutti i giocatori: potrebbe portare alla conclusione del Capitolo attuale."
+    }
+   ]
+  },
+  "r:16fe7c32209c": {
+   "effetti": [
+    {
+     "tipo": "gettone_tempo",
+     "luogo": "qui",
+     "n": -99
+    }
+   ]
+  },
+  "v:233": {
+   "effetti": [
+    {
+     "tipo": "dado",
+     "mod": [
+      {
+       "gettone_tempo": "qui",
+       "per": 2
+      }
+     ],
+     "risultati": []
+    }
+   ]
+  },
+  "c:edb8f5fd7d4c": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "evento_in_gioco",
+      "capitolo": 3,
+      "parte": 4,
+      "lettera": "A"
+     },
+     {
+      "tipo": "cerca_attiva",
+      "capitolo": 3,
+      "parte": 4,
+      "lettera": "A"
+     }
+    ]
+   }
+  },
+  "r:e6ea4e531f43": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:e2b8151d706f": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "empathy",
+      "min": 2
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:1c0df0310449": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "beor"
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "+1 courage",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "courage",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        },
+        {
+         "testo": "+1 spirituality",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "spirituality",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      3
+     ]
+    }
+   ]
+  },
+  "c:c6124d37371a": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "max": 0
+     },
+     {
+      "non": {
+       "tipo": "somma",
+       "termini": [
+        {
+         "ris": "cibo",
+         "chi": "totale"
+        }
+       ],
+       "da": 3,
+       "a": 999,
+       "per_membri": true
+      }
+     }
+    ]
+   }
+  },
+  "q:ab05847a4aa9": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "menhir",
+       "luogo": 101,
+       "attivo": true
+      }
+     },
+     {
+      "non": {
+       "tipo": "menhir",
+       "luogo": 121,
+       "attivo": true
+      }
+     }
+    ]
+   }
+  },
+  "r:0f165679e008": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "min": 3,
+       "chi": "attivo"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:8441e2605b5b": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "min": 3,
+       "chi": "attivo"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:e8f0c3ea6e07": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "maggot"
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "+1 empathy",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "empathy",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        },
+        {
+         "testo": "+1 courage",
+         "effetti": [
+          {
+           "tipo": "attributo",
+           "attr": "courage",
+           "n": 1,
+           "chi": "attivo"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Ultima Lezione",
+     "parti": [
+      4
+     ]
+    }
+   ]
+  },
+  "r:b27178a0c5ce": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "scegli_fra",
+     "n": 5,
+     "tieni": 2,
+     "escludi_parola": "Compagno"
+    },
+    {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      3
+     ]
+    }
+   ]
+  },
+  "r:4abd2486c16c": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "personaggio",
+      "id": "arev"
+     },
+     "allora": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 0,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Incontri Propizi",
+     "parti": [
+      1
+     ]
+    }
+   ]
+  },
+  "r:d43ea9711d6c": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Abbandonati",
+     "parti": [
+      1
+     ]
+    },
+    {
+     "tipo": "status",
+     "nome": "Confronti Finali",
+     "parti": [
+      7
+     ]
+    },
+    {
+     "tipo": "segreto",
+     "n": 33,
+     "nome": "Coloni Speranzosi"
+    },
+    {
+     "tipo": "gettoni_cerca",
+     "luogo": "segreto:33",
+     "n": 1
+    },
+    {
+     "tipo": "nota",
+     "testo": "Nuovo Compito: guidare gli abitanti di Cuanacht a un luogo sicuro in Avalon."
+    }
+   ]
+  },
+  "r:dfe656f34f6d": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "oggetto",
+        "nome": "Kit dell'Avventuriero"
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 1
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -4,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "oggetto",
+        "nome": "Kit dell'Avventuriero"
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 1
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 2
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -3,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "oggetto",
+        "nome": "Kit dell'Avventuriero"
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 2
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 3
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -2,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "oggetto",
+        "nome": "Kit dell'Avventuriero"
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 3
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 4
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 1
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -6,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 1
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 2
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -5,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 2
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 3
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -4,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 3
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 4
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -3,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 4
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 5
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -2,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "non": {
+         "tipo": "oggetto",
+         "nome": "Kit dell'Avventuriero"
+        }
+       },
+       {
+        "tipo": "attributo",
+        "attr": "practicality",
+        "min": 5
+       },
+       {
+        "non": {
+         "tipo": "attributo",
+         "attr": "practicality",
+         "min": 6
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:fa91854bf8fa": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "attributo",
+      "attr": "spirituality",
+      "min": 1
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:e8bcba8f40fe": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Spada Runica",
+     "alternativa": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 6,
+       "chi": "diviso"
+      }
+     ]
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "esp",
+     "n": 2,
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "status",
+     "nome": "Fato della Spedizione",
+     "parti": [
+      5
+     ]
+    }
+   ]
+  },
+  "r:1d68b8178e6d": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "nome",
+     "n": 1,
+     "nome": "Spada Runica",
+     "alternativa": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 6,
+       "chi": "diviso"
+      }
+     ]
+    }
+   ]
+  },
+  "r:3a0933058054": {
+   "effetti": [
+    {
+     "tipo": "gettoni_cerca",
+     "luogo": "qui",
+     "n": -99
+    }
+   ]
+  },
+  "r:906c9d828450": {
+   "effetti": [
+    {
+     "tipo": "segreto",
+     "n": 58,
+     "nome": "Attrezzi dello Scultore"
+    },
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "escludi_parola": "Compagno"
+    }
+   ]
+  },
+  "r:7bcd9eff6829": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "escludi_parola": "Compagno"
+    }
+   ]
+  },
+  "q:7bd7eed0a66a": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "esito_incontro",
+      "esito": "evitato"
+     }
+    ]
+   }
+  },
+  "r:789ee12cdb06": {
+   "effetti": [
+    {
+     "tipo": "ignora_fallimento"
+    },
+    {
+     "tipo": "muovi",
+     "dove": "collegato_a:131",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:abbde98ecbce": {
+   "effetti": []
+  },
+  "q:4b9fb29ad60f": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 0,
+     "prezzo": 0,
+     "vendita": 1
+    }
+   ]
+  },
+  "q:2d09ded2534f": {
+   "condizione": {
+    "tipo": "sempre"
+   },
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Scelta da concordare fra tutti i giocatori: conclude il Capitolo in corso."
+    }
+   ]
+  },
+  "q:1c4b6a6ad317": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "tutti_personaggi"
+     },
+     {
+      "tipo": "evento_in_gioco",
+      "capitolo": 7,
+      "parte": 2
+     }
+    ]
+   }
+  },
+  "q:6031430bce5c": {
+   "condizione": {
+    "tipo": "gettone_tempo",
+    "luogo": "qui",
+    "max": 0
+   }
+  },
+  "q:3ee8e8c34874": {
+   "condizione": {
+    "tipo": "evento_in_gioco",
+    "capitolo": 4,
+    "parte": 4,
+    "lettera": "B"
+   }
+  },
+  "q:40a217854a36": {
+   "condizione": {
+    "tutte": [
+     {
+      "tipo": "segreto",
+      "n": 65
+     },
+     {
+      "tipo": "quadrante",
+      "dove": "segreto:65",
+      "da": 5,
+      "a": 5
+     }
+    ]
+   }
+  },
+  "r:72e7168892aa": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "chi": "ognuno",
+     "opzioni": [
+      {
+       "testo": "Non cambiare Abilità",
+       "effetti": []
+      },
+      {
+       "testo": "2 Esp e 3 Cibo",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "cibo",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "abilita",
+         "azione": "cambia"
+        }
+       ]
+      },
+      {
+       "testo": "2 Esp e 3 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "abilita",
+         "azione": "cambia"
+        }
+       ]
+      },
+      {
+       "testo": "2 Esp e 3 Magia",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "esp",
+         "n": 2,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 3,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "abilita",
+         "azione": "cambia"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "s:b9136e8be248": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      },
+      {
+       "tipo": "menhir",
+       "luogo": "qui"
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "ripeti",
+      "per": {
+       "giocatori": true
+      },
+      "effetti": [
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 1,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "ricchezza",
+        "n": 1,
+        "chi": "diviso"
+       }
+      ]
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": []
+   }
+  },
+  "q:747faa0ba10d": {
+   "condizione": {
+    "tipo": "menhir",
+    "luogo": "qui"
+   }
+  },
+  "q:df1380c090f5": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "menhir",
+      "luogo": 135
+     }
+    ]
+   }
+  },
+  "r:ca5c76115936": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Due Oggetti non Compagno",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 2,
+         "escludi_parola": "Compagno"
+        }
+       ]
+      },
+      {
+       "testo": "Ogni membro ottiene 1 Rep",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "r:8233c5ddfb27": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "in_raggio_menhir",
+      "n": 114
+     },
+     "allora": [
+      {
+       "tipo": "luogo",
+       "azione": "prepara",
+       "n": 114
+      },
+      {
+       "tipo": "muovi",
+       "dove": 114,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il Luogo 114 va aggiunto sotto (in fondo a) questa carta."
+    }
+   ]
+  },
+  "q:bd4d97f933d1": {
+   "condizione": {
+    "tipo": "menhir",
+    "luogo": 135
+   }
+  },
+  "r:0b6bdc6f3a19": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "menhir",
+       "luogo": 134
+      }
+     },
+     "allora": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Attivare il Menhir di Bundorca",
+         "effetti": [
+          {
+           "tipo": "luogo",
+           "azione": "prepara",
+           "n": 135
+          },
+          {
+           "tipo": "diario",
+           "luogo": 135,
+           "sezione": "menhir"
+          }
+         ]
+        },
+        {
+         "testo": "Non attivarlo",
+         "effetti": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il Luogo 135 va alla destra di Falfuar; le miniature dei Personaggi non si muovono: prima che questa Esplorazione termini tornerete a Falfuar."
+    },
+    {
+     "tipo": "diario",
+     "luogo": 135
+    }
+   ]
+  },
+  "r:b6e61306f7b2": {
+   "effetti": [
+    {
+     "tipo": "menhir",
+     "azione": "sposta",
+     "da": "qui",
+     "luogo": 135
+    },
+    {
+     "tipo": "muovi",
+     "dove": 135,
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "r:686d5a86ad3e": {
+   "effetti": [
+    {
+     "tipo": "diario",
+     "luogo": 135,
+     "sezione": "menhir"
+    }
+   ]
+  },
+  "q:dfda69abead6": {
+   "condizione": {
+    "tutte": [
+     {
+      "non": {
+       "tipo": "status",
+       "nome": "Menhir Errante",
+       "parti": []
+      }
+     },
+     {
+      "tipo": "menhir",
+      "luogo": "qui"
+     }
+    ]
+   }
+  },
+  "r:6aa2476d3a6a": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "min": 1,
+       "chi": "attivo"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:85c859592b5f": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "luogo_rimosso",
+      "n": 134
+     },
+     "allora": [
+      {
+       "tipo": "menhir",
+       "azione": "sposta",
+       "da": "qui",
+       "luogo": 147
+      },
+      {
+       "tipo": "muovi",
+       "dove": 147,
+       "chi": "compagnia"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "menhir",
+       "azione": "sposta",
+       "da": "qui",
+       "luogo": 134
+      },
+      {
+       "tipo": "muovi",
+       "dove": 134,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "r:69f2bf15a3b8": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "parola": "Compagno",
+     "escludi_nome": [
+      "Palafreno Fedele",
+      "Mulo da Sella",
+      "Maialino Portafortuna",
+      "Vecchio Corvo",
+      "Gatto Selvatico",
+      "Tasso Misterioso"
+     ]
+    }
+   ]
+  },
+  "q:839b5d6e7299": {
+   "condizione": {
+    "tipo": "cerca_attiva",
+    "capitolo": 7,
+    "parte": 2
+   }
+  },
+  "q:3817dbd8ac14": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "incontro_pescato",
+      "nome": "Calma Prima della Tempesta"
+     }
+    ]
+   }
+  },
+  "r:1dbd1dcd522a": {
+   "effetti": [
+    {
+     "tipo": "spunta",
+     "nome": "Aiutare i Cavalieri",
+     "n": 1
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "q:acff670a48b7": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "incontro_pescato",
+      "nome": "Calma Prima della Tempesta"
+     }
+    ]
+   }
+  },
+  "r:b758485cfe6c": {
+   "effetti": [
+    {
+     "tipo": "spunta",
+     "nome": "Sostenere la Rivolta",
+     "n": 1
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "r:57df47534d69": {
+   "effetti": [
+    {
+     "tipo": "spunta",
+     "nome": "Sostenere la Rivolta",
+     "n": 1
+    }
+   ]
+  },
+  "r:6b5c3b8ab932": {
+   "effetti": [
+    {
+     "tipo": "spunta",
+     "nome": "Aiutare i Cavalieri",
+     "n": 1
+    }
+   ]
+  },
+  "r:cf962de28c29": {
+   "effetti": [
+    {
+     "tipo": "oggetto",
+     "modo": "casuale",
+     "n": 1,
+     "escludi_parola": "Compagno"
+    },
+    {
+     "tipo": "risorsa",
+     "ris": "ricchezza",
+     "n": 1,
+     "chi": "diviso"
+    },
+    {
+     "tipo": "status",
+     "nome": "Tesori Nascosti",
+     "parti": [
+      8
+     ],
+     "rimuovi": false
+    }
+   ]
+  },
+  "r:9ce5411a72b0": {
+   "effetti": [
+    {
+     "tipo": "status",
+     "nome": "Mistero Scottante",
+     "parti": [
+      4
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "status",
+     "nome": "Sogni e Profezie",
+     "parti": [
+      7
+     ],
+     "rimuovi": false
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "min": 1,
+       "chi": "attivo"
+      }
+     },
+     "allora": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 4,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 16,
+       "chi": "diviso"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "min": 1,
+        "chi": "attivo"
+       },
+       {
+        "non": {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "min": 2,
+         "chi": "attivo"
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 4,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 12,
+       "chi": "diviso"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "min": 2,
+        "chi": "attivo"
+       },
+       {
+        "non": {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "min": 3,
+         "chi": "attivo"
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 4,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 8,
+       "chi": "diviso"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tutte": [
+       {
+        "tipo": "risorsa",
+        "ris": "terrore",
+        "min": 3,
+        "chi": "attivo"
+       },
+       {
+        "non": {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "min": 4,
+         "chi": "attivo"
+        }
+       }
+      ]
+     },
+     "allora": [
+      {
+       "tipo": "imposta",
+       "ris": "terrore",
+       "n": 4,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "magia",
+       "n": 4,
+       "chi": "diviso"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "r:546303f1b04d": {
+   "effetti": [
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Non pagare",
+       "effetti": []
+      },
+      {
+       "testo": "Pagare 2 Ricchezza",
+       "effetti": [
+        {
+         "tipo": "paga",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "status",
+         "nome": "Alleati di Avalon",
+         "parti": [
+          1
+         ],
+         "rimuovi": false
+        }
+       ]
+      },
+      {
+       "testo": "Scartare un Oggetto non Artigianale",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "fabbricabile": false
+        },
+        {
+         "tipo": "status",
+         "nome": "Alleati di Avalon",
+         "parti": [
+          1
+         ],
+         "rimuovi": false
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    }
+   ]
+  },
+  "c:c46a3fb26921": {
+   "condizione": {
+    "una": [
+     {
+      "tipo": "incontro_vinto"
+     },
+     {
+      "tipo": "incontro_pescato",
+      "nome": "Calma Prima della Tempesta"
+     },
+     {
+      "tipo": "status",
+      "nome": "Alleati di Avalon",
+      "parti": [
+       1
+      ]
+     }
+    ]
+   }
+  },
+  "r:17d35ca93841": {
+   "effetti": [
+    {
+     "tipo": "passa",
+     "chi": "compagnia"
+    },
+    {
+     "tipo": "diario",
+     "luogo": 140,
+     "sezione": "incubo",
+     "quando": "riposo"
+    }
+   ]
+  },
+  "r:d2dd89b3ac30": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "attributo",
+       "attr": "caution",
+       "min": 2
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "luogo_disponibile",
+      "n": 138
+     },
+     "allora": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "in_raggio_menhir",
+        "n": 138
+       },
+       "allora": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 138
+        },
+        {
+         "tipo": "muovi",
+         "dove": 138,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "in_raggio_menhir",
+        "n": 142
+       },
+       "allora": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 142
+        },
+        {
+         "tipo": "muovi",
+         "dove": 142,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il Luogo va aggiunto in cima a (sopra) questa carta."
+    }
+   ]
+  },
+  "r:133779935f17": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 2,
+     "prezzo": 2,
+     "prezzo_fabbricabile": 2,
+     "risorsa": "magia"
+    }
+   ]
+  },
+  "r:9b4f0c11f760": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "spunte",
+       "nome": "Sostenere la Rivolta",
+       "min": 4
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "spunta",
+     "nome": "Sostenere la Rivolta",
+     "n": 1
+    }
+   ]
+  },
+  "r:946257ea651e": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "spunte",
+       "nome": "Aiutare i Cavalieri",
+       "min": 4
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "esp",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    },
+    {
+     "tipo": "spunta",
+     "nome": "Aiutare i Cavalieri",
+     "n": 1
+    }
+   ]
+  },
+  "r:4893c82a0176": {
+   "effetti": [
+    {
+     "tipo": "se",
+     "condizione": {
+      "tipo": "luogo_rivelato",
+      "n": 140
+     },
+     "allora": [
+      {
+       "tipo": "muovi",
+       "dove": 140,
+       "chi": "compagnia"
+      }
+     ],
+     "altrimenti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "in_raggio_menhir",
+        "n": 140
+       },
+       "allora": [
+        {
+         "tipo": "luogo",
+         "azione": "prepara",
+         "n": 140
+        },
+        {
+         "tipo": "muovi",
+         "dove": 140,
+         "chi": "compagnia"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "nota",
+     "testo": "Il Luogo 140 va aggiunto sotto (in fondo a) questa carta."
+    },
+    {
+     "tipo": "se",
+     "condizione": {
+      "non": {
+       "tipo": "attributo",
+       "attr": "courage",
+       "min": 2
+      }
+     },
+     "allora": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "attivo"
+      }
+     ],
+     "chi": "ognuno"
+    }
+   ]
+  },
+  "q:3c58b3a1f928": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 3,
+     "prezzo": 2,
+     "prezzo_fabbricabile": 2
+    }
+   ]
+  },
+  "r:08758c7bbd2e": {
+   "effetti": [
+    {
+     "tipo": "mercato",
+     "n": 0,
+     "prezzo": 0,
+     "vendita": 1
+    },
+    {
+     "tipo": "altra_scelta"
+    }
+   ]
+  },
+  "s:f74c4752c8d8": {
+   "menhir": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "menhir",
+       "luogo": "qui"
+      },
+      {
+       "tipo": "tutti_personaggi"
+      },
+      {
+       "tipo": "segreto",
+       "n": 11
+      }
+     ]
+    },
+    "costo": [
+     {
+      "tipo": "ripeti",
+      "per": {
+       "giocatori": true
+      },
+      "effetti": [
+       {
+        "tipo": "paga",
+        "ris": "magia",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "energia",
+        "n": 2,
+        "chi": "diviso"
+       },
+       {
+        "tipo": "paga",
+        "ris": "ricchezza",
+        "n": 1,
+        "chi": "diviso"
+       }
+      ]
+     }
+    ],
+    "quadrante": 7,
+    "meno_per_giocatore": true,
+    "effetti": [
+     {
+      "tipo": "nota",
+      "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+     }
+    ]
+   }
+  }
+ }
+}

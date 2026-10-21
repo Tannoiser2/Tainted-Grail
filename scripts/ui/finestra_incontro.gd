@@ -177,9 +177,16 @@ func _aggiorna() -> void:
 				_fase = "scegli"
 				_aggiorna()))
 		"scegli":
+			if inc.concluso != "":
+				_fase = "fine"
+				_aggiorna()
+				return
 			var liberi := inc.da_attivare()
 			if liberi.is_empty():
-				inc.fine_turno()
+				if inc.membri.all(func(x): return int(x.get("salute", 0)) <= 0):
+					inc.concludi("morte")
+					return
+				inc.fine_turno.call_deferred()
 				return
 			_guida.text = _bb("[b]Turno %d[/b] — scegli quale Personaggio si attiva. %s" % [inc.turno, _obiettivo()])
 			_anteprima.text = _bb("Quando un Personaggio si attiva gioca [b]una carta qualsiasi[/b] dalla mano; altre carte solo se collegano una [b]Chiave dorata[/b]. Poi il nemico %s." % ("risponde (Risposta della fase)" if inc.diplomazia else "attacca secondo la riga della tabella che corrisponde alla Riserva"))
@@ -232,7 +239,8 @@ func _aggiorna() -> void:
 				if inc.concluso == "":
 					_fase = "scegli"
 				_aggiorna(), 15)
-			sc.tooltip_text = "Rinunci: Fallimento della Diplomazia." if inc.diplomazia else "−1 Energia e subisci l'attacco di opportunità: " + Dati.testo_leggibile(str(inc.carta.get("opportunita", {}).get("it", "")))
+			sc.disabled = not inc.puo_scappare()
+			sc.tooltip_text = "In questo Incontro non si può Scappare." if sc.disabled else "Rinunci: Fallimento della Diplomazia." if inc.diplomazia else "−1 Energia e subisci l'attacco di opportunità: " + Dati.testo_leggibile(str(inc.carta.get("opportunita", {}).get("it", "")))
 			_comandi.add_child(sc)
 			var pm := CheckBox.new()
 			pm.text = "Usa la Magia per le Chiavi Magiche"
@@ -279,7 +287,7 @@ func _obiettivo() -> String:
 		var a: Dictionary = inc.carta.get("affinita", {})
 		var fs: Array = inc.carta.get("fasi", [])
 		return "Obiettivo: portare l'Affinità a [color=%s]+%d[/color] in ogni fase (%d fasi); a [color=%s]−%d[/color] fallisci." % [VERDE_T, int(a.get("verdi", 3)), maxi(1, fs.size()), ROSSO_T, int(a.get("rossi", 3))]
-	return "Obiettivo: [b]%d segnalini[/b] nella Riserva (ora %d). Il nemico attacca secondo la Riserva che hai a fine attivazione." % [int(inc.carta.get("valore", 0)), inc.riserva]
+	return "Obiettivo: [b]%d segnalini[/b] nella Riserva (ora %d). Il nemico attacca secondo la Riserva che hai a fine attivazione." % [inc.valore(), inc.riserva]
 
 ## Cosa succede premendo TERMINA ora.
 func _esito_termina() -> String:
@@ -290,7 +298,7 @@ func _esito_termina() -> String:
 	var min_carte := 2 if inc.ha_tratto("Opportun") else 1
 	if inc.carte_attivazione < min_carte:
 		t += "Se termini con %s subisci anche l'[b]attacco di opportunità[/b]: [color=%s]%s[/color]. " % ["0 carte" if min_carte == 1 else "meno di 2 carte", ROSSO_T, _spiega_attacco(str(inc.carta.get("opportunita", {}).get("it", "")))]
-	if inc.riserva >= int(inc.carta.get("valore", 99)):
+	if inc.riserva >= inc.valore():
 		return t + "[color=%s]Hai già raggiunto il Valore: TERMINA per vincere.[/color]" % VERDE_T
 	var r2 := inc.attacco_previsto(inc.riserva)
 	if not r2.is_empty():
@@ -430,7 +438,7 @@ func _descrivi_anteprima(c: String) -> String:
 			t += "  [color=%s]fallimento![/color]" % ROSSO_T
 		t += "\n"
 	else:
-		t += "Riserva: %d → [b]%d[/b] / %d" % [inc.riserva, int(a["riserva_dopo"]), int(inc.carta.get("valore", 0))]
+		t += "Riserva: %d → [b]%d[/b] / %d" % [inc.riserva, int(a["riserva_dopo"]), inc.valore()]
 		if a.get("vittoria", false):
 			t += "  [color=%s]raggiungi il Valore: VITTORIA![/color]" % VERDE_T
 		t += "\n"

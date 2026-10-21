@@ -69,8 +69,7 @@ L'interprete (`scripts/core/interprete.gd`) li esegue sullo stato della partita:
 - **Stai morendo / Stai impazzendo**: effetti quando la carta entra in gioco, limite di Oggetti, Incubi al posto
   dei Sogni, lanci di Quadrante a ogni Viaggio o Esplorazione.
 
-Restano da fare al tavolo (il gioco li mostra con ☐) circa il 10% dei passi (686 su 6.890, condizioni comprese, contando anche le copie delle carte) che il linguaggio non esprime
-(negozi di Oggetti, spunte sugli status, "Oggetto non Compagno", alcune regole che sostituiscono altre regole…).
+Il gioco tiene traccia di tutto (gettoni Tempo e Cerca sui Luoghi, quadranti di Menhir, Segreti, Personaggi e nemici, miniature, esiti degli Incontri, lanci di Quadrante, spunte sugli status, Eventi in gioco, rimandi del Diario) e non chiede al giocatore ciò che può verificare da solo: restano solo 7 passi da guardare sulla carta stampata (illustrazioni e la pila delle carte di Tuathan).
 
 ## Firebase
 Stesso progetto degli altri giochi della ludoteca (`flammerouge-f8669`), radice `taintedgrail/campagne`.

@@ -251,6 +251,9 @@ func _scegli(es: Dictionary) -> void:
 			applicati.append_array(itq.rapporto)
 			if itq.ctx.has("salto_diario"):
 				salto = itq.ctx["salto_diario"]
+			if itq.ctx.has("esito_incontro"):
+				motore.stato["esito_incontro"] = itq.ctx["esito_incontro"]
+			_ricorda(itq)
 		else:
 			Effetti.paga_costo(q, partita)
 	var res := motore.segui(es)
@@ -263,11 +266,15 @@ func _scegli(es: Dictionary) -> void:
 			applicati.append_array(it.rapporto)
 			if it.ctx.has("esito_incontro"):
 				motore.stato["esito_incontro"] = it.ctx["esito_incontro"]
+			_ricorda(it)
 			if it.ctx.has("salto_diario"):
 				salto = it.ctx["salto_diario"]
 		else:
 			applicati.append_array(Effetti.applica(r, partita))
 	_occupato = false
+	for k in ["lancio_verso", "quantita_verso"]:
+		if int(motore.stato.get(k, -1)) == -2:
+			motore.stato[k] = motore.id_verso()
 	avanzato.emit()
 	if not salto.is_empty() and motore.apri_numero(int(salto[0]), int(salto[1])):
 		aggiorna()
@@ -279,6 +286,15 @@ func _scegli(es: Dictionary) -> void:
 		aggiorna()
 		if r != "":
 			_mostra_risultato(r, applicati)
+
+## Lancio di Quadrante e quantità scelte valgono per le condizioni del verso successivo.
+func _ricorda(it: Interprete) -> void:
+	if it.ctx.has("lancio"):
+		motore.stato["lancio"] = it.ctx["lancio"]
+		motore.stato["lancio_verso"] = -2
+	if it.ctx.has("quantita"):
+		motore.stato["quantita"] = it.ctx["quantita"]
+		motore.stato["quantita_verso"] = -2
 
 func _riquadro_risultato(r: String, applicati: Array) -> VBoxContainer:
 	var box := PanelContainer.new()

@@ -71,6 +71,22 @@ def main():
                 v["gruppo"] = gruppo
                 carte[k] = v
             manuali[gruppo] = manuali.get(gruppo, 0) + conta_manuali(d.get("carte", {}))
+    # seconda passata (tools/automazione/out2): le voci rifatte sostituiscono quelle della prima
+    for f in sorted(glob.glob(os.path.join(BASE, "tools", "automazione", "out2", "*.json"))):
+        try:
+            d = json.load(open(f, encoding="utf-8"))
+        except Exception as e:
+            print("SALTATO", f, e, file=sys.stderr)
+            continue
+        for k, v in d.get("voci", {}).items():
+            diario[k] = v
+        for k, v in d.get("carte", {}).items():
+            if isinstance(v, dict):
+                v = dict(v)
+                v["gruppo"] = v.get("gruppo") or carte.get(k, {}).get("gruppo", attese_c.get(k, ""))
+                carte[k] = v
+                for c in v.get("copie_img", []) or []:
+                    carte[c] = v
     for k, o in copie.items():
         if k not in carte and o in carte:
             carte[k] = carte[o]

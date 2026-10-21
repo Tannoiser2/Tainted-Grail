@@ -164,3 +164,76 @@ Esempi:
 - `meno_cubi: 99` / `previeni: 99` = "tutte".
 
 I passi `manuale` e i modificatori `cosa: "altro"` restano da eseguire al tavolo: il gioco li mostra con ☐.
+
+## 8. Estensione 2 — stato tracciato dal gioco (da usare invece di `manuale`)
+Il gioco tiene traccia di tutto: mappa, gettoni, quadranti, miniature, esiti degli Incontri, eventi in gioco.
+Usa `manuale` solo per ciò che dipende dall'illustrazione stampata o da un accordo fra i giocatori
+(per questi ultimi usa piuttosto una `scelta` con due opzioni chiare, es. "Concludere il Capitolo ora" / "Più tardi").
+
+### Condizioni nuove
+| tipo | campi | significato |
+|---|---|---|
+| `gettone_tempo` | `luogo` ("qui"/N), `min` (predef. 1), opz. `max` | gettoni Tempo su un Luogo (per "non c'è": `{"non":{…}}` oppure `max:0`) |
+| `gettoni_cerca` | `luogo` ("qui"/N), `min`, opz. `max` | gettoni Cerca su un Luogo (senza `luogo`: quelli della Compagnia) |
+| `quadrante` | `dove`: `"menhir_qui"`/`"luogo:N"`/`"segreto:N"`/`"personaggio"`/`"aria"`/`"nemico"`/nome libero, opz. `da`, `a`; senza da/a = il quadrante esiste | valore di un quadrante |
+| `lancio` | `esito`: `"graal"`/`"teschio"` | esito dell'ultimo lancio di Quadrante (in questo verso o carta) |
+| `menhir` | `luogo` ("qui"/N), opz. `attivo` (bool), opz. `min_quadrante` | c'è una miniatura Menhir (attiva se `attivo:true`) |
+| `luogo_rimosso` | `n` | il Luogo è stato rimosso dal gioco |
+| `luogo_disponibile` | `n` | il Luogo non è stato rimosso (e la carta esiste) |
+| `in_raggio_menhir` | `n` | il Luogo è a portata di un Menhir attivo |
+| `esito_incontro` | `esito`: `vittoria`/`fallimento`/`fuga` (avete Fuggito/Scappato)/`fuga_nemico` (il nemico è fuggito)/`evitato` | esito dell'ultimo Incontro chiesto dal Diario o dalla carta |
+| `incontro_pescato` | `nome` | l'ultimo Incontro pescato si chiama così |
+| `tratto` | `nome` | l'Incontro in corso ha quel tratto |
+| `somma` | `termini`: lista di `{"attr":"caution"}` (valore più alto della Compagnia; con `"id":"maggot"` di quel Personaggio) / `{"ris":"rep","chi":"totale"|"attivo"|"id"}` / `{"ris":["ricchezza","cibo","magia"],"chi":"tutti"}` / `{"n":3}` / `{"per":0.2, …}` (moltiplicatore del termine, arrotondato per difetto), `da`, `a`, opz. `per_giocatori: true` (da/a moltiplicati per il numero di giocatori) | somma di attributi e risorse (anche le fasce "Praticità + Empatia = 0-1") |
+| `spunte` | `nome`, `min` e/o `max` | spunte su uno status a caselle |
+| `evento_in_gioco` | `capitolo`, `parte`, opz. `lettera` | la carta Evento è in gioco (Evento del giorno o Cerca attiva) |
+| `cerca_attiva` | `capitolo`, `parte`, opz. `lettera` | è fra le Cerche attive |
+| `rimando` | — | il verso è stato aperto dal rimando del Diario all'Inizio della Giornata |
+| `oggetto_disponibile` | `nome` | l'Oggetto è ancora nel mazzo Oggetti |
+| `risorsa` | anche `max: true` (la risorsa è al massimo della plancia) e `chi: "id:arev"` | |
+| `ferite_subite` | `min` | Ferite subite nell'attacco in corso |
+| `sequenza_termina` | `attr` | l'ultima carta della Sequenza ha collegato una Chiave di quell'attributo |
+| `affinita_minima` | — | il segnalino è nella casella più bassa del misuratore |
+| `mazzo_vuoto` | — | il mazzo Combattimento/Diplomazia del personaggio attivo è vuoto |
+| `carta_girata` | — | questa carta è già stata girata in questo Incontro |
+| `evento_casuale` | — | l'Evento appena pescato è un Evento Casuale |
+| `incubo` | — | il personaggio ha avuto un Incubo stanotte |
+| `ha_mangiato` | — | il personaggio ha mangiato in questo Riposo |
+| `esausto` | — | il personaggio è Esausto |
+| `sacrificio` | `da`, `a` | quantità scelta nell'ultimo passo `quantita` (vedi sotto) |
+
+### Passi nuovi
+| tipo | campi | significato |
+|---|---|---|
+| `evento` | `azione: "in_cima"`, `speciale: "A"` oppure `capitolo`+`parte`(+`lettera`) oppure `questa: true` | mette una carta Evento in cima al mazzo Eventi |
+| `evento` | `azione: "scarta_cima"`, `n` | scarta le prime N carte del mazzo Eventi |
+| `status` | `prossima: true` (con `nome`) | ottieni la parte successiva non ancora ottenuta |
+| `spunta` | `nome`, `n` | aggiunge spunte a uno status a caselle |
+| `oggetto` | anche `escludi_parola` (es. "Compagno") e `alternativa`: [passi se non disponibile] | |
+| `mercato` | `n` (Oggetti pescati), `prezzo` (Ricchezza), `prezzo_fabbricabile`, opz. `vendita` (Ricchezza per Oggetto venduto), opz. `max` (quanti comprare), opz. `risorsa` (predef. "ricchezza") | negozio: si comprano/vendono Oggetti, gli altri tornano nel mazzo |
+| `quadrante` | anche `dove: "personaggio"` (quadrante accanto alla miniatura), `"aria"`, `"nemico"`; `rimuovi: true` per toglierlo | |
+| `quantita` | `ris`, `max` (numero o `"tutto"`), `chi`, opz. `testo` | il giocatore sceglie quanto pagare; il valore va nella condizione `sacrificio` e nel moltiplicatore `{"quantita":true}` |
+| `rimando` | `luogo`, `verso` | all'Inizio della prossima Giornata il Diario si apre su quel verso |
+| `morte` | opz. `chi` | il Personaggio muore (il gioco applica la regola di Morte) |
+| `abilita` | `azione: "cambia"` | scarta un'Abilità e ne prende un'altra dello stesso Attributo |
+| `gettone_tempo` / `gettoni_cerca` | `n: -99` = toglie tutti | |
+**Solo negli Incontri:**
+| `ignora_attacco` | — | il prossimo attacco nemico (o la Risposta) di questa attivazione non avviene |
+| `ignora_frecce_giu` | opz. `n` (predef. tutte) | ignora/previeni N ↓ della prossima Risposta |
+| `inverti_frecce` | — | le ↓ della prossima Risposta diventano ↑ |
+| `previeni_scarto` | `n` | previeni N {i:discard} |
+| `vinci_fase` | — | vinci subito la fase della Diplomazia |
+| `fallisci` | — | fallisci l'Incontro |
+| `attacco_riga` | `riga`: 0 (la prima della tabella), oppure `sposta`: ±1 (fascia sopra/sotto) | il nemico usa quella riga |
+| `ferite_extra` | `n` | +N Ferite all'attacco nemico di questa attivazione |
+| `ferite_in_cubi` | — | le Ferite dell'attacco diventano segnalini persi |
+| `cubi_invertiti` | — | le perdite di segnalini dell'attacco diventano guadagni |
+| `cariche` | anche `su`: `"scelta"` (carta della Sequenza a scelta) o un nome di carta | |
+| `nessun_bottino` | — | vincendo, niente Ricompensa né Bottino |
+| `senza_opportunita` | — | scappando non si subisce l'attacco di opportunità |
+Moltiplicatori nuovi (`per`): `{"ferite_subite":true}`, `{"salute_mancante":true}`, `{"quantita":true}`, `{"spunte":"Nome"}`.
+Inneschi nuovi delle Capacità: `innesco: "scartata"` (quando la carta viene scartata dalla mano o dalla Sequenza),
+`innesco: "tempo_rimosso"` (ogni volta che si toglie un gettone Tempo dalla carta). Inneschi nuovi delle carte:
+`quando: "attiva_menhir"`, `"fine_turno"`, `"rilancio"`.
+Modificatori nuovi (`cosa`): `limite_mano` (`n`), `pesca_fine_turno` (`n`), `senza_opportunita`, `ignora_panico`,
+`non_cedibile`, `armi_attive` (`n`), `costo_menhir` (`ris`, `n`), `terrore_extra` (`n`), `solo_abilita` (`attr`).

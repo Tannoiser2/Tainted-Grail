@@ -63,6 +63,7 @@ func apri_segreto(numero: int) -> bool:
 func vai(id_l: int, id_v: int) -> void:
 	if id_l == 0:
 		id_l = id_luogo()
+	stato.erase("rimando")
 	stato["luogo"] = id_l
 	stato["verso"] = id_v
 	stato["visitati"][str(id_v)] = int(stato["visitati"].get(str(id_v), 0)) + 1
@@ -126,6 +127,12 @@ func contesto() -> Dictionary:
 		ctx["tiro"] = int(stato["tiro"])
 	if stato.has("esito_incontro"):
 		ctx["esito_incontro"] = str(stato["esito_incontro"])
+	if stato.get("rimando", false):
+		ctx["rimando"] = true
+	if stato.has("lancio") and stato.get("lancio_verso", -1) == id_verso():
+		ctx["lancio"] = str(stato["lancio"])
+	if stato.has("quantita") and stato.get("quantita_verso", -1) == id_verso():
+		ctx["quantita"] = int(stato["quantita"])
 	return ctx
 
 ## Condizione di un elemento: prima la versione codificata (data/automazione.json), poi la lettura

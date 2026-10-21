@@ -209,6 +209,7 @@ func giornata_finita() -> bool:
 ## Riposo e recupero dell'Energia per un personaggio. mangia: se consumare 1 Cibo.
 func riposa(x: Dictionary, mangia: bool) -> String:
 	var t := ""
+	x["ha_mangiato"] = mangia and int(x.get("cibo", 0)) > 0
 	if mangia and int(x.get("cibo", 0)) > 0:
 		p.modifica(x, "cibo", -1)
 		var sal := 0 if not p.modificatori("no_riposo_salute", x).is_empty() else 1 + p.somma_modificatori("riposo_salute", x)
@@ -269,7 +270,10 @@ func scegli_avanzata(x: Dictionary, tipo: String, img: String) -> void:
 func sogno(x: Dictionary) -> Dictionary:
 	var id := Dati.id_numero(p.camp, int(x["luogo"]))
 	var l := Dati.luogo(p.camp, id)
-	if (Personaggi.in_follia(x) or not p.modificatori("solo_incubi", x).is_empty()) and l.has("incubo"):
+	x["incubo"] = false
+	var niente_incubi := not (p.modificatori("ignora_incubo", x) + p.modificatori("ignora_incubi", x)).is_empty()
+	if (Personaggi.in_follia(x) or not p.modificatori("solo_incubi", x).is_empty()) and l.has("incubo") and not niente_incubi:
+		x["incubo"] = true
 		return {"tipo": "Incubo", "testo": l["incubo"]}
 	var sigilli: Array = Carte.luogo(int(x["luogo"])).get("sigilli", [])
 	if (sigilli.has("dream") or sigilli.is_empty()) and l.has("sogno"):

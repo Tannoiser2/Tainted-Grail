@@ -1,0 +1,2864 @@
+{
+ "voci": [
+  {
+   "chiave": "r:fc050e6bf7ba",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:terror}. Ogni membro della Compagnia ottiene 1 {r:Magia} qualora [b]abbia[/b] 2 {r:Magia} o meno. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 148 verso 5, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia che abbia 2 Magia o meno ottiene 1 Magia."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:057edd1e2d8c",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 2 {i:terror} e 1 {r:Ricchezza} (se [b]non avete[/b] alcuna {r:Ricchezza}, perdete invece 1 {i:terror}). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 148 verso 8, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia perde 1 Ricchezza; chi non ha alcuna Ricchezza perde invece 1 Terrore."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7bbff8b5b816",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 5 {i:terror} (ridotti del punteggio di {i:courage} del Personaggio) e perde 4 {i:health} (ridotti dal punteggio di {i:spirituality}del Personaggio). L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 149 verso 3, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia ottiene 5 Terrore meno il proprio Coraggio e perde 4 Salute meno la propria Spiritualità (minimo 0)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:a530f1f43ae2",
+   "ruolo": "risultato",
+   "testo": "[i]Mescolate i vostri Oggetti a faccia in giù (ricordatevi di non mettere nessun Segreto). Scartare il numero di carte che preferite e ottenete 2 {r:Magia} per ogni Oggetto scartato.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 149 verso 7, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Mescolate i vostri Oggetti a faccia in giù (senza Segreti), scartate il numero di carte che preferite e ottenete 2 Magia per ogni Oggetto scartato."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:ac2fa48f2925",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede la carta Segreto[b] 14[/b] su questo Luogo[/i]",
+   "contesto": "Luogo 151 verso 0, scelta: [b]Consegnare la pietra anomala pura.[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "La carta Segreto 14 deve trovarsi su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "r:2b0150549d3e",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia con 0 {i:caution} ottiene 1 {i:terror}. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 151 verso 2, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia con 0 Cautela ottiene 1 Terrore."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:1cd7487fece8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ottenete 1 {r:Ricchezza} per ogni {r:Cibo} che vendete.[/i]",
+   "contesto": "Luogo 152 verso 8, scelta: [b]Vendere {r:Cibo}[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Vendete un qualsiasi numero di Cibo: ottenete 1 Ricchezza per ogni Cibo venduto."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:08adfec8c7a4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ottenete 1 {r:Ricchezza} per ognuno di essi.[/i]",
+   "contesto": "Luogo 152 verso 9, scelta: [b]Vendere un qualsiasi numero di oggetti[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Vendete un qualsiasi numero di Oggetti (scartandoli): ottenete 1 Ricchezza per ognuno di essi."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:ff9d99e59392",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se arriva a 0[/i]",
+   "contesto": "Luogo 153 verso 1, scelta: Abbassare il Quadrante Aria di 1.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Se il Quadrante Aria arriva a 0"
+    }
+   }
+  },
+  {
+   "chiave": "r:bbf87a51b066",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete l’oggetto [b]“Foglie del Viandante”[/b] (se l’Oggetto non è disponibile, ottenete invece 1 {r:Cibo}). \n\nPoi, prendere un’altra scelta.[/i]",
+   "contesto": "Luogo 153 verso 8, scelta: [b]Raccogliere le erbe medicinali in mezzo al muschio[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "nome",
+      "nome": "Foglie del Viandante"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Se l’Oggetto “Foglie del Viandante” non è disponibile, ottenete invece 1 Cibo."
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:ba80d955e626",
+   "ruolo": "risultato",
+   "testo": "[i]Premere il tasto {i:encounter} sullo schermo in alto per visualizzare la carta Incontro. \n\nDopo l’Incontro, prendere un’altra scelta.[/i]",
+   "contesto": "Luogo 153 verso 12, scelta: [b]Avvicinarsi all’uomo[/b] - [i]Abbassare il Quadrante Aria di 1 (solo se a [b]2[/b] o più). Risolvere un Incontro speciale blu [b]“Enigmista”[/b][/i]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Abbassare il Quadrante Aria di 1 (solo se è a 2 o più)."
+     },
+     {
+      "tipo": "incontro",
+      "colore": "blu",
+      "nome": "Enigmista"
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:9e357de88e11",
+   "ruolo": "risultato",
+   "testo": "L’antico soffitto a volta della tomba crolla non appena entrate.\n\n[i]Ogni membro della Compagnia perde 3 {i:health}, ridotti di 1 per ogni punto di {i:caution} che ha. \n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 154 verso 1, scelta: 2",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia perde 3 Salute, ridotti di 1 per ogni punto di Cautela che ha (minimo 0)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:df9743f04ef9",
+   "ruolo": "risultato",
+   "testo": "[i]Pescate 2 Oggetti non Compagno. \n\nPoi, ottenete la parte 3 dello status[b] “Tesori Nascosti”[/b]. \n\nL’Esplorazione termina..[/i]",
+   "contesto": "Luogo 154 verso 1, scelta: 6",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 2
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Gli Oggetti pescati non devono essere Compagni (rimetti i Compagni e pesca ancora)."
+     },
+     {
+      "tipo": "status",
+      "nome": "Tesori Nascosti",
+      "parti": [
+       3
+      ],
+      "rimuovi": false
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:d4076fe18e35",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]ogni membro della Compagnia con almeno 2 {i:spirituality} ottiene 1 {i:terror}[/i]",
+   "contesto": "Luogo 154 verso 10, scelta: [b]Entrare nella tomba[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia con almeno 2 Spiritualità ottiene 1 Terrore."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:3afa1185c620",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se [b]avete[/b] lo status [b]“Venti dell’Anomalia”[/b] e c’è un [b]Menhir Attivo[/b] in questo Luogo predisposto almeno sul [b]2[/b][/i]",
+   "contesto": "Luogo 155 verso 12, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "status",
+       "nome": "Venti dell’Anomalia",
+       "parti": []
+      },
+      {
+       "tipo": "menhir_qui",
+       "attivo": true
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Quadrante del Menhir di questo Luogo è almeno su 2"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:e4bb2332e11c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ogni membro della Compagnia paga il quantitativo di {i:energy} che desidera[/i]",
+   "contesto": "Luogo 156 verso 7, scelta: [b]Arrampicata libera.[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia paga il quantitativo di Energia che desidera (annotare il totale speso dalla Compagnia)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:1be9c1829915",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado e aggiungere la somma tutti i punti {i:energy} spesi dalla Compagnia.[/i]",
+   "contesto": "Luogo 156 verso 7, scelta: [b]Arrampicata libera.[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Tirare un dado e aggiungere al risultato la somma di tutti i punti Energia spesi dalla Compagnia."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7ab56bb0de8f",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia paga fino\na 4 {i:energy}.[/i]",
+   "contesto": "Luogo 157 verso 2, scelta: [b]Immergersi.[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia paga da 0 fino a 4 Energia (annotare quanto ha pagato ciascuno: le opzioni seguenti dipendono da questo)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4657c0d1f7de",
+   "ruolo": "risultato",
+   "testo": "Emergete con la vista adombrata da macchie nere. Vi gettate sulla sabbia e cercate di riprendere fiato.\n\n[i]Perdete 1 {i:health}.\n\nL’Esplorazione termina.  Ogni membro della Compagnia con {i:energy} più di 0 possono continuare.[/i]",
+   "contesto": "Luogo 157 verso 8, scelta: Se [b]qualcuno[/b] del tuo gruppo ha [b]più[/b] di 0 {i:energy}",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -1,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "L’Esplorazione termina per i membri con 0 Energia; ogni membro della Compagnia con più di 0 Energia può continuare."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:f6ce1d6c6db6",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete lo status[b] “Amate Proprietà”[/b]. Ogni membro della Compagnia ottiene 2{r:Esp}. Poi, aggiungere 1 spunta allo status [b]“Qualcuno Sta Osservando”[/b].\n\n[b]Nuovo Compito:[/b] riportare a Morgana le sue proprietà per concludere il Capitolo.\n\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 157 verso 10, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "status",
+      "nome": "Amate Proprietà",
+      "parti": [],
+      "rimuovi": false
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungere 1 spunta allo status “Qualcuno Sta Osservando”."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Nuovo Compito: riportare a Morgana le sue proprietà per concludere il Capitolo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:8dbc15fcc871",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b] 1-3[/b]",
+   "contesto": "Luogo 160 verso 1, scelta: Verificare il risultato.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Se Cautela + Praticità (i valori più alti della Compagnia) danno 3 o meno"
+    }
+   }
+  },
+  {
+   "chiave": "q:9932cd58677c",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]4+[/b]",
+   "contesto": "Luogo 160 verso 1, scelta: Verificare il risultato.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Se Cautela + Praticità (i valori più alti della Compagnia) danno 4 o più"
+    }
+   }
+  },
+  {
+   "chiave": "c:b2b49fb95384",
+   "ruolo": "condizione",
+   "testo": "Potete pagare 1 {r:Ricchezza} per ottenere 1 {r:Cibo} (tutte le volte che volete), se non vi dà fastidio l’odore.",
+   "contesto": "Luogo 160 verso 10: A Crow’s Nest, un estraneo non ha alcuna possibilità di confondersi tra la folla. Per la popolazione pallida e dagli occhi lucidi di questa città, sarete semp",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "sempre"
+    },
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Potete pagare 1 Ricchezza per ottenere 1 Cibo, tutte le volte che volete."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:18d0a0c6a176",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il consenso di tutti i giocatori, po- trebbe comportare la fine del Capitolo[/i]",
+   "contesto": "Luogo 160 verso 15, scelta: [b]Accettare[/b] - Questa guerra deve terminare rapidamente per garantire la sopravvivenza degli abitanti dell’isola. Crow’s Nest è la più probabile vincitric",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Richiede il consenso di tutti i giocatori (potrebbe comportare la fine del Capitolo)"
+    }
+   }
+  },
+  {
+   "chiave": "q:1b10a765a37b",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se il risultato è 9 o superiore[/i]",
+   "contesto": "Luogo 160 verso 20, scelta: Sommate {i:aggression}, {i:empathy} e {r:Rep}.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Se Aggressività + Empatia + Rep è 9 o superiore"
+    }
+   }
+  },
+  {
+   "chiave": "r:28e1e3337964",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 8 {i:health} ridotti di 1 per ogni\npunto della sua {i:aggression}; ogni membro della Compagnia ottiene\n6 {i:terror}  ridotti di 1 per ogni punto del suo {i:courage}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 160 verso 25, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia perde 8 Salute, ridotti di 1 per ogni punto della sua Aggressività; ogni membro della Compagnia ottiene 6 Terrore, ridotti di 1 per ogni punto del suo Coraggio."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:68fdef4a1142",
+   "ruolo": "risultato",
+   "testo": "Ottenete 1 Oggetto non Compagno.\n\n[i]L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 161 verso 6, scelta: [b]6[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 1
+     },
+     {
+      "tipo": "manuale",
+      "testo": "L’Oggetto ottenuto non deve essere un Compagno (rimetti i Compagni e pesca ancora)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:715",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "I gradini scavati nella scogliera sono troppo altri e scomodi.\n\n[i]Ogni membro della Compagnia tira un dado e somma la sua {i:caution}.  Ogni membro della Compagnia il cui risultato sia inferiore a 5, perde 2 {i:health}, scivolando e facendosi male.\n\nContinuare a leggere:[/i]\n\nSiete arrivati in fondo alle scale, dinnanzi a un porticciolo in pietra. Le onde hanno eroso la struttura, ma è ancora possibile raggiungere la maggior parte dei moli.",
+   "contesto": "Luogo 161 verso 7",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia tira un dado e somma la sua Cautela: ogni membro il cui risultato è inferiore a 5 perde 2 Salute."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:3b3b4f8c29c8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Ogni membro della Compagnia paga 4 {i:energy}, ridotti di\n1 per ogni punto della sua {i:aggression}.[/i]",
+   "contesto": "Luogo 161 verso 8, scelta: [b]Forzare il passaggio attraverso la barriera invisibile[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia paga 4 Energia, ridotti di 1 per ogni punto della sua Aggressività."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7839b3a2302b",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {i:health}. \n\nOgni membro della Compagnia con meno di 5 {r:Magia} ottiene 1 {r:Magia}. \n\nL’Esplorazione termina..[/i]",
+   "contesto": "Luogo 162 verso 7, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia con meno di 5 Magia ottiene 1 Magia."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:a056ec437354",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se perdete o decidete di Fuggire",
+   "contesto": "Luogo 165 verso 6, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete deciso di Fuggire dall'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:98faa2e455b3",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se vincete (o se il Nemico Scappa)",
+   "contesto": "Luogo 165 verso 6, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Nemico è Fuggito"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:24b5c2b76056",
+   "ruolo": "risultato",
+   "testo": "[i]Pescare le prime 3 carte Oggetto. Potete comprarne quante volete al prezzo di 3 {r:Ricchezza}ciascuna – Altrimenti, rimescolatele nel mazzo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 170 verso 3, scelta: [b]Comprare l’equipaggiamento.[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Pescate le prime 3 carte Oggetto: potete comprarne quante volete al prezzo di 3 Ricchezza ciascuna; rimescolate le altre nel mazzo."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:cfe36d2ab26a",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete questa parte di quello status, oltre a 4 {r:Cibo}, 2 {r:Ricchezza} e 2 Oggetti non Compagno.\n\nPrendere un’altra scelta.[/i]",
+   "contesto": "Luogo 180 verso 5, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "status",
+      "nome": "Strani Incontri",
+      "parti": [
+       3
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 4,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 2 Oggetti non Compagno (pescate dal mazzo Oggetti scartando i Compagni)."
+     },
+     {
+      "tipo": "altra_scelta"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:69cb400ddbdc",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiedela carta Segreto[b] “Vero Graal” (7)[/b] e il consenso di tutti i giocatori.[/i]",
+   "contesto": "Luogo 185 verso 0, scelta: [b]Gettare il Graal sulla soglia e andarsene.[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "segreto",
+       "n": 7
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Consenso di tutti i giocatori"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:a1448076b0ab",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se perdete o decidete di Fuggire[/i]",
+   "contesto": "Luogo 185 verso 3, scelta: Verificare il risultato.",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete deciso di Fuggire dall'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:5f6ad4861123",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Richiede il [b]Capitolo 3A: parte 5[/b][/i]",
+   "contesto": "Luogo 190 verso 4, scelta: [b]Chiedergli di Neante.[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "capitolo",
+       "da": 3,
+       "a": 3,
+       "lettera": "A"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Capitolo 3A: parte 5"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:af7a96f39d3d",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se state giocando il [b]Capitolo 7: parte 1[/b]",
+   "contesto": "Luogo 190 verso 18, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "capitolo",
+       "da": 7,
+       "a": 7
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Capitolo 7: parte 1"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:823dd2dc7d8d",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia deve Passare per il resto della giornata. Ogni membro della Compagnia ottiene 1 {i:health} in più e perde 1 {i:terror} in più durante questo Riposo.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 195 verso 2, scelta: [b]Fermarsi a riposare[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "passa",
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Durante questo Riposo ogni membro della Compagnia ottiene 1 Salute in più e perde 1 Terrore in più."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:39dd56ad5ebb",
+   "ruolo": "risultato",
+   "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di {r:Magia} e {i:energy}. Dividere la somma totale spesa per il numero di Personaggi (arrotondare per difetto) e mettere da parte un equivalente numero di segnalini.",
+   "contesto": "Luogo 195 verso 9, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di Magia ed Energia. Dividete la somma totale spesa per il numero di Personaggi (arrotondando per difetto) e mettete da parte un equivalente numero di segnalini."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:39dd56ad5ebb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di {r:Magia} e {i:energy}. Dividere la somma totale spesa per il numero di Personaggi (arrotondare per difetto) e mettere da parte un equivalente numero di segnalini.",
+   "contesto": "Luogo 195 verso 13, scelta: [b]Intrufolarsi nelle stanze private.[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia paga un qualsiasi quantitativo di Magia ed Energia. Dividete la somma totale spesa per il numero di Personaggi (arrotondando per difetto) e mettete da parte un equivalente numero di segnalini."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:800",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i]Tirare un dado, sommare i valori delle vostre {i:practicality} e {i:caution}, oltre al numero di segnalini messi da parte al Verso precedente. Verificare il risultato ottenuto:[/i]",
+   "contesto": "Luogo 195 verso 15",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Al tiro sommate anche il numero di segnalini messi da parte al Verso precedente."
+     },
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "practicality",
+        "per": 1
+       },
+       {
+        "attr": "caution",
+        "per": 1
+       }
+      ],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:62d96b9d42b8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Pagare un totale di 15 {r:Ricchezza} o {r:Cibo} per giocatore",
+   "contesto": "Luogo 195 verso 17, scelta: [b]Offrirsi di fornire le provviste necessarie[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Pagate un totale di 15 Ricchezza o Cibo (in qualsiasi combinazione) per giocatore."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:2db59f52336a",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere l’Incontro verde [b]“Wyrm del Sole” [/b](Difficoltà 4). Mettere 10 segnalini nella Riserva di Combattimento prima che il Combattimento inizi. Poi, a prescindere dall’esito, ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 7, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Mettete 10 segnalini nella Riserva di Combattimento prima che il Combattimento inizi."
+     },
+     {
+      "tipo": "incontro",
+      "colore": "verde",
+      "nome": "Wyrm del Sole",
+      "livello": 4
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:3df2e220620f",
+   "ruolo": "risultato",
+   "testo": "Le foglie vi affondano nella carne.\n\n[i]Ogni membro della Compagnia prende 3 {i:woundregular}, ridotti dalla sua  {i:caution}. Ripetere il tiro, aggiungere +1 al risultato.[/i]",
+   "contesto": "Luogo 199 verso 9, scelta: [b]1-3[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia subisce 3 Ferite, ridotte della sua Cautela (perde 3 Salute meno la sua Cautela, minimo 0)."
+     },
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "caution",
+        "per": 1
+       },
+       {
+        "n": 1
+       }
+      ],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:5d740dbdc9f4",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 Gettone Cerca e ciascun membro della Compagnia ottiene 1 {r:Esp}, invece della Ricompensa indicata sulla carta Incontro.\n\nA prescindere dall’esito, ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 40, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Non applicate la Ricompensa indicata sulla carta Incontro (sostituita da quanto segue)."
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:6c4ab7680303",
+   "ruolo": "risultato",
+   "testo": "[i]Questi strani doppelganger vi attaccano – invece di applicare la parte Fallimento della carta Incontro, ogni membro della Compagnia perde 2 {i:health}  e ottiene 2 {i:terror}.\nA prescindere dall’esito, ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 199 verso 40, scelta: Verificare il risultato",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Non applicate la parte Fallimento della carta Incontro (sostituita da quanto segue)."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:7ab214e2c8cb",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[b]Se un qualsiasi membro della Compagnia ha 0 {i:aggression}[/b]",
+   "contesto": "Luogo 199 verso 43, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Un qualsiasi membro della Compagnia ha 0 Aggressività"
+    }
+   }
+  },
+  {
+   "chiave": "r:90edb3662203",
+   "ruolo": "risultato",
+   "testo": "[i]Risolvere l’Incontro grigio [b]“Sosia” [/b](Difficoltà 3). Non potete Fuggire e non ricevete alcuna Ricompensa o Bottino riportati sulla carta Incontro.[/i]",
+   "contesto": "Luogo 199 verso 50, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "In questo Incontro non potete Fuggire e non ricevete alcuna Ricompensa o Bottino riportati sulla carta."
+     },
+     {
+      "tipo": "incontro",
+      "colore": "grigio",
+      "nome": "Sosia",
+      "livello": 3
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:936aae6d724c",
+   "ruolo": "risultato",
+   "testo": "[i]Se siete in una Compagnia, scegliere un membro della Compagnia che risolverà il prossimo Verso.[/i]",
+   "contesto": "Luogo 199 verso 52, scelta: [b]Sedersi sul trono[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Se siete in una Compagnia, scegliete un membro della Compagnia che risolverà il prossimo Verso."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:c04fb04f0b1c",
+   "ruolo": "condizione",
+   "testo": "Se decidete di Fuggire o perdete",
+   "contesto": "Luogo 199 verso 60: Vi avvicinate a una piccola fucina il cui pavimento è ricoperto di macchie marroni. Notate che la sostanza che scorre negli scoli non è metallo liquido, ma sa",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete deciso di Fuggire dall'Incontro"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "q:9c673a77d894",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Pagare il quantitativo di {i:health} che desiderate[/i]",
+   "contesto": "Luogo 199 verso 60, scelta: [b]Cercare di forgiare qualcosa con il vostro sangue[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Pagate il quantitativo di Salute che desiderate (annotatelo)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:e8b7b3ea5f53",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i] Se riottenete questo risultato (e avete risolto un Incontro viola)[/i]",
+   "contesto": "Luogo 199 verso 1002, scelta: 5-6",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "tiro",
+       "da": 5,
+       "a": 6
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete riottenuto questo risultato dopo aver già risolto un Incontro viola"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "v:1150",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "[i][b]IMPORTANT[/b]: Puoi tornare a consultare le seguenti regole in qualsiasi momento. Lo puoi fare inserendo digitando il numero 302 nella selezione dei Luoghi..[/i]\n\n[b]Iniziare il vostro viaggio[/b]\n[i]Quando entrate a Tuathan, mescolare tutte e cinque le carte Tuathan ([b]199[/b]) e piazzarle in una pila, col lato della mappa a faccia in su. Prendere una carta dalla cima di questa pila e aggiun- gerla al Luogo da cui siete entrati (da Riverfall o da Timberwall).\n\nGirare questa carta a faccia in su e piazzare tutti i vostri Personaggi su questa carta, poi scartare tutte le altre carte Luogo, compresi i Menhir attivi.\n\nNon potete lasciare Tuathan a meno che il Diario vi dica di farlo! Qualsiasi altro metodo per Viaggiare o di Movimento (compresi gli oggetti come la Pergamena Intrisa d’Ombra) non può portarvi via da Tuathan.\n[/i]\n\n[b]Avanzare per Tuathan[/b]\n[i]Le carte Luogo di Tuathan non sono collegate tra di loro. Per avanzare in questa città (per uscirne o per entrarvi), dovrete svolgere la seconda azione che si trova sul retro del vostro Luogo di Tuathan. Questa azione richiede Gettoni Cerca, a rappresentare la vostra conoscenza della città, e che potete recuperare tramite vari eventi casuali in cui sarete incappati con l’aiuto della prima azione.\n\n[b]IMPORTANTE: ogni carta Luogo di Tuathan modifica anche una delle regole base del gioco. Questi cambiamenti si appli- cano dal momento in cui girate le regole della carta all’insù, fino al momento in cui il vostro Personaggio lascia la carta e la rigirate sul dorso.\n[/i]\n\n[b]I Menhir a Tuathan [/b]\n[i]Non ci sono Menhir a Tuathan. Siete immersi nell’anomalia primordiale. Tutte le carte Luogo restano sul tavolo a meno che non vi venga chiesto di rimuoverle.\n[/i]\n\n[b]Eventi a Tuathan [/b]\n[i]Ogni volta che pescate un Evento Casuale a Tuathan, scartatelo a faccia in giù senza leggerlo o risolverne le regole.\n\nA Tuathan, le carte Evento Casuale servono solo a contare i giorni di viaggio.[/i]\n\n[i][b]IMPORTANTE[/b]: le carte Evento della Storia numerate o gli Even- ti speciali vengono risolti comunque secondo le normali regole. [/i]\n\n[b]Riposare a Tuathan (solo per 2-4 giocatori) [/b]\n[i]Ogni volta che provate a riposare a Tuathan accadono delle cose strane. Rimpiazzare la normale procedura per Riposare con quanto segue:\n\nMangiare 1 {r:Cibo}. Se [b]non avete[/b] {r:Cibo} sufficiente o non volete mangiarlo adesso, portate la vostra {i:energy} a 0. Se è già a 0, perdete invece 1 {i:health}.\n\nOra, tirare un dado due volte (non potete modificare questi tiri), prima per la vostra {i:health}, poi per il vostro {i:terror}, e verificare i risultati come segue:[/i][/b]",
+   "contesto": "Luogo 302 verso 0",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Entrando a Tuathan: mescolate le cinque carte Tuathan (199) in una pila col lato mappa a faccia in su; aggiungete la prima al Luogo da cui siete entrati (Riverfall o Timberwall), giratela, piazzatevi tutti i Personaggi, poi scartate tutte le altre carte Luogo, compresi i Menhir attivi."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Non potete lasciare Tuathan a meno che il Diario vi dica di farlo: nessun altro metodo di Viaggio o Movimento (compresi Oggetti come la Pergamena Intrisa d’Ombra) può portarvi via da Tuathan."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Le carte Luogo di Tuathan non sono collegate tra loro: per avanzare usate la seconda azione sul retro della carta Tuathan, che richiede Gettoni Cerca (ottenibili con la prima azione)."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Ogni carta Luogo di Tuathan modifica una regola base del gioco, da quando la girate sul lato regole fino a quando il vostro Personaggio la lascia."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Non ci sono Menhir a Tuathan; tutte le carte Luogo restano sul tavolo a meno che non vi venga chiesto di rimuoverle."
+     },
+     {
+      "tipo": "nota",
+      "testo": "A Tuathan gli Eventi Casuali pescati si scartano a faccia in giù senza risolverli (contano solo i giorni); gli Eventi della Storia numerati e gli Eventi speciali si risolvono normalmente."
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Riposare a Tuathan (2-4 giocatori): mangiate 1 Cibo; se non potete o non volete, portate l’Energia a 0 (se è già 0, perdete 1 Salute). Poi tirate un dado (non modificabile) per la Salute e uno per il Terrore e applicate i risultati della tabella."
+     },
+     {
+      "tipo": "dado",
+      "mod": [],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:56c75ce00d5a",
+   "ruolo": "risultato",
+   "testo": "Ottenete 1 punto.",
+   "contesto": "Luogo 302 verso 0, scelta: 1-2",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 1 punto della traccia per cui avete tirato (Salute o Terrore)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:bbea473fc0f4",
+   "ruolo": "risultato",
+   "testo": "Ottenete 2 punti.",
+   "contesto": "Luogo 302 verso 0, scelta: 3",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ottenete 2 punti della traccia per cui avete tirato (Salute o Terrore)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:3747177254cc",
+   "ruolo": "risultato",
+   "testo": "Perdete 1 punto.",
+   "contesto": "Luogo 302 verso 0, scelta: 4-5",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Perdete 1 punto della traccia per cui avete tirato (Salute o Terrore)."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:e1055bb842fd",
+   "ruolo": "risultato",
+   "testo": "Il Personaggio marchiato dal Gettone Cerca perde 2 {i:health} e ottiene la carta Segreto [b]“Excalibur” (78)[/b]. Scartare questo Gettone Cerca. Ogni Personaggio ottiene 5 {r:Esp}.",
+   "contesto": "Luogo 999 verso 24, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Il Personaggio marchiato dal Gettone Cerca perde 2 Salute e riceve la carta Segreto 78; poi scartate quel Gettone Cerca."
+     },
+     {
+      "tipo": "segreto",
+      "rimuovi": false,
+      "n": 78,
+      "nome": "Excalibur"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 5,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4e8d86f0b4cc",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete la carta Oggetto Gatto Selvatico. Se uno dei giocatori già possiede questa carta, ottenete invece 2 {r:Cibo}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 43, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartate le risorse consumate."
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "oggetto",
+       "nome": "Gatto Selvatico"
+      },
+      "allora": [
+       {
+        "tipo": "risorsa",
+        "ris": "cibo",
+        "n": 2,
+        "chi": "diviso"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "oggetto",
+        "modo": "nome",
+        "n": 1,
+        "nome": "Gatto Selvatico"
+       }
+      ]
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7fff1feabb6d",
+   "ruolo": "risultato",
+   "testo": "Aggiungere una nuova carta Luogo Tuathan casuale e spostare lì i vostri Personaggi. L’Esplorazione termina.",
+   "contesto": "Luogo 999 verso 45, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete una nuova carta Luogo Tuathan casuale (dalla pila di Tuathan) alla vostra attuale carta Tuathan e spostatevi lì tutti i Personaggi."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:472a09a6c0f7",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete 4 {r:Cibo}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 47, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartate le risorse consumate."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "cibo",
+      "n": 4,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:3efbecb4ab79",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate e ottenete la carta Oggetto [b]“Spada Runica”[/b]. Se uno dei giocatori già possiede questa carta, ottenete un Oggetto casuale non Artigianale con la parola chiave Arma. Ottenete 1 Gettone Cerca. L’Esplorazione termina[/i]",
+   "contesto": "Luogo 999 verso 63, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartate le risorse consumate."
+     },
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "oggetto",
+       "nome": "Spada Runica"
+      },
+      "allora": [
+       {
+        "tipo": "oggetto",
+        "modo": "casuale",
+        "n": 1,
+        "parola": "Arma"
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "oggetto",
+        "modo": "nome",
+        "n": 1,
+        "nome": "Spada Runica"
+       }
+      ]
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:c7064ebee91c",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare le risorse consumate. Ogni membro della Compagnia ottiene 3 {i:terror}. Ottenete 1 Gettone Cerca. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 67, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scartate le risorse consumate."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": 3,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "gettoni_cerca",
+      "n": 1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:76b92b934010",
+   "ruolo": "condizione",
+   "testo": "[b]0-1[/b]",
+   "contesto": "Luogo 999 verso 102: [i]Sommare la vostra {i:practicality} e {i:empathy} (contano solo i livelli degli Attributi di [b]Verme[/b], anche se siete in Compagnia). Sommare +1 per ogni 5",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Praticità + Empatia di Verme (+1 ogni 5 Rep di Verme) = 0-1"
+    }
+   }
+  },
+  {
+   "chiave": "c:9932cd58677c",
+   "ruolo": "condizione",
+   "testo": "[b]4+[/b]",
+   "contesto": "Luogo 999 verso 102: [i]Sommare la vostra {i:practicality} e {i:empathy} (contano solo i livelli degli Attributi di [b]Verme[/b], anche se siete in Compagnia). Sommare +1 per ogni 5",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Praticità + Empatia di Verme (+1 ogni 5 Rep di Verme) = 4+"
+    }
+   }
+  },
+  {
+   "chiave": "q:ca353ef68513",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se vincete (o il nemico Scappa)[/i]",
+   "contesto": "Luogo 999 verso 107, scelta: [b]Cercare di fermarli[/b] - [i]Risolvere l’Incontro grigio [b]“Folla Inferocita”[/b] (Difficoltà 4). [/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Nemico è Fuggito"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:5b17fbd5d284",
+   "ruolo": "risultato",
+   "testo": "Avete completato una Cerca! Ogni Personaggio ottiene 2 {r:Esp}. Scartare tutte le carte dalla pila della Cerca. Trovare e risolvere la Parte 5 del mazzo Eventi. Non cambiare la struttura del resto del mazzo Eventi.\n\n[i]L’Esplorazione termina.[/i].",
+   "contesto": "Luogo 999 verso 116, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Scartate tutte le carte dalla pila della Cerca."
+     },
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "parte": 5
+     },
+     {
+      "tipo": "nota",
+      "testo": "Non cambiate la struttura del resto del mazzo Eventi."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:51ec0111f104",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "Se [b]avete[/b] lo status [b]“Compito della Dama”[/b] e ci sono meno di 3 Gettoni Tempo su questo Luogo",
+   "contesto": "Luogo 999 verso 122, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "status",
+       "nome": "Compito della Dama",
+       "parti": []
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Ci sono meno di 3 Gettoni Tempo su questo Luogo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:ffeed9d53a2b",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia perde 6 {i:health}, ridotte dalla sua {i:caution}. Ogni membro della Compagnia può pagare fino a 3 {i:energy}. Per ogni punto di {i:energy} speso, ridurre il Danno subito di 1.\nRimuovere 1 Gettone Tempo da questa carta Luogo. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 134, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia perde 6 Salute, ridotte della sua Cautela; può pagare fino a 3 Energia per ridurre il danno di 1 per ogni punto speso."
+     },
+     {
+      "tipo": "gettone_tempo",
+      "luogo": "qui",
+      "n": -1
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:0224bbe4ee1a",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i](richiede 4 Gettoni Tempo su questa carta Luogo)[/i]",
+   "contesto": "Luogo 999 verso 142, scelta: [b]Unire gli indizi[/b]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Ci sono 4 Gettoni Tempo su questa carta Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "r:20f7cdadfc39",
+   "ruolo": "risultato",
+   "testo": "[i] Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete la carta Segreto [b]“Amuleto di Padre Cervo” (17)[/b]. Scartare il Quadrante che rappresenta la Vergine Arciera. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 147, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "segreto",
+      "rimuovi": false,
+      "n": 17,
+      "nome": "Amuleto di Padre Cervo"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Scartate il Quadrante che rappresenta la Vergine Arciera."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:522cd6431ca2",
+   "ruolo": "condizione",
+   "testo": "Se c’è un Gettone Tempo su questo Luogo, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 163: L’acqua scorre tra le vostre vene di pietra. I vostri tentacoli eterei respingono l’anomalia circostante. Le vostre radici si diramano sotto terra, raggiungendo",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C’è un Gettone Tempo su questo Luogo"
+    }
+   }
+  },
+  {
+   "chiave": "c:1be98c21a960",
+   "ruolo": "condizione",
+   "testo": "Se non c’è un Gettone Tempo su questo Luogo, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 163: L’acqua scorre tra le vostre vene di pietra. I vostri tentacoli eterei respingono l’anomalia circostante. Le vostre radici si diramano sotto terra, raggiungendo",
+   "codifica_attuale": {
+    "condizione": {
+     "non": {
+      "tipo": "manuale",
+      "testo": "C’è un Gettone Tempo su questo Luogo"
+     }
+    }
+   }
+  },
+  {
+   "chiave": "c:35b47b2bb142",
+   "ruolo": "condizione",
+   "testo": "[b]0-3[/b]",
+   "contesto": "Luogo 999 verso 164: Capite la loro sofferenza. Sono solo un uomo e una donna, spaventati e che cercano di proteggersi vicendevolmente dopo aver perso tutto ciò che avevano. La gen",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Spiritualità + Empatia = 0-3"
+    }
+   }
+  },
+  {
+   "chiave": "r:80572b986359",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp}. Ottenete 2 Oggetti casuali non Compagno e la parte 1 dello status [b]“Underfern”[/b]. L’Esplorazione termina..[/i]",
+   "contesto": "Luogo 999 verso 173, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 2
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+     },
+     {
+      "tipo": "status",
+      "nome": "Underfern",
+      "parti": [
+       1
+      ],
+      "rimuovi": false
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:b940d1d4d133",
+   "ruolo": "risultato",
+   "testo": "[i]Tutti i membri della Compagnia perdono tutta la {i:health} e la {r:Ricchezza}, e non possono tenere più di due Oggetti. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 184, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -99,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": -99,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni membro della Compagnia scarta Oggetti finché non ne tiene al massimo 2."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:927",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Avevano un accordo, e stava funzionando bene. Farete il possibile per ripristinarlo.\n\n[i]Aggiungete la vostra {i:empathy} al numero di parti acquisite dello status [b]“Missione Diplomatica”[/b]. Se siete [b]Beor[/b] (o fa parte della vostra Compagnia), aggiungere +1, dato che i cittadini rispettano i maniscalchi.\n\nPoi, tirare un dado e sommare il risultato al numero ottenuto. Potete ritirare il dado quante volte volete, pagando 3 {r:Rep} per ogni ritiro.[/i]",
+   "contesto": "Luogo 999 verso 200",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete al risultato il numero di parti acquisite dello status “Missione Diplomatica” e +1 se Beor fa parte della Compagnia. Potete ritirare il dado quante volte volete pagando 3 Rep per ogni ritiro."
+     },
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "empathy",
+        "per": 1
+       }
+      ],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:0293925e1229",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se state giocando il [b]Capitolo 7: Parte 1[/b][/i]",
+   "contesto": "Luogo 999 verso 253, scelta: Continua.",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "tipo": "capitolo",
+       "da": 7,
+       "a": 7
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Siete alla Parte 1 del Capitolo 7."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:788a405f2eca",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 5 {r:Ricchezza} e 2 Oggetti non Compagno.\nPoi, scartare la carta Segreto [b]9[/b]. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 266, scelta: [b]Farsi corrompere da lei[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 5,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 2
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+     },
+     {
+      "tipo": "segreto",
+      "n": 9,
+      "rimuovi": true
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:b900094c3451",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete la carta Segreto [b]50[/b] e 2 Oggetti casuali non Compagno. Ogni membro della Compagnia ottiene 3 {r:Esp} e 2 {r:Rep}. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 279, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "segreto",
+      "n": 50,
+      "rimuovi": false
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 2
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 3,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 2,
+      "chi": "compagnia"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:ebccef22bdca",
+   "ruolo": "risultato",
+   "testo": "[i]Ottenete 1 Oggetto casuale non Compagno, un Oggetto [b]“Kit dell’Avventuriero”[/b], 1 {r:Ricchezza}, e la parte 7 dello status [b]“Tesori Nascosti”[/b].\n\nOttenete la carta Segreto [b]“Scoperta Inquietante” (2)[/b].\nL’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 284, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "oggetto",
+      "modo": "casuale",
+      "n": 1
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Gli Oggetti casuali ottenuti devono essere non Compagno."
+     },
+     {
+      "tipo": "oggetto",
+      "modo": "nome",
+      "n": 1,
+      "nome": "Kit dell’Avventuriero"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "diviso"
+     },
+     {
+      "tipo": "status",
+      "nome": "Tesori Nascosti",
+      "parti": [
+       7
+      ],
+      "rimuovi": false
+     },
+     {
+      "tipo": "segreto",
+      "n": 2,
+      "rimuovi": false,
+      "nome": "Scoperta Inquietante"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:ce4ce1a5785b",
+   "ruolo": "condizione",
+   "testo": "[b]Se avete perso almeno una battaglia o siete riusciti a Fuggire[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 313: [i]Pescare un Incontro grigio [b]“Vagabondo”[/b]. Se vincete, pescare l’Incontro grigio [b]“Vittima dell’Anomalia”[/b].[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Siete riusciti a Fuggire da uno degli Incontri."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:57e523a1c273",
+   "ruolo": "condizione",
+   "testo": "[b]Se avete vinto entrambi gli Incontri, o il Nemico è Scappato[/b]",
+   "contesto": "Luogo 999 verso 313: [i]Pescare un Incontro grigio [b]“Vagabondo”[/b]. Se vincete, pescare l’Incontro grigio [b]“Vittima dell’Anomalia”[/b].[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_vinto"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Nemico è Scappato."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:58811459cab4",
+   "ruolo": "risultato",
+   "testo": "Tutti i Personaggi che non si trovano nel Fernsea ([b]153[/b]) perdono 1 {i:energy}. Spostare immediatamente questi Personaggi sul Fernsea. Si uniscono al resto della Compagnia in questa Esplorazione e formano un’unica Compagnia.",
+   "contesto": "Luogo 999 verso 350, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni Personaggio che non si trova nel Fernsea (153) perde 1 Energia."
+     },
+     {
+      "tipo": "muovi",
+      "dove": 153,
+      "chi": "tutti"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:d23f4a46a4ae",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Rep}. Piazzare una nuova miniatura Menhir su questo Luogo e piazzare il suo Quadrante sul [b]5[/b] (-1 per giocatore).\nSe non restano miniature sufficienti, prendetene una da un altro Luogo a vostra scelta. [/i]",
+   "contesto": "Luogo 999 verso 359, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "rep",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "menhir",
+      "luogo": "qui",
+      "quadrante": 5,
+      "meno_per_giocatore": true
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Se non restano miniature Menhir sufficienti, prendetene una da un altro Luogo a vostra scelta."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "v:1009",
+   "ruolo": "testo_verso_con_dado",
+   "testo": "Vi trascinate sulle mura della gola e vi trovate su terreno più alto. Iniziate a parlare...\n\n[i]Sommare la vostra {i:empathy} al numero di parti acquisite dello status [b]“Missione Diplomatica”[/b]. Se siete [b]Beor[/b] (o fa parte della vostra Compagnia), aggiungere 1 (in quando maniscalco, la popolazione vi rispetta). Poi, tirare un dado e sommare il risultato. Potete ritirare il dado quante volte volete, pagando 2 {r:Rep} ogni ritiro.[/i]",
+   "contesto": "Luogo 999 verso 390",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete al risultato il numero di parti acquisite dello status “Missione Diplomatica” e +1 se Beor fa parte della Compagnia. Potete ritirare il dado quante volte volete pagando 2 Rep per ogni ritiro."
+     },
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "empathy",
+        "per": 1
+       }
+      ],
+      "risultati": []
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:28986d6063e4",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se c’è un Gettone Cerca nel Luogo [b]135[/b][/i]",
+   "contesto": "Luogo 999 verso 390, scelta: Se il vostro risultato è stato [b]7+[/b], scegliere questa opzione.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è un Gettone Cerca nel Luogo 135."
+    }
+   }
+  },
+  {
+   "chiave": "q:cac98a70d6b8",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Se c’è un Gettone Cerca nel Luogo [b]134[/b][/i]",
+   "contesto": "Luogo 999 verso 390, scelta: Se il vostro risultato è stato [b]7+[/b], scegliere questa opzione.",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "C'è un Gettone Cerca nel Luogo 134."
+    }
+   }
+  },
+  {
+   "chiave": "c:057e21d09337",
+   "ruolo": "condizione",
+   "testo": "Se scartate il Quadrate, decidete di Fuggire o perdete il Combattimento – La donna muore, scegliere questa opzione.",
+   "contesto": "Luogo 999 verso 410: Vi avvicinate alla fonte delle grida. Una giovane sta cercando disperatamente di affrontare un orso anomalo! La creatura la colpisce brutalmente, gettandola a t",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "incontro_perso"
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Avete scartato il Quadrante o avete deciso di Fuggire."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:31eb77057b7d",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Magia}.\n\nOttenete la carta Segreto[b] 8[/b] e lo status [b]“Lascito di Fael”[/b].\nAggiungete 1 spunta allo status [b]“Qualcuno sta Osservando”[/b].\n\nScartare tutte le carte Evento, comprese le Cerche Attive.\n\nPotete Salvare la vostra partita. Poi, prendere la carta Preparazione [b]Capitolo 3A[/b] e seguire le sue istruzioni per iniziare il [b]Capitolo 3[/b]. Fatelo anche se state giocando il [b]Capitolo 3A[/b]! Vi permetterà di seguire un’altra versione di quel Capitolo!\n\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.[/i]",
+   "contesto": "Luogo 999 verso 443, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "segreto",
+      "n": 8,
+      "rimuovi": false
+     },
+     {
+      "tipo": "status",
+      "nome": "Lascito di Fael",
+      "parti": [],
+      "rimuovi": false
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Qualcuno sta Osservando”."
+     },
+     {
+      "tipo": "evento",
+      "azione": "scarta_tutti"
+     },
+     {
+      "tipo": "capitolo",
+      "azione": "prepara",
+      "capitolo": 3,
+      "lettera": "A"
+     },
+     {
+      "tipo": "nota",
+      "testo": "Iniziate il Capitolo 3 con la carta Preparazione Capitolo 3A anche se state già giocando il Capitolo 3A."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:c249910ee0ae",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 1 {r:Esp} e 1 {r:Magia}.\n\nOttenete la carta Segreto[b] 8[/b] e lo status [b]“Lascito di Fael”[/b].\nAggiungete 1 spunta allo status [b]“Qualcuno sta Osservando”[/b].\n\nScartare tutte le carte Evento, comprese le Cerche Attive.\n\nPotete Salvare la vostra partita. Poi, prendere la carta Preparazione [b]Capitolo 3A[/b] e seguire le sue istruzioni per iniziare il [b]Capitolo 3[/b]. Fatelo anche se state giocando il [b]Capitolo 3A[/b]! Vi permetterà di seguire un’altra versione di quel Capitolo!\n\n[b]Nuovo Compito:[/b] portare le ultime parole di Fael a sua moglie alla Sbiancata.\n\n[i]L’Esplorazione termina.[/i].[/i]",
+   "contesto": "Luogo 999 verso 443, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "magia",
+      "n": 1,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "segreto",
+      "n": 8,
+      "rimuovi": false
+     },
+     {
+      "tipo": "status",
+      "nome": "Lascito di Fael",
+      "parti": [],
+      "rimuovi": false
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Aggiungete 1 spunta allo status “Qualcuno sta Osservando”."
+     },
+     {
+      "tipo": "evento",
+      "azione": "scarta_tutti"
+     },
+     {
+      "tipo": "capitolo",
+      "azione": "prepara",
+      "capitolo": 3,
+      "lettera": "A"
+     },
+     {
+      "tipo": "nota",
+      "testo": "Iniziate il Capitolo 3 con la carta Preparazione Capitolo 3A anche se state già giocando il Capitolo 3A."
+     },
+     {
+      "tipo": "nota",
+      "testo": "Nuovo Compito: portare le ultime parole di Fael a sua moglie alla Sbiancata."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:58bdf5e82790",
+   "ruolo": "condizione",
+   "testo": "0-2 {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Avete sacrificato 0-2 Salute."
+    }
+   }
+  },
+  {
+   "chiave": "c:48ef7466f2b5",
+   "ruolo": "condizione",
+   "testo": "3-5 {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Avete sacrificato 3-5 Salute."
+    }
+   }
+  },
+  {
+   "chiave": "c:16be2fb0de92",
+   "ruolo": "condizione",
+   "testo": "6+ {i:health}",
+   "contesto": "Luogo 999 verso 462: [i]Quanto siete disposti a sacrificare?[/i]",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Avete sacrificato 6 o più Salute."
+    }
+   }
+  },
+  {
+   "chiave": "c:c2a1f7cf5bb7",
+   "ruolo": "condizione",
+   "testo": "[b]Graal[/b]",
+   "contesto": "Luogo 999 verso 474: Lanciare un Quadrante (se [b]avete[/b] la carta Segreto [b]78[/b], risolvere invece l’effetto Teschio):",
+   "codifica_attuale": {
+    "condizione": {
+     "tutte": [
+      {
+       "non": {
+        "tipo": "segreto",
+        "n": 78
+       }
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Quadrante lanciato mostra il Graal."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "c:e8001399cf9c",
+   "ruolo": "condizione",
+   "testo": "[b]Teschio[/b]",
+   "contesto": "Luogo 999 verso 474: Lanciare un Quadrante (se [b]avete[/b] la carta Segreto [b]78[/b], risolvere invece l’effetto Teschio):",
+   "codifica_attuale": {
+    "condizione": {
+     "una": [
+      {
+       "tipo": "segreto",
+       "n": 78
+      },
+      {
+       "tipo": "manuale",
+       "testo": "Il Quadrante lanciato mostra il Teschio."
+      }
+     ]
+    }
+   }
+  },
+  {
+   "chiave": "r:9245ef4d13f8",
+   "ruolo": "risultato",
+   "testo": "[i]Ricreate il mazzo Eventi: scartare tutte le carte Evento, trovate tutte le Parti del [b]Capitolo 3A[/b] e impilarle dalla 5 (in fondo) alla 1 (in cima). Poi, scartare le carte dalla cima del mazzo Eventi finché non avete in cima il [b]Capitolo 3A: Parte 3[/b]. Pescare e risolvere la carta [b]Capitolo 3A: Parte 3[/b].[/i]",
+   "contesto": "Luogo 999 verso 475, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "evento",
+      "azione": "scarta_tutti"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Trovate tutte le Parti del Capitolo 3A e impilatele dalla 5 (in fondo) alla 1 (in cima); poi scartate carte dalla cima del mazzo Eventi finché in cima non c'è il Capitolo 3A: Parte 3."
+     },
+     {
+      "tipo": "evento",
+      "azione": "risolvi_parte",
+      "capitolo": 3,
+      "parte": 3,
+      "lettera": "A"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:13b5d6745aa2",
+   "ruolo": "risultato",
+   "testo": "Ricominciare la Campagna.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 1 [/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ricominciate la Campagna."
+     },
+     {
+      "tipo": "nuova_giornata"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:f5903ce619b0",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]115[/b] (o il Luogo[b] 125[/b], se il Luogo [b]115[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo} e {r:Magia} e a 1 la {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 3A [/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 115 è stato rimosso dal gioco."
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 125
+       },
+       {
+        "tipo": "muovi",
+        "dove": 125,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 125,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 115
+       },
+       {
+        "tipo": "muovi",
+        "dove": 115,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 115,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ]
+     },
+     {
+      "tipo": "imposta",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "magia",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "ricchezza",
+      "n": 1,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "scelta",
+      "n": -1,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "nuova_giornata"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7d1ff7832667",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]115[/b] (o il Luogo [b]125[/b], se il Luogo [b]115[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde 1 punto in un Attributo a sua scelta.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 4A [/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 115 è stato rimosso dal gioco."
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 125
+       },
+       {
+        "tipo": "muovi",
+        "dove": 125,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 125,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 115
+       },
+       {
+        "tipo": "muovi",
+        "dove": 115,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 115,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ]
+     },
+     {
+      "tipo": "imposta",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "magia",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "attributo",
+      "attr": "scelta",
+      "n": -1,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "nuova_giornata"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:6ba70a5ec30c",
+   "ruolo": "risultato",
+   "testo": "Preparare il Luogo [b]135[/b] (o il Luogo[b] 148[/b], se il Luogo[b] 135[/b] è stato rimosso dal gioco), piazzarvi tutti i Personaggi e un Menhir e posizionare il Quadrante sul [b]7[/b] (-1 per giocatore). Poi, ogni Personaggio riporta a 2 il proprio {r:Cibo}, {r:Magia} e {r:Ricchezza}. Ogni Personaggio perde tutti gli {r:Esp} e scarta tutti gli Oggetti tranne 1.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 5 [/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "manuale",
+       "testo": "Il Luogo 135 è stato rimosso dal gioco."
+      },
+      "allora": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 148
+       },
+       {
+        "tipo": "muovi",
+        "dove": 148,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 148,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "luogo",
+        "azione": "prepara",
+        "n": 135
+       },
+       {
+        "tipo": "muovi",
+        "dove": 135,
+        "chi": "tutti"
+       },
+       {
+        "tipo": "menhir",
+        "luogo": 135,
+        "quadrante": 7,
+        "meno_per_giocatore": true
+       }
+      ]
+     },
+     {
+      "tipo": "imposta",
+      "ris": "cibo",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "magia",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "esp",
+      "n": 0,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Ogni Personaggio scarta tutti i suoi Oggetti tranne 1."
+     },
+     {
+      "tipo": "nuova_giornata"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:58edf2aefd74",
+   "ruolo": "risultato",
+   "testo": "Preparare lo spazio di gioco come descritto al Verso 605. Poi, ogni Personaggio riporta a 6 il proprio {r:Cibo} e {r:Magia} e a 2 la {r:Ricchezza}. Ogni Personaggio perde tutti gli {r:Esp}.\nPoi, risolvere l’Inizio della Giornata e proseguire la partita.",
+   "contesto": "Luogo 999 verso 500, scelta: [b]Capitolo 8 [/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Preparate lo spazio di gioco come descritto al Verso 605 del Libro dei Segreti."
+     },
+     {
+      "tipo": "imposta",
+      "ris": "cibo",
+      "n": 6,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "magia",
+      "n": 6,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "ricchezza",
+      "n": 2,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "imposta",
+      "ris": "esp",
+      "n": 0,
+      "chi": "tutti"
+     },
+     {
+      "tipo": "nuova_giornata"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "q:5532ea4a0eaf",
+   "ruolo": "requisito o costo di una scelta",
+   "testo": "[i]Scegliere un Personaggio che cercherà di farlo e piazzare un Gettone Cerca sulla sua Plancia Personaggio a contrassegnare questa scelta.[/i]",
+   "contesto": "Luogo 999 verso 520, scelta: [b]Cambiare idea e tentare di estrarre la spada.[/b]",
+   "codifica_attuale": {
+    "costo": [
+     {
+      "tipo": "manuale",
+      "testo": "Scegliete un Personaggio che cercherà di farlo e piazzate un Gettone Cerca sulla sua Plancia Personaggio per contrassegnare la scelta."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:7a75053f8969",
+   "ruolo": "risultato",
+   "testo": "[i]Ogni membro della Compagnia ottiene 3 {i:health}  , perde 2 {i:energy} e ottiene 2 {r:Esp}. Poi, risolvere l’Incontro viola [b]“Slaugh”[/b] (Difficoltà 4). Iniziare il Combattimento con 4 segnalini nella Riserva di Combattimento. L’Esplorazione termina.[/i]",
+   "contesto": "Luogo 999 verso 526, scelta: Continua.",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 3,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": -2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "esp",
+      "n": 2,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Iniziate il Combattimento seguente con 4 segnalini nella Riserva di Combattimento."
+     },
+     {
+      "tipo": "incontro",
+      "colore": "viola",
+      "nome": "Slaugh",
+      "livello": 4
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:04eb8182f982",
+   "ruolo": "risultato",
+   "testo": "Ogni giocatore scarta tutti gli Oggetti tranne 2 (non includete i Segreti tra questi Oggetti!). Ogni Personaggio ottiene 4 {i:health}, perde 4 {i:terror} e ripristina al massimo la propria {i:energy}. Ottenete lo status [b]“Venti dell’Anomalia”[/b]. Scartate la carta Segreto [b]“Riposo Disturbato” (67)[/b].",
+   "contesto": "Luogo 999 verso 530, scelta: Fatto",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Ogni giocatore scarta tutti i suoi Oggetti tranne 2 (i Segreti non contano come Oggetti)."
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": 4,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "terrore",
+      "n": -4,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "risorsa",
+      "ris": "energia",
+      "n": 99,
+      "chi": "compagnia"
+     },
+     {
+      "tipo": "status",
+      "nome": "Venti dell’Anomalia",
+      "parti": [],
+      "rimuovi": false
+     },
+     {
+      "tipo": "segreto",
+      "n": 67,
+      "rimuovi": true,
+      "nome": "Riposo Disturbato"
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:f78aee14cf9a",
+   "ruolo": "risultato",
+   "testo": "Scegliere un Personaggio che cercherà di farlo e piazzare un Gettone Cerca sulla sua Plancia Personaggio a contrassegnare questa scelta.",
+   "contesto": "Luogo 999 verso 555, scelta: [b]Recuperare Excalibur come richiesto da Artù[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Scegliete un Personaggio che cercherà di farlo e piazzate un Gettone Cerca sulla sua Plancia Personaggio per contrassegnare la scelta."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:9046f480ccaa",
+   "ruolo": "risultato",
+   "testo": "Tenere un ammontare totale di {r:Ricchezza} e {r:Cibo} pari alla somma dei suoi due Attributi più alti. Scartare il resto.",
+   "contesto": "Luogo 999 verso 560, scelta: [b]Salvarsi la vita[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Il Personaggio tiene un totale di Ricchezza e Cibo pari alla somma dei suoi due Attributi più alti e scarta il resto."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:445e699f98e9",
+   "ruolo": "risultato",
+   "testo": "Perdere 8 {i:health} meno il valore del suo Attributo più alto. Non può tenere più di 16 {r:Ricchezza} e {r:Cibo}, scartare il resto.",
+   "contesto": "Luogo 999 verso 560, scelta: [b]Salvare i propri beni[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Il Personaggio perde 8 Salute meno il valore del suo Attributo più alto; non può tenere più di 16 fra Ricchezza e Cibo, scarta il resto."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:394c3d8aab28",
+   "ruolo": "risultato",
+   "testo": "Perdere 2 {i:health}. Tenere un ammontare totale di {r:Ricchezza} e {r:Cibo} pari al suo Attributo più alto. Un Personaggio di vostra scelta non deve scegliere un’opzione da questa lista.",
+   "contesto": "Luogo 999 verso 560, scelta: {r:Salvare i propri amici}",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "risorsa",
+      "ris": "salute",
+      "n": -2,
+      "chi": "attivo"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Il Personaggio tiene un totale di Ricchezza e Cibo pari al suo Attributo più alto e scarta il resto. Un Personaggio a vostra scelta non deve scegliere un’opzione da questa lista."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:4e151c688b46",
+   "ruolo": "risultato",
+   "testo": "Piazzare l’Evento Speciale A in cima al mazzo Eventi. Poi, piazzare 7 (-1 per giocatore) Eventi Casuali in cima a esso.\n\nContinuare la partita.",
+   "contesto": "Luogo 999 verso 560, scelta: Tutti i giocatori hanno scelto",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "manuale",
+      "testo": "Piazzate l’Evento Speciale A in cima al mazzo Eventi."
+     },
+     {
+      "tipo": "evento",
+      "azione": "casuali_in_cima",
+      "n": 7,
+      "meno_per_giocatore": true
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "c:c30ad7f922d2",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]1-2[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 1-2."
+    }
+   }
+  },
+  {
+   "chiave": "c:86d6e355c60a",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]3[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 3."
+    }
+   }
+  },
+  {
+   "chiave": "c:653962b9f674",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]4[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 4."
+    }
+   }
+  },
+  {
+   "chiave": "c:cc970a8682e4",
+   "ruolo": "condizione",
+   "testo": "Se il Quadrante Cerca sulla carta Segreto [b]“Preda” (13)[/b] è impostato su [b]5+[/b], scegliere questa opzione",
+   "contesto": "Luogo 999 verso 605: Vi bruciano gli occhi mentre emergente nelle mutevoli distese di Tuathan, dove strutture di impossibile complessità emergono dalla pura anomalia a diverse ango",
+   "codifica_attuale": {
+    "condizione": {
+     "tipo": "manuale",
+     "testo": "Il Quadrante Cerca sulla carta Segreto “Preda” (13) è impostato su 5 o più."
+    }
+   }
+  },
+  {
+   "chiave": "r:8cf5eed5143b",
+   "ruolo": "risultato",
+   "testo": "[i]Scartare la carta Segreto ([b]13[/b]) [b]“Preda”[/b][/i]\n Il vostro inseguitore non entrerà nella città.\n[i]Rimuovere la miniatura Predecessore dal gioco. Rimescolare la carta Predecessore nel mazzo Incontri viola..[/i]",
+   "contesto": "Luogo 999 verso 605, scelta: [b]Regole di Tuathan[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "segreto",
+      "n": 13,
+      "rimuovi": true,
+      "nome": "Preda"
+     },
+     {
+      "tipo": "manuale",
+      "testo": "Rimuovete la miniatura Predecessore dal gioco e rimescolate la carta Predecessore nel mazzo Incontri viola."
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:867c6fd46ec7",
+   "ruolo": "risultato",
+   "testo": "[i]Tirare un dado e sommare la vostra {i:aggression}: ottenete quel quantitativo di {r:Ricchezza}.[/i]",
+   "contesto": "Luogo 999 verso 643, scelta: [b]Darsi al saccheggio.[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "dado",
+      "mod": [
+       {
+        "attr": "aggression",
+        "per": 1
+       }
+      ],
+      "risultati": [
+       {
+        "da": 1,
+        "a": 1,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 1,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 2,
+        "a": 2,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 2,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 3,
+        "a": 3,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 3,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 4,
+        "a": 4,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 4,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 5,
+        "a": 5,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 5,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 6,
+        "a": 6,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 6,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 7,
+        "a": 7,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 7,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 8,
+        "a": 8,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 8,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 9,
+        "a": 9,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 9,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 10,
+        "a": 10,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 10,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 11,
+        "a": 11,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 11,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 12,
+        "a": 12,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 12,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 13,
+        "a": 13,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 13,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 14,
+        "a": 14,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 14,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 15,
+        "a": 15,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 15,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 16,
+        "a": 16,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 16,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 17,
+        "a": 17,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 17,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 18,
+        "a": 18,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 18,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 19,
+        "a": 19,
+        "effetti": [
+         {
+          "tipo": "risorsa",
+          "ris": "ricchezza",
+          "n": 19,
+          "chi": "diviso"
+         }
+        ]
+       },
+       {
+        "da": 20,
+        "a": 99,
+        "effetti": [
+         {
+          "tipo": "manuale",
+          "testo": "Ottenete tanta Ricchezza quanto il risultato del dado (dado + Aggressività)."
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "chiave": "r:504c9453317d",
+   "ruolo": "risultato",
+   "testo": "Risolvere l’Incontro viola [b]“Predecessore”[/b] (Difficoltà 4). Se avete qualsiasi parte dello status “[b]Intensificazione”[/b], l’Incontro che segue ottiene i seguenti Tratti:\n\n[b]parte 1 [/b]– Ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione.\n\n[b]parte 2[/b] – Ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione. Ogni Personaggio è preda del Panico per l’intero Incontro, a prescindere dal suo {i:terror}.\n\n[b]parte 3[/b] – Ogni Personaggio può giocare al massimo 2 carte durante la propria Attivazione. Ogni Personaggio è preda del Panico per l’intero Incontro, a prescindere dal suo {i:terror}.\n\n[b]Poi verificare il risultato![/b]",
+   "contesto": "Luogo 999 verso 666, scelta: [b]Combattere[/b]",
+   "codifica_attuale": {
+    "effetti": [
+     {
+      "tipo": "se",
+      "condizione": {
+       "tipo": "status",
+       "nome": "Intensificazione",
+       "parti": [
+        3
+       ]
+      },
+      "allora": [
+       {
+        "tipo": "manuale",
+        "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 2 carte durante la propria Attivazione ed è preda del Panico per l’intero Incontro a prescindere dal suo Terrore."
+       }
+      ],
+      "altrimenti": [
+       {
+        "tipo": "se",
+        "condizione": {
+         "tipo": "status",
+         "nome": "Intensificazione",
+         "parti": [
+          2
+         ]
+        },
+        "allora": [
+         {
+          "tipo": "manuale",
+          "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione ed è preda del Panico per l’intero Incontro a prescindere dal suo Terrore."
+         }
+        ],
+        "altrimenti": [
+         {
+          "tipo": "se",
+          "condizione": {
+           "tipo": "status",
+           "nome": "Intensificazione",
+           "parti": [
+            1
+           ]
+          },
+          "allora": [
+           {
+            "tipo": "manuale",
+            "testo": "Tratto per questo Incontro: ogni Personaggio può giocare al massimo 3 carte durante la propria Attivazione."
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "tipo": "incontro",
+      "colore": "viola",
+      "nome": "Predecessore",
+      "livello": 4
+     }
+    ]
+   }
+  }
+ ]
+}

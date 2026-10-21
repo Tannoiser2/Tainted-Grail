@@ -42,7 +42,23 @@ var ui = null                     # finestra per le scelte del giocatore (vedi I
 var tratti_ignorati: Array = []
 var scegli_attacco := false
 var ferite_subite := 0
-var usati_inneschi := {}          # inneschi "una volta per Incontro" già usati / carte girate
+var usati_inneschi := {}
+# effetti delle Capacità che valgono per l'attacco/Risposta di questa attivazione
+var salta_attacco := false
+var frecce_giu_ignorate := 0
+var inverti_frecce := false
+var previeni_scarti := 0
+var ferite_extra := 0
+var ferite_in_cubi := false
+var cubi_invertiti := false
+var riga_forzata := -1          # indice della riga della tabella da usare
+var sposta_riga := 0
+var nessun_bottino := false
+var senza_opportunita := false
+var raddoppia_prossima := false
+var magia_gratis := 0
+var salta_al_fine_turno := false
+var extra_regole: Array = []     # modificatori aggiunti dal Diario per questo Incontro          # inneschi "una volta per Incontro" già usati / carte girate
 
 func _init(partita_: Partita, img_: String, colore_: String) -> void:
 	partita = partita_
@@ -58,7 +74,33 @@ func speciale() -> bool:
 	return carta.get("speciale", false) or (not carta.has("valore") and not carta.has("fasi"))
 
 func tratti() -> Array:
-	return carta.get("tratti", [])
+	var t: Array = carta.get("tratti", []).duplicate()
+	for m in regole_carta("tratto_extra") + partita.modificatori("tratto_extra"):
+		if not t.has(str(m.get("tratto", ""))):
+			t.append(str(m.get("tratto", "")))
+	return t
+
+## Valore del nemico (modificato da regole e carte).
+func valore() -> int:
+	var v := int(carta.get("valore", 99))
+	for m in regole_carta("valore_nemico") + partita.modificatori("valore_nemico"):
+		v += int(m.get("n", 0))
+	return v
+
+## Modificatori dati dalle regole speciali della carta Incontro e dagli effetti "inizio" del Diario.
+func regole_carta(cosa: String) -> Array:
+	var out := []
+	for fonte in [auto.get("regola_speciale", []), extra_regole]:
+		if not (fonte is Array):
+			continue
+		for inn in fonte:
+			if not (inn is Dictionary):
+				continue
+			var lst: Array = inn.get("effetti", []) if inn.has("effetti") else [inn]
+			for s in lst:
+				if s is Dictionary and str(s.get("tipo", "")) == "modificatore" and str(s.get("cosa", "")) == cosa:
+					out.append(s)
+	return out
 
 func ha_tratto(t: String) -> bool:
 	for ig in tratti_ignorati:
@@ -97,6 +139,12 @@ func inizia(compagnia: Array) -> void:
 				await _esegui(inn.get("effetti", []), {"carta": img})
 	if auto.get("inizio") is Array and not auto["inizio"].is_empty():
 		await _esegui(auto["inizio"], {"carta": img})
+	var ri = partita.d.get("regole_incontro", [])
+	if ri is Array and not ri.is_empty():
+		for s in ri:
+			if s is Dictionary and str(s.get("tipo", "")) == "modificatore":
+				extra_regole.append(s)
+		await _esegui(ri.filter(func(s): return s is Dictionary and str(s.get("tipo", "")) != "modificatore"), {"carta": img})
 	await scatena("inizio_incontro")
 	await scatena("inizio_diplomazia" if diplomazia else "inizio_combattimento")
 	if speciale() and auto.get("effetto") is Array and not auto["effetto"].is_empty():
@@ -150,6 +198,15 @@ func attiva(id: String) -> void:
 	extra_disponibili = 0
 	prevenzione = 0
 	meno_cubi = 0
+	salta_attacco = false
+	frecce_giu_ignorate = 0
+	inverti_frecce = false
+	previeni_scarti = 0
+	ferite_extra = 0
+	ferite_in_cubi = false
+	cubi_invertiti = false
+	riga_forzata = -1
+	sposta_riga = 0
 	nota("Si attiva %s." % attivo()["nome"])
 	if primo_attivato:
 		primo_attivato = false
@@ -164,6 +221,7 @@ func attiva(id: String) -> void:
 	for s in sequenza:
 		if int(s.get("tempo", 0)) > 0:
 			s["tempo"] = int(s["tempo"]) - 1
+			esegui_capacita(str(s["img"]), "tempo_rimosso")
 			if s["tempo"] == 0 and sequenza.back() == s:
 				nota("Capacità ritardata di %s." % Carte.nome(str(s["img"])))
 				await esegui_capacita(str(s["img"]), "ritardata")
@@ -172,6 +230,10 @@ func attiva(id: String) -> void:
 
 ## Il personaggio attivo è in Panico: la prima carta è quella in cima al mazzo.
 func in_panico() -> bool:
+	if not partita.modificatori("ignora_panico", attivo()).is_empty():
+		return false
+	if not regole_carta("panico_sempre").is_empty():
+		return true
 	return Personaggi.in_panico(attivo())
 
 ## Capacità di una carta (lista).
@@ -255,6 +317,9 @@ func giocabile(c: String) -> bool:
 		return true
 	if ha_tratto("Rapid") and carte_attivazione >= 2:
 		return false
+	for m in partita.modificatori("max_carte_attivazione") + regole_carta("max_carte_attivazione"):
+		if carte_attivazione >= int(m.get("n", 99)):
+			return false
 	for k in collegamenti(c):
 		if k["ok"] and k["bonus"].has("extra") and (k["tipo"] != "magia" or paga_magia):
 			return true
@@ -288,11 +353,14 @@ func gioca(c: String) -> void:
 			_paga_magia()
 			sequenza.back()["magia"] = int(sequenza.back()["magia"]) + 1
 		var molt := int(k.get("molt", 1)) if k["tipo"] == "fondo" else 1
+		if raddoppia_prossima:
+			molt *= 2
 		for b in k["bonus"]:
 			cubi += _bonus(str(b), molt, str(k.get("attr", "")), prima)
 	if prima and ha_tratto("Difens") and cubi > 0 and not diplomazia:
 		riserva = maxi(0, riserva - 1)
 		nota("Difensivo: un segnalino in meno.")
+	raddoppia_prossima = false
 	sequenza.back()["chiavi"] = unite
 	for a in unite:
 		await scatena("collega_chiave", attivo(), {"attr": a})
@@ -302,10 +370,14 @@ func gioca(c: String) -> void:
 			sequenza.back()["tempo"] = maxi(1, int(cap.get("tempo", 1)))
 	await esegui_capacita(c, "piazza", {"cubi_dati": cubi})
 	await esegui_capacita(c, "passiva", {"cubi_dati": cubi})
+	await scatena("gioca_carta", attivo())
 	_controlla_fine_carte()
 	cambiato.emit()
 
 func _paga_magia() -> void:
+	if magia_gratis > 0:
+		magia_gratis -= 1
+		return
 	var a := attivo()
 	if int(a.get("magia", 0)) > 0:
 		partita.modifica(a, "magia", -1)
@@ -351,6 +423,7 @@ func _scarta_ultima() -> void:
 	var s: Dictionary = sequenza.pop_back()
 	scarti[str(s.get("pid", attivo_id))].append(s["img"])
 	nota("Scartata l'ultima carta della Sequenza (%s)." % Carte.nome(str(s["img"])))
+	esegui_capacita(str(s["img"]), "scartata")
 
 func _affinita(n: int) -> void:
 	if not diplomazia:
@@ -470,6 +543,7 @@ func _ferite(n: int, prevenibili := true) -> void:
 		nota("%s subisce %d Ferite (Salute %d)." % [p["nome"], nn, int(p["salute"])])
 		ferite_subite += nn
 		scatena("ferite", p, {"ferite": nn})
+		scatena("perdi_salute", p, {"ferite": nn})
 
 func _perdi_cubi(n: int) -> void:
 	var resto := n - riserva
@@ -482,12 +556,24 @@ func _scarta_mano(n: int) -> void:
 	var id := attivo_id
 	if attivo().is_empty() or not mani.has(id):
 		return
+	if previeni_scarti > 0:
+		var x := mini(previeni_scarti, n)
+		previeni_scarti -= x
+		n -= x
+		if x > 0:
+			nota("%d scarti prevenuti." % x)
+	var scartate := []
 	for i in n:
 		if not mani[id].is_empty():
-			scarti[id].append(mani[id].pop_back())
+			var c: String = mani[id].pop_back()
+			scarti[id].append(c)
+			scartate.append(c)
 		elif not mazzi[id].is_empty():
 			scarti[id].append(mazzi[id].pop_front())
-	nota("%s scarta %d carta." % [attivo()["nome"], n])
+	if n > 0:
+		nota("%s scarta %d carta." % [attivo()["nome"], n])
+	for c in scartate:
+		esegui_capacita(c, "scartata")
 
 func _controlla_vita() -> void:
 	var p := attivo()
@@ -504,7 +590,7 @@ func _controlla_fine_carte() -> void:
 		return
 	if diplomazia:
 		_controlla_affinita()
-	elif riserva >= int(carta.get("valore", 99)):
+	elif riserva >= valore():
 		concludi("vittoria")
 
 func _controlla_affinita() -> bool:
@@ -536,7 +622,7 @@ func termina_carte() -> void:
 			await opportunita()
 			if carte_attivazione == 0:
 				pesca(attivo_id)
-		if concluso == "" and riserva >= int(carta.get("valore", 99)):
+		if concluso == "" and riserva >= valore():
 			concludi("vittoria")
 			return
 		if concluso == "":
@@ -550,7 +636,7 @@ func termina_carte() -> void:
 					if not mazzi[attivo_id].is_empty():
 						scarti[attivo_id].append(mazzi[attivo_id].pop_front())
 				nota("Orda: scartate le 2 carte in cima al mazzo.")
-			if concluso == "" and riserva >= int(carta.get("valore", 99)):
+			if concluso == "" and riserva >= valore():
 				concludi("vittoria")
 	else:
 		var fase_vinta := _controlla_affinita()
@@ -562,7 +648,10 @@ func termina_carte() -> void:
 				nota("Risposta: " + Dati.testo_piano(t))
 				var af: Array = auto.get("fasi", []) if auto.get("fasi") is Array else []
 				await scatena("attacco", attivo())
-				if fase < af.size() and af[fase] is Dictionary and af[fase].get("risposta") is Array:
+				if salta_attacco:
+					salta_attacco = false
+					nota("La Risposta è ignorata.")
+				elif fase < af.size() and af[fase] is Dictionary and af[fase].get("risposta") is Array:
 					await _esegui(af[fase]["risposta"], {"carta": img, "attacco": true, "finta": ha_tratto("Finta")})
 				else:
 					applica_testo(t, true)
@@ -598,6 +687,15 @@ func _attacco() -> void:
 			for x in at:
 				if x is Dictionary and int(x.get("da", -1)) == int(r.get("da", -2)):
 					ra = x
+	var righe_t: Array = carta.get("tabella", [])
+	if (riga_forzata >= 0 or sposta_riga != 0) and not righe_t.is_empty():
+		var idx := righe_t.find(r) if riga_forzata < 0 else riga_forzata
+		idx = clampi(idx + sposta_riga, 0, righe_t.size() - 1)
+		r = righe_t[idx]
+		ra = {}
+		for x in (auto.get("tabella", []) if auto.get("tabella") is Array else []):
+			if x is Dictionary and int(x.get("da", -1)) == int(r.get("da", -2)):
+				ra = x
 	if r.is_empty() and ra.is_empty():
 		return
 	# Capacità visibile "durante l'attacco" (ultima carta della Sequenza) e carte dei Personaggi
@@ -605,6 +703,10 @@ func _attacco() -> void:
 		await esegui_capacita(str(sequenza.back()["img"]), "attacco")
 	await scatena("attacco", attivo())
 	if concluso != "":
+		return
+	if salta_attacco:
+		salta_attacco = false
+		nota("L'attacco nemico è ignorato.")
 		return
 	nota("Attacco nemico (Riserva %d): %s" % [riserva, Dati.testo_piano(str(r.get("it", "")))])
 	ferite_subite = 0
@@ -625,6 +727,7 @@ func riga_tabella_auto() -> Dictionary:
 
 ## Attacco di opportunità (Combattimento).
 func opportunita() -> void:
+	await scatena("attacco_opportunita", attivo(), {"opportunita": true})
 	nota("Attacco di opportunità: " + Dati.testo_piano(str(carta.get("opportunita", {}).get("it", ""))))
 	if auto.get("opportunita") is Array:
 		await _esegui(auto["opportunita"], {"carta": img, "attacco": true, "finta": ha_tratto("Finta")})
@@ -635,15 +738,16 @@ func opportunita() -> void:
 func fine_turno() -> void:
 	for p in membri:
 		var id := str(p["id"])
-		while mani[id].size() > 3:
+		while mani[id].size() > 3 + partita.somma_modificatori("limite_mano", p):
 			scarti[id].append(mani[id].pop_back())
-		if not Personaggi.in_panico(p):
-			var n := 2 if ha_tratto("Lento") else 1
+		if not Personaggi.in_panico(p) or not partita.modificatori("ignora_panico", p).is_empty():
+			var n := (2 if ha_tratto("Lento") else 1) + partita.somma_modificatori("pesca_fine_turno", p)
 			if pesca(id, n) < n:
 				if diplomazia:
 					concludi("fallimento")
 				else:
 					nota("%s non ha più carte: deve Scappare." % p["nome"])
+	scatena("fine_turno")
 	attivati.clear()
 	attivo_id = ""
 	turno += 1
@@ -651,7 +755,13 @@ func fine_turno() -> void:
 	cambiato.emit()
 
 ## Scappare (chi è attivo): −1 Energia e attacco di opportunità; esce dall'Incontro.
+func puo_scappare() -> bool:
+	return regole_carta("no_fuga").is_empty()
+
 func scappa() -> void:
+	if not puo_scappare():
+		nota("In questo Incontro non si può Scappare.")
+		return
 	var p := attivo()
 	if p.is_empty():
 		p = membri[0]
@@ -660,7 +770,10 @@ func scappa() -> void:
 		concludi("fallimento")
 		return
 	partita.modifica(p, "energia", -1)
-	await opportunita()
+	if senza_opportunita or not partita.modificatori("senza_opportunita", p).is_empty():
+		nota("Nessun attacco di opportunità.")
+	else:
+		await opportunita()
 	nota("%s Scappa." % p["nome"])
 	membri.erase(p)
 	if membri.is_empty() and concluso == "":
@@ -692,9 +805,11 @@ func concludi(esito: String) -> void:
 	match esito:
 		"vittoria":
 			nota("VITTORIA!")
-			var ric = carta.get("ricompensa")
+			var ric = carta.get("ricompensa") if not nessun_bottino else null
 			var ric_t := str(ric.get("it", "")) if ric is Dictionary else ""
-			if auto.get("ricompensa") is Array and (not auto["ricompensa"].is_empty() or ric_t == ""):
+			if nessun_bottino:
+				pass
+			elif auto.get("ricompensa") is Array and (not auto["ricompensa"].is_empty() or ric_t == ""):
 				if not auto["ricompensa"].is_empty():
 					nota("Ricompensa a ogni membro: " + Dati.testo_piano(ric_t))
 					await _esegui_fuori(auto["ricompensa"])
@@ -703,9 +818,13 @@ func concludi(esito: String) -> void:
 					partita.d["attivo"] = partita.personaggi().find(p)
 					Effetti.applica(ric_t, partita)
 				nota("Ricompensa a ogni membro: " + Dati.testo_piano(ric_t))
-			var bot = carta.get("bottino")
+			var bot = carta.get("bottino") if not nessun_bottino else null
 			var bot_t := str(bot.get("it", "")) if bot is Dictionary else ""
-			if auto.get("bottino") is Array and (not auto["bottino"].is_empty() or bot_t == ""):
+			if nessun_bottino:
+				nota("Niente Ricompensa né Bottino per questo Incontro.")
+			if nessun_bottino:
+				pass
+			elif auto.get("bottino") is Array and (not auto["bottino"].is_empty() or bot_t == ""):
 				if not auto["bottino"].is_empty():
 					nota("Bottino: " + Dati.testo_piano(bot_t))
 					await _esegui_fuori(auto["bottino"])
@@ -718,7 +837,10 @@ func concludi(esito: String) -> void:
 		"fallimento":
 			nota("FALLIMENTO.")
 			var f = carta.get("fallimento")
-			if auto.get("fallimento") is Array and not auto["fallimento"].is_empty():
+			if partita.d.get("ignora_fallimento", false):
+				partita.d.erase("ignora_fallimento")
+				nota("Il Fallimento della carta non si applica (lo sostituisce il Diario).")
+			elif auto.get("fallimento") is Array and not auto["fallimento"].is_empty():
 				await _esegui_fuori(auto["fallimento"])
 			elif f is Dictionary and str(f.get("it", "")) != "":
 				for p in tutti:
@@ -769,7 +891,15 @@ func esegui_capacita(c: String, innesco: String, contesto := {}) -> void:
 	var n := ac.size() if usa_auto else testo.size()
 	for i in n:
 		var cap: Dictionary = ac[i] if usa_auto else testo[i]
-		if str(cap.get("innesco", "")) != innesco:
+		var inn_cap := str(cap.get("innesco", ""))
+		var cond_c = cap.get("condizione")
+		if usa_auto and cond_c is Dictionary and str(cond_c.get("tipo", "")) == "manuale":
+			var tc := str(cond_c.get("testo", "")).to_lower()
+			if tc.find("scartat") >= 0:
+				inn_cap = "scartata"
+			elif tc.find("delay") >= 0 or tc.find("gettone tempo") >= 0:
+				inn_cap = "tempo_rimosso"
+		if inn_cap != innesco:
 			continue
 		if not usa_auto:
 			if innesco != "passiva":
@@ -778,7 +908,7 @@ func esegui_capacita(c: String, innesco: String, contesto := {}) -> void:
 		var ctx: Dictionary = contesto.duplicate()
 		ctx["carta"] = c
 		var it := Interprete.new(partita, self, ui, ctx)
-		if cap.get("condizione") is Dictionary and not cap["condizione"].is_empty():
+		if cap.get("condizione") is Dictionary and not cap["condizione"].is_empty() and inn_cap == str(cap.get("innesco", "")):
 			var v = it.valuta(cap["condizione"])
 			if v == null and ui and ui.has_method("scegli"):
 				v = await ui.scegli("%s: %s?" % [Carte.nome(c), Interprete.descrivi(cap["condizione"])], ["Sì", "No"]) == 0
@@ -972,7 +1102,7 @@ func anteprima(c: String) -> Dictionary:
 		out["righe"].append({"chiave": "Difensivo", "ok": true, "effetti": "−1 segnalino", "nota": ""})
 	out["riserva_dopo"] = riserva + cubi_eff
 	out["affinita_dopo"] = affinita + int(out["affinita"])
-	out["vittoria"] = not diplomazia and int(out["riserva_dopo"]) >= int(carta.get("valore", 99))
+	out["vittoria"] = not diplomazia and int(out["riserva_dopo"]) >= valore()
 	var a: Dictionary = carta.get("affinita", {})
 	out["fase_vinta"] = diplomazia and int(out["affinita_dopo"]) >= int(a.get("verdi", 3))
 	out["fallita"] = diplomazia and int(out["affinita_dopo"]) <= -int(a.get("rossi", 3))

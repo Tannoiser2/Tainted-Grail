@@ -1,0 +1,3495 @@
+{
+ "carte": {
+  "carte/mazzo/32715.webp": {
+   "facce": [
+    {
+     "numero": 31,
+     "nome": "Chiaroveggenza",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "scegli_incontro",
+         "colore": "blu",
+         "casuale": true,
+         "n": 2,
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 32,
+     "nome": "Seguire le tracce",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "scegli_incontro",
+         "colore": "verde",
+         "casuale": true,
+         "n": 2,
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32714.webp": {
+   "facce": [
+    {
+     "numero": 29,
+     "nome": "Cacciatore di taglie",
+     "inneschi": [
+      {
+       "quando": "vittoria",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "rep",
+         "n": 1,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "tratto",
+        "nome": "Guardiano"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 30,
+     "nome": "Rituali del viaggiatore",
+     "inneschi": [
+      {
+       "quando": "inizio_giornata",
+       "effetti": [
+        {
+         "tipo": "evento",
+         "azione": "ripesca_casuale"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "evento_casuale"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32713.webp": {
+   "facce": [
+    {
+     "numero": 27,
+     "nome": "Collezionista",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "reliquie_attive",
+         "n": 2
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 28,
+     "nome": "Resistente alla fame",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "salute",
+         "n": 1,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": -1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "ha_mangiato"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32712.webp": {
+   "facce": [
+    {
+     "numero": 25,
+     "nome": "Baratto",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "rimetti_nel_mazzo",
+         "n": 1
+        },
+        {
+         "tipo": "oggetto",
+         "modo": "casuale",
+         "n": 1
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 26,
+     "nome": "Mercante abile",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "oggetto",
+         "modo": "scarta",
+         "n": 1
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "ricchezza",
+         "n": 2,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32711.webp": {
+   "facce": [
+    {
+     "numero": 23,
+     "nome": "Dieta di sopravvivenza",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "terrore",
+         "n": 1,
+         "chi": "attivo"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        }
+       ],
+       "una_volta": "giorno",
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 24,
+     "nome": "La forza della paura",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "ignora_incubi",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      },
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "magia",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incubo"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32710.webp": {
+   "facce": [
+    {
+     "numero": 21,
+     "nome": "Esplorazione audace",
+     "inneschi": [
+      {
+       "quando": "tiro_dado",
+       "effetti": [
+        {
+         "tipo": "mod_tiro",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": "tiro",
+       "facoltativo": true,
+       "condizione": null,
+       "contesto": "esplorazione"
+      }
+     ]
+    },
+    {
+     "numero": 22,
+     "nome": "Patto col diavolo",
+     "inneschi": [
+      {
+       "quando": "tiro_dado",
+       "effetti": [
+        {
+         "tipo": "quadrante_lancio",
+         "graal": [
+          {
+           "tipo": "mod_tiro",
+           "n": 2
+          }
+         ],
+         "teschio": [
+          {
+           "tipo": "mod_tiro",
+           "n": -2,
+           "min": 1
+          }
+         ]
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null,
+       "contesto": "esplorazione"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32709.webp": {
+   "facce": [
+    {
+     "numero": 19,
+     "nome": "Ispirazione",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "costo_energia",
+         "n": -1,
+         "min": 1,
+         "su": "azione_personaggio"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 20,
+     "nome": "Muoversi o morire",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "paga_con",
+         "da": "energia",
+         "con": "salute",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "esausto"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32708.webp": {
+   "facce": [
+    {
+     "numero": 17,
+     "nome": "Sempre avanti",
+     "inneschi": [
+      {
+       "quando": "fine_turno",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": 1,
+         "per": {
+          "carte_scartate": true
+         }
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 18,
+     "nome": "Farsi strada",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        },
+        {
+         "tipo": "scarta_carte",
+         "n": 1,
+         "da": "mano"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32707.webp": {
+   "facce": [
+    {
+     "numero": 15,
+     "nome": "Guardia del corpo",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "assorbi_ferite_compagni",
+         "inevitabile": true,
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    },
+    {
+     "numero": 16,
+     "nome": "Leader carismatico",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "compagni_gratis"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32706.webp": {
+   "facce": [
+    {
+     "numero": 13,
+     "nome": "Vigore inesauribile",
+     "inneschi": [
+      {
+       "quando": "fine_giornata",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "energia",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "esausto"
+        }
+       },
+       "momento": "dopo_recupero_energia"
+      }
+     ]
+    },
+    {
+     "numero": 14,
+     "nome": "Instancabile",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "soglia_esausto",
+         "n": 0
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32705.webp": {
+   "facce": [
+    {
+     "numero": 11,
+     "nome": "Istinto di combattimento",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "limite_mano",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 12,
+     "nome": "Rapidità",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "ignora_tratto",
+         "tratto": "Imboscata"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Armatura"
+        }
+       }
+      },
+      {
+       "quando": "inizio_combattimento",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Armatura"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32704.webp": {
+   "facce": [
+    {
+     "numero": 9,
+     "nome": "Infondere odio",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "menhir_paga_con",
+         "da": "energia",
+         "con": "magia",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 10,
+     "nome": "Duro lavoro",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "menhir_paga_con",
+         "da": "magia",
+         "con": "energia",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32703.webp": {
+   "facce": [
+    {
+     "numero": 7,
+     "nome": "Ultimo respiro",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "rimescola_scarti",
+         "n": 5
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": false,
+       "condizione": {
+        "tutte": [
+         {
+          "una": [
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "combattimento"
+           },
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "diplomazia"
+           }
+          ]
+         },
+         {
+          "tipo": "mazzo_vuoto"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 8,
+     "nome": "Un passo avanti",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "mazzo_scoperto"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32702.webp": {
+   "facce": [
+    {
+     "numero": 5,
+     "nome": "Sforzo",
+     "inneschi": [
+      {
+       "quando": "in_qualsiasi_momento",
+       "effetti": [
+        {
+         "tipo": "gettone_tempo_carta",
+         "n": -1,
+         "su": "scelta"
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 6,
+     "nome": "Banchetto degli eroi",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "quantita",
+         "ris": "cibo",
+         "max": "tutto",
+         "chi": "attivo",
+         "testo": "Cibo aggiuntivo da consumare (ottieni altrettanta Energia)"
+        },
+        {
+         "tipo": "risorsa",
+         "ris": "energia",
+         "n": 1,
+         "chi": "attivo",
+         "per": {
+          "quantita": true
+         }
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32700.webp": {
+   "facce": [
+    {
+     "numero": 1,
+     "nome": "Forza mostruosa",
+     "inneschi": [
+      {
+       "quando": "collega_chiave",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       "attr": "aggression2"
+      }
+     ]
+    },
+    {
+     "numero": 2,
+     "nome": "Doppia maestria",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "armi_attive",
+         "n": 2
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "non": {
+         "tipo": "oggetto",
+         "parola": "Scudo"
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32731.webp": {
+   "facce": [
+    {
+     "numero": 63,
+     "nome": "Potere delle ere",
+     "inneschi": [
+      {
+       "quando": "attiva_menhir",
+       "effetti": [
+        {
+         "tipo": "quadrante",
+         "dove": "menhir_qui",
+         "n": 1,
+         "max": 8
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 64,
+     "nome": "Riattivatore",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "quadrante",
+         "dove": "menhir_qui",
+         "n": 1,
+         "max": 8
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32735.webp": {
+   "facce": [
+    {
+     "numero": 71,
+     "nome": "Concentrazione totale",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "chiave_magia_come",
+         "bonus": "extra",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 72,
+     "nome": "Magia letale",
+     "inneschi": [
+      {
+       "quando": "collega_chiave",
+       "effetti": [
+        {
+         "tipo": "cubi",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       "attr": "magia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32733.webp": {
+   "facce": [
+    {
+     "numero": 67,
+     "nome": "Elemosina",
+     "inneschi": [
+      {
+       "quando": "riposo",
+       "effetti": [
+        {
+         "tipo": "risorsa",
+         "ris": "cibo",
+         "n": 1,
+         "chi": "attivo"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "insediamento",
+          "nemico": false
+         },
+         {
+          "tipo": "insediamento",
+          "nemico": true
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 68,
+     "nome": "Ascetismo",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "pasto_con",
+         "ris": "magia",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32732.webp": {
+   "facce": [
+    {
+     "numero": 65,
+     "nome": "Viandante spirituale",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "muovi",
+         "dove": "menhir_attivo_scelto",
+         "chi": "compagnia"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1,
+         "chi": "diviso"
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1,
+         "chi": "diviso",
+         "per": {
+          "membri": true
+         }
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    },
+    {
+     "numero": 66,
+     "nome": "Affinità con i Menhir",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "costo_menhir",
+         "ris": "energia",
+         "n": -1
+        },
+        {
+         "tipo": "modificatore",
+         "cosa": "costo_menhir",
+         "ris": "scelta",
+         "n": -1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "menhir_qui",
+        "attivo": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32729.webp": {
+   "facce": [
+    {
+     "numero": 59,
+     "nome": "Chiedere aiuto",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "unisci_personaggio",
+         "da": "collegato"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 60,
+     "nome": "Movimento cauto",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "muovi",
+         "dove": "collegato_con_guardiano",
+         "chi": "attivo",
+         "senza_incontro": true
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 2
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32727.webp": {
+   "facce": [
+    {
+     "numero": 55,
+     "nome": "Astuzia",
+     "inneschi": [
+      {
+       "quando": "attivazione",
+       "effetti": [
+        {
+         "tipo": "pesca_carte",
+         "n": 1,
+         "chi": "compagnia",
+         "escludi_attivo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tutte": [
+         {
+          "una": [
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "combattimento"
+           },
+           {
+            "tipo": "incontro_tipo",
+            "tipo_incontro": "diplomazia"
+           }
+          ]
+         },
+         {
+          "tipo": "carte_giocate",
+          "max": 0
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 56,
+     "nome": "Ultima risorsa",
+     "inneschi": [
+      {
+       "quando": "verifica_affinita",
+       "effetti": [
+        {
+         "tipo": "gioca_carta",
+         "da": "mano",
+         "qualsiasi": true
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": {
+        "tutte": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         },
+         {
+          "tipo": "affinita_minima"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32726.webp": {
+   "facce": [
+    {
+     "numero": 53,
+     "nome": "Sensi acuti",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "rilancia_quadrante",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 54,
+     "nome": "Fortunato",
+     "inneschi": [
+      {
+       "quando": "tiro_dado",
+       "effetti": [
+        {
+         "tipo": "ritira_dado"
+        }
+       ],
+       "costo": [],
+       "una_volta": "esplorazione",
+       "facoltativo": true,
+       "condizione": null,
+       "contesto": "esplorazione"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32725.webp": {
+   "facce": [
+    {
+     "numero": 51,
+     "nome": "Resistenza",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "riduci_perdita",
+         "ris": "salute",
+         "soglia": 3,
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 52,
+     "nome": "Presenza rassicurante",
+     "inneschi": [
+      {
+       "quando": "attacco",
+       "effetti": [
+        {
+         "tipo": "previeni",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tutte": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "non": {
+           "tipo": "sequenza_termina",
+           "attr": "aggression"
+          }
+         },
+         {
+          "non": {
+           "tipo": "sequenza_termina",
+           "attr": "aggression2"
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32724.webp": {
+   "facce": [
+    {
+     "numero": 49,
+     "nome": "Esperto di arti marziali",
+     "inneschi": [
+      {
+       "quando": "attivazione",
+       "effetti": [
+        {
+         "tipo": "scarta_carte",
+         "n": 1,
+         "da": "mano"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": true,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       },
+       "momento": "fine_attivazione"
+      }
+     ]
+    },
+    {
+     "numero": 50,
+     "nome": "Attacco furtivo",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "raddoppia_prima_carta"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "combattimento"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32722.webp": {
+   "facce": [
+    {
+     "numero": 45,
+     "nome": "Faro di speranza",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "affinita",
+         "n": 1
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento",
+          "colore": "blu"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia",
+          "colore": "blu"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "numero": 46,
+     "nome": "Comprensione reciproca",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "affinita_come_verde",
+         "facoltativo": true
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "tipo": "incontro_tipo",
+        "tipo_incontro": "diplomazia"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32721.webp": {
+   "facce": [
+    {
+     "numero": 43,
+     "nome": "Perspicacia",
+     "inneschi": [
+      {
+       "quando": "inizio_incontro",
+       "effetti": [
+        {
+         "tipo": "rimescola_mano"
+        }
+       ],
+       "costo": [],
+       "una_volta": "incontro",
+       "facoltativo": true,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 44,
+     "nome": "Apprendista rapido",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "miglioramento_pesca",
+         "n": 4
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    }
+   ]
+  },
+  "carte/mazzo/32720.webp": {
+   "facce": [
+    {
+     "numero": 41,
+     "nome": "Trasferimento di energia",
+     "inneschi": [
+      {
+       "quando": "azione",
+       "effetti": [
+        {
+         "tipo": "scambia_quadranti_menhir"
+        }
+       ],
+       "costo": [
+        {
+         "tipo": "paga",
+         "ris": "energia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "magia",
+         "n": 1
+        },
+        {
+         "tipo": "paga",
+         "ris": "salute",
+         "n": 1
+        }
+       ],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": null
+      }
+     ]
+    },
+    {
+     "numero": 42,
+     "nome": "Audacia",
+     "inneschi": [
+      {
+       "quando": "sempre",
+       "effetti": [
+        {
+         "tipo": "modificatore",
+         "cosa": "chiavi_senza_costo_1x"
+        }
+       ],
+       "costo": [],
+       "una_volta": null,
+       "facoltativo": false,
+       "condizione": {
+        "una": [
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "combattimento"
+         },
+         {
+          "tipo": "incontro_tipo",
+          "tipo_incontro": "diplomazia"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33407.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "ferite_subite",
+        "min": 1
+       },
+       "allora": [
+        {
+         "tipo": "scarta_ultima"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33410.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "ferite_extra",
+         "n": 2
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33412.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "ferite_extra",
+         "n": 2
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33311.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "se",
+       "condizione": {
+        "tipo": "ferite_subite",
+        "min": 2
+       },
+       "allora": [
+        {
+         "tipo": "scarta_ultima"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "innesco": "ritardata",
+     "tempo": 1,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 3
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33312.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "salute_mancante": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_avanzado_de_combate/33313.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "salute_mancante": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32904.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ferite_in_cubi"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32905.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32909.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "ignora_attacco"
+        },
+        {
+         "tipo": "cubi",
+         "n": 2
+        },
+        {
+         "tipo": "scarta_ultima"
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "attacco_opportunita"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32911.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32912.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32913.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_de_combate_basico/32915.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "oggetto",
+        "parola": "Arma"
+       },
+       {
+        "tipo": "oggetto",
+        "parola": "Scudo"
+       }
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "disattiva_oggetto",
+       "parole": [
+        "Arma",
+        "Scudo"
+       ],
+       "fino": "fine_incontro"
+      },
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32800.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32801.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32804.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32805.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32808.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32811.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "raddoppia_chiavi",
+       "carta": "giocata"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "facoltativo": true,
+     "quando": "gioca_carta"
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32812.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "facoltativo": true
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": 1,
+       "chi": "scelto"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "magia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32813.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 3,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_combate/32814.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 3,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32924.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32922.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_fine_turno",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32921.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "attacco_riga",
+       "riga": 0
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_combate/33814.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "oggetto",
+        "parola": "Arma"
+       },
+       {
+        "tipo": "oggetto",
+        "parola": "Scudo"
+       }
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "disattiva_oggetto",
+       "parole": [
+        "Arma",
+        "Scudo"
+       ],
+       "fino": "fine_incontro"
+      },
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33700.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 1,
+       "su": "Semina"
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "previeni",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33701.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 1,
+       "su": "Semina"
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Attacco della fascia più bassa",
+         "effetti": [
+          {
+           "tipo": "attacco_riga",
+           "sposta": -1
+          }
+         ]
+        },
+        {
+         "testo": "Attacco della fascia più alta",
+         "effetti": [
+          {
+           "tipo": "attacco_riga",
+           "sposta": 1
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33702.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Metti 3 Cariche su questa carta",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": 3
+          }
+         ]
+        },
+        {
+         "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza e scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": 1,
+           "su": "scelta"
+          },
+          {
+           "tipo": "scarta_ultima"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33703.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Metti 3 Cariche su questa carta",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": 3
+          }
+         ]
+        },
+        {
+         "testo": "Metti 1 Carica su una qualsiasi carta della Sequenza e scarta questa carta",
+         "effetti": [
+          {
+           "tipo": "cariche",
+           "n": 1,
+           "su": "scelta"
+          },
+          {
+           "tipo": "scarta_ultima"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33704.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": -99,
+       "su": "Semina",
+       "tutte": true
+      },
+      {
+       "tipo": "cubi",
+       "n": 2,
+       "per": {
+        "cariche": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33705.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": -99,
+       "su": "Semina",
+       "tutte": true
+      },
+      {
+       "tipo": "cubi",
+       "n": 2,
+       "per": {
+        "cariche": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33706.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2,
+       "su": "Semina"
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ferite_extra",
+       "n": 2
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33708.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "quantita",
+       "ris": "magia",
+       "max": "tutto",
+       "chi": "attivo",
+       "testo": "Magia da pagare (ottieni il doppio in segnalini)"
+      },
+      {
+       "tipo": "cubi",
+       "n": 2,
+       "per": {
+        "quantita": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33712.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_avanzado_de_combate/33713.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_fine_turno",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/blanco_mazo_avanzado_de_combate/33822.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/blanco_mazo_avanzado_de_combate/33821.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "attacco_riga",
+       "riga": 0
+      }
+     ]
+    }
+   ]
+  },
+  "carte/blanco_mazo_avanzado_de_combate/33818.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi_invertiti"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/gusano_mazo_basico_de_combate/34806.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/gusano_mazo_basico_de_combate/34809.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "cubi",
+       "n": -1
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/gusano_mazo_basico_de_combate/34811.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ferite_in_cubi"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/gusano_mazo_basico_de_combate/34814.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "ferite_extra",
+         "n": 2
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_avanzado_de_combate/32918.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi_invertiti"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33401.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33402.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "ferite_subite": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/beor_mazo_basico_de_combate/33405.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "una": [
+       {
+        "tipo": "oggetto",
+        "parola": "Arma"
+       },
+       {
+        "tipo": "oggetto",
+        "parola": "Scudo"
+       }
+      ]
+     },
+     "effetti": [
+      {
+       "tipo": "disattiva_oggetto",
+       "parole": [
+        "Arma",
+        "Scudo"
+       ],
+       "fino": "fine_incontro"
+      },
+      {
+       "tipo": "cubi",
+       "n": 2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/gusano_mazo_avanzado_de_combate/34411.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -2
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/gusano_mazo_avanzado_de_combate/34413.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "salute",
+       "n": -1,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "cariche",
+       "n": 3
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "cariche_come_risorsa",
+       "ris": "magia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/gusano_mazo_avanzado_de_combate/34414.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "bonus_equivalenti",
+       "bonus": [
+        "extra",
+        "draw"
+       ],
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/rojo_mazo_avanzado_de_combate/34823.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "ignora_panico",
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/rojo_mazo_avanzado_de_combate/34820.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_fine_turno",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/rojo_mazo_avanzado_de_combate/34819.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "ferite_subite": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34304.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "paga",
+       "ris": "energia",
+       "n": 2,
+       "chi": "attivo"
+      }
+     ],
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34306.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "meno_cubi",
+       "n": 99
+      }
+     ]
+    },
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -2,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34307.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quantita",
+       "ris": "cariche",
+       "su": "sequenza",
+       "max": "tutto",
+       "chi": "attivo",
+       "testo": "Cariche da rimuovere dalle carte della Sequenza"
+      },
+      {
+       "tipo": "ripeti",
+       "per": {
+        "quantita": true
+       },
+       "effetti": [
+        {
+         "tipo": "scelta",
+         "opzioni": [
+          {
+           "testo": "Ignora la perdita di 1 segnalino",
+           "effetti": [
+            {
+             "tipo": "meno_cubi",
+             "n": 1
+            }
+           ]
+          },
+          {
+           "testo": "Ignora 1 Ferita",
+           "effetti": [
+            {
+             "tipo": "previeni",
+             "n": 1
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34308.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 1,
+       "chi": "compagnia"
+      },
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": 4
+      }
+     ]
+    },
+    {
+     "innesco": "tempo_rimosso",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34309.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34310.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "ferite_subite": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/niamh_mazo_avanzado_de_combate/34311.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "terrore",
+       "n": 2,
+       "chi": "attivo"
+      },
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "somma": {
+         "termini": [
+          {
+           "attr": "aggression"
+          },
+          {
+           "attr": "practicality"
+          }
+         ],
+         "chi": "attivo",
+         "per": 0.5
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/azul_mazo_avanzado_de_combate/33418.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi_invertiti"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_combate/33802.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "energia",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_fine_turno",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_combate/33809.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cubi",
+       "n": 1,
+       "per": {
+        "ferite_subite": true
+       }
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_combate/33810.webp": {
+   "capacita": [
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "senza_opportunita"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/arev_mazo_basico_de_combate/33811.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "quadrante_lancio",
+       "graal": [
+        {
+         "tipo": "cubi",
+         "n": 2
+        }
+       ],
+       "teschio": [
+        {
+         "tipo": "ferite_extra",
+         "n": 2
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33201.webp": {
+   "capacita": [
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "pesca_carte",
+       "n": 1
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33202.webp": {
+   "capacita": [
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "ignora_attacco"
+      },
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33203.webp": {
+   "capacita": [
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33204.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": -99
+      },
+      {
+       "tipo": "affinita",
+       "n": 1,
+       "per": {
+        "cariche": true
+       }
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33208.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -1
+      },
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33211.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": {
+      "non": {
+       "tipo": "affinita",
+       "colore": "verde"
+      }
+     },
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    },
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "risorsa",
+       "ris": "rep",
+       "n": -1,
+       "chi": "attivo"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33213.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/verde_mazo_de_diplomacia_basico/33214.webp": {
+   "capacita": [
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": -3
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "modificatore",
+       "cosa": "pesca_fine_turno",
+       "n": 1,
+       "chi": "compagnia"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33104.webp": {
+   "capacita": [
+    {
+     "innesco": "scartata",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "affinita",
+       "n": 1
+      }
+     ]
+    },
+    {
+     "innesco": "attacco",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scarta_ultima"
+      }
+     ]
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33106.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2
+      }
+     ]
+    },
+    {
+     "innesco": "passiva",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "scelta",
+       "opzioni": [
+        {
+         "testo": "Previeni 1 {i:discard}",
+         "effetti": [
+          {
+           "tipo": "previeni_scarto",
+           "n": 1
+          }
+         ]
+        },
+        {
+         "testo": "Previeni {i:arrowdown}",
+         "effetti": [
+          {
+           "tipo": "ignora_frecce_giu",
+           "n": 1
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "costo": [
+      {
+       "tipo": "cariche",
+       "n": -1
+      }
+     ],
+     "quando": "in_qualsiasi_momento",
+     "facoltativo": true
+    }
+   ]
+  },
+  "carte/ailei_mazo_avanzado_de_diplomacia/33107.webp": {
+   "capacita": [
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "cariche",
+       "n": 2,
+       "su": "scelta"
+      }
+     ]
+    },
+    {
+     "innesco": "piazza",
+     "tempo": 0,
+     "condizione": null,
+     "effetti": [
+      {
+       "tipo": "gettone_tempo_carta",
+       "n": -2,
+       "su": "scelta"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
