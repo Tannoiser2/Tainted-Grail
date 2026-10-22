@@ -320,7 +320,72 @@ func _aggiorna_camera() -> void:
 	_cam.position = _perno + dir * _dist
 	_cam.look_at(_perno, Vector3.UP)
 
+## Tocchi attivi (iPad, telefoni): due dita = zoom (pizzico), spostamento e rotazione.
+var _tocchi := {}
+var _due_dita := false
+
+func _zoom(f: float, verso = null) -> void:
+	var nuova := clampf(_dist * f, 4.0, 60.0)
+	if verso != null and f < 1.0:
+		_perno = _perno.lerp(verso, 1.0 - nuova / _dist)
+	_dist = nuova
+	_aggiorna_camera()
+
+func _gesti(ev: InputEvent) -> bool:
+	if ev is InputEventScreenTouch:
+		var st := ev as InputEventScreenTouch
+		if st.pressed:
+			_tocchi[st.index] = st.position
+		else:
+			_tocchi.erase(st.index)
+		if _tocchi.size() >= 2:
+			_due_dita = true
+			_trascina = false
+		elif _tocchi.is_empty():
+			_due_dita = false
+		return _tocchi.size() >= 2
+	if ev is InputEventScreenDrag:
+		var sd := ev as InputEventScreenDrag
+		if not _tocchi.has(sd.index):
+			return false
+		if _tocchi.size() >= 2:
+			var chiavi := _tocchi.keys()
+			var altro: Vector2 = _tocchi[chiavi[1] if chiavi[0] == sd.index else chiavi[0]]
+			var prima: Vector2 = _tocchi[sd.index]
+			var d0 := prima.distance_to(altro)
+			var d1 := sd.position.distance_to(altro)
+			if d0 > 4 and d1 > 4:
+				_zoom(d0 / d1, _punto_tavolo((sd.position + altro) / 2))
+			# rotazione con l'angolo fra le due dita
+			var a0 := (prima - altro).angle()
+			var a1 := (sd.position - altro).angle()
+			_yaw -= wrapf(a1 - a0, -PI, PI)
+			# spostamento con il punto medio
+			var dm := (sd.position - prima) / 2.0 * _dist * 0.0016
+			_perno += Vector3(-dm.x, 0, -dm.y).rotated(Vector3.UP, _yaw)
+			_aggiorna_camera()
+			_tocchi[sd.index] = sd.position
+			return true
+		_tocchi[sd.index] = sd.position
+		return _due_dita
+	if ev is InputEventMagnifyGesture:
+		var mg := ev as InputEventMagnifyGesture
+		_zoom(1.0 / maxf(mg.factor, 0.01), _punto_tavolo(mg.position))
+		return true
+	if ev is InputEventPanGesture:
+		var pg := ev as InputEventPanGesture
+		var dx := pg.delta * _dist * 0.02
+		_perno += Vector3(dx.x, 0, dx.y).rotated(Vector3.UP, _yaw)
+		_aggiorna_camera()
+		return true
+	return false
+
 func _unhandled_input(ev: InputEvent) -> void:
+	if _gesti(ev):
+		get_viewport().set_input_as_handled()
+		return
+	if _due_dita and (ev is InputEventMouseButton or ev is InputEventMouseMotion):
+		return  # il mouse emulato dai tocchi non deve trascinare durante il pizzico
 	if ev is InputEventMouseButton:
 		var mb := ev as InputEventMouseButton
 		if mb.button_index == MOUSE_BUTTON_WHEEL_UP or mb.button_index == MOUSE_BUTTON_WHEEL_DOWN:

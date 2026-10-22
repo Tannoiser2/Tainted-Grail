@@ -107,7 +107,7 @@ func _costruisci_hud() -> void:
 	sc.offset_top = 70
 	sc.offset_bottom = -110
 	sc.offset_left = 12
-	sc.offset_right = 360
+	sc.offset_right = 440
 	sc.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	_ui.add_child(sc)
 	_schede = VBoxContainer.new()
@@ -158,8 +158,19 @@ func _aggiorna_azioni() -> void:
 			tavolo.evidenzia([])
 			_aggiorna_azioni()))
 		return
-	if str(partita.d.get("fase", "")) != "giorno":
-		_info.text = ""
+	var fase := str(partita.d.get("fase", ""))
+	if fase != "giorno":
+		# la barra non resta mai vuota: si può sempre riprendere il passo in corso
+		if fase == "fine":
+			_info.text = "Fine della Giornata %d." % int(partita.d.get("giorno", 1))
+			_azioni.add_child(Tema.pulsante_primario("FINE DELLA GIORNATA", func(): _fine_giornata(), 17))
+		else:
+			_info.text = "Inizio della Giornata %d." % int(partita.d.get("giorno", 1))
+			_azioni.add_child(Tema.pulsante_primario("INIZIA LA GIORNATA", func(): _inizio_giornata(), 17))
+		return
+	if giornata.attivi().is_empty():
+		_info.text = "Nessun Personaggio può più agire oggi."
+		_azioni.add_child(Tema.pulsante_primario("FINE DELLA GIORNATA", func(): _fine_giornata(), 17))
 		return
 	_info.text = "Tocca a %s — Luogo %d · Energia %d. Compagnia: %s" % [x["nome"], n, int(x["energia"]),
 		", ".join(partita.compagnia().map(func(y): return y["nome"]))]
@@ -767,22 +778,35 @@ func _mostra_evento(prefisso := "") -> void:
 func _fine_giornata() -> void:
 	partita.d["fase"] = "fine"
 	Campagna.modificata()
-	await _scatena("fine_giornata")
-	for x in partita.personaggi():
-		await _scatena("riposo", x)
-	var righe := []
-	var sogni := []
-	for x in partita.personaggi():
-		righe.append(giornata.riposa(x, int(x.get("cibo", 0)) > 0))
-		var s := giornata.sogno(x)
-		if not s.is_empty() and not sogni.any(func(z): return z["testo"] == s["testo"]):
-			sogni.append(s)
+	var giorno := int(partita.d.get("giorno", 1))
+	var gia: Dictionary = partita.d.get("riposo", {})
+	if int(gia.get("giorno", -1)) != giorno:
+		# Riposo e Sogni si fanno una volta sola: se la finestra si riapre, si mostra il riepilogo salvato
+		await _scatena("fine_giornata")
+		for x in partita.personaggi():
+			await _scatena("riposo", x)
+		var righe0 := []
+		var sogni0 := []
+		for x in partita.personaggi():
+			righe0.append(giornata.riposa(x, int(x.get("cibo", 0)) > 0))
+			var s0 := giornata.sogno(x)
+			if not s0.is_empty() and not sogni0.any(func(z): return z["testo"] == s0["testo"]):
+				sogni0.append(s0)
+		partita.d["riposo"] = {"giorno": giorno, "righe": righe0, "sogni": sogni0, "sogni_fatti": false}
+		Campagna.modificata()
+	var righe: Array = partita.d["riposo"]["righe"]
+	var sogni: Array = partita.d["riposo"]["sogni"]
 	var t := "[b]Riposo:[/b]\n" + "\n".join(righe)
 	for s in sogni:
 		t += "\n\n[b]%s:[/b]\n%s" % [s["tipo"], s["testo"]]
 	_aggiorna()
 	_messaggio("Fine della Giornata %d" % int(partita.d["giorno"]), t + "\n\n[color=#b9a98a]Puoi spendere Esp dalla scheda dei Personaggi (clic sul nome) prima di iniziare la nuova giornata.[/color]", Callable(), {
 		"NUOVA GIORNATA": func():
+			if partita.d["riposo"].get("sogni_fatti", false):
+				giornata.nuova_giornata()
+				_inizio_giornata()
+				return
+			partita.d["riposo"]["sogni_fatti"] = true
 			for s in sogni:
 				var asg := Dati.auto_diario("s:", str(s["testo"]))
 				if asg.get("effetti") is Array:
@@ -805,9 +829,17 @@ func _riassunto(fatti: Array) -> void:
 		r.append(("✔ " if f.get("fatto", false) else "☐ ") + str(f["testo"]))
 	_messaggio("Risultato", "\n".join(r))
 
+var _coda: Array = []           # messaggi in attesa mentre è aperta una finestra con pulsanti di scelta
+var _modale_importante := false
+
 func _messaggio(titolo: String, testo: String, alla_chiusura: Callable = Callable(), pulsanti: Dictionary = {}, img := "") -> void:
-	if is_instance_valid(_modale):
+	if is_instance_valid(_modale) and not _modale.is_queued_for_deletion():
+		if _modale_importante:
+			# la finestra aperta chiede una decisione (es. NUOVA GIORNATA): non la si sostituisce, si accoda
+			_coda.append([titolo, testo, alla_chiusura, pulsanti, img])
+			return
 		_modale.queue_free()
+	_modale_importante = not pulsanti.is_empty()
 	var vel := ColorRect.new()
 	vel.color = Color(0, 0, 0, 0.55)
 	vel.set_anchors_preset(Control.PRESET_FULL_RECT)
@@ -848,6 +880,10 @@ func _messaggio(titolo: String, testo: String, alla_chiusura: Callable = Callabl
 	v.add_child(b)
 	var chiudi := func():
 		vel.queue_free()
+		_modale_importante = false
+		if not _coda.is_empty():
+			var m: Array = _coda.pop_front()
+			_messaggio.call_deferred(m[0], m[1], m[2], m[3], m[4])
 	for k in pulsanti:
 		var cb: Callable = pulsanti[k]
 		b.add_child(Tema.pulsante_primario(k, func():
