@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Estrae le miniature 3D dagli AssetBundle Unity del modulo TTS (UnityPy), le alleggerisce
-(fast-simplification) e le salva come .glb con la texture dipinta, pronte per Godot.
+(MeshLab, rispettando le cuciture delle UV) e le salva come .glb con la texture dipinta, pronte per Godot.
 
 Uso: python3 tools/estrai_miniature.py <componenti.json> <cartella_bundle> <cartella_uscita> [triangoli]
 """
 import json, os, sys, re, io
 import numpy as np
-import UnityPy, trimesh, fast_simplification
+import UnityPy, trimesh
 from PIL import Image
 
 cat = json.load(open(sys.argv[1]))
@@ -42,7 +42,7 @@ for bundle, nome in sorted(voci.items(), key=lambda kv: kv[1]):
             except Exception as e:
                 print("mesh illeggibile", nome, e); continue
             m = trimesh.load(io.StringIO(txt), file_type="obj", process=False, force="mesh")
-            meshes.append(m)
+            meshes.append((m, txt))
         elif ob.type.name == "Texture2D":
             d = ob.read()
             im = d.image
@@ -50,18 +50,39 @@ for bundle, nome in sorted(voci.items(), key=lambda kv: kv[1]):
                 tex = im
     if not meshes:
         print("nessuna mesh", nome); continue
-    m = max(meshes, key=lambda x: len(x.faces))
-    uv = m.visual.uv if hasattr(m.visual, "uv") and m.visual.uv is not None else None
-    v, f = np.asarray(m.vertices, dtype=np.float32), np.asarray(m.faces)
-    n0 = len(f)
-    if n0 > TRI:
-        # semplifica tenendo le UV: si semplifica e poi si riprendono le UV del vertice originale più vicino
-        v2, f2 = fast_simplification.simplify(v, f, target_reduction=1 - TRI / n0)
-        if uv is not None:
-            from scipy.spatial import cKDTree
-            idx = cKDTree(v).query(v2)[1]
-            uv = uv[idx]
-        v, f = v2, f2
+    m, obj_txt = max(meshes, key=lambda x: len(x[0].faces))
+    n0 = len(m.faces)
+    uv = None
+    if n0 > TRI and m.visual is not None and getattr(m.visual, "uv", None) is not None:
+        # semplificazione che rispetta le cuciture delle UV (MeshLab, collasso quadrico con texture):
+        # così la texture fotografica della miniatura resta al suo posto
+        import pymeshlab, tempfile
+        with tempfile.TemporaryDirectory() as td:
+            fo = os.path.join(td, "m.obj")
+            open(fo, "w").write(obj_txt)
+            ms = pymeshlab.MeshSet()
+            ms.load_new_mesh(fo)
+            ms.meshing_merge_close_vertices()
+            ms.meshing_decimation_quadric_edge_collapse_with_texture(targetfacenum=TRI, qualitythr=0.6, preserveboundary=True, optimalplacement=True, planarquadric=True)
+            mm = ms.current_mesh()
+            vp, ff, wt = mm.vertex_matrix(), mm.face_matrix(), mm.wedge_tex_coord_matrix()
+        # un vertice per ogni coppia (posizione, UV)
+        chiavi, nuovi_v, nuove_uv, facce = {}, [], [], []
+        for fi, tri in enumerate(ff):
+            riga = []
+            for k in range(3):
+                u = wt[fi * 3 + k]
+                ch = (int(tri[k]), round(float(u[0]), 5), round(float(u[1]), 5))
+                if ch not in chiavi:
+                    chiavi[ch] = len(nuovi_v)
+                    nuovi_v.append(vp[tri[k]])
+                    nuove_uv.append(u)
+                riga.append(chiavi[ch])
+            facce.append(riga)
+        v, f, uv = np.asarray(nuovi_v, dtype=np.float32), np.asarray(facce), np.asarray(nuove_uv)
+    else:
+        uv = m.visual.uv if hasattr(m.visual, "uv") and m.visual.uv is not None else None
+        v, f = np.asarray(m.vertices, dtype=np.float32), np.asarray(m.faces)
     # nei bundle TTS le miniature hanno assi diversi (spesso "sdraiate"): si cerca la basetta,
     # cioè l'estremità piatta e larga lungo uno dei 6 assi, e la si porta in basso (asse -Y).
     v = v.copy()
@@ -97,11 +118,11 @@ for bundle, nome in sorted(voci.items(), key=lambda kv: kv[1]):
     mat = None
     if tex is not None:
         tex = tex.convert("RGB")
-        tex.thumbnail((1024, 1024))
+        tex.thumbnail((1536, 1536))
         b = io.BytesIO()
         tex.save(b, "JPEG", quality=82)  # nel .glb la texture resta JPEG: file 4-5 volte più piccoli
         tex = Image.open(io.BytesIO(b.getvalue()))
-        mat = trimesh.visual.material.PBRMaterial(baseColorTexture=tex, metallicFactor=0.0, roughnessFactor=0.85)
+        mat = trimesh.visual.material.PBRMaterial(baseColorTexture=tex, metallicFactor=0.0, roughnessFactor=0.7)
     vis = trimesh.visual.TextureVisuals(uv=uv, material=mat) if uv is not None else None
     out = trimesh.Trimesh(vertices=v, faces=f, visual=vis, process=False)
     fn = slug(nome) + ".glb"

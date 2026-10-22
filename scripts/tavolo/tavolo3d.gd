@@ -10,7 +10,7 @@ signal luogo_sopra(numero: int)
 ## dimensioni di una carta Luogo sul tavolo (rapporto 0.66 come le carte vere)
 const CARTA := Vector2(2.0, 3.03)
 const PASSO := Vector2(2.06, 3.09)
-const ALTEZZA_EROE := 0.95
+const ALTEZZA_EROE := 1.1
 
 var partita: Partita
 var _cam: Camera3D

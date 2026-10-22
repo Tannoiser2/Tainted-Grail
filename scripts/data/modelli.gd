@@ -105,6 +105,11 @@ func _semplifica(n: Node) -> void:
 				mat = mat.duplicate()
 				mat.transparency = BaseMaterial3D.TRANSPARENCY_DISABLED
 				mat.cull_mode = BaseMaterial3D.CULL_DISABLED
+				# le texture sono foto di miniature in plastica grigia: si schiariscono un poco
+				# perché sul tavolo, con la luce calda, non diventino brune
+				mat.albedo_color = Color(1.45, 1.45, 1.5)
+				mat.roughness = 0.65
+				mat.metallic_specular = 0.35
 			nuova.surface_set_material(i, mat)
 		mi.mesh = nuova
 	for c in n.get_children():
