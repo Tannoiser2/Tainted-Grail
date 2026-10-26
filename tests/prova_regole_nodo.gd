@@ -73,6 +73,40 @@ func _run() -> void:
 	var g := Giornata.new(p)
 	verifica(g.pesca_avanzate(ailei, "combattimento").size() == 4, "Apprendista rapido: 4 carte")
 	ailei["abilita"] = []
+	# Tuathan
+	p.entra_tuathan()
+	verifica(p.in_tuathan() and p.tuathan_conta() == 1 and p.d["mappa"].size() == 1 and p.d["menhir"].is_empty(), "entrati a Tuathan: resta solo la carta 199")
+	p.d["tuathan"]["carte"] = ["carte/mazzo/tuathan_31306.webp"]
+	ailei["terrore"] = 1
+	var sa := int(ailei["salute"])
+	p.modifica(ailei, "terrore", 2)
+	verifica(int(ailei["terrore"]) == 1 and int(ailei["salute"]) == sa - 2, "Tuathan: Terrore ottenuto → Salute persa")
+	p.modifica(ailei, "salute", -1)
+	verifica(int(ailei["terrore"]) == 2 and int(ailei["salute"]) == sa - 2, "Tuathan: Salute persa → Terrore ottenuto")
+	p.d["tuathan"]["carte"] = ["carte/mazzo/tuathan_31304.webp"]
+	beor["salute"] = 5
+	p.modifica(beor, "salute", 2)
+	verifica(int(beor["salute"]) == 5, "Tuathan: Beor non ripristina Salute")
+	ailei["magia"] = 3
+	beor["magia"] = 0
+	verifica(p.paganti("magia").all(func(x): return str(x["id"]) != "maggot") and p.puo_pagare("magia", 3), "Tuathan: chi può pagare con la Magia")
+	p.d["tuathan"]["carte"] = ["carte/mazzo/tuathan_31308.webp"]
+	ailei["cibo"] = 3
+	ailei["ricchezza"] = 2
+	g.riposa(ailei, true)
+	verifica(int(ailei["cibo"]) == 3 and int(ailei["ricchezza"]) == 1, "Tuathan: si mangia Ricchezza")
+	var ev_cas: String = Carte.gruppo("eventi_casuali")[0]
+	p.d["mazzi"]["eventi"] = [ev_cas]
+	verifica(g.pesca_evento() == "", "Tuathan: Evento Casuale scartato senza leggerlo")
+	var r_in := g.inizio()
+	verifica(not r_in["messaggi"].any(func(m): return str(m).find("Nessun Menhir") >= 0), "Tuathan: nessuna penalità per l'assenza di Menhir")
+	var it_t := Interprete.new(p)
+	verifica(it_t.valuta({"tipo": "conta_luoghi", "numero": 199, "min": 1, "max": 1}) == true, "conta delle carte Tuathan")
+	p.d["gettoni"]["cerca"] = 2
+	verifica(p.avanza_tuathan() and p.tuathan_conta() == 2, "Avanzare attraverso Tuathan")
+	p.d.erase("tuathan")
+	p.d["mappa"] = {}
+	Preparazione.mappa_iniziale(p)
 	# 6. Morte in cooperativo
 	main.mostra_gioco()
 	await aspetta(3.0)

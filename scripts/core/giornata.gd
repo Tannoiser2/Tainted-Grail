@@ -19,8 +19,10 @@ func inizio() -> Dictionary:
 		if int(d["menhir"][k].get("quadrante", 0)) <= 0:
 			d["menhir"].erase(k)
 			msg.append("Il Menhir del Luogo %s si è spento." % k)
-	# 2. Luoghi fuori dal raggio dei Menhir
-	if d["menhir"].is_empty():
+	# 2. Luoghi fuori dal raggio dei Menhir (a Tuathan non ci sono Menhir e nessun Luogo svanisce)
+	if p.in_tuathan():
+		pass
+	elif d["menhir"].is_empty():
 		for x in p.personaggi():
 			p.modifica(x, "salute", -2)
 			p.modifica(x, "terrore", 2)
@@ -28,7 +30,7 @@ func inizio() -> Dictionary:
 	else:
 		for k in d["mappa"].keys():
 			var c := p.cella(int(k))
-			if not p.in_raggio(c):
+			if not p.in_raggio(c) and not Carte.luogo(int(k)).get("permanente", false):
 				var n := int(k)
 				p.rimuovi_luogo(n)
 				msg.append("Il Luogo %d svanisce nella Nebbia (fuori dal raggio dei Menhir)." % n)
@@ -81,6 +83,12 @@ func pesca_evento() -> String:
 		return ""
 	var ev: String = m.pop_front()
 	var c := Carte.dati(ev)
+	if p.in_tuathan() and Carte.gruppo("eventi_casuali").has(ev):
+		# a Tuathan gli Eventi Casuali si scartano a faccia in giù: contano solo i giorni
+		p.d["mazzi"].get_or_add("eventi_scarti", []).append(ev)
+		p.d["evento"] = ""
+		p.racconta("Tuathan: Evento Casuale scartato senza leggerlo")
+		return ""
 	for mod in p.modificatori("ignora_evento"):
 		if str(mod.get("nome", "")) == "" or Carte.nome(ev).to_lower() == str(mod.get("nome", "")).to_lower():
 			p.racconta("Evento %s ignorato (%s)" % [Carte.nome(ev), Carte.nome(str(mod.get("img", "")))])
@@ -122,7 +130,7 @@ func aggiungi_casuali(n: int) -> void:
 
 ## Personaggi che possono ancora agire oggi.
 func attivi() -> Array:
-	return p.personaggi().filter(func(x): return not x.get("passato", false) and int(x.get("energia", 0)) > 0 and int(x.get("salute", 0)) > 0)
+	return p.personaggi().filter(func(x): return not x.get("passato", false) and p.energia_spendibile(x) > 0 and int(x.get("salute", 0)) > 0)
 
 ## Passa al prossimo personaggio che può agire; false se la giornata è finita.
 func prossimo() -> bool:
@@ -208,6 +216,8 @@ func giornata_finita() -> bool:
 
 ## Riposo e recupero dell'Energia per un personaggio. mangia: se consumare 1 Cibo.
 func riposa(x: Dictionary, mangia: bool) -> String:
+	if p.in_tuathan():
+		return _riposa_tuathan(x)
 	var t := ""
 	# Ascetismo: si può consumare Magia invece del Cibo
 	var con_magia: bool = mangia and int(x.get("cibo", 0)) <= 0 and int(x.get("magia", 0)) > 0 and not p.modificatori("pasto_con", x).filter(func(m): return str(m.get("ris", "")) == "magia").is_empty()
@@ -238,6 +248,49 @@ func riposa(x: Dictionary, mangia: bool) -> String:
 		x["energia"] = maxi(prima, int(Personaggi.dati(str(x["id"])).get("energia", 6)))
 	else:
 		x["energia"] = Personaggi.energia_recuperata(x)
+	t += " Energia %d → %d." % [prima, int(x["energia"])]
+	p.racconta(t)
+	p.cambiato()
+	return t
+
+## Riposo a Tuathan (Luogo 302): si mangia (Cibo, o Ricchezza con la carta che lo impone), poi con 2-4
+## giocatori si tirano due dadi non modificabili, per la Salute e per il Terrore:
+## 1-2 ottieni 1 punto, 3 ottieni 2 punti, 4-5 perdi 1 punto, 6 ottieni 1 risorsa a scelta.
+func _riposa_tuathan(x: Dictionary) -> String:
+	var cibo := "cibo"
+	for m in p.modificatori("nutrimento", x):
+		cibo = str(m.get("ris", "cibo"))
+	var t := ""
+	if int(x.get(cibo, 0)) > 0:
+		p.modifica(x, cibo, -1)
+		x["ha_mangiato"] = true
+		t = "%s mangia 1 %s." % [x["nome"], Partita.NOMI_RISORSE.get(cibo, cibo)]
+	else:
+		x["ha_mangiato"] = false
+		if int(x.get("energia", 0)) == 0:
+			p.modifica(x, "salute", -1)
+			t = "%s non ha %s ed è senza Energia: −1 Salute." % [x["nome"], Partita.NOMI_RISORSE.get(cibo, cibo)]
+		else:
+			x["energia"] = 0
+			t = "%s non ha %s: Energia a 0." % [x["nome"], Partita.NOMI_RISORSE.get(cibo, cibo)]
+	if p.personaggi().size() >= 2:
+		for ris in ["salute", "terrore"]:
+			var v := randi_range(1, 6)
+			var nome: String = "Salute" if ris == "salute" else "Terrore"
+			if v <= 2:
+				p.modifica(x, ris, 1)
+				t += " Dado %s %d: +1." % [nome, v]
+			elif v == 3:
+				p.modifica(x, ris, 2)
+				t += " Dado %s %d: +2." % [nome, v]
+			elif v <= 5:
+				p.modifica(x, ris, -1)
+				t += " Dado %s %d: −1." % [nome, v]
+			else:
+				x["risorse_da_scegliere"] = int(x.get("risorse_da_scegliere", 0)) + 1
+				t += " Dado %s 6: 1 risorsa a scelta." % nome
+	var prima := int(x["energia"])
+	x["energia"] = Personaggi.energia_recuperata(x)
 	t += " Energia %d → %d." % [prima, int(x["energia"])]
 	p.racconta(t)
 	p.cambiato()

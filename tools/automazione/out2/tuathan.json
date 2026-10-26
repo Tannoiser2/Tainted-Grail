@@ -1,0 +1,218 @@
+{
+ "voci": {
+  "v:1150": {
+   "effetti": [
+    {
+     "tipo": "nota",
+     "testo": "Non potete lasciare Tuathan a meno che il Diario vi dica di farlo: nessun altro metodo di Viaggio o Movimento (compresi Oggetti come la Pergamena Intrisa d’Ombra) può portarvi via da Tuathan."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Le carte Luogo di Tuathan non sono collegate tra loro: per avanzare usate la seconda azione sul retro della carta Tuathan, che richiede Gettoni Cerca (ottenibili con la prima azione)."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Ogni carta Luogo di Tuathan modifica una regola base del gioco, da quando la girate sul lato regole fino a quando il vostro Personaggio la lascia."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Non ci sono Menhir a Tuathan; tutte le carte Luogo restano sul tavolo a meno che non vi venga chiesto di rimuoverle."
+    },
+    {
+     "tipo": "nota",
+     "testo": "A Tuathan gli Eventi Casuali pescati si scartano a faccia in giù senza risolverli (contano solo i giorni); gli Eventi della Storia numerati e gli Eventi speciali si risolvono normalmente."
+    },
+    {
+     "tipo": "nota",
+     "testo": "Riposare a Tuathan (2-4 giocatori): si mangia 1 Cibo (altrimenti Energia a 0, o -1 Salute se è già 0), poi si tira un dado per la Salute e uno per il Terrore: 1-2 ottenete 1 punto, 3 ottenete 2 punti, 4-5 perdete 1 punto, 6 ottenete 1 Risorsa a scelta."
+    },
+    {
+     "tipo": "scelta",
+     "opzioni": [
+      {
+       "testo": "Entrare ora a Tuathan (preparazione)",
+       "effetti": [
+        {
+         "tipo": "luogo",
+         "azione": "entra_tuathan"
+        },
+        {
+         "tipo": "fine_esplorazione"
+        }
+       ]
+      },
+      {
+       "testo": "Riposare a Tuathan",
+       "effetti": [
+        {
+         "tipo": "se",
+         "condizione": {
+          "tipo": "giocatori",
+          "da": 2,
+          "a": 4
+         },
+         "allora": [
+          {
+           "tipo": "scelta",
+           "opzioni": [
+            {
+             "testo": "Mangiare 1 Cibo",
+             "effetti": [
+              {
+               "tipo": "paga",
+               "ris": "cibo",
+               "n": 1,
+               "chi": "attivo"
+              }
+             ]
+            },
+            {
+             "testo": "Non mangiare (o non avete Cibo)",
+             "effetti": [
+              {
+               "tipo": "se",
+               "condizione": {
+                "tipo": "risorsa",
+                "ris": "energia",
+                "min": 1,
+                "chi": "attivo"
+               },
+               "allora": [
+                {
+                 "tipo": "imposta",
+                 "ris": "energia",
+                 "n": 0,
+                 "chi": "attivo"
+                }
+               ],
+               "altrimenti": [
+                {
+                 "tipo": "risorsa",
+                 "ris": "salute",
+                 "n": -1,
+                 "chi": "attivo"
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "tipo": "dado",
+           "mod": [],
+           "risultati": [
+            {
+             "da": 1,
+             "a": 2,
+             "effetti": [
+              {
+               "tipo": "risorsa",
+               "ris": "salute",
+               "n": 1,
+               "chi": "attivo"
+              }
+             ]
+            },
+            {
+             "da": 3,
+             "a": 3,
+             "effetti": [
+              {
+               "tipo": "risorsa",
+               "ris": "salute",
+               "n": 2,
+               "chi": "attivo"
+              }
+             ]
+            },
+            {
+             "da": 4,
+             "a": 5,
+             "effetti": [
+              {
+               "tipo": "risorsa",
+               "ris": "salute",
+               "n": -1,
+               "chi": "attivo"
+              }
+             ]
+            },
+            {
+             "da": 6,
+             "a": 6,
+             "effetti": [
+              {
+               "tipo": "scelta",
+               "opzioni": [
+                {
+                 "testo": "1 Cibo",
+                 "effetti": [
+                  {
+                   "tipo": "risorsa",
+                   "ris": "cibo",
+                   "n": 1,
+                   "chi": "attivo"
+                  }
+                 ]
+                },
+                {
+                 "testo": "1 Ricchezza",
+                 "effetti": [
+                  {
+                   "tipo": "risorsa",
+                   "ris": "ricchezza",
+                   "n": 1,
+                   "chi": "attivo"
+                  }
+                 ]
+                },
+                {
+                 "testo": "1 Magia",
+                 "effetti": [
+                  {
+                   "tipo": "risorsa",
+                   "ris": "magia",
+                   "n": 1,
+                   "chi": "attivo"
+                  }
+                 ]
+                }
+               ]
+              }
+             ]
+            }
+           ]
+          },
+          {
+           "tipo": "nota",
+           "testo": "Ora il tiro per il Terrore (non modificabile)."
+          }
+         ],
+         "altrimenti": [
+          {
+           "tipo": "fine_esplorazione"
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "testo": "Consultare solo le regole",
+       "effetti": [
+        {
+         "tipo": "fine_esplorazione"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "tipo": "dado",
+     "mod": [],
+     "risultati": []
+    }
+   ]
+  }
+ }
+}

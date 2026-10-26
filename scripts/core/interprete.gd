@@ -724,10 +724,34 @@ func _luogo_azione(s: Dictionary) -> void:
 			p.sostituisci_luogo(v, int(s.get("nuovo", 0)))
 			_r("Luogo %d sostituito dal %d" % [v, int(s.get("nuovo", 0))])
 		"prepara", "rivela":
+			if int(s.get("n", 0)) == 199 and s.get("casuale", false):
+				if p.avanza_tuathan():
+					_r("Nuova carta di Tuathan: %s" % Carte.nome(p.tuathan_corrente()))
+				return
+			if str(s.get("n", "")) == "collegato_scelto":
+				# un Luogo che si collega a quello attuale, nella sua direzione (Menhir Grezzo)
+				var qui := p.luogo_attivo()
+				var dirs := p.direzioni(qui)
+				var liberi := []
+				for k in dirs:
+					if dirs[k] != null and int(dirs[k]) > 0 and not p.d["mappa"].has(str(int(dirs[k]))) and p.luogo_in(p.cella(qui) + Partita.DIREZIONI[k]) == 0:
+						liberi.append([k, int(dirs[k])])
+				if liberi.is_empty():
+					_r("Nessun Luogo collegato da mettere sul tavolo", false)
+					return
+				var j := await _scegli("Quale Luogo mettete accanto?", liberi.map(func(z): return "Luogo %d (%s)" % [z[1], str(z[0])]))
+				p.piazza_luogo(int(liberi[j][1]), p.cella(qui) + Partita.DIREZIONI[liberi[j][0]])
+				_r("Luogo %d sul tavolo" % int(liberi[j][1]))
+				return
 			var n := int(s.get("n", 0))
 			if not p.d["mappa"].has(str(n)):
 				p.piazza_vicino(n, p.luogo_attivo())
 			_r("Luogo %d sul tavolo" % n)
+		"gira":
+			pass   # carta Luogo girata sul lato regole: il gioco la tratta come aperta
+		"entra_tuathan":
+			p.entra_tuathan()
+			_r("Entrate a Tuathan: %s" % Carte.nome(p.tuathan_corrente()))
 		"rimuovi":
 			var n2 := _luogo(s.get("n", "questo"))
 			p.rimuovi_luogo(n2)
@@ -737,6 +761,8 @@ func _muovi(s: Dictionary) -> void:
 	var dove = s.get("dove")
 	var dest := 0
 	var da := p.luogo_attivo()
+	if str(dove) == "ultimo_preparato":
+		dove = 199 if p.in_tuathan() else da
 	if dove is int or dove is float or str(dove).is_valid_int():
 		dest = int(dove)
 		if not p.d["mappa"].has(str(dest)):
@@ -991,7 +1017,17 @@ func scegli_abilita(x: Dictionary, a: String) -> void:
 
 ## Inneschi delle carte fuori dagli Incontri (inizio/fine giornata, riposo, viaggio, esplorazione…).
 func scatena(quando: String, chi: Dictionary = {}) -> void:
+	var lista := []
 	for i in p.inneschi(quando, chi):
+		# regole che valgono per ciascun Personaggio (carte Tuathan): una volta per ognuno
+		if i.get("per_personaggio", false) and i["chi"].is_empty() and chi.is_empty():
+			for x in p.personaggi():
+				var i2: Dictionary = i.duplicate()
+				i2["chi"] = x
+				lista.append(i2)
+		else:
+			lista.append(i)
+	for i in lista:
 		var inn: Dictionary = i["innesco"]
 		var vecchio = ctx.get("proprietario")
 		ctx["carta"] = i["img"]
@@ -1497,7 +1533,11 @@ func valuta(c):
 		"affinita":
 			if not inc:
 				return null
-			return inc.affinita > 0 if str(c.get("colore", "verde")) == "verde" else inc.affinita < 0
+			var col_a := inc.colore_affinita()
+			# Comprensione reciproca: giocando una carta, caselle grigie e rosse contano come verdi
+			if inc.giocando and not inc.mod("affinita_come_verde").is_empty():
+				col_a = "verde"
+			return col_a == str(c.get("colore", "verde"))
 		"riserva":
 			return inc != null and inc.riserva >= int(c.get("min", 0))
 		"carte_giocate":
@@ -1523,7 +1563,8 @@ func valuta(c):
 			for k in p.d["mappa"]:
 				if int(k) == int(c.get("numero", 0)) or str(k).begins_with(str(int(c.get("numero", 0))) + "_"):
 					nc += 1
-			nc = maxi(nc, int(p.d.get("tuathan", 0)) if int(c.get("numero", 0)) == 199 else 0)
+			if int(c.get("numero", 0)) == 199 and p.d.get("tuathan") is Dictionary:
+				nc = p.tuathan_conta()
 			return nc >= int(c.get("min", 0)) and nc <= int(c.get("max", 999))
 		"posizione":
 			return p.personaggi().any(func(x): return int(x["luogo"]) == int(c.get("luogo", 0)))

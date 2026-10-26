@@ -106,6 +106,10 @@ func aggiorna() -> void:
 	for k in mappa:
 		var n := int(k)
 		var info: Dictionary = mappa[k]
+		# Tuathan: la carta mostrata è quella aperta (lato regole); cambia avanzando
+		if n == 199 and _carte.has(n) and _carte[n].get_meta("tuathan", "") != partita.tuathan_corrente():
+			_carte[n].queue_free()
+			_carte.erase(n)
 		if not _carte.has(n):
 			_carte[n] = _crea_carta(n, info)
 		_carte[n].position = posizione_cella(Vector2i(int(info["x"]), int(info["y"])))
@@ -230,6 +234,9 @@ func _crea_carta(n: int, info: Dictionary) -> MeshInstance3D:
 	f.material_override = mat
 	m.add_child(f)
 	var img := Carte.immagine_luogo(n)
+	if n == 199 and partita.tuathan_corrente() != "":
+		img = "carte/mazzo/retro_" + partita.tuathan_corrente().get_file().trim_prefix("tuathan_")
+		m.set_meta("tuathan", partita.tuathan_corrente())
 	if img != "":
 		Immagini.carica(img, func(t):
 			if is_instance_valid(f) and t:

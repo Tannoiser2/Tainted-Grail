@@ -77,7 +77,12 @@ L'interprete (`scripts/core/interprete.gd`) li esegue sullo stato della partita:
   dadi e Quadranti rilanciati (Fortunato, Sensi acuti, Amuleto Portafortuna), scambio dei Quadranti dei Menhir,
   sfide a dadi fra Personaggi; negli Incontri Guardia del corpo, Chiavi di Magia come extra, Chiavi senza costo
   come 1x, Attacco furtivo, Cariche spese come Magia, bonus speciali raddoppiati o trasformati in Frecce su,
-  prima carta scoperta del mazzo, ecc. Restano come testo solo le regole dei Tuathan (capitolo 8).
+  prima carta scoperta del mazzo, caselle del misuratore di Affinità con i colori stampati (Comprensione
+  reciproca le considera verdi), ecc.
+- **Tuathan** (capitolo 8): entrando restano solo la pila delle 5 carte Tuathan (199) e i Personaggi; vale la
+  regola della carta aperta (Terrore↔Salute, nutrirsi di Ricchezza, −4 Salute se non Esausti, limiti di Ailei,
+  Arev, Beor e Verme, stasi di chi muore o impazzisce); Avanzare pesca la carta successiva o porta al Libro dei
+  Segreti; Riposo con i due dadi di Tuathan, Eventi Casuali scartati senza leggerli, nessun Menhir.
 - **Morte**: in cooperativo il Personaggio esce di scena, i suoi Oggetti restano nel Luogo (RACCOGLI OGGETTI) e si
   può prendere un Personaggio rimasto nella scatola sul Luogo rivelato col numero più basso; in solitario, o se non
   restano Personaggi, la partita fallisce e si può invocare la **Misericordia della Madre di Tutti** (status

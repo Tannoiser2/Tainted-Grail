@@ -59,6 +59,7 @@ var raddoppia_prossima := false
 var magia_gratis := 0
 var salta_al_fine_turno := false
 var _frecce_tolte := false
+var giocando := false              # si sta risolvendo la carta appena giocata
 var _speciale_doppio := false
 var _speciale_su := false
 var extra_regole: Array = []     # modificatori aggiunti dal Diario per questo Incontro          # inneschi "una volta per Incontro" già usati / carte girate
@@ -339,8 +340,10 @@ func _magia_disponibile() -> int:
 	var t := 0
 	for m in _cariche_magia():
 		t += int(m["_voce"].get("cariche", 0))
+	var pg := partita.paganti("magia")
 	for p in membri:
-		t += int(p.get("magia", 0))
+		if pg.has(p):
+			t += int(p.get("magia", 0))
 	return t
 
 ## La carta si può giocare ora? (prima carta: sempre; poi serve una Chiave "extra" collegata)
@@ -377,6 +380,7 @@ func gioca(c: String) -> void:
 	nota("%s gioca %s." % [attivo()["nome"], Carte.nome(c)])
 	var cubi := 0
 	var unite := []
+	giocando = true
 	_frecce_tolte = false
 	# carte che cambiano i bonus speciali (Lacrima, Posa intimidatoria, Singhiozzo lamentoso)
 	_speciale_doppio = false
@@ -429,6 +433,7 @@ func gioca(c: String) -> void:
 	await esegui_capacita(c, "piazza", {"cubi_dati": cubi})
 	await esegui_capacita(c, "passiva", {"cubi_dati": cubi})
 	await scatena("gioca_carta", attivo())
+	giocando = false
 	_controlla_fine_carte()
 	cambiato.emit()
 
@@ -443,11 +448,12 @@ func _paga_magia() -> void:
 		nota("Speso 1 Carica di %s come Magia." % Carte.nome(str(v.get("img", ""))))
 		return
 	var a := attivo()
-	if int(a.get("magia", 0)) > 0:
+	var pg := partita.paganti("magia")
+	if int(a.get("magia", 0)) > 0 and pg.has(a):
 		partita.modifica(a, "magia", -1)
 		return
 	for p in membri:
-		if int(p.get("magia", 0)) > 0:
+		if int(p.get("magia", 0)) > 0 and pg.has(p):
 			partita.modifica(p, "magia", -1)
 			return
 
@@ -498,6 +504,16 @@ func _scarta_ultima() -> void:
 	scarti[str(s.get("pid", attivo_id))].append(s["img"])
 	nota("Scartata l'ultima carta della Sequenza (%s)." % Carte.nome(str(s["img"])))
 	esegui_capacita(str(s["img"]), "scartata")
+
+## Colore della casella dove sta il marcatore di Affinità ("verde", "grigio", "rosso"), dalla sequenza
+## stampata sulla carta (dall'alto: es. "VVVRRGR" ha anche caselle rosse sopra la grigia di partenza).
+func colore_affinita() -> String:
+	var seq := str(carta.get("affinita", {}).get("sequenza", "")) if carta.get("affinita") is Dictionary else ""
+	var g := seq.find("G")
+	if seq == "" or g < 0:
+		return "verde" if affinita > 0 else ("rosso" if affinita < 0 else "grigio")
+	var i := clampi(g - affinita, 0, seq.length() - 1)
+	return {"V": "verde", "G": "grigio", "R": "rosso"}.get(seq[i], "grigio")
 
 func _affinita(n: int) -> void:
 	if not diplomazia:

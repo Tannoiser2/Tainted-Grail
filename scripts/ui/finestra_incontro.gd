@@ -330,8 +330,13 @@ func _testo_stato() -> String:
 		var verdi := int(a.get("verdi", 3))
 		var rossi := int(a.get("rossi", 3))
 		var barra := ""
+		var seq := str(a.get("sequenza", ""))
+		var g := seq.find("G")
 		for i in range(-rossi, verdi + 1):
 			var col := ROSSO_T if i < 0 else (VERDE_T if i > 0 else GRIGIO_T)
+			# colori stampati sul misuratore (ci sono carte con caselle rosse sopra la grigia)
+			if g >= 0 and g - i >= 0 and g - i < seq.length():
+				col = {"V": VERDE_T, "G": GRIGIO_T, "R": ROSSO_T}.get(seq[g - i], col)
 			barra += ("[color=%s][b]◆[/b][/color]" % col) if i == inc.affinita else ("[color=%s]◇[/color]" % col)
 		t += "\nAffinità [b]%+d[/b]  %s\n" % [inc.affinita, barra]
 		for i in fs.size():

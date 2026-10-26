@@ -194,7 +194,7 @@ func _aggiorna_azioni() -> void:
 		_azione(nome.to_upper(), _azione_luogo, puo and not giornata.azione_luogo_usata(n) and partita.energia_spendibile(x) >= int(az.get("costo", 0)),
 			Dati.testo_leggibile("%d Energia: %s" % [int(az.get("costo", 0)), str(az.get("it", ""))]))
 	var dd := Personaggi.dati(str(x["id"]))
-	_azione(str(dd["azione"]["nome"]).to_upper(), _azione_personaggio, puo and partita.energia_spendibile(x) >= int(dd["azione"]["costo"]),
+	_azione(str(dd["azione"]["nome"]).to_upper(), _azione_personaggio, puo and partita.energia_spendibile(x) >= int(dd["azione"]["costo"]) and partita.modificatori("no_azione_personaggio", x).is_empty(),
 		Dati.testo_leggibile("%d Energia: %s" % [int(dd["azione"]["costo"]), dd["azione"]["testo"]]))
 	if _ha_menhir(n):
 		_azione("MENHIR", _menhir, true, "Ispeziona il Menhir del Luogo e attivalo")
@@ -785,6 +785,17 @@ func _controlla_stati() -> void:
 							partita.scarta_oggetto(x, og[j])
 			prima[k] = ora
 		_stati_noti[id] = prima
+	# regole "finché" con effetti (Tuathan: chi ha o ottiene Stai impazzendo/morendo…)
+	for i in partita.inneschi("sempre"):
+		var inn: Dictionary = i["innesco"]
+		var eff: Array = inn.get("effetti", []).filter(func(s): return s is Dictionary and str(s.get("tipo", "")) != "modificatore")
+		if eff.is_empty() or not i.get("per_personaggio", false):
+			continue
+		for x in partita.personaggi():
+			var it := Interprete.new(partita, null, domande, {"proprietario": x, "carta": i["img"]})
+			if inn.get("condizione") is Dictionary and it.valuta(inn["condizione"]) == true:
+				await it.esegui(eff)
+				await _domanda_avviso(Carte.nome(str(i["img"])), "\n".join(it.rapporto.map(func(z): return ("✔ " if z.get("fatto", true) else "☐ ") + str(z["testo"]))))
 	for x in partita.personaggi().duplicate():
 		if x.get("morto", false):
 			await _morte(x)
@@ -992,6 +1003,13 @@ func _fine_giornata() -> void:
 		var sogni0 := []
 		for x in partita.personaggi():
 			righe0.append(giornata.riposa(x, int(x.get("cibo", 0)) > 0))
+			# Riposo a Tuathan: con un 6 si sceglie una risorsa
+			while int(x.get("risorse_da_scegliere", 0)) > 0:
+				x["risorse_da_scegliere"] = int(x["risorse_da_scegliere"]) - 1
+				var rr: String = ["cibo", "ricchezza", "magia"][await domande.scegli("%s ottiene 1 risorsa a scelta (Riposo a Tuathan)" % x["nome"], ["1 Cibo", "1 Ricchezza", "1 Magia"])]
+				partita.modifica(x, rr, 1)
+				righe0[-1] += " Sceglie 1 %s." % Partita.NOMI_RISORSE.get(rr, rr)
+			x.erase("risorse_da_scegliere")
 			var s0 := giornata.sogno(x)
 			if not s0.is_empty() and not sogni0.any(func(z): return z["testo"] == s0["testo"]):
 				sogni0.append(s0)
@@ -1130,6 +1148,10 @@ func _scegli_carta(titolo: String, imgs: Array, cb: Callable) -> void:
 	v.resized.connect(func(): v.position = (vel.size - v.size) / 2)
 
 func _mostra_luogo(n: int) -> void:
+	if n == 199 and partita.tuathan_corrente() != "":
+		var ct := Carte.dati(partita.tuathan_corrente())
+		_messaggio("Luogo 199 · Tuathan (%d/5)" % partita.tuathan_conta(), str(ct.get("retro_testo", {}).get("it", "")), Callable(), {}, "carte/mazzo/retro_" + partita.tuathan_corrente().get_file().trim_prefix("tuathan_"))
+		return
 	var c := Carte.luogo(n)
 	var l := Dati.luogo(partita.camp, Dati.id_numero(partita.camp, n))
 	var t := ""

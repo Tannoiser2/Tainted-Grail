@@ -123,6 +123,26 @@ func modifica(p: Dictionary, ris: String, delta: int) -> int:
 		_in_modifica = false
 		if delta == 0:
 			return 0
+	if not _in_modifica and personaggi().has(p) and in_tuathan():
+		_in_modifica = true
+		# Tuathan: Terrore ottenuto ↔ Salute persa; nessun ripristino di Salute
+		for m in modificatori("converti", p):
+			if str(m.get("da", "")) == "terrore_ottenuto" and ris == "terrore" and delta > 0:
+				ris = "salute"
+				delta = -delta
+				racconta("Tuathan: %s perde Salute invece di ottenere Terrore" % p["nome"])
+				break
+			if str(m.get("da", "")) == "salute_persa" and ris == "salute" and delta < 0:
+				ris = "terrore"
+				delta = -delta
+				racconta("Tuathan: %s ottiene Terrore invece di perdere Salute" % p["nome"])
+				break
+		if ris == "salute" and delta > 0 and not modificatori("no_ripristino", p).filter(func(m): return str(m.get("ris", "salute")) == "salute").is_empty():
+			racconta("Tuathan: %s non può ripristinare Salute" % p["nome"])
+			delta = 0
+		_in_modifica = false
+		if delta == 0:
+			return 0
 	var prima := int(p.get(ris, 0))
 	var dopo := clampi(prima + delta, 0, limite(p, ris))
 	p[ris] = dopo
@@ -139,6 +159,10 @@ func modifica(p: Dictionary, ris: String, delta: int) -> int:
 		cambiato()
 	return dopo - prima
 
+## Chi può pagare con una risorsa (Tuathan: Verme non può pagare con la Magia).
+func paganti(ris: String) -> Array:
+	return compagnia().filter(func(x): return modificatori("no_paga", x).filter(func(m): return str(m.get("ris", "")) == ris).is_empty())
+
 func puo_pagare(ris: String, n: int, per_membro := false) -> bool:
 	if per_membro:
 		for p in compagnia():
@@ -147,7 +171,7 @@ func puo_pagare(ris: String, n: int, per_membro := false) -> bool:
 		return true
 	# un costo della Compagnia si può dividere fra i membri
 	var tot := 0
-	for p in compagnia():
+	for p in paganti(ris):
 		tot += int(p.get(ris, 0))
 	return tot >= n
 
@@ -160,8 +184,11 @@ func paga(ris: String, n: int, per_membro := false) -> bool:
 			modifica(p, ris, -n)
 		return true
 	var resto := n
-	var ordine := [attivo()]
-	for p in compagnia():
+	var ordine := []
+	var pg := paganti(ris)
+	if pg.has(attivo()):
+		ordine.append(attivo())
+	for p in pg:
 		if p != attivo():
 			ordine.append(p)
 	for p in ordine:
@@ -520,6 +547,12 @@ func fonti_inneschi() -> Array:
 		var s := Carte.segreto(int(n))
 		if s != "" and Carte.auto(s).get("inneschi") is Array:
 			out.append({"img": s, "inneschi": Carte.auto(s)["inneschi"], "chi": {}})
+	# Tuathan: valgono le regole della carta su cui si trovano i Personaggi (per ciascun Personaggio)
+	var tu := tuathan_corrente()
+	if tu != "":
+		var inn_t = Carte.auto(tu).get("esplorazione", {}).get("inneschi") if Carte.auto(tu).get("esplorazione") is Dictionary else null
+		if inn_t is Array:
+			out.append({"img": tu, "inneschi": inn_t, "chi": {}, "per_personaggio": true})
 	var ev := str(d.get("evento", ""))
 	if ev != "" and Carte.auto(ev).get("giorno") is Array:
 		out.append({"img": ev, "inneschi": Carte.auto(ev)["giorno"], "chi": {}})
@@ -544,7 +577,7 @@ func inneschi(quando: String, x: Dictionary = {}) -> Array:
 				if gratis and inn.get("costo") is Array and not inn["costo"].is_empty():
 					inn2 = inn.duplicate()
 					inn2["costo"] = []
-				out.append({"img": f["img"], "innesco": inn2, "chi": f["chi"]})
+				out.append({"img": f["img"], "innesco": inn2, "chi": f["chi"], "per_personaggio": f.get("per_personaggio", false)})
 	return out
 
 ## Il Personaggio ha un'Abilità (faccia in uso) con quel modificatore? (senza passare dagli inneschi)
@@ -575,7 +608,7 @@ func modificatori(cosa: String, x: Dictionary = {}) -> Array:
 							break
 	for i in fonti:
 		var c = i["innesco"].get("condizione")
-		if c is Dictionary and not c.is_empty() and Interprete.new(self).valuta(c) == false:
+		if c is Dictionary and not c.is_empty() and Interprete.new(self, null, null, {"proprietario": x if not x.is_empty() else i["chi"]}).valuta(c) == false:
 			continue
 		for s in i["innesco"].get("effetti", []):
 			if s is Dictionary and str(s.get("tipo", "")) == "modificatore" and str(s.get("cosa", "")) == cosa:
@@ -648,9 +681,9 @@ func carta_stato(parola: String) -> String:
 ## Al massimo 1 Oggetto attivo per parola chiave (Arma, Armatura, Scudo, Compagno, Reliquia), salvo carte
 ## che ne permettono di più. Gli attivi sono i primi nell'elenco degli Oggetti del Personaggio.
 const PAROLE_OGGETTO := ["arma", "armatura", "scudo", "compagno", "reliquia"]
-## Regole dei Tuathan (pila gestita dal giocatore, capitolo 8 della campagna): restano come testo
-## sulla carta e nella Cronaca. "affinita_come_verde" dipende dai colori del misuratore stampato.
-const MODIFICATORI_TESTUALI := ["nutrimento", "converti", "no_azione_personaggio", "no_ripristino", "no_paga", "fuori_raggio_ok", "affinita_come_verde"]
+## Modificatori senza effetto nel gioco digitale: "fuori_raggio_ok" (Menhir Grezzo è un Segreto, non sta
+## sulla mappa). "affinita_come_verde" è gestito dall'Incontro (Comprensione reciproca).
+const MODIFICATORI_SENZA_EFFETTO := ["fuori_raggio_ok"]
 
 static func parola_oggetto(img: String) -> String:
 	var pw = Carte.auto(img).get("parola", Carte.dati(img).get("parola", ""))
@@ -733,3 +766,47 @@ func dai_oggetto(da: Dictionary, a: Dictionary, img: String) -> void:
 	a["oggetti"].append(img)
 	racconta("%s dà %s a %s" % [da["nome"], Carte.nome(img), a["nome"]])
 	cambiato()
+
+## --- Tuathan (Capitolo 8, Libro dei Segreti / Luogo 302) ---------------------------------
+## Le 5 carte Tuathan (199) formano una pila; una sola è "aperta" (lato regole) alla volta: quella dove
+## stanno i Personaggi. Le altre carte Luogo e i Menhir si scartano entrando.
+const CARTE_TUATHAN := ["carte/mazzo/tuathan_31304.webp", "carte/mazzo/tuathan_31305.webp", "carte/mazzo/tuathan_31306.webp",
+	"carte/mazzo/tuathan_31307.webp", "carte/mazzo/tuathan_31308.webp"]
+
+func in_tuathan() -> bool:
+	return d.get("tuathan") is Dictionary and personaggi().any(func(x): return int(x.get("luogo", 0)) == 199)
+
+func tuathan_corrente() -> String:
+	if not in_tuathan():
+		return ""
+	var c: Array = d["tuathan"].get("carte", [])
+	return str(c.back()) if not c.is_empty() else ""
+
+func tuathan_conta() -> int:
+	return d["tuathan"].get("carte", []).size() if d.get("tuathan") is Dictionary else 0
+
+func entra_tuathan() -> void:
+	var pila := CARTE_TUATHAN.duplicate()
+	pila.shuffle()
+	var c := cella(luogo_attivo())
+	if c.x > 9999:
+		c = Vector2i.ZERO
+	d["tuathan"] = {"pila": pila, "carte": [pila.pop_front()]}
+	d["mappa"] = {}
+	d["menhir"] = {}
+	piazza_luogo(199, c)
+	for x in personaggi():
+		x["luogo"] = 199
+	racconta("Entrate a Tuathan: %s" % Carte.nome(tuathan_corrente()))
+	cambiato()
+
+## Avanzare attraverso Tuathan: nuova carta dalla pila (la precedente torna sul dorso).
+func avanza_tuathan() -> bool:
+	if not (d.get("tuathan") is Dictionary) or d["tuathan"]["pila"].is_empty():
+		return false
+	d["tuathan"]["carte"].append(d["tuathan"]["pila"].pop_front())
+	for x in personaggi():
+		x["luogo"] = 199
+	racconta("Avanzate attraverso Tuathan (%d/5)" % tuathan_conta())
+	cambiato()
+	return true
