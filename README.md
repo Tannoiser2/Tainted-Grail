@@ -65,7 +65,7 @@ L'interprete (`scripts/core/interprete.gd`) li esegue sullo stato della partita:
   sole quando la condizione di Successo è vera (o a mano dal pulsante CERCHE), **cambio di capitolo** con la carta
   Preparazione (mazzi Incontro, Parti nel mazzo Eventi, Guardiani, Segreti).
 - **Guardiani**: piazzati dalla Preparazione, mossi ogni mattina col dado Guardiano (1-4 direzione, 5 fermo,
-  6 se ne va — distribuzione da verificare sul dado vero), Incontro immediato entrando nel loro Luogo.
+  6 se ne va), Incontro immediato entrando nel loro Luogo.
 - **Stai morendo / Stai impazzendo**: effetti quando la carta entra in gioco, limite di Oggetti, Incubi al posto
   dei Sogni, lanci di Quadrante a ogni Viaggio o Esplorazione.
 - **Oggetti**: al massimo 1 attivo per parola chiave (Arma, Armatura, Scudo, Compagno, Reliquia, salvo Abilità e

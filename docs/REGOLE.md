@@ -383,7 +383,7 @@ Sigilli: **Insediamento nemico** → Incontro all'ingresso (di solito Diplomazia
 ### 7.6 Guardiani (Guardián)
 - Incontri col tratto Guardián. Se fallisci (Scappi) un Incontro Guardiano, la sua carta resta sul Luogo dove è avvenuto (in compagnia: se tutti scappano).
 - **Entrare** in un Luogo con Guardiano → Incontro immediato (più Guardiani: si sceglie l'ordine), prima delle regole ⚡.
-- **Inizio del Giorno passo 6**: per ogni Guardiano lancia il **dado Guardiano**: (1) **direzione cardinale** → muovilo in quella direzione; (2) **nulla** → resta; (3) **scarto** → rimuovilo, carta in fondo al suo mazzo. Distribuzione delle facce `[DA VERIFICARE]`.
+- **Inizio del Giorno passo 6**: per ogni Guardiano lancia il **dado Guardiano**: (1) **direzione cardinale** → muovilo in quella direzione; (2) **nulla** → resta; (3) **scarto** → rimuovilo, carta in fondo al suo mazzo. Facce: 1-4 direzione, 5 resta, 6 scartato (confermato).
   - Se la direzione porta a un Luogo non rivelato o non collegato → muovilo al Luogo **collegato con numero più alto**.
   - Se resta dove ci sono personaggi, o entra in un Luogo con personaggi → Incontro immediato (tutti i presenti combattono insieme).
 - Sconfitto → carta in fondo al mazzo. Max 2 Guardiani tracciati sul Foglio.
