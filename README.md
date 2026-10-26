@@ -68,6 +68,20 @@ L'interprete (`scripts/core/interprete.gd`) li esegue sullo stato della partita:
   6 se ne va — distribuzione da verificare sul dado vero), Incontro immediato entrando nel loro Luogo.
 - **Stai morendo / Stai impazzendo**: effetti quando la carta entra in gioco, limite di Oggetti, Incubi al posto
   dei Sogni, lanci di Quadrante a ogni Viaggio o Esplorazione.
+- **Oggetti**: al massimo 1 attivo per parola chiave (Arma, Armatura, Scudo, Compagno, Reliquia, salvo Abilità e
+  Segreti che ne permettono 2); dalla scheda del Personaggio (pulsante OGGETTI) si sceglie quale è attivo, si dà a
+  chi è nello stesso Luogo (non le carte "non cedibili") o si scarta.
+- **Regole particolari delle carte**: perdite modificate (Talismani, Furia…), Esausto solo a 0 Energia, Salute
+  al posto dell'Energia da Esausti, pasto con Magia, Riposo senza Esaurimento (Idromele), 4 carte fra cui scegliere
+  nei miglioramenti, Menhir pagati con Magia o Energia, Compagni gratuiti, Incontri casuali pescati in 2 e scelti,
+  dadi e Quadranti rilanciati (Fortunato, Sensi acuti, Amuleto Portafortuna), scambio dei Quadranti dei Menhir,
+  sfide a dadi fra Personaggi; negli Incontri Guardia del corpo, Chiavi di Magia come extra, Chiavi senza costo
+  come 1x, Attacco furtivo, Cariche spese come Magia, bonus speciali raddoppiati o trasformati in Frecce su,
+  prima carta scoperta del mazzo, ecc. Restano come testo solo le regole dei Tuathan (capitolo 8).
+- **Morte**: in cooperativo il Personaggio esce di scena, i suoi Oggetti restano nel Luogo (RACCOGLI OGGETTI) e si
+  può prendere un Personaggio rimasto nella scatola sul Luogo rivelato col numero più basso; in solitario, o se non
+  restano Personaggi, la partita fallisce e si può invocare la **Misericordia della Madre di Tutti** (status
+  "Salvati dalla Dea", Libro dei Segreti verso 500) o tornare al menu.
 
 Il gioco tiene traccia di tutto (gettoni Tempo e Cerca sui Luoghi, quadranti di Menhir, Segreti, Personaggi e nemici, miniature, esiti degli Incontri, lanci di Quadrante, spunte sugli status, Eventi in gioco, rimandi del Diario) e non chiede al giocatore ciò che può verificare da solo: restano solo 7 passi da guardare sulla carta stampata (illustrazioni e la pila delle carte di Tuathan).
 

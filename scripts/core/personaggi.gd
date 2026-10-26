@@ -104,7 +104,7 @@ static func limite(p: Dictionary, ris: String) -> int:
 	return 999
 
 static func esausto(p: Dictionary) -> bool:
-	return int(p.get("energia", 0)) <= 1
+	return int(p.get("energia", 0)) <= int(p.get("soglia_esausto", 1))
 
 static func in_follia(p: Dictionary) -> bool:
 	return int(p.get("terrore", 0)) >= int(DATI.get(str(p.get("id", "")), {}).get("follia", 5))

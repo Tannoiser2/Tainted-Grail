@@ -58,6 +58,9 @@ var senza_opportunita := false
 var raddoppia_prossima := false
 var magia_gratis := 0
 var salta_al_fine_turno := false
+var _frecce_tolte := false
+var _speciale_doppio := false
+var _speciale_su := false
 var extra_regole: Array = []     # modificatori aggiunti dal Diario per questo Incontro          # inneschi "una volta per Incontro" già usati / carte girate
 
 func _init(partita_: Partita, img_: String, colore_: String) -> void:
@@ -100,6 +103,20 @@ func regole_carta(cosa: String) -> Array:
 			for s in lst:
 				if s is Dictionary and str(s.get("tipo", "")) == "modificatore" and str(s.get("cosa", "")) == cosa:
 					out.append(s)
+	return out
+
+## Modificatori attivi ora per il personaggio attivo: carte dei Personaggi, regole della carta Incontro
+## e Capacità delle carte nella Sequenza.
+func mod(cosa: String) -> Array:
+	var out: Array = partita.modificatori(cosa, attivo()) + regole_carta(cosa)
+	for v in sequenza:
+		for cap in Carte.auto(str(v.get("img", ""))).get("capacita", []) if Carte.auto(str(v.get("img", ""))).get("capacita") is Array else []:
+			if cap is Dictionary and str(cap.get("innesco", "")) in ["passiva", "piazza"]:
+				for s in cap.get("effetti", []):
+					if s is Dictionary and str(s.get("tipo", "")) == "modificatore" and str(s.get("cosa", "")) == cosa:
+						var s2: Dictionary = s.duplicate()
+						s2["_voce"] = v
+						out.append(s2)
 	return out
 
 func ha_tratto(t: String) -> bool:
@@ -145,6 +162,10 @@ func inizia(compagnia: Array) -> void:
 			if s is Dictionary and str(s.get("tipo", "")) == "modificatore":
 				extra_regole.append(s)
 		await _esegui(ri.filter(func(s): return s is Dictionary and str(s.get("tipo", "")) != "modificatore"), {"carta": img})
+	var sa := regole_carta("solo_abilita")
+	if not sa.is_empty():
+		partita.d["solo_abilita"] = str(sa[0].get("attr", ""))
+		nota("Si possono usare solo le Abilità di %s." % Partita.NOMI_ATTRIBUTI.get(partita.d["solo_abilita"], partita.d["solo_abilita"]))
 	await scatena("inizio_incontro")
 	await scatena("inizio_diplomazia" if diplomazia else "inizio_combattimento")
 	if speciale() and auto.get("effetto") is Array and not auto["effetto"].is_empty():
@@ -215,9 +236,10 @@ func attiva(id: String) -> void:
 				scarti[id].append(mani[id].pop_back())
 			nota("Imboscata: %s scarta fino ad avere 1 carta." % attivo()["nome"])
 		if ha_tratto("Improvv"):
-			_ferite(2, false)
+			await _ferite(2, false)
 			nota("Improvviso: 2 Ferite a %s." % attivo()["nome"])
-	# 1. Capacità ritardate: −1 gettone Tempo su ogni carta della Sequenza
+	# 1. Capacità ritardate: −1 gettone Tempo su ogni carta della Sequenza (e carte dei Personaggi)
+	await scatena("capacita_ritardate", attivo())
 	for s in sequenza:
 		if int(s.get("tempo", 0)) > 0:
 			s["tempo"] = int(s["tempo"]) - 1
@@ -294,17 +316,29 @@ func collegamenti(c: String) -> Array:
 		var cornice := str(k.get("cornice", "attributo"))
 		if str(a) == "magic" or cornice == "magia":
 			if str(a) == "magic" and cornice == "magia":
-				out.append({"riga": r, "bonus": b, "tipo": "magia", "attr": "magic", "ok": _magia_disponibile() > 0})
+				var bm: Array = b.duplicate()
+				if not bm.has("extra") and not mod("chiave_magia_come").is_empty():
+					bm.append("extra")
+				out.append({"riga": r, "bonus": bm, "tipo": "magia", "attr": "magic", "ok": _magia_disponibile() > 0})
 			continue
 		var liv := int(prev.get("liv", 1))
 		out.append({"riga": r, "bonus": b, "tipo": "attributo", "attr": str(a), "ok": partita.attributo(attivo(), str(a)) >= liv, "liv": liv})
 	var fb := _lista(d.get("fondo", {}).get("bonus"))
 	if not fb.is_empty():
-		out.append({"riga": 5, "bonus": fb, "tipo": "fondo", "attr": "", "ok": true, "molt": _moltiplicatore(ap["molt"])})
+		var mf := _moltiplicatore(ap["molt"])
+		if mf == 0 and not mod("chiavi_senza_costo_1x").is_empty():
+			mf = 1
+		out.append({"riga": 5, "bonus": fb, "tipo": "fondo", "attr": "", "ok": true, "molt": mf})
 	return out
+
+## Cariche sulle carte della Sequenza che si possono spendere come Magia (Magia di sangue).
+func _cariche_magia() -> Array:
+	return mod("cariche_come_risorsa").filter(func(m): return str(m.get("ris", "")) == "magia" and m.get("_voce") is Dictionary and int(m["_voce"].get("cariche", 0)) > 0)
 
 func _magia_disponibile() -> int:
 	var t := 0
+	for m in _cariche_magia():
+		t += int(m["_voce"].get("cariche", 0))
 	for p in membri:
 		t += int(p.get("magia", 0))
 	return t
@@ -320,8 +354,9 @@ func giocabile(c: String) -> bool:
 	for m in partita.modificatori("max_carte_attivazione") + regole_carta("max_carte_attivazione"):
 		if carte_attivazione >= int(m.get("n", 99)):
 			return false
+	var draw_extra := not mod("bonus_equivalenti").is_empty() or not partita.modificatori("bonus_equivalenti").is_empty()
 	for k in collegamenti(c):
-		if k["ok"] and k["bonus"].has("extra") and (k["tipo"] != "magia" or paga_magia):
+		if k["ok"] and (k["bonus"].has("extra") or (draw_extra and k["bonus"].has("draw"))) and (k["tipo"] != "magia" or paga_magia):
 			return true
 	return false
 
@@ -342,6 +377,25 @@ func gioca(c: String) -> void:
 	nota("%s gioca %s." % [attivo()["nome"], Carte.nome(c)])
 	var cubi := 0
 	var unite := []
+	_frecce_tolte = false
+	# carte che cambiano i bonus speciali (Lacrima, Posa intimidatoria, Singhiozzo lamentoso)
+	_speciale_doppio = false
+	_speciale_su = not mod("speciale_come_su").filter(func(m): return not m.get("solo_carta_giocata", false)).is_empty()
+	for cap in (Carte.auto(c).get("capacita", []) if Carte.auto(c).get("capacita") is Array else []):
+		if cap is Dictionary:
+			for s in cap.get("effetti", []):
+				if s is Dictionary and str(s.get("cosa", "")) == "raddoppia_speciale":
+					_speciale_doppio = true
+	if diplomazia and not _speciale_su and cols.any(func(k): return k["ok"] and k["bonus"].has("special")):
+		for m in mod("speciale_come_su"):
+			if m.get("solo_carta_giocata", false) and m.get("_voce") is Dictionary and int(m["_voce"].get("cariche", 0)) > 0 and m["_voce"] != sequenza.back():
+				var si := true
+				if ui and ui.has_method("scegli"):
+					si = await ui.scegli("Spendere 1 Carica di %s per considerare i bonus speciali di questa carta come Frecce su?" % Carte.nome(str(m["_voce"]["img"])), ["Sì", "No"]) == 0
+				if si:
+					m["_voce"]["cariche"] = int(m["_voce"]["cariche"]) - 1
+					_speciale_su = true
+				break
 	for k in cols:
 		if not k["ok"]:
 			continue
@@ -357,6 +411,10 @@ func gioca(c: String) -> void:
 			molt *= 2
 		for b in k["bonus"]:
 			cubi += _bonus(str(b), molt, str(k.get("attr", "")), prima)
+	if prima and not diplomazia and cubi > 0 and not partita.modificatori("raddoppia_prima_carta", attivo()).is_empty():
+		riserva += cubi
+		nota("Attacco furtivo: segnalini raddoppiati (+%d)." % cubi)
+		cubi *= 2
 	if prima and ha_tratto("Difens") and cubi > 0 and not diplomazia:
 		riserva = maxi(0, riserva - 1)
 		nota("Difensivo: un segnalino in meno.")
@@ -377,6 +435,12 @@ func gioca(c: String) -> void:
 func _paga_magia() -> void:
 	if magia_gratis > 0:
 		magia_gratis -= 1
+		return
+	var cm := _cariche_magia()
+	if not cm.is_empty():
+		var v: Dictionary = cm[0]["_voce"]
+		v["cariche"] = int(v["cariche"]) - 1
+		nota("Speso 1 Carica di %s come Magia." % Carte.nome(str(v.get("img", ""))))
 		return
 	var a := attivo()
 	if int(a.get("magia", 0)) > 0:
@@ -410,11 +474,21 @@ func _bonus(b: String, molt: int, attr: String, prima: bool) -> int:
 		"discard":
 			_scarta_ultima()
 		"arrowup":
+			if prima and diplomazia and not _frecce_tolte:
+				_frecce_tolte = true
+				var meno := partita.somma_modificatori("frecce_prima_carta", attivo())
+				if meno != 0:
+					n = maxi(0, n + meno)
+					nota("Prima carta dell'Attivazione: %+d Freccia su." % meno)
 			_affinita(n)
 		"arrowdown":
 			_affinita(-n)
 		"special":
-			_speciale(attr)
+			for i in (2 if _speciale_doppio else 1):
+				if _speciale_su and diplomazia:
+					_affinita(1)
+				else:
+					_speciale(attr)
 	return 0
 
 func _scarta_ultima() -> void:
@@ -532,6 +606,18 @@ func _ferite(n: int, prevenibili := true) -> void:
 	if p.is_empty():
 		return
 	var nn := n
+	# Guardia del corpo: un altro membro può subire le Ferite al suo posto (diventano inevitabili)
+	if not diplomazia and n > 0:
+		for y in membri:
+			if y != p and int(y.get("salute", 0)) > 1 and not partita.modificatori("assorbi_ferite_compagni", y).is_empty():
+				var si := false
+				if ui and ui.has_method("scegli"):
+					si = await ui.scegli("%s può subire le %d Ferite al posto di %s (Guardia del corpo, inevitabili)." % [y["nome"], n, p["nome"]], ["Sì, le subisce %s" % y["nome"], "No"]) == 0
+				if si:
+					partita.modifica(y, "salute", -n)
+					nota("%s subisce %d Ferite al posto di %s (Salute %d)." % [y["nome"], n, p["nome"], int(y["salute"])])
+					ferite_subite += n
+					return
 	if prevenibili and prevenzione > 0:
 		var x := mini(prevenzione, nn)
 		nn -= x
@@ -639,7 +725,9 @@ func termina_carte() -> void:
 			if concluso == "" and riserva >= valore():
 				concludi("vittoria")
 	else:
-		var fase_vinta := _controlla_affinita()
+		# inizio della verifica dell'Affinità (Ultima risorsa…)
+		await scatena("verifica_affinita", attivo())
+		var fase_vinta := _controlla_affinita() if concluso == "" else true
 		if concluso == "" and not fase_vinta:
 			var fs: Array = carta.get("fasi", [])
 			if not fs.is_empty():
@@ -801,6 +889,7 @@ func concludi(esito: String) -> void:
 	if concluso != "":
 		return
 	concluso = esito
+	partita.d.erase("solo_abilita")
 	var tutti := partita.compagnia()
 	match esito:
 		"vittoria":

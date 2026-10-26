@@ -154,6 +154,12 @@ func aggiorna() -> void:
 			var off := Vector3(cos(ang), 0, sin(ang)) * (0.0 if gruppo.size() == 1 else 0.42)
 			var dest := _centro_luogo(int(l)) + Vector3(0.25, 0, 0.35) + off
 			_sposta(_mini[chiave], dest)
+	# Personaggi morti: via la loro miniatura
+	var ids := partita.personaggi().map(func(p): return "eroe:" + str(p["id"]))
+	for k in _mini.keys():
+		if str(k).begins_with("eroe:") and not ids.has(k):
+			_mini[k].queue_free()
+			_mini.erase(k)
 	_aggiorna_evidenze()
 
 func posizione_cella(c: Vector2i) -> Vector3:

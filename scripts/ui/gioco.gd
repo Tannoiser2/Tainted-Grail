@@ -174,7 +174,7 @@ func _aggiorna_azioni() -> void:
 		return
 	_info.text = "Tocca a %s — Luogo %d · Energia %d. Compagnia: %s" % [x["nome"], n, int(x["energia"]),
 		", ".join(partita.compagnia().map(func(y): return y["nome"]))]
-	var puo: bool = not x.get("passato", false) and int(x["energia"]) > 0
+	var puo: bool = not x.get("passato", false) and partita.energia_spendibile(x) > 0
 	_azione("VIAGGIARE", _inizia_viaggio, puo and not giornata.puo_viaggiare(x).is_empty(), "1 Energia: muovi in un Luogo collegato")
 	_azione("ESPLORARE", _esplora, puo, "1 Energia per membro: leggi il Diario di questo Luogo")
 	var aza = _azioni_luogo_auto(n)
@@ -186,18 +186,21 @@ func _aggiorna_azioni() -> void:
 			var nome_a := _nome_azione_luogo(n, i)
 			var ok_c: bool = not (a.get("condizione") is Dictionary) or a["condizione"].is_empty() or Interprete.new(partita).valuta(a["condizione"]) != false
 			var ii := i
-			_azione(nome_a.to_upper(), func(): _azione_luogo_auto(n, ii), puo and not usata and ok_c and int(x["energia"]) >= costo,
+			_azione(nome_a.to_upper(), func(): _azione_luogo_auto(n, ii), puo and not usata and ok_c and partita.energia_spendibile(x) >= costo,
 				"%d Energia%s" % [costo, " · una volta al giorno" if a.get("una_volta_al_giorno", false) else ""])
 	var az := giornata.azione_luogo(n) if aza.is_empty() else {}
 	if not az.is_empty():
 		var nome := str(az.get("nome", {}).get("it", "Azione del Luogo"))
-		_azione(nome.to_upper(), _azione_luogo, puo and not giornata.azione_luogo_usata(n) and int(x["energia"]) >= int(az.get("costo", 0)),
+		_azione(nome.to_upper(), _azione_luogo, puo and not giornata.azione_luogo_usata(n) and partita.energia_spendibile(x) >= int(az.get("costo", 0)),
 			Dati.testo_leggibile("%d Energia: %s" % [int(az.get("costo", 0)), str(az.get("it", ""))]))
 	var dd := Personaggi.dati(str(x["id"]))
-	_azione(str(dd["azione"]["nome"]).to_upper(), _azione_personaggio, puo and int(x["energia"]) >= int(dd["azione"]["costo"]),
+	_azione(str(dd["azione"]["nome"]).to_upper(), _azione_personaggio, puo and partita.energia_spendibile(x) >= int(dd["azione"]["costo"]),
 		Dati.testo_leggibile("%d Energia: %s" % [int(dd["azione"]["costo"]), dd["azione"]["testo"]]))
 	if _ha_menhir(n):
 		_azione("MENHIR", _menhir, true, "Ispeziona il Menhir del Luogo e attivalo")
+	var a_terra: Array = partita.d.get("oggetti_terra", {}).get(str(n), [])
+	if not a_terra.is_empty():
+		_azione("RACCOGLI OGGETTI (%d)" % a_terra.size(), _raccogli_oggetti, true, "Oggetti lasciati qui da un Personaggio caduto")
 	var usabili := partita.inneschi("azione", x) + partita.inneschi("in_qualsiasi_momento", x)
 	if not usabili.is_empty():
 		_azione("CARTE (%d)" % usabili.size(), _usa_carte, true, "Oggetti, Segreti e Abilità con un'azione o usabili in qualsiasi momento")
@@ -216,6 +219,64 @@ func _aggiorna_azioni() -> void:
 		_dopo_azione(), 17)
 	pb.disabled = x.get("passato", false)
 	_azioni.add_child(pb)
+
+func _raccogli_oggetti() -> void:
+	var x := partita.attivo()
+	var terra: Array = partita.d.get("oggetti_terra", {}).get(str(int(x["luogo"])), [])
+	while not terra.is_empty():
+		var opz: Array = terra.map(func(o): return Carte.nome(o))
+		opz.append("Basta così")
+		var k := await domande.scegli("Oggetti nel Luogo %d: quale prende %s?" % [int(x["luogo"]), x["nome"]], opz)
+		if k >= terra.size():
+			break
+		var img: String = terra[k]
+		terra.remove_at(k)
+		x["oggetti"].append(img)
+		partita.racconta("%s raccoglie %s" % [x["nome"], Carte.nome(img)])
+	if terra.is_empty():
+		partita.d.get("oggetti_terra", {}).erase(str(int(x["luogo"])))
+	await _controlla_stati()
+	partita.cambiato()
+	_aggiorna()
+
+## Oggetti di un Personaggio: quale è attivo per parola chiave, darli a chi è nello stesso Luogo, scartarli.
+func _gestisci_oggetti(x: Dictionary) -> void:
+	while true:
+		var og: Array = x.get("oggetti", [])
+		if og.is_empty():
+			return
+		var opz: Array = og.map(func(o):
+			var pw := Partita.parola_oggetto(o)
+			var st := ""
+			if Partita.PAROLE_OGGETTO.has(pw):
+				st = " — %s %s" % [pw.capitalize(), "ATTIVO" if partita.attivo_oggetto(x, o) else "coperto (non attivo)"]
+			return Carte.nome(o) + st)
+		opz.append("Chiudi")
+		var k := await domande.scegli("Oggetti di %s (al massimo 1 attivo per Arma, Armatura, Scudo, Compagno, Reliquia)" % x["nome"], opz)
+		if k >= og.size():
+			return
+		var img: String = og[k]
+		var azioni := []
+		var cb := []
+		if Partita.PAROLE_OGGETTO.has(Partita.parola_oggetto(img)) and not partita.attivo_oggetto(x, img):
+			azioni.append("Rendilo attivo")
+			cb.append(func(): partita.attiva_oggetto(x, img))
+		if partita.cedibile(img):
+			for y in partita.personaggi():
+				if y != x and int(y["luogo"]) == int(x["luogo"]):
+					azioni.append("Dallo a " + str(y["nome"]))
+					var yy: Dictionary = y
+					cb.append(func(): partita.dai_oggetto(x, yy, img))
+		else:
+			azioni.append("(non cedibile)")
+			cb.append(func(): pass)
+		azioni.append("Scartalo")
+		cb.append(func(): partita.scarta_oggetto(x, img))
+		azioni.append("Indietro")
+		cb.append(func(): pass)
+		var j := await domande.scegli(Carte.nome(img), azioni)
+		cb[j].call()
+		_aggiorna()
 
 func _azione(t: String, cb: Callable, attiva: bool, suggerimento := "") -> void:
 	var b := Tema.pulsante(t, cb, 16)
@@ -381,7 +442,7 @@ func _azione_personaggio() -> void:
 	var costo := int(dd["azione"]["costo"])
 	match str(x["id"]):
 		"arev":
-			partita.modifica(x, "energia", -costo)
+			partita.spendi_energia(x, costo)
 			partita.modifica(x, "cibo", 1)
 			partita.racconta("Arev raccoglie: +1 Cibo")
 		"ailei":
@@ -390,14 +451,14 @@ func _azione_personaggio() -> void:
 			for y in bersagli:
 				if Personaggi.limite(y, "salute") - int(y["salute"]) > Personaggi.limite(ferito, "salute") - int(ferito["salute"]):
 					ferito = y
-			partita.modifica(x, "energia", -costo)
+			partita.spendi_energia(x, costo)
 			partita.modifica(ferito, "salute", 1)
 			partita.racconta("Ailei usa le Erbe Curative su %s: +1 Salute" % ferito["nome"])
 		"maggot":
 			if int(x.get("magia", 0)) >= 4:
 				_messaggio("Meditazione", "Puoi meditare solo se hai meno di 4 {r:Magia}.")
 				return
-			partita.modifica(x, "energia", -costo)
+			partita.spendi_energia(x, costo)
 			partita.modifica(x, "magia", 1)
 			partita.racconta("Verme medita: +1 Magia")
 		"beor":
@@ -417,7 +478,7 @@ func _fabbrica(x: Dictionary, costo: int) -> void:
 	if scelta.is_empty():
 		_messaggio("Fabbricare", "Non ci sono Oggetti Fabbricabili nel mazzo (o le carte Oggetto non sono ancora trascritte).")
 		return
-	partita.modifica(x, "energia", -costo)
+	partita.spendi_energia(x, costo)
 	_scegli_carta("Fabbricare: scegli un Oggetto", scelta, func(img):
 		m.erase(img)
 		x["oggetti"].append(img)
@@ -475,7 +536,7 @@ func _paga_menhir(t: String) -> void:
 
 func _attiva_menhir_auto(n: int, am: Dictionary) -> void:
 	var it := Interprete.new(partita, null, domande, {"luogo": n})
-	if am.get("costo") is Array and not await it.esegui(am["costo"]):
+	if am.get("costo") is Array and not await it.esegui(await _costo_menhir(am["costo"])):
 		_riassunto(it.rapporto)
 		return
 	for y in partita.personaggi():
@@ -492,6 +553,38 @@ func _attiva_menhir_auto(n: int, am: Dictionary) -> void:
 	await _scatena("attiva_menhir")
 	_riassunto(it.rapporto)
 	_dopo_azione()
+
+## Costo di attivazione di un Menhir con le carte che lo cambiano (Infondere odio, Duro lavoro: pagare
+## con Magia invece che con Energia o viceversa; Eventi che tolgono 1 Magia dal costo).
+func _costo_menhir(costo: Array) -> Array:
+	var x := partita.attivo()
+	var out := []
+	var sconto := 0
+	for m in partita.modificatori("niente_menhir_costo_magia", x):
+		sconto += int(m.get("n", 1))
+	for s in costo:
+		if not (s is Dictionary) or str(s.get("tipo", "")) != "paga":
+			out.append(s)
+			continue
+		var s2: Dictionary = s.duplicate()
+		var ris := str(s2.get("ris", ""))
+		if ris == "magia" and sconto > 0:
+			var tolti := mini(sconto, int(s2.get("n", 1)))
+			sconto -= tolti
+			s2["n"] = int(s2.get("n", 1)) - tolti
+			partita.racconta("Costo del Menhir: −%d Magia" % tolti)
+			if int(s2["n"]) <= 0:
+				continue
+		for m in partita.modificatori("menhir_paga_con", x):
+			if str(m.get("da", "")) == ris:
+				var con := str(m.get("con", ""))
+				var k := await domande.scegli("Come pagate %d %s per il Menhir?" % [int(s2.get("n", 1)), ris.capitalize()],
+					["Con %s" % ris.capitalize(), "Con %s (%s)" % [con.capitalize(), Carte.nome(str(m.get("_img", "")))] if m.has("_img") else "Con %s" % con.capitalize()])
+				if k == 1:
+					s2["ris"] = con
+				break
+		out.append(s2)
+	return out
 
 func _incontro_manuale() -> void:
 	_messaggio("Incontro", "Di che colore è l'Incontro da pescare?", Callable(), {
@@ -521,6 +614,14 @@ func _avvia_incontro(colore: String, nome := "") -> void:
 
 ## Incontro chiesto da un effetto (Diario, Eventi, carte): restituisce l'esito.
 func _incontro_richiesto(colore: String, nome: String, _livello: int) -> String:
+	if nome == "":
+		# Eventi che cambiano il colore dell'Incontro casuale ("pesca invece un Incontro viola")
+		for md in partita.modificatori("pesca_incontro"):
+			var cl = md.get("colore", "")
+			if md.has("sostituisci") and ((cl is Array and cl.has(colore)) or str(cl) == colore):
+				partita.racconta("Incontro %s pescato invece del %s" % [str(md["sostituisci"]), colore])
+				colore = str(md["sostituisci"])
+				break
 	var m: Array = partita.d["mazzi"].get_or_add("incontri_" + colore, [])
 	var img := ""
 	if nome != "":
@@ -543,6 +644,22 @@ func _incontro_richiesto(colore: String, nome: String, _livello: int) -> String:
 			if Carte.nome(img).to_lower() == str(mod.get("nome", "")).to_lower():
 				m.push_back(m.pop_front())
 				img = m[0]
+		if m.size() >= 2:
+			# pescane 2: il valore più alto (Evento) o a scelta (Chiaroveggenza, Seguire le tracce…)
+			var alto := partita.modificatori("pesca_incontro").any(func(md): return str(md.get("colore", "")) == colore and str(md.get("scegli", "")) == "maggiore")
+			var scelta := partita.modificatori("scegli_incontro", partita.attivo()).any(func(md): return str(md.get("colore", "")) == colore)
+			if alto or scelta:
+				var due := [m[0], m[1]]
+				var k := 0
+				if alto:
+					k = 0 if int(Carte.dati(due[0]).get("valore", 0)) >= int(Carte.dati(due[1]).get("valore", 0)) else 1
+				else:
+					k = await domande.scegli("Pescate 2 carte Incontro %s: quale affrontate? L'altra va in fondo al mazzo." % colore,
+						due.map(func(z): return "%s (valore %s)" % [Carte.nome(z), str(Carte.dati(z).get("valore", "?"))]))
+				img = due[k]
+				var altra: String = due[1 - k]
+				m.erase(altra)
+				m.push_back(altra)
 	m.erase(img)
 	var esito := await _incontro_carta(img, colore)
 	if not Partita.guardiani(partita).any(func(g): return str(g["img"]) == img):
@@ -668,6 +785,92 @@ func _controlla_stati() -> void:
 							partita.scarta_oggetto(x, og[j])
 			prima[k] = ora
 		_stati_noti[id] = prima
+	for x in partita.personaggi().duplicate():
+		if x.get("morto", false):
+			await _morte(x)
+
+## --- Regola della Morte ------------------------------------------------------------------
+## Cooperativo: gli Oggetti restano nel Luogo, le risorse tornano nella scatola, si può prendere un
+## Personaggio ancora libero (sul Luogo rivelato col numero più basso). Se non ce ne sono, o in
+## solitario, la partita fallisce: si può invocare la Misericordia della Madre di Tutti.
+func _morte(x: Dictionary) -> void:
+	var nome := str(x["nome"])
+	partita.racconta("%s è morto." % nome)
+	var vivi := partita.personaggi().filter(func(y): return y != x and not y.get("morto", false))
+	var liberi := Personaggi.ORDINE.filter(func(id): return not partita.personaggi().any(func(y): return str(y["id"]) == id) and not partita.d.get("caduti", []).has(id))
+	if vivi.is_empty() or liberi.is_empty():
+		await _domanda_avviso("%s è morto" % nome, ("La partita in solitario termina con la morte del Personaggio." if partita.personaggi().size() == 1 else
+			("Non ci sono altri Personaggi nella scatola: la partita fallisce per tutti." if not vivi.is_empty() else "Tutti i Personaggi sono morti: la partita fallisce.")))
+		await _fallimento()
+		return
+	# Oggetti lasciati nel Luogo, risorse nella scatola
+	var terra: Dictionary = partita.d.get_or_add("oggetti_terra", {})
+	var qui: Array = terra.get_or_add(str(int(x["luogo"])), [])
+	qui.append_array(x.get("oggetti", []))
+	x["oggetti"] = []
+	var i := partita.personaggi().find(x)
+	partita.personaggi().erase(x)
+	partita.d.get_or_add("caduti", []).append(str(x["id"]))
+	partita.d["attivo"] = clampi(int(partita.d.get("attivo", 0)) - (1 if i < int(partita.d.get("attivo", 0)) else 0), 0, maxi(0, partita.personaggi().size() - 1))
+	_stati_noti.erase(str(x["id"]))
+	var testo := "%s è morto. I suoi Oggetti restano nel Luogo %d (chi passa di lì può raccoglierli); le sue risorse tornano nella scatola." % [nome, int(x["luogo"])]
+	await _domanda_avviso("%s è morto" % nome, testo)
+	var opz: Array = liberi.map(func(id): return "Prendi " + str(Personaggi.dati(id)["nome"]))
+	opz.append("Continua senza un nuovo Personaggio")
+	var k := await domande.scegli("Il giocatore di %s può prendere un Personaggio rimasto nella scatola" % nome, opz)
+	if k < liberi.size():
+		var nuovo := Personaggi.nuovo(str(liberi[k]))
+		var luoghi: Array = partita.d["mappa"].keys().map(func(z): return int(z))
+		luoghi.sort()
+		nuovo["luogo"] = luoghi[0] if not luoghi.is_empty() else 101
+		nuovo["passato"] = true
+		partita.personaggi().append(nuovo)
+		_stati_noti[str(nuovo["id"])] = {"morendo": false, "impazzendo": false}
+		partita.racconta("%s entra in gioco nel Luogo %d" % [nuovo["nome"], int(nuovo["luogo"])])
+	_ricostruisci_schede()
+	partita.cambiato()
+	_aggiorna()
+
+func _ricostruisci_schede() -> void:
+	for c in _schede.get_children():
+		c.queue_free()
+	for y in partita.personaggi():
+		var pp := PannelloPersonaggio.new(partita, str(y["id"]))
+		pp.apri_scheda.connect(_scheda_personaggio)
+		_schede.add_child(pp)
+
+func _fallimento() -> void:
+	var k := await domande.scegli("La partita è fallita. Cosa volete fare?",
+		["Misericordia della Madre di Tutti (Libro dei Segreti, verso 500)", "Torna al menu"])
+	if k == 1:
+		esci.emit()
+		return
+	# tutti i Personaggi tornano in vita con le tracce iniziali; mappa, Menhir e Guardiani si scartano
+	for id in partita.d.get("caduti", []):
+		partita.personaggi().append(Personaggi.nuovo(str(id)))
+	partita.d["caduti"] = []
+	for y in partita.personaggi():
+		var dd := Personaggi.dati(str(y["id"]))
+		y.erase("morto")
+		y["salute"] = int(dd["salute"])
+		y["energia"] = int(dd["energia"])
+		y["terrore"] = 0
+		y["passato"] = false
+		y["luogo"] = 101
+		_stati_noti[str(y["id"])] = {"morendo": false, "impazzendo": false}
+	partita.d["mappa"] = {}
+	partita.d["menhir"] = {}
+	partita.d["guardiani"] = []
+	partita.d["oggetti_terra"] = {}
+	partita.d.get("miniature", {}).clear()
+	partita.d["gettoni"] = {"cerca": 0, "tempo": {}}
+	partita.ottieni_status("Salvati dalla Dea", [])
+	partita.racconta("Misericordia della Madre di Tutti: Salvati dalla Dea")
+	_ricostruisci_schede()
+	partita.cambiato()
+	_aggiorna()
+	if partita.diario.apri_numero(999, 500):
+		_apri_diario()
 
 ## Cerche attive: se la condizione di Successo è soddisfatta se ne applicano gli effetti.
 func _controlla_cerche() -> void:
@@ -980,6 +1183,8 @@ func _scheda_personaggio(id: String) -> void:
 					await Interprete.new(partita, null, domande, {}).scegli_abilita(x, a)
 				_aggiorna()
 				_scheda_personaggio(id)
+	if not x.get("oggetti", []).is_empty():
+		bot["OGGETTI"] = func(): _gestisci_oggetti(x)
 	if int(x.get("esp", 0)) >= 2:
 		bot["CARTA DI COMBATTIMENTO (2 Esp)"] = func(): _carta_avanzata(x, "combattimento")
 		bot["CARTA DI DIPLOMAZIA (2 Esp)"] = func(): _carta_avanzata(x, "diplomazia")

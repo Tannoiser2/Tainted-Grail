@@ -153,7 +153,7 @@ func puo_viaggiare(x: Dictionary) -> Array:
 ## Viaggio di un personaggio (o della sua Compagnia) verso un Luogo collegato.
 func viaggia(gruppo: Array, dest: int) -> Array:
 	for x in gruppo:
-		p.modifica(x, "energia", -costo_viaggio(x))
+		p.spendi_energia(x, costo_viaggio(x))
 		x["viaggi_oggi"] = int(x.get("viaggi_oggi", 0)) + 1
 		x["luogo"] = dest
 	p.racconta("%s viaggia al Luogo %d" % [" e ".join(gruppo.map(func(x): return x["nome"])), dest])
@@ -164,10 +164,10 @@ func viaggia(gruppo: Array, dest: int) -> Array:
 ## Costo dell'Esplorazione: 1 Energia per ogni membro della Compagnia.
 func esplora(gruppo: Array) -> bool:
 	for x in gruppo:
-		if int(x.get("energia", 0)) < 1:
+		if p.energia_spendibile(x) < 1:
 			return false
 	for x in gruppo:
-		p.modifica(x, "energia", -1)
+		p.spendi_energia(x, 1)
 	p.racconta("%s esplora il Luogo %d" % [" e ".join(gruppo.map(func(x): return x["nome"])), int(gruppo[0]["luogo"])])
 	return true
 
@@ -209,18 +209,22 @@ func giornata_finita() -> bool:
 ## Riposo e recupero dell'Energia per un personaggio. mangia: se consumare 1 Cibo.
 func riposa(x: Dictionary, mangia: bool) -> String:
 	var t := ""
-	x["ha_mangiato"] = mangia and int(x.get("cibo", 0)) > 0
-	if mangia and int(x.get("cibo", 0)) > 0:
-		p.modifica(x, "cibo", -1)
+	# Ascetismo: si può consumare Magia invece del Cibo
+	var con_magia: bool = mangia and int(x.get("cibo", 0)) <= 0 and int(x.get("magia", 0)) > 0 and not p.modificatori("pasto_con", x).filter(func(m): return str(m.get("ris", "")) == "magia").is_empty()
+	x["ha_mangiato"] = mangia and (int(x.get("cibo", 0)) > 0 or con_magia)
+	if x["ha_mangiato"]:
+		p.modifica(x, "magia" if con_magia else "cibo", -1)
+		if con_magia:
+			t = "(Ascetismo: consuma 1 Magia invece del Cibo) "
 		var sal := 0 if not p.modificatori("no_riposo_salute", x).is_empty() else 1 + p.somma_modificatori("riposo_salute", x)
 		var ter := 0 if not p.modificatori("no_riposo_terrore", x).is_empty() else 1 + p.somma_modificatori("riposo_terrore", x)
 		p.modifica(x, "salute", sal)
 		var senza_menhir: bool = not p.d["menhir"].has(str(x["luogo"])) or int(p.d["menhir"][str(x["luogo"])].get("quadrante", 0)) <= 0
 		if str(x["id"]) == "ailei" and senza_menhir:
-			t = "%s mangia: %+d Salute (Traumatizzata: il Terrore non scende senza Menhir)." % [x["nome"], sal]
+			t += "%s mangia: %+d Salute (Traumatizzata: il Terrore non scende senza Menhir)." % [x["nome"], sal]
 		else:
 			p.modifica(x, "terrore", -ter)
-			t = "%s mangia: %+d Salute, −%d Terrore." % [x["nome"], sal, ter]
+			t += "%s mangia: %+d Salute, −%d Terrore." % [x["nome"], sal, ter]
 	else:
 		if int(x.get("energia", 0)) == 0:
 			p.modifica(x, "salute", -1)
@@ -229,7 +233,11 @@ func riposa(x: Dictionary, mangia: bool) -> String:
 			x["energia"] = 0
 			t = "%s non mangia: Energia a 0." % x["nome"]
 	var prima := int(x["energia"])
-	x["energia"] = Personaggi.energia_recuperata(x)
+	if not p.modificatori("ignora_esaurimento", x).is_empty():
+		# Idromele: in questo Riposo non contano gli effetti dell'Esaurimento
+		x["energia"] = maxi(prima, int(Personaggi.dati(str(x["id"])).get("energia", 6)))
+	else:
+		x["energia"] = Personaggi.energia_recuperata(x)
 	t += " Energia %d → %d." % [prima, int(x["energia"])]
 	p.racconta(t)
 	p.cambiato()
@@ -255,7 +263,10 @@ func pesca_avanzate(x: Dictionary, tipo: String) -> Array:
 	var r: Array = x["mazzi"][tipo]["riserva"]
 	if int(x.get("esp", 0)) < 2 or r.is_empty():
 		return []
-	return r.slice(0, 3)
+	var n := 3
+	for m in p.modificatori("miglioramento_pesca", x):
+		n = maxi(n, int(m.get("n", 3)))
+	return r.slice(0, n)
 
 func scegli_avanzata(x: Dictionary, tipo: String, img: String) -> void:
 	var r: Array = x["mazzi"][tipo]["riserva"]
@@ -314,6 +325,8 @@ func guardiani_con_personaggi() -> Array:
 	return out
 
 func nuova_giornata() -> void:
+	for x in p.personaggi():
+		x.erase("mod_temp")   # effetti "durante questo Riposo"
 	p.d["giorno"] = int(p.d.get("giorno", 1)) + 1
 	p.d["fase"] = "inizio"
 	p.cambiato()

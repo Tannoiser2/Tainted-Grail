@@ -237,3 +237,9 @@ Inneschi nuovi delle Capacità: `innesco: "scartata"` (quando la carta viene sca
 `quando: "attiva_menhir"`, `"fine_turno"`, `"rilancio"`.
 Modificatori nuovi (`cosa`): `limite_mano` (`n`), `pesca_fine_turno` (`n`), `senza_opportunita`, `ignora_panico`,
 `non_cedibile`, `armi_attive` (`n`), `costo_menhir` (`ris`, `n`), `terrore_extra` (`n`), `solo_abilita` (`attr`).
+
+Passi nuovi: `ritira_dado` / `rilancia` (ripete il tiro di dado in corso: vale il secondo risultato),
+`scambia_quadranti_menhir` (scambia i Quadranti di 2 Menhir attivi a scelta), `dado_sfida` (`condizione` per chi
+partecipa, `perde`: "piu_basso", `effetti` applicati a chi perde). Inneschi nuovi: `tiro_dado` (dopo un tiro del
+Diario, `contesto`), `verifica_affinita`, `capacita_ritardate`. Un `modificatore` eseguito come effetto con `durata`
+resta sul Personaggio fino alla nuova Giornata (es. Idromele, "durante questo Riposo").

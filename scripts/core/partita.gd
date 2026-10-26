@@ -38,6 +38,12 @@ func _init(camp_: int, dati: Dictionary, stato_diario: Dictionary) -> void:
 	diario = MotoreDiario.new(camp, stato_diario, self)
 
 func cambiato() -> void:
+	# Instancabile: si è Esausti solo a 0 Energia
+	for x in personaggi():
+		var so := 1
+		for m in modificatori("soglia_esausto", x):
+			so = mini(so, int(m.get("n", 1)))
+		x["soglia_esausto"] = so
 	modificata.emit()
 
 func racconta(t: String) -> void:
@@ -91,9 +97,32 @@ func limite(p: Dictionary, ris: String) -> int:
 	return Personaggi.limite(p, ris)
 
 ## Modifica una risorsa di un personaggio rispettando i limiti; restituisce la variazione reale.
+var _in_modifica := false
+
 func modifica(p: Dictionary, ris: String, delta: int) -> int:
 	if ris == "" or delta == 0:
 		return 0
+	if not _in_modifica and delta < 0 and personaggi().has(p):
+		_in_modifica = true
+		# carte che cambiano le perdite (Talismano, Furia nera, "riduci di 1 le perdite di 3 o più Salute"…)
+		if not modificatori("ignora_perdita", p).filter(func(m): return str(m.get("ris", "")) == ris).is_empty():
+			_in_modifica = false
+			return 0
+		for m in modificatori("sostituisci_perdita", p):
+			if str(m.get("ris", "")) == ris and m.get("invece") is Dictionary:
+				var inv: Dictionary = m["invece"]
+				var r := modifica(p, str(inv.get("ris", "")), int(inv.get("n", 1)) * absi(delta))
+				_in_modifica = false
+				return r
+		for m in modificatori("riduci_perdita", p):
+			if str(m.get("ris", "")) == ris and -delta >= int(m.get("soglia", 0)):
+				delta += int(m.get("n", 1))
+		for m in modificatori("perdita", p):
+			if str(m.get("ris", "")) == ris:
+				delta -= int(m.get("n", 1))
+		_in_modifica = false
+		if delta == 0:
+			return 0
 	var prima := int(p.get(ris, 0))
 	var dopo := clampi(prima + delta, 0, limite(p, ris))
 	p[ris] = dopo
@@ -140,6 +169,20 @@ func paga(ris: String, n: int, per_membro := false) -> bool:
 		modifica(p, ris, -x)
 		resto -= x
 	return true
+
+## Energia che un Personaggio può spendere: da Esausto alcune carte permettono di usare la Salute (Muoversi o morire).
+func energia_spendibile(x: Dictionary) -> int:
+	var e := int(x.get("energia", 0))
+	if Personaggi.esausto(x) and not modificatori("paga_con", x).filter(func(m): return str(m.get("da", "")) == "energia" and str(m.get("con", "")) == "salute").is_empty():
+		e += maxi(0, int(x.get("salute", 0)) - 1)
+	return e
+
+func spendi_energia(x: Dictionary, n: int) -> void:
+	var da_e := mini(n, int(x.get("energia", 0)))
+	modifica(x, "energia", -da_e)
+	if n > da_e:
+		modifica(x, "salute", -(n - da_e))
+		racconta("%s, Esausto, spende %d Salute invece dell'Energia" % [x["nome"], n - da_e])
 
 func attributo(p: Dictionary, a: String) -> int:
 	return int(p.get("attributi", {}).get(a, 0))
@@ -450,12 +493,19 @@ func trova_evento_speciale(lettera: String) -> String:
 func fonti_inneschi() -> Array:
 	var out := []
 	for x in personaggi():
-		for o in x.get("oggetti", []):
+		for o in oggetti_attivi(x):
 			var a := Carte.auto(o)
 			if a.get("inneschi") is Array:
 				out.append({"img": o, "inneschi": a["inneschi"], "chi": x})
+		# modificatori temporanei (es. "durante questo Riposo")
+		var tmp: Array = x.get("mod_temp", [])
+		if not tmp.is_empty():
+			out.append({"img": "", "inneschi": [{"quando": "sempre", "effetti": tmp}], "chi": x})
 		for ab in x.get("abilita", []):
 			if not (ab is Dictionary):
+				continue
+			var solo := str(d.get("solo_abilita", ""))
+			if solo != "" and str(ab.get("attributo", "")) != solo:
 				continue
 			var fa: Array = Carte.auto(str(ab.get("img", ""))).get("facce", [])
 			var i := int(ab.get("faccia", 0))
@@ -486,15 +536,44 @@ func inneschi(quando: String, x: Dictionary = {}) -> Array:
 	for f in fonti_inneschi():
 		if not x.is_empty() and not f["chi"].is_empty() and f["chi"] != x:
 			continue
+		# Leader carismatico: i Compagni non richiedono pagamenti
+		var gratis: bool = quando != "sempre" and not f["chi"].is_empty() and parola_oggetto(str(f["img"])) == "compagno" and _ha_abilita_mod(f["chi"], "compagni_gratis")
 		for inn in f["inneschi"]:
 			if inn is Dictionary and _quando_corrisponde(inn.get("quando"), quando):
-				out.append({"img": f["img"], "innesco": inn, "chi": f["chi"]})
+				var inn2: Dictionary = inn
+				if gratis and inn.get("costo") is Array and not inn["costo"].is_empty():
+					inn2 = inn.duplicate()
+					inn2["costo"] = []
+				out.append({"img": f["img"], "innesco": inn2, "chi": f["chi"]})
 	return out
+
+## Il Personaggio ha un'Abilità (faccia in uso) con quel modificatore? (senza passare dagli inneschi)
+func _ha_abilita_mod(x: Dictionary, cosa: String) -> bool:
+	for ab in x.get("abilita", []):
+		if ab is Dictionary:
+			var fa: Array = Carte.auto(str(ab.get("img", ""))).get("facce", [])
+			var i := int(ab.get("faccia", 0))
+			if i < fa.size() and fa[i] is Dictionary:
+				for inn in fa[i].get("inneschi", []):
+					for s in inn.get("effetti", []) if inn is Dictionary else []:
+						if s is Dictionary and str(s.get("cosa", "")) == cosa:
+							return true
+	return false
 
 ## Passi "modificatore" attivi di un certo tipo (quando = "sempre").
 func modificatori(cosa: String, x: Dictionary = {}) -> Array:
 	var out := []
-	for i in inneschi("sempre", x):
+	var fonti := inneschi("sempre", x)
+	if not x.is_empty():
+		# carte degli altri Personaggi che valgono per tutti ("Ogni Personaggio può…")
+		for i in inneschi("sempre"):
+			if not i["chi"].is_empty() and i["chi"] != x:
+				for s in i["innesco"].get("effetti", []):
+					if s is Dictionary and str(s.get("chi", "")) in ["tutti", "compagnia"]:
+						if str(s.get("chi")) == "tutti" or int(i["chi"].get("luogo", -1)) == int(x.get("luogo", -2)):
+							fonti.append(i)
+							break
+	for i in fonti:
 		var c = i["innesco"].get("condizione")
 		if c is Dictionary and not c.is_empty() and Interprete.new(self).valuta(c) == false:
 			continue
@@ -564,3 +643,93 @@ func carta_stato(parola: String) -> String:
 			if scelta == "" or (solo == (personaggi().size() == 1)):
 				scelta = img
 	return scelta
+
+## --- Oggetti attivi ----------------------------------------------------------------------
+## Al massimo 1 Oggetto attivo per parola chiave (Arma, Armatura, Scudo, Compagno, Reliquia), salvo carte
+## che ne permettono di più. Gli attivi sono i primi nell'elenco degli Oggetti del Personaggio.
+const PAROLE_OGGETTO := ["arma", "armatura", "scudo", "compagno", "reliquia"]
+## Regole dei Tuathan (pila gestita dal giocatore, capitolo 8 della campagna): restano come testo
+## sulla carta e nella Cronaca. "affinita_come_verde" dipende dai colori del misuratore stampato.
+const MODIFICATORI_TESTUALI := ["nutrimento", "converti", "no_azione_personaggio", "no_ripristino", "no_paga", "fuori_raggio_ok", "affinita_come_verde"]
+
+static func parola_oggetto(img: String) -> String:
+	var pw = Carte.auto(img).get("parola", Carte.dati(img).get("parola", ""))
+	return "" if pw == null else str(pw).to_lower()
+
+func limite_parola(x: Dictionary, parola: String) -> int:
+	match parola:
+		"compagno":
+			var m := modificatori("compagni_attivi", x)
+			return 1 if m.is_empty() else int(m.map(func(z): return int(z.get("n", 1))).max())
+		"reliquia":
+			var m2 := modificatori("reliquie_attive", x)
+			return 1 if m2.is_empty() else int(m2.map(func(z): return int(z.get("n", 1))).max())
+		"arma":
+			var m3 := modificatori("armi_attive", x)
+			if not m3.is_empty() and not x.get("oggetti", []).any(func(o): return parola_oggetto(o) == "scudo"):
+				return int(m3.map(func(z): return int(z.get("n", 1))).max())
+	return 1
+
+func oggetti_attivi(x: Dictionary) -> Array:
+	var out := []
+	var conta := {}
+	for o in x.get("oggetti", []):
+		var pw := parola_oggetto(o)
+		if PAROLE_OGGETTO.has(pw):
+			conta[pw] = int(conta.get(pw, 0)) + 1
+			# il limite dipende da modificatori che a loro volta vengono dagli Oggetti: si usa il caso base
+			if int(conta[pw]) > (1 if pw != "compagno" and pw != "reliquia" and pw != "arma" else _limite_semplice(x, pw)):
+				continue
+		out.append(o)
+	return out
+
+## Limite senza ricorsione: guarda direttamente i testi codificati di Segreti, Abilità e Oggetti.
+func _limite_semplice(x: Dictionary, pw: String) -> int:
+	var cosa: String = {"compagno": "compagni_attivi", "reliquia": "reliquie_attive", "arma": "armi_attive"}[pw]
+	var lim := 1
+	var fonti: Array = d.get("segreti", []).map(func(n): return Carte.segreto(int(n)))
+	for y in personaggi():
+		fonti.append_array(y.get("oggetti", []))
+		for ab in y.get("abilita", []):
+			if ab is Dictionary:
+				var fa: Array = Carte.auto(str(ab.get("img", ""))).get("facce", [])
+				var i := int(ab.get("faccia", 0))
+				if i < fa.size() and fa[i] is Dictionary and y == x:
+					for inn in fa[i].get("inneschi", []):
+						for s in inn.get("effetti", []):
+							if s is Dictionary and str(s.get("cosa", "")) == cosa:
+								lim = maxi(lim, int(s.get("n", 1)))
+	for img in fonti:
+		for inn in Carte.auto(str(img)).get("inneschi", []):
+			if inn is Dictionary:
+				for s in inn.get("effetti", []):
+					if s is Dictionary and str(s.get("cosa", "")) == cosa:
+						lim = maxi(lim, int(s.get("n", 1)))
+	if pw == "arma" and x.get("oggetti", []).any(func(o): return parola_oggetto(o) == "scudo"):
+		lim = 1
+	return lim
+
+func attivo_oggetto(x: Dictionary, img: String) -> bool:
+	return oggetti_attivi(x).has(img)
+
+## Rende attivo un Oggetto (lo porta in cima: gli altri della stessa parola chiave diventano coperti).
+func attiva_oggetto(x: Dictionary, img: String) -> void:
+	var og: Array = x.get("oggetti", [])
+	og.erase(img)
+	og.push_front(img)
+	cambiato()
+
+## Dà un Oggetto a un altro Personaggio nello stesso Luogo (non le carte "non cedibili").
+func cedibile(img: String) -> bool:
+	for inn in Carte.auto(img).get("inneschi", []):
+		if inn is Dictionary:
+			for s in inn.get("effetti", []):
+				if s is Dictionary and str(s.get("cosa", "")) == "non_cedibile":
+					return false
+	return true
+
+func dai_oggetto(da: Dictionary, a: Dictionary, img: String) -> void:
+	da["oggetti"].erase(img)
+	a["oggetti"].append(img)
+	racconta("%s dà %s a %s" % [da["nome"], Carte.nome(img), a["nome"]])
+	cambiato()

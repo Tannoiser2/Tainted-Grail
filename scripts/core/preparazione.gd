@@ -6,6 +6,19 @@ extends RefCounted
 ## mazzi Oggetti/Segreti/Eventi e mazzi Incontro del Capitolo 1.
 static func capitolo_1(p: Partita) -> void:
 	var d := p.d
+	mappa_iniziale(p)
+	# Oggetti mescolati, Segreti in ordine di numero
+	var ogg: Array = Carte.gruppo("oggetti").duplicate()
+	ogg.shuffle()
+	d["mazzi"]["oggetti"] = ogg
+	d["mazzi"]["abilita"] = Carte.gruppo("abilita").duplicate()
+	prepara_incontri(p, 1)
+	prepara_eventi(p, 1)
+	p.racconta("Preparazione del Capitolo 1: Cuanacht, Menhir con Quadrante %d" % int(d["menhir"]["101"]["quadrante"]))
+
+## Mappa di partenza: Cuanacht (101) con il Menhir attivo e i 4 Luoghi collegati; Personaggi sul 101.
+static func mappa_iniziale(p: Partita) -> void:
+	var d := p.d
 	p.piazza_luogo(101, Vector2i(0, 0))
 	d["menhir"]["101"] = {"quadrante": p.quadrante_iniziale(8)}
 	# i 4 Luoghi collegati al 101 (anche se la carta non è ancora trascritta)
@@ -16,14 +29,6 @@ static func capitolo_1(p: Partita) -> void:
 		p.piazza_luogo(n, Vector2i(0, 0) + Partita.DIREZIONI[k])
 	for x in p.personaggi():
 		x["luogo"] = 101
-	# Oggetti mescolati, Segreti in ordine di numero
-	var ogg: Array = Carte.gruppo("oggetti").duplicate()
-	ogg.shuffle()
-	d["mazzi"]["oggetti"] = ogg
-	d["mazzi"]["abilita"] = Carte.gruppo("abilita").duplicate()
-	prepara_incontri(p, 1)
-	prepara_eventi(p, 1)
-	p.racconta("Preparazione del Capitolo 1: Cuanacht, Menhir con Quadrante %d" % int(d["menhir"]["101"]["quadrante"]))
 
 ## Mazzi Incontro di un capitolo: le carte dei livelli previsti (dalla carta Preparazione,
 ## se trascritta; altrimenti il livello 1 al Capitolo 1, +1 livello ogni 3 Capitoli).

@@ -250,7 +250,7 @@ func _passo(s: Dictionary) -> void:
 		"dado":
 			await _dado(s)
 		"quadrante_lancio":
-			var graal := randi() % 2 == 0
+			var graal := await lancia_quadrante()
 			ctx["lancio"] = "graal" if graal else "teschio"
 			p.d["ultimo_lancio"] = ctx["lancio"]
 			_r("Lancio del Quadrante: %s" % ("Graal" if graal else "Teschio"))
@@ -300,7 +300,13 @@ func _passo(s: Dictionary) -> void:
 		"manuale":
 			_r(Dati.testo_leggibile(str(s.get("testo", ""))), false)
 		"modificatore":
-			pass
+			# un modificatore con durata (es. "durante questo Riposo") resta sul Personaggio fino alla nuova Giornata
+			if s.has("durata"):
+				var chi_m: Dictionary = ctx.get("proprietario", {}) if ctx.get("proprietario") is Dictionary and not ctx.get("proprietario", {}).is_empty() else _attivo()
+				var s2: Dictionary = s.duplicate()
+				s2.erase("durata")
+				chi_m.get_or_add("mod_temp", []).append(s2)
+				_r("%s: effetto attivo fino alla fine del Riposo" % chi_m.get("nome", ""))
 		"spunta":
 			var sp: Dictionary = p.d.get_or_add("spunte", {})
 			var nome := str(s.get("nome", ""))
@@ -411,6 +417,28 @@ func _passo(s: Dictionary) -> void:
 					p.modifica(x, r2, -1)
 					tot -= 1
 				_r("%s tiene al massimo %d risorse" % [x["nome"], mx])
+		"ritira_dado", "rilancia":
+			if ctx.has("tiro"):
+				var v2 := randi_range(1, 6)
+				ctx["tiro"] = v2 + int(ctx.get("mod_dado", 0))
+				_r("Dado ritirato: %d → totale %d" % [v2, int(ctx["tiro"])])
+		"scambia_quadranti_menhir":
+			var attivi: Array = p.d.get("menhir", {}).keys().filter(func(k): return int(p.d["menhir"][k].get("quadrante", 0)) > 0)
+			if attivi.size() < 2:
+				_r("Servono 2 Menhir attivi", false)
+				return
+			var nomi := attivi.map(func(k): return "Menhir del Luogo %s (Quadrante %d)" % [str(k), int(p.d["menhir"][k]["quadrante"])])
+			var a1 := await _scegli("Primo Menhir", nomi)
+			var k1: String = attivi[a1]
+			attivi.remove_at(a1)
+			nomi.remove_at(a1)
+			var k2: String = attivi[await _scegli("Con quale Menhir scambiare il Quadrante?", nomi)]
+			var q1 := int(p.d["menhir"][k1]["quadrante"])
+			p.d["menhir"][k1]["quadrante"] = int(p.d["menhir"][k2]["quadrante"])
+			p.d["menhir"][k2]["quadrante"] = q1
+			_r("Quadranti scambiati: Luogo %s → %d, Luogo %s → %d" % [k1, int(p.d["menhir"][k1]["quadrante"]), k2, q1])
+		"dado_sfida":
+			await _dado_sfida(s)
 		"mod_tiro":
 			if ctx.has("tiro"):
 				ctx["tiro"] = maxi(int(s.get("min", -99)), int(ctx["tiro"]) + int(s.get("n", 0)))
@@ -835,20 +863,90 @@ func _capitolo(s: Dictionary) -> void:
 			_r("Capitolo completato!")
 		"prepara":
 			var c := int(s["capitolo"]) if s.get("capitolo") != null else p.capitolo() + 1
-			Preparazione.capitolo(p, c, "" if s.get("lettera") == null else str(s.get("lettera")))
+			if p.d.get("mappa", {}).is_empty() and c == 1:
+				Preparazione.capitolo_1(p)
+			else:
+				Preparazione.capitolo(p, c, "" if s.get("lettera") == null else str(s.get("lettera")))
+				# dopo la Misericordia della Madre la mappa è vuota: si riparte da Cuanacht
+				if p.d.get("mappa", {}).is_empty():
+					Preparazione.mappa_iniziale(p)
 			_r("Preparato il Capitolo %d%s" % [c, str(s.get("lettera", ""))])
 
 func _dado(s: Dictionary) -> void:
 	var v := randi_range(1, 6)
 	var mod := 0
 	mod = modificatore_dado(s.get("mod", []))
-	var tot := v + mod
-	ctx["tiro"] = tot
-	_r("Dado: %d%s = %d" % [v, (" %+d" % mod) if mod != 0 else "", tot])
+	_r("Dado: %d%s = %d" % [v, (" %+d" % mod) if mod != 0 else "", v + mod])
+	var tot := await dopo_tiro(v, mod)
 	for r in s.get("risultati", []):
 		if tot >= int(r.get("da", 0)) and tot <= int(r.get("a", 99)):
 			await esegui(r.get("effetti", []))
 			break
+
+## Dopo un tiro di dado: carte che lo modificano o lo fanno ripetere (Fortunato, Amuleto Portafortuna…).
+## Restituisce il totale finale (anche in ctx.tiro).
+func dopo_tiro(dado: int, mod: int) -> int:
+	ctx["tiro"] = dado + mod
+	ctx["mod_dado"] = mod
+	if ui == null or not ui.has_method("scegli"):
+		return int(ctx["tiro"])
+	for q in ["tiro_dado", "rilancio"]:
+		for i in p.inneschi(q, _attivo()):
+			var inn: Dictionary = i["innesco"]
+			if inn.get("condizione") is Dictionary and not inn["condizione"].is_empty() and valuta(inn["condizione"]) != true:
+				continue
+			var costo: Array = inn.get("costo", []) if inn.get("costo") is Array else []
+			var ct := ", ".join(costo.filter(func(c): return c is Dictionary and str(c.get("tipo", "")) == "paga").map(func(c): return "%d %s" % [int(c.get("n", 1)), str(c.get("ris", "")).capitalize()]))
+			if await ui.scegli("Risultato del dado: %d. Usare %s%s?" % [int(ctx["tiro"]), Carte.nome(str(i["img"])), (" (costo: %s)" % ct) if ct != "" else ""], ["Sì", "No"]) != 0:
+				continue
+			if not costo.is_empty() and not await esegui(costo):
+				continue
+			await esegui(inn.get("effetti", []))
+	return int(ctx["tiro"])
+
+## Lancio del Quadrante (Graal o Teschio) con le carte che permettono di rilanciarlo.
+func lancia_quadrante() -> bool:
+	var graal := randi() % 2 == 0
+	if ui != null and ui.has_method("scegli"):
+		var esito := "Graal" if graal else "Teschio"
+		if not p.modificatori("rilancia_quadrante", _attivo()).is_empty():
+			if await ui.scegli("Quadrante: %s. Rilanciarlo (Sensi acuti)? Vale il secondo risultato." % esito, ["Rilancia", "Tieni %s" % esito]) == 0:
+				return randi() % 2 == 0
+		for i in p.inneschi("rilancio", _attivo()):
+			var costo: Array = i["innesco"].get("costo", []) if i["innesco"].get("costo") is Array else []
+			if await ui.scegli("Quadrante: %s. Rilanciarlo con %s?" % [esito, Carte.nome(str(i["img"]))], ["Rilancia", "Tieni %s" % esito]) == 0:
+				if costo.is_empty() or await esegui(costo):
+					return randi() % 2 == 0
+	return graal
+
+## Sfida a dadi fra i Personaggi (es. "chi ottiene il risultato più basso pesca un Incontro").
+func _dado_sfida(s: Dictionary) -> void:
+	var cand := []
+	for x in p.personaggi():
+		var it := Interprete.new(p, inc, ui, {"proprietario": x, "luogo": int(x["luogo"])})
+		if s.get("condizione") is Dictionary and not s["condizione"].is_empty() and it.valuta(s["condizione"]) == false:
+			continue
+		cand.append(x)
+	if cand.is_empty():
+		_r("Nessun Personaggio partecipa al tiro")
+		return
+	var perde := {}
+	var peggio := 99
+	var tiri := []
+	for x in cand:
+		var v := randi_range(1, 6)
+		tiri.append("%s %d" % [x["nome"], v])
+		# a parità perde il Personaggio con il numero più alto (l'ultimo nell'ordine)
+		if (v < peggio) if str(s.get("perde", "piu_basso")) == "piu_basso" else (v > peggio or peggio == 99):
+			peggio = v
+			perde = x
+		elif v == peggio:
+			perde = x
+	_r("Tiri: %s → tocca a %s" % [", ".join(tiri), perde["nome"]])
+	p.d["attivo"] = p.personaggi().find(perde)
+	var it2 := Interprete.new(p, inc, ui, {"proprietario": perde, "luogo": int(perde["luogo"])})
+	await it2.esegui(s.get("effetti", []))
+	rapporto.append_array(it2.rapporto)
 
 ## Cambia un attributo: dal 3° punto ogni punto è una carta Abilità (si sceglie la faccia);
 ## perdendo un punto si scarta prima un'Abilità di quell'attributo.
@@ -979,7 +1077,7 @@ func _passo_incontro(s: Dictionary) -> void:
 					inc.nota("Le Ferite diventano segnalini persi.")
 					inc._perdi_cubi(maxi(0, nf - inc.meno_cubi))
 					return
-			inc._ferite(nf, ctx.get("attacco", false) and not s.get("inevitabile", false) and not ctx.get("finta", false))
+			await inc._ferite(nf, ctx.get("attacco", false) and not s.get("inevitabile", false) and not ctx.get("finta", false))
 		"previeni":
 			inc.prevenzione += _n(s)
 			inc.nota("Previeni %d Ferite." % int(s.get("n", 0)))

@@ -147,12 +147,24 @@ func _riga_tiro(tiro: Dictionary) -> Control:
 	var h := HBoxContainer.new()
 	h.add_theme_constant_override("separation", 12)
 	var b := Tema.pulsante_primario("TIRA IL DADO", func():
+		if _occupato:
+			return
+		_occupato = true
 		var mod := motore.modificatore_tiro()
 		var v := randi_range(1, 6)
-		motore.imposta_tiro(v + int(mod["valore"]))
+		var tot := v + int(mod["valore"])
 		var s := "Dado: %d" % v
 		if int(mod["valore"]) != 0:
-			s += " %+d (%s) = %d" % [int(mod["valore"]), mod["testo"], v + int(mod["valore"])]
+			s += " %+d (%s) = %d" % [int(mod["valore"]), mod["testo"], tot]
+		if partita:
+			# carte che cambiano o ripetono il tiro (Fortunato, Amuleto Portafortuna…)
+			var it := Interprete.new(partita, null, domande, motore.contesto())
+			var t2 := await it.dopo_tiro(v, int(mod["valore"]))
+			if t2 != tot:
+				s += " → %d" % t2
+				tot = t2
+		motore.imposta_tiro(tot)
+		_occupato = false
 		if partita:
 			partita.racconta("Tiro di dado al Luogo %d: %s" % [int(motore.luogo().get("n", 0)), s])
 		aggiorna()

@@ -373,7 +373,12 @@ func _testo_stato() -> String:
 func _mostra_mano(p: Dictionary, giocabile: bool) -> void:
 	if p.is_empty():
 		return
-	for c in inc.mani.get(str(p["id"]), []):
+	var carte: Array = inc.mani.get(str(p["id"]), []).duplicate()
+	# Un passo avanti: si gioca con la prima carta del mazzo scoperta
+	var mz: Array = inc.mazzi.get(str(p["id"]), [])
+	if not mz.is_empty() and not inc.partita.modificatori("mazzo_scoperto", p).is_empty():
+		carte.append(mz[0])
+	for c in carte:
 		var v := VBoxContainer.new()
 		v.add_theme_constant_override("separation", 2)
 		var t := _carta(c, Vector2(180, 272))
