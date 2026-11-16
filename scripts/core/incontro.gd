@@ -323,7 +323,12 @@ func collegamenti(c: String) -> Array:
 				out.append({"riga": r, "bonus": bm, "tipo": "magia", "attr": "magic", "ok": _magia_disponibile() > 0})
 			continue
 		var liv := int(prev.get("liv", 1))
-		out.append({"riga": r, "bonus": b, "tipo": "attributo", "attr": str(a), "ok": partita.attributo(attivo(), str(a)) >= liv, "liv": liv})
+		# prima dell'attivazione si guarda il Personaggio che la finestra mostra (il primo da attivare)
+		var chi := attivo()
+		if chi.is_empty():
+			var lib := da_attivare()
+			chi = lib[0] if not lib.is_empty() else (membri[0] if not membri.is_empty() else {})
+		out.append({"riga": r, "bonus": b, "tipo": "attributo", "attr": str(a), "ok": partita.attributo(chi, str(a)) >= liv, "liv": liv})
 	var fb := _lista(d.get("fondo", {}).get("bonus"))
 	if not fb.is_empty():
 		var mf := _moltiplicatore(ap["molt"])
@@ -696,7 +701,7 @@ func _controlla_fine_carte() -> void:
 		concludi("vittoria")
 
 func _controlla_affinita() -> bool:
-	var a: Dictionary = carta.get("affinita", {})
+	var a: Dictionary = carta["affinita"] if carta.get("affinita") is Dictionary else {}
 	var verdi := int(a.get("verdi", 3))
 	var rossi := int(a.get("rossi", 3))
 	if affinita >= verdi:
@@ -1020,8 +1025,12 @@ func esegui_capacita(c: String, innesco: String, contesto := {}) -> void:
 			if v != true:
 				continue
 		if cap.get("facoltativo", false) and ui and ui.has_method("scegli"):
-			if await ui.scegli("Usare la Capacità di %s?" % Carte.nome(c), ["Sì", "No"]) != 0:
-				continue
+			var tc: String = str(testo[i].get("it", "")) if i < testo.size() and testo[i] is Dictionary else ""
+			await it.usa_facoltativo("Usare la Capacità di %s?" % Carte.nome(c), tc, cap.get("costo", []) if cap.get("costo") is Array else [], cap.get("effetti", []))
+			for r in it.rapporto:
+				if not r.get("fatto", true):
+					nota("Da applicare a mano: " + str(r["testo"]))
+			continue
 		if cap.get("costo") is Array and not cap["costo"].is_empty():
 			if not await it.esegui(cap["costo"]):
 				continue
@@ -1052,10 +1061,12 @@ func scatena(quando: String, chi: Dictionary = {}, extra := {}) -> void:
 		if inn.get("condizione") is Dictionary and not inn["condizione"].is_empty() and it.valuta(inn["condizione"]) != true:
 			continue
 		if inn.get("facoltativo", false) or (inn.get("costo") is Array and not inn["costo"].is_empty()):
-			if not (ui and ui.has_method("scegli")):
-				continue
-			if await ui.scegli("%s: usare \"%s\"?" % [str(i["chi"].get("nome", "Compagnia")), Carte.nome(i["img"])], ["Sì", "No"]) != 0:
-				continue
+			if await it.usa_facoltativo("%s: usare «%s»?" % [str(i["chi"].get("nome", "Compagnia")), Carte.nome(i["img"])], Interprete.testo_carta(str(i["img"])),
+					inn.get("costo", []) if inn.get("costo") is Array else [], inn.get("effetti", [])):
+				if (inn.get("gira", false) or str(inn.get("una_volta", "")) == "incontro"):
+					usati_inneschi[chiave] = true
+				nota("%s (%s)." % [Carte.nome(i["img"]), quando.replace("_", " ")])
+			continue
 		if inn.get("costo") is Array and not await it.esegui(inn["costo"]):
 			continue
 		usati_inneschi[chiave] = true
@@ -1200,15 +1211,15 @@ func anteprima(c: String) -> Dictionary:
 						out["speciali"].append(sp)
 				_:
 					effetti.append(str(b))
-		out["righe"].append({"chiave": nome_chiave, "ok": ok, "effetti": ", ".join(effetti), "nota": nota_ok})
+		out["righe"].append({"chiave": nome_chiave, "ok": ok, "effetti": ", ".join(effetti), "nota": nota_ok, "riga": int(k["riga"]), "tipo": str(k["tipo"])})
 	var cubi_eff: int = out["cubi"]
 	if prima and ha_tratto("Difens") and cubi_eff > 0 and not diplomazia:
 		cubi_eff -= 1
-		out["righe"].append({"chiave": "Difensivo", "ok": true, "effetti": "−1 segnalino", "nota": ""})
+		out["righe"].append({"chiave": "Difensivo", "ok": true, "effetti": "−1 segnalino", "nota": "", "riga": -1, "tipo": "tratto"})
 	out["riserva_dopo"] = riserva + cubi_eff
 	out["affinita_dopo"] = affinita + int(out["affinita"])
 	out["vittoria"] = not diplomazia and int(out["riserva_dopo"]) >= valore()
-	var a: Dictionary = carta.get("affinita", {})
+	var a: Dictionary = carta["affinita"] if carta.get("affinita") is Dictionary else {}
 	out["fase_vinta"] = diplomazia and int(out["affinita_dopo"]) >= int(a.get("verdi", 3))
 	out["fallita"] = diplomazia and int(out["affinita_dopo"]) <= -int(a.get("rossi", 3))
 	var cap := []
@@ -1253,3 +1264,28 @@ func attacco_previsto(ris: int) -> Dictionary:
 							fer += int(s.get("n", 0))
 			return {"testo": str(r.get("it", "")), "ferite": fer, "da": int(r.get("da", 0)), "a": int(r.get("a", 99))}
 	return {}
+
+## Semichiavi aperte dall'ultima carta (o dalla carta nemica): per ognuna se il Personaggio la può collegare.
+## [{"riga", "ok", "motivo"}]; la riga 5 è la Chiave in fondo.
+func aperture_visibili(p: Dictionary = {}) -> Array:
+	var chi := p if not p.is_empty() else attivo()
+	if chi.is_empty() and not membri.is_empty():
+		chi = membri[0]
+	var ap := _aperture()
+	var out := []
+	for r in ap["righe"]:
+		var a = ap["righe"][r].get("apre")
+		if a == null:
+			continue
+		var liv := int(ap["righe"][r].get("liv", 1))
+		if str(a) == "magic":
+			out.append({"riga": int(r), "ok": paga_magia and _magia_disponibile() > 0, "motivo": "serve 1 Magia"})
+		else:
+			var v := partita.attributo(chi, str(a)) if not chi.is_empty() else 0
+			out.append({"riga": int(r), "ok": v >= liv, "motivo": "serve %s %d (hai %d)" % [Partita.NOMI_ATTRIBUTI.get(str(a), str(a)), liv, v]})
+	if ap["molt"] != null:
+		var m := _moltiplicatore(ap["molt"])
+		if m == 0 and not mod("chiavi_senza_costo_1x").is_empty():
+			m = 1
+		out.append({"riga": 5, "ok": m > 0, "motivo": "la Chiave in fondo vale ×%d" % m})
+	return out

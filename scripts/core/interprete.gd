@@ -64,6 +64,46 @@ func _scegli(titolo: String, opzioni: Array) -> int:
 		return await ui.scegli(titolo, opzioni)
 	return 0
 
+## Carta o Capacità facoltativa in UNA sola schermata: se gli effetti sono una scelta compaiono subito le
+## opzioni più "Non usare", altrimenti "Usa" (con il costo) e "Non usare". false = rinuncia o costo non pagato.
+func usa_facoltativo(titolo: String, testo: String, costo: Array, effetti: Array) -> bool:
+	if not (ui and ui.has_method("scegli")):
+		return false
+	var dom := titolo
+	if testo.strip_edges() != "":
+		dom += "\n[i]" + testo.strip_edges() + "[/i]"
+	var ct := ", ".join(costo.filter(func(c): return c is Dictionary and str(c.get("tipo", "")) == "paga").map(func(c): return "%d %s" % [int(c.get("n", 1)), Partita.NOMI_RISORSE.get(str(c.get("ris", "")), str(c.get("ris", "")).capitalize())]))
+	var sc: Dictionary = effetti[0] if effetti.size() == 1 and effetti[0] is Dictionary and str(effetti[0].get("tipo", "")) == "scelta" else {}
+	if not sc.is_empty() and not sc.get("opzioni", []).is_empty():
+		var opz: Array = sc["opzioni"]
+		var nomi: Array = opz.map(func(o): return Dati.testo_leggibile(str(o.get("testo", "?"))) + ((" (paga %s)" % ct) if ct != "" else ""))
+		nomi.append("Non usare")
+		var k := await _scegli(dom, nomi)
+		if k >= opz.size():
+			return false
+		if not costo.is_empty() and not await esegui(costo):
+			return false
+		_r("Scelta: " + Dati.testo_leggibile(str(opz[k].get("testo", ""))))
+		await esegui(opz[k].get("effetti", []))
+		return true
+	if await _scegli(dom, ["Usa" + ((" (paga %s)" % ct) if ct != "" else ""), "Non usare"]) != 0:
+		return false
+	if not costo.is_empty() and not await esegui(costo):
+		return false
+	await esegui(effetti)
+	return true
+
+## Testo stampato di una carta (per spiegare cosa fa quando si chiede se usarla).
+static func testo_carta(img: String) -> String:
+	var d := Carte.dati(img)
+	for k in ["testo", "capacita", "effetto"]:
+		var v = d.get(k)
+		if v is Dictionary and str(v.get("it", "")) != "":
+			return str(v["it"])
+		if v is Array and not v.is_empty() and v[0] is Dictionary and str(v[0].get("it", "")) != "":
+			return "\n".join(v.map(func(z): return str(z.get("it", "")) if z is Dictionary else ""))
+	return ""
+
 func _scegli_personaggio(titolo: String, lista: Array) -> Dictionary:
 	if ui and ui.has_method("scegli_personaggio"):
 		return await ui.scegli_personaggio(titolo, lista)
@@ -1036,12 +1076,13 @@ func scatena(quando: String, chi: Dictionary = {}) -> void:
 			ctx["proprietario"] = vecchio
 			continue
 		if inn.get("facoltativo", false) or (inn.get("costo") is Array and not inn["costo"].is_empty()):
-			if not (ui and ui.has_method("scegli")):
-				ctx["proprietario"] = vecchio
-				continue
-			if await _scegli("%s: usare \"%s\"?" % [str(i["chi"].get("nome", "Compagnia")), Carte.nome(i["img"])], ["Sì", "No"]) != 0:
-				ctx["proprietario"] = vecchio
-				continue
+			interrotto = false
+			if await usa_facoltativo("%s: usare «%s»?" % [str(i["chi"].get("nome", "Compagnia")), Carte.nome(i["img"])], testo_carta(str(i["img"])),
+					inn.get("costo", []) if inn.get("costo") is Array else [], inn.get("effetti", [])):
+				_r("%s (%s)" % [Carte.nome(i["img"]), quando.replace("_", " ")])
+			interrotto = false
+			ctx["proprietario"] = vecchio
+			continue
 		interrotto = false
 		if inn.get("costo") is Array and not await esegui(inn["costo"]):
 			interrotto = false

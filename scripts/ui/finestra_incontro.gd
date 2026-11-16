@@ -1,6 +1,9 @@
-## Finestra dell'Incontro: carta nemica e sua tabella a sinistra, guida al passo attuale, Sequenza,
-## anteprima di cosa succede giocando la carta indicata e mano del personaggio attivo al centro,
-## cronaca a destra. Sotto ogni carta della mano è scritto se si può giocare e che cosa darebbe.
+## Finestra dell'Incontro. In alto la guida al passo attuale e i comandi; poi il tavolo: la carta nemica
+## con la Sequenza collegata alla sua destra come sul tavolo vero (ogni carta copre la precedente lasciando
+## scoperte le sue semichiavi), con i cubetti universali, i gettoni Tempo, le Cariche e le semichiavi che si
+## possono collegare evidenziate; sotto, la mano del Personaggio (un tocco sceglie e mostra cosa succede, il
+## secondo tocco o GIOCA la gioca); in fondo cosa fa la carta scelta, cosa succede se si termina, lo stato
+## della Compagnia e la cronaca. Non si ripete ciò che è già stampato sulla carta nemica.
 class_name FinestraIncontro
 extends Control
 
@@ -9,21 +12,27 @@ signal finito(esito: String)
 var partita: Partita
 var inc: Incontro
 var domande: Domande
-var _nemico: TextureRect
-var _stato: RichTextLabel
 var _guida: RichTextLabel
-var _seq: HBoxContainer
+var _comandi: HFlowContainer
+var _scorri_tavolo: ScrollContainer
+var _fila: Control
 var _mano: HBoxContainer
-var _comandi: HBoxContainer
-var _log: RichTextLabel
 var _anteprima: RichTextLabel
+var _compagnia: RichTextLabel
+var _log: RichTextLabel
 var _fase := "inizio"   # inizio, scegli, gioca, fine, speciale
 var _occupato := false
+var _scelta := ""       # carta della mano scelta (primo tocco)
+var _sopra := ""        # carta sotto il puntatore
 
 const VERDE_T := "#8fcf6a"
 const ROSSO_T := "#e0614f"
 const ORO_T := "#d4ae63"
 const GRIGIO_T := "#a89a84"
+## Altezza delle carte sul tavolo e in mano: si adatta all'altezza dello schermo (più grandi in 4:3, su iPad).
+var H_TAVOLO := 400.0
+var H_MANO := 280.0
+var _sm: ScrollContainer
 
 func _init(partita_: Partita, img: String, colore: String, domande_: Domande = null) -> void:
 	partita = partita_
@@ -35,122 +44,128 @@ func _ready() -> void:
 	set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	theme = Tema.tema
 	var fondo := ColorRect.new()
-	fondo.color = Color(0.03, 0.02, 0.015, 0.95)
+	fondo.color = Color(0.03, 0.02, 0.015, 1.0)
+	_dimensioni()
 	fondo.set_anchors_preset(Control.PRESET_FULL_RECT)
 	add_child(fondo)
 	var m := MarginContainer.new()
 	m.set_anchors_preset(Control.PRESET_FULL_RECT)
 	for k in ["left", "right", "top", "bottom"]:
-		m.add_theme_constant_override("margin_" + k, 16)
+		m.add_theme_constant_override("margin_" + k, 12)
 	add_child(m)
-	var h := HBoxContainer.new()
-	h.add_theme_constant_override("separation", 16)
-	m.add_child(h)
-	# sinistra: carta nemica e sua scheda (tratti spiegati, tabella d'attacco con la riga attuale)
-	var sx := VBoxContainer.new()
-	sx.custom_minimum_size = Vector2(400, 0)
-	sx.add_theme_constant_override("separation", 8)
-	h.add_child(sx)
-	_nemico = TextureRect.new()
-	_nemico.custom_minimum_size = Vector2(400, 420)
-	_nemico.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	_nemico.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	Immagini.carica(Carte.immagine(inc.img), func(t): if is_instance_valid(_nemico): _nemico.texture = t)
-	sx.add_child(_nemico)
-	var ss := ScrollContainer.new()
-	ss.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	ss.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	sx.add_child(ss)
-	_stato = Tema.testo_ricco(17)
-	_stato.custom_minimum_size = Vector2(384, 0)
-	ss.add_child(_stato)
-	# centro: guida, Sequenza, anteprima, comandi, mano
-	var c := VBoxContainer.new()
-	c.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	c.add_theme_constant_override("separation", 8)
-	h.add_child(c)
+	var v := VBoxContainer.new()
+	v.add_theme_constant_override("separation", 8)
+	m.add_child(v)
+	# guida e comandi
 	var gp := PanelContainer.new()
-	gp.add_theme_stylebox_override("panel", Tema.box(Color(0.16, 0.11, 0.06, 0.95), Tema.ORO, 1, 4, 12))
-	c.add_child(gp)
+	gp.add_theme_stylebox_override("panel", Tema.box(Color(0.16, 0.11, 0.06, 0.95), Tema.ORO, 1, 4, 10))
+	v.add_child(gp)
+	var gv := VBoxContainer.new()
+	gv.add_theme_constant_override("separation", 8)
+	gp.add_child(gv)
 	_guida = Tema.testo_ricco(19)
-	gp.add_child(_guida)
-	c.add_child(Tema.etichetta("SEQUENZA (la carta a destra è quella a cui si collega la prossima)", 14, Tema.TESTO_2))
-	var sseq := ScrollContainer.new()
-	sseq.custom_minimum_size = Vector2(0, 215)
-	sseq.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	c.add_child(sseq)
-	_seq = HBoxContainer.new()
-	_seq.add_theme_constant_override("separation", -90)
-	sseq.add_child(_seq)
+	_guida.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_guida.custom_minimum_size = Vector2(600, 0)
+	gv.add_child(_guida)
+	_comandi = HFlowContainer.new()
+	_comandi.add_theme_constant_override("h_separation", 10)
+	_comandi.add_theme_constant_override("v_separation", 6)
+	gv.add_child(_comandi)
+	# tavolo: carta nemica + Sequenza
+	_scorri_tavolo = ScrollContainer.new()
+	_scorri_tavolo.custom_minimum_size = Vector2(0, H_TAVOLO + 14)
+	_scorri_tavolo.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	v.add_child(_scorri_tavolo)
+	_fila = Control.new()
+	_fila.mouse_filter = Control.MOUSE_FILTER_PASS
+	_scorri_tavolo.add_child(_fila)
+	# mano
+	var sm := ScrollContainer.new()
+	_sm = sm
+	sm.custom_minimum_size = Vector2(0, H_MANO + 44)
+	sm.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	v.add_child(sm)
+	_mano = HBoxContainer.new()
+	_mano.add_theme_constant_override("separation", 12)
+	sm.add_child(_mano)
+	# in fondo: cosa succede | Compagnia e cronaca
+	var basso := HBoxContainer.new()
+	basso.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	basso.custom_minimum_size = Vector2(0, 150)
+	basso.add_theme_constant_override("separation", 10)
+	v.add_child(basso)
 	var ap := PanelContainer.new()
+	ap.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	ap.add_theme_stylebox_override("panel", Tema.box(Color(0.09, 0.07, 0.05, 0.95), Tema.ORO_SCURO, 1, 4, 10))
-	ap.custom_minimum_size = Vector2(0, 225)
-	c.add_child(ap)
+	basso.add_child(ap)
 	var sap := ScrollContainer.new()
 	sap.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	ap.add_child(sap)
 	_anteprima = Tema.testo_ricco(17)
 	_anteprima.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	_anteprima.custom_minimum_size = Vector2(500, 0)
 	sap.add_child(_anteprima)
-	_comandi = HBoxContainer.new()
-	_comandi.add_theme_constant_override("separation", 10)
-	c.add_child(_comandi)
-	var sm := ScrollContainer.new()
-	sm.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	sm.custom_minimum_size = Vector2(0, 330)
-	sm.vertical_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	c.add_child(sm)
-	_mano = HBoxContainer.new()
-	_mano.add_theme_constant_override("separation", 12)
-	sm.add_child(_mano)
-	# destra: cronaca
 	var dx := PanelContainer.new()
-	dx.custom_minimum_size = Vector2(330, 0)
-	h.add_child(dx)
+	dx.custom_minimum_size = Vector2(560, 0)
+	dx.add_theme_stylebox_override("panel", Tema.box(Color(0.09, 0.07, 0.05, 0.95), Tema.ORO_SCURO, 1, 4, 10))
+	basso.add_child(dx)
+	var sd := ScrollContainer.new()
+	sd.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	dx.add_child(sd)
 	var dv := VBoxContainer.new()
-	dx.add_child(dv)
-	dv.add_child(Tema.etichetta("CRONACA DELL'INCONTRO", 15))
-	var sl := ScrollContainer.new()
-	sl.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	sl.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	dv.add_child(sl)
+	dv.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	sd.add_child(dv)
+	_compagnia = Tema.testo_ricco(16)
+	_compagnia.custom_minimum_size = Vector2(530, 0)
+	dv.add_child(_compagnia)
+	dv.add_child(Tema.etichetta("CRONACA DELL'INCONTRO", 14, Tema.ORO))
 	_log = Tema.testo_ricco(15)
-	_log.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	sl.add_child(_log)
+	_log.custom_minimum_size = Vector2(530, 0)
+	dv.add_child(_log)
 	inc.messaggio.connect(func(t):
 		_log.text = "• " + Dati.testo_bb(t, 16) + "\n" + _log.text)
 	inc.cambiato.connect(_aggiorna)
 	inc.finito.connect(func(_e):
 		_fase = "fine"
 		_aggiorna())
+	get_viewport().size_changed.connect(func():
+		if is_instance_valid(_fila):
+			_dimensioni()
+			_scorri_tavolo.custom_minimum_size.y = H_TAVOLO + 14
+			_sm.custom_minimum_size.y = H_MANO + 44
+			_aggiorna())
 	if inc.speciale():
 		_fase = "speciale"
 	else:
 		inc.inizia(partita.compagnia().filter(func(p): return int(p["salute"]) > 0))
 	_aggiorna()
 
+## Misuratore di Affinità della carta (alcune carte non lo hanno nei dati).
+func _aff() -> Dictionary:
+	return inc.carta["affinita"] if inc.carta.get("affinita") is Dictionary else {}
+
 func _bb(t: String) -> String:
 	return Dati.testo_bb(t, 18)
 
+func _dimensioni() -> void:
+	var vh := get_viewport_rect().size.y
+	var libero := maxf(600.0, vh - 330.0)
+	H_TAVOLO = floorf(libero * 0.555)
+	H_MANO = floorf(libero * 0.385)
+
+## Il Personaggio di cui si mostra la mano.
+func _chi_mano() -> Dictionary:
+	var a := inc.attivo()
+	if not a.is_empty():
+		return a
+	var liberi := inc.da_attivare()
+	if not liberi.is_empty():
+		return liberi[0]
+	return inc.membri[0] if not inc.membri.is_empty() else {}
+
 func _aggiorna() -> void:
-	if not is_instance_valid(_stato):
+	if not is_instance_valid(_guida):
 		return
-	_stato.text = _testo_stato()
-	for x in _seq.get_children():
-		x.queue_free()
-	for i in inc.sequenza.size():
-		var s: Dictionary = inc.sequenza[i]
-		var t := _carta(str(s["img"]), Vector2(142, 215))
-		var info := []
-		if int(s.get("tempo", 0)) > 0:
-			info.append("Gettoni Tempo: %d" % int(s["tempo"]))
-			t.modulate = Color(1, 0.92, 0.8)
-		if int(s.get("cariche", 0)) > 0:
-			info.append("Cariche: %d" % int(s["cariche"]))
-		t.tooltip_text = Carte.nome(str(s["img"])) + ("\n" + "\n".join(info) if not info.is_empty() else "")
-		_seq.add_child(t)
-	for x in _mano.get_children():
-		x.queue_free()
 	for x in _comandi.get_children():
 		x.queue_free()
 	match _fase:
@@ -158,10 +173,8 @@ func _aggiorna() -> void:
 			_guida.text = "[b]Incontro speciale[/b]: non si combatte. Applica l'effetto della carta."
 			_speciale()
 		"inizio":
-			_guida.text = _bb("[b]Prima di iniziare[/b] guarda la mano: puoi [b]rimescolarla[/b] (ne riprendi una carta in meno)%s. Poi premi [b]INIZIA[/b].\n%s" % [
+			_guida.text = _bb("[b]Prima di iniziare[/b] guarda la mano: puoi [b]rimescolarla[/b] (ne riprendi una carta in meno)%s. Poi premi [b]INIZIA[/b]. %s" % [
 				", oppure [b]Evitare[/b] l'Incontro pagando il costo" if _evitabile_mostrato() else "", _obiettivo()])
-			_anteprima.text = _spiegazione_regole()
-			_mostra_mano(inc.membri[0] if not inc.membri.is_empty() else {}, false)
 			for p in inc.membri:
 				var id := str(p["id"])
 				_comandi.add_child(Tema.pulsante("RIMESCOLA (%s)" % p["nome"], func(): inc.rimescola_mano(id), 15))
@@ -188,15 +201,14 @@ func _aggiorna() -> void:
 					return
 				inc.fine_turno.call_deferred()
 				return
-			_guida.text = _bb("[b]Turno %d[/b] — scegli quale Personaggio si attiva. %s" % [inc.turno, _obiettivo()])
-			_anteprima.text = _bb("Quando un Personaggio si attiva gioca [b]una carta qualsiasi[/b] dalla mano; altre carte solo se collegano una [b]Chiave dorata[/b]. Poi il nemico %s." % ("risponde (Risposta della fase)" if inc.diplomazia else "attacca secondo la riga della tabella che corrisponde alla Riserva"))
+			_guida.text = _bb("[b]Turno %d[/b]: scegli quale Personaggio si attiva. %s" % [inc.turno, _obiettivo()])
 			for p in liberi:
 				var id := str(p["id"])
 				_comandi.add_child(Tema.pulsante_primario("ATTIVA %s" % str(p["nome"]).to_upper(), func():
 					_fase = "gioca"
+					_scelta = ""
 					await inc.attiva(id)
 					_aggiorna()))
-			_mostra_mano(liberi[0], false)
 		"gioca":
 			var a := inc.attivo()
 			if inc.concluso != "":
@@ -209,28 +221,25 @@ func _aggiorna() -> void:
 				return
 			var prima := inc.carte_attivazione == 0
 			var panico := inc.in_panico() and prima
-			_guida.text = _bb("[b]%s[/b] — %s\n%s" % [a["nome"],
+			_guida.text = _bb("[b]%s[/b]: %s" % [a["nome"],
 				("[color=%s]IN PANICO[/color]: la prima carta è quella in cima al mazzo." % ROSSO_T) if panico else
-				("Gioca [b]una carta qualsiasi[/b] della mano (passa sopra una carta per vedere cosa succede)." if prima else
-				"Puoi giocare un'[b]altra carta[/b] solo se collega una Chiave dorata, oppure [b]TERMINA[/b]."),
-				_esito_termina()])
-			if _anteprima.text == "" or prima:
-				_anteprima.text = _bb("Passa il mouse su una carta della mano: qui vedrai quali Chiavi si collegano, quanti segnalini o quanta Affinità ottieni, cosa pescherai e come risponderà il nemico.")
+				("tocca una carta della mano per vedere cosa fa, toccala di nuovo (o GIOCA) per giocarla." if prima else
+				"puoi giocare un'[b]altra carta[/b] solo se collega una Chiave dorata, oppure [b]TERMINA[/b].")])
 			if panico and not inc.mazzi[str(a["id"])].is_empty():
 				var cima: String = inc.mazzi[str(a["id"])][0]
-				_anteprima.text = _descrivi_anteprima(cima)
+				_scelta = cima
 				_comandi.add_child(Tema.pulsante_primario("GIOCA LA CARTA IN CIMA AL MAZZO", func(): await _gioca(cima), 15))
-			else:
-				_mostra_mano(a, true)
+			elif _scelta != "" and inc.mani.get(str(a["id"]), []).has(_scelta) and inc.anteprima(_scelta)["giocabile"]:
+				_comandi.add_child(Tema.pulsante_primario("GIOCA %s" % Carte.nome(_scelta).to_upper(), func(): await _gioca(_scelta), 16))
 			var fine := Tema.pulsante_primario("TERMINA L'ATTIVAZIONE", func():
 				if _occupato:
 					return
 				_occupato = true
+				_scelta = ""
 				await inc.termina_carte()
 				_occupato = false
 				if inc.concluso == "":
 					_fase = "scegli"
-				_anteprima.text = ""
 				_aggiorna(), 16)
 			fine.tooltip_text = Dati.testo_leggibile(_esito_termina())
 			_comandi.add_child(fine)
@@ -245,8 +254,8 @@ func _aggiorna() -> void:
 			var pm := CheckBox.new()
 			pm.text = "Usa la Magia per le Chiavi Magiche"
 			pm.button_pressed = inc.paga_magia
-			pm.toggled.connect(func(v):
-				inc.paga_magia = v
+			pm.toggled.connect(func(vv):
+				inc.paga_magia = vv
 				_aggiorna())
 			_comandi.add_child(pm)
 			# Oggetti, Segreti e Abilità usabili in qualsiasi momento
@@ -255,9 +264,171 @@ func _aggiorna() -> void:
 				_comandi.add_child(Tema.pulsante("USA: " + Carte.nome(str(uu["img"])), func(): await _usa_carta(uu), 14))
 		"fine":
 			var nomi := {"vittoria": "VITTORIA!", "fallimento": "Fallimento.", "fuga": "Siete scappati.", "fuga_nemico": "Il nemico è fuggito: niente Ricompensa.", "evitato": "Incontro evitato.", "morte": "La Compagnia è caduta.", "speciale": "Effetto applicato."}
-			_guida.text = "[b]%s[/b]" % nomi.get(inc.concluso, inc.concluso)
-			_anteprima.text = "Il riepilogo è nella cronaca a destra."
+			_guida.text = "[b]%s[/b]  Il riepilogo è nella cronaca qui sotto." % nomi.get(inc.concluso, inc.concluso)
 			_comandi.add_child(Tema.pulsante_primario("TORNA ALLA MAPPA", _chiudi, 17))
+	_disegna_tavolo()
+	_disegna_mano()
+	_aggiorna_info()
+
+## Carta nemica e Sequenza, collegate come sul tavolo.
+func _disegna_tavolo() -> void:
+	for x in _fila.get_children():
+		x.queue_free()
+	var nem := CartaIncontro.new(inc.img, H_TAVOLO, true)
+	nem.position = Vector2.ZERO
+	nem.valore = inc.valore()
+	if inc.diplomazia:
+		var a: Dictionary = _aff()
+		nem.casella_affinita = clampi(int(a.get("rossi", 3)) + inc.affinita, 0, int(a.get("rossi", 3)) + int(a.get("verdi", 3)))
+	elif _fase != "speciale":
+		nem.cubi = inc.riserva
+	nem.riga_tabella = _riga_tabella()
+	_fila.add_child(nem)
+	var w := H_TAVOLO * CartaIncontro.RAPPORTO
+	var x := w
+	var aperture := inc.aperture_visibili(_chi_mano()) if _fase in ["inizio", "scegli", "gioca"] else []
+	for i in inc.sequenza.size():
+		var s: Dictionary = inc.sequenza[i]
+		var t := CartaIncontro.new(str(s["img"]), H_TAVOLO)
+		t.position = Vector2(x, 0)
+		t.tempo = int(s.get("tempo", 0))
+		t.cariche = int(s.get("cariche", 0))
+		var info := []
+		if t.tempo > 0:
+			info.append("Gettoni Tempo: %d" % t.tempo)
+		if t.cariche > 0:
+			info.append("Cariche: %d" % t.cariche)
+		t.tooltip_text = Carte.nome(str(s["img"])) + ("\n" + "\n".join(info) if not info.is_empty() else "")
+		_fila.add_child(t)
+		x += w * CartaIncontro.SCOPERTA
+	# semichiavi dell'ultima carta: verde si collega, rosso barrato no
+	var ultima: CartaIncontro = _fila.get_child(_fila.get_child_count() - 1)
+	for ap in aperture:
+		ultima.segni.append({"riga": int(ap["riga"]), "col": "apre", "ok": ap["ok"]})
+	ultima.queue_redraw()
+	var larghezza := x + w * (1.0 - CartaIncontro.SCOPERTA) if not inc.sequenza.is_empty() else w
+	_fila.custom_minimum_size = Vector2(larghezza + 8, H_TAVOLO)
+	# si tiene in vista l'ultima carta
+	var sb := _scorri_tavolo.get_h_scroll_bar()
+	(func(): if is_instance_valid(sb): _scorri_tavolo.scroll_horizontal = int(sb.max_value)).call_deferred()
+
+## Riga della tabella del nemico in vigore (Riserva attuale) o fase attuale della diplomazia.
+func _riga_tabella() -> Rect2:
+	var ar = inc.carta.get("aree", {}).get("tabella") if inc.carta.get("aree") is Dictionary else null
+	if not (ar is Array) or ar.size() < 4:
+		return Rect2()
+	var righe: Array = inc.carta.get("fasi", []) if inc.diplomazia else inc.carta.get("tabella", [])
+	if righe.is_empty():
+		return Rect2()
+	var idx := -1
+	if inc.diplomazia:
+		idx = inc.fase
+	else:
+		for i in righe.size():
+			if inc.riserva >= int(righe[i].get("da", 0)) and inc.riserva <= int(righe[i].get("a", 99)):
+				idx = i
+	if idx < 0 or idx >= righe.size():
+		return Rect2()
+	var h := (float(ar[3]) - float(ar[1])) / righe.size()
+	return Rect2(float(ar[0]), float(ar[1]) + idx * h, float(ar[2]) - float(ar[0]), h)
+
+func _disegna_mano() -> void:
+	for x in _mano.get_children():
+		x.queue_free()
+	var p := _chi_mano()
+	if p.is_empty() or _fase in ["fine", "speciale"]:
+		return
+	var giocabile := _fase == "gioca"
+	var carte: Array = inc.mani.get(str(p["id"]), []).duplicate()
+	# Un passo avanti: si gioca con la prima carta del mazzo scoperta
+	var mz: Array = inc.mazzi.get(str(p["id"]), [])
+	if not mz.is_empty() and not inc.partita.modificatori("mazzo_scoperto", p).is_empty():
+		carte.append(mz[0])
+	var et := Tema.etichetta("MANO DI\n%s" % str(p["nome"]).to_upper(), 15, Tema.ORO)
+	et.custom_minimum_size = Vector2(110, 0)
+	et.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	_mano.add_child(et)
+	for c in carte:
+		var v := VBoxContainer.new()
+		v.add_theme_constant_override("separation", 2)
+		var t := CartaIncontro.new(c, H_MANO)
+		t.selezionata = c == _scelta
+		v.add_child(t)
+		var cap := Tema.testo_ricco(14)
+		cap.custom_minimum_size = Vector2(H_MANO * CartaIncontro.RAPPORTO, 0)
+		cap.mouse_filter = Control.MOUSE_FILTER_IGNORE
+		v.add_child(cap)
+		var a := inc.anteprima(c)
+		# semichiavi della carta che si collegano (verde) o no (rosso barrato) all'ultima del tavolo
+		for r in a["righe"]:
+			if int(r.get("riga", -1)) < 1:
+				continue
+			t.segni.append({"riga": int(r["riga"]), "col": "bonus", "ok": r["ok"]})
+		if giocabile:
+			var ok: bool = a["giocabile"]
+			t.modulate = Color.WHITE if ok else Color(0.55, 0.55, 0.55)
+			cap.text = _bb(_riassunto_carta(a))
+		t.mouse_entered.connect(func():
+			_sopra = c
+			_aggiorna_info())
+		t.mouse_exited.connect(func():
+			if _sopra == c:
+				_sopra = ""
+				_aggiorna_info())
+		t.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
+		t.gui_input.connect(func(e):
+			var tocco: bool = (e is InputEventMouseButton and e.pressed and e.button_index == MOUSE_BUTTON_LEFT) or (e is InputEventScreenTouch and e.pressed)
+			if not tocco:
+				return
+			if giocabile and _scelta == c and inc.anteprima(c)["giocabile"]:
+				await _gioca(c)
+			else:
+				_scelta = c
+				_aggiorna())
+		_mano.add_child(v)
+
+## Pannelli in basso: cosa fa la carta scelta (o sotto il puntatore) e cosa succede terminando;
+## stato della Compagnia e tratti del nemico.
+func _aggiorna_info() -> void:
+	var c := _sopra if _sopra != "" else _scelta
+	var t := ""
+	match _fase:
+		"inizio":
+			t = _spiegazione_regole()
+			if c != "":
+				t = _descrivi_anteprima(c) + "\n\n" + t
+		"scegli":
+			t = _bb("Quando un Personaggio si attiva gioca [b]una carta qualsiasi[/b] dalla mano; altre carte solo se collegano una [b]Chiave dorata[/b]. Poi il nemico %s.\n%s" % [
+				"risponde (Risposta della fase)" if inc.diplomazia else "attacca secondo la riga della sua tabella che corrisponde alla Riserva (riquadrata in rosso sulla carta)", _esito_termina()])
+		"gioca":
+			if c != "":
+				t = _descrivi_anteprima(c)
+			else:
+				t = _bb("Tocca una carta della mano: qui vedrai quali Chiavi si collegano (riquadri verdi sulle carte; i rossi barrati non si collegano), cosa ottieni e come risponderà il nemico.\n" + _esito_termina())
+		"fine":
+			t = ""
+		"speciale":
+			pass
+	if _fase != "speciale":
+		_anteprima.text = t
+	_compagnia.text = _testo_compagnia()
+
+func _testo_compagnia() -> String:
+	var t := ""
+	if inc.diplomazia:
+		t += "Affinità [b]%+d[/b] (vinci la fase a +%d, fallisci a −%d) · Fase %d di %d\n" % [inc.affinita, int(_aff().get("verdi", 3)), int(_aff().get("rossi", 3)), inc.fase + 1, maxi(1, inc.carta.get("fasi", []).size())]
+	else:
+		t += "Riserva [b]%d[/b] / Valore [b]%d[/b]\n" % [inc.riserva, inc.valore()]
+	for tr in inc.tratti():
+		t += "[color=%s]%s[/color]\n" % [ORO_T, inc.spiega_tratto(str(tr))]
+	if inc.prevenzione > 0:
+		t += "Ferite prevenute in questo attacco: %d\n" % inc.prevenzione
+	for p in inc.membri:
+		var pan := "  [color=%s]PANICO[/color]" % ROSSO_T if Personaggi.in_panico(p) else ""
+		var att := "  [color=%s](attivo)[/color]" % VERDE_T if inc.attivo() == p else ""
+		t += "[b]%s[/b]%s%s: Salute %d · Energia %d · Terrore %d · Magia %d · mano %d, mazzo %d\n" % [p["nome"], att, pan, int(p["salute"]), int(p["energia"]), int(p["terrore"]), int(p["magia"]),
+			inc.mani.get(str(p["id"]), []).size(), inc.mazzi.get(str(p["id"]), []).size()]
+	return Dati.testo_bb(t, 16)
 
 ## Testo di un attacco con le parole chiave spiegate ("Fuggire" = il nemico scappa…).
 func _spiega_attacco(t: String) -> String:
@@ -276,15 +447,16 @@ func _gioca(c: String) -> void:
 	if _occupato:
 		return
 	_occupato = true
+	_scelta = ""
+	_sopra = ""
 	await inc.gioca(c)
 	_occupato = false
-	_anteprima.text = ""
 	_aggiorna()
 
 ## Obiettivo dell'Incontro in una riga.
 func _obiettivo() -> String:
 	if inc.diplomazia:
-		var a: Dictionary = inc.carta.get("affinita", {})
+		var a: Dictionary = _aff()
 		var fs: Array = inc.carta.get("fasi", [])
 		return "Obiettivo: portare l'Affinità a [color=%s]+%d[/color] in ogni fase (%d fasi); a [color=%s]−%d[/color] fallisci." % [VERDE_T, int(a.get("verdi", 3)), maxi(1, fs.size()), ROSSO_T, int(a.get("rossi", 3))]
 	return "Obiettivo: [b]%d segnalini[/b] nella Riserva (ora %d). Il nemico attacca secondo la Riserva che hai a fine attivazione." % [inc.valore(), inc.riserva]
@@ -318,92 +490,6 @@ func _spiegazione_regole() -> String:
 		t += "• I segnalini vanno nella Riserva: a fine attivazione, se non hai raggiunto il Valore, il nemico attacca con la riga della tabella che corrisponde alla Riserva. Se perdi segnalini che non hai, scarti carte dalla mano.\n"
 	t += "• A fine turno si scartano carte fino a 3 in mano e se ne pesca 1."
 	return _bb(t)
-
-func _testo_stato() -> String:
-	var c := inc.carta
-	var t := "[b]%s[/b]\n" % Carte.nome(inc.img)
-	for tr in inc.tratti():
-		t += "[color=%s]%s[/color]\n" % [ORO_T, inc.spiega_tratto(str(tr))]
-	if inc.diplomazia:
-		var a: Dictionary = c.get("affinita", {})
-		var fs: Array = c.get("fasi", [])
-		var verdi := int(a.get("verdi", 3))
-		var rossi := int(a.get("rossi", 3))
-		var barra := ""
-		var seq := str(a.get("sequenza", ""))
-		var g := seq.find("G")
-		for i in range(-rossi, verdi + 1):
-			var col := ROSSO_T if i < 0 else (VERDE_T if i > 0 else GRIGIO_T)
-			# colori stampati sul misuratore (ci sono carte con caselle rosse sopra la grigia)
-			if g >= 0 and g - i >= 0 and g - i < seq.length():
-				col = {"V": VERDE_T, "G": GRIGIO_T, "R": ROSSO_T}.get(seq[g - i], col)
-			barra += ("[color=%s][b]◆[/b][/color]" % col) if i == inc.affinita else ("[color=%s]◇[/color]" % col)
-		t += "\nAffinità [b]%+d[/b]  %s\n" % [inc.affinita, barra]
-		for i in fs.size():
-			var f: Dictionary = fs[i]
-			var nome := str(f.get("nome", {}).get("it", "")) if f.get("nome") is Dictionary else ""
-			var cur := i == inc.fase
-			t += "%s[b]Fase %d[/b] %s\n" % ["▸ " if cur else "   ", i + 1, nome]
-			if cur:
-				var sp: Dictionary = f.get("speciale", {})
-				for k in sp:
-					t += "    bonus speciale con %s: %s\n" % [Partita.NOMI_ATTRIBUTI.get(k, k), str(sp[k].get("it", sp[k])) if sp[k] is Dictionary else str(sp[k])]
-				var r = f.get("risposta", {})
-				t += "    Risposta: [color=%s]%s[/color]\n" % [ROSSO_T, str(r.get("it", "")) if r is Dictionary else str(r)]
-	else:
-		var val := int(c.get("valore", 0))
-		t += "\nRiserva [b]%d[/b] / Valore [b]%d[/b]\n\n[b]Attacco del nemico[/b] (in base alla Riserva):\n" % [inc.riserva, val]
-		for r in c.get("tabella", []):
-			var cur := inc.riserva >= int(r.get("da", 0)) and inc.riserva <= int(r.get("a", 99))
-			var fascia := ("%d" % int(r["da"])) if int(r.get("da", 0)) == int(r.get("a", 0)) else ("%d-%d" % [int(r.get("da", 0)), int(r.get("a", 0))])
-			t += ("[color=%s][b]▸ %s: %s[/b][/color]\n" % [ROSSO_T, fascia, _spiega_attacco(str(r.get("it", "")))]) if cur else ("   %s: %s\n" % [fascia, _spiega_attacco(str(r.get("it", "")))])
-		t += "   %d+: [color=%s]vittoria[/color]\n" % [val, VERDE_T]
-		if c.get("opportunita") is Dictionary:
-			t += "\n[b]Opportunità[/b] (se Scappi o termini con troppo poche carte): %s\n" % _spiega_attacco(str(c["opportunita"].get("it", "")))
-	if inc.prevenzione > 0:
-		t += "\nFerite prevenute in questo attacco: %d\n" % inc.prevenzione
-	if c.get("ricompensa") is Dictionary and str(c["ricompensa"].get("it", "")) != "":
-		t += "\n[b]Ricompensa[/b] (a ognuno): %s" % str(c["ricompensa"]["it"])
-	if c.get("bottino") is Dictionary and str(c["bottino"].get("it", "")) != "":
-		t += "\n[b]Bottino[/b] (da dividere): %s" % str(c["bottino"]["it"])
-	if c.get("fallimento") is Dictionary and str(c["fallimento"].get("it", "")) != "":
-		t += "\n[b]Fallimento[/b]: %s" % str(c["fallimento"]["it"])
-	t += "\n"
-	for p in inc.membri:
-		var pan := "  [color=%s]PANICO[/color]" % ROSSO_T if Personaggi.in_panico(p) else ""
-		t += "\n[b]%s[/b]%s — Salute %d · Energia %d · Terrore %d · Magia %d · mano %d, mazzo %d" % [p["nome"], pan, int(p["salute"]), int(p["energia"]), int(p["terrore"]), int(p["magia"]),
-			inc.mani.get(str(p["id"]), []).size(), inc.mazzi.get(str(p["id"]), []).size()]
-	return Dati.testo_bb(t, 17)
-
-func _mostra_mano(p: Dictionary, giocabile: bool) -> void:
-	if p.is_empty():
-		return
-	var carte: Array = inc.mani.get(str(p["id"]), []).duplicate()
-	# Un passo avanti: si gioca con la prima carta del mazzo scoperta
-	var mz: Array = inc.mazzi.get(str(p["id"]), [])
-	if not mz.is_empty() and not inc.partita.modificatori("mazzo_scoperto", p).is_empty():
-		carte.append(mz[0])
-	for c in carte:
-		var v := VBoxContainer.new()
-		v.add_theme_constant_override("separation", 2)
-		var t := _carta(c, Vector2(180, 272))
-		v.add_child(t)
-		var cap := Tema.testo_ricco(14)
-		cap.custom_minimum_size = Vector2(180, 0)
-		cap.mouse_filter = Control.MOUSE_FILTER_IGNORE
-		v.add_child(cap)
-		if giocabile:
-			var a := inc.anteprima(c)
-			var ok: bool = a["giocabile"]
-			t.modulate = Color.WHITE if ok else Color(0.45, 0.45, 0.45)
-			cap.text = _bb(_riassunto_carta(a))
-			t.mouse_entered.connect(func(): _anteprima.text = _descrivi_anteprima(c))
-			if ok:
-				t.mouse_default_cursor_shape = Control.CURSOR_POINTING_HAND
-				t.gui_input.connect(func(e):
-					if e is InputEventMouseButton and e.pressed and e.button_index == MOUSE_BUTTON_LEFT:
-						await _gioca(c))
-		_mano.add_child(v)
 
 ## Riga breve sotto la carta: giocabile o no e cosa darebbe.
 func _riassunto_carta(a: Dictionary) -> String:
@@ -517,13 +603,3 @@ func _speciale() -> void:
 		_fase = "fine"
 		_aggiorna()))
 	_comandi.add_child(Tema.pulsante("CHIUDI", func(): inc.concluso = "speciale"; _chiudi()))
-
-func _carta(c: String, dim: Vector2) -> TextureRect:
-	var t := TextureRect.new()
-	t.custom_minimum_size = dim
-	t.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
-	t.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-	t.mouse_filter = Control.MOUSE_FILTER_STOP
-	t.tooltip_text = Carte.nome(c)
-	Immagini.carica(Carte.immagine(c), func(tx): if is_instance_valid(t): t.texture = tx)
-	return t
