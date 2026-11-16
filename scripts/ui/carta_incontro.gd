@@ -13,9 +13,9 @@ const RIGHE_NEMICO := {1: 0.11, 2: 0.255, 3: 0.4, 4: 0.57, 5: 0.9}
 ## Colonne delle semichiavi: bonus (a sinistra) e apertura (a destra) sulle carte del Personaggio,
 ## apertura sul bordo destro della carta nemica.
 const COL_BONUS := Vector2(0.0, 0.15)
-const COL_APRE := Vector2(0.165, 0.325)
-const COL_NEMICO := Vector2(0.845, 1.0)
-const MEZZA_ALTEZZA := 0.062
+const COL_APRE := Vector2(0.172, 0.322)
+const COL_NEMICO := Vector2(0.853, 0.997)
+const MEZZA_ALTEZZA := 0.056
 ## Parte della carta che resta scoperta quando sopra se ne gioca un'altra.
 const SCOPERTA := 0.316
 ## Misuratore di Affinità: centro della casella più bassa e passo fra le caselle.
@@ -64,16 +64,22 @@ func _draw() -> void:
 		draw_rect(rt.grow(2), Color(0.95, 0.3, 0.2), false, 3.0)
 	# semichiavi
 	for g in segni:
-		var r := rettangolo_chiave(int(g["riga"]), str(g.get("col", "apre"))).grow(2)
+		var col := str(g.get("col", "apre"))
+		var r := rettangolo_chiave(int(g["riga"]), col)
+		var forma := _forma_chiave(r, col == "bonus" and not nemico)
 		if g["ok"]:
-			draw_rect(r, Color(0.4, 1.0, 0.35, 0.2), true)
-			draw_rect(r, Color(0.45, 1.0, 0.4), false, 4.0)
+			draw_colored_polygon(forma, Color(0.4, 1.0, 0.35, 0.18))
+			forma.append(forma[0])
+			draw_polyline(forma, Color(0.45, 1.0, 0.4, 0.35), 9.0, true)
+			draw_polyline(forma, Color(0.55, 1.0, 0.45), 3.5, true)
 		else:
-			var rosso := Color(0.95, 0.3, 0.22, 0.85)
-			draw_rect(r, Color(0.3, 0, 0, 0.18), true)
-			draw_rect(r, rosso, false, 3.0)
-			draw_line(r.position + Vector2(4, 4), r.end - Vector2(4, 4), rosso, 2.5)
-			draw_line(Vector2(r.end.x - 4, r.position.y + 4), Vector2(r.position.x + 4, r.end.y - 4), rosso, 2.5)
+			var rosso := Color(0.95, 0.3, 0.22, 0.9)
+			draw_colored_polygon(forma, Color(0.3, 0, 0, 0.22))
+			forma.append(forma[0])
+			draw_polyline(forma, rosso, 3.0, true)
+			var q := r.grow(-r.size.y * 0.22)
+			draw_line(q.position, q.end, rosso, 2.5, true)
+			draw_line(Vector2(q.end.x, q.position.y), Vector2(q.position.x, q.end.y), rosso, 2.5, true)
 	# gettoni Tempo (nella parte che resta scoperta della carta)
 	var rg := s.x * 0.055
 	for i in tempo:
@@ -114,6 +120,26 @@ func _draw() -> void:
 		_cubo(c2 - Vector2(lato2, lato2) / 2, lato2, Color(0.92, 0.9, 0.85))
 	if selezionata:
 		draw_rect(Rect2(Vector2.ZERO, s).grow(-2), Tema.ORO, false, 4.0)
+
+## Contorno di una semichiave come è stampata: cornice quadrata con gli angoli smussati e la punta a
+## freccia sul lato esterno (a destra per le semichiavi che aprono, a sinistra per quelle dei bonus).
+func _forma_chiave(r: Rect2, punta_a_sinistra: bool) -> PackedVector2Array:
+	var punta := r.size.x * 0.13
+	var a := r.size.y * 0.2      # mezza base della punta
+	var c := r.size.y * 0.14     # smussatura degli angoli
+	var L := r.position.x + (punta if punta_a_sinistra else 0.0)
+	var R := r.end.x - (0.0 if punta_a_sinistra else punta)
+	var T := r.position.y
+	var B := r.end.y
+	var m := (T + B) / 2.0
+	var p := PackedVector2Array([Vector2(L + c, T), Vector2(R - c, T), Vector2(R, T + c)])
+	if not punta_a_sinistra:
+		p.append_array([Vector2(R, m - a), Vector2(r.end.x, m), Vector2(R, m + a)])
+	p.append_array([Vector2(R, B - c), Vector2(R - c, B), Vector2(L + c, B), Vector2(L, B - c)])
+	if punta_a_sinistra:
+		p.append_array([Vector2(L, m + a), Vector2(r.position.x, m), Vector2(L, m - a)])
+	p.append(Vector2(L, T + c))
+	return p
 
 ## Cubetto in prospettiva (faccia, lato superiore più chiaro, lato destro più scuro).
 func _cubo(p: Vector2, lato: float, col: Color) -> void:
