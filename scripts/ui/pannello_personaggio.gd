@@ -114,7 +114,9 @@ func _plancia(x: Dictionary, dd: Dictionary) -> Control:
 	tessera.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_COVERED
 	tessera.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	radice.add_child(tessera)
-	Immagini.carica(str(dd.get("tessera", "")), func(t): if is_instance_valid(tessera): tessera.texture = t)
+	# le plance italiane hanno già la tessera del Personaggio nel riquadro
+	if not dd.get("plancia_completa", false):
+		Immagini.carica(str(dd.get("tessera", "")), func(t): if is_instance_valid(tessera): tessera.texture = t)
 	var sopra := Control.new()
 	sopra.set_anchors_preset(Control.PRESET_FULL_RECT)
 	sopra.mouse_filter = Control.MOUSE_FILTER_IGNORE

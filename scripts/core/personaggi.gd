@@ -1,4 +1,5 @@
-## Dati dei quattro Personaggi del gioco base (dalle tessere e dalle plance del modulo TTS)
+## Dati dei quattro Personaggi del gioco base (plance e tessere dalle scansioni italiane: la plancia
+## comprende già la tessera del Personaggio, "plancia_completa")
 ## e creazione del loro stato iniziale.
 ##
 ## Le tre tracce (Energia, Salute, Terrore) stanno sulla plancia in righe affiancate ma sfalsate:
@@ -9,8 +10,8 @@ extends RefCounted
 
 const DATI := {
 	"arev": {
-		"nome": "Arev", "colore": Color("c9c3b8"), "plancia": "oggetti/custom_tile_25da55.webp",
-		"tessera": "oggetti/arev_32723e.webp", "miniatura": "Arev",
+		"nome": "Arev", "colore": Color("c9c3b8"), "plancia": "it/plance/plancia_arev.webp", "plancia_completa": true,
+		"tessera": "it/plance/tessera_arev.webp", "miniatura": "Arev",
 		"energia": 6, "energia_max": 9, "salute": 8, "terrore_max": 7, "follia": 6, "scarto_s": 1, "scarto_t": 1,
 		"attributi": {"aggression": 1, "empathy": 1, "courage": 1, "caution": 1, "practicality": 1, "spirituality": 0},
 		"risorse": {"cibo": 2, "ricchezza": 1, "magia": 1},
@@ -20,8 +21,8 @@ const DATI := {
 		"mazzi": {"combattimento": ["3b3541", "f92f49", "0c2a0d"], "diplomazia": ["7ae812", "cd3375", "b10a1d"]},
 	},
 	"ailei": {
-		"nome": "Ailei", "colore": Color("7fb069"), "plancia": "oggetti/custom_tile_caa770.webp",
-		"tessera": "oggetti/ailei_63d71a.webp", "miniatura": "Ailei",
+		"nome": "Ailei", "colore": Color("7fb069"), "plancia": "it/plance/plancia_ailei.webp", "plancia_completa": true,
+		"tessera": "it/plance/tessera_ailei.webp", "miniatura": "Ailei",
 		"energia": 7, "energia_max": 8, "salute": 7, "terrore_max": 6, "follia": 5, "scarto_s": 1, "scarto_t": 1,
 		"attributi": {"aggression": 0, "empathy": 2, "courage": 1, "caution": 1, "practicality": 1, "spirituality": 0},
 		"risorse": {"cibo": 3, "rep": 1},
@@ -31,8 +32,8 @@ const DATI := {
 		"mazzi": {"combattimento": ["ace6eb", "f7e098", "36e6a4"], "diplomazia": ["562d7a", "f39a47", "4cc599"]},
 	},
 	"beor": {
-		"nome": "Beor", "colore": Color("6f9fd8"), "plancia": "oggetti/custom_tile_f018e4.webp",
-		"tessera": "oggetti/beor_9b0598.webp", "miniatura": "Beor",
+		"nome": "Beor", "colore": Color("6f9fd8"), "plancia": "it/plance/plancia_beor.webp", "plancia_completa": true,
+		"tessera": "it/plance/tessera_beor.webp", "miniatura": "Beor",
 		"energia": 6, "energia_max": 9, "salute": 9, "terrore_max": 6, "follia": 5, "scarto_s": 0, "scarto_t": 1,
 		"attributi": {"aggression": 2, "empathy": 0, "courage": 1, "caution": 1, "practicality": 1, "spirituality": 0},
 		"risorse": {"cibo": 3, "ricchezza": 1},
@@ -42,8 +43,8 @@ const DATI := {
 		"mazzi": {"combattimento": ["cd0854", "d5aa7b", "6413f1"], "diplomazia": ["47e961", "c7fbd2", "ed43ce"]},
 	},
 	"maggot": {
-		"nome": "Verme", "colore": Color("b5653f"), "plancia": "oggetti/custom_tile_9bea36.webp",
-		"tessera": "oggetti/maggot_ca49d6.webp", "miniatura": "Maggot",
+		"nome": "Verme", "colore": Color("b5653f"), "plancia": "it/plance/plancia_verme.webp", "plancia_completa": true,
+		"tessera": "it/plance/tessera_verme.webp", "miniatura": "Maggot",
 		"energia": 6, "energia_max": 8, "salute": 8, "terrore_max": 6, "follia": 5, "scarto_s": 0, "scarto_t": 0,
 		"attributi": {"aggression": 1, "empathy": 0, "courage": 1, "caution": 1, "practicality": 0, "spirituality": 2},
 		"risorse": {"cibo": 2, "magia": 2},
